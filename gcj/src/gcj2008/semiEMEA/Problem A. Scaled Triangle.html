@@ -1,0 +1,795 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0060)https://code.google.com/codejam/contest/32010/dashboard#s=p0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - EMEA Semifinal 2008 - Google Code Jam
+  </title>
+
+    <style>@import '//www.google.com/css/modules/buttons/g-button-sparrow.css';</style>
+    <link rel="stylesheet" type="text/css" href="./Problem A. Scaled Triangle_files/app.css">
+
+
+
+
+
+    <script type="text/javascript" async="" src="./Problem A. Scaled Triangle_files/ga.js.download"></script><script src="./Problem A. Scaled Triangle_files/App_en.js.download"></script><style></style>
+    
+
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.dashboardMain().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "32010";
+      GCJ.contest.name = "EMEA Semifinal 2008";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 13;
+      
+      GCJ.contest.start_int = 1223284980;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=32010"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam";
+    };
+  //-->
+  </script>
+</head>
+
+<body onload="GCJ.dashboardMain()" class="page-dashboard">
+
+<div id="logo-div">
+  <a href="https://code.google.com/codejam/">
+    <img src="./Problem A. Scaled Triangle_files/logo_image4.gif" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">EMEA Semifinal 2008</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-open" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link">A. Scaled Triangle  </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. Painting a Fence  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link">C. Rainbow Trees  </div></div></div><div><div id="dsb-problem-tab3" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title3" class="dynamic-link">D. Bus Stops  </div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-analysis-tab-close" tabindex="0" role="button" style="display: block;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab" class="dsb-has-new-question-tab">Questions asked<span class="dsb-unread-count">2</span></div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();" style="cursor: pointer;">
+      <img id="dsb-status-panel-button" src="./Problem A. Scaled Triangle_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Scaled Triangle</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">9pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: block;"><b>83/100 users</b> correct (83%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">13pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: block;"><b>78/87 users</b> correct (90%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Painting a Fence</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">7pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: block;"><b>190/199 users</b> correct (95%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_1" class="inputName">13pt</td>      <td class="status">        <div id="selfStat1_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_1" class="globalStat" style="display: block;"><b>113/144 users</b> correct (78%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Rainbow Trees</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">9pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: block;"><b>71/90 users</b> correct (79%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">15pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: block;"><b>68/72 users</b> correct (94%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper3" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Bus Stops</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_0" class="inputName">8pt</td>      <td class="status">        <div id="selfStat3_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_0" class="globalStat" style="display: block;"><b>51/57 users</b> correct (89%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_1" class="inputName">26pt</td>      <td class="status">        <div id="selfStat3_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_1" class="globalStat" style="display: block;"><b>16/23 users</b> correct (70%)</div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)">
+          <img id="dsb-scoreboard-panel-button" src="./Problem A. Scaled Triangle_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td class="dsb-name-td" id="sbName_0">bmerry</td><td class="dsb-score-td" id="sbScore_0">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td class="dsb-name-td" id="sbName_1">dzhulgakov</td><td class="dsb-score-td" id="sbScore_1">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td class="dsb-name-td" id="sbName_2">gawry</td><td class="dsb-score-td" id="sbScore_2">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td class="dsb-name-td" id="sbName_3">dgozman</td><td class="dsb-score-td" id="sbScore_3">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td class="dsb-name-td" id="sbName_4">halyavin</td><td class="dsb-score-td" id="sbScore_4">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td class="dsb-name-td" id="sbName_5">pashka</td><td class="dsb-score-td" id="sbScore_5">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td class="dsb-name-td" id="sbName_6">mystic</td><td class="dsb-score-td" id="sbScore_6">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td class="dsb-name-td" id="sbName_7">Klinck</td><td class="dsb-score-td" id="sbScore_7">80</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td class="dsb-name-td" id="sbName_8">.Invader</td><td class="dsb-score-td" id="sbScore_8">76</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td class="dsb-name-td" id="sbName_9">DmitryKlenov</td><td class="dsb-score-td" id="sbScore_9">76</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-sub-link" style="display: none;">View submissions.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">Practice Mode</span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div" style="display: none;">
+          Rank: <span id="dsb-current-rank-span">--</span>
+        </span>
+        <span id="dsb-current-score-div" style="display: none;">
+          Score: <span id="dsb-current-score-span">--</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="https://code.google.com/codejam/contest/32010/scoreboard?c=32010">Contest scoreboard</a> | <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://code.google.com/codejam/contest/dashboard%253Fc%253D32010&amp;ltmpl=">Sign in</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;"><span style="color:#666">Problem A.</span> Scaled Triangle</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages" style="display: block;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>9 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Scaled Triangle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_0"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> A-small-practice.in.</div><form id="submit-formio_timer_0" action="https://code.google.com/codejam/contest/32010/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2EwMTZlMjEwZDM3MTQzZDVmZmE1OGVmZDdhN2UwMDZ8fDE0OTQ1NjgzMjIyODE2MDA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_0" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_0"><div id="input-file-divio_timer_0-0"><span id="source-fileio_timer_0-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_0-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_0" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_0" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_0" type="button" value="Hide"></div><div id="source-file-namesio_timer_0"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24464"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_0" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>13 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Scaled Triangle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1">Download A-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_1"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_1" action="https://code.google.com/codejam/contest/32010/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2EwMTZlMjEwZDM3MTQzZDVmZmE1OGVmZDdhN2UwMDZ8fDE0OTQ1NjgzMjIyODE2MDA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_1" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_1"><div id="input-file-divio_timer_1-0"><span id="source-fileio_timer_1-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_1-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_1" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_1" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_1" type="button" value="Hide"></div><div id="source-file-namesio_timer_1"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24464"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_1" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><p class="problem-item">Problem</p>
+<p>
+You are given two triangle-shaped pictures.  The second picture is a possibly translated, rotated and scaled version of the first. The two triangles are placed on the table, with the second one placed completely inside (possibly touching the boundary of) the first one. The second triangle is always scaled by a factor that is strictly between 0 and 1.
+</p>
+<p>
+You need to process the picture, and for that you need a point in the picture which overlaps with the same point of the scaled picture.  If there is more than one solution, you can return any of them. If there are no solutions, print "No Solution" (without the quotes) for that test case.
+<br>
+
+</p><p class="problem-item">Input</p>
+<p>
+The first line of input gives the number of cases, <b>N</b>.  Then for each test case, there will be two lines, each containing six space-separated integers -- the coordinates of one of the triangles -- in the format "x<sub>1</sub> y<sub>1</sub> x<sub>2</sub> y<sub>2</sub> x<sub>3</sub> y<sub>3</sub>".  The point (x<sub>1</sub>, y<sub>1</sub>) in the first triangle corresponds to the same corner of the picture as (x<sub>1</sub>, y<sub>1</sub>) in the second triangle, and similarly for (x<sub>2</sub>, y<sub>2</sub>) and (x<sub>3</sub>, y<sub>3</sub>).
+</p>
+
+<p class="problem-item">Output</p>
+<p>
+For each test case, output one line containing "Case #<b>x</b>: "
+followed two real numbers representing the coordinates of the overlapping point separated by one space character, or the string "No Solution". Answers with a relative or absolute error of at most 10<sup>-5</sup> will be considered correct.
+</p>
+
+<p></p>
+<p class="problem-item">Limits</p>
+1 &lt;= <b>N</b> &lt;= 10.<br>
+The coordinates of the points will be integer numbers between -10 000 and 10 000.
+The three points in each triangle will not be collinear.
+<p class="problem-item">Small dataset</p>
+<p>
+All tests will contain isosceles right-angle triangles.  (i.e., the triangle's angles will be 45 degrees, 45 degrees, and 90 degrees.)
+</p>
+<p class="problem-item">Large dataset</p>
+<p>
+The triangles can have any shape.
+</p>
+
+<p class="problem-item">Sample input</p>
+
+<code>
+2<br>
+0 0 0 2 2 0<br>
+0 0 0 1 1 0<br>
+10 0 0 10 0 0<br>
+3 3 1 1 3 1<br>
+<br>
+</code>
+<p class="problem-item">Sample output</p>
+<code>
+Case #1: 0.000000 0.000000<br>
+Case #2: 2.692308 1.538462<br>
+</code></div></div><div id="dsb-problem-page1" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>7 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Scaled Triangle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_2"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> B-small-practice.in.</div><form id="submit-formio_timer_2" action="https://code.google.com/codejam/contest/32010/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2EwMTZlMjEwZDM3MTQzZDVmZmE1OGVmZDdhN2UwMDZ8fDE0OTQ1NjgzMjIyODE2MDA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_2" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_2"><div id="input-file-divio_timer_2-0"><span id="source-fileio_timer_2-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_2-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_2" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_2" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_2" type="button" value="Hide"></div><div id="source-file-namesio_timer_2"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24467"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_2" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>13 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-1" class=""><div id="dsb-input-wrapper1-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-1" style="display: inline;">Solve B-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Scaled Triangle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-1">Download B-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_3"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_3" action="https://code.google.com/codejam/contest/32010/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2EwMTZlMjEwZDM3MTQzZDVmZmE1OGVmZDdhN2UwMDZ8fDE0OTQ1NjgzMjIyODE2MDA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_3" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_3"><div id="input-file-divio_timer_3-0"><span id="source-fileio_timer_3-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_3-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_3" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_3" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_3" type="button" value="Hide"></div><div id="source-file-namesio_timer_3"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24467"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_3" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><p class="problem-item">Problem</p>
+
+<p>
+You need to hire some people to paint a fence.  The fence is composed of 10000 contiguous sections, numbered from 1 to 10000.
+</p>
+
+<p>
+You get some offers from painters to help paint the fence.  Each painter offers to paint a contiguous subset of fence sections in a particular color.  You need to accept a set of the offers, such that:
+</p>
+
+<ul>
+<li>Each section of the fence is painted.
+</li><li>At most 3 colors are used to paint the fence.
+</li></ul>
+
+<p>
+If it is possible to satisfy these two requirements, find the minimum number of offers that you must accept.
+
+</p><p class="problem-item">Input</p>
+
+<ul>
+<li>One line containing an integer <b>T</b>, the number of test cases in the input file.
+</li></ul>
+
+For each test case, there will be:
+
+<ul>
+<li>One line containing an integer <b>N</b>, the number of offers.
+</li><li><b>N</b> lines, one for each offer, each containing "<b>C</b> <b>A</b> <b>B</b>" where <b>C</b> is the color, which is an uppercase string of up to 10 letters, <b>A</b> is the first section and <b>B</b> is the last section to be painted.  1 ≤ <b>A</b> ≤ <b>B</b> ≤ 10000.
+</li></ul>
+
+<p class="problem-item">Output</p>
+
+<ul>
+<li><b>T</b> lines, one for each test case in the order they occur in the input file, each containing the string "Case #<b>X</b>: <b>Y</b>", where <b>X</b> is the case number, and <b>Y</b> is the number of offers that need to be accepted, or "Case #<b>X</b>: IMPOSSIBLE" if there is no acceptable set of offers.
+</li></ul>
+
+
+<p class="problem-item">Limits</p>
+
+1 ≤ <b>T</b> ≤ 50<br>
+
+<p class="problem-item">Small dataset</p>
+<p>
+1 ≤ <b>N</b> ≤ 10<br>
+</p>
+
+<p class="problem-item">Large dataset</p>
+<p>
+1 ≤ <b>N</b> ≤ 300<br>
+</p>
+
+
+<p class="problem-item">Sample</p>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="problem-item-gray">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="problem-item-gray">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+5<br>
+2<br>
+BLUE 1 5000<br>
+RED 5001 10000<br>
+3<br>
+BLUE 1 6000<br>
+RED 2000 8000<br>
+WHITE 7000 10000<br>
+4<br>
+BLUE 1 3000<br>
+RED 2000 5000<br>
+ORANGE 4000 8000<br>
+GREEN 7000 10000<br>
+2<br>
+BLUE 1 4000<br>
+RED 4002 10000<br>
+3<br>
+BLUE 1 6000<br>
+RED 4000 10000<br>
+ORANGE 3000 8000<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: 2<br>
+Case #2: 3<br>
+Case #3: IMPOSSIBLE<br>
+Case #4: IMPOSSIBLE<br>
+Case #5: 2<br>
+<br>
+</code>
+</td></tr></tbody></table>
+</div>
+
+<p>
+In the first test case, accepting both offers will exactly paint the whole fence, 5000 sections each, with no overlap.
+</p>
+<p>
+In the second case, the painters will overlap, which is acceptable.
+</p>
+<p>
+In the third case, accepting all four offers would cover the whole fence, but it would use 4 different colours, so this is not acceptable.
+</p>
+<p>
+In the fourth case, section 4001 cannot be painted.
+</p>
+<p>
+In the fifth case, we can accept just the first and second offer and successfully paint the fence.
+</p></div></div><div id="dsb-problem-page2" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input<br>9 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Scaled Triangle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_4"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice.in.</div><form id="submit-formio_timer_4" action="https://code.google.com/codejam/contest/32010/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2EwMTZlMjEwZDM3MTQzZDVmZmE1OGVmZDdhN2UwMDZ8fDE0OTQ1NjgzMjIyODE2MDA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_4" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_4"><div id="input-file-divio_timer_4-0"><span id="source-fileio_timer_4-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_4-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_4" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_4" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_4" type="button" value="Hide"></div><div id="source-file-namesio_timer_4"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24465"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_4" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>15 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Scaled Triangle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1">Download C-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_5"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_5" action="https://code.google.com/codejam/contest/32010/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2EwMTZlMjEwZDM3MTQzZDVmZmE1OGVmZDdhN2UwMDZ8fDE0OTQ1NjgzMjIyODE2MDA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_5" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_5"><div id="input-file-divio_timer_5-0"><span id="source-fileio_timer_5-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_5-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_5" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_5" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_5" type="button" value="Hide"></div><div id="source-file-namesio_timer_5"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24465"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_5" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><p class="problem-item">Problem</p>
+<p>
+In graph theory, a <i>tree</i> is a connected, undirected simple graph with no cycles. A tree with <b>n</b> nodes always has <b>n</b> - 1 edges.
+</p>
+<p>
+A <i>path</i> in a tree is a sequence of distinct edges which are connected (each pair of consecutive edges in the path share a vertex).
+</p>
+<p>
+Consider a tree with <b>n</b> vertices and <b>n</b>-1 edges. You can color each edge in one of <b>k</b> colors.
+</p>
+<p>
+An assignment of colors to edges is a <i>rainbow coloring</i> if in every path of 2 or 3 edges, the colors of the edges are different.  (i.e., every two consecutive edges have different colors, and every three consecutive edges have different colors).
+</p>
+<p>
+Given a tree and the number of colors <b>k</b>, find the number of rainbow colorings modulo 1000000009.
+</p>
+
+<p class="problem-item">Input</p>
+<p>The first line of input gives the number of test cases, <b>C</b>.  Then for each of the <b>C</b> cases, there will be:
+</p><ul>
+<li>One line containing two integers in the format "<b>n k</b>".  <b>n</b> is the number of nodes in the tree, and <b>k</b> is the number of colors available.
+</li><li><b>n</b> - 1 lines, one for each edge, containing two integers "<b>x y</b>", indicating that the edge is between node <b>x</b> and node <b>y</b>.  Nodes are numbered from 1 to <b>n</b>.
+</li></ul>
+<p></p>
+<p class="problem-item">Output</p>
+<p>For each test case, output one line. That line should contain "Case #<b>X</b>: <b>Y</b>", where <b>X</b> is 1-based number of the case, and <b>Y</b> is the answer for that test case.</p>
+
+<p class="problem-item">Limits</p>
+<p>
+1 &lt;= <b>k</b> &lt;= 1000000000<br>
+All the node numbers are between 1 and <b>n</b>, inclusive.
+</p>
+
+<p class="problem-item">Small dataset</p>
+<p>
+1 &lt;= <b>C</b> &lt;= 100 <br>
+2 &lt;= <b>n</b> &lt;= 20
+</p>
+
+<p class="problem-item">Large dataset</p>
+<p>
+1 &lt;= <b>C</b> &lt;= 40 <br>
+2 &lt;= <b>n</b> &lt;= 500
+</p>
+
+<p class="problem-item">Sample</p>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="problem-item-gray">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="problem-item-gray">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+2<br>
+4 10<br>
+1 2<br>
+1 3<br>
+1 4<br>
+5 3<br>
+1 2<br>
+2 3<br>
+3 4<br>
+4 5<br>
+<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: 720<br>
+Case #2: 6<br>
+<br>
+</code>
+</td></tr></tbody></table>
+</div>
+
+<p>
+In the first case, the tree has four nodes.  There are edges from one node to each of the other three.  Each pair of these edges are adjacent, so for there to be a rainbow coloring, all the edges must have different colors.  There are therefore 10 x 9 x 8 = 720 rainbow colorings.
+</p>
+<p>
+In the second case, the tree itself is a path of 4 edges, and there are 3 colors.  The first three edges must all have different colors, so there are 3 x 2 x 1 colorings for these, and then there is only one choice for the fourth edge, so there are 6 rainbow colorings.
+</p>
+
+</div></div><div id="dsb-problem-page3" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text3"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table3"><tr><td class="dsb-input-table-description">Small input<br>8 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-0" class=""><div id="dsb-input-wrapper3-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-0" style="display: inline;">Solve D-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Scaled Triangle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-0">Download D-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-0">resubmit</span> for <span id="dsb-resubmit-timer3-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_6"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> D-small-practice.in.</div><form id="submit-formio_timer_6" action="https://code.google.com/codejam/contest/32010/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2EwMTZlMjEwZDM3MTQzZDVmZmE1OGVmZDdhN2UwMDZ8fDE0OTQ1NjgzMjIyODE2MDA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_6" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_6"><div id="input-file-divio_timer_6-0"><span id="source-fileio_timer_6-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_6-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_6" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_6" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_6" type="button" value="Hide"></div><div id="source-file-namesio_timer_6"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24466"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_6" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>26 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-1" class=""><div id="dsb-input-wrapper3-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-1" style="display: inline;">Solve D-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Scaled Triangle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-1">Download D-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-1">resubmit</span> for <span id="dsb-resubmit-timer3-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_7"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_7" action="https://code.google.com/codejam/contest/32010/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2EwMTZlMjEwZDM3MTQzZDVmZmE1OGVmZDdhN2UwMDZ8fDE0OTQ1NjgzMjIyODE2MDA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_7" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_7"><div id="input-file-divio_timer_7-0"><span id="source-fileio_timer_7-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_7-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_7" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_7" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_7" type="button" value="Hide"></div><div id="source-file-namesio_timer_7"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24466"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_7" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div3" class="dsb-problem-content-div" style="width: 40em;"><p class="problem-item">Problem</p>
+<p>
+In the First City of Mars there are <b>N</b> bus stops, all aligned in a straight line of length <b>N</b>-1 km. The mayor likes to keeps things simple, so he gave the bus stops numbers from 1 to <b>N</b>, and separated adjacent stops by exactly 1 km.
+</p>
+<p>
+There are also <b>K</b> buses in the city. The mayor has to plan the bus schedule and he would like to know in how many ways that can be done. This number can be very large. Luckily there are a few constraints:
+</p>
+<ul>
+  <li>In the beginning of the day all the buses are in the first <b>K</b> bus stops (one bus per stop)</li>
+  <li>Buses only move from the left to the right (1 is the leftmost bus stop)</li>
+  <li>At the end of the day all the buses must be in the last <b>K</b> bus stops (one bus per stop)</li>
+  <li>In each bus station exactly one bus has to stop</li>
+  <li>For the same bus the distance between any two consecutive stops is at most <b>P</b> km</li>
+</ul>
+<p>
+Help the mayor evaluate the number of schedules. However try not to give him very bad news (a lot of schedules) so just output the real number modulo 30031.
+</p>
+<p class="problem-item">Input</p>
+
+The first line in the input file is the number of cases <b>T</b>.<br>
+Each of the next <b>T</b> lines contains 3 integers separated by one space: <b>N</b>, <b>K</b> and <b>P</b>.
+
+<p class="problem-item">Output</p>
+For each case output the number of ways to plan the bus schedules (modulo 30031) in the format "Case #<b>t</b>: [number of ways modulo 30031]" where <b>t</b> is the number of the test case, starting from 1.
+
+<p class="problem-item">Limits</p>
+<p>
+1 &lt; <b>T</b> ≤ 30<br>
+1 &lt; <b>P</b> ≤ 10<br>
+<b>K</b> &lt; <b>N</b><br>
+1 &lt; <b>K</b> ≤ <b>P</b><br>
+</p>
+
+<p class="problem-item">Small dataset</p>
+<p>
+1 &lt; <b>N</b> &lt; 1000
+</p>
+
+<p class="problem-item">Large dataset</p>
+<p>
+1 &lt; <b>N</b> &lt; 10<sup>9</sup>
+</p>
+
+<p class="problem-item">Sample</p>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td><br><span class="problem-item-gray">Input</span><br>&nbsp;</td>
+<td><br><span class="problem-item-gray">Output</span><br>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<code>
+3<br>
+10 3 3<br>
+5 2 3<br>
+40 4 8<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: 1<br>
+Case #2: 3<br>
+Case #3: 7380<br>
+</code>
+</td></tr></tbody></table>
+</div>
+
+<p>
+Let's name the buses: A, B, C...<br>
+For the first case there is only one possible way of planning the schedule: A  →  1, 4, 7, 10.  B  →  2, 5, 8. C  →  3, 6, 9. <br>
+For the second case the possible ways of planning are:<br>
+(A → 1,3,5. B → 2,4),<br>
+(A → 1,3,4. B → 2,5),<br>
+(A → 1,4. B → 2,3,5).<br>
+</p>
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages"><div id="dsb-analysis-selections"><span id="dsb-analysis-selection-p4" class="dsb-analysis-selected">Overview</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p0" class="dsb-analysis-not-selected">Problem A</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p1" class="dsb-analysis-not-selected">Problem B</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p2" class="dsb-analysis-not-selected">Problem C</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p3" class="dsb-analysis-not-selected">Problem D</span></div><div id="dsb-problem-analysis-div4" class="dsb-problem-content-div"><p>
+The Europe, Middle East and Asia regional semifinal round turned out to be the easiest of the three semifinals, with seven contestants solving all four problems. The top three spots went to <b>bmerry</b>, <b>dzhulgakov</b> and <b>gawry</b>. Coders from Eastern Europe dominated by taking 9 of the top 10 spots.
+
+The competition was fierce, and the bar of advancing to the finals ended up at an unprecedented 50 points. For most of the top 43 contestants, that meant solving at least problems A, B and D-small.
+
+The problem set was a mix of different flavours of linear algebra and dynamic programming.
+</p>
+<br>
+<hr>
+<p class="problem-item">Credits</p>
+<p>Problem A. <i>Scaled Triangle</i> Written and prepared by Cosmin Negruseri.</p>
+<p>Problem B. <i>Painting a Fence</i> Written by John Dethridge. Prepared by Bartholomew Furrow and Daniel Rocha.</p>
+<p>Problem C. <i>Rainbow Trees</i> Written by Petr Mitrichev. Prepared by Frank Chu and Xiaomin Chen.</p>
+<p>Problem D. <i>Bus Stops</i> Written and prepared by Marius Andrei.</p>
+<p>Contest analysis presented by Cosmin Negruseri, Igor Naverniouk, Xiaomin Chen, and Marius Andrei.</p>
+</div><div id="dsb-problem-analysis-div0" class="dsb-problem-content-div" style="display: none;"><p>In this problem we are given a triangle and another triangle obtained by applying an affine transformation on the first one -- translation, rotation and scaling. We are asked to find a fixed point for this transformation.</p>
+<p>This is actually a particular case of "Bannach's fixed point theorem" which guarantees the existence and uniqueness of fixed points of certain self maps of metric spaces, though knowing the theorem was not a requirement.</p>
+
+<p>To solve this problem, we need to find the parameters of the transformation.</p>
+
+<p>Such transformations are familiar to anyone who has ever played with computer graphics. To view the transformation as a linear operator, it is convenient to use homogeneous coordinates, where our plane is embedded as the plane z=1 in 3D space. i.e., consider each point (x, y) as (x, y, 1). (<i>Note</i>: As usual, all the vectors corresponding to points are considered column vectors, in spite of the horizontal way we write them here.) In this setting, rotating a point by an angle alpha around the point (0, 0) corresponds to multiplying the vector v = (x, y, 1) by the matrix R = [[cos alpha sin alpha 0] [-sin alpha cos alpha 0] [0 0 1]]. Translating a point x, y by (dx, dy) corresponds to multiplying v by T = [[1 0 dx] [0 1 dy] [0 0 1]], and a scaling transform centered at 0 corresponds to multiplying a point v = (x, y, 1) by the matrix S = [[S 0 0] [0 S 0] [0 0 1]]. The total transform looks like this 
+</p><pre>v' = T R S v = M v.
+</pre>
+Note that above we focused on the effect of the transformation on the plane z=1. The interested reader can verify that it maps every horizontal plane z=z<sub>0</sub> to itself.
+<p></p>
+
+<p>
+To get the matrix <b>M</b>, we may solve separately for the matrices T, R, and S. There is an easier way. From the input constraints, we know that point A is mapped to A', B to B' and C to C'. View each point as a vector in the plane z=1, so that A, B, C are linearly independent. So the 3 by 3 matrix [A B C] is invertible. Therefore,
+</p><pre>M [A B C] = [A' B' C']
+</pre>
+has a unique solution for <b>M</b>.
+<p></p>
+
+<p>From here, there are still two solutions to our problem. One observation is that if we apply the transformation and we have a point that doesn't change, we can apply it again on the resulting triangle and the point will remain the same.  So we apply this transformation until the triangle becomes very small. The fixed point will still be inside the triangle so we can stop when the side lengths of the current triangle get smaller than the needed precision.</p>
+
+<p>The more algebraic solution looks at the equation again. We know there is a unique point v = (x, y, 1) such that <b>M</b> v = v. From here we know that (i) 1 must be an eigen-value for the matrix M; (ii) the space of the eigen-vectors corresponding to 1 must be one-dimensional.<br>
+So we can just solve the equation [M - I] v = 0, and find the intersection of the solution space (a line) and the plane z=1.
+</p>
+
+<p class="problem-item">
+More information:
+</p>
+<p>
+<a href="http://www.google.com/search?q=banach+fixed+point+theorem" target="_blank">Banach fixed point theorem</a> - 
+<a href="http://www.google.com/search?q=homogeneous+coordinate" target="_blank">Homogeneous coordinate</a> - 
+<a href="http://www.google.com/search?q=eigen+value" target="_blank">Eigen value, eigenvectors, and more</a>
+</p>
+</div><div id="dsb-problem-analysis-div1" class="dsb-problem-content-div" style="display: none;"><p>
+This was meant to be the easiest problem in the match. A straightforward brute force solution suffices.
+</p>
+<p>
+Step 1. Pick a set <b>C</b> of (up to) three colors to be used. There are <b>N</b> different colors, so O(N<sup>3</sup>) such choices.
+</p>
+<p>
+Step 2. From the offers, filter out the ones where the color is not in the set <b>C</b>. We want to figure out whether the remaining offers can cover the whole fence, and if so, what the minimum required number of offers is.
+</p>
+<p>
+Step 2 is a classical problem with a greedy scanline solution. We sort the offers (intervals) by their left endpoint, and scan from left to right, considering the offers one by one. At any moment, if we have covered the fence from section 1 to <b>k</b>, we always pick the next offer so that it starts before <b>k</b> and ends as far to the right as possible.
+</p>
+<p>
+If we sort all the offers by their left endpoing in the beginning, then step 2 takes time O(N), and the whole algorithm runs in time O(N<sup>4</sup>). Given the 8 minutes time limit, this solution is fast enough.
+</p>
+</div><div id="dsb-problem-analysis-div2" class="dsb-problem-content-div" style="display: none;"><p>
+Pick any vertex <b>r</b>. We view the tree as rooted at <b>r</b>, and -- as usual -- draw the tree with the root at the top, and draw the nodes of depth <b>d</b> at the same level, <b>d</b> units below the root.
+</p>
+<p>
+By a <i>partial coloring</i> on a subset of edges we mean the assignment of colors to the edges in the subset so that the "rainbow coloring" constraint is satisfied on that subset. We do not care about the coloring of the edges that are not in the subset.<br> 
+For each node <b>x</b>, we define the value
+</p><blockquote>
+f(x) := number of ways to color the subtree rooted at <b>x</b>, given any partial coloring for the set of edges that are incident to the parent of <b>x</b>.
+</blockquote>
+It is not at all obvious that f(x) is well defined. (Why would the number always be the same for any given partial coloring?). To see that f(x) is indeed well defined, let's look at an algorithm for computing it.
+<p></p>
+<p>
+Suppose <b>z</b> is the parent of <b>x</b>, and the degree of <b>z</b> is <b>D</b>. Note that the rainbow constraint is a very local condition -- the color of any edge other than those incident to <b>z</b> does not affect the coloring for the subtree rooted at <b>x</b>.
+</p>
+<p>
+Assume that <b>x</b> has <b>t</b> children -- <b>y</b><sub>1</sub>, <b>y</b><sub>2</sub>, ..., <b>y</b><sub>t</sub>. To color all the edges in the subtree rooted at <b>x</b>, we do the following.
+</p><ul>
+<li>
+Color the edge <b>x y</b><sub>1</sub>. There are <b>k</b> - <b>D</b> choices, since this edge cannot have the same color as any of the <b>D</b> edges incident to <b>z</b>, and no other edge in the partial coloring puts any constraint on it.
+</li>
+<li>
+Color the edge <b>x y</b><sub>2</sub>. There are <b>k</b> - <b>D</b> - 1 choices, since this edge cannot have the same color as any of the <b>D</b> edges as above, nor the same color as <b>x y</b><sub>1</sub>.
+</li>
+<li>...</li>
+<li>
+Color the edge <b>x y</b><sub>t</sub>. There are <b>k</b> - <b>D</b> - t + 1 choices.
+</li>
+<li>
+Now we have a partial coloring where all the edges incident to <b>x</b> are colored. We color the subtree rooted at <b>y</b><sub>1</sub>. There are f(y<sub>1</sub>) ways.
+</li>
+<li>...</li>
+<li>
+There are f(y<sub>t</sub>) ways to color the subtree rooted at <b>y</b><sub>t</sub>.
+</li>
+</ul>
+Indeed, the computation only depends on <b>D</b>, the degree of the parent of <b>x</b>. f(x) is the product of the numbers above.
+<p></p>
+<p>
+There is nothing very special about the root <b>r</b>, except that we need to agree <b>D</b> = 0 in that case. And the solution to our problem is just f(r).
+</p>
+</div><div id="dsb-problem-analysis-div3" class="dsb-problem-content-div" style="display: none;">The problem can be solved by using dynamic programming and matrix multiplication for solving linear recursive sequences.<br>
+<br>
+Consider a configuration of buses that are within a window of width P and advance the leftmost bus in such a way that all of the buses are still within a (shifted) window of width P.<br>
+<br>
+Now we can define a state as the position of the buses within P units. 
+For instance if we have P = 10 and K = 5 buses, then we have 252 possible states (10 choose 5). Let NS be the number of states.<br>
+To be sure we don't count the same state in different windows we can required that there always be a bus at the leftmost position in the window.<br>
+<br>
+To advance the window of size P we move the leftmost bus. There is always a bus there. Now remember that the new state has to have a bus at the leftmost position, so the window might move to the right by more than one spot.<br>
+<br>
+We compute all the possible state transitions. Let C be the matrix of state transitions having C<sub>a,b</sub> be the number of ways we can go from state a to state b.<br>
+For each state j, with the window in the position i we will have something like:<br>
+<br>
+A[S<sub>j</sub>][i+1] = C<sub>1,j</sub>A[S<sub>1</sub>][i] + C<sub>2,j</sub>A[S<sub>2</sub>][i] + ... + C<sub>NS,j</sub>A[S<sub>NS</sub>][i]<br>
+<br>
+A[s][p] is the number of ways we can get into state s while having the window in position p.<br>
+<br>
+This would be enough to solve the small input. For the large input we need to speed things up, so we are going to compute that linear recurrence of order NS by using matrix multiplication. Let's look instead at a much simpler example of a linear recurrence -- Fibonacci numbers.<br>
+F<sub>N</sub> = F<sub>N-1</sub> + F<sub>N-2</sub><br>
+<br>
+This can be rewritten as:<br>
+<br>
+(1 0) * (F<sub>N-2</sub>) = (F<sub>N-1</sub>)<br>
+(1 1) &nbsp;  (F<sub>N-1</sub>) &nbsp; &nbsp;(F<sub>N</sub> &nbsp;)<br>
+<br>
+<br>
+In a shorter form we have:<br>
+<br>
+M * V<sub>N-1</sub> = V<sub>N</sub><br>
+<br>
+This says that to compute V<sub>N</sub> = (F<sub>N</sub>, F<sub>N-1</sub>) from V<sub>N-1</sub> = (F<sub>N-2</sub>, F<sub>N-1</sub>) we need to multiply with M. Now we can apply this recursively:<br>
+<br>
+M<sup>X</sup> * V<sub>0</sub> = V<sub>X</sub><br>
+<br>
+M<sup>X</sup> can be computed using an algorithm called <i>successive squaring</i> in time that is logarithmic in X.</div></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table" style="display: block;">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">[Unknown]<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">37:54</td><td></td><td><i>Can a section be painted twice (so that only the last painted color is counted) ?</i></td><td></td><td class="clarTimeColumn" style="color: red;">38:28</td><td></td><td><i>Yes.</i></td></tr><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">[Unknown]<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">8:51</td><td></td><td><i>can the triangle be rotated upside down (i.e. is symmetry allowed?)</i></td><td></td><td class="clarTimeColumn" style="color: red;">11:26</td><td></td><td><i>No, you do not flip the triangles.</i></td></tr></tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification" style="display: none;">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="OGQ4ZDE4YTM2ZGU2NGM5NmM1ZDVjY2ExODJjNzQxNjZ8fDE0OTQ1NjgzMjE4MTAxMDA="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="24464">A. Scaled Triangle</option><option value="24467">B. Painting a Fence</option><option value="24465">C. Rainbow Trees</option><option value="24466">D. Bus Stops</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0px 0.3em; display: block;">You cannot ask questions at this time. Please email us at codejam@google.com.</div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2017 Google</span>
+  <a href="http://www.google.com/">Google Home</a> -
+  <a href="https://code.google.com/codejam/terms.html">Terms and Conditions</a> -
+  <a href="http://www.google.com/intl/en/policies">Privacy Policies and Principles</a>
+  <br><br>
+  <a href="http://cloud.google.com/"><img width="125" height="91" src="./Problem A. Scaled Triangle_files/powered_by_gcp_logo.png"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div></body></html>

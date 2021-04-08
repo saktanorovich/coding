@@ -1,0 +1,699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)https://code.google.com/codejam/contest/4374486/dashboard#s=p3 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - Kickstart Practice Round 2018 - Google Code Jam
+  </title>
+
+    <style>@import '//www.google.com/css/modules/buttons/g-button-sparrow.css';</style>
+    <link rel="stylesheet" type="text/css" href="./Problem D. Sums of Sums_files/app.css">
+
+
+
+
+
+    <script type="text/javascript" async="" src="./Problem D. Sums of Sums_files/ga.js.download"></script><script src="./Problem D. Sums of Sums_files/App_en.js.download"></script><style></style>
+    
+
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.dashboardMain().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "4374486";
+      GCJ.contest.name = "Kickstart Practice Round 2018";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 1;
+      
+      GCJ.contest.start_int = 1519488000;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=4374486"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam/kickstart";
+    };
+  //-->
+  </script>
+</head>
+
+<body onload="GCJ.dashboardMain()" class="page-dashboard">
+
+<div id="logo-div">
+  <a href="https://code.google.com/codejam/kickstart/">
+    <img src="./Problem D. Sums of Sums_files/logo_kickstart_2017.jpg" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">Kickstart Practice Round 2018</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link">A. GBus count  </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. Googol String  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link">C. Sort a scrambled itinerary  </div></div></div><div><div id="dsb-problem-tab3" class="dsb-problem-tab-open" tabindex="0" role="button">  <div id="dsb-problem-title3" class="dynamic-link">D. Sums of Sums  </div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-analysis-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab" class="dsb-has-new-question-tab">Questions asked<span class="dsb-unread-count">2</span></div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();" style="cursor: pointer;">
+      <img id="dsb-status-panel-button" src="./Problem D. Sums of Sums_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">GBus count</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">9pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: block;"><b>662/821 users</b> correct (81%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">15pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: block;"><b>628/659 users</b> correct (95%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Googol String</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">7pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: block;"><b>377/425 users</b> correct (89%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_1" class="inputName">12pt</td>      <td class="status">        <div id="selfStat1_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_1" class="globalStat" style="display: block;"><b>247/353 users</b> correct (70%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Sort a scrambled itinerary</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">11pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: block;"><b>383/421 users</b> correct (91%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">15pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: block;"><b>352/382 users</b> correct (92%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper3" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Sums of Sums</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_0" class="inputName">8pt</td>      <td class="status">        <div id="selfStat3_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_0" class="globalStat" style="display: block;"><b>228/273 users</b> correct (84%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_1" class="inputName">28pt</td>      <td class="status">        <div id="selfStat3_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_1" class="globalStat" style="display: block;"><b>37/150 users</b> correct (25%)</div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)" style="cursor: pointer;">
+          <img id="dsb-scoreboard-panel-button" src="./Problem D. Sums of Sums_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td class="dsb-name-td" id="sbName_0">Artie</td><td class="dsb-score-td" id="sbScore_0">105</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td class="dsb-name-td" id="sbName_1">Ayush.Agrawal</td><td class="dsb-score-td" id="sbScore_1">105</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td class="dsb-name-td" id="sbName_2">zzxzxzzxz</td><td class="dsb-score-td" id="sbScore_2">105</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td class="dsb-name-td" id="sbName_3">mr.Nilesh</td><td class="dsb-score-td" id="sbScore_3">105</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td class="dsb-name-td" id="sbName_4">Doju</td><td class="dsb-score-td" id="sbScore_4">105</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td class="dsb-name-td" id="sbName_5">VietaFan</td><td class="dsb-score-td" id="sbScore_5">105</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td class="dsb-name-td" id="sbName_6">JohnSmith</td><td class="dsb-score-td" id="sbScore_6">105</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td class="dsb-name-td" id="sbName_7">wilsonlym</td><td class="dsb-score-td" id="sbScore_7">105</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td class="dsb-name-td" id="sbName_8">pedrosorio</td><td class="dsb-score-td" id="sbScore_8">105</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td class="dsb-name-td" id="sbName_9">ivanilos</td><td class="dsb-score-td" id="sbScore_9">105</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-sub-link" style="display: none;">View submissions.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">Practice Mode</span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div" style="display: none;">
+          Rank: <span id="dsb-current-rank-span">--</span>
+        </span>
+        <span id="dsb-current-score-div" style="display: none;">
+          Score: <span id="dsb-current-score-span">--</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="https://code.google.com/codejam/contest/4374486/scoreboard?c=4374486">Contest scoreboard</a> | <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://code.google.com/codejam/contest/dashboard%253Fc%253D4374486">Sign in</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;"><span style="color:#666">Problem D.</span> Sums of Sums</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>9 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem D. Sums of Sums_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_0"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> A-small-practice.in.</div><form id="submit-formio_timer_0" action="https://code.google.com/codejam/contest/4374486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MjYwYzY2NjJkMzIzM2I4YjBiOGRjODIyNTM1YTgwYTl8fDE1MjI5Mjk2NTI5NTEzNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_0" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_0"><div id="input-file-divio_timer_0-0"><span id="source-fileio_timer_0-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_0-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_0" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_0" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_0" type="button" value="Hide"></div><div id="source-file-namesio_timer_0"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5761094782025728"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_0" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>15 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem D. Sums of Sums_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1">Download A-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_1"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_1" action="https://code.google.com/codejam/contest/4374486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MjYwYzY2NjJkMzIzM2I4YjBiOGRjODIyNTM1YTgwYTl8fDE1MjI5Mjk2NTI5NTEzNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_1" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_1"><div id="input-file-divio_timer_1-0"><span id="source-fileio_timer_1-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_1-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_1" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_1" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_1" type="button" value="Hide"></div><div id="source-file-namesio_timer_1"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5761094782025728"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_1" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+There exists a straight line along which cities are built.<br><br>
+Each city is given a number starting from 1. So if there are 10 cities, city 1 has a number 1, city 2 has a number 2,... city 10 has a number 10.<br><br>
+Different buses (named GBus) operate within different cities, covering all the cities along the way. The cities covered by a GBus are represented as
+'first_city_number last_city_number'
+So, if a GBus covers cities 1 to 10 inclusive, the cities covered by it are represented as '1 10'<br><br>
+
+We are given the cities covered by all the GBuses. We need to find out how many GBuses go through a particular city.
+
+</p>
+
+<h3>Input</h3>
+<p>
+The first line contains the number of test cases (<b>T</b>), after which <b>T</b> cases follow each separated from the next with a <b>blank</b> line.<br>
+For each test case, <br>
+The first line contains the number of GBuses.(<b>N</b>) <br>
+Second line contains the cities covered by them in the form <br>
+<b>a<sub>1</sub> b<sub>1</sub> a<sub>2</sub> b<sub>2</sub> a<sub>3</sub> b<sub>3</sub>...a<sub>n</sub> b<sub>n</sub></b> <br>
+where GBus1 covers cities numbered from a<sub>1</sub> to b<sub>1</sub>, GBus2 covers cities numbered from a<sub>2</sub> to b<sub>2</sub>, GBus3 covers cities numbered from a<sub>3</sub> to b<sub>3</sub>, upto <b>N</b> GBuses. <br>
+Next line contains the number of cities for which GBus count needs to be determined (<b>P</b>). <br>
+The below <b>P</b> lines contain different city numbers. <br>
+
+</p><h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #T<sub>i</sub>:" followed by <b>P</b> numbers corresponding to the number of cities each of those <b>P</b> GBuses goes through. <br>
+
+<br>
+
+</p>
+
+
+<h3>Limits</h3>
+<p>
+1 &lt;= <b>T</b> &lt;= 10 <br>
+<b>a<sub>i</sub></b> and <b>b<sub>i</sub></b> will always be integers.
+
+</p>
+
+<h3>Small dataset</h3>
+<p>
+1 &lt;= <b>N</b> &lt;= 50 <br>
+1 &lt;= <b>a<sub>i</sub></b> &lt;= 500, 1 &lt;= <b>b<sub>i</sub></b> &lt;= 500 <br>
+1 &lt;= <b>P</b> &lt;= 50
+</p>
+
+<h3>Large dataset</h3>
+<p>
+1 &lt;= <b>N</b> &lt;= 500 <br>
+1 &lt;= <b>a<sub>i</sub></b> &lt;= 5000, 1 &lt;= <b>b<sub>i</sub></b> &lt;= 5000 <br>
+1 &lt;= <b>P</b> &lt;= 500
+</p>
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+</td></tr>
+<tr>
+<td>
+<pre class="io-content">2
+4
+15 25 30 35 45 50 10 20
+2
+15
+25
+
+10
+10 15 5 12 40 55 1 10 25 35 45 50 20 28 27 35 15 40 4 5
+3
+5
+10
+27
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<br><hr><br>
+</td>
+</tr>
+<tr>
+<td>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">Case #1: 2 1
+Case #2: 3 3 4
+
+
+
+</pre>
+</td></tr>
+</tbody></table>
+</div>
+
+
+Explanation for case 1:<br>
+2 GBuses go through city 15 (GBus1 [15 25] and GBus4 [10 20]) <br>
+1 GBus goes through city 25 (GBus1 [15 25]) <br></div></div><div id="dsb-problem-page1" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>7 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem D. Sums of Sums_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_2"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> B-small-practice.in.</div><form id="submit-formio_timer_2" action="https://code.google.com/codejam/contest/4374486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MjYwYzY2NjJkMzIzM2I4YjBiOGRjODIyNTM1YTgwYTl8fDE1MjI5Mjk2NTI5NTEzNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_2" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_2"><div id="input-file-divio_timer_2-0"><span id="source-fileio_timer_2-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_2-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_2" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_2" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_2" type="button" value="Hide"></div><div id="source-file-namesio_timer_2"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5761863111409664"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_2" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>12 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-1" class=""><div id="dsb-input-wrapper1-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-1" style="display: inline;">Solve B-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem D. Sums of Sums_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-1">Download B-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_3"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_3" action="https://code.google.com/codejam/contest/4374486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MjYwYzY2NjJkMzIzM2I4YjBiOGRjODIyNTM1YTgwYTl8fDE1MjI5Mjk2NTI5NTEzNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_3" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_3"><div id="input-file-divio_timer_3-0"><span id="source-fileio_timer_3-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_3-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_3" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_3" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_3" type="button" value="Hide"></div><div id="source-file-namesio_timer_3"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5761863111409664"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_3" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+A "0/1 string" is a string in which every character is either <code>0</code> or <code>1</code>. There are two operations that can be performed on a 0/1 string:
+</p><ul>
+<li><b>switch</b>: Every <code>0</code> becomes <code>1</code> and every <code>1</code> becomes <code>0</code>. For example, "100" becomes "011".</li>
+<li><b>reverse</b>: The string is reversed. For example, "100" becomes "001".</li>
+</ul>
+<p></p>
+
+<p>
+Consider this infinite sequence of 0/1 strings:<br>
+<br>
+S<sub>0</sub> = ""<br>
+<br>
+S<sub>1</sub> = "0"<br>
+<br>
+S<sub>2</sub> = "001"<br>
+<br>
+S<sub>3</sub> = "0010011"<br>
+<br>
+S<sub>4</sub> = "001001100011011"<br>
+<br>
+...<br>
+<br>
+S<sub>N</sub> = S<sub>N-1</sub> + "0" + <b>switch</b>(<b>reverse</b>(S<sub>N-1</sub>)).
+</p>
+
+<p>
+You need to figure out the Kth character of S<sub>googol</sub>, where googol = 10<sup>100</sup>.
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>.  Each of the next <b>T</b> lines contains a number <b>K</b>.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #x: y", where x is the test case number (starting from 1) and y is the <b>K</b>th character of S<sub>googol</sub>.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>K</b> ≤ 10<sup>5</sup>.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>K</b> ≤ 10<sup>18</sup>.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">4
+1
+2
+3
+10
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 0
+Case #2: 0
+Case #3: 1
+Case #4: 0
+
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+</div></div><div id="dsb-problem-page2" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input<br>11 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem D. Sums of Sums_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_4"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice.in.</div><form id="submit-formio_timer_4" action="https://code.google.com/codejam/contest/4374486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MjYwYzY2NjJkMzIzM2I4YjBiOGRjODIyNTM1YTgwYTl8fDE1MjI5Mjk2NTI5NTEzNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_4" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_4"><div id="input-file-divio_timer_4-0"><span id="source-fileio_timer_4-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_4-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_4" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_4" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_4" type="button" value="Hide"></div><div id="source-file-namesio_timer_4"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5630689642807296"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_4" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>15 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem D. Sums of Sums_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1">Download C-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_5"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_5" action="https://code.google.com/codejam/contest/4374486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MjYwYzY2NjJkMzIzM2I4YjBiOGRjODIyNTM1YTgwYTl8fDE1MjI5Mjk2NTI5NTEzNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_5" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_5"><div id="input-file-divio_timer_5-0"><span id="source-fileio_timer_5-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_5-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_5" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_5" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_5" type="button" value="Hide"></div><div id="source-file-namesio_timer_5"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5630689642807296"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_5" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+Once upon a day, Mary bought a one-way ticket from somewhere to somewhere with some flight transfers.<br><br>
+For example: SFO-&gt;DFW DFW-&gt;JFK JFK-&gt;MIA MIA-&gt;ORD.<br>
+<br>
+Obviously, transfer flights at a city twice or more doesn't make any sense. So Mary will not do that.<br>
+<br>
+
+Unfortunately, after she received the tickets, she messed up the tickets and she forgot the order of the ticket.<br>
+<br>
+Help Mary rearrange the tickets to make the tickets in correct order.
+</p>
+
+<h3>Input</h3>
+<p>
+The first line contains the number of test cases <b>T</b>, after which <b>T</b> cases follow.<br>
+For each case, it starts with an integer <b>N</b>. There are <b>N</b> flight tickets follow.<br>
+Each of the next 2 lines contains the source and destination of a flight ticket.
+
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #x: itinerary", where <b>x</b> is the test case number (starting from 1) and <b>itinerary</b> is sorted list of flight tickets which represents the actual itinerary. Each flight segment in the itinerary should be outputted as pair of source-destination airport codes.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+
+For each case, the input tickets are messed up from an entire itinerary bought by Mary. In other words, it's ensured can be recovered to a valid itinerary.
+</p>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 100.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 10<sup>4</sup>.<br>
+</p>
+
+(The segment for second case in sample can be seen as below)
+MIA-ORD, DFW-JFK, SFO-DFW, JFK-MIA
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">2
+1
+SFO
+DFW
+4
+MIA
+ORD
+DFW
+JFK
+SFO
+DFW
+JFK
+MIA
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: SFO-DFW
+Case #2: SFO-DFW DFW-JFK JFK-MIA MIA-ORD
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+</div></div><div id="dsb-problem-page3" class="dsb-content-pages" style="display: block;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text3"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table3"><tr><td class="dsb-input-table-description">Small input<br>8 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-0" class=""><div id="dsb-input-wrapper3-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-0" style="display: inline;">Solve D-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem D. Sums of Sums_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-0">Download D-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-0">resubmit</span> for <span id="dsb-resubmit-timer3-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_6"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> D-small-practice.in.</div><form id="submit-formio_timer_6" action="https://code.google.com/codejam/contest/4374486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MjYwYzY2NjJkMzIzM2I4YjBiOGRjODIyNTM1YTgwYTl8fDE1MjI5Mjk2NTI5NTEzNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_6" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_6"><div id="input-file-divio_timer_6-0"><span id="source-fileio_timer_6-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_6-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_6" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_6" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_6" type="button" value="Hide"></div><div id="source-file-namesio_timer_6"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5659121957208064"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_6" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>28 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-1" class=""><div id="dsb-input-wrapper3-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-1" style="display: inline;">Solve D-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem D. Sums of Sums_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-1">Download D-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-1">resubmit</span> for <span id="dsb-resubmit-timer3-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_7"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_7" action="https://code.google.com/codejam/contest/4374486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MjYwYzY2NjJkMzIzM2I4YjBiOGRjODIyNTM1YTgwYTl8fDE1MjI5Mjk2NTI5NTEzNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_7" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_7"><div id="input-file-divio_timer_7-0"><span id="source-fileio_timer_7-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_7-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_7" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_7" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_7" type="button" value="Hide"></div><div id="source-file-namesio_timer_7"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5659121957208064"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_7" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div3" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+Alice presented her friend Bob with an array of <b>N</b> positive integers, indexed from 1 to <b>N</b>. She challenged Bob with many queries of the form "what is the sum of the numbers between these two indexes?" But Bob was able to solve the problem too easily.
+</p>
+<p>
+Alice took her array and found all <b>N</b>*(<b>N</b>+1)/2 non-empty subarrays of it. She found the sum of each subarray, and then sorted those values (in nondecreasing order) to create a new array, indexed from 1 to <b>N</b>*(<b>N</b>+1)/2. For example, for an initial array [2, 3, 2], Alice would generate the subarrays [2], [3], [2], [2, 3], [3, 2], and [2, 3, 2] (note that [2, 2], for example, is <b>NOT</b> a subarray). Then she'd take the sums -- 2, 3, 2, 5, 5, 7 -- and sort them to get a new array of [2, 2, 3, 5, 5, 7].
+</p>
+<p>
+Alice has given the initial array to Bob, along with <b>Q</b> queries of the form "what is the sum of the numbers from index <b>L<sub>i</sub></b> to <b>R<sub>i</sub></b>, inclusive, in the new array?" Now Bob's in trouble! Can you help him out?
+</p>
+
+<h3>Input</h3>
+<p>
+
+The first line of the input gives the number of test cases, <b>T</b>. <b>T</b> test cases follow. Each test case begins with one line with two space-separated integers <b>N</b> and <b>Q</b>, denoting the number of elements in the initial array and the number of Alice's queries. Then, there is one line with <b>N</b> space-separated integers, denoting the elements of Alice's initial array. Finally, there are <b>Q</b> more lines with two space-separated integers each: <b>L<sub>i</sub></b> and <b>R<sub>i</sub></b>, the inclusive index bounds for the i-th query.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line with <code>Case #x:</code>, where <b>x</b> is the test case number (starting from 1). Then output <b>Q</b> more lines, each with one integer, representing the answers to the queries (in the order they were asked).
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 10.<br>
+1 ≤ <b>Q</b> ≤ 20.<br>
+1 ≤ each element of the initial array ≤ 100.<br>
+1 ≤ <b>L<sub>i</sub></b> ≤ <b>R<sub>i</sub></b> ≤ N*(N+1)/2.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 10<sup>3</sup>.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 200000.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">1
+5 5
+5 4 3 2 1
+1 1
+1 10
+1 15
+3 8
+4 11
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1:
+1
+45
+105
+26
+48
+</pre>
+</td></tr></tbody></table>
+</div>
+
+<p>
+In sample case #1, Alice's new array would be: [1, 2, 3, 3, 4, 5, 5, 6, 7, 9, 9, 10, 12, 14, 15].
+</p>
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages"></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table" style="display: block;">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">Sort a scrambled itinerary<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">14:34:25</td><td></td><td><i>'Obviously, transfer flights at a city twice or more doesn't make any sense. So Mary will not do that.'
+Does this mean Mary will never comeback to a city she has already been in.
+</i></td><td></td><td class="clarTimeColumn" style="color: red;">15:05:20</td><td></td><td><i>Mary will never comeback to a city she has already been in.</i></td></tr><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">Sort a scrambled itinerary<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">38:00</td><td></td><td><i>How are the airport codes formatted?</i></td><td></td><td class="clarTimeColumn" style="color: red;">39:22</td><td></td><td><i>An airport code consists of 3 capital letters A-Z.</i></td></tr></tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification" style="display: none;">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="MGQyY2NkM2U0MDdkOTc1YzQ1MmJmYzFhNmI1NzViMTd8fDE1MjI5Mjk2NTIzMTg2ODA="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="5761094782025728">A. GBus count</option><option value="5761863111409664">B. Googol String</option><option value="5630689642807296">C. Sort a scrambled itinerary</option><option value="5659121957208064">D. Sums of Sums</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0px 0.3em; display: block;">You cannot ask questions at this time. Please email us at codejam@google.com.</div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2018 Google</span>
+  <a href="https://www.google.com/">Google Home</a> -
+  <a href="https://code.google.com/codejam/kickstart/terms">Terms and Conditions</a> -
+  <a href="http://www.google.com/intl/en/policies">Privacy Policies and Principles</a>
+  <br><br>
+  <a href="http://cloud.google.com/"><img width="125" height="91" src="./Problem D. Sums of Sums_files/powered_by_gcp_logo.png"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div></body></html>

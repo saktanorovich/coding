@@ -1,0 +1,1444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)https://code.google.com/codejam/contest/3264486/dashboard#s=p1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - Qualification Round 2017 - Google Code Jam
+  </title>
+
+    <style>@import '//www.google.com/css/modules/buttons/g-button-sparrow.css';</style>
+    <link rel="stylesheet" type="text/css" href="./Problem B. Tidy Numbers_files/app.css">
+
+
+
+
+
+    <script type="text/javascript" async="" src="./Problem B. Tidy Numbers_files/ga.js.download"></script><script src="./Problem B. Tidy Numbers_files/App_en.js.download"></script><style></style>
+    
+
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.dashboardMain().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "3264486";
+      GCJ.contest.name = "Qualification Round 2017";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 3;
+      
+      GCJ.contest.start_int = 1491606000;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=3264486"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam";
+    };
+  //-->
+  </script>
+</head>
+
+<body onload="GCJ.dashboardMain()" class="page-dashboard">
+
+<div id="logo-div">
+  <a href="https://code.google.com/codejam/">
+    <img src="./Problem B. Tidy Numbers_files/logo_image2.gif" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">Qualification Round 2017</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link">A. Oversized Pancake Flipper  </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-open" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. Tidy Numbers  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link">C. Bathroom Stalls  </div></div></div><div><div id="dsb-problem-tab3" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title3" class="dynamic-link">D. Fashion Show  </div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-analysis-tab-close" tabindex="0" role="button" style="display: block;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab" class="">Questions asked</div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();">
+      <img id="dsb-status-panel-button" src="./Problem B. Tidy Numbers_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Oversized Pancake Flipper</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">5pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: block;"><b>19627/23633 users</b> correct (83%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">10pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: block;"><b>17799/19074 users</b> correct (93%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Tidy Numbers</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">5pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: block;"><b>24252/26070 users</b> correct (93%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_1" class="inputName">15pt</td>      <td class="status">        <div id="selfStat1_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_1" class="globalStat" style="display: block;"><b>17755/22161 users</b> correct (80%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Bathroom Stalls</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">5pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: block;"><b>13982/16042 users</b> correct (87%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">10pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: block;"><b>10822/13226 users</b> correct (82%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_2" class="inputName">15pt</td>      <td class="status">        <div id="selfStat2_2" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_2" class="globalStat" style="display: block;"><b>5954/8864 users</b> correct (67%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper3" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Fashion Show</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_0" class="inputName">10pt</td>      <td class="status">        <div id="selfStat3_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_0" class="globalStat" style="display: block;"><b>996/2522 users</b> correct (39%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_1" class="inputName">25pt</td>      <td class="status">        <div id="selfStat3_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_1" class="globalStat" style="display: block;"><b>591/843 users</b> correct (70%)</div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)" style="cursor: pointer;">
+          <img id="dsb-scoreboard-panel-button" src="./Problem B. Tidy Numbers_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td class="dsb-name-td" id="sbName_0">FatalEagle</td><td class="dsb-score-td" id="sbScore_0">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td class="dsb-name-td" id="sbName_1">ACMonster</td><td class="dsb-score-td" id="sbScore_1">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td class="dsb-name-td" id="sbName_2">y0105w49</td><td class="dsb-score-td" id="sbScore_2">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td class="dsb-name-td" id="sbName_3">johngs</td><td class="dsb-score-td" id="sbScore_3">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td class="dsb-name-td" id="sbName_4">HellKitsune123</td><td class="dsb-score-td" id="sbScore_4">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td class="dsb-name-td" id="sbName_5">SergeyRogulenko</td><td class="dsb-score-td" id="sbScore_5">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td class="dsb-name-td" id="sbName_6">spnautilus</td><td class="dsb-score-td" id="sbScore_6">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td class="dsb-name-td" id="sbName_7">BudAlNik</td><td class="dsb-score-td" id="sbScore_7">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td class="dsb-name-td" id="sbName_8">mjy0724</td><td class="dsb-score-td" id="sbScore_8">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td class="dsb-name-td" id="sbName_9">pwild</td><td class="dsb-score-td" id="sbScore_9">100</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-sub-link" style="display: none;">View submissions.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">Practice Mode</span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div" style="display: none;">
+          Rank: <span id="dsb-current-rank-span">--</span>
+        </span>
+        <span id="dsb-current-score-div" style="display: none;">
+          Score: <span id="dsb-current-score-span">--</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="https://code.google.com/codejam/contest/3264486/scoreboard?c=3264486">Contest scoreboard</a> | <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://code.google.com/codejam/contest/dashboard%253Fc%253D3264486&amp;ltmpl=">Sign in</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;"><span style="color:#666">Problem B.</span> Tidy Numbers</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>5 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Tidy Numbers_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_0"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> A-small-practice.in.</div><form id="submit-formio_timer_0" action="https://code.google.com/codejam/contest/3264486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzM3YWVhY2FmNWNkZDc0NThiMWNmNTU1MGQ1NDRhMDB8fDE0OTI0OTIyMDI4ODk5MzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_0" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_0"><div id="input-file-divio_timer_0-0"><span id="source-fileio_timer_0-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_0-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_0" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_0" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_0" type="button" value="Hide"></div><div id="source-file-namesio_timer_0"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5736519012712448"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_0" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Tidy Numbers_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1">Download A-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_1"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_1" action="https://code.google.com/codejam/contest/3264486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzM3YWVhY2FmNWNkZDc0NThiMWNmNTU1MGQ1NDRhMDB8fDE0OTI0OTIyMDI4ODk5MzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_1" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_1"><div id="input-file-divio_timer_1-0"><span id="source-fileio_timer_1-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_1-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_1" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_1" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_1" type="button" value="Hide"></div><div id="source-file-namesio_timer_1"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5736519012712448"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_1" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  <a href="https://code.google.com/codejam/contest/6254486/dashboard#s=p1">Last year</a>,
+  the Infinite House of Pancakes introduced a new kind of pancake.
+  It has a happy face made of chocolate chips on one side (the "happy side"),
+  and nothing on the other side (the "blank side").
+</p>
+<p>
+  You are the head cook on duty. The pancakes are cooked in a single row over a
+  hot surface. As part of its infinite efforts to maximize efficiency, the
+  House has recently given you an oversized pancake flipper that flips exactly
+  <b>K</b> consecutive pancakes. That is, in that range of <b>K</b> pancakes,
+  it changes every happy-side pancake to a blank-side pancake, and vice versa;
+  it does <i>not</i> change the left-to-right order of those pancakes.
+</p><p>
+  You cannot flip fewer than <b>K</b> pancakes at a time with the flipper,
+  even at the ends of the row (since there are raised borders on both sides of
+  the cooking surface). For example, you can flip the first <b>K</b> pancakes,
+  but not the first <b>K</b> - 1 pancakes.
+</p><p>
+  Your apprentice cook, who is still learning the job, just used the
+  old-fashioned single-pancake flipper to flip some individual pancakes and
+  then ran to the restroom with it, right before the time when customers come
+  to visit the kitchen. You only have the oversized pancake flipper left, and
+  you need to use it quickly to leave all the cooking pancakes happy side up,
+  so that the customers leave feeling happy with their visit.
+</p><p>
+  Given the current state of the pancakes, calculate the minimum number of uses
+  of the oversized pancake flipper needed to leave all pancakes happy side up,
+  or state that there is no way to do it.
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> test cases follow. Each consists of one line with a string <b>S</b>
+  and an integer <b>K</b>. <b>S</b> represents the row of pancakes: each of its
+  characters is either <code>+</code> (which represents a pancake that is
+  initially happy side up) or <code>-</code> (which represents a pancake that
+  is initially blank side up).
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1) and <code>y</code>
+  is either <code>IMPOSSIBLE</code> if there is no way to get all the pancakes
+  happy side up, or an integer representing the the minimum number of times you
+  will need to use the oversized pancake flipper to do it.
+</p>
+
+<h3>Limits</h3>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+  Every character in <b>S</b> is either <code>+</code> or <code>-</code>.<br>
+  2 ≤ <b>K</b> ≤ length of <b>S</b>.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  2 ≤ length of <b>S</b> ≤ 10.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  2 ≤ length of <b>S</b> ≤ 1000.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">3
+---+-++- 3
++++++ 4
+-+-+- 4
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 3
+Case #2: 0
+Case #3: IMPOSSIBLE
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  In Case #1, you can get all the pancakes happy side up by first flipping the
+  leftmost 3 pancakes, getting to <code>++++-++-</code>, then the rightmost 3,
+  getting to <code>++++---+</code>, and finally the 3 pancakes that remain
+  blank side up. There are other ways to do it with 3 flips or more, but none
+  with fewer than 3 flips.
+</p><p>
+  In Case #2, all of the pancakes are already happy side up, so there is no
+  need to flip any of them.
+</p><p>
+  In Case #3, there is no way to make the second and third pancakes from the
+  left have the same side up, because any flip flips them both. Therefore,
+  there is no way to make all of the pancakes happy side up.
+</p>
+</div></div><div id="dsb-problem-page1" class="dsb-content-pages" style="display: block;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>5 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Tidy Numbers_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_2"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> B-small-practice.in.</div><form id="submit-formio_timer_2" action="https://code.google.com/codejam/contest/3264486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzM3YWVhY2FmNWNkZDc0NThiMWNmNTU1MGQ1NDRhMDB8fDE0OTI0OTIyMDI4ODk5MzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_2" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_2"><div id="input-file-divio_timer_2-0"><span id="source-fileio_timer_2-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_2-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_2" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_2" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_2" type="button" value="Hide"></div><div id="source-file-namesio_timer_2"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5633382285312000"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_2" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>15 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-1" class=""><div id="dsb-input-wrapper1-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-1" style="display: inline;">Solve B-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Tidy Numbers_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-1">Download B-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_3"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_3" action="https://code.google.com/codejam/contest/3264486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzM3YWVhY2FmNWNkZDc0NThiMWNmNTU1MGQ1NDRhMDB8fDE0OTI0OTIyMDI4ODk5MzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_3" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_3"><div id="input-file-divio_timer_3-0"><span id="source-fileio_timer_3-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_3-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_3" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_3" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_3" type="button" value="Hide"></div><div id="source-file-namesio_timer_3"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5633382285312000"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_3" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  Tatiana likes to keep things tidy. Her toys are sorted from smallest to
+  largest, her pencils are sorted from shortest to longest and her computers
+  from oldest to newest. One day, when practicing her counting skills, she
+  noticed that some integers, when written in base 10 with no leading zeroes,
+  have their digits sorted in non-decreasing order. Some examples of this are 8,
+  123, 555, and 224488. She decided to call these numbers <i>tidy</i>. Numbers
+  that do not have this property, like 20, 321, 495 and 999990, are not tidy.
+</p><p>
+  She just finished counting <i>all</i> positive integers in ascending order from 1 to
+  <b>N</b>. What was the last tidy number she counted?
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>. <b>T</b>
+  lines follow. Each line describes a test case with a single integer <b>N</b>,
+  the last number counted by Tatiana.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>,
+  where <code>x</code> is the test case number (starting from 1)
+  and <code>y</code> is the last tidy number counted by Tatiana.
+</p>
+
+<h3>Limits</h3>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  1 ≤ <b>N</b> ≤ 1000.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  1 ≤ <b>N</b> ≤ 10<sup>18</sup>.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">4
+132
+1000
+7
+111111111111111110
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 129
+Case #2: 999
+Case #3: 7
+Case #4: 99999999999999999
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  Note that the last sample case would not appear in the Small dataset.
+</p>
+</div></div><div id="dsb-problem-page2" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input 1<br>5 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small-1</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Tidy Numbers_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small-practice-1.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_4"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice-1.in.</div><form id="submit-formio_timer_4" action="https://code.google.com/codejam/contest/3264486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzM3YWVhY2FmNWNkZDc0NThiMWNmNTU1MGQ1NDRhMDB8fDE0OTI0OTIyMDI4ODk5MzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_4" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_4"><div id="input-file-divio_timer_4-0"><span id="source-fileio_timer_4-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_4-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_4" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_4" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_4" type="button" value="Hide"></div><div id="source-file-namesio_timer_4"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5654742835396608"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_4" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Small input 2<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-small-2</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Tidy Numbers_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1">Download C-small-practice-2.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_5"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice-2.in.</div><form id="submit-formio_timer_5" action="https://code.google.com/codejam/contest/3264486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzM3YWVhY2FmNWNkZDc0NThiMWNmNTU1MGQ1NDRhMDB8fDE0OTI0OTIyMDI4ODk5MzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_5" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_5"><div id="input-file-divio_timer_5-0"><span id="source-fileio_timer_5-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_5-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_5" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_5" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_5" type="button" value="Hide"></div><div id="source-file-namesio_timer_5"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5654742835396608"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_5" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>15 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-2" class=""><div id="dsb-input-wrapper2-2" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-2" style="display: inline;">Solve C-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-2" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Tidy Numbers_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-2">Download C-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-2" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-2" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-2">resubmit</span> for <span id="dsb-resubmit-timer2-2"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-2">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-2" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_6"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_6" action="https://code.google.com/codejam/contest/3264486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzM3YWVhY2FmNWNkZDc0NThiMWNmNTU1MGQ1NDRhMDB8fDE0OTI0OTIyMDI4ODk5MzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_6" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_6"><div id="input-file-divio_timer_6-0"><span id="source-fileio_timer_6-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_6-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_6" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_6" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_6" type="button" value="Hide"></div><div id="source-file-namesio_timer_6"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5654742835396608"><input type="hidden" name="input_id" value="2"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_6" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  A certain bathroom has <b>N</b> + 2 stalls in a single row; the stalls on the
+  left and right ends are permanently occupied by the bathroom guards. The
+  other <b>N</b> stalls are for users.
+</p><p>
+  Whenever someone enters the bathroom, they try to choose a stall that is as far
+  from other people as possible. To avoid confusion, they follow deterministic
+  rules: For each empty stall S, they compute two
+  values L<sub>S</sub> and R<sub>S</sub>, each of which is the number of empty
+  stalls between S and the closest occupied stall to the left or right,
+  respectively. Then they consider the set of stalls with the farthest closest
+  neighbor, that is, those S for which min(L<sub>S</sub>, R<sub>S</sub>) is
+  maximal. If there is only one such stall, they choose it; otherwise, they choose
+  the one among those where max(L<sub>S</sub>, R<sub>S</sub>) is maximal. If there
+  are still multiple tied stalls, they choose the leftmost stall among those.
+</p><p>
+  <b>K</b> people are about to enter the bathroom; each one will choose their
+  stall before the next arrives. Nobody will ever leave.
+</p><p>
+  When the last person chooses their stall S, what will the values of
+  max(L<sub>S</sub>, R<sub>S</sub>) and min(L<sub>S</sub>, R<sub>S</sub>)
+  be?
+</p>
+
+<h3>Solving this problem</h3>
+<p>
+  This problem has 2 Small datasets and 1 Large dataset. You must solve the
+  first Small dataset before you can attempt the second Small dataset. You will
+  be able to retry either of the Small datasets (with a time penalty). You will
+  be able to make a single attempt at the Large, as usual, only after solving
+  both Small datasets.
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> lines follow. Each line describes a test case with two integers
+  <b>N</b> and <b>K</b>, as described above.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y z</code>,
+  where <code>x</code> is the test case number (starting from 1),
+  <code>y</code> is max(L<sub>S</sub>, R<sub>S</sub>), and <code>z</code>
+  is min(L<sub>S</sub>, R<sub>S</sub>) as calculated by the last person to
+  enter the bathroom for their chosen stall S.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+1 ≤ <b>K</b> ≤ <b>N</b>.<br>
+</p>
+
+<h4>Small dataset 1</h4>
+<p>
+1 ≤ <b>N</b> ≤ 1000.<br>
+</p>
+
+<h4>Small dataset 2</h4>
+<p>
+1 ≤ <b>N</b> ≤ 10<sup>6</sup>.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 10<sup>18</sup>.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">5
+4 2
+5 2
+6 2
+1000 1000
+1000 1
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 1 0
+Case #2: 1 0
+Case #3: 1 1
+Case #4: 0 0
+Case #5: 500 499
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  In Case #1, the first person occupies the leftmost of the middle two stalls,
+  leaving the following configuration (<code>O</code> stands for an occupied
+  stall and <code>.</code> for an empty one): <code>O.O..O</code>. Then, the
+  second and last person occupies the stall immediately to the right, leaving 1
+  empty stall on one side and none on the other.
+</p><p>
+  In Case #2, the first person occupies the middle stall, getting to
+  <code>O..O..O</code>. Then, the second and last person occupies the leftmost
+  stall.
+</p><p>
+  In Case #3, the first person occupies the leftmost of the two middle stalls,
+  leaving <code>O..O...O</code>. The second person then occupies the middle of
+  the three consecutive empty stalls.
+</p><p>
+  In Case #4, every stall is occupied at the end, no matter what the stall
+  choices are.
+</p><p>
+  In Case #5, the first and only person chooses the leftmost middle stall.
+</p>
+</div></div><div id="dsb-problem-page3" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text3"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table3"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-0" class=""><div id="dsb-input-wrapper3-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-0" style="display: inline;">Solve D-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Tidy Numbers_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-0">Download D-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-0">resubmit</span> for <span id="dsb-resubmit-timer3-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_7"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> D-small-practice.in.</div><form id="submit-formio_timer_7" action="https://code.google.com/codejam/contest/3264486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzM3YWVhY2FmNWNkZDc0NThiMWNmNTU1MGQ1NDRhMDB8fDE0OTI0OTIyMDI4ODk5MzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_7" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_7"><div id="input-file-divio_timer_7-0"><span id="source-fileio_timer_7-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_7-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_7" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_7" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_7" type="button" value="Hide"></div><div id="source-file-namesio_timer_7"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5719854539603968"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_7" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>25 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-1" class=""><div id="dsb-input-wrapper3-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-1" style="display: inline;">Solve D-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Tidy Numbers_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-1">Download D-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-1">resubmit</span> for <span id="dsb-resubmit-timer3-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_8"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_8" action="https://code.google.com/codejam/contest/3264486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YzM3YWVhY2FmNWNkZDc0NThiMWNmNTU1MGQ1NDRhMDB8fDE0OTI0OTIyMDI4ODk5MzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_8" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_8"><div id="input-file-divio_timer_8-0"><span id="source-fileio_timer_8-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_8-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_8" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_8" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_8" type="button" value="Hide"></div><div id="source-file-namesio_timer_8"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5719854539603968"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_8" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div3" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  You are about to host a fashion show to show off three new styles of clothing.
+  The show will be held on a stage which is in the most fashionable of all
+  shapes: an <b>N</b>-by-<b>N</b> grid of cells.
+</p><p>
+  Each cell in the grid can be empty (which we represent with a <code>.</code>
+  character) or can contain one fashion model. The models come in three types,
+  depending on the clothing style they are wearing: <code>+</code>,
+  <code>x</code>, and the super-trendy <code>o</code>. A cell with a
+  <code>+</code> or <code>x</code> model in it adds 1 <i>style point</i> to the
+  show. A cell with an <code>o</code> model in it adds 2 style points. Empty
+  cells add no style points.
+</p><p>
+  To achieve the maximum artistic effect, there are rules on how models can be
+  placed relative to each other.
+</p>
+<ul>
+  <li>Whenever any two models share a row or column, at least one of the two
+    must be a <code>+</code>.</li>
+  <li>Whenever any two models share a diagonal of the grid, at least one of
+    the two must be an <code>x</code>.</li>
+</ul>
+<p>
+  Formally, a model located in row i<sub>0</sub> and column j<sub>0</sub> and a
+  model located in row i<sub>1</sub> and column j<sub>1</sub> share a row if
+  and only if i<sub>0</sub> = i<sub>1</sub>, they share a column if and only if
+  j<sub>0</sub> = j<sub>1</sub>, and they share a diagonal if and only if
+  i<sub>0</sub> + j<sub>0</sub> = i<sub>1</sub> + j<sub>1</sub> or
+  i<sub>0</sub> - j<sub>0</sub> = i<sub>1</sub> - j<sub>1</sub>.
+</p><p>
+  For example, the following grid is not legal:
+</p>
+<code>
+  ...<br>
+  x+o<br>
+  .+.<br>
+</code>
+<p>
+  The middle row has a pair of models (<code>x</code> and <code>o</code>) that
+  does not include a <code>+</code>. The diagonal starting at the
+  <code>+</code> in the bottom row and running up to the <code>o</code> in
+  the middle row has two models, and neither of them is an <code>x</code>.
+</p><p>
+  However, the following grid is legal. No row, column, or diagonal violates
+  the rules.
+</p>
+<code>
+  +.x<br>
+  +x+<br>
+  o..<br>
+</code>
+<p>
+  Your artistic advisor has already placed <b>M</b> models in certain
+  cells, following these rules. You are free to place any number (including
+  zero) of additional models of whichever types you like. You may not remove
+  existing models, but you may upgrade as many existing <code>+</code> and
+  <code>x</code> models into <code>o</code> models as you wish, as long as the
+  above rules are not violated.
+</p><p>
+  Your task is to find a legal way of placing and/or upgrading models that
+  earns the maximum possible number of style points.
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> test cases follow. Each test case begins with one line with two
+  integers <b>N</b> and <b>M</b>, as described above. Then, <b>M</b> more lines
+  follow; the i-th of these lines has a <code>+</code>, <code>x</code>, or
+  <code>o</code> character (the type of the model) and two integers
+  <b>R<sub>i</sub></b> and <b>C<sub>i</sub></b> (the position of the model).
+  The rows of the grid are numbered 1 through <b>N</b>, from top to bottom.
+  The columns of the grid are numbered 1 through <b>N</b>, from left to
+  right.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, first output one line containing
+  <code>Case #x: y z</code>, where <code>x</code> is the test case number
+  (starting from 1), <code>y</code> is the number of style points earned in
+  your arrangement, and <code>z</code> is the total number of models you have
+  added and/or substituted in. Then, for each model that you have added or
+  substituted in, output exactly one line in exactly the same format described
+  in the Input section, where the character is the type of the model that you
+  have added or substituted in. These <code>z</code> lines can be in any order.
+</p><p>
+  If there are multiple valid answers, you may output any one of them.
+</p>
+
+<h3>Limits</h3>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+  1 ≤ <b>N</b> ≤ 100.<br>
+  1 ≤ <b>C<sub>i</sub></b> ≤ <b>N</b>, for all i.<br>
+  0 ≤ <b>M</b> ≤ <b>N</b><sup>2</sup>.<br>
+  No two pre-placed models appear in the same cell.<br>
+  It is guaranteed that the set of pre-placed models follows the rules.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  <b>R<sub>i</sub></b> = 1, for all i. (Any models that are pre-placed are in
+  the top row. Note that you may add/replace models in that row and/or add
+  models in other rows.)<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  1 ≤ <b>R<sub>i</sub></b> ≤ <b>N</b>, for all i.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">3
+2 0
+1 1
+o 1 1
+3 4
++ 2 3
++ 2 1
+x 3 1
++ 2 2
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 4 3
+o 2 2
++ 2 1
+x 1 1
+Case #2: 2 0
+Case #3: 6 2
+o 2 3
+x 1 2
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+<p>
+  The sample output displays one set of answers to the sample cases. Other
+  answers may be possible. Note that the last sample case would not appear in
+  the Small dataset.
+</p><p>
+  In sample case #1, the grid is 2-by-2 and is initially blank. The output
+  corresponds to the following grid. (In these explanations, we will use
+  <code>.</code> to denote a blank cell.)
+</p>
+<code>
+  x.<br>
+  +o<br>
+</code>
+<p>
+  In sample case #2, the only cell is already occupied by an <code>o</code>
+  model, and it is impossible to add a new model or replace the
+  <code>o</code> model.
+</p><p>
+  In sample case #3, the grid looks like this before you place any models:
+</p>
+<code>
+  ...<br>
+  +++<br>
+  x..<br>
+</code>
+<p>
+  The output corresponds to this grid:
+</p>
+<code>
+  .x.<br>
+  ++o<br>
+  x..<br>
+</code>
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages"><div id="dsb-analysis-selections"><span id="dsb-analysis-selection-p4" class="dsb-analysis-selected">Overview</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p0" class="dsb-analysis-not-selected">Problem A</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p1" class="dsb-analysis-not-selected">Problem B</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p2" class="dsb-analysis-not-selected">Problem C</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p3" class="dsb-analysis-not-selected">Problem D</span></div><div id="dsb-problem-analysis-div4" class="dsb-problem-content-div"><p>
+  Our 2017 Qualification Round saw a record number of registrants (almost
+  64,000 — we may need to upgrade our unsigned short variable if this
+  keeps up!) Difficulty-wise, the round was somewhere between the legendarily
+  tough 2015 and the milder 2016. Over 25,000 contestants solved at least one
+  dataset, and about 500 managed perfect scores! xiaowuc1 continued a now five-year
+  streak of submitting the first correct dataset, and didn't even need two minutes
+  this time! y0105w49 was the first to submit every dataset correctly, but with
+  one four-minute penalty; FatalEagle swooped in shortly afterward, with no
+  penalties, to snatch first place.
+</p><p>
+  <i>Oversized Pancake Flipper</i> was this year's obligatory pancake-themed
+  problem. (We don't know how much longer this tradition will go on; we may
+  need some help from the Infinite House of Pancake Problem Ideas!)
+  <i>Tidy Numbers</i> had a tougher Large that required some attention to
+  edge cases. Perhaps because of its more tempting point value, more contestants
+  attempted it than A, though the numbers of contestants getting A-Large and
+  B-Large right were very similar.
+  <i>Bathroom Stalls</i> was a three-dataset problem that rewarded
+  various levels of optimization; its two Smalls were useful insurance for solvers
+  who weren't quite sure about their A-Large or B-Large answers. <i>Fashion Show</i>
+  presented an unusual story that disguised a chess piece problem that could be
+  simplified with one cool insight. Even its Small was quite tough, only garnering
+  around 1000 solves.
+</p><p>
+  Over 18,000 contestants advanced to the Round 1s by earning 25 points or more. If
+  you advanced, we hope to see you in under a week for Round 1A! Regardless of
+  how you fared, we hope you had a great time with the problems. Check out the
+  analyses for the problems for various interesting observations and alternate
+  solution methods.
+</p>
+<hr>
+<p>
+  <b>Cast</b>
+</p><p>
+  Problem A (Oversized Pancake Flipper): Written by Pablo Heiber. Prepared by
+  Ian Tullis.
+</p><p>
+  Problem B (Tidy Numbers): Written and prepared by Pablo Heiber.
+</p><p>
+  Problem C (Bathroom Stalls): Written and prepared by Pablo Heiber.
+</p><p>
+  Problem D (Fashion Show): Written by Ian Tullis. Prepared by Ahmed Aly and
+  Yerzhan Utkelbayev.
+</p><p>
+  Solutions and other problem preparation and review by Hossein Bateni,
+  Shane Carr, John Dethridge, Jackson Gatenby, Md Mahbubul Hasan, Alex Irpan,
+  Nathan Pinsker, Mihai-Emilian Scortaru, Steve Thomas, and Erick Wong.
+</p>
+<p>
+  Analysis authors:
+</p>
+<ul>
+<li>Oversized Pancake Flipper: Ian Tullis</li>
+<li>Tidy Numbers: Pablo Heiber, Ian Tullis, and Josef Ziegler</li>
+<li>Bathroom Stalls: Pablo Heiber</li>
+<li>Fashion Show: Steve Thomas and Ian Tullis</li>
+</ul></div><div id="dsb-problem-analysis-div0" class="dsb-problem-content-div" style="display: none;"><h2>Oversized Pancake Flipper: Analysis</h2>
+
+<p>
+  Let's start with two simple but key observations. First, the flips are
+  commutative. That is, the order in which you make the flips doesn't matter:
+  flipping at the same positions in any order always yields the same result.
+  Second, you never need to flip at the same position more than once: since
+  flips are commutative, you may rearrange the flips so that two flips at the
+  same position happen consecutively, and then it is clear that they cancel
+  each other out and you might as well not do either.
+</p>
+
+<h3>Small dataset</h3>
+<p>
+  Applying the observations above to the Small dataset leaves only a really
+  small number of combinations to try. Since there are <b>N</b>-<b>K</b>+1
+  possible flips, the number of flip subsets is
+  2<sup><b>N</b>-<b>K</b>+1</sup>, which is at most 2<sup>9</sup> = 512 for
+  this dataset. We can just try all of these combinations, discard the ones
+  that leave at least one pancake blank side up, and get the minimum number of
+  flips or determine that it is impossible.
+</p><p>
+  Even if you don't have the observations above, a
+  <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank">breadth-first search</a>
+  of all possible pancake states, using all possible flips as transitions, is
+  also easily fast enough.
+</p>
+
+<h3>Large dataset</h3>
+<p>
+  Of course, the approach above will take way too long for the Large dataset,
+  which can have up to 1000 pancakes. There is a simple greedy strategy that is
+  not too hard to find. Notice that the left-most pancake <i>p<sub>1</sub></i>
+  is only affected by the left-most flip <i>f<sub>1</sub></i>. That means that
+  the initial status of <i>p<sub>1</sub></i> completely determines what do we
+  need to do with <i>f<sub>1</sub></i> if we want to have any chance of leaving
+  all pancakes happy side up: use <i>f<sub>1</sub></i> if and only if
+  <i>p<sub>1</sub></i> is initially blank side up. After deciding on
+  <i>f<sub>1</sub></i>, we can notice that there is only one remaining flip
+  <i>f<sub>2</sub></i> that affects the second to the left pancake
+  <i>p<sub>2</sub></i>. So, after we have used <i>f<sub>1</sub></i> (or not),
+  the current state of <i>p<sub>2</sub></i> completely determines whether to
+  use <i>f<sub>2</sub></i>.
+</p><p>
+  Continuing with this reasoning, we can use the leftmost <b>N</b>-<b>K</b>+1
+  pancakes to determine all flips. After doing that, we only need to check
+  whether the last <b>K</b>-1 pancakes are happy side up or not. If they all
+  are, then the answer is the number of flips we used. Otherwise, the answer is
+  IMPOSSIBLE. Notice that this reasoning also implies that at most one of the
+  subsets of flips from our Small-only solution above would have worked.
+</p><p>
+  If we carry out the above strategy literally and actually flip all of the
+  pancakes in memory each time, the complexity is O(<b>N</b><sup>2</sup>). We
+  can reduce this to O(<b>N</b>) by only flipping one pancake at a time, and
+  keeping a running count of the number of flips that we "owe" the current
+  pancake. For instance, suppose that <b>N</b> = 10 and <b>K</b> = 5, and the
+  first pancake is blank side up. We start with the first pancake, and because
+  we must flip it, we know we must flip the first five pancakes. We increase
+  our flip count to 1, and also make a memo to decrease the flip count by 1
+  once we reach the sixth pancake. We continue from left to right, and whenever
+  a pancake is blank side up and the flip count is even, or a pancake is happy
+  side up and the flip count is odd, we increase the flip count and make
+  another memo. These memos can be easily stored in another array of length
+  <b>N</b> that is checked before handling each pancake. This optimization is
+  not necessary to solve the Large dataset, but it is a useful trick in
+  programming contest problems (and at least one of your Code Jam engineers
+  has used it in day-to-day software engineering work!)
+</p>
+</div><div id="dsb-problem-analysis-div1" class="dsb-problem-content-div" style="display: none;"><h2>Tidy Numbers: Analysis</h2>
+<h3>Small dataset</h3>
+<p>
+  The Small dataset can be solved by a simulation, going backwards through the
+  numbers that Tatiana counted. We start with <b>N</b> and check whether it is
+  tidy. If it is, we are done; if not, we check <b>N</b>-1, and then
+  <b>N</b>-2 if <b>N</b>-1 is not tidy, and so on.
+</p><p>
+  Checking a number for tidiness takes a single pass over its digits. We
+  can bound the number of digits of numbers no greater than <b>N</b> by
+  log<sub>10</sub><b>N</b>. Since we iterate through at most O(<b>N</b>)
+  numbers, the overall time complexity of this approach is O(<b>N</b> log
+  <b>N</b>). This is easily fast enough to solve the Small dataset, in which
+  <b>N</b> ≤ 1000, but it will not hold up for the Large dataset, which can
+  have <b>N</b> as large as 10<sup>18</sup>. If you start at the non-tidy
+  number 111111111111111110, you have a <i>very</i> long way down to count
+  before reaching the answer, 99999999999999999!
+</p><p>
+  To iterate through the digits of an integer, you can use a language-provided
+  utility to convert it to a string, or repeatedly take the value modulo 10 to
+  obtain the last digit and divide by 10 to remove the last digit.
+</p>
+<h3>Large dataset: A greedy approach</h3>
+<p>
+  There is an efficient greedy approach for the Large, but it has some tricky
+  cases.
+</p><p>
+  Let us name the digits of <b>N</b> N<sub>1</sub>, N<sub>2</sub>, ...,
+  N<sub>L</sub> from most to least significant (i.e., left to right, the way in
+  which we usually write digits). Let A be our desired answer: the most
+  recently counted tidy number. We want A to have as many digits from the left
+  as possible in common with <b>N</b>, because that minimizes the value
+  <b>N</b> - A.
+</p><p>
+  Find the first "inversion" in <b>N</b> — that is, the minimum i such
+  that N<sub>i</sub> &gt; N<sub>i+1</sub>. If there is no such i, then
+  <b>N</b> is already tidy and A = <b>N</b>. Otherwise: no number starting
+  with the sequence N<sub>1</sub>, N<sub>2</sub>, ..., N<sub>i</sub> can be
+  both smaller than <b>N</b> and tidy. So, we can try making our answer start
+  with A<sub>1</sub> = N<sub>1</sub>, A<sub>2</sub> = N<sub>2</sub>, ...,
+  A<sub>i-1</sub> = N<sub>i-1</sub>. The next digit A<sub>i</sub> has to be
+  less than N<sub>i</sub>, so we can try using A<sub>i</sub> =
+  N<sub>i</sub>-1. If A<sub>i</sub> is greater than or equal to
+  A<sub>i-1</sub>, we can make the remaining digits from A<sub>i+1</sub>
+  onward into 9s; this makes A as large as possible while ensuring that it
+  remains tidy. However, if A<sub>i</sub> is less than A<sub>i-1</sub>, we
+  would just be creating another inversion, and so we should instead try
+  starting A with the digits up to N<sub>i-2</sub>. If that doesn't work, we
+  can try the digits up to N<sub>i-3</sub>, and so on. We may even start with
+  zero digits of <b>N</b>; for <b>N</b> = 211, we get A = 199. Even starting
+  with zero digits might not work: for <b>N</b> = 100, for example, the answer
+  is 99.
+</p><p>
+  Let's condense these observations into a final algorithm. If there is no
+  inversion, we are done. Otherwise, if the first digit of the inversion is
+  i, find the maximum j &lt; i such that N<sub>j</sub> &lt; N<sub>j+1</sub>.
+  If there is no such j, set j = 0. Then A starts with N<sub>1</sub>,
+  N<sub>2</sub>, ..., N<sub>j</sub>, N<sub>j+1</sub>-1, and then ends with
+  enough 9s to make it length L. The only exception is if j = 0 and
+  N<sub>1</sub> is 1, in which case the answer is L-1 9s.
+</p><p>
+  Since this strategy requires only one pass
+  forward through the digits of <b>N</b> and then another pass backward, it
+  is O(the number of digits in <b>N</b>), which, as we argued above, is
+  O(log <b>N</b>). In this case, we can even get away with not converting the
+  input data strings into integers!
+</p><p>
+  To bypass some of the complexity above, we could have simply tried all
+  combinations of the form SD999...99, where S is each prefix of <b>N</b>
+  (including the empty prefix), D is each possible digit from 0 to 9, and the
+  number of 9s is such that the total length is L. L-1 9s must also be included
+  as a special case. Then the answer must be among those options, and it is the
+  largest tidy number among them that does not exceed <b>N</b>. This is a
+  common trick to simplify the code of greedy solutions: try more options than
+  are needed, as long as the number of options is still tractable. It is often
+  easier to implement finding the best solution among several options than to
+  implement the checks necessary to avoid options we know we do not need.
+</p>
+<h3>Large dataset: A combinatoric approach</h3>
+<p>
+  Another way to solve this with a little bit more math is to notice that there
+  are few tidy numbers. For a fixed length L, the number of tidy numbers is the
+  number of ways to put 8 balls in L+1 bins. Each bin represents a position at
+  the start or end or in between two digits, and each ball represents "increase
+  the number by 1". So, for instance, tidy number 2455 is represented by 1 ball
+  in the first bin (skipping 1), 2 balls in the second bin (moving from 2 to 4),
+  1 ball in the third (4 to 5), no ball in the fourth (5 is repeated), and the rest
+  of the balls in the last bin (moving from 5 up to 9, but there are no digits left
+  to write). 8 balls in L+1 bins is equal to (L+8 choose 8) which, for the maximum
+  L=18, is less than 2 million. So, we can enumerate all of the tidy numbers,
+  skipping the rest and just return the largest we find which is no greater than
+  <b>N</b>. To enumerate tidy numbers, we can use recursion like in this pseudocode:
+</p><pre>best = 1
+enum(current_string, current_digit, digits_left):
+  if digits_left &gt; 0
+    enum(current_string + current_digit, current_digit, digits_left - 1)
+    enum(current_string + (current_digit + 1), current_digit + 1, digits_left - 1)
+  else
+    if best ≤ string_to_int(current_string) ≤ N
+      best = string_to_int(current_string)
+</pre><p>
+  We can also define a function that finds the next tidy number greedily and use it. We present
+  such a function in the next subsection.
+</p>
+<h3>Large dataset: A binary search approach</h3>
+<p>
+  Our original problem is: given an integer <b>N</b>, find the largest Y ≤
+  <b>N</b> such that Y is a tidy number. Let's consider a related problem:
+  given an integer X, find the smallest integer Y ≥ X such that Y is a tidy
+  number. That problem turns out to have a significantly simpler solution.
+  Suppose that X is a sequence of digits X<sub>1</sub>, X<sub>2</sub>, ...,
+  X<sub>L</sub>, enumerated from most to least significant, as above. Then Y
+  can be formed by finding the first inversion in the sequence (i.e., the
+  minimum i such that X<sub>i</sub> &gt; X<sub>i+1</sub>) and creating a
+  new number that is X<sub>1</sub>, X<sub>2</sub>, ..., X<sub>i</sub> plus
+  enough additional copies of X<sub>i</sub> to make Y as long as X. For
+  example, if we start with the number 13254, then the first inversion is at
+  32, and we replace everything after the 3 with more 3s, forming 13333. If
+  there are no inversions, then X is already tidy and Y = X. This algorithm is
+  O(L) for an X of L digits.
+</p><p>
+  With this related problem solved, we can solve the original problem by
+  <a href="http://en.wikipedia.org/wiki/Binary_search_algorithm">binary searching</a>
+  for the smallest range [X, <b>N</b>] such that the Y (as defined above) that
+  corresponds to X is not larger than <b>N</b>. This approach takes
+  O(log<sup>2</sup> <b>N</b>) time, because the binary search takes log
+  <b>N</b> steps, and each step requires running the O(L) greedy algorithm
+  above. As argued above, L can be bounded by log <b>N</b>. This approach is
+  less efficient than the greedy approach above, but it is still easily fast
+  enough to pass the Large dataset.
+</p>
+</div><div id="dsb-problem-analysis-div2" class="dsb-problem-content-div" style="display: none;"><h2>Bathroom Stalls: Analysis</h2>
+
+<h3>Small dataset 1</h3>
+
+<p>
+  For Small dataset 1, the limits are small enough that you can just simulate
+  the rules outlined in the statement. Most implementations of a simulation
+  will run in O(<b>N</b><b>K</b>) time and thus finish immediately, but even a
+  slow O(<b>N</b><sup>2</sup><b>K</b>) implementation like "try every possible
+  stall for the next person, and for each empty stall run a loop for each side
+  to check for the closest neighbors" will most likely finish in time.
+</p><p>
+  For Small dataset 2 and the Large dataset, however, something quadratic in
+  the number of stalls won't cut it, so we have to do better.
+</p>
+
+<h3>Small dataset 2</h3>
+
+<p>
+  The critical observation to jump from Small dataset 1 to Small dataset 2 is
+  that only the number of consecutive runs of empty stalls matters at any given
+  time. The next person always chooses the middle stall or the left of the two
+  middle stalls of a longest subsequence of consecutive empty stalls. Moreover,
+  the output format already hints at this: even if you were to choose the
+  rightmost of a set of two middle stalls, or a longest run of stalls other
+  than the leftmost one, the answer would not change. Thus, we can rewrite the
+  algorithm in this equivalent (for the required output) form:
+</p><ol>
+  <li>Find any longest subsequence of consecutive empty stalls.</li>
+  <li>Choose the middle or one of the two middle stalls.</li>
+</ol><p>
+  Notice that even though there are still ties to be broken, the output is
+  equivalent for all of them. Since the output is equivalent, so is the
+  multiset of lengths of consecutive runs of empty stalls left behind, so the
+  whole process only depends on that multiset. (As a reminder, a multiset is a
+  set in which the same element can appear more than once.) We can write an
+  optimized simulation that solves Small dataset 2 following this pseudocode:
+</p><pre>  S = {<b>N</b>}  - This is a multiset!
+  repeat <b>K</b> times:
+    X = max(S)
+    X0 = ceil((X - 1) / 2)
+    X1 = floor((X - 1) / 2)
+    if this is the last step:
+      we are done; answer is X0 and X1
+    else:
+      remove one instance of X from S
+      insert X0 and X1 into S
+</pre><p>
+  If the operations over <code>S</code> are efficient, this will run in
+  quasilinear time. There are many data structures that support insertion,
+  finding the maximum, and removal of the maximum in logarithmic time,
+  including AVL trees, red-black trees, and heaps. Many languages have one such
+  structure in their standard libraries (e.g., the <code>multiset</code> or
+  <code>priority_queue</code> in C++, <code>TreeSet</code> in Java, and
+  <code>heapq</code> module in Python). Since we take O(log <b>K</b>) time for
+  each of K steps, the algorithm takes only O(<b>K</b> log <b>K</b>) time,
+  which is fast enough to solve Small dataset 2. However, for the Large
+  dataset, even quasilinear time on K is not enough.
+</p>
+
+<h3>Large dataset</h3>
+
+<p>
+  The observation required to solve the Large dataset is that we are simulating
+  similar steps over and over again. The first time a bathroom user arrives, we
+  partition <b>N</b> into ceil((<b>N</b> - 1) / 2) and
+  floor((<b>N</b> - 1) / 2), which means that numbers between
+  ceil((<b>N</b> - 1) / 2) and <b>N</b> will never appear in S. This hints at a
+  logarithmic number of simulation steps.
+</p><p>
+  Let's divide the work in stages. The first stage processes only <b>N</b>.
+  Then, stage <i>i</i>+1 processes all of the values spawned by stage <i>i</i>.
+  So, stage 2 processes up to 2 values: ceil((<i>i</i> - 1) / 2) and
+  floor((<i>i</i> - 1) / 2). What about the other stages? It is not hard to
+  prove by induction that they also process at most two consecutive values:
+  since stage i processes two consecutive values, they are either 2x and 2x+1 or
+  2x and 2x-1, for some x (that is, one even and one odd number). Thus, the spawned
+  values for stage i+1 can only be x and/or x-1.
+  Since the largest value in each stage is at most half the largest
+  value of the previous stage, there are a logarithmic number of stages. This all
+  means that there are at most O(log <b>N</b>) different values
+  that go into S at any point. Of course, some of them appear in S many, many
+  times. So, the optimization to get the running time low enough for the Large
+  dataset is to process all repetitions of a given value at the same time,
+  since all of them yield the same X0 and X1 values. We can do that by using a
+  regular set with a separate count for the number of repetitions.
+</p><pre>  S = {<b>N</b>}  - This is a set, not a multiset!
+  C(N) = 1
+  P = 0
+  repeat:
+    X = max(S)
+    X0 = ceil((X - 1) / 2)
+    X1 = floor((X - 1) / 2)
+    P = P + C(X)
+    if P ≥ <b>K</b>:
+      we are done; the answer is X0 and X1.
+    else:
+      remove X from S
+      insert X0 and X1 into S
+      add C(X) to the counts of X0 and X1 in C
+</pre><p>
+  Once again, we have structures that implement all the required operations in
+  logarithmic time, yielding an O(log<sup>2</sup> <b>N</b>) running time
+  overall. In general, adding any good dictionary implementation to the
+  structure of choice from the Small dataset 2 solution would work, either by
+  plugging the dictionary functionality into the structure (like
+  <code>map</code> in C++ or <code>TreeMap</code> in Java) or having a separate
+  hash-table for the dictionary (which is the easiest implementation in Python).
+</p><p>
+  Moreover, since we proved the population of S is at most 4 at any given time
+  (only values from two consecutive stages can coexist in S), any implementation
+  of set and dictionary will provide all operations in constant time, because the
+  size of the whole structure is bounded by a constant! This makes the overall
+  time complexity just O(log <b>N</b>).
+</p><p>
+  This was a nice problem to put experimentation to work if your intuition was not
+  enough. After solving the Small, if you print the succession of values for a
+  fixed <b>N</b>, you may spot the pattern of few values occurring
+  in the set S, and from there, you can find the mathematical arguments to support
+  the needed generalization. In harder problems in later rounds, this can become an
+  even more important asset to tackle problems. As you can see in many parts of last
+  year's finals <a href="https://www.youtube.com/watch?v=4diQ6JXY4cI" target="_blank">live stream</a>,
+  finalists use experimentation a lot to inspire themselves and/or validate their ideas
+  before committing to them.
+</p>
+</div><div id="dsb-problem-analysis-div3" class="dsb-problem-content-div" style="display: none;"><h2>Fashion Show: Analysis</h2>
+<h3>What's really going on here?</h3>
+<p>
+  The somewhat strange scenario presented in this problem disguises a classic
+  type of chess problem in which pieces must be placed so that they do not
+  attack each other. The
+  <a href="https://en.wikipedia.org/wiki/Eight_queens_puzzle">eight queens puzzle</a>
+  is one well-known example. Our problem is more complicated, and it involves
+  three types of piece. Let's restate the rules about how the models can
+  interact in more chess-like terms:
+</p>
+<ul>
+  <li>The <code>+</code> models are bishops. Two bishops may not occupy the
+    same diagonal.</li>
+  <li>The <code>x</code> models are rooks. Two rooks may not occupy the same
+    row or column.</li>
+  <li>The <code>o</code> pieces are queens. Two queens may not occupy the same
+    row, column, or diagonal. Moreover, a queen and a bishop may not occupy the
+    same diagonal; a queen and a rook may not occupy the same row or column.
+  </li>
+</ul>
+<p>
+  Observe that our problem does not accord with typical chess rules about
+  "attacks". For example, in our problem, it is fine for a rook and a bishop to
+  share the same row or column. Also, unlike in chess, a piece between two
+  pieces does not prevent them from "attacking" each other. For example, we do
+  not allow two bishops to share the same diagonal even if there is a rook
+  between them.
+</p>
+<h3>Decomposing the problem</h3>
+<p>
+  How will we deal with this variety of pieces? The critical insight is that
+  the rook and bishop parts of the problem are independent; we can solve them
+  separately, placing as many new pieces in each subproblem as possible, and
+  then merge the answers together. A queen is just a rook plus a bishop; we can
+  add each pre-placed queen into the rook subproblems as a rook and into the
+  bishop subproblem as a bishop. Then, once the subproblems are solved, we can
+  turn any cell that is occupied in both subproblem solutions back into a
+  queen.
+</p><p>
+  This strategy is guaranteed not to violate any rules. A rook subproblem
+  solution will never have two rooks in the same row or column, and a bishop
+  subproblem solution will never have two bishops on the same diagonal. Merging
+  the two subproblems' solutions may generate new queens, but it is impossible
+  for them to violate any rules, since that would imply a rule violation in one
+  of the subproblems. For example, we do not need to worry that we will end up
+  with a queen and a bishop on the same diagonal, since that would only be
+  possible if our bishop solution had two bishops on the same diagonal.
+</p><p>
+  Moreover, as long as we place as many rooks as possible in the rook
+  subproblem, and as many bishops as possible in the bishop subproblem, we are
+  guaranteed the maximum possible amount of style points for our test case.
+  Since queens are worth 2 points, merging a rook and a bishop into a queen has
+  no effect on our score.
+</p><p>
+  Let's walk through an example. This case:
+</p>
+<code>
+  +..<br>
+  +.o<br>
+  x..<br>
+</code>
+<p>
+  can be decomposed into rook and bishop problems:
+</p>
+<code>
+  ... +..<br>
+  ..x +.+<br>
+  x.. ...<br>
+</code>
+<p>
+  which can be solved independently:
+</p>
+<code>
+  .x. +..<br>
+  ..x +.+<br>
+  x.. +..<br>
+</code>
+<p>
+  and then merged back together. Note that we have replaced the former
+  <code>x</code> model from the lower left corner with an <code>o</code> model.
+</p>
+<code>
+  +x.<br>
+  +.o<br>
+  o..<br>
+</code>
+<h3>Solving the subproblems</h3>
+<p>
+  Now all we need are strategies for the subproblems themselves. The rook
+  problem is straightforward. Each rook removes exactly one row and column from
+  further consideration, so any greedy placement strategy that does not violate
+  the rules will place exactly <b>N</b> rooks.
+</p><p>
+  The bishop subproblem is more challenging. We can approach it differently in
+  the Small and Large datasets.
+</p>
+<h4>Bishops: Small dataset</h4>
+<p>
+  In the Small dataset, any pre-placed pieces are all in the top row. Observe
+  that bishops in the same row or column cannot possibly "threaten" each other,
+  and so we can safely add a bishop to any top row cell that does not already
+  have one. So, if we can come up with a general solution pattern in which the
+  top row is always completely filled with bishops, then we can solve any Small
+  test case, because we can safely turn any pre-placed arrangement into a row
+  packed with bishops.
+</p><p>
+  Once the top row is filled with bishops, where else on the board should we
+  put them? The bottom row is farthest away from the constraints imposed by
+  the top row, and we can try putting a bishop in every bottom-row cell except
+  for the cells on either end (which are "threatened" by the bishops at the two
+  ends of the top row). These bishops do not threaten each other or any top row
+  bishops, so this arrangement is valid, and we have a total of 2<b>N</b>-2
+  bishops. No additional bishops can be added after that, though. Have we
+  really placed as many as possible?
+</p><p>
+  At this point, we can experiment and convince ourselves that this solution
+  is probably optimal. We can also take a leap of faith; for a Small dataset in
+  a Qualification Round, there is little incentive not to submit the solution
+  and see if it is correct. Or, we can come up with a proof. An <b>N</b> by
+  <b>N</b> board has 4<b>N</b>-2 different diagonals. Moreover, the parallel
+  diagonals of length 1 in opposite corner cells can never both be used
+  simultaneously, so there are really only 4<b>N</b>-4 simultaneously usable
+  diagonals. Since placing a bishop uses up two diagonals, 2<b>N</b>-2 is an
+  upper bound on the number of bishops we can place. So, our method is optimal!
+</p><p>
+  We must still take care, though, to handle a pre-placed rook/queen correctly
+  if one is present, and to merge the rook and bishop solutions appropriately,
+  creating queens when necessary. We must also be careful with the 1 by 1
+  board, which has no bottom row distinct from its top row.
+</p><p>
+  It is possible to come up with the same construction without realizing that
+  the problem can be decomposed into rooks and bishops; it is just more
+  difficult to justify the optimality of the construction in that case!
+</p>
+<h4>Bishops: Large dataset</h4>
+<p>
+  One helpful observation is that, just as in a chess game, the "white cell"
+  bishops (in our problem, cells for which <b>R<sub>i</sub></b> +
+  <b>C<sub>i</sub></b> is even) are completely independent of the "black cell"
+  bishops (cells for which that sum is odd). So we can consider these as
+  sub-sub-problems.
+</p><p>
+  You can use a
+  <a href="https://en.wikipedia.org/wiki/Matching_(graph_theory)#Bipartite_matching">bipartite matching algorithm</a>
+  to place the bishops optimally. There is, however, a greedy strategy; unlike
+  in the rook subproblem, however, not just any greedy strategy will work!
+</p><p>
+  Let's consider an 8 x 8 board with no pre-placed bishops. We'll look at just
+  the "black" cells of the board, and tilt the board 45 degrees clockwise.
+  (Here, <code>.</code>s represent black cells. The <code>@</code>s do not
+  represent cells — they are just there to orient the image.)
+</p>
+<code>
+  @@@..@@@<br>
+  @@....@@<br>
+  @......@<br>
+  ........<br>
+  @......@<br>
+  @@....@@<br>
+  @@@..@@@<br>
+</code>
+<p>
+  This new board has an important property: any row is a subset of all rows
+  with more black cells than it. For example, the four black cells in the
+  second row are also present in every row with at least four black cells.
+  This property holds regardless of the value of <b>N</b>, or whether we look
+  at "white" or "black" cells. It even holds as we add bishops! Adding a bishop
+  wipes out one entire row and one entire column — notice that we have
+  made this more like the rook problem — and since the remaining rows
+  have all lost the same column, the aforementioned property is unchanged.
+</p><p>
+  The property suggests a greedy strategy: first, sort the rows by the number
+  of available cells. Then, pick a "smallest" row (one with a minimal number of
+  available cells), place a bishop in any column in that row, and wipe out that
+  row and column. This strategy is guaranteed to place an optimally large
+  number of bishops. Suppose that we choose a column C in the smallest row R,
+  and another column C' in some other row R', such that C' is also in R. Then C
+  must also be in R', since all columns in the smallest row are in every other
+  row. We can therefore swap them over, and it is equally valid to choose C' in
+  row R and C in row R'.
+</p><p>
+  One tempting (but incorrect) greedy strategy is to go left to right, top to
+  bottom, and greedily place bishops in all legal places. Here is an example of
+  a board for which that fails.
+</p>
+<code>
+  .@@@@<br>
+  ....@<br>
+  ...@@<br>
+  ..@@@<br>
+  .@@@@<br>
+</code>
+<p>
+  The incorrect greedy strategy will only place three bishops, as follows:
+</p>
+<code>
+  +@@@@<br>
+  .+..@<br>
+  ..+@@<br>
+  ..@@@<br>
+  .@@@@<br>
+</code>
+<p>
+  whereas the correct strategy will place four (here is one optimal placement):
+</p>
+<code>
+  .@@@@<br>
+  ...+@<br>
+  ..+@@<br>
+  .+@@@<br>
+  +@@@@<br>
+</code>
+<p>
+  Notice that although we can always place <b>N</b> rooks, the number of
+  bishops we are able to place depends on the pre-placed bishops. This explains
+  why different test cases with the same value of <b>N</b> might have
+  different maximum scores.
+</p>
+</div></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table" style="display: none;">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"></tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification" style="display: none;">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="MGVkZjQyZTU0OGQzYWEzODNkYWE3ZmVmYjdiYzYzODF8fDE0OTI0OTIyMDIzMDIxODA="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="5736519012712448">A. Oversized Pancake Flipper</option><option value="5633382285312000">B. Tidy Numbers</option><option value="5654742835396608">C. Bathroom Stalls</option><option value="5719854539603968">D. Fashion Show</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0px 0.3em; display: block;">You cannot ask questions at this time. Please email us at codejam@google.com.</div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2017 Google</span>
+  <a href="http://www.google.com/">Google Home</a> -
+  <a href="https://code.google.com/codejam/terms.html">Terms and Conditions</a> -
+  <a href="http://www.google.com/intl/en/policies">Privacy Policies and Principles</a>
+  <br><br>
+  <a href="http://cloud.google.com/"><img width="125" height="91" src="./Problem B. Tidy Numbers_files/powered_by_gcp_logo.png"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div></body></html>

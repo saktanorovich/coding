@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/beta/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/beta/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/qual/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/qual/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/qual/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd1a/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd1a/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd1a/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd1b/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd1b/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd1b/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd1c/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd2/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd2/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd2/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd3/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd3/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/rd3/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/semiAMER/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/semiAMER/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/semiAMER/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/semiAPAC/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/semiAPAC/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/semiAPAC/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/semiEMEA/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/semiEMEA/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/semiEMEA/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/wfinals/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/wfinals/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2008/wfinals/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2009/qual/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2009/qual/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2009/qual/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2009/rd1a/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2009/rd1a/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2009/rd1a/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2009/rd1b/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2009/rd1b/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2009/rd1b/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2009/rd3/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2009/rd3/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2009/rd3/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2017/qual/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2017/qual/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2017/rd1a/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2017/rd1a/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2017/rd1b/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2017/rd1b/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2017/rd1c/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/gcj2017/rd1c/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/practice/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/practice/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/rounda/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/rounda/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/roundb/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/roundb/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/roundc/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/roundc/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/roundc/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/roundd/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/roundd/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/roundd/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/rounde/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/rounde/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/roundf/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/roundf/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/roundg/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2017/roundg/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2018/practice/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2018/practice/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2018/rounda/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/kickstart2018/rounda/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/practice/contest1/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/practice/contest1/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/practice/contest2/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/practice/contest2/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/women/io2016/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/src/women/io2017/analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/src/women/io2017/problems" />
+      <excludeFolder url="file://$MODULE_DIR$/src/women/io2017/tests" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

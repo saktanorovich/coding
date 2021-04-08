@@ -1,0 +1,1015 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)https://code.google.com/codejam/contest/8284487/dashboard#s=p2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - Kickstart Round D 2017 - Google Code Jam
+  </title>
+
+    <style>@import '//www.google.com/css/modules/buttons/g-button-sparrow.css';</style>
+    <link rel="stylesheet" type="text/css" href="./Problem C. Trash Throwing_files/app.css">
+
+
+
+
+
+    <script type="text/javascript" async="" src="./Problem C. Trash Throwing_files/ga.js.download"></script><script src="./Problem C. Trash Throwing_files/App_en.js.download"></script><style></style>
+    
+
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.dashboardMain().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "8284487";
+      GCJ.contest.name = "Kickstart Round D 2017";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 3;
+      
+      GCJ.contest.start_int = 1500181200;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=8284487"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam/kickstart2017";
+    };
+  //-->
+  </script>
+</head>
+
+<body onload="GCJ.dashboardMain()" class="page-dashboard">
+
+<div id="logo-div">
+  <a href="https://code.google.com/codejam/kickstart/">
+    <img src="./Problem C. Trash Throwing_files/logo_kickstart_2017.jpg" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">Kickstart Round D 2017</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link">A. Go Sightseeing  </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. Sherlock and The Matrix Game  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-open" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link">C. Trash Throwing  </div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-analysis-tab-close" tabindex="0" role="button" style="display: block;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab" class="">Questions asked</div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();">
+      <img id="dsb-status-panel-button" src="./Problem C. Trash Throwing_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Go Sightseeing</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">10pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: block;"><b>1061/2297 users</b> correct (46%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">14pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: block;"><b>563/917 users</b> correct (61%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Sherlock and The Matrix Game</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">13pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: block;"><b>223/780 users</b> correct (29%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_1" class="inputName">19pt</td>      <td class="status">        <div id="selfStat1_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_1" class="globalStat" style="display: block;"><b>15/47 users</b> correct (32%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Trash Throwing</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">17pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: block;"><b>45/234 users</b> correct (19%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">27pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: block;"><b>9/23 users</b> correct (39%)</div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)">
+          <img id="dsb-scoreboard-panel-button" src="./Problem C. Trash Throwing_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td class="dsb-name-td" id="sbName_0">cchao</td><td class="dsb-score-td" id="sbScore_0">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td class="dsb-name-td" id="sbName_1">hamayanhamayan</td><td class="dsb-score-td" id="sbScore_1">81</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td class="dsb-name-td" id="sbName_2">JTJL</td><td class="dsb-score-td" id="sbScore_2">81</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td class="dsb-name-td" id="sbName_3">Christinass</td><td class="dsb-score-td" id="sbScore_3">81</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td class="dsb-name-td" id="sbName_4">ckcz123</td><td class="dsb-score-td" id="sbScore_4">81</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td class="dsb-name-td" id="sbName_5">Hezhu</td><td class="dsb-score-td" id="sbScore_5">73</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td class="dsb-name-td" id="sbName_6">quailty</td><td class="dsb-score-td" id="sbScore_6">73</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td class="dsb-name-td" id="sbName_7">rajat1603</td><td class="dsb-score-td" id="sbScore_7">73</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td class="dsb-name-td" id="sbName_8">pwypeanut</td><td class="dsb-score-td" id="sbScore_8">73</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td class="dsb-name-td" id="sbName_9">ngochai94</td><td class="dsb-score-td" id="sbScore_9">68</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-sub-link" style="display: none;">View submissions.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">Practice Mode</span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div" style="display: none;">
+          Rank: <span id="dsb-current-rank-span">--</span>
+        </span>
+        <span id="dsb-current-score-div" style="display: none;">
+          Score: <span id="dsb-current-score-span">--</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="https://code.google.com/codejam/contest/8284487/scoreboard?c=8284487">Contest scoreboard</a> | <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://code.google.com/codejam/contest/dashboard%253Fc%253D8284487">Sign in</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;"><span style="color:#666">Problem C.</span> Trash Throwing</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem C. Trash Throwing_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_0"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> A-small-practice.in.</div><form id="submit-formio_timer_0" action="https://code.google.com/codejam/contest/8284487/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="OGMzZDRkZWUxZWZiZDk5MTBmZDI0YzgyZjk4ZGM2MGN8fDE1MDE1MDQ1MDE5NzcwMjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_0" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_0"><div id="input-file-divio_timer_0-0"><span id="source-fileio_timer_0-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_0-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_0" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_0" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_0" type="button" value="Hide"></div><div id="source-file-namesio_timer_0"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5723766516613120"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_0" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>14 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem C. Trash Throwing_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1">Download A-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_1"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_1" action="https://code.google.com/codejam/contest/8284487/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="OGMzZDRkZWUxZWZiZDk5MTBmZDI0YzgyZjk4ZGM2MGN8fDE1MDE1MDQ1MDE5NzcwMjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_1" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_1"><div id="input-file-divio_timer_1-0"><span id="source-fileio_timer_1-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_1-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_1" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_1" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_1" type="button" value="Hide"></div><div id="source-file-namesio_timer_1"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5723766516613120"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_1" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><h2>Problem</h2>
+
+<p>
+  When you travel, you like to spend time sightseeing in as many cities as
+  possible, but sometimes you might not be able to because you need to catch the
+  bus to the next city. To maximize your travel enjoyment, you decide to write a
+  program to optimize your schedule.
+</p>
+
+<p>
+  You begin at city 1 at time 0 and plan to travel to cities 2 to <b>N</b> in
+  ascending order, visiting every city. There is a bus service from every city i
+  to the next city i + 1. The i-th bus service runs on a schedule that is
+  specified by 3 integers: <b>S<sub>i</sub></b>, <b>F<sub>i</sub></b> and
+  <b>D<sub>i</sub></b>, the start time, frequency and ride duration. Formally,
+  this means that there is a bus leaving from city i at all times
+  <b>S<sub>i</sub></b> + x<b>F<sub>i</sub></b>, where x is an integer and x ≥
+  0, and the bus takes <b>D<sub>i</sub></b> time to reach city i + 1.
+</p>
+
+<p>
+  At each city between 1 and <b>N</b> - 1, inclusive, you can decide to spend
+  <b>T<sub>s</sub></b> time sightseeing before waiting for the next bus, or you
+  can immediately wait for the next bus. You cannot go sightseeing multiple
+  times in the same city. You may assume that boarding and leaving buses takes
+  no time. You must arrive at city <b>N</b> by time <b>T<sub>f</sub></b> at the
+  latest. (Note that you cannot go sightseeing in city <b>N</b>, even if you
+  arrive early. There's nothing to see there!)
+</p>
+
+<p>
+  What is the maximum number of cities you can go sightseeing in?
+</p>
+
+<h3>Input</h3>
+
+<p>
+  The input starts with one line containing one integer <b>T</b>, which is the
+  number of test cases. <b>T</b> test cases follow.
+</p>
+
+<p>
+  Each test case begins with a line containing 3 integers, <b>N</b>,
+  <b>T<sub>s</sub></b> and <b>T<sub>f</sub></b>, representing the number of
+  cities, the time taken for sightseeing in any city, and the latest time you
+  can arrive in city <b>N</b>.
+</p>
+<p>
+  This is followed by <b>N</b> - 1 lines. On the i-th line, there are 3
+  integers, <b>S<sub>i</sub></b>, <b>F<sub>i</sub></b> and <b>D<sub>i</sub></b>,
+  indicating the start time, frequency, and duration of buses travelling from
+  city i to city i + 1.
+</p>
+
+<h3>Output</h3>
+
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1) and <code>y</code> is
+  the maximum number of cities you can go sightseeing in such that you can still
+  arrive at city <b>N</b> by time <b>T<sub>f</sub></b> at the latest. If it is
+  impossible to arrive at city <b>N</b> by time <b>T<sub>f</sub></b>, output
+  <code>Case #x: IMPOSSIBLE</code>.
+</p>
+
+<h3>Limits</h3>
+1 ≤ <b>T</b> ≤ 100.<br>
+
+
+<h4>Small dataset</h4>
+2 ≤ <b>N</b> ≤ 16.<br>
+1 ≤ <b>S<sub>i</sub></b> ≤ 5000.<br>
+1 ≤ <b>F<sub>i</sub></b> ≤ 5000.<br>
+1 ≤ <b>D<sub>i</sub></b> ≤ 5000.<br>
+1 ≤ <b>T<sub>s</sub></b> ≤ 5000.<br>
+1 ≤ <b>T<sub>f</sub></b> ≤ 5000.<br>
+
+<h4>Large dataset</h4>
+2 ≤ <b>N</b> ≤ 2000.<br>
+1 ≤ <b>S<sub>i</sub></b> ≤ 10<sup>9</sup>.<br>
+1 ≤ <b>F<sub>i</sub></b> ≤ 10<sup>9</sup>.<br>
+1 ≤ <b>D<sub>i</sub></b> ≤ 10<sup>9</sup>.<br>
+1 ≤ <b>T<sub>s</sub></b> ≤ 10<sup>9</sup>.<br>
+1 ≤ <b>T<sub>f</sub></b> ≤ 10<sup>9</sup>.<br>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">4
+4 3 12
+3 2 1
+6 2 2
+1 3 2
+3 2 30
+1 2 27
+3 2 1
+4 1 11
+2 1 2
+4 1 5
+8 2 2
+5 10 5000
+14 27 31
+27 11 44
+30 8 20
+2000 4000 3
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 2
+Case #2: 0
+Case #3: IMPOSSIBLE
+Case #4: 4
+
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+<p>
+  In the first test case, you can go sightseeing in city 1, catching the bus
+  leaving at time 3 and arriving at time 4. You can go sightseeing in city 2,
+  leaving on the bus at time 8. When you arrive in city 3 at time 10 you
+  immediately board the next bus and arrive in city 4 just in time at time 12.
+</p>
+</div></div><div id="dsb-problem-page1" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>13 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem C. Trash Throwing_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_2"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> B-small-practice.in.</div><form id="submit-formio_timer_2" action="https://code.google.com/codejam/contest/8284487/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="OGMzZDRkZWUxZWZiZDk5MTBmZDI0YzgyZjk4ZGM2MGN8fDE1MDE1MDQ1MDE5NzcwMjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_2" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_2"><div id="input-file-divio_timer_2-0"><span id="source-fileio_timer_2-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_2-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_2" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_2" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_2" type="button" value="Hide"></div><div id="source-file-namesio_timer_2"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5712898689073152"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_2" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>19 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-1" class=""><div id="dsb-input-wrapper1-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-1" style="display: inline;">Solve B-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem C. Trash Throwing_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-1">Download B-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_3"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_3" action="https://code.google.com/codejam/contest/8284487/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="OGMzZDRkZWUxZWZiZDk5MTBmZDI0YzgyZjk4ZGM2MGN8fDE1MDE1MDQ1MDE5NzcwMjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_3" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_3"><div id="input-file-divio_timer_3-0"><span id="source-fileio_timer_3-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_3-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_3" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_3" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_3" type="button" value="Hide"></div><div id="source-file-namesio_timer_3"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5712898689073152"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_3" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+Today, Sherlock and Watson attended a lecture in which they were introduced to matrices. Sherlock is one of those programmers who is not really interested in linear algebra, but he did come up with a problem involving matrices for Watson to solve.
+</p>
+<p>
+Sherlock has given Watson two one-dimensional arrays A and B; both have length <b>N</b>. He has asked Watson to form a matrix with <b>N</b> rows and <b>N</b> columns, in which the <code>j</code><sup>th</sup> element in the <code>i</code><sup>th</sup> row is the product of the i-th element of A and the j-th element of B.
+</p>
+<p>
+Let (x, y) denote the cell of the matrix in the x-th row (numbered starting from 0, starting from the top row) and the y-th column (numbered starting from 0, starting from the left column). Then a submatrix is defined by bottom-left and top-right cells <code>(a, b)</code> and <code>(c, d)</code> respectively, with a ≥ c and d ≥ b, and the submatrix consists of all cells (i, j) such that c ≤ i ≤ a and b ≤ j ≤ d. The sum of a submatrix is defined as sum of all of the cells of the submatrix.
+</p>
+<p>
+To challenge Watson, Sherlock has given him an integer <b>K</b> and asked him to output the <b>K</b><sup>th</sup> largest sum among all submatrices in Watson's matrix, with <b>K</b> counting starting from 1 for the largest sum. (It is possible that different values of <b>K</b> may correspond to the same sum; that is, there may be multiple submatrices with the same sum.) Can you help Watson?
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>. <b>T</b> test cases follow. Each test case consists of one line with nine integers <b>N</b>, <b>K</b>, <b>A<sub>1</sub>, B<sub>1</sub></b>, <b>C</b>, <b>D</b>, <b>E<sub>1</sub></b>, <b>E<sub>2</sub></b> and <b>F</b>. <b>N</b> is the length of arrays A and B; <b>K</b> is the ranking of the submatrix sum Watson has to output, <b>A<sub>1</sub></b> and <b>B<sub>1</sub></b> are the first elements of arrays A and B, respectively; and the other five values are parameters that you should use to generate the elements of the arrays, as follows:
+<br>
+<br>
+First define x<sub>1</sub> = <b>A<sub>1</sub></b>, y<sub>1</sub> = <b>B<sub>1</sub></b>, r<sub>1</sub> = 0, s<sub>1</sub> = 0. Then, use the recurrences below to generate x<sub>i</sub> and y<sub>i</sub> for i = 2 to <b>N</b>:
+</p><ul>
+  <li>x<sub>i</sub> = ( <b>C</b>*x<sub>i-1</sub> + <b>D</b>*y<sub>i-1</sub> + <b>E<sub>1</sub></b> ) modulo <b>F</b>.</li>
+  <li>y<sub>i</sub> = ( <b>D</b>*x<sub>i-1</sub> + <b>C</b>*y<sub>i-1</sub> + <b>E<sub>2</sub></b> ) modulo <b>F</b>.</li>
+</ul>
+Further, generate r<sub>i</sub> and s<sub>i</sub> for i = 2 to <b>N</b> using following recurrences:
+<ul>
+  <li>r<sub>i</sub> = ( <b>C</b>*r<sub>i-1</sub> + <b>D</b>*s<sub>i-1</sub> + <b>E<sub>1</sub></b> ) modulo 2.</li>
+  <li>s<sub>i</sub> = ( <b>D</b>*r<sub>i-1</sub> + <b>C</b>*s<sub>i-1</sub> + <b>E<sub>2</sub></b> ) modulo 2.</li>
+</ul>
+We define <b>A<sub>i</sub></b> = (-1)<sup>r<sub>i</sub></sup> * x<sub>i</sub> and <b>B<sub>i</sub></b> = (-1)<sup>s<sub>i</sub></sup> * y<sub>i</sub>, for all i = 2 to <b>N</b>.
+
+<p></p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing <code>Case #x: y</code>, where <code>x</code> is the test case number (starting from 1) and <code>y</code> is the <b>K<sup>th</sup></b> largest submatrix sum in the matrix defined in the statement.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 20.<br>
+1 ≤ <b>K</b> ≤ min(10<sup>5</sup>, total number of submatrices possible).<br>
+0 ≤ <b>A<sub>1</sub></b> ≤ 10<sup>3</sup>.<br>
+0 ≤ <b>B<sub>1</sub></b> ≤ 10<sup>3</sup>.<br>
+0 ≤ <b>C</b> ≤ 10<sup>3</sup>.<br>
+0 ≤ <b>D</b> ≤ 10<sup>3</sup>.<br>
+0 ≤ <b>E<sub>1</sub></b> ≤ 10<sup>3</sup>.<br>
+0 ≤ <b>E<sub>2</sub></b> ≤ 10<sup>3</sup>.<br>
+1 ≤ <b>F</b> ≤ 10<sup>3</sup>.
+</p>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 200.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 10<sup>5</sup>.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">4
+2 3 1 1 1 1 1 1 5
+1 1 2 2 2 2 2 2 5
+2 3 1 2 2 1 1 1 5
+9 8 7 6 5 4 3 2 1
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 6
+Case #2: 4
+Case #3: 1
+Case #4: 42
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+In case 1, using the generation method, the generated arrays A and B are [1, -3] and [1, -3], respectively. So, the matrix formed is<br>
+[1, -3]<br>
+[-3, 9]
+<br>
+All possible submatrix sums in decreasing order are [9, 6, 6, 4, 1, -2, -2, -3, -3]. As <b>K = 3</b>, answer is 6.
+<br>
+<br>
+
+In case 2, using the generation method, the generated arrays A and B are [2] and [2], respectively. So, the matrix formed is<br>
+[4]
+<br>
+As <b>K = 1</b>, answer is 4.
+<br>
+<br>
+
+In case 3, using the generation method, the generated arrays A and B are [1, 0] and [2, -1] respectively. So, the matrix formed is<br>
+[2, -1]<br>
+[0, 0]
+<br>
+All possible submatrix sums in decreasing order are [2, 2, 1, 1, 0, 0, 0, -1, -1]. As <b>K = 3</b>, answer is 1.
+</div></div><div id="dsb-problem-page2" class="dsb-content-pages" style="display: block;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input<br>17 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem C. Trash Throwing_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_4"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice.in.</div><form id="submit-formio_timer_4" action="https://code.google.com/codejam/contest/8284487/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="OGMzZDRkZWUxZWZiZDk5MTBmZDI0YzgyZjk4ZGM2MGN8fDE1MDE1MDQ1MDE5NzcwMjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_4" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_4"><div id="input-file-divio_timer_4-0"><span id="source-fileio_timer_4-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_4-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_4" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_4" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_4" type="button" value="Hide"></div><div id="source-file-namesio_timer_4"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5753727185059840"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_4" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>27 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem C. Trash Throwing_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1">Download C-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_5"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_5" action="https://code.google.com/codejam/contest/8284487/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="OGMzZDRkZWUxZWZiZDk5MTBmZDI0YzgyZjk4ZGM2MGN8fDE1MDE1MDQ1MDE5NzcwMjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_5" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_5"><div id="input-file-divio_timer_5-0"><span id="source-fileio_timer_5-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_5-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_5" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_5" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_5" type="button" value="Hide"></div><div id="source-file-namesio_timer_5"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5753727185059840"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_5" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><h2>Problem</h2>
+
+<p>
+  Bob is an outstanding Googler. He loves efficiency, so he does everything
+  well and quickly. Today, Bob has discovered that the trash can near his desk has disappeared!
+  Sadly, this means that he has to use another nearby trash can instead. Since
+  getting out of his seat to use the trash can would lower his productivity,
+  Bob has decided to <i>throw</i> his trash into that trash can!
+</p>
+<p>
+  But there are many obstacles in the Google office. For example, it is rude if
+  the thrown trash hits somebody, or the wall, or anything else. Bob hopes to
+  throw the trash without touching any existing obstacles.
+</p>
+<p>
+  To simplify this problem, we will only consider the vertical plane that includes
+  Bob and the trash can. Bob is at point (0, 0); the trash can is at point
+  (<b>P</b>, 0). Moreover, there are <b>N</b> obstacles in the office; each of them
+  is a single point, and the i-th one has coordinates
+  (<b>X<sub>i</sub></b>, <b>Y<sub>i</sub></b>).
+
+  The ceiling of the office is a line with the expression
+  <b>y</b>=<b>H</b> in the plane. Since Bob is in one of the new high-tech
+  floating offices, we do not consider the office floor in this problem; you
+  do not need to worry about collisions with it.
+
+  Bob will throw a piece of trash that is a circle with radius <i>R</i>.
+  The center of the piece of trash starts off at (0, 0). When
+  the piece of trash is thrown, the center of the piece of trash must follow
+  the path of a parabola with the expression f(x)=<i>a</i>x(x-<b>P</b>),
+  where 0 ≤ x ≤ <b>P</b>, and <i>a</i> can be any real number less than
+  or equal to 0. The piece of trash is only considered thrown away when its
+  center reaches the trash can's point, and it is not enough for some part of
+  the piece of trash to just touch that point.
+</p>
+<p>
+  Bob is wondering: what is the largest piece of trash he can throw without
+  hitting the ceiling or any obstacles? That is, we must find the maximum value
+  of <i>R</i> for which there is at least one value <i>a</i> that satisfies the
+  following: for any 0 ≤ x ≤ <b>P</b>, the Euclidean distance between
+  (x, f(x)) and (x, H) is greater than <i>R</i>, and for each i, the
+  Euclidean distance between the point (x, f(x)) and
+  (<b>X<sub>i</sub></b>, <b>Y<sub>i</sub></b>) is greater than or equal to <i>R</i>.
+</p>
+
+<h3>Input</h3>
+<p>
+  The input starts with one line containing one integer <b>T</b>, the
+  number of test cases. <b>T</b> test cases follow. The first line of each
+  test case contains three integers <b>N</b>, <b>P</b>, and <b>H</b>: the
+  number of obstacles, the x-coordinate of the trash can, and the height of
+  the ceiling. Then, there are <b>N</b> more lines; the i-th of those lines
+  represents the i-th obstacle, and has two integers <b>X<sub>i</sub></b> and
+  <b>Y<sub>i</sub></b>, representing that obstacle's coordinates.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1) and <code>y</code> is
+  a double representing the maximum radius <b>R</b>. Your answer will be
+  considered correct if it is within an absolute or relative error of
+  10<sup>-4</sup> of the correct answer. See the
+  <a href="https://codejam.withgoogle.com/codejam/kickstart/resources/faq#real-number-behavior" target="_blank">FAQ</a> for an explanation
+  of what that means, and what formats of real numbers we accept.
+</p>
+
+<h3>Limits</h3>
+
+1 ≤ <b>T</b> ≤ 50.<br>
+2 ≤ <b>P</b> ≤ 1000.<br>
+2 ≤ <b>H</b> ≤ 1000.<br>
+0 &lt; <b>X<sub>i</sub></b> &lt; <b>P</b>.<br>
+0 &lt; <b>Y<sub>i</sub></b> &lt; <b>H</b>.<br>
+
+<h4>Small dataset</h4>
+<b>N</b> = 1.<br>
+
+<h4>Large dataset</h4>
+1 ≤ <b>N</b> ≤ 10.<br>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">4
+1 10 10
+5 3
+1 10 10
+5 4
+1 100 10
+50 3
+2 10 10
+4 2
+6 7
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 3.23874149472
+Case #2: 4.00000000000
+Case #3: 3.50000000000
+Case #4: 2.23145912401
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+<p>
+  Note that the last sample case would not appear in the Small dataset.
+</p>
+<p>
+  The following picture illustrates Sample Case #1. Bob is at (0, 0), and
+  the trash can is at (10, 0). There is a obstacle at point (5, 3), marked
+  with a star. If Bob throws trash over the top of the obstacle, the maximal
+  <i>R</i> is 3.2387, which requires an <i>a</i> of about -0.2705. If Bob
+  throws trash under the obstacle, the maximal <i>R</i> is 3, which requires
+  an <i>a</i> of 0. So the maximum <i>R</i> for this case is about 3.2387.
+</p>
+<img src="./Problem C. Trash Throwing_files/saved_resource">
+<p>
+  Sample Case #2 is like Sample Case #1, but the obstacle is one unit higher.
+  Now, if Bob throws the trash under the obstacle, the maximal <i>R</i> is 4
+  (for <i>a</i> = 0). If he throws the trash over the obstacle, he can only
+  use trash with a radius up to about 2.8306 (with <i>a</i> = -0.4). So the
+  maximum <i>R</i> for this case is 4.
+</p>
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages" style="display: none;"><div id="dsb-analysis-selections"><span id="dsb-analysis-selection-p3" class="dsb-analysis-selected">Overview</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p0" class="dsb-analysis-not-selected">Problem A</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p1" class="dsb-analysis-not-selected">Problem B</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p2" class="dsb-analysis-not-selected">Problem C</span></div><div id="dsb-problem-analysis-div3" class="dsb-problem-content-div"><p>
+  This Kickstart Round consists of a classic Dynamic Programming problem, a 
+  Binary Search problem with a lot to code and a "geometry" problem. 
+</p><p>
+  Thanks to everyone who participated! Kickstart Round E will take place next
+  month; check the Kickstart
+  <a href="https://code.google.com/codejam/kickstart/schedule" target="_blank">schedule</a>
+  for more details.
+</p>
+<hr>
+<p>
+  <b>Cast</b>
+</p><p>
+  Problem A (Go Sightseeing): Written and prepared by Celestine Lau.
+</p><p>
+  Problem B (Sherlock and The Matrix Game): Written and prepared by Lalit Kundu.
+</p><p>
+  Problem C (Trash Throwing): Written and prepared by Chao Li.
+</p><p>
+  Solutions and other problem preparation and review by Ian Tullis, Yiming Li,
+  Xuanang Zhao, Yan Li, Trung Thanh Nguyen and Sunny Aggarwal. Thanks for their
+  help!
+</p>
+<p></p><p>
+Analysis authors:
+</p>
+<ul>
+  <li>Go Sightseeing: Celestine Lau</li>
+  <li>Sherlock and The Matrix Game: Lalit Kundu</li>
+  <li>Trash Throwing: Chao Li</li>
+</ul>
+</div><div id="dsb-problem-analysis-div0" class="dsb-problem-content-div" style="display: none;"><h2>Go Sightseeing: Analysis
+</h2><h3>Small dataset</h3>
+<p>
+  There are at most 15 cities in which you can go sightseeing, and in each
+  of those cities, we can either go sightseeing or not, so there are only
+  2<sup>15</sup> possibilities to consider. A brute force approach that tries
+  each of those 2<sup>15</sup> possibilities is fast enough. For each
+  possibility, we can compute the earliest possible time of arrival in city
+  <b>N</b> and then find the possibility with the greatest number of sightseeing
+  trips that arrives at city <b>N</b> on time.
+</p>
+<p>
+  It can be observed that the time of arrival in any city i + 1 is
+  only dependent on T<sub>w</sub>, the time at which we start waiting for the
+  bus in city i. This can be expressed as <i>Arrival</i>(i + 1, T<sub>w</sub>) =
+  T' + <b>D<sub>i</sub></b> - ((T' - <b>S<sub>i</sub></b>) mod
+  <b>F<sub>i</sub></b>), where T' is max(T<sub>w</sub>, <b>S<sub>i</sub></b>).
+  The arrival time at the final city can thus be computed by iteratively
+  applying the <i>Arrival</i>() function to each city in succession.
+  T<sub>w</sub> for city i will equal <i>Arrival</i>(i) if we do not go
+  sightseeing in city i, and <i>Arrival</i>(i) + <b>T<sub>s</sub></b> if we do.
+</p>
+<h3>Large dataset</h3>
+<p>
+  A brute force approach will not work for the large dataset as there are now
+  2000 cities. However, as noted above, the time of arrival in any city is
+  only dependent on the time that we start waiting at the previous city. This
+  allows us to use <a href="https://en.wikipedia.org/wiki/Dynamic_programming" target="_blank">
+  dynamic programming</a> to solve this problem.
+</p>
+<p>
+  One option that might come to mind is to compute m(i, j), the maximum number
+  of cities that you can go sightseeing in if you have reached city i by time j.
+  This can easily be expressed as a recurrence relation on smaller values of
+  i and j. However, since the times can be as large as 10<sup>9</sup>, this
+  approach is not possible. Instead, we should try to compute f(i, j), the
+  earliest time we can arrive at city i, after having gone sightseeing at
+  exactly j different cities. For the base case of f(2, 0), this is equal to
+  <i>Arrival</i>(2, 0) as defined above, while f(2, 1) =
+  <i>Arrival</i>(2, <b>T<sub>s</sub></b>).
+</p>
+<p>
+  To obtain the recurrence relation, consider a particular city i, where i &gt; 1.
+  You can either choose to go sightseeing there, or not. If you do, then that
+  delays your departure time by <b>T<sub>s</sub></b> but adds 1 to the total
+  number of cities in which you have gone sightseeing. This relationship can be
+  captured as the following equation:
+</p>
+<p>
+  f(i, j) = min{<i>Arrival</i>(i, f(i - 1, j)), <i>Arrival</i>(i, f(i - 1, j - 1) + <b>T<sub>s</sub></b>)}
+</p>
+<p>
+  Once we have computed all possible f, the answer can be obtained by finding
+  the maximum value of x such that f(<b>N</b>, x) ≤ <b>T<sub>f</sub></b>.
+  This solution runs in O(<b>N<sup>2</sup></b>) time.
+</p></div><div id="dsb-problem-analysis-div1" class="dsb-problem-content-div" style="display: none;"><h2>Sherlock and The Matrix Game : Analysis</h2>
+
+<h3>Brute force approaches</h3>
+<p>
+  In the Small dataset, <b>N</b> (which is the size of arrays <b>A</b> and <b>B</b>) doesn't exceed 200. A naive
+  bruteforce strategy is to actually create the matrix and then iterate over all possible
+  submatrices and calculate the sum for each submatrix. Since the number of submatrices is
+  O(N<sup>4</sup>) (observe that for every pair of cells, there exists a unique submatrix), naively
+  iterating over each submatrix in O(<i>submatrix size</i>) is bound to run for years(it's a
+  whopping 1.2 * 10<sup>15</sup> operations for 20 test cases in the worst case). However, if we can
+  calculate sum of each submatrix in constant time, the number of operations will reduce to
+  3 * 10<sup>10</sup>, which is feasible for a modern machine in minutes.
+</p>
+
+<h4> Inclusion-exclusion to the rescue</h4>
+<p>
+  Quickly calculating submatrix sums of a matrix M can be done by maintaining another
+  matrix P such that P(i, j) = sum of all cells M(a, b),
+  such that 1 ≤ a ≤ i and 1 ≤ b ≤ j. Matrix P can be built in
+  O(<i>size of</i> M) time by using the recurrence P(i, j) = M(i, j) + P(i-1, j) + P(i, j-1) -
+  P(i-1, j-1). Note that the first three terms on the right hand side count some of the cells twice,
+  which is why we subtract off the fourth term.
+  Further, the sum of a submatrix defined by top-left and bottom-right cells (a, b) and (c, d) can be
+  calculated as P(c, d) - P(a-1, d) - P(c, b-1) + P(a-1, b-1). Again, we add the last term on right
+  hand side to accomodate the double subtraction of some cells.
+</p>
+
+<h3> A binary search large approach </h3>
+<p>
+  For the Large dataset, <b>N</b> could be up to 10<sup>5</sup>, which implies that creating the
+  matrix in-memory is not possible, let alone iterating over all possible submatrices. We can,
+  however, use the fact that M(i, j) = <b>A</b><sub>i</sub> *
+  <b>B</b><sub>j</sub> to our advantage by expressing sum of cells in the submatrix defined
+  by top-left and bottom-right cells (a, b) and (c, d), respectively, as
+  (<b>A</b><sub>a</sub> + <b>A</b><sub>a+1</sub> + ... + <b>A</b><sub>c</sub>) *
+  (<b>B</b><sub>b</sub> + <b>B</b><sub>b+1</sub> + ... + <b>B</b><sub>d</sub>),
+  i.e., product of sum of contiguous subarrays of <b>A</b> and <b>B</b>.
+</p>
+<p>
+  If we create two sorted lists U and V consisting of all possible subarray sums of <b>A</b> and
+  <b>B</b>, respectively, we're trying to find the <b>K<sup>th</sup></b> largest value among
+  U<sub>i</sub> * V<sub>j</sub> for all i, j.
+  At this moment, we can exploit the fact that <b>K</b> doesn't exceed 10<sup>5</sup> by observing
+  that we don't need to consider all possible values in U and V. We can work with the <b>K</b> largest
+  and smallest values from both arrays(why the smallest? don't forget we also have negative values?)
+  and be guaranteed that answer will be present in product of these values. At this point,
+  we face two subproblems to finally solve this problem.
+</p>
+<h4> Subproblem 1</h4>
+<p>
+  Given an array <b>A</b> of size <b>N</b>, find the <b>K</b> largest subarray sums of <b>A</b>.
+  Note that the value of <b>K</b> is approximately O(<b>N</b>). If we can do this, finding the <b>K</b>
+  smallest subarray sums is easy by reversing the signs of values in A and running the same algorithm.
+</p>
+<h4> Solution</h4>
+<p>
+  We use binary search! The idea is to first find the <b>K<sup>th</sup></b> largest subarray sum
+  by binary searching for it, and then build the actual subarray sums. To apply binary search for
+  the <b>K<sup>th</sup></b> largest subarray sum, we need a function which can quickly count:
+  how many subarray sums are less than X, for a given X?<br>
+  Let us define P<sub>i</sub> as sum of the first i
+  elements of array <b>A</b>. Now, a simple idea is to iterate over i and
+  fix the subarray start at position i. Now, we're trying to count
+  possible j(≥ i) such that
+  P<sub>j</sub> ≥ P<sub>i</sub> + X.
+  Note that the right size of the inequality is a constant for a fixed i.
+  Things would've been easier if prefix sum array P had been an increasing sequence.
+  However, that is not the case, since there are also negative values in array <b>A</b>.
+  Suppose that we iterate over i from <b>N</b> to 1. At each step, we'll try to calculate
+  the answer for i(which depends on all values <b>A</b><sub>j</sub> such
+  that j ≥ i). Imagine we have a data structure DS
+  which supports two operations:<br>
+  </p><ol>
+    <li>Insert y : inserts y in the data structure.</li>
+    <li>Query y : returns the count of values present in data structure that are less than
+      or equal to y.</li>
+  </ol>
+  Using this DS, our job can be done(we can do DS.Insert(<b>A</b><sub>i</sub>),
+  add DS.Query(P<sub>i</sub> + X) to our answer, and then decrement i and
+  so on).
+  Such a data structure can be implemented efficiently using any balanced binary search trees such
+  as splay trees. Such trees can handle both operations in O(log(<i>size of DS</i>)).
+  If the same data structure can support iterating over all values present in it in increasing order,
+  we can get all subarray sums less than the <b>K<sup>th</sup></b> smallest subarray sum in a similar way.
+  Note that we don't need the "Query" operation for doing this. So, the complexity of solving this
+  subproblem turns out to be O(log(<i>range of answer</i>) * <b>N</b> * log(<b>N</b>) + <b>K</b>).
+<p></p>
+<h4> Subproblem 2</h4>
+<p>
+  Given two arrays <b>A</b> and <b>B</b> of size O(<b>N</b>), find the <b>K<sup>th</sup></b>
+  largest among all possible values <b>A</b><sub>i</sub> *
+  <b>B</b><sub>j</sub>, for all i, j.
+</p>
+<h4> Solution</h4>
+<p>
+  Again, we can use binary search on our answer if we, given X, can count how many pairs
+  i, j exist such that <b>A</b><sub>i</sub> *
+  <b>B</b><sub>j</sub> ≥ X.<br>
+  Just as in to subproblem 1, the idea is to iterate over i, and then count all
+  possible j such that
+  <b>B</b><sub>j</sub> ≥ X /  <b>A</b><sub>i</sub>,
+  which is easily doable using binary search if array <b>B</b> is kept in a sorted fashion.
+  However, note that it is a little trickier because of negative values. The complexity of solving this
+  subproblem turns out to be (log(<i>range of answer</i>) * <b>N</b> * log(<b>N</b>)).
+</p></div><div id="dsb-problem-analysis-div2" class="dsb-problem-content-div" style="display: none;"><h2>Trash Throwing: Analysis</h2>
+<p>
+  In this problem, we will use binary search multiple times to transform an
+  optimization problem into a decision problem.
+
+  The problem asks us to find the maximal radius for a thrown circle with a
+  center position satisfying f(x)=<i>a</i>x(x-<b>P</b>), without touching the
+  ceiling or any obstacles.
+</p>
+<p>
+  First of all, if there is an <i>a</i> so that a circle with radius <b>R</b>
+  could pass, then for all <b>R'</b> ≤ <b>R</b>, <b>R'</b> is also a valid
+  solution, as we can choose the same <i>a</i>.
+
+  In other words, we can binary search on <b>R</b>, and for each <b>R</b>,
+  check whether there is a valid <i>a</i>.
+
+  If there is, <b>R</b> is an acceptable answer.
+</p>
+<p>
+  How can we determine whether there is a valid parabola for a given <b>R</b>?
+</p>
+<p>
+  Let's convert the problem into a simpler form.
+
+  Bob wants to throw a circle without touching any obstacles.
+
+  That is, for any point on the parabola (x, f(x)), the distance from that
+  point to the obstacle (<b>X<sub>i</sub></b>, <b>Y<sub>i</sub></b>) must be
+  larger than <b>R</b>.
+
+  We can reframe the problem as follows: given some obstacle circles, with the
+  i-th circle centered at (<b>X<sub>i</sub></b>, <b>Y<sub>i</sub></b>) with
+  radius <b>R</b>, Bob will throw a point such that the point does not
+  touch/enter any circles. (We must also lower the ceiling by exactly
+  <b>R</b> units.)
+
+  This conversion does not change the final answer.
+</p>
+<p>
+  In the Small dataset, there is only one obstacle, as shown in example, and
+  there are two ways to throw it into the trash can.
+
+  One way is to throw the point over the obstacle, and the other one is to
+  throw the point under the obstacle.
+
+  Let's consider the former situation. If there is an <i>a</i> for which the
+  parabola does not touch the obstacle circle, then for all
+  <i>a'</i> ≤ <i>a</i>, the parabola with parameter <i>a'</i> is a valid
+  solution.
+
+  Therefore, we can binary search again (this time on <i>a</i>) and get an
+  interval of real numbers that are valid value of <i>a</i>.
+
+  The latter situation is similar.
+
+  After we have considered both situations, we will have two (or maybe one, in
+  a corner case) intervals of possible values for <i>a</i>.
+</p>
+<p>
+  After we binary search to find <b>R</b> and <i>a</i>, the problem becomes,
+  given the parabola parameter <i>a</i> and an obstacle circle with radius
+  <b>R</b>, determine whether the parabola will intersect the circle.
+
+  We can list the equations:<br>
+
+  y = <i>a</i>x(x-<b>P</b>)<br>
+
+  (x - <b>X<sub>i</sub></b>)<sup>2</sup> + (y - <b>Y<sub>i</sub></b>)<sup>2</sup> =
+  <b>R<sup>2</sup></b><br>
+
+  Since <i>a</i>, <b>P</b>, <b>X<sub>i</sub></b>, <b>Y<sub>i</sub></b> and
+  <b>R</b> are all known variables, we can solve the equations by
+  <a href="https://en.wikipedia.org/wiki/Newton%27s_method" target="_blank">Newton's method</a>
+  or
+  <a href="https://en.wikipedia.org/wiki/Quartic_function" target="_blank">Ferrari's algorithm</a>.
+
+  Each real root represents an intersection point of the parabola and the
+  circle, so an <i>a</i> is acceptable if the equations do not have real roots.
+
+  As for the ceiling case, since the parabola gets the maximal f(x) when
+  x=<b>P</b>/2, if the maximal f(x) is lower than
+  <b>H</b>-<b>R</b>, the trash will not touch the ceiling.
+
+  This is enough to solve the Small dataset.
+</p>
+<p>
+  Finally, let us handle the case of multiple obstacles.
+
+  We can use the same binary search mechanism.
+
+  Note that in the previous solution for one obstacle, after binary search for
+  <b>R</b>, we used another binary search to find the valid intervals for
+  <i>a</i>.
+
+  What we need to do is to find a value of <i>a</i> that is valid for all the
+  obstacles.
+
+  We can do this by masking all invalid intervals, and seeing what remains.
+
+  If the invalid intervals cover all real numbers, then the value of <b>R</b>
+  that we are considering is not acceptable.
+</p></div></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages" style="display: none;">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table" style="display: none;">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"></tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification" style="display: none;">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="NGM4NDQ3NDg0YTQ5YzI1MjJiNDI2ZTVlMTY3OTY4Y2V8fDE1MDE1MDQ1MDE0NjI2NzA="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="5723766516613120">A. Go Sightseeing</option><option value="5712898689073152">B. Sherlock and The Matrix Game</option><option value="5753727185059840">C. Trash Throwing</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0px 0.3em; display: block;">You cannot ask questions at this time. Please email us at codejam@google.com.</div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2017 Google</span>
+  <a href="https://www.google.com/">Google Home</a> -
+  <a href="https://code.google.com/codejam/kickstart/terms">Terms and Conditions</a> -
+  <a href="http://www.google.com/intl/en/policies">Privacy Policies and Principles</a>
+  <br><br>
+  <a href="http://cloud.google.com/"><img width="125" height="91" src="./Problem C. Trash Throwing_files/powered_by_gcp_logo.png"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div></body></html>

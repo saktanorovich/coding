@@ -1,0 +1,941 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0060)https://code.google.com/codejam/contest/32005/dashboard#s=p1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - APAC Semifinal 2008 - Google Code Jam
+  </title>
+
+    <style>@import '//www.google.com/css/modules/buttons/g-button-sparrow.css';</style>
+    <link rel="stylesheet" type="text/css" href="./Problem B. Apocalypse Soon_files/app.css">
+
+
+
+
+
+    <script type="text/javascript" async="" src="./Problem B. Apocalypse Soon_files/ga.js.download"></script><script src="./Problem B. Apocalypse Soon_files/App_en.js.download"></script><style></style>
+    
+
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.dashboardMain().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "32005";
+      GCJ.contest.name = "APAC Semifinal 2008";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 15;
+      
+      GCJ.contest.start_int = 1222054500;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=32005"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam";
+    };
+  //-->
+  </script>
+</head>
+
+<body onload="GCJ.dashboardMain()" class="page-dashboard">
+
+<div id="logo-div">
+  <a href="https://code.google.com/codejam/">
+    <img src="./Problem B. Apocalypse Soon_files/logo_image3.gif" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">APAC Semifinal 2008</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link">A. What are Birds?  </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-open" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. Apocalypse Soon  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link">C. Millionaire  </div></div></div><div><div id="dsb-problem-tab3" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title3" class="dynamic-link">D. Modern Art Plagiarism  </div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-analysis-tab-close" tabindex="0" role="button" style="display: block;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab" class="dsb-has-new-question-tab">Questions asked<span class="dsb-unread-count">2</span></div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();">
+      <img id="dsb-status-panel-button" src="./Problem B. Apocalypse Soon_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">What are Birds?</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">5pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: block;"><b>115/168 users</b> correct (68%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">12pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: block;"><b>78/114 users</b> correct (68%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Apocalypse Soon</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">8pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: block;"><b>17/41 users</b> correct (41%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_1" class="inputName">14pt</td>      <td class="status">        <div id="selfStat1_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_1" class="globalStat" style="display: block;"><b>7/13 users</b> correct (54%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Millionaire</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">13pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: block;"><b>29/52 users</b> correct (56%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">16pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: block;"><b>15/28 users</b> correct (54%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper3" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Modern Art Plagiarism</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_0" class="inputName">7pt</td>      <td class="status">        <div id="selfStat3_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_0" class="globalStat" style="display: block;"><b>137/147 users</b> correct (93%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_1" class="inputName">25pt</td>      <td class="status">        <div id="selfStat3_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_1" class="globalStat" style="display: block;"><b>17/32 users</b> correct (53%)</div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)">
+          <img id="dsb-scoreboard-panel-button" src="./Problem B. Apocalypse Soon_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td class="dsb-name-td" id="sbName_0">ACRush</td><td class="dsb-score-td" id="sbScore_0">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td class="dsb-name-td" id="sbName_1">Ahyangyi</td><td class="dsb-score-td" id="sbScore_1">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td class="dsb-name-td" id="sbName_2">Amber</td><td class="dsb-score-td" id="sbScore_2">78</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td class="dsb-name-td" id="sbName_3">xhl.kogitsune</td><td class="dsb-score-td" id="sbScore_3">78</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td class="dsb-name-td" id="sbName_4">LayCurse</td><td class="dsb-score-td" id="sbScore_4">75</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td class="dsb-name-td" id="sbName_5">xreborner</td><td class="dsb-score-td" id="sbScore_5">71</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td class="dsb-name-td" id="sbName_6">stone</td><td class="dsb-score-td" id="sbScore_6">62</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td class="dsb-name-td" id="sbName_7">TripleM</td><td class="dsb-score-td" id="sbScore_7">62</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td class="dsb-name-td" id="sbName_8">wata</td><td class="dsb-score-td" id="sbScore_8">61</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td class="dsb-name-td" id="sbName_9">tckwok</td><td class="dsb-score-td" id="sbScore_9">53</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-sub-link" style="display: none;">View submissions.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">Practice Mode</span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div" style="display: none;">
+          Rank: <span id="dsb-current-rank-span">--</span>
+        </span>
+        <span id="dsb-current-score-div" style="display: none;">
+          Score: <span id="dsb-current-score-span">--</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="https://code.google.com/codejam/contest/32005/scoreboard?c=32005">Contest scoreboard</a> | <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://code.google.com/codejam/contest/dashboard%253Fc%253D32005">Sign in</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;"><span style="color:#666">Problem B.</span> Apocalypse Soon</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>5 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Apocalypse Soon_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_0"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> A-small-practice.in.</div><form id="submit-formio_timer_0" action="https://code.google.com/codejam/contest/32005/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="ODQ2YzZkZDY2ZWQ1N2Y0MGE2NGRjYWU4MTE3MzA2YWJ8fDE1MjI5MzA4NTcwOTc3OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_0" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_0"><div id="input-file-divio_timer_0-0"><span id="source-fileio_timer_0-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_0-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_0" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_0" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_0" type="button" value="Hide"></div><div id="source-file-namesio_timer_0"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24456"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_0" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>12 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Apocalypse Soon_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1">Download A-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_1"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_1" action="https://code.google.com/codejam/contest/32005/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="ODQ2YzZkZDY2ZWQ1N2Y0MGE2NGRjYWU4MTE3MzA2YWJ8fDE1MjI5MzA4NTcwOTc3OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_1" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_1"><div id="input-file-divio_timer_1-0"><span id="source-fileio_timer_1-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_1-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_1" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_1" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_1" type="button" value="Hide"></div><div id="source-file-namesio_timer_1"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24456"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_1" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><p class="problem-item">Problem</p>
+
+You are studying animals in a forest, and are trying to determine which animals are birds and which are not.
+<p>
+You do this by taking two measurements of each animal – their height and their weight.  For an animal to be a bird, its height needs to be within some range, and its weight needs to be within another range, but you're not sure what the height and weight ranges are.  You also know that <i>every</i> animal that satisfies these ranges is a bird.
+</p><p>
+You have taken some of the animals you have measured and shown them to biologists, and they have told you which are birds and which are not.  This has given you some information on what the height and weight ranges for a bird must be.  For the remaining animals, your program should determine if they are definitely birds, definitely not birds, or if you don't know from the information you have.
+</p><p>
+</p><p class="problem-item">Input</p>
+<p>
+One line containing an integer <b>C</b>, the number of test cases in the input.
+</p>
+Then for each of the <b>C</b> test cases:
+<p></p>
+<ul>
+<li>One line containing an integer <b>N</b>, the number of animals you have shown to the biologists.
+</li><li><b>N</b> lines, one for each of these animals, each of the format "<b>H W X</b>", where <b>H</b> is the height of the animal, <b>W</b> is the weight of the animal, and <b>X</b> is either the string "BIRD" or "NOT BIRD". All numbers are positive integers.
+</li><li>One line containing an integer <b>M</b>, the number of animals you have not shown to the biologists.
+</li><li><b>M</b> lines, one for each of these animals, each of the format "<b>H W</b>", where <b>H</b> is the height of the animal and <b>W</b> is the weight of the animal. All numbers are positive integers.
+</li></ul>
+<p>
+
+</p><p>
+</p><p class="problem-item">Output</p>
+<p>
+For each of the <b>C</b> test cases:
+</p><ul>
+<li>One line containing the string "Case #<b>X</b>:" where <b>X</b> is the number of the test case, starting from 1.</li>
+<li>M lines, each containing one of "BIRD", "NOT BIRD", or "UNKNOWN" (quotes are just for clarity and should not be part of the output).</li>
+</ul>
+<p class="problem-item">Limits</p>
+<p>
+1 ≤ <b>C</b> ≤ 10<br>
+1 ≤ all heights and weights ≤ 1000000
+</p>
+<p class="problem-item">Small dataset</p>
+<p>
+1 ≤ <b>N</b> ≤ 10<br>
+1 ≤ <b>M</b> ≤ 10<br>
+</p>
+<p class="problem-item">Large dataset</p>
+<p>
+1 ≤ <b>N</b> ≤ 1000<br>
+1 ≤ <b>M</b> ≤ 1000<br>
+</p>
+<p class="problem-item">Sample</p>
+<p>
+</p><div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="problem-item-gray">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="problem-item-gray">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+3<br>
+5<br>
+1000 1000 BIRD<br>
+2000 1000 BIRD<br>
+2000 2000 BIRD<br>
+1000 2000 BIRD<br>
+1500 2010 NOT BIRD<br>
+3<br>
+1500 1500<br>
+900 900<br>
+1400 2020<br>
+3<br>
+500 700 NOT BIRD<br>
+501 700 BIRD<br>
+502 700 NOT BIRD<br>
+2<br>
+501 600<br>
+502 501<br>
+1<br>
+100 100 NOT BIRD<br>
+3<br>
+107 93<br>
+86 70<br>
+110 115<br>
+</code>
+</td><td>
+<code>
+Case #1:<br>
+BIRD<br>
+UNKNOWN<br>
+NOT BIRD<br>
+Case #2:<br>
+UNKNOWN<br>
+NOT BIRD<br>
+Case #3:<br>
+UNKNOWN<br>
+UNKNOWN<br>
+UNKNOWN<br>
+</code>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+
+</p><p>
+Case 1:
+</p><p>
+The animal "1500 1500" must be within the ranges for birds, since we know that the ranges for height and weight each include 1000 and 2000.
+</p><p>
+The animal "900 900" may or may not be a bird; we don't know if the ranges for height and weight include 900.
+</p><p>
+The animal "1400 2020" is within the height range for birds, but if 2020 was in the weight range, then the animal "1500 2010", which we know is not a bird, would also have to be within the weight range.
+</p><p>
+Case 2:
+</p><p>
+In this case we know that birds must have a height of 501.  But we don't know what the weight range for a bird is, other than that it includes weight 700.
+</p><p>
+Case 3:
+</p><p>
+In this case, we know that anything with height 100 and weight 100 is not a bird, but we just don't know what birds are.</p></div></div><div id="dsb-problem-page1" class="dsb-content-pages" style="display: block;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>8 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Apocalypse Soon_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_2"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> B-small-practice.in.</div><form id="submit-formio_timer_2" action="https://code.google.com/codejam/contest/32005/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="ODQ2YzZkZDY2ZWQ1N2Y0MGE2NGRjYWU4MTE3MzA2YWJ8fDE1MjI5MzA4NTcwOTc3OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_2" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_2"><div id="input-file-divio_timer_2-0"><span id="source-fileio_timer_2-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_2-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_2" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_2" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_2" type="button" value="Hide"></div><div id="source-file-namesio_timer_2"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24455"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_2" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>14 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-1" class=""><div id="dsb-input-wrapper1-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-1" style="display: inline;">Solve B-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Apocalypse Soon_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-1">Download B-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_3"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_3" action="https://code.google.com/codejam/contest/32005/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="ODQ2YzZkZDY2ZWQ1N2Y0MGE2NGRjYWU4MTE3MzA2YWJ8fDE1MjI5MzA4NTcwOTc3OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_3" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_3"><div id="input-file-divio_timer_3-0"><span id="source-fileio_timer_3-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_3-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_3" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_3" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_3" type="button" value="Hide"></div><div id="source-file-namesio_timer_3"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24455"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_3" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><p class="problem-item">Problem</p>
+<p>
+Oh no!  The delicate political balance of the world has finally collapsed, and everybody has declared war on everybody else.  You warned whoever would listen that this would happen, but did they pay attention?  Ha!  Now the only thing you can hope for is to survive as long as possible.<br>
+</p>
+<p>
+Fortunately (sort of), everyone's industrial centers have already been nuked, so the only method of attack available to each nation is to hurl wave after wave of conscripted soldiers at each other. This limits each nation to attacking only its immediate neighbors. The world is a R-by-C grid with R rows, numbered from 1 in the far North to R in the far South, and C columns, numbered from 1 in the far West to C in the far East. Each nation occupies one square of the grid, which means that each nation can reach at most 4 other adjacent nations.<br>
+</p>
+<p>
+Every nation starts with a specific strength value, known to everyone. They have no concept of advanced strategy, so at the beginning of each day, they will simply choose their strongest neighbor (breaking ties first by Northernmost nation, then by Westernmost) and attack them with an army. The army will have a power equal to the current strength S of the nation; by the end of the day, it will have depleted that neighbor's strength by S. A nation whose strength reaches 0 is destroyed. Note that all nations attack at the same time; an army's power is the same regardless of whether its nation is attacked that day.<br>
+</p>
+<p>
+Your nation is located at (c, r), in row r and column c. Fortunately, your nation is listening to your advice, so you don't have to follow this crazy strategy. You may choose to attack any of your neighbors on a given day (or do nothing at all). You can't attack multiple neighbors, however, or attack with an army of less than full power.<br>
+</p>
+<p>
+Determine the maximum number days you can survive.<br> 
+</p>
+
+<p class="problem-item">Input</p>
+<p>
+The first line of input gives the number of cases, <b>T</b>.  <b>T</b> test cases follow.  The first line of each test case contains four integers, <b>C</b>, <b>R</b>, <b>c</b>, and <b>r</b>.  The next <b>R</b> lines each contain <b>C</b> integers, giving the starting strength <b>S<sub>ci,ri</sub></b> of the nation in column <b>ci</b> and row <b>ri</b>.  It may be 0, indicating that the nation has already been destroyed.  Your nation's starting strength will not be 0.<br>
+</p>
+
+<p class="problem-item">Output</p>
+<p>
+For each test case, output one line containing "Case #<b>A</b>: " followed by:
+</p>
+
+<ul>
+<li>"<b>B</b> day(s)", where <b>B</b> is the most days you can hope to survive.</li>
+<li>"forever", if you can outlast all your neighbors.</li>
+</ul>
+
+<p class="problem-item">Limits</p>
+<p>
+1 ≤ T ≤ 100<br>
+1 ≤ c ≤ C<br>
+1 ≤ r ≤ R<br>
+</p>
+
+<p class="problem-item">Small dataset</p>
+<p>
+1 ≤ C ≤ 5<br>
+1 ≤ R ≤ 5<br>
+0 ≤ S<sub>ci,ri</sub> ≤ 10<br>
+</p>
+
+<p class="problem-item">Large dataset</p>
+<p>
+1 ≤ C ≤ 50<br>
+1 ≤ R ≤ 50<br>
+0 ≤ S<sub>ci,ri</sub> ≤ 1000<br>
+</p>
+
+<p class="problem-item">Sample</p>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td><br><span class="problem-item-gray">Input</span><br></td>
+<td><br><span class="problem-item-gray">Output</span><br></td>
+</tr>
+<tr>
+<td>
+<code>
+2<br>
+3 3 2 2<br>
+2 3 2<br>
+1 7 1<br>
+2 1 2<br>
+4 3 2 1<br>
+1 2 2 0<br>
+10 8 5 10<br>
+10 2 9 10<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: forever<br>
+Case #2: 3 day(s)<br></code>
+
+</td></tr></tbody></table>
+</div></div></div><div id="dsb-problem-page2" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input<br>13 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Apocalypse Soon_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_4"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice.in.</div><form id="submit-formio_timer_4" action="https://code.google.com/codejam/contest/32005/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="ODQ2YzZkZDY2ZWQ1N2Y0MGE2NGRjYWU4MTE3MzA2YWJ8fDE1MjI5MzA4NTcwOTc3OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_4" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_4"><div id="input-file-divio_timer_4-0"><span id="source-fileio_timer_4-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_4-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_4" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_4" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_4" type="button" value="Hide"></div><div id="source-file-namesio_timer_4"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24457"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_4" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>16 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Apocalypse Soon_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1">Download C-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_5"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_5" action="https://code.google.com/codejam/contest/32005/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="ODQ2YzZkZDY2ZWQ1N2Y0MGE2NGRjYWU4MTE3MzA2YWJ8fDE1MjI5MzA4NTcwOTc3OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_5" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_5"><div id="input-file-divio_timer_5-0"><span id="source-fileio_timer_5-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_5-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_5" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_5" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_5" type="button" value="Hide"></div><div id="source-file-namesio_timer_5"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24457"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_5" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><p class="problem-item">Problem</p>
+<p>You have been invited to the popular TV show "Would you like to be a millionaire?".
+Of course you would!</p>
+The rules of the show are simple:
+<ul>
+<li>Before the game starts, the host spins a wheel of fortune to
+determine <b>P</b>, the probability of winning each bet.
+</li><li>You start out with some money: <b>X</b> dollars.
+</li><li>There are <b>M</b> rounds of betting.  In each round, you can bet any
+part of your current money, including none of it or all of it.  The amount is not limited to whole dollars or whole cents.
+<p>If you win the bet, your total amount of money increases by the amount you bet.  Otherwise, your amount of money decreases by the amount you bet.
+</p></li><li>After all the rounds of betting are done, you get to keep your
+winnings (this time the amount is rounded down to whole dollars) only if you have accumulated $1000000 or more. Otherwise you get nothing.
+</li></ul>
+
+<p>Given <b>M</b>, <b>P</b> and <b>X</b>, determine your probability of winning at least $1000000 if you play optimally (i.e. you play so that you maximize your
+chances of becoming a millionaire).
+</p>
+
+<p class="problem-item">Input</p>
+<p>The first line of input gives the number of cases, <b>N</b>.</p>
+<p>Each of the following <b>N</b> lines has the format "<b>M</b> <b>P</b> <b>X</b>", where:
+</p><ul>
+<li><b>M</b> is an integer, the number of rounds of betting.
+</li><li><b>P</b> is a real number, the probability of winning each round.
+</li><li><b>X</b> is an integer, the starting number of dollars.
+</li></ul>
+<p></p>
+
+<p class="problem-item">Output</p>
+<p>For each test case, output one line containing "Case #<b>X</b>: <b>Y</b>", where:
+</p><ul>
+<li><b>X</b> is the test case number, beginning at 1.
+</li><li><b>Y</b> is the probability of becoming a millionaire, between 0 and 1.<p></p>
+</li></ul>
+<p>Answers with a relative or absolute error of at most 10<sup>-6</sup> will
+ be considered correct.</p>
+
+<p class="problem-item">Limits</p>
+<p>1 ≤ <b>N</b> ≤ 100<br>
+0 ≤ <b>P</b> ≤ 1.0, there will be at most 6 digits after the decimal point.<br>
+1 ≤ <b>X</b> ≤ 1000000</p>
+
+<p class="problem-item">Small dataset</p>
+<p>1 ≤ <b>M</b> ≤ 5</p>
+
+<p class="problem-item">Large dataset</p>
+<p>1 ≤ <b>M</b> ≤ 15</p>
+
+<p class="problem-item">Sample</p>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="problem-item-gray">Input</span>
+<br>
+</td>
+<td>
+<br>
+<span class="problem-item-gray">Output</span>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<code>
+2<br>
+1 0.5 500000<br>
+3 0.75 600000<br>
+<br>
+</code>
+</td><td>
+<code>
+Case #1: 0.500000<br>
+Case #2: 0.843750<br>
+<br>
+</code>
+</td></tr></tbody></table>
+</div>
+
+<p>In the first case, the only way to reach $1000000 is to bet everything
+in the single round.<br><br>
+In the second case, you can play so that you can still reach $1000000 even if you lose a bet.  Here's one way to do it:
+</p><ul>
+<li>You have $600000 on the first round.  Bet $150000.
+</li><li>If you lose the first round, you have $450000 left.  Bet $100000.
+</li><li>If you lose the first round and win the second round, you have $550000 left.  Bet $450000.
+</li><li>If you win the first round, you have $750000 left.  Bet $250000.
+</li><li>If you win the first round and lose the second round, you have $500000 left.  Bet $500000.
+</li></ul>
+<p></p>
+
+</div></div><div id="dsb-problem-page3" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text3"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table3"><tr><td class="dsb-input-table-description">Small input<br>7 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-0" class=""><div id="dsb-input-wrapper3-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-0" style="display: inline;">Solve D-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Apocalypse Soon_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-0">Download D-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-0">resubmit</span> for <span id="dsb-resubmit-timer3-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_6"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> D-small-practice.in.</div><form id="submit-formio_timer_6" action="https://code.google.com/codejam/contest/32005/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="ODQ2YzZkZDY2ZWQ1N2Y0MGE2NGRjYWU4MTE3MzA2YWJ8fDE1MjI5MzA4NTcwOTc3OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_6" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_6"><div id="input-file-divio_timer_6-0"><span id="source-fileio_timer_6-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_6-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_6" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_6" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_6" type="button" value="Hide"></div><div id="source-file-namesio_timer_6"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24458"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_6" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>25 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-1" class=""><div id="dsb-input-wrapper3-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-1" style="display: inline;">Solve D-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Apocalypse Soon_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-1">Download D-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-1">resubmit</span> for <span id="dsb-resubmit-timer3-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_7"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_7" action="https://code.google.com/codejam/contest/32005/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="ODQ2YzZkZDY2ZWQ1N2Y0MGE2NGRjYWU4MTE3MzA2YWJ8fDE1MjI5MzA4NTcwOTc3OTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_7" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_7"><div id="input-file-divio_timer_7-0"><span id="source-fileio_timer_7-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_7-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_7" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_7" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_7" type="button" value="Hide"></div><div id="source-file-namesio_timer_7"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="24458"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_7" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div3" class="dsb-problem-content-div" style="width: 40em;"><p class="problem-item">Problem</p>
+
+<p>
+You have pictures of two sculptures.  The sculptures consist of several solid metal spheres, and some rubber pipes connecting pairs of spheres.  The pipes in each sculpture are connected in such a way that for any pair of spheres, there is exactly one path following a series of pipes (without repeating any) between those two spheres. All the spheres have the same radius, and all the pipes have the same length.
+</p>
+
+<p>
+You suspect that the smaller of the two sculptures was actually created by simply removing some spheres and pipes from the larger one.  You want to write a program to test if this is possible.
+</p>
+
+The input will contain several test cases. One sculpture is described by numbering the spheres consecutively from 1, and listing the pairs of spheres which are connected by pipes.  The numbering is chosen independently for each sculpture.
+
+<p class="problem-item">Input</p>
+<ul>
+<li>One line containing an integer <b>C</b>, the number of test cases in the input file.
+</li></ul>
+For each test case, there will be:
+<ul>
+<li>One line containing the integer <b>N</b>, the number of spheres in the large sculpture.
+</li><li><b>N</b>−1 lines, each containing a pair of space-separated integers, indicating that the two spheres with those numbers in the large sculpture are connected by a pipe.
+</li><li>One line containing the integer <b>M</b>, the number of spheres in the small sculpture.
+</li><li><b>M</b>−1 lines, each containing a pair of space-separated integers, indicating that the two spheres with those numbers in the small sculpture are connected by a pipe.
+</li></ul>
+<p>
+</p><p class="problem-item">Output</p>
+<p>
+</p><ul>
+<li><b>C</b> lines, one for each test case in the order they occur in the input file, containing "Case #<b>X</b>: YES" if the small sculpture in case <b>X</b> could have been created from the large sculpture in case <b>X</b>, or "Case #<b>X</b>: NO" if it could not.  (<b>X</b> is the number of the test case, between 1 and <b>C</b>.)
+</li></ul>
+<p></p>
+
+<p class="problem-item">Limits</p>
+
+<p class="problem-item">Small dataset</p>
+<p>
+1 ≤ <b>C</b> ≤ 100<br>
+2 ≤ <b>N</b> ≤ 8<br>
+1 ≤ <b>M</b> &lt; N<br>
+</p>
+<p class="problem-item">Large dataset</p>
+<p>
+1 ≤ <b>C</b> ≤ 50<br>
+2 ≤ <b>N</b> ≤ 100<br>
+1 ≤ <b>M</b> &lt; N<br>
+</p><p>
+
+</p><p class="problem-item">Sample</p>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="problem-item-gray">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="problem-item-gray">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+2<br>
+5<br>
+1 2<br>
+2 3<br>
+3 4<br>
+4 5<br>
+4<br>
+1 2<br>
+1 3<br>
+1 4<br>
+5<br>
+1 2<br>
+1 3<br>
+1 4<br>
+4 5<br>
+4<br>
+1 2<br>
+2 3<br>
+3 4<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: NO<br>
+Case #2: YES<br>
+<br>
+</code>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+In the first case, the large sculpture has five spheres connected in a line, and the small sculpture has one sphere that has three other spheres connected to it. There's no way the smaller sculpture could have been made by removing things from the larger one.
+</p>
+
+<p>
+In the second case, the small sculpture is four spheres connected in a line.  These can match the larger sculpture's spheres in the order 2-1-4-5.
+</p>
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages"><div id="dsb-analysis-selections"><span id="dsb-analysis-selection-p4" class="dsb-analysis-selected">Overview</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p0" class="dsb-analysis-not-selected">Problem A</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p1" class="dsb-analysis-not-selected">Problem B</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p2" class="dsb-analysis-not-selected">Problem C</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p3" class="dsb-analysis-not-selected">Problem D</span></div><div id="dsb-problem-analysis-div4" class="dsb-problem-content-div"><p>
+This is the first local onsite final of the 2008 Code Jam. We had four problems with different styles, two of them unconventional for different reasons.
+</p>
+<p>
+Problem C, the Millionaire, is one of the rare gems in the programming contests that, at first glance, is continuous and offers an infinite search space. The beautiful solution makes the problem discrete, and reminds us of some classical puzzles of recursive reasoning. Players from Japan did really well on this problem. 8 Japanese players qualified for the world finals; all of them solved the small dataset of this problem, which is almost as hard as the large dataset.
+</p>
+<p>
+Problem B, Apocalypse Soon, is another type of big puzzle. The solution is really simple, but you need to see through the properties of the game with very good intuition to believe that the code is really just a trivial simulation. Under such pressure, with the other nice and hard problems, it is not a big surprise that this one had the least number of correct submissions. The top two scorers both solved left this problem to the end.
+</p>
+<p>
+Problem A, What Are Birds, was meant to be the easy problem here. The best way to solve it is to visualize it as a cute geometry problem. The problem is far from trivial. Several players solved a more difficult problem yet still missed the qualification just because they did not succeed on this one.
+</p>
+<p>
+Problem D, Modern Art Plagiarism, had the biggest point value. It is a standard graph problem, with a nice solution using matchings. It turns out we have more contestants who solved D than B or C. This implies that many of our players are well trained in classical algorithms.
+</p>
+<p>
+Again, we had scores of 100 in this match. They are two of the favorites, <b>ACRush</b> and <b>Ahyangyi</b>, both from China. Around 30 minutes before the end of the contest we saw a duel for the top spot. They both had the last program -- for problem C -- almost ready, but soon submitted 6 wrong submissions to C-small. Finally, they fixed their bugs. <b>Ahyangyi</b> was the first to finish all the problems, but had 3 more wrong submissions. <b>ACRush</b> was the winner of the APAC final, with a lower penalty score.
+</p>
+<p>
+Congratulations to all the participants. It was a wonderful match.
+</p>
+
+<br>
+<hr>
+<p class="problem-item">Credits</p>
+<p>Problem A. <i>What are Birds?</i> Written by John Dethridge. Prepared by John Dethridge and Marius Andrei.</p>
+<p>Problem B. <i>Apocalypse Soon</i> Written by Derek Kisman. Prepared by Igor Naverniouk and Kelly Poon.</p>
+<p>Problem C. <i>Millionaire</i> Written by Geir Engdahl. Prepared by Xiaomin Chen.</p>
+<p>Problem D. <i>Modern Art Plagiarism</i> Written by John Dethridge. Prepared by Frank Chu and Marius Andrei.</p>
+<p>Contest analysis presented by Xiaomin Chen, Derek Kisman, and Geir Engdahl.</p>
+</div><div id="dsb-problem-analysis-div0" class="dsb-problem-content-div" style="display: none;"><p class="problem-item">The Simple Solution</p>
+<p>
+Let us visualize this problem. Each animal is characterized as a pair (H, W), which can be viewed as a point in the two dimensional Cartesian coordinate system. For each animal that is known to be a bird, we color it red. For each animal known to be a non-bird, we color it blue. The problem states that there exists a rectangle such that a point is red if and only if it is in the rectangle. The problem is trivial if there are no red points. From now on we assume there are red points.
+</p>
+<p>
+For any two distinct points U and V, there is naturally a rectangle determined by U and V. It is the smallest rectangle containing both U and V, with the four corners U, V, (H<sub>U</sub>, W<sub>V</sub>), and (H<sub>V</sub>, W<sub>U</sub>). When U and V are on the same horizontal or vertical line, the rectangle degenerates to a segment. Formally, the rectangle contains all the points (H, W) such that
+</p><blockquote>
+(|H - H<sub>U</sub>| + |W - W<sub>U</sub>|) + (|H - H<sub>V</sub>| + |W - W<sub>V</sub>|) = |H<sub>U</sub> - H<sub>V</sub>| + |W<sub>U</sub> - W<sub>V</sub>|.
+</blockquote>
+<p></p>
+<p>
+We have the following proposition.
+</p><blockquote>
+If U and V are two red points, and R be the rectangle determined by U and V; then any point in R must also be red, since any rectangle containing both U and V must contain R.
+</blockquote>
+<p></p>
+<p>
+For the set of all red points in the input, there is also naturally a <i>smallest</i> rectangle, R<sub>0</sub>, that contains all of them. There are different ways to define this rectangle:
+</p><ul>
+<li>(a) The intersection of all the rectangles that contain all the red points.</li>
+<li>(b) The union of all the rectangles determined by U and V, where (U, V) range over all the red point pairs.</li>
+<li>(c) The rectangle with four corners A=(H<sub>min</sub>, W<sub>min</sub>), B=(H<sub>min</sub>, W<sub>max</sub>), C=(H<sub>max</sub>, W<sub>min</sub>), and D=(H<sub>max</sub>, W<sub>max</sub>), where the min and max are taken over all the red points.</li>
+</ul>
+The interested reader may check the equivalence of the above definitions.
+<p></p>
+<p>
+Now, given a point X, we want to know if it is a bird or not. Clearly, if X is inside R<sub>0</sub>, then it must be bird. Otherwise, we may pretend it is red, and compute the new rectangle R' based on (c). This can be done in a constant number of comparisons. If there is a blue point from the input that lies in R', then X must not be a bird. Otherwise, X might (taking R' as the red rectangle) or might not (taking R<sub>0</sub> as the red rectangle) be a bird.
+</p>
+<p>
+By the limits of this problem, a Θ(NM) algorithm is fast enough. That is, we simply take any blue input point, and check if that is inside R'.
+</p>
+
+<p class="problem-item">Further Discussion</p>
+<p>
+Another way to view the last step of the solution, when the query point X is given, is to see whether there is a known red point Y such that the rectangle determined by X and Y contains any blue point. It is enough to check Y = A, B, C, or D as in (c). To check this, we do not need to go over all the blue input points. There are standard pre-processing techniques that can reduce the query time from N to log N.
+</p>
+<p>
+For example, for A, we can define two sets based on the blue inputs: those points that are higher (along the W-axis) than A (call them A<sub>1</sub>) and the rest of the A points (<nobr>A<sub>2</sub> = A - A<sub>1</sub></nobr>). The task of determining whether there is a blue point between X and A becomes the query of lowest or highest point in the range between H<sub>X</sub> and H<sub>A</sub>.
+</p>
+</div><div id="dsb-problem-analysis-div1" class="dsb-problem-content-div" style="display: none;"><p>
+This problem is a sheep in wolf's clothing.  However, it must have been very convincing wolf's clothing!  Fewer competitors solved it than any other problem, despite the simplicity of the actual solution.  Since this was an onsite round, they were all experienced competitors; in some sense, that worked against them.
+</p>
+<p>
+Why does the problem seem so hard?  To a practiced eye, it has all the trappings of a horrible exponential search.  You have 5 actions to choose from on each day, and the results of those actions don't tend to overlap, leading to an exponential number of possible states.  Furthermore, even the subtlest change in a nation's strength can drastically affect the final outcome, so at each step the entire state of the world matters.  This makes a Dynamic Programming-based solution look unlikely.  And due to the chaotic nature of the rules, there's unlikely to be a greedy strategy that works in all cases.
+</p>
+<p>
+So a horrible exponential search seems essential.  On a 50x50 grid of numbers between 0 and 1000, this is clearly intractable!  Give up and go home.  No, wait... it's supposed to be solvable somehow, right?  How could that be?
+</p>
+<p>
+Well, if you try a few cases by hand, you'll soon realize why: everyone ends up killing their neighbors really, really quickly.  A random map tends to stabilize (no living neighbors) in only 4-6 days.  It's actually very difficult to come up with a case that takes longer.  The more you try, the more you'll realize just how difficult it is; the army sizes required grow exponentially, and the tighter you pack them the sooner they all die.  The map size doesn't turn out to matter much - it's the army size bound of 1000 that really sets the cap on how long you'll need to search.  
+</p>
+<p>
+What exactly is this cap?  That's a really tough question.  For instance, if army sizes are unbounded, there <i>is</i> no small limit.  Here's a simple (2<i>n</i>-2)x2 case that takes <i>n</i> days to stabilize:<br>
+1 2 4 8 ... 2<sup>2<i>n</i>-3</sup><br>
+1 2 4 8 ... 2<sup>2<i>n</i>-3</sup>
+</p>
+<p>
+However, the army sizes <i>must</i> grow exponentially relative to the number of days.  Here's a simple proof: on day <i>n</i>, let <i>S<sub>n</sub></i> be the strength of the strongest nation that still has living neighbors.  Let <i>N</i> be any nation with strength ≥ <i>S<sub>n</sub></i>/2.   Suppose that after 8 days <i>N</i> still has strength ≥ <i>S<sub>n</sub></i>/2.  Then it must have killed all its neighbors, since none had strength ≥ <i>S<sub>n</sub></i> (that is, any neighbor would die after at most 2 attacks).  So every such <i>N</i> either ends up isolated or weaker than <i>S<sub>n</sub></i>/2 after 8 days.  Thus, <i>S<sub>n+8</sub></i> ≤ <i>S<sub>n</sub></i>/2.  This puts a strict bound of 8(log<sub>2</sub><i>S<sub>n</sub></i>+1) more days before all nations are dead or isolated.
+</p>
+<p>
+Unfortunately, for army sizes of 1000 this bound of 80 days still isn't very helpful.  The bound can be improved with tighter reasoning, but due to the compact, constrained nature of the grid, the "true" bound is probably much smaller - around 9-10 days!  However, we don't know how to prove a bound anywhere near this.  If you can think of a way, let us know! :)
+</p>
+<p>
+The worst test case in our data had an answer of "9 day(s)".  So as it turns out, even a straight brute force solution (on the worst-case order of 50x50x5<sup>9</sup>) would suffice to solve it.  Adding simple pruning heuristics and memoization can potentially also help, but isn't necessary.
+</p>
+<p>
+Incidentally, one potential coding error you could make is to assume that effects can only propagate at one grid square per day.  The "speed of light" (as it's known in cellular automata) is actually <i>two</i> grid squares per day, because if an army's neighbor changes, it may choose to attack its opposite neighbor instead.  In the "9 day(s)" test case, there are nations 13 squares away from yours that end up affecting the answer.  So if you tried to speed up your solution by considering only the local region around your nation, you'd have to be careful not to make it <i>too</i> local.
+</p>
+<p>
+In the end, all it took to get this problem was bravery (or foolishness).  If you code it properly and try it, it works!  It's just a question of how well you can convince yourself that the simple solution has a hope of working.  You certainly wouldn't want to download the Large dataset and <i>then</i> realize your solution was too slow...
+</p>
+</div><div id="dsb-problem-analysis-div2" class="dsb-problem-content-div" style="display: none;"><p>
+The problem explicitly states that the contestant has an infinite number of degrees of freedom. She can bet ANY fraction of her current amount. This makes it impossible to brute force over all of the possible bets. The trick is to discretize the problem. 
+</p>
+<p>
+Following one of the principles in problem solving, we look at the easier cases. The problem is easy if there is one round. We suggest you do it for the
+case when there are two rounds. It is not hard, but it reveals the interesting nature of the problem. The figure below illustrates the situation in the second-to-last round, the last round and after the last round. 
+<br><br><br>
+<img src="./Problem B. Apocalypse Soon_files/saved_resource">
+<br><br><br>
+The colors represent different probability zones. All sums in a probability zone share the same probability of winning. The <i>important</i> sums are marked and labeled.
+</p>
+
+<p>
+If we know the probability of winning for all sums in the next round
+P<sub>next</sub>(sum), then the probability of winning in this round is:
+</p><blockquote>
+p * P<sub>next</sub>(sum + stake) + (1 - p) P<sub>next</sub>(sum - stake),
+</blockquote>
+ where <code>stake</code> is the amount we are betting.
+<p></p>
+
+<p>
+Now, given the existence and location of the important sums in the
+next round, we can find the locations of the important sums in this
+round. The figure below illustrates how we find these sums. The midpoints between the important sums of the next round become important in this round. I.e in the case of the green point in figure 2, we can
+move up by lowering the stake, and we can move down by increasing the
+stake, without changing the end probability. The probability of the blue, green and red points is the same.
+This also illustrates that the probability in a 'probability zone'
+which is limited by two important sums is equal to the probability
+at the lower important sum.
+<br><br><br>
+<img src="./Problem B. Apocalypse Soon_files/saved_resource(1)">
+<br><br><br>
+</p>
+
+<p>
+Conclusion: The important sums of round i are the union of the important sums of round <nobr>(i+1)</nobr> and their midpoints. We need to
+consider $0 an important sum in the last round because we
+can't bet more than we have.
+</p>
+<p>
+Now, we only need to compute probabilities at the important sums,
+bootstrapping at 1.0 for $1000000, and 0.0 for $0 in the last round.
+Then, going backwards, we fill the probabilities at the important sums
+in the previous rounds.
+</p>
+<p> By the limits of the input, we may try all the stakes that lead to important points in the next round. It is an interesting question whether there are mathematical properties that could reduce the complexity of this computation, but that is beyond the scope of this analysis.
+</p>
+</div><div id="dsb-problem-analysis-div3" class="dsb-problem-content-div" style="display: none;"><p>
+This problem is a classical graph
+problem called <i>subtree isomorphism</i>. As an interesting note, the
+modern era in art history actually starts far earlier than the so
+called classical period in computer science.
+</p>
+<p>
+In this problem, we are given two trees <b>T<sub>1</sub></b> and
+<b>T<sub>2</sub></b>. We are going to decide if T<sub>2</sub> is
+isomorphic to any subtree of T<sub>1</sub>. The general sub-graph
+isomorphism problem is notoriously hard. But as you perhaps have seen
+many times, when the things come to trees, it is very solvable.
+The problem is actually well studied, and is a standard exercise in
+algorithm design.
+</p>
+<p><i> First, a bit of terminology. </i> Just for convenience, in our
+discussion, for two rooted trees, we say one <i>fits into</i> the other if
+there us an isomorphism that maps the former to a subtree of the
+latter such that the root is mapped to the other's root.
+</p>
+<p>
+We may fix T<sub>2</sub> and consider it as a tree rooted at
+vertex 0. We do not know which vertex of T<sub>1</sub> corresponds to
+0 of T<sub>2</sub> in the isomorphism. But we may try each vertex in
+T<sub>1</sub>, and see if T<sub>2</sub> fits into T<sub>1</sub>.<br>
+For a concrete example, let's say we root T<sub>1</sub> at vertex
+<b>x</b>. Assume that there are 3 children of 0 in T<sub>2</sub> --
+y<sub>1</sub>, y<sub>2</sub>, and y<sub>3</sub>. Assume that there are
+5 children of x in T<sub>1</sub> -- x<sub>1</sub>. x<sub>2</sub>,
+x<sub>3</sub>. T<sub>2</sub> fits into T<sub>1</sub> if and only if we
+can find that the subtree at y<sub>1</sub> fits into the subtree at
+x<sub>i</sub> for some i, the subtree at y<sub>2</sub> fits into the
+subtree at x<sub>j</sub> for some other j ≠ i, and the subtree at
+y<sub>3</sub> fits into the subtree at x<sub>k</sub> for some k ≠
+i, k ≠ j.
+</p>
+<p>
+The solution for this problem as follows. Once we have fixed the root x, each
+vertex has a level in its tree. For each vertex <b>u</b> in
+T<sub>1</sub> and <b>v</b> in T<sub>2</sub>, if they have the same
+level (just a bit of reasonable optimization, not necessary for this
+problem), we want to decide if the subtree at v fits into the subtree
+at u. We do this from bottom up, the deeper levels first.<br>
+For any such pair (u, v) with children { u<sub>i</sub> | i = 1,2,...
+} and { v<sub>j</sub> | j = 1,2,... }, we know which v<sub>j</sub>
+fits into which u<sub>i</sub> since we are doing the computations bottom up. We find a fit if and only if we can find, for each
+v<sub>j</sub>, a distinct u<sub>i</sub> such that v<sub>j</sub> fits
+into u<sub>i</sub>. This is clearly a bipartite graph matching
+problem.
+</p>
+<p>
+We leave it an exercise to prove that the algorithm, runs in O(N<sup>2</sup>M<sup>2</sup>) time. There are
+algorithms with better complexities. For interested readers, we refer
+to the following paper
+<br>
+R. Shamir, D. Tsur, "<i>Faster Subtree Isomorphism</i>", Journal of Algorithm, 33, 267-280 (1999).
+<br>
+which contains a recent result as well as references to earlier works.
+</p>
+
+<p class="problem-item">
+More information:
+</p>
+<p>
+<a href="http://www.google.com/search?q=subtree+isomorphism" target="_blank">Subtree Isomorphism</a> - 
+<a href="http://www.google.com/search?q=graph+isomorphism" target="_blank">Graph Isomorphism</a> -
+<a href="http://www.google.com/search?q=bipartite+matching" target="_blank">Bipartite Matching</a>
+</p>
+</div></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table" style="display: block;">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">[General]<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">2:05:40</td><td></td><td><i>when will the result be running out? thanks</i></td><td></td><td class="clarTimeColumn" style="color: red;">2:06:12</td><td></td><td><i>The results will be announced at your awards ceremony. They will appear on the website in about 3.5 hours.</i></td></tr><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">[Unknown]<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">16:11</td><td></td><td><i>The coordinates are larger than the upper limit</i></td><td></td><td class="clarTimeColumn" style="color: red;">28:30</td><td></td><td><i>Yes, the upper limit on the coordinates should be 1,000,000 instead of 100,000. We have changed the problem statement.</i></td></tr></tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification" style="display: none;">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="OWRjNDA5ZTk1ZDNkNWM4YTFjMzYzN2YwYTU1YjQ4ZmJ8fDE1MjI5MzA4NTYwMzA5MTA="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="24456">A. What are Birds?</option><option value="24455">B. Apocalypse Soon</option><option value="24457">C. Millionaire</option><option value="24458">D. Modern Art Plagiarism</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0px 0.3em; display: block;">You cannot ask questions at this time. Please email us at codejam@google.com.</div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2018 Google</span>
+  <a href="https://www.google.com/">Google Home</a> -
+  <a href="https://code.google.com/codejam/terms">Terms and Conditions</a> -
+  <a href="http://www.google.com/intl/en/policies">Privacy Policies and Principles</a>
+  <br><br>
+  <a href="http://cloud.google.com/"><img width="125" height="91" src="./Problem B. Apocalypse Soon_files/powered_by_gcp_logo.png"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div></body></html>

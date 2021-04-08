@@ -1,0 +1,1187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0066)https://code.google.com/codejam/contest/12224486/dashboard#s=a&a=2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - Code Jam to I/O 2017 for Women - Google Code Jam
+  </title>
+
+    <style>@import '//www.google.com/css/modules/buttons/g-button-sparrow.css';</style>
+    <link rel="stylesheet" type="text/css" href="./Problem C_files/app.css">
+
+
+
+
+
+    <script type="text/javascript" async="" src="./Problem C_files/ga.js.download"></script><script src="./Problem C_files/App_en.js.download"></script><style></style>
+    
+
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.dashboardMain().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "12224486";
+      GCJ.contest.name = "Code Jam to I/O 2017 for Women";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 6;
+      
+      GCJ.contest.start_int = 1489251600;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=12224486"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "https://sites.google.com/site/codejamtoioforwomen/";
+    };
+  //-->
+  </script>
+</head>
+
+<body onload="GCJ.dashboardMain()" class="page-dashboard">
+
+<div id="logo-div">
+  <a href="https://sites.google.com/site/codejamtoioforwomen//">
+    <img src="./Problem C_files/logo_iofw.png" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">Code Jam to I/O 2017 for Women</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link">A. Ticket Trouble  </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. Understudies  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link">C. Word Search  </div></div></div><div><div id="dsb-problem-tab3" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title3" class="dynamic-link">D. Where Ya Gonna Call?  </div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-analysis-tab-open" tabindex="0" role="button" style="display: block;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab" class="">Questions asked</div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();">
+      <img id="dsb-status-panel-button" src="./Problem C_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Ticket Trouble</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">5pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: block;"><b>613/819 users</b> correct (75%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">10pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: block;"><b>565/616 users</b> correct (92%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Understudies</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">5pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: block;"><b>505/616 users</b> correct (82%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_1" class="inputName">15pt</td>      <td class="status">        <div id="selfStat1_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_1" class="globalStat" style="display: block;"><b>440/508 users</b> correct (87%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Word Search</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">10pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: block;"><b>186/337 users</b> correct (55%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">15pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: block;"><b>20/77 users</b> correct (26%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper3" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Where Ya Gonna Call?</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_0" class="inputName">15pt</td>      <td class="status">        <div id="selfStat3_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_0" class="globalStat" style="display: block;"><b>23/91 users</b> correct (25%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_1" class="inputName">25pt</td>      <td class="status">        <div id="selfStat3_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_1" class="globalStat" style="display: block;"><b>3/22 users</b> correct (14%)</div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)">
+          <img id="dsb-scoreboard-panel-button" src="./Problem C_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td class="dsb-name-td" id="sbName_0">Taube</td><td class="dsb-score-td" id="sbScore_0">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td class="dsb-name-td" id="sbName_1">ponik</td><td class="dsb-score-td" id="sbScore_1">75</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td class="dsb-name-td" id="sbName_2">aquannie</td><td class="dsb-score-td" id="sbScore_2">75</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td class="dsb-name-td" id="sbName_3">YuryBandarchuk</td><td class="dsb-score-td" id="sbScore_3">75</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td class="dsb-name-td" id="sbName_4">Penguinsheaven</td><td class="dsb-score-td" id="sbScore_4">75</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td class="dsb-name-td" id="sbName_5">Marjan0003</td><td class="dsb-score-td" id="sbScore_5">75</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td class="dsb-name-td" id="sbName_6">MiriTheRing</td><td class="dsb-score-td" id="sbScore_6">75</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td class="dsb-name-td" id="sbName_7">Celicath</td><td class="dsb-score-td" id="sbScore_7">60</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td class="dsb-name-td" id="sbName_8">n.bezrodnaya</td><td class="dsb-score-td" id="sbScore_8">60</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td class="dsb-name-td" id="sbName_9">FireJade</td><td class="dsb-score-td" id="sbScore_9">60</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-sub-link" style="display: none;">View submissions.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">Practice Mode</span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div" style="display: none;">
+          Rank: <span id="dsb-current-rank-span">--</span>
+        </span>
+        <span id="dsb-current-score-div" style="display: none;">
+          Score: <span id="dsb-current-score-span">--</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="https://code.google.com/codejam/contest/12224486/scoreboard?c=12224486">Contest scoreboard</a> | <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://code.google.com/codejam/contest/dashboard%253Fc%253D12224486&amp;ltmpl=">Sign in</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-green-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;">Contest Analysis</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>5 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem C_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_0"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> A-small-practice.in.</div><form id="submit-formio_timer_0" action="https://code.google.com/codejam/contest/12224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="NGE1MzVkYTA3ZDg1NWJjZWQ3ZTM2NzEzNDA4MDc3ZGN8fDE0OTA3MDEzNTQ5ODAzNzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_0" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_0"><div id="input-file-divio_timer_0-0"><span id="source-fileio_timer_0-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_0-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_0" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_0" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_0" type="button" value="Hide"></div><div id="source-file-namesio_timer_0"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5756257340227584"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_0" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem C_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1">Download A-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_1"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_1" action="https://code.google.com/codejam/contest/12224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="NGE1MzVkYTA3ZDg1NWJjZWQ3ZTM2NzEzNDA4MDc3ZGN8fDE0OTA3MDEzNTQ5ODAzNzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_1" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_1"><div id="input-file-divio_timer_1-0"><span id="source-fileio_timer_1-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_1-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_1" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_1" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_1" type="button" value="Hide"></div><div id="source-file-namesio_timer_1"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5756257340227584"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_1" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  A group of <b>F</b> friends is attending a conference held at an
+  amphitheater, and they have bought tickets to see a concert there afterwards.
+  The amphitheater is a grid of seats with <b>S</b> rows and <b>S</b> columns.
+  For each seat, the amphitheater has sold a single ticket (although some of
+  the tickets might not have been sold to this group of friends). Each ticket
+  is normally labeled with a pair of integers giving the row and column numbers
+  of one seat, in that order. For example, a ticket might normally say (2, 1),
+  meaning row 2, column 1, or (2, 2), meaning row 2, column 2.
+</p><p>
+  When the tickets were printed, there was a malfunction, and the two numbers
+  in each pair always came out in sorted (that is, nondecreasing) order! So,
+  for example, a ticket labeled (1, 2) might actually be for the seat in row 1,
+  column 2, or it might actually be for the seat in row 2, column 1. If two
+  friends have tickets labeled (1, 2), then one must actually be for row 1,
+  column 2, and the other must actually be for row 2, column 1.
+</p><p>
+  The friends will consult the box office on the day of the concert to find
+  out what their actual seat numbers are, but for now, it is unclear! Given the
+  printed pairs on the tickets, what is the largest possible number of the
+  friends that could actually be seated all in the same-numbered row of seats?
+  (The friends do <i>not</i> necessarily need to be seated in consecutive seats
+  in that row.)
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> test cases follow. Each begins with one line with two integers
+  <b>F</b> and <b>S</b>, representing the number of friends and the dimension
+  of the grid of seats. Then, <b>F</b> more lines follow. The i-th of those
+  lines has two integers <b>A<sub>i</sub></b> and <b>B<sub>i</sub></b>,
+  representing the two numbers printed on the i-th friend's ticket.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1) and <code>y</code>
+  is largest possible number of the friends that could actually be seated all
+  in the same-numbered row of seats.
+</p>
+
+<h3>Limits</h3>
+<p>
+  <b>F</b> ≤ <b>S</b><sup>2</sup>.<br>
+  1 ≤ <b>A<sub>i</sub></b> ≤ <b>B<sub>i</sub></b> ≤ <b>S</b>, for all
+  i.<br>
+  No pair appears more than twice in a test case.<br>
+  No pair containing the same number twice appears more than once in a test
+  case.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  1 ≤ <b>T</b> ≤ 50.<br>
+  2 ≤ <b>F</b> ≤ 3.<br>
+  2 ≤ <b>S</b> ≤ 3.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+  2 ≤ <b>F</b> ≤ 100.<br>
+  2 ≤ <b>S</b> ≤ 100.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">3
+2 3
+1 2
+1 2
+3 3
+1 2
+2 3
+2 2
+3 3
+1 1
+2 2
+1 2
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 1
+Case #2: 3
+Case #3: 2
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  In sample case #1, one ticket must actually be for row 1, column 2, and the
+  other must actually be for row 2, column 1, even though we do not know which
+  is which. So we know that the friends are not seated in the same row, and
+  the largest number of friends in any row is 1. Also note that the seats
+  have a third row and column, but none of the tickets use the third row or
+  column.
+</p><p>
+  In sample case #2, one of the tickets is definitely for seat 2 in row 2, and
+  it is possible that two of the other tickets could be for seats 1 and 3 in
+  row 2. So there may be as many as 3 friends in the same row.
+</p><p>
+  In sample case #3, either there are two friends in row 1 and one in row 2,
+  or there are two friends in row 2 and one in row 1. In either case, the
+  answer is 2.
+</p>
+</div></div><div id="dsb-problem-page1" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>5 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem C_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_2"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> B-small-practice.in.</div><form id="submit-formio_timer_2" action="https://code.google.com/codejam/contest/12224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="NGE1MzVkYTA3ZDg1NWJjZWQ3ZTM2NzEzNDA4MDc3ZGN8fDE0OTA3MDEzNTQ5ODAzNzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_2" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_2"><div id="input-file-divio_timer_2-0"><span id="source-fileio_timer_2-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_2-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_2" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_2" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_2" type="button" value="Hide"></div><div id="source-file-namesio_timer_2"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5732219482013696"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_2" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>15 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-1" class=""><div id="dsb-input-wrapper1-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-1" style="display: inline;">Solve B-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem C_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-1">Download B-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_3"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_3" action="https://code.google.com/codejam/contest/12224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="NGE1MzVkYTA3ZDg1NWJjZWQ3ZTM2NzEzNDA4MDc3ZGN8fDE0OTA3MDEzNTQ5ODAzNzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_3" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_3"><div id="input-file-divio_timer_3-0"><span id="source-fileio_timer_3-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_3-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_3" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_3" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_3" type="button" value="Hide"></div><div id="source-file-namesio_timer_3"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5732219482013696"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_3" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  You are a casting director for an upcoming musical. The musical has <b>N</b>
+  roles, and for each role, you want to cast two performers: one primary
+  performer and one understudy. A primary performer or understudy trains for
+  only one particular role, and the job of the understudy is to play the role
+  if the primary performer becomes unavailable. At least one of the two
+  performers for each role must be available for the show to succeed.
+</p><p>
+  You have selected 2<b>N</b> performers to be in the musical. They are all
+  quite talented, and any of them can be cast as a primary performer or
+  understudy for any of the roles. However, you are worried that some of them
+  may be tempted to run away to join the cast of <i>Hamiltonian!</i>, the smash
+  hit musical about quantum mechanics, before your show opens. Luckily, you are
+  an excellent judge of character. You know that the i-th performer has a
+  probability <b>P<sub>i</sub></b> of becoming unavailable. (These
+  probabilities are all independent of each other, and a given performer has
+  their probability regardless of their assigned role or whether they are
+  a primary performer or understudy.)
+</p><p>
+  You wish to assign one primary performer and one understudy for each role in
+  a way that maximizes the probability that the show will succeed. That is,
+  you want to minimize the probability that there will be at least one role
+  for which the primary performer and understudy both become unavailable.
+</p><p>
+  If you make optimal casting choices, what is the probability that your show
+  will succeed?
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> test cases follow; each consists of two lines. The first line
+  contains a single integer <b>N</b>: the number of roles. The second line
+  contains 2<b>N</b> rational numbers <b>P<sub>i</sub></b>; the i-th of these
+  gives the probability that the i-th performer will become unavailable for
+  your show. All of these probabilities are specified to exactly four decimal
+  places of precision.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1) and <code>y</code>
+  is the probability that your show will succeed. <code>y</code> will be
+  considered correct if it is within an absolute or relative error of
+  10<sup>-6</sup> of the correct answer. See the
+  <a href="https://code.google.com/codejam/faq.html#floating_point">FAQ</a> for an explanation of what
+  that means, and what formats of real numbers we accept.
+</p>
+
+<h3>Limits</h3>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+  0.0000 ≤ <b>P<sub>i</sub></b> ≤ 1.0000, for all i.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  1 ≤ <b>N</b> ≤ 4.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  1 ≤ <b>N</b> ≤ 40.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+</td></tr>
+<tr>
+<td>
+<pre class="io-content">3
+2
+0.2500 0.5000 0.5000 0.2500
+3
+0.0000 0.0000 0.0000 0.0009 0.0013 0.1776
+1
+1.0000 0.1234
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<br><hr><br>
+</td>
+</tr>
+<tr>
+<td>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">Case #1: 0.765625
+Case #2: 1.000000
+Case #3: 0.876600
+
+</pre>
+</td></tr>
+</tbody></table>
+</div>
+
+
+<p>
+  In sample case #1, one optimal casting choice is to make the two 0.5000
+  performers leads for the two roles, and the two 0.2500 performers
+  understudies. For a given role, the probability that both performers will
+  become unavailable is 0.5 × 0.25 = 0.125. So the probability that a
+  role will be filled by at least one of its actors is 1 - 0.125 = 0.875. The
+  probability that both roles will be filled (and thus that the show will
+  succeed) is 0.875 × 0.875 = 0.765625.
+</p><p>
+  If we instead cast the two 0.5000 performers for one role and the two 0.2500
+  performers for the other role, the probability of success would be
+  (1 - 0.50 × 0.50) × (1 - 0.25 × 0.25) = 0.703125, which is
+  lower.
+</p><p>
+  In sample case #2, the show will succeed for sure as long as you cast exactly
+  one of the 0.0000 performers (who will never become unavailable) in each role.
+</p><p>
+  In sample case #3, the 1.0000 performer will always become unavailable, so
+  the probability of success is equal to 1 minus the probability that the other
+  performer will become unavailable.
+</p>
+</div></div><div id="dsb-problem-page2" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem C_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_4"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice.in.</div><form id="submit-formio_timer_4" action="https://code.google.com/codejam/contest/12224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="NGE1MzVkYTA3ZDg1NWJjZWQ3ZTM2NzEzNDA4MDc3ZGN8fDE0OTA3MDEzNTQ5ODAzNzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_4" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_4"><div id="input-file-divio_timer_4-0"><span id="source-fileio_timer_4-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_4-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_4" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_4" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_4" type="button" value="Hide"></div><div id="source-file-namesio_timer_4"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5673223274364928"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_4" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>15 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem C_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1">Download C-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_5"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_5" action="https://code.google.com/codejam/contest/12224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="NGE1MzVkYTA3ZDg1NWJjZWQ3ZTM2NzEzNDA4MDc3ZGN8fDE0OTA3MDEzNTQ5ODAzNzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_5" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_5"><div id="input-file-divio_timer_5-0"><span id="source-fileio_timer_5-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_5-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_5" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_5" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_5" type="button" value="Hide"></div><div id="source-file-namesio_timer_5"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5673223274364928"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_5" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  In honor of Google I/O 2017, we would like to make an I/O-themed word search
+  grid. This will be a rectangular grid in which every cell contains one of
+  the three characters <code>I</code>, <code>/</code>, or <code>O</code>. The
+  people solving our word search will look for all instances of the string
+  <code>I/O</code> that appear contiguously forwards or backwards in a row,
+  column, or diagonal. For example, the following grid contains eight instances
+  of <code>I/O</code>, representing all eight possible directions in which the
+  string can appear:
+</p>
+<code>
+  OOOOO<br>
+  O///O<br>
+  O/I/O<br>
+  O///O<br>
+  OOOOO<br>
+</code>
+<p>
+  To control the difficulty level of our word search, we would like the string
+  to appear <i>exactly</i> <b>N</b> times in the grid. Moreover, we do not
+  want the grid to be too large; it cannot have more than <b>D</b> rows or more
+  than <b>D</b> columns.
+</p><p>
+  Can you help us design a grid that meets these specifications?
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> test cases follow. Each test case consists of one line with two
+  integers <b>D</b> and <b>N</b>, as described above.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, first output one line containing <code>Case #x:</code>.
+  Then output R lines of exactly C characters each, representing the
+  rectangular grid. Each of those characters must be either <code>I</code>,
+  <code>/</code>, or <code>O</code>. You may choose any values of R and C as
+  long as both are at least 1 and neither exceeds <b>D</b>. Your grid must
+  contain <i>exactly</i> <b>N</b> instances of the string <code>I/O</code>, per
+  the rules described in the statement.
+</p><p>
+  If there are multiple valid answers, you may output any of them.
+</p>
+
+<h3>Limits</h3>
+<p>
+  0 ≤ <b>N</b> ≤ 287.<br>
+  It is guaranteed that at least one valid grid exists for each test case.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  1 ≤ <b>T</b> ≤ 25.<br>
+  <b>D</b> = 50.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+  <b>D</b> = 15.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">4
+50 1
+50 0
+50 3
+50 8
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1:
+O
+/
+I
+Case #2:
+IO
+Case #3:
+IIIOOO
+/I/O/O
+IIIOOO
+Case #4:
+OOOOO
+O///O
+O/I/O
+O///O
+OOOOO
+
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  The sample output displays one set of answers to the sample cases. Other
+  answers may be possible. Note that these cases would only appear in the
+  Small dataset.
+</p>
+</div></div><div id="dsb-problem-page3" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text3"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table3"><tr><td class="dsb-input-table-description">Small input<br>15 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-0" class=""><div id="dsb-input-wrapper3-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-0" style="display: inline;">Solve D-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem C_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-0">Download D-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-0">resubmit</span> for <span id="dsb-resubmit-timer3-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_6"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> D-small-practice.in.</div><form id="submit-formio_timer_6" action="https://code.google.com/codejam/contest/12224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="NGE1MzVkYTA3ZDg1NWJjZWQ3ZTM2NzEzNDA4MDc3ZGN8fDE0OTA3MDEzNTQ5ODAzNzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_6" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_6"><div id="input-file-divio_timer_6-0"><span id="source-fileio_timer_6-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_6-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_6" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_6" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_6" type="button" value="Hide"></div><div id="source-file-namesio_timer_6"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5643205479497728"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_6" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>25 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-1" class=""><div id="dsb-input-wrapper3-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-1" style="display: inline;">Solve D-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem C_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-1">Download D-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-1">resubmit</span> for <span id="dsb-resubmit-timer3-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_7"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_7" action="https://code.google.com/codejam/contest/12224486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="NGE1MzVkYTA3ZDg1NWJjZWQ3ZTM2NzEzNDA4MDc3ZGN8fDE0OTA3MDEzNTQ5ODAzNzA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_7" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_7"><div id="input-file-divio_timer_7-0"><span id="source-fileio_timer_7-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_7-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_7" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_7" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_7" type="button" value="Hide"></div><div id="source-file-namesio_timer_7"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5643205479497728"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_7" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div3" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  Gooli is a huge company that owns <b>B</b> buildings in a hilly area. The
+  buildings are numbered from 1 to <b>B</b>.
+</p><p>
+  Last year, they built a set of slides between buildings that are now the
+  favorite form of transportation between buildings. Slides have been upgraded
+  with suction technology to make them two-way, so a slide between two
+  buildings can be used to travel between those buildings in either direction.
+  Some slides were built with turns, so their lengths do not necessarily follow
+  common sense; for instance, they do not necessarily comply with the triangle
+  inequality. Also, there is at most one slide between any pair of buildings.
+</p><p>
+  Gooli is going to choose a location to install a special super secure phone
+  for the CEO to talk to other important people. They want to minimize the
+  distance by slide from any building to the meeting location, so as to
+  minimize the time that it would take the CEO to reach it from any building.
+  Gooli does not have any more carbon kilotubes to build more slides, and the
+  CEO refuses any other type of transportation, so Gooli's communication
+  security team needs to find the best location that is reachable using only
+  already existing slides. The location could be in a building or a point
+  somewhere within a slide.
+</p><p>
+  When traveling using the slides, the CEO may use a slide, arrive at a
+  building, then use a slide that starts there, arrive at another building, and
+  so on, until she arrives at the desired location.
+  Slides used from
+  end to end contribute their full length to the total distance. If the CEO enters
+  a slide and stops inside it because she found the phone, on the other hand, only
+  the used part of the slide contributes to the total distance.
+  When measuring distance, only the slide distance is important.
+  Distance traveled within buildings to
+  connect to a new slide or reach the phone is considered to be zero.
+</p><p>
+  Given the buildings and slides in existence, can you find any optimal
+  location for the super secure phone and return the distance from a farthest
+  building to it? Note that the distance is the same for any optimal location.
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> lines follow. Each test case starts with one line with a single
+  integer <b>B</b>, the number of buildings on Gooli's campus. Then, <b>B</b> -
+  1 lines follow. For i = 2, 3, ..., <b>B</b>, the (i-1)-th of these lines
+  contains (i-1) integers <b>D</b><sub>i1</sub>, <b>D</b><sub>i2</sub>, ...,
+  <b>D</b><sub>i(i-1)</sub>. <b>D</b><sub>ij</sub> is -1 if there is no slide
+  between the i-th building and the j-th building, or the length of that slide
+  otherwise. All buildings are reachable from any other building using only
+  slides, possibly passing through intermediate buildings.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1) and <code>y</code>
+  is the distance from an optimal location for the phone to a building farthest
+  from it. <code>y</code> will be considered correct if it is within an
+  absolute or relative error of 10<sup>-6</sup> of the correct answer. See the
+  <a href="https://code.google.com/codejam/faq.html#floating_point">FAQ</a> for an explanation of what
+  that means, and what formats of real numbers we accept.
+</p>
+
+<h3>Limits</h3>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+  2 ≤ <b>B</b> ≤ 50.<br>
+  All buildings are reachable from any other building using only slides,
+  possibly passing through intermediate buildings.<br>
+  <b>D</b><sub>ij</sub> ≠ 0, for all i, j.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  -1 ≤ <b>D</b><sub>ij</sub> ≤ 2, for all i, j.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  -1 ≤ <b>D</b><sub>ij</sub> ≤ 10<sup>9</sup>, for all i, j.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">4
+3
+-1
+1 2
+3
+1
+1 1
+3
+4
+2 3
+4
+9
+10 7
+7 -1 5
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 1.500000
+Case #2: 1.000000
+Case #3: 2.500000
+Case #4: 8.500000
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  Note that the last two cases would not appear in the Small dataset.
+</p><p>
+  In Case #1, all buildings are in a line. The only optimal location is of
+  course the middle point of the line, as any other location would make one of
+  the buildings at the end of the line be farther away.
+</p><p>
+  Case #2 depicts an equilateral triangle. Any of the three buildings would be
+  an optimal location for the phone.
+</p><p>
+  Case #3 is also a triangle, but with sides of different lengths. If we pick
+  any building, the farthest building would be at distance at least 3 from it.
+  On the other hand, if we choose a location inside the slide of size 3, at distance
+  0.5 from building 3, the distance to a farthest building is improved to 2.5.
+</p><p>
+  In Case #4, the optimal location is inside the slide of length 10 between
+  buildings 1 and 3, at distance 1.5 from building 3 and distance 8.5 from
+  building 1.
+</p>
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages" style="display: block;"><div id="dsb-analysis-selections"><span id="dsb-analysis-selection-p4" class="dsb-analysis-not-selected">Overview</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p0" class="dsb-analysis-not-selected">Problem A</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p1" class="dsb-analysis-not-selected">Problem B</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p2" class="dsb-analysis-selected">Problem C</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p3" class="dsb-analysis-not-selected">Problem D</span></div><div id="dsb-problem-analysis-div4" class="dsb-problem-content-div" style="display: none;"><p>
+In our fourth annual Code Jam to I/O for Women contest, we had an immediate burst of activity on the scoreboard. Within 16 minutes, at least one contestant had solved two full problems out of four. The others proved to be more difficult, though; there were no Large submissions for C (or any submissions for D) within the first hour of the contest. Then, solutions for both came trickling in, but the majority of D-Large attempts used an incorrect approach. The first and only completely correct set of submissions came from Taube, with a total penalty time of 2:23:44. Most contestants who reached the top 150 did so by solving all of A and B and C-Small; a combination of speed and accuracy was necessary.
+</p><p>
+<i>Ticket Trouble</i> was a warm-up problem that alluded to our 2017 Google I/O venue, Shoreline Amphitheatre. This was followed by <i>Understudies</i>, a probability problem with a greedy solution, and <i>Word Search</i>, in which contestants had to construct a letter grid under specific tight constraints. Rounding out this year's set, we had <i>Where Ya Gonna Call?</i>, a challenging graph problem. You can check out the analysis for each problem for more information.
+</p><p>
+Over 600 contestants made it onto the scoreboard with at least one correct submission! Thanks to everyone who participated, and we hope to see all of you again in next year's contest! Before that, though, there's <a href="https://codejam.withgoogle.com/codejam" target="_blank">Google Code Jam 2017</a>; registration is open through the end of the Qualification Round on April 9.
+</p>
+<hr>
+<p>
+<b>Cast</b>
+</p><p>
+Problem A (<i>Ticket Trouble</i>): Written and prepared by Ian Tullis.
+</p><p>
+Problem B (<i>Understudies</i>): Written and prepared by Ian Tullis.
+</p><p>
+Problem C (<i>Word Search</i>): Written and prepared by Ian Tullis.
+</p><p>
+Problem D (<i>Where Ya Gonna Call?</i>): Written and prepared by Pablo Heiber.
+</p>
+<p>
+Solutions and other problem preparation and review by Liang Bai, Shane Carr, Yinfu Chen, John Dethridge, Lauren Mancino Gallagher, Jackson Gatenby, Lalit Kundu, Zhusong Li, Rohan Mukkamala, Igor Naverniouk, Chieu Nguyen, Trung Thanh Nguyen, and Erick Wong.
+</p><p>
+Problem analyses by Pablo Heiber and Ian Tullis.
+</p></div><div id="dsb-problem-analysis-div0" class="dsb-problem-content-div" style="display: none;"><h2>Ticket Trouble: Analysis</h2>
+<p>
+  There are two minor hurdles to deal with in this problem:
+</p>
+<ul>
+  <li>Two tickets with the same numbers (e.g., both <code>1 2</code>) can never
+    both be in the same row, so they cannot both contribute to the maximum
+    value that is the answer. Therefore, it is safe to eliminate or ignore one
+    ticket from each such pair. You can sort the tickets so that duplicates end
+    up next to each other, or use a data structure such as a set to eliminate
+    them.</li>
+  <li>A ticket might have the same number twice (e.g., <code>1 1</code>). This
+    can throw off an attempted solution that just counts how many times each
+    number appears anywhere in any ticket.</li>
+</ul>
+<p>
+  A possible solution for the Small is to note that each of the <b>F</b>
+  tickets might either be correct as is, or it might have its numbers reversed.
+  You can try all 2<sup><b>F</b></sup> possible scenarios and find the largest
+  number of friends that ever end up together in the same row. The only tricky
+  part is that duplicate tickets can cause illegal scenarios that put two
+  friends in the same seat, so you must either check for these scenarios, or
+  remove the duplicates in advance as mentioned earlier.
+</p><p>
+  An even simpler solution that works for the Large is to determine the number
+  of tickets that could possibly be in each row. For each ticket (ignoring one
+  ticket from each duplicate pair), check the two numbers. If they are the
+  same, add 1 to the count for that row number. If they are different, add 1 to
+  the count for each of those row numbers. The maximum among these numbers is
+  the answer. Note that in this solution, we do not need to explicitly consider
+  any particular arrangement of the friends, and the solution would also work
+  if the problem had asked about columns instead of rows.
+</p>
+</div><div id="dsb-problem-analysis-div1" class="dsb-problem-content-div" style="display: none;"><h2>Understudies: Analysis</h2>
+
+<h3>Small dataset</h3>
+<p>
+  There can be at most four roles and eight performers in a Small test case. We
+  could write code to enumerate all of the different ways to pair up the
+  performers, but this can be tricky to get right; however, the limits allow an
+  even easier brute-force solution. It is simple to generate all possible
+  permutations of performers using, for example, Python's
+  <code>itertools.permutations</code>. For each permutation, we can pair the
+  first performer in the list with the second, the third with the fourth, and
+  so on, and then check the overall success probability in the way described in
+  the sample case explanations. The maximum probability we encounter is the
+  answer. This method will check equivalent casting decisions multiple times,
+  but it doesn't matter; 8! is under 50 thousand, so your computer should not
+  even break a sweat.
+</p>
+<h3>Large dataset</h3>
+<p>
+  Brute force will not cut it for a musical with up to 40 roles — we
+  must be giving <i>Cats</i> and <i>A Chorus Line</i> a run for their money!
+  — so we need a more thoughtful strategy. Is it better to pair up
+  reliable performers with other reliable performers, making some roles secure
+  and others risky? Or should we pair our most reliable performers with our
+  least reliable ones, spreading out the risk more evenly across roles? Or is
+  the solution something more complex? Intuition can easily fool us when it
+  comes to probability problems, so it's best to make a mathematical argument.
+</p><p>
+  Suppose that we have paired up our performers in some arbitrary way. Let's
+  consider two of the roles and the four performers. Without loss of
+  generality, let's label the four performers A, B, C, and D, such that their
+  probabilities of becoming unavailable follow the order P<sub>A</sub> ≥
+  P<sub>B</sub> ≥ P<sub>C</sub> ≥ P<sub>D</sub>. Our key claim is that we
+  will maximize these four performers' contribution to the overall probability
+  of the show's success by pairing A with D and B with C, if they are not
+  already paired in that way.
+</p><p>
+  Let's prove that pairing A with D is better than pairing A with C. If we pair
+  A with D, the probability that both of these roles will be successfully
+  filled is as follows:
+</p><p>
+  (1 - P<sub>A</sub>P<sub>D</sub>)(1 - P<sub>B</sub>P<sub>C</sub>) =
+  1 - P<sub>A</sub>P<sub>D</sub> - P<sub>B</sub>P<sub>C</sub> +
+  P<sub>A</sub>P<sub>B</sub>P<sub>C</sub>P<sub>D</sub>.
+</p><p>
+  If we instead pair A with C, the probability of success is:
+</p><p>
+  (1 - P<sub>A</sub>P<sub>C</sub>)(1 - P<sub>B</sub>P<sub>D</sub>) =
+  1 - P<sub>A</sub>P<sub>C</sub> - P<sub>B</sub>P<sub>D</sub> +
+  P<sub>A</sub>P<sub>B</sub>P<sub>C</sub>P<sub>D</sub>.
+</p><p>
+  Subtracting the second quantity from the first, we get:
+</p><p>
+  P<sub>A</sub>P<sub>C</sub> + P<sub>B</sub>P<sub>D</sub> -
+  P<sub>A</sub>P<sub>D</sub> - P<sub>B</sub>P<sub>C</sub> =
+  P<sub>A</sub>(P<sub>C</sub> - P<sub>D</sub>) + P<sub>B</sub>(P<sub>D</sub> -
+  P<sub>C</sub>) =
+  (P<sub>A</sub> - P<sub>B</sub>)(P<sub>C</sub> - P<sub>D</sub>).
+</p><p>
+  Since we know that P<sub>A</sub> ≥ P<sub>B</sub>, and P<sub>C</sub> ≥
+  P<sub>D</sub>, both of the terms in the final expression above must be
+  positive or zero, and so their product is also positive or zero. That means
+  that we are at least as likely to succeed if we pair A with D as we are if we
+  pair A with C. (The contributions from performers other than A, B, C, and D
+  are identical across these two cases, so we don't need to consider them
+  here.) A similar argument shows that pairing A with B cannot possibly be
+  better than pairing A with D.
+</p><p>
+  So we have proven that in any arrangement, for any pair of roles, we should
+  reassign the four performers as necessary to pair up the most reliable and
+  least reliable of the four in one role, and the other two performers in the
+  other. This implies that the most and least reliable performers in the entire
+  cast should be assigned to the same role. (If they are in two different
+  roles, just apply the argument above to that pair of roles.) Similarly, the
+  second-most and second-least reliable performers should be in the same role,
+  and so on. Only the rank orders of the performers' probabilities turn out to
+  matter; the actual values are not important!
+</p><p>
+  This makes our solution very simple: sort the probabilities and then pair up
+  the extremes, and then the remaining extremes, and so on. This is O(<b>N</b>
+  log <b>N</b>) — it would be linear if not for the sorting step
+  — and it would easily work for values of <b>N</b> much larger than 40.
+</p>
+</div><div id="dsb-problem-analysis-div2" class="dsb-problem-content-div" style="display: block;"><h2>Word Search: Analysis</h2>
+<h3>Small dataset</h3>
+<p>
+  One surprisingly viable approach for the Small dataset is to create random
+  grids of random sizes and count the numbers of <code>I/O</code>s in them
+  until we happen to find a grid with the desired number. Even if we only try
+  square grids with a random size and random contents, this is easily fast
+  enough to pass. Other optimizations are possible — we can vary the
+  frequencies of <code>I</code>, <code>/</code>, and <code>O</code>, or try to
+  edit grids that are close — but not necessary.
+</p><p>
+  Another possibility is to directly construct a grid with the desired number
+  of <code>I/O</code>s.  Better yet, we can construct one grid with at least
+  287 <code>I/O</code>s, and then use it in every test case, eliminating
+  <code>I/O</code>s individually until we have the desired number. To ensure
+  that <code>I/O</code>s do not interfere with each other, let's space them out
+  in a field of <code>O</code>s like this:
+</p><p>
+  <code>I/OOI/OOI/OO</code>...<br>
+  <code>OOOOOOOOOOOO</code>...<br>
+  <code>I/OOI/OOI/OO</code>...<br>
+  <code>OOOOOOOOOOOO</code>...<br>
+  <code>I/OOI/OOI/OO</code>...<br>
+  ...<br>
+</p><p>
+  If we extend this pattern to fill a 50 by 50 grid, we will have 25 rows with
+  12 <code>I/O</code>s each; 25 × 12 = 300, which is more than enough. We
+  can eliminate an individual <code>I/O</code> by changing its <code>/</code>
+  into another <code>O</code>. With this grid setup, that change cannot
+  possibly affect other existing <code>I/O</code>s or create new ones. Other
+  similar strategies are possible.
+</p>
+<h3>Large dataset</h3>
+<p>
+  The particular construction strategy above cannot produce enough
+  <code>I/O</code>s when each of our grid dimensions is capped at 15. Nor will
+  random generation help; we would be lucky to get a random 15 x 15 grid for
+  <b>N</b> = 80, let alone 287. We need to pack as many <code>I/O</code>s into
+  the grid as possible. Let's start with a single row; we can fit many
+  <code>I/O</code>s in, overlapping forward ones with backward ones:
+</p><p>
+  <code>I/O/I/O/I</code>...<br>
+</p><p>
+  If we stack these rows on top of each other, we will also form many diagonal
+  <code>I/O</code>s:
+</p><p>
+  <code>I/O/I/O/I</code>...<br>
+  <code>I/O/I/O/I</code>...<br>
+  <code>I/O/I/O/I</code>...<br>
+  ...<br>
+</p><p>
+  How many <code>I/O</code>s are in the 15 by 15 version of this grid? Let's
+  count by looking only at the <code>/</code>es. Any <code>/</code> in the top
+  or bottom row is part of exactly one <code>I/O</code>, running horizontally.
+  Any other <code>I/O</code> is part of exactly three <code>I/O</code>s: one
+  horizontal and two diagonal. There are 7 <code>/</code>es in each row; the 14
+  in the top and bottom row contribute 14 <code>I/O</code>s, and the 13 ×
+  7 = 91 in the other rows contribute 91 × 3 = 273. That's a total of
+  287, which is conveniently exactly the maximum number of <code>I/O</code>s we
+  could be asked to produce. Note that we do not need to prove that this
+  arrangement packs in as many <code>I/O</code>s as possible; we only had to
+  find a way to fit at least 287 in.
+</p><p>
+  Now, in each test case, we only need to whittle the number of
+  <code>I/O</code>s down from 287 to <b>N</b>. As we do this, we must be
+  careful not to create any new <code>I/O</code>s or destroy more
+  <code>I/O</code>s than we want to. One safe strategy is to change
+  <code>/</code>es into <code>O</code>s, as in the Small strategy above.
+  Changing a <code>/</code> in the top or bottom row eliminates one
+  <code>I/O</code>, and changing any other <code>/</code> eliminates three. We
+  can reach any value of <b>N</b> by first removing as many "threes" as
+  possible (without going below <b>N</b>) and then removing as many "ones" as
+  possible (without going below <b>N</b>). For example, for <b>N</b> = 280, we
+  remove two "threes" and one "one". For <b>N</b> = 4, we remove everything
+  except for four of the "ones". Since there are only 288 possible test cases,
+  we can even precompute answers to all of them before downloading the dataset
+  (but this is not necessary).
+</p>
+</div><div id="dsb-problem-analysis-div3" class="dsb-problem-content-div" style="display: none;"><h2>Where Ya Gonna Call?: Analysis</h2>
+<p>
+We can model the input as a
+<a href="https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)">
+weighted undirected graph</a>. The question to be answered is similar
+to finding the graph's
+<a href="https://en.wikipedia.org/wiki/Distance_(graph_theory)#Related_concepts">radius</a>.
+In fact, we are asked to minimize the input graph's radius by possibly
+adding a single node inside an existing edge. This view is not only a succinct and
+accurate way to describe the problem, but also a first step towards a solution.
+</p>
+<h3>Small dataset</h3>
+<p>
+One solution for the Small relies on a simple fact: the
+result is always an integer multiple of 1/2, and if the optimal location is inside an edge,
+it is always at a point that is at a distance from one of
+the incident nodes that is an integer multiple of 1/2. This property
+is not hard to prove: if the location is in a building, all distances
+to it are integers. If not, let L be a location and B be a farthest
+building at distance D. Let B' be the farthest building among those
+whose minimum path approaches L from the other side of the edge as B's
+minimum path, with distance D'. If there were no buildings whose minimal path approaches L
+from the other side, L would not be an optimal location, since we could move L towards B
+decreasing all distances.
+If D' &lt; D, we could move the location slightly towards B
+and decrease the overall minimum, so D' ≤ D, which together with D' ≥ D
+by definition implies D' = D. Notice that
+the fractional parts of both D and D' only depend on where L is located
+on the edge, because the rest of each distance comes from a distance between buildings,
+which is an integer. Therefore, since the fractional parts
+of D and D' are equal, the fractional parts of the edge on both sides
+of L are equal, and thus an integer multiple of 1/2.
+</p><p>
+With this property in mind, and the limitation that the maximum edge length is 2 in the Small
+dataset, there are only 3 positions on each edge
+that can contain an optimal location (at distances 0.5, 1, and 1.5 from one end).
+For each of these, we can find the farthest building. To do that, we can
+use <a href="https://en.wikipedia.org/wiki/Dijkstra&#39;s_algorithm">Dijkstra's algorithm</a>.
+We also have to
+consider the radius of the original graph (which represents choosing a
+location in a building), which we can do by running the same algorithm
+starting at each building. Then, we just take the minimum farthest
+distance from all of those options. The running time of this solution
+is O(M<b>B</b><sup>4</sup>) where M is the maximum length of an edge. This is
+because we need to run Dijkstra\u00e2\u0080\u0099s algorithm 2M-1 times per edge for up to
+O(<b>B</b><sup>2</sup>) edges and once per node for O(<b>B</b>) nodes
+(a total of O(M<b>B</b><sup>2</sup>) times), and each run
+takes O(<b>B</b><sup>2</sup>) time.
+</p>
+<h3>Large dataset</h3>
+<p>
+The approach outlined for the Small dataset does not work for the Large,
+because the edges can be really long and thus the number of locations
+to try is too large, even when restricted to integer multiples of 1/2.
+</p><p>
+What we can do to simplify the problem is to use
+<a href="https://en.wikipedia.org/wiki/Binary_search_algorithm">binary search</a>. That is,
+write an algorithm to determine whether there is a location with farthest
+distance D or less. The statement is clearly false for some interval
+[0, X) of values for D and true for [X, infinity), so we can
+simply binary search for X.
+</p><p>
+The simplification that we obtain is that we can now check for a fixed
+distance. We start by finding the distance between all pairs of
+buildings. We can either run Dijkstra's algorithm once per building as mentioned above, or use
+something simpler for all pairs like
+<a href="https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm">Floyd-Warshall's</a>.
+We can then iterate over each edge to see whether there is a viable location within it.
+For a fixed edge, we iterate over each building and see where in the edge a
+location could be at a distance D or less from that building. To go to a point
+inside edge (I,J) from building K, there are two options: go from K to
+I and then move inside the edge, or go from K to J and then move inside
+the edge. Since we now know the distance from K to I and J, we can calculate
+the interval of positions within the edge that can be reached with
+distance D from each end I and J. Then, if those intervals cover the
+entire edge (by overlapping or because one of them is big enough), then
+any location inside (I,J) is reachable from K with a distance D or less.
+Otherwise, there is some interval
+of unreachable locations. We record such intervals for each building
+and then check whether the union of all those intervals
+covers all of (I,J). If it does, no location inside (I,J) is viable.
+Otherwise, there is at least one that is.
+</p><p>
+To check if a given set of intervals fully covers another interval A there is a
+greedy algorithm: sort the intervals by starting point and process them
+while keeping a current covered upper bound U, which is initialized to the lower bound of A.
+While U is less than the upper bound of A, for each interval,
+if its lower bound L is greater than U, then there
+is an uncovered interval (U, L) and we are done. Otherwise, if the upper bound H of the current
+interval is greater than U, set U := H. If
+the iteration finishes due to U becoming larger than A's upper bound,
+all of A is covered. Otherwise we either found a hole or there is one between the
+last value of U and the upper bound of A.
+</p><p>
+For this solution we run Floyd-Warshall's which takes O(<b>B</b><sup>3</sup>) time and then
+run a procedure for each of O(<b>B</b><sup>2</sup>) edges. This procedure iterates all <b>B</b>
+nodes within a binary search, which takes O(log <b>B</b>M) to converge (remember M is the maximum
+length of an edge, so <b>B</b>M is an upper bound on the output), which makes it take time
+O(<b>B</b><sup>3</sup> log <b>B</b>M) overall.
+</p><p>
+Notice that since we are
+binary searching for X, precision is not an issue, as a bad decision due to precision
+would only give a slightly larger or slightly smaller result. Additionally,
+we could use the property of the result being a multiple of 1/2 to
+do all calculations on integers by doubling all edges in the input and
+dividing by 2 at the very end.
+</p><p>
+A number of people tried to use <a href="https://en.wikipedia.org/wiki/Ternary_search">ternary
+search</a> to solve this problem. Ternary search assumes a convex or concave function, and the
+function in this case (the farthest distance for each point within an edge) is neither. The
+distance from each point to a single fixed building is indeed a concave function. However, the
+maximum of many concave functions is not a concave nor a convex function. Some ternary search
+implementations may suceed in the Small because of the really small number of critical points,
+which may all be tried even under the flawed assumption.
+</p>
+</div></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages" style="display: none;">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table" style="display: none;">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"></tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification" style="display: none;">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="ZWMzN2I4ZTQyZDI2MmVlZWYwZDhjNjZjYjA4ZmJiMzZ8fDE0OTA3MDEzNTQ1MDcxOTA="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="5756257340227584">A. Ticket Trouble</option><option value="5732219482013696">B. Understudies</option><option value="5673223274364928">C. Word Search</option><option value="5643205479497728">D. Where Ya Gonna Call?</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0px 0.3em; display: block;">You cannot ask questions at this time. Please email us at codejam@google.com.</div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2017 Google</span>
+  <a href="http://www.google.com/">Google Home</a> -
+  <a href="https://sites.google.com/site/codejamtoioforwomen//terms.html">Terms and Conditions</a> -
+  <a href="http://www.google.com/intl/en/policies">Privacy Policies and Principles</a>
+  <br><br>
+  <a href="http://cloud.google.com/"><img width="125" height="91" src="./Problem C_files/powered_by_gcp_logo.png"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div></body></html>

@@ -1,0 +1,1291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)https://code.google.com/codejam/contest/4344486/dashboard#s=p1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - Kickstart Round C 2017 - Google Code Jam
+  </title>
+
+    <style>@import '//www.google.com/css/modules/buttons/g-button-sparrow.css';</style>
+    <link rel="stylesheet" type="text/css" href="./Problem B. X Squared_files/app.css">
+
+
+
+
+
+    <script type="text/javascript" async="" src="./Problem B. X Squared_files/ga.js.download"></script><script src="./Problem B. X Squared_files/App_en.js.download"></script>
+    
+
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.dashboardMain().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "4344486";
+      GCJ.contest.name = "Kickstart Round C 2017";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 1;
+      
+      GCJ.contest.start_int = 1498417200;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=4344486"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam/kickstart2017";
+    };
+  //-->
+  </script>
+<style></style></head>
+
+<body onload="GCJ.dashboardMain()" class="page-dashboard">
+
+<div id="logo-div">
+  <a href="https://code.google.com/codejam/kickstart/">
+    <img src="./Problem B. X Squared_files/logo_kickstart_2017.jpg" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">Kickstart Round C 2017</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link">A. Ambiguous Cipher  </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-open" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. X Squared  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link">C. Magical Thinking  </div></div></div><div><div id="dsb-problem-tab3" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title3" class="dynamic-link">D. The 4M Corporation  </div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-analysis-tab-close" tabindex="0" role="button" style="display: block;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab" class="dsb-has-new-question-tab">Questions asked<span class="dsb-unread-count">2</span></div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();" style="cursor: pointer;">
+      <img id="dsb-status-panel-button" src="./Problem B. X Squared_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Ambiguous Cipher</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">7pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: block;"><b>813/966 users</b> correct (84%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">12pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: block;"><b>683/755 users</b> correct (90%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">X Squared</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">9pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: block;"><b>377/706 users</b> correct (53%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_1" class="inputName">14pt</td>      <td class="status">        <div id="selfStat1_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_1" class="globalStat" style="display: block;"><b>319/358 users</b> correct (89%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Magical Thinking</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">6pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: block;"><b>570/621 users</b> correct (92%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">19pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: block;"><b>149/325 users</b> correct (46%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper3" class="problem-status-wrapper">  <div class="dsb-status-problem-title">The 4M Corporation</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_0" class="inputName">11pt</td>      <td class="status">        <div id="selfStat3_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_0" class="globalStat" style="display: block;"><b>109/194 users</b> correct (56%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_1" class="inputName">22pt</td>      <td class="status">        <div id="selfStat3_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_1" class="globalStat" style="display: block;"><b>60/78 users</b> correct (77%)</div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)">
+          <img id="dsb-scoreboard-panel-button" src="./Problem B. X Squared_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td class="dsb-name-td" id="sbName_0">ACMonster</td><td class="dsb-score-td" id="sbScore_0">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td class="dsb-name-td" id="sbName_1">subscriber</td><td class="dsb-score-td" id="sbScore_1">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td class="dsb-name-td" id="sbName_2">Kasugano.Sora</td><td class="dsb-score-td" id="sbScore_2">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td class="dsb-name-td" id="sbName_3">spnautilus</td><td class="dsb-score-td" id="sbScore_3">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td class="dsb-name-td" id="sbName_4">1717374</td><td class="dsb-score-td" id="sbScore_4">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td class="dsb-name-td" id="sbName_5">Benq</td><td class="dsb-score-td" id="sbScore_5">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td class="dsb-name-td" id="sbName_6">LeeSin</td><td class="dsb-score-td" id="sbScore_6">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td class="dsb-name-td" id="sbName_7">yubowenok</td><td class="dsb-score-td" id="sbScore_7">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td class="dsb-name-td" id="sbName_8">praran26</td><td class="dsb-score-td" id="sbScore_8">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td class="dsb-name-td" id="sbName_9">cephian</td><td class="dsb-score-td" id="sbScore_9">100</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-sub-link" style="display: none;">View submissions.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">Practice Mode</span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div" style="display: none;">
+          Rank: <span id="dsb-current-rank-span">--</span>
+        </span>
+        <span id="dsb-current-score-div" style="display: none;">
+          Score: <span id="dsb-current-score-span">--</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="https://code.google.com/codejam/contest/4344486/scoreboard?c=4344486">Contest scoreboard</a> | <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://code.google.com/codejam/contest/dashboard%253Fc%253D4344486">Sign in</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;"><span style="color:#666">Problem B.</span> X Squared</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>7 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. X Squared_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_0"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> A-small-practice.in.</div><form id="submit-formio_timer_0" action="https://code.google.com/codejam/contest/4344486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="Y2Q2N2YxZWYxZWYzMzFjY2JlMjM4YzAwOThiMzk4MDF8fDE0OTkyNDA2NzIxNTgyNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_0" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_0"><div id="input-file-divio_timer_0-0"><span id="source-fileio_timer_0-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_0-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_0" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_0" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_0" type="button" value="Hide"></div><div id="source-file-namesio_timer_0"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5737062711951360"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_0" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>12 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. X Squared_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1">Download A-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_1"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_1" action="https://code.google.com/codejam/contest/4344486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="Y2Q2N2YxZWYxZWYzMzFjY2JlMjM4YzAwOThiMzk4MDF8fDE0OTkyNDA2NzIxNTgyNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_1" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_1"><div id="input-file-divio_timer_1-0"><span id="source-fileio_timer_1-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_1-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_1" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_1" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_1" type="button" value="Hide"></div><div id="source-file-namesio_timer_1"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5737062711951360"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_1" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  Susie and Calvin are classmates. Calvin would like to be able to pass notes
+  to Susie in class without their teacher or other classmates knowing what they
+  are talking about, just in case the notes fall into the wrong hands. Calvin
+  has devised the a system to encrypt his messages.
+</p>
+<p>
+  Calvin only passes one word to Susie each time, and that word consists of
+  only uppercase letters, because Calvin is so excited to talk to Susie. Each
+  word is encrypted as follows:
+</p>
+<ul>
+    <li>Calvin assigns a number to each letter based on the letter's position
+      in the alphabet, where <code>A</code> = 0, <code>B</code> = 1, ...,
+      <code>Z</code> = 25.</li>
+    <li>For every letter in the word, Calvin determines the encrypted value
+      of the letter by summing the values of the 1 or 2 letter(s) that are
+      adjacent to that letter in the word. He takes that sum modulo 26, and this
+      is the new value of the letter. Calvin then converts the value back to an
+      uppercase letter based on positions in the alphabet, as before.</li>
+    <li>The encrypted word is determined by encrypting every letter in the word
+      using this method. Each letter's encryption is based only on the letters
+      from the original unencrypted message, and not on any letters that have
+      already been encrypted</li>
+</ul>
+<p>
+  Let's take a look at one of the notes Calvin is writing for Susie. Since
+  Calvin is always hungry, he wants to let Susie know that he wants to eat
+  again. Calvin encrypts the word <code>SOUP</code> as follows:
+</p>
+<ul>
+  <li><code>S</code> = 18, <code>O</code> = 14, <code>U</code> = 20, and
+    <code>P</code> = 15.</li>
+  <li>Calvin encrypts each letter based on the values of its neighbor(s):
+    <ul>
+      <li>First letter: 14 mod 26 = 14.</li>
+      <li>Second letter: (18 + 20) mod 26 = 12.</li>
+      <li>Third letter: (14 + 15) mod 26 = 3.</li>
+      <li>Fourth letter: 20 mod 26 = 20.</li>
+    </ul>
+  </li>
+  <li>The values 14 12 3 20 correspond to the letters <code>OMDU</code>, and
+    this is the encrypted word that Calvin will write on the note for Susie.
+  </li>
+</ul>
+<p>
+  It is guaranteed that Calvin will not send Susie any words that cannot be
+  decrypted at all. For example, Calvin would not send Susie the word
+  <code>APE</code>, since it does not have any valid decryptions. (That is, 
+  there is no word that Calvin could have encrypted to <code>APE</code>.)
+</p><p>
+  However, Calvin's system is not perfect, and some of the words he sends Susie
+  can actually be decrypted to multiple words, creating ambiguity! For example,
+  <code>BCB</code> can be decrypted to <code>ABC</code> or <code>CBA</code>,
+  among other possibilities.
+</p><p>
+  Susie pulled another all-nighter yesterday to finish school projects, and she
+  is too tired to decrypt Calvin's messages. She needs your help!
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> test cases follow. Each case is a single line that contains a string
+  <b>W</b> of uppercase letters: an encrypted word that Calvin has sent.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1) and <code>y</code>
+  is the decrypted word, or <code>AMBIGUOUS</code> if it is impossible to
+  uniquely determine the decrypted word.
+</p>
+<h3>Limits</h3>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+  <b>W</b> consists of only of uppercase English letters.<br>
+  <b>W</b> is decryptable to one or more words. (That is, <b>W</b> is the
+    result of an encryption of some word.)<br>
+  <b>W</b> does not decrypt to the word <code>AMBIGUOUS</code>. (You will only
+    output that when the decryption is ambiguous.)<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  2 ≤ the length of <b>W</b> ≤ 4.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  2 ≤ the length of <b>W</b> ≤ 50.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">3
+OMDU
+BCB
+AOAAAN
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: SOUP
+Case #2: AMBIGUOUS
+Case #3: BANANA
+</pre>
+</td></tr></tbody></table>
+</div>
+
+<p>Note that the last sample case would not appear in the Small dataset.</p>
+
+<p>
+  Sample Cases #1 &amp; #2 were explained in the problem statement.
+</p><p>
+  In Sample Case #3, <code>BANANA</code> is the only word that encrypts to
+  <code>AOAAAN</code>.
+</p>
+</div></div><div id="dsb-problem-page1" class="dsb-content-pages" style="display: block;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>9 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. X Squared_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_2"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> B-small-practice.in.</div><form id="submit-formio_timer_2" action="https://code.google.com/codejam/contest/4344486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="Y2Q2N2YxZWYxZWYzMzFjY2JlMjM4YzAwOThiMzk4MDF8fDE0OTkyNDA2NzIxNTgyNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_2" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_2"><div id="input-file-divio_timer_2-0"><span id="source-fileio_timer_2-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_2-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_2" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_2" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_2" type="button" value="Hide"></div><div id="source-file-namesio_timer_2"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5687438122942464"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_2" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>14 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-1" class=""><div id="dsb-input-wrapper1-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-1" style="display: inline;">Solve B-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. X Squared_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-1">Download B-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_3"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_3" action="https://code.google.com/codejam/contest/4344486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="Y2Q2N2YxZWYxZWYzMzFjY2JlMjM4YzAwOThiMzk4MDF8fDE0OTkyNDA2NzIxNTgyNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_3" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_3"><div id="input-file-divio_timer_3-0"><span id="source-fileio_timer_3-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_3-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_3" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_3" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_3" type="button" value="Hide"></div><div id="source-file-namesio_timer_3"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5687438122942464"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_3" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  The hot new toy for this year is called "X Squared". It consists of a square
+  <b>N</b> by <b>N</b> grid of tiles, where <b>N</b> is odd. Exactly 2 ×
+  <b>N</b> - 1 of the tiles are labeled with an <code>X</code>, and the rest
+  are blank (which we will represent with the <code>.</code> character). In
+  each move of the game, the player can either choose and exchange two rows of
+  tiles, or choose and exchange two columns of tiles. The goal of the game is
+  to get all of the <code>X</code> tiles to be on the two main diagonals of the
+  grid, forming a larger X shape, as in the following example for <b>N</b> = 5:
+</p>
+<code>
+  X...X<br>
+  .X.X.<br>
+  ..X..<br>
+  .X.X.<br>
+  X...X<br>
+</code>
+<p>
+  You are about to play with your X Squared toy, which is not yet in the goal
+  state. You suspect that your devious younger sibling might have moved some of
+  the tiles around in a way that has broken the game. Given the current
+  configuration of the grid, can you determine whether it is possible to win or not?
+</p>
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> test cases follow. Each one begins with one line with an integer
+  <b>N</b>, the size of the grid. <b>N</b> more lines with <b>N</b> characters
+  each follow; the j-th character on the i-th of these lines is <code>X</code>
+  if the tile in the i-th row and j-th column of the grid has an X, or
+  <code>.</code> if that tile is blank.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1) and <code>y</code>
+  is <code>POSSIBLE</code> if it is possible to win, and <code>IMPOSSIBLE</code>
+  otherwise.
+</p>
+
+<h3>Limits</h3>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+  <b>N</b> mod 2 = 1. (<b>N</b> is odd.)<br>
+  The grid has exactly 2 × <b>N</b> - 1 <code>X</code> tiles and
+    exactly <b>N</b><sup>2</sup> - 2 × <b>N</b> + 1 <code>.</code>
+    tiles.<br>
+  The grid is not already in the goal state, as described in the problem
+    statement.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  3 ≤ <b>N</b> ≤ 5.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  3 ≤ <b>N</b> ≤ 55.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">2
+3
+..X
+XX.
+XX.
+3
+...
+XXX
+XX.
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: POSSIBLE
+Case #2: IMPOSSIBLE
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  In Sample Case #1, one winning strategy is:
+</p>
+<ol>
+  <li>Swap the top row with the middle row.</li>
+  <li>Swap the rightmost column with the middle column.</li>
+</ol>
+<pre> ..X    XX.    X.X
+ XX. -&gt; ..X -&gt; .X.
+ XX.    XX.    X.X
+</pre>
+<p>
+  In Sample Case #2, no sequence of moves can turn the grid into the desired
+  final configuration.
+</p>
+</div></div><div id="dsb-problem-page2" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input<br>6 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. X Squared_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_4"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice.in.</div><form id="submit-formio_timer_4" action="https://code.google.com/codejam/contest/4344486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="Y2Q2N2YxZWYxZWYzMzFjY2JlMjM4YzAwOThiMzk4MDF8fDE0OTkyNDA2NzIxNTgyNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_4" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_4"><div id="input-file-divio_timer_4-0"><span id="source-fileio_timer_4-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_4-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_4" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_4" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_4" type="button" value="Hide"></div><div id="source-file-namesio_timer_4"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5717805152337920"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_4" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>19 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. X Squared_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1">Download C-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_5"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_5" action="https://code.google.com/codejam/contest/4344486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="Y2Q2N2YxZWYxZWYzMzFjY2JlMjM4YzAwOThiMzk4MDF8fDE0OTkyNDA2NzIxNTgyNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_5" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_5"><div id="input-file-divio_timer_5-0"><span id="source-fileio_timer_5-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_5-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_5" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_5" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_5" type="button" value="Hide"></div><div id="source-file-namesio_timer_5"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5717805152337920"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_5" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  You and <b>N</b> of your friends just took the B.A.T. (Binary Answer Test) to
+  try to get into wizard school. The B.A.T. has <b>Q</b> true-false questions,
+  and each one is worth 1 point. You have no wizard powers, so you just picked
+  arbitrary answers and hoped for the best.
+</p><p>
+  The results of the test have already been sent out by quail mail, but the
+  quail with your results has not arrived yet. However, each of your friends
+  has told you their list of answers and their total score. You also remember
+  your own list of answers. You are an optimist and you think that you probably
+  did well!
+</p><p>
+  Given that there is one correct list of answers (but you do not know what
+  those answers are), and given your friends' answers and scores, what is the
+  highest score that you possibly could have achieved?
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> test cases follow. Each begins with one line with two integers
+  <b>N</b> and <b>Q</b>. Then, <b>N</b>+1 lines follow; the i-th of these lines
+  represents the i-th examinee's list of answers <b>A<sub>i</sub></b>, and has
+  <b>Q</b> characters, each of which is either <code>T</code> or <code>F</code>
+  (representing True or False). <b>A</b><sub><b>N</b>+1</sub> is your own list
+  of answers. Finally, one line with <b>N</b> integers follows; the i-th of
+  these integers, <b>S<sub>i</sub></b>, represents the i-th examinee's score.
+  (Note that your own score is not in this list, because it is unknown.)
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1) and <code>y</code>
+  is the highest score that you possibly could have achieved that is consistent
+  with the given information.
+</p>
+
+<h3>Limits</h3>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+  The length of <b>A<sub>i</sub></b> is <b>Q</b>, for all i.<br>
+  Each character of <b>A<sub>i</sub></b> is either <code>T</code> or
+    <code>F</code>, for all i.<br>
+  0 ≤ <b>S<sub>i</sub></b> ≤ <b>Q</b>.<br>
+  It is guaranteed that there is at least one possible list of correct answers
+    that is consistent with all of the friends' answers and scores.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  <b>N</b> = 1.<br>
+  1 ≤ <b>Q</b> ≤ 10.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  1 ≤ <b>N</b> ≤ 2.<br>
+  1 ≤ <b>Q</b> ≤ 50.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">3
+1 2
+TF
+FF
+1
+1 3
+TTT
+TTF
+0
+2 3
+TTF
+FTF
+TTT
+1 2
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 2
+Case #2: 1
+Case #3: 2
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  Note that the last sample case would not appear in the Small dataset.
+</p><p>
+  In sample case #1, your friend answered <code>TF</code> and you answered
+  <code>FF</code>, and exactly one of your friend's answers was right. If your
+  friend was wrong on question 1 and right on question 2, then the real set of
+  answers is <code>FF</code> and you got both questions right. It is impossible
+  to do better than this!
+</p><p>
+  In sample case #2, your friend answered all <code>T</code>s and got all of
+  the questions wrong, so the real set of answers must be all <code>F</code>s,
+  which means that you got only question 3 right.
+</p><p>
+  In sample case #3, the only possible real lists of answers that are
+  consistent with the given information are <code>FTT</code> and
+  <code>FFF</code>. (For example, the real answer list cannot be
+  <code>TFT</code>; the first friend's answers and score would be consistent
+  with that, but the second friend would have scored 0 instead of 2.) Of these
+  two possibilities, <code>FTT</code> is more favorable to you and would give
+  you a score of 2.
+</p>
+</div></div><div id="dsb-problem-page3" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text3"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table3"><tr><td class="dsb-input-table-description">Small input<br>11 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-0" class=""><div id="dsb-input-wrapper3-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-0" style="display: inline;">Solve D-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. X Squared_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-0">Download D-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-0">resubmit</span> for <span id="dsb-resubmit-timer3-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_6"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> D-small-practice.in.</div><form id="submit-formio_timer_6" action="https://code.google.com/codejam/contest/4344486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="Y2Q2N2YxZWYxZWYzMzFjY2JlMjM4YzAwOThiMzk4MDF8fDE0OTkyNDA2NzIxNTgyNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_6" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_6"><div id="input-file-divio_timer_6-0"><span id="source-fileio_timer_6-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_6-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_6" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_6" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_6" type="button" value="Hide"></div><div id="source-file-namesio_timer_6"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5743626445389824"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_6" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>22 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-1" class=""><div id="dsb-input-wrapper3-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-1" style="display: inline;">Solve D-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. X Squared_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-1">Download D-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-1">resubmit</span> for <span id="dsb-resubmit-timer3-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_7"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_7" action="https://code.google.com/codejam/contest/4344486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="Y2Q2N2YxZWYxZWYzMzFjY2JlMjM4YzAwOThiMzk4MDF8fDE0OTkyNDA2NzIxNTgyNTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_7" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_7"><div id="input-file-divio_timer_7-0"><span id="source-fileio_timer_7-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_7-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_7" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_7" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_7" type="button" value="Hide"></div><div id="source-file-namesio_timer_7"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5743626445389824"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_7" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div3" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  The 4M Corporation has hired you to organize their departments and allocate
+  headcount. You will create at least one department, and each department will
+  receive some positive integer number of employees. It will not be easy,
+  though — you have four different bosses, and each has given you a
+  different instruction:
+</p>
+<ol>
+  <li>The department with the fewest employees must have exactly <b>MINIMUM</b>
+    employees.</li>
+  <li>The department with the most employees must have exactly <b>MAXIMUM</b>
+    employees.</li>
+  <li>The average number of employees across all departments must be exactly
+    <b>MEAN</b>.</li>
+  <li>The median of the number of employees across all departments must be
+    exactly <b>MEDIAN</b>. As a reminder, the median of a list is the value
+    that, when the list is sorted in nondecreasing order, is in the center (for
+    a list of odd length) or is the average of the two values in the center
+    (for a list of even length).</li>
+</ol>
+<p>
+  Moreover, for the sake of efficiency, it is best to avoid creating too many
+  departments. What is the smallest number of departments that you can create,
+  if it is possible to satisfy your bosses' requests?
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> test cases follow. Each consists of four integers: <b>MINIMUM</b>,
+  <b>MAXIMUM</b>, <b>MEAN</b>, and <b>MEDIAN</b>, in that order.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1), and <code>y</code>
+  is either the minimum possible number of departments, or
+  <code>IMPOSSIBLE</code> if it is impossible to satisfy all four bosses'
+  requests.
+</p>
+
+<h3>Limits</h3>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  1 ≤ <b>MINIMUM</b> ≤ 8.<br>
+  1 ≤ <b>MAXIMUM</b> ≤ 8.<br>
+  1 ≤ <b>MEAN</b> ≤ 8.<br>
+  1 ≤ <b>MEDIAN</b> ≤ 8.<br>
+  The constraints for the Small dataset guarantee that the answer is either
+  <code>IMPOSSIBLE</code> or is less than 14.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  1 ≤ <b>MINIMUM</b> ≤ 10000.<br>
+  1 ≤ <b>MAXIMUM</b> ≤ 10000.<br>
+  1 ≤ <b>MEAN</b> ≤ 10000.<br>
+  1 ≤ <b>MEDIAN</b> ≤ 10000.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">5
+6 4 5 1
+7 7 8 8
+2 2 2 2
+3 7 5 5
+1 4 3 4
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: IMPOSSIBLE
+Case #2: IMPOSSIBLE
+Case #3: 1
+Case #4: 2
+Case #5: 3
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  Sample Case #1 is <code>IMPOSSIBLE</code> because the maximum value cannot be
+  smaller than the minimum value.
+</p><p>
+  Sample Case #2 is <code>IMPOSSIBLE</code> because the mean and median cannot
+  be larger than the maximum value.
+</p><p>
+  In Sample Case #3, you can create a single department with 2 employees. This
+  satisfies all four bosses: the department with the fewest employees has
+  exactly 2, the department with the most employees has exactly 2, and the
+  mean and median are both 2.
+</p><p>
+  In Sample Case #4, you can create one department with 3 employees and another
+  department with 7 employees. Note that it would <b>not</b> suffice to create
+  only one department with 5 employees, because then the department with the
+  fewest employees would not have exactly 3 and the department with the most
+  employees would not have exactly 7.<br>
+</p><p>
+  For Sample Case #5, you can create one department with 1 employee and two
+  more departments with 4 employees each.
+</p>
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages"><div id="dsb-analysis-selections"><span id="dsb-analysis-selection-p4" class="dsb-analysis-selected">Overview</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p0" class="dsb-analysis-not-selected">Problem A</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p1" class="dsb-analysis-not-selected">Problem B</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p2" class="dsb-analysis-not-selected">Problem C</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p3" class="dsb-analysis-not-selected">Problem D</span></div><div id="dsb-problem-analysis-div4" class="dsb-problem-content-div"><p>
+  This Kickstart round began with <i>Ambiguous Cipher</i>, which required an
+  insight about how to decode a message. Then came <i>X Squared</i>, which
+  seemed to involve a search with an intractably large space, but could be
+  solved by thinking carefully about the starting state. Next was
+  <i>Magical Thinking</i>, which presented too many possibilities for brute
+  force to handle, but allowed various solution approaches. Finally, we had
+  <i>The 4M Corporation</i>, which involved building lists of numbers to meet
+  certain requirements, and could even be solved in constant time with enough
+  thought!
+</p><p>
+  Thanks to everyone who participated! Kickstart Round D will take place soon;
+  check the Kickstart
+  <a href="https://code.google.com/codejam/kickstart/schedule" target="_blank">schedule</a>
+  for more details.
+</p>
+<hr>
+<p>
+  <b>Cast</b>
+</p><p>
+  Problem A (Ambiguous Cipher): Written and prepared by Chao Ching (Diana)
+  Chang.
+</p><p>
+  Problem B (X Squared): Written by Ian Tullis. Prepared by Juwuan
+  Turner-Howard.
+</p><p>
+  Problem C (Magical Thinking): Written by Ian Tullis. Prepared by Pablo Heiber
+  and Josef Ziegler.
+</p><p>
+  Problem D (The 4M Corporation): Written and prepared by Ian Tullis.
+</p><p>
+  Solutions and other problem preparation and review by Chao Ching (Diana)
+  Chang, Md Mahbubul Hasan, Lalit Kundu, Igor Naverniouk, Trung Thanh Nguyen,
+  Nipuna Samarasekara, Juwuan Turner-Howard, Ray Robinson Valiente, Erick Wong,
+  and Josef Ziegler.
+</p>
+<p></p><p>
+Analysis authors:
+</p>
+<ul>
+  <li>Ambiguous Cipher: Chao Ching (Diana) Chang and Ian Tullis</li>
+  <li>X Squared: Ian Tullis</li>
+  <li>Magical Thinking: Ian Tullis</li>
+  <li>The 4M Corporation: Ian Tullis</li>
+</ul>
+</div><div id="dsb-problem-analysis-div0" class="dsb-problem-content-div" style="display: none;"><h2>Ambiguous Cipher: Analysis</h2>
+<h3>Small dataset</h3>
+<p>
+  There are only 26<sup>2</sup> + 26<sup>3</sup> + 26<sup>4</sup> = 475228
+  words with lengths in the [2, 4] range. The statement tells us exactly how to
+  encrypt a word, so we can encrypt all possible words and then create a
+  reverse dictionary. For example, when we find that <code>SOUP</code>
+  encrypts to <code>OMDU</code>, we can create an entry in our reverse
+  dictionary with key <code>OMDU</code> and value <code>SOUP</code>. If we
+  ever find that a word has encrypted to a key we already have in the
+  dictionary (for example, <code>ABC</code> and <code>CBA</code> both encrypt
+  to <code>BCB</code>), then that key's decryption is ambiguous, and we can
+  replace the value with <code>AMBIGUOUS</code>.
+</p><p>
+  Once we have done this, solving the problem is easy; we just look up each
+  word in our dictionary and output the value as our answer. We do not need to
+  worry about words with no valid decryption (and thus no dictionary key),
+  because the problem statement guarantees that these will not appear in the
+  datasets.
+</p><p>
+  This method will not work for the Large dataset, though; in that case, there
+  are just too many possible words to stuff into a dictionary in memory! We
+  need another approach.
+</p>
+<h3>Large dataset: words with even lengths</h3>
+<p>
+  For now, let's assume our encrypted word has an even length. We will consider
+  words of odd length in the next section.
+</p><p>
+  When a word is being encrypted, every letter in the word (except for the
+  first and last) is encrypted by summing the two letters adjacent to that
+  letter. For the first and last letters, the encrypted value is just the
+  unencrypted value of the one letter adjacent to it. This means that we can
+  easily find the the second and second-to-last letters of the unencrypted
+  word: they are just the first and last letters of the encrypted word,
+  respectively.
+</p><p>
+  Moreover, once we have these "footholds" into the decrypted word, we can use
+  them to decrypt the rest of the encrypted word! For example, we can decrypt
+  the encrypted word <code>ADMZZO</code> as follows. In this explanation, we
+  will denote a letter with E or D (referring to the encrypted or decrypted
+  words) followed by a number (giving the letter's position in the word,
+  counting starting from 1.)
+</p>
+<ul>
+  <li>The letter values of the encrypted word are: 0 3 12 25 25 14.</li>
+  <li>We know that D2 and D5 equal E1 and E6, as explained above, so we know
+    that our decrypted word has letter values _ 0 _ _ 14 _.
+  </li><li>We will now determine the letters in the even-numbered positions of the
+    decrypted word, going from left to right. We will start by determining D4.
+    We already know that D2 has value 0. Since we know that
+    (D2 + D4) % 26 = E3, then D4 = (E3 - D2) % 26. E3 has value 12, so
+    D4 = (12 - 0) % 26 = 12. So now our decrypted letter values are:
+    _ 0 _ 12 14 _.</li>
+  <li>Now that we know D4, we can find D6 in the same way: D6 = (E5 - D4) % 26
+    = (25 - 12) % 26 = 13. So we have _ 0 _ 12 14 13.</li>
+  <li>Then, we do the same thing from right to left, starting with D5. We have
+    D3 = (E4 - D5) % 26 = (25 - 14) = 11, and D1 = (E2 - D3) % 26 =
+    (3 - 11) % 26 = 18. (It is OK to take the modulus of a negative number,
+    but we can also always safely add 26 if we want to only handle positive
+    values, e.g., (3 - 11 + 26) % 26.) So we know all the letter values in the
+    decrypted word: 18 0 11 12 14 13.</li>
+  <li>Now we just need to convert this list of decrypted letter values back to
+    uppercase letters, which results in the decrypted word <code>SALMON</code>.
+  </li>
+</ul>
+<p>
+  This method will allow us to decrypt any word with an even length. Because
+  the method was deterministic and we had no choices about how to decrypt, we
+  can also see that any encrypted word with an even length has exactly one
+  possible decryption; that is, in mathematical terms, decryption is both
+  one-to-one and onto. But what about words with odd lengths?
+</p>
+<h3>Large dataset: words with odd lengths</h3>
+<p>
+  Let's look back at the example <code>BCB</code> from the problem statement.
+  We know that D2 = E1 and D2 = E3, so D2 is <code>B</code>. But what about D1
+  and D3? All we know is that (D1 + D3) % 26 = E2. There are 26 different pairs
+  for which this is valid! So the decryption is ambiguous.
+</p><p>
+  In fact, this is the case for <i>any</i> word of odd length that could appear
+  in our datasets. Our method above does not apply! Knowing the second and
+  second-to-last letters of the decrypted word does not help us get the entire
+  word, since now both of those letters are in even-numbered positions of the
+  decrypted word; they can only get us letters in the even-numbered positions
+  of the decrypted word. We have no foothold that we can use to get any of the
+  letters in the odd-numbered positions. The first letter of the decrypted word
+  could be any letter, and any choice determines all the others. We have no way
+  of knowing which of the 26 possibilities Calvin originally encrypted.
+</p><p>
+  The statement tells us that the datasets do not include words like
+  <code>APE</code> which have no valid decryption, so any word of odd length
+  in our dataset must have multiple decryptions. With this knowledge, we can
+  finish our solution: for words of even length, we use the method above, and
+  for words of odd length, we can just report <code>AMBIGUOUS</code>. Calvin
+  and Susie should come up with a method that can handle all words, not just
+  words of even length!
+</p>
+</div><div id="dsb-problem-analysis-div1" class="dsb-problem-content-div" style="display: none;"><h2>X Squared: Analysis</h2>
+
+<h3>Small dataset</h3>
+<p>
+  One straightforward brute-force approach to this problem is to perform a
+  <a href="https://en.wikipedia.org/wiki/Breadth-first_search">breadth-first search</a>
+  of all grids that can be reached using the allowed swap operations, and see
+  whether the target grid is reachable. However, this can take a while to code.
+  Moreover, depending on the language used and the implementation details
+  — e.g., how we choose to store previously seen states and avoid
+  revisiting them — the search may run too slowly on the <b>N</b> = 5
+  cases. Perhaps a breadth-first search is overkill here; can we identify all
+  of the reachable states in advance, without exploring?
+</p><p>
+  Let's think about what swap operations <i>cannot</i> change. The set of tiles
+  in a particular row in the initial grid will always remain together, in some
+  order, in some row (not necessarily the row they started in). This is because
+  a column swap only changes the relative order of those tiles, and a row swap
+  only moves that whole set of tiles around together. So, our operations on the
+  board cannot exchange individual tiles among different rows; they can only
+  change the internal and relative orders of existing rows.
+</p><p>
+  Because column swaps are the only way to change the internal order within a
+  row, changing one row to have a certain order will give all of the rows that
+  same internal order. However, we can choose whichever internal order we want:
+  we pick the column with the tile we want to be first, and swap that column
+  into the first column position, and so on.
+</p><p>
+  All of the above logic holds for columns as well, and we can operate on the
+  columns independently enough for our purposes: if we reorder the rows, and
+  then reorder the columns, the latter operations do not change the chosen
+  order of the rows. So, we can choose any of the <b>N</b>! possible orders for
+  our <b>N</b> rows, and any of the <b>N</b>! possible orders for our <b>N</b>
+  columns, for a total of (<b>N</b>!)<sup>2</sup> different states that we can
+  reach. (Some of these states might have the same pattern of <code>X</code>es
+  and blank tiles, even if they represent different rearrangements of the
+  original tiles.) Unlike in our breadth-first search method, we don't need to
+  worry about exactly how to reach each of these states, even though the end of
+  the previous paragraph explains how to do so. We know that it is possible to
+  reach all of them, so if one of them matches the target, the answer is
+  <code>POSSIBLE</code>. Moreover, we know that these are all of the states
+  that we can reach, so if none of them matches the target, the answer must be
+  <code>IMPOSSIBLE</code>.
+</p><p>
+  Now, all we have to do is write some code to permute the rows and columns of
+  a grid into whatever orders we want. To avoid doing too much duplicate work,
+  we can pick one row permutation, then apply all possible column permutations
+  to copies of that, then pick another row permutation, and so on. This method
+  is essentially a well-targeted
+  <a href="https://en.wikipedia.org/wiki/Depth-first_search">depth-first search</a>,
+  and its running time is O((<b>N</b>!)<sup>2</sup>). This is easily fast
+  enough for the Small dataset, in which <b>N</b> maxes out at 5. But a
+  squared-factorial order of growth won't work for the Large dataset! Let's
+  look for a better method.
+</p>
+<h3>Large dataset</h3>
+<p>
+  Let's think about the target grid state. We can observe that it has one
+  <code>X</code> tile that is the only <code>X</code> in its row and in its
+  column; let's call this collection of <code>X</code>, row, and column the
+  <i>singleton cross</i>. The rest of the grid contains a nested set of
+  <b>N</b>/2 of what we will call <i>rectangles</i>. Each rectangle is defined
+  by two rows and two columns, and has an <code>X</code> tile at each of the
+  four intersections of those rows/columns, and no other <code>X</code> tiles
+  anywhere else.
+</p><p>
+  Suppose that we start at the target and perform some swap operations. What
+  happens to our singleton cross and our rectangles? Per our earlier
+  observation while solving the Small dataset, if two of the corners of a
+  rectangle are together in the same row, or in the same column, they always
+  will be; no row or column swaps can possibly split them apart. So swap
+  operations cannot create or destroy rectangles, although they can change the
+  relative positions of the four corners. Similarly, no operation can move
+  additional <code>X</code> tiles into the singleton cross, or take away its
+  one <code>X</code> tile.
+</p><p>
+  These observations simplify the problem dramatically. We only need to ask:
+  does the starting grid have exactly <b>N</b>/2 rectangles and exactly one
+  singleton cross? If not, there is no series of swaps that can turn it into
+  the target, which does have those properties, so the case is
+  <code>IMPOSSIBLE</code> and we are done. Otherwise, we can transform the
+  starting grid into the target grid as follows. Choose a rectangle, and
+  perform row and column swaps such that its corners end up as the outermost
+  corners of the larger X shape. Then recursively solve the rest of the grid as
+  a subproblem, and so on. At the end of all this, the singleton cross will
+  necessarily be in the correct place, since every other place will have been
+  taken.
+</p><p>
+  With this reframing of the problem in mind, we no longer need to actually
+  perform or even think about any swaps! We only need to check the starting
+  grid for rectangles and a singleton row/column. It is possible to do this
+  with a single pass through the grid, looking at each row in turn. If a row
+  has zero or more than two <code>X</code> tiles, it cannot be part of a
+  rectangle or a singleton cross, and so the case is <code>IMPOSSIBLE</code>.
+  If a row has one <code>X</code> tile, we need it to be part of the singleton
+  cross; we store the column location of that <code>X</code>, and if we see
+  another would-be singleton cross row later, the case must be
+  <code>IMPOSSIBLE</code>. If a row has two <code>X</code> tiles, we note the
+  columns of those two tiles. Once we have checked all rows, we check to see
+  that every two-<code>X</code> row's set of <code>X</code> columns pairs up
+  with exactly one other two-<code>X</code> row's set of <code>X</code>
+  columns, and that no such pair shares any position with any other pair.
+  Moreover, the position of the <code>X</code> in the singleton cross must be
+  the sole column unused by any other pair. If all of these things are true,
+  then the case is <code>POSSIBLE</code>.
+</p><p>
+  This strategy is linear in the size of the input, and it runs fast
+  enough to easily handle the Large dataset, as well as grids much larger than
+  we provide in that dataset! It is also possible to run across greedy methods
+  that carry out the swapping method we described earlier, or something that
+  essentially boils down to it.
+</p>
+</div><div id="dsb-problem-analysis-div2" class="dsb-problem-content-div" style="display: none;"><h2>Magical Thinking: Analysis</h2>
+
+<h3>Small dataset</h3>
+<p>
+  In the Small dataset, there is only one other friend to consider, and we
+  know how many questions <b>S<sub>0</sub></b> they got right. We need to
+  choose exactly <b>S<sub>0</sub></b> of the questions to be the ones they got
+  right (call this set R); that means they got the other <b>Q</b> -
+  <b>S<sub>0</sub></b> questions wrong (call this set W). Moreover, we need to
+  do this in the way that maximizes our own score.
+</p><p>
+  Let's divide the questions into two types: type A when we gave the same
+  answer as our friend, or type D when we gave different answers. Suppose
+  that we assign the questions to sets R and W in some way, and suppose that
+  there is a type D question in set R, and a type A question in set W. Then we
+  got both of those questions wrong! But if we swap the two, then we instead
+  got both questions right. So it is always advantageous to make such swaps,
+  and we should always load up set R with as many type A questions as we
+  possibly can. If there are not enough type A questions to do this, then we
+  must fill up the rest of set R with type D questions.
+</p><p>
+  We can either implement this greedy strategy, or generalize it into a
+  formula: if X is the number of questions on which we agree with our friend,
+  then the answer turns out to be <b>Q</b> - |<b>S<sub>0</sub></b> - X|.
+</p><p>
+  Another possible approach for the Small dataset is to use brute force. Even
+  in the worst case of <b>Q</b> = 10, there are only 2<sup>10</sup> = 1024
+  different possible sets of answers. We can check all of them and see
+  which ones are consistent with our friend's score, and which of those gives
+  us the highest score.
+</p>
+<h3>Large dataset</h3>
+<p>
+  The Large dataset introduces two additional complications. For one thing,
+  there can now be up to 50 questions, so the brute force approach mentioned
+  above won't work; 2<sup>50</sup> is over 10<sup>15</sup>, and there are far
+  too many possible sets of answers to check.
+</p><p>
+  Our greedy method above will work for <b>N</b> = 1, <b>Q</b> = 50, but adding
+  a second friend introduces some complications. For example, trying to make
+  greedy decisions about one friend in the same way we did for Small
+  dataset 1 might cause the other friend to end up with the wrong score.
+  However, we don't need a greedy approach, because we can take advantage of
+  the small number of types of questions. When <b>N</b> = 2, there are only
+  four types:
+</p>
+<ol>
+  <li>Both friends agree with us.</li>
+  <li>Only friend 1 agrees with us.</li>
+  <li>Only friend 2 agrees with us.</li>
+  <li>Neither friend agrees with us.</li>
+</ol>
+<p>
+  We can try every possible tuple (a, b, c, d) of the numbers of Type 1, 2, 3,
+  and 4 questions that we got right, with 0 ≤ a ≤ the number of Type 1
+  questions, 0 ≤ b ≤ the number of Type 2 questions, and so on. Any
+  tuples that do not cause both friends to have the correct scores should be
+  discarded. We can then choose the remaining tuple for which a + b + c + d is
+  maximized. This method is O(<b>Q</b><sup>4</sup>), but the greatest possible
+  number of such tuples to check occurs when <b>Q</b> = 50 and there are 12 or
+  13 of each of the four types, and even then, there only about 25000
+  possibilities to check.
+</p><p>
+  Another option for this dataset is to use
+  <a href="https://en.wikipedia.org/wiki/Dynamic_programming" target="_blank">dynamic programming</a>.
+  For example, we can start with a set containing only the list [0, 0, 0],
+  which represents that at the start of the test, before any questions are
+  answered, we have 0 points, friend 1 has 0 points, and friend 2 has 0 points.
+  Then, suppose that our answer to the first question is F, our first friend
+  answered T, and our second friend answered F. There are two options: either
+  the real answer to the first question is F (for which case we create the list
+  [1, 0, 1], since we and the second friend have earned a point, but the first
+  friend has not), or the real answer is T (for which case we create the list
+  [0, 1, 0]). Then we replace our old set with the new set ([1, 0, 1],
+  [0, 1, 0]), and for each list in that set, we in turn consider what happens
+  when we answer F or T for the second question, and so on. Once we have
+  finished, we check for the list in which our friends' scores are both correct
+  and we have the highest possible score.
+</p><p>
+  Why is this method any better than brute force? The key difference is that if
+  we create a list that is already in our set, we do not add another copy of
+  it, so we do not waste time individually considering many equivalent (for our purposes) 
+  answer sets. Because our scores and our friends' scores can range from 0 to
+  <b>Q</b>, inclusive, there are (<b>Q</b> + 1)<sup>N + 1</sup> possible lists;
+  since (as an upper bound) we have to check all of them once for each
+  question, the method is O(<b>Q</b><sup>N + 2</sup>). This is
+  O(<b>Q</b><sup>4</sup>) when <b>N</b> = 2. In practice, this is a "slower
+  O(<b>Q</b><sup>4</sup>)" than the method above, since we may need to check
+  51<sup>3</sup> × 50 = over 6 × 10<sup>6</sup> possibilities,
+  but it is still easily fast enough to solve the Large dataset. The approach
+  also works just fine with a three-dimensional array instead of a set, but the
+  set lets us avoid checking for the existence of all possible lists at each
+  step of the process.
+</p>
+</div><div id="dsb-problem-analysis-div3" class="dsb-problem-content-div" style="display: none;"><h2>The 4M Corporation: Analysis</h2>
+<h3>Small dataset</h3>
+<p>
+  The Limits section of the problem statement tells us that the answer to
+  every Small test case that is not <code>IMPOSSIBLE</code> is less than 14.
+  This suggests that brute force is a viable option for the Small dataset. The
+  tight bounds imposed by <b>MINIMUM</b> and <b>MAXIMUM</b> help us out as
+  well. But let's think about the worst case: what if those two values are 1
+  and 8, respectively, and what if the answer ends up being 13? In that case,
+  we know that two of the values in the list must be 1 and 8, but if any of the
+  others can be any integer in [1, 8], then we can have 8<sup>11</sup> —
+  over 8 billion — possibilities for the remaining numbers. That's too
+  much to handle in our limited time!
+</p><p>
+  Fortunately, we can cut this daunting space of possibilities down to size by
+  avoiding redundant lists. In this problem, we don't care about the difference
+  between [1, 1, 2, 3] and [2, 1, 3, 1], for instance. One way to avoid
+  worrying about such differences is to only consider lists that are sorted in
+  nondecreasing order. Even in the worst case mentioned above, there are only
+  about 75,000 different nondecreasing lists that accord with the Small limits.
+  (You can use a
+  <a href="https://en.wikipedia.org/wiki/Stars_and_bars_(combinatorics)" target="_blank">combinatorial trick</a>
+  to find this value, or you can just experiment and see.)
+</p><p>
+  One simple way to actually generate those lists is to start with a list
+  consisting of only <b>MINIMUM</b>, then generate all new legal lists that
+  append one more value to the end of that, then generate all new legal lists
+  that append one value to the ends of <i>those</i> lists, and so on. Since the
+  number of such lists is small, an approach like this is tractable. Once you
+  have all the lists, you can check each of them to see if it has the desired
+  properties, and return the length of the shortest such list, or
+  <code>IMPOSSIBLE</code> if none of the lists works.
+</p>
+
+<h3>Large dataset</h3>
+
+<p>
+  With values in the [1, 10000] range, and no upper bound on the answer,
+  we will never be able to generate all possible lists in time. We need a
+  general, non-brute-force solution.
+</p><p>
+  Let's start with some special cases that might be easy to overlook:
+</p>
+<ul>
+  <li>There are five sets of demands that make the task clearly
+    <code>IMPOSSIBLE</code>, because they contradict the mathematical
+    definitions of minimum, maximum, mean, and median:
+    <ul>
+      <li><b>MAXIMUM</b> &lt; <b>MINIMUM</b></li>
+      <li><b>MAXIMUM</b> &lt; <b>MEDIAN</b></li>
+      <li><b>MAXIMUM</b> &lt; <b>MEAN</b></li>
+      <li><b>MEDIAN</b> &lt; <b>MINIMUM</b></li>
+      <li><b>MEAN</b> &lt; <b>MINIMUM</b></li>
+    </ul>
+  </li>
+  <li>The problem might be solvable with one department. This is possible if
+    and only if <b>MINIMUM</b>, <b>MAXIMUM</b>, <b>MEAN</b>, and <b>MEDIAN</b>
+    are all the same, so we can easily confirm or rule out this case.</li>
+  <li>The problem might be solvable with two departments. This requires that
+    <b>MEAN</b> and <b>MEDIAN</b> are both exactly (<b>MINIMUM</b> +
+    <b>MAXIMUM</b>) / 2). If this is true, we have no reason to consider using
+    more departments, so we are done.</li>
+</ul>
+<p>
+  Otherwise, suppose that the problem is solvable with three departments. Then
+  those three values must be <b>MINIMUM</b>, <b>MEDIAN</b>, and <b>MAXIMUM</b>.
+  Assuming that these values do not already have the correct <b>MEAN</b>,
+  perhaps we can insert more values until they do. We can repeatedly insert one
+  value to the left of the median and one value to the right. First, we figure
+  out how much the mean of the existing three values deviates from the desired
+  mean. (To avoid errors associated with floating-point computation, it is
+  better to compare the values' sum with <b>MEAN</b> times the number of
+  values.) Suppose (without loss of generality) that the existing sum of values
+  is too large. Then we can figure out which two values to insert to bring down
+  this surplus as much as possible; usually, they will be another copy of
+  <b>MINIMUM</b> (on the left) and another copy of <b>MEDIAN</b> (on the
+  right). If inserting even one such pair won't reduce the surplus — that
+  is, if <b>MEDIAN</b> + <b>MINIMUM</b> is no smaller than 2 × <b>MEAN</b> —
+  then this method will never work. Otherwise, we can keep doing this until the
+  surplus is gone. If inserting that last pair of <b>MINIMUM</b> and
+  <b>MEDIAN</b> would overshoot the surplus by an amount K, we can just insert
+  <b>MINIMUM</b> + K instead of the usual <b>MINIMUM</b>; this value will
+  never exceed <b>MEDIAN</b>.) We don't even need to carry out each
+  such step individually; we can figure out exactly how many will be needed.
+</p><p>
+  Note that since we always insert one value to the left of our original
+  <b>MEDIAN</b> and one to the right, the list always has a copy of
+  <b>MEDIAN</b> in the right place. Also, given any other valid list of odd
+  length, we can sort that list's values in nondecreasing order and pair them
+  off (ignoring the first, last and middle elements, which are fixed): the
+  second value with the second-to-last value, etc. Each of the pairs produced by
+  our method contributes maximally towards reducing the surplus (except possibly
+  the last one of value <b>MINIMUM</b> + K).  So no valid list of odd length can
+  be strictly shorter, as the total contribution would be strictly smaller.
+</p><p>
+  We aren't done yet, though, because the above method only produces lists with
+  an odd number of elements. So, regardless of what that method determined, we
+  need to try something similar starting with four departments: <b>MINIMUM</b>,
+  <b>MEDIAN</b>, <b>MEDIAN</b>, and <b>MAXIMUM</b>. (You may notice that we
+  could also consider <b>MEDIAN</b> - 1 and <b>MEDIAN</b> + 1, among other
+  possible pairs, in place of <b>MEDIAN</b> and <b>MEDIAN</b>. But there is no
+  reason to consider this, because it would only restrict the range of new
+  values we can insert, and thus require more values to adjust the mean.) Once
+  we get our answer from this four-department method, we can take the smaller
+  of its answer and the three-department method's answer, or
+  <code>IMPOSSIBLE</code> if neither method worked.
+</p><p>
+  This solution runs in constant time. Our efficiency-loving bosses at the 4M
+  Corporation will certainly be happy with that!
+</p>
+</div></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table" style="display: block;">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">[General]<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">2:58:39</td><td></td><td><i>Will you post analyses for these problems?</i></td><td></td><td class="clarTimeColumn" style="color: red;">3:00:54</td><td></td><td><i>We have posted them; you can see them via the Contest Analysis link on the dashboard.</i></td></tr><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">X Squared<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">1:09:07</td><td></td><td><i>Should the number testcases (T) be 1 &lt;= T &lt;= 100 ?</i></td><td></td><td class="clarTimeColumn" style="color: red;">1:18:49</td><td></td><td><i>Yes; the 200 was a typo. There will only ever be at most 100 cases for this problem. We apologize for any confusion.</i></td></tr></tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification" style="display: none;">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="YWYzZTU5NjM1MjU4ZTAxM2IwMDU3YjYzNmIwYzkzYTN8fDE0OTkyNDA2NzE3NDk3MTA="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="5737062711951360">A. Ambiguous Cipher</option><option value="5687438122942464">B. X Squared</option><option value="5717805152337920">C. Magical Thinking</option><option value="5743626445389824">D. The 4M Corporation</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0px 0.3em; display: block;">You cannot ask questions at this time. Please email us at codejam@google.com.</div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2017 Google</span>
+  <a href="http://www.google.com/">Google Home</a> -
+  <a href="https://code.google.com/codejam/kickstart/terms.html">Terms and Conditions</a> -
+  <a href="http://www.google.com/intl/en/policies">Privacy Policies and Principles</a>
+  <br><br>
+  <a href="http://cloud.google.com/"><img width="125" height="91" src="./Problem B. X Squared_files/powered_by_gcp_logo.png"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div></body></html>

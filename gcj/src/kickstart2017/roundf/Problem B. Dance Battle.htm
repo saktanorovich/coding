@@ -1,0 +1,1237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)https://code.google.com/codejam/contest/7254486/dashboard#s=p1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - Kickstart Round F 2017 - Google Code Jam
+  </title>
+
+    <style>@import '//www.google.com/css/modules/buttons/g-button-sparrow.css';</style>
+    <link rel="stylesheet" type="text/css" href="./Problem B. Dance Battle_files/app.css">
+
+
+
+
+
+    <script type="text/javascript" async="" src="./Problem B. Dance Battle_files/ga.js"></script><script src="./Problem B. Dance Battle_files/App_en.js"></script><style></style>
+    
+
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.dashboardMain().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "7254486";
+      GCJ.contest.name = "Kickstart Round F 2017";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 10;
+      
+      GCJ.contest.start_int = 1506240000;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=7254486"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam/kickstart2017";
+    };
+  //-->
+  </script>
+</head>
+
+<body onload="GCJ.dashboardMain()" class="page-dashboard">
+
+<div id="logo-div">
+  <a href="https://code.google.com/codejam/kickstart/">
+    <img src="./Problem B. Dance Battle_files/logo_kickstart_2017.jpg" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">Kickstart Round F 2017</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link">A. Kicksort  </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-open" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. Dance Battle  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link">C. Catch Them All  </div></div></div><div><div id="dsb-problem-tab3" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title3" class="dynamic-link">D. Eat Cake  </div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-analysis-tab-close" tabindex="0" role="button" style="display: block;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab" class="dsb-has-new-question-tab">Questions asked<span class="dsb-unread-count">3</span></div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();">
+      <img id="dsb-status-panel-button" src="./Problem B. Dance Battle_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Kicksort</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">9pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: block;"><b>1244/1709 users</b> correct (73%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">13pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: block;"><b>862/1258 users</b> correct (69%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Dance Battle</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">10pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: block;"><b>929/1257 users</b> correct (74%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_1" class="inputName">15pt</td>      <td class="status">        <div id="selfStat1_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_1" class="globalStat" style="display: block;"><b>807/894 users</b> correct (90%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Catch Them All</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">14pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: block;"><b>432/669 users</b> correct (65%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">19pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: block;"><b>218/326 users</b> correct (67%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper3" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Eat Cake</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_0" class="inputName">8pt</td>      <td class="status">        <div id="selfStat3_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_0" class="globalStat" style="display: block;"><b>1253/1732 users</b> correct (72%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_1" class="inputName">12pt</td>      <td class="status">        <div id="selfStat3_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_1" class="globalStat" style="display: block;"><b>1122/1224 users</b> correct (92%)</div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)">
+          <img id="dsb-scoreboard-panel-button" src="./Problem B. Dance Battle_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td class="dsb-name-td" id="sbName_0">1717374</td><td class="dsb-score-td" id="sbScore_0">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td class="dsb-name-td" id="sbName_1">percywtc</td><td class="dsb-score-td" id="sbScore_1">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td class="dsb-name-td" id="sbName_2">ec24</td><td class="dsb-score-td" id="sbScore_2">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td class="dsb-name-td" id="sbName_3">jtnydv25</td><td class="dsb-score-td" id="sbScore_3">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td class="dsb-name-td" id="sbName_4">wifi</td><td class="dsb-score-td" id="sbScore_4">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td class="dsb-name-td" id="sbName_5">cchao</td><td class="dsb-score-td" id="sbScore_5">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td class="dsb-name-td" id="sbName_6">voxel</td><td class="dsb-score-td" id="sbScore_6">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td class="dsb-name-td" id="sbName_7">jerrymao</td><td class="dsb-score-td" id="sbScore_7">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td class="dsb-name-td" id="sbName_8">creatnx</td><td class="dsb-score-td" id="sbScore_8">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td class="dsb-name-td" id="sbName_9">Arcturus</td><td class="dsb-score-td" id="sbScore_9">100</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-sub-link" style="display: none;">View submissions.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">Practice Mode</span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div" style="display: none;">
+          Rank: <span id="dsb-current-rank-span">--</span>
+        </span>
+        <span id="dsb-current-score-div" style="display: none;">
+          Score: <span id="dsb-current-score-span">--</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="https://code.google.com/codejam/contest/7254486/scoreboard?c=7254486">Contest scoreboard</a> | <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://code.google.com/codejam/contest/dashboard%253Fc%253D7254486">Sign in</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;"><span style="color:#666">Problem B.</span> Dance Battle</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>9 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Dance Battle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_0"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> A-small-practice.in.</div><form id="submit-formio_timer_0" action="https://code.google.com/codejam/contest/7254486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTdmYWJhN2U3YjcxMDgxODlkOTI5ZDdhMTYzYjUwMmN8fDE1MjI2NDk3MDk0MzIyNjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_0" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_0"><div id="input-file-divio_timer_0-0"><span id="source-fileio_timer_0-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_0-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_0" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_0" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_0" type="button" value="Hide"></div><div id="source-file-namesio_timer_0"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5659235706732544"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_0" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>13 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Dance Battle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1">Download A-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_1"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_1" action="https://code.google.com/codejam/contest/7254486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTdmYWJhN2U3YjcxMDgxODlkOTI5ZDdhMTYzYjUwMmN8fDE1MjI2NDk3MDk0MzIyNjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_1" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_1"><div id="input-file-divio_timer_1-0"><span id="source-fileio_timer_1-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_1-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_1" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_1" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_1" type="button" value="Hide"></div><div id="source-file-namesio_timer_1"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5659235706732544"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_1" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  Here at Kickstart, we are fans of the well-known
+  <a href="https://en.wikipedia.org/wiki/Quicksort" target="_blank">Quicksort</a> algorithm,
+  which chooses a <i>pivot</i> value from a list, moves each other value into
+  one of two new lists depending on how it compares with the pivot value, and
+  then recursively sorts each of those new lists. However, the algorithm might
+  choose a pivot that causes all of the other values to end up in only one of
+  the two new lists, which defeats the purpose of the divide-and-conquer
+  strategy. We call such a pivot a <i>worst-case pivot</i>.
+</p><p>
+  To try to avoid this problem, we have created our own variant, Kicksort.
+  Someone told us that it is good to use a value in the middle as a pivot, so
+  our algorithm works as follows:
+</p>
+<pre>  Kicksort(A): // A is a 0-indexed array with E elements
+    If E ≤ 1, return A.
+    Otherwise:
+      Create empty new lists B and C.
+      Choose A[floor((E-1)/2)] as the pivot P.
+      For i = 0 to E-1, except for i = floor((E-1)/2):
+        If A[i] ≤ P, append it to B.
+        Otherwise, append it to C.
+    Return the list Kicksort(B) + P + Kicksort(C).
+</pre>
+<p>
+  For practice, we are trying Kicksort out on lists that are permutations of
+  the numbers 1 through <b>N</b>. Unfortunately, it looks like Kicksort still
+  has the same problem as Quicksort: it is possible for every pivot to be a
+  worst-case pivot!
+</p><p>
+  For example, consider the list <code>1 4 3 2</code>. Kicksort will choose
+  <code>4</code> as a pivot, and all of the other values <code>1 3 2</code>
+  will end up in one of the two new lists. Then, when Kicksort is called on
+  that list <code>1 3 2</code>, it will choose <code>3</code>, and once again,
+  all of the other values will end up in one of the two new lists. Finally, it
+  will choose <code>1</code> from the list <code>1 2</code>, and the other
+  value <code>2</code> will of course end up in only one of the two new lists.
+  In every case, the algorithm will choose a worst-case pivot. (Notice that
+  when Kicksort is called on a list with 0 or 1 elements, it does not choose a
+  pivot at all.)
+</p><p>
+  Please help us investigate this further! Given a permutation of the numbers
+  1 through <b>N</b>, determine whether Kicksort will choose only worst-case
+  pivots.
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> test cases follow; each consists of two lines. The first line has
+  one integer <b>N</b>: the number of elements in the permutation. The second
+  line contains <b>N</b> integers <b>A<sub>i</sub></b>, which are a permutation
+  of the values from 1 through <b>N</b>.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1) and <code>y</code>
+  is <code>YES</code> if Kicksort will choose only worst-case pivots when
+  sorting this list, or <code>NO</code> otherwise.
+</p>
+
+<h3>Limits</h3>
+<p>
+  The values <b>A<sub>i</sub></b> are a permutation of the values from 1 to
+    <b>N</b>.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  1 ≤ <b>T</b> ≤ 32.<br>
+  2 ≤ <b>N</b> ≤ 4.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+  2 ≤ <b>N</b> ≤ 10000.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">4
+4
+1 4 3 2
+4
+2 1 3 4
+2
+2 1
+3
+1 2 3
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: YES
+Case #2: NO
+Case #3: YES
+Case #4: NO
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  Sample Case #1 is the one described in the problem statement.
+</p><p>
+  In Sample Case #2, our first pivot will be <code>1</code>, which is a
+  worst-case pivot, because it causes all of the other values
+  <code>2 3 4</code> to end up in one of the two new lists. However, the
+  Kicksort call on the list <code>2 3 4</code> will choose <code>3</code> as a
+  pivot. This is not a worst-case pivot, because it puts <code>2</code> in one
+  of the new lists, and <code>4</code> in the other.
+</p><p>
+  In Sample Case #3, Kicksort will start by choosing the worst-case pivot
+  <code>2</code>, and then it has no other pivot choices to make.
+</p><p>
+  In Sample Case #4, Kicksort will start by choosing <code>2</code>, which is
+  not a worst-case pivot.
+</p>
+</div></div><div id="dsb-problem-page1" class="dsb-content-pages" style="display: block;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Dance Battle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_2"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> B-small-practice.in.</div><form id="submit-formio_timer_2" action="https://code.google.com/codejam/contest/7254486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTdmYWJhN2U3YjcxMDgxODlkOTI5ZDdhMTYzYjUwMmN8fDE1MjI2NDk3MDk0MzIyNjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_2" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_2"><div id="input-file-divio_timer_2-0"><span id="source-fileio_timer_2-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_2-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_2" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_2" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_2" type="button" value="Hide"></div><div id="source-file-namesio_timer_2"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5755342361198592"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_2" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>15 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-1" class=""><div id="dsb-input-wrapper1-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-1" style="display: inline;">Solve B-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Dance Battle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-1">Download B-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_3"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_3" action="https://code.google.com/codejam/contest/7254486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTdmYWJhN2U3YjcxMDgxODlkOTI5ZDdhMTYzYjUwMmN8fDE1MjI2NDk3MDk0MzIyNjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_3" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_3"><div id="input-file-divio_timer_3-0"><span id="source-fileio_timer_3-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_3-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_3" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_3" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_3" type="button" value="Hide"></div><div id="source-file-namesio_timer_3"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5755342361198592"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_3" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  Your team is about to prove itself in a dance battle! Initially, your
+  team has <b>E</b> points of energy, and zero points of honor. There are
+  <b>N</b> rival teams who you must face; the i-th of these teams is the i-th
+  in a lineup, and has a dancing skill of <b>S<sub>i</sub></b>.
+</p><p>
+  In each round of battle, you will face the next rival team in the lineup, and
+  you can take one of the following actions:
+</p>
+<ol>
+  <li><i>Dance</i>: Your team loses energy equal to the dancing skill of the
+    rival team, and that team does not return to the lineup. You gain one point
+    of honor. You cannot take this action if it would make your energy drop
+    to 0 or less.</li>
+  <li><i>Delay</i>: You make excuses ("our shoes aren't tied!") and the rival
+    team returns to the back of the lineup. Your energy and honor do not
+    change.</li>
+  <li><i>Truce</i>: You declare a truce with the rival team, and that team does
+    not return to the lineup. Your energy and honor do not change.</li>
+  <li><i>Recruit</i>: You recruit the rival team onto your team, and that team
+    does not return to the lineup. Your team gains energy equal to the
+    dancing skill of the rival team, but you lose one point of honor. You
+    cannot take this action if it would make your honor drop below 0.</li>
+</ol>
+<p>
+  The battle is over when there are no more rival teams in the lineup. If you
+  make optimal decisions, what is the maximum amount of honor you can have when
+  the battle is over?
+</p>
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>.
+  <b>T</b> test cases follow; each consists of two lines. The first line
+  consists of two integers <b>E</b> and <b>N</b>: your team's energy, and the
+  number of rival teams. The second line consists of <b>N</b> integers
+  <b>S<sub>i</sub></b>; the i-th of these represents the dancing skill of the
+  rival team that is i-th in line at the start of the battle.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1) and <code>y</code>
+  is the maximum amount of honor you can have when the battle is over.
+</p>
+
+<h3>Limits</h3>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+  1 ≤ <b>E</b> ≤ 10<sup>6</sup>.<br>
+  1 ≤ <b>S<sub>i</sub></b> ≤ 10<sup>6</sup>, for all i.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 5.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 1000.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">2
+100 1
+100
+10 3
+20 3 15
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 0
+Case #2: 1
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  In Sample Case #1, there is only one rival team. You cannot dance against
+  them because it would make your energy fall to 0, and you cannot recruit them
+  because it would make your honor fall below 0. Delaying does not help, so
+  the only option is to declare a truce. You finish with 0 honor.
+</p><p>
+  In Sample Case #2, one optimal strategy is:
+</p>
+<ol>
+  <li>Delay against the first rival team. They go to the back of the
+    lineup.</li>
+  <li>Dance against the second rival team. Your energy drops to 7, and your
+    honor increases to 1.</li>
+  <li>Recruit the third rival team. Your energy increases to 22, and your
+    honor decreases to 0.</li>
+  <li>Dance against the first rival team (which is now at the head of the
+    lineup again). Your energy drops to 2, and your honor increases to 1.</li>
+</ol>
+<p>
+  You finish with 1 point of honor.
+</p>
+</div></div><div id="dsb-problem-page2" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input<br>14 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Dance Battle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_4"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice.in.</div><form id="submit-formio_timer_4" action="https://code.google.com/codejam/contest/7254486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTdmYWJhN2U3YjcxMDgxODlkOTI5ZDdhMTYzYjUwMmN8fDE1MjI2NDk3MDk0MzIyNjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_4" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_4"><div id="input-file-divio_timer_4-0"><span id="source-fileio_timer_4-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_4-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_4" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_4" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_4" type="button" value="Hide"></div><div id="source-file-namesio_timer_4"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5676019365183488"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_4" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>19 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Dance Battle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1">Download C-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_5"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_5" action="https://code.google.com/codejam/contest/7254486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTdmYWJhN2U3YjcxMDgxODlkOTI5ZDdhMTYzYjUwMmN8fDE1MjI2NDk3MDk0MzIyNjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_5" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_5"><div id="input-file-divio_timer_5-0"><span id="source-fileio_timer_5-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_5-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_5" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_5" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_5" type="button" value="Hide"></div><div id="source-file-namesio_timer_5"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5676019365183488"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_5" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><h2>Problem</h2>
+
+<p>
+  After the release of <i><b>Codejamon Go</b></i>, you, like many of your friends,
+  took to the streets of your city to catch as many of the furry little creatures
+  as you could. The objective of the game is to catch <i>Codejamon</i> that appear
+  around your city by going to their locations. You are wondering how long it would
+  take for you to catch them all!
+</p>
+
+<p>
+  Your city consists of <b>N</b> locations numbered from 1 to <b>N</b>. You start at
+  location 1. There are <b>M</b> bidirectional roads (numbered from 1 to <b>M</b>).
+  The i-th road connects a pair of distinct locations (U<sub>i</sub>, V<sub>i</sub>),
+  and it takes <b>D<sub>i</sub></b> minutes to travel on it in either direction.
+  It is guaranteed that it is possible to reach any other location from location
+  1 by travelling on one or more roads.
+</p>
+
+<p>
+  At time 0, a <i>Codejamon</i> will appear at a uniformly random location other
+  than your current location (which is location 1 at time 0). Uniformly random means
+  that the probability that it will appear at each of the <b>N</b> - 1 locations
+  other than your current location is exactly 1 / (<b>N</b> - 1). The instant that
+  a <i>Codejamon</i> appears, you can immediately start moving towards it.
+  When you arrive at a location containing a <i>Codejamon</i>, you instantly catch
+  it, and then a new <i>Codejamon</i> will instantly appear at a uniformly random
+  location other than your current location, and so on. Notice that only one
+  Codejamon is present at any given time, and you must catch the existing one before
+  the next will appear.
+</p>
+
+<p>
+  Given the layout of your city, calculate the expected time to catch <b>P</b>
+  <i>Codejamon</i>, assuming that you always take the fastest possible route between
+  any two locations.
+</p>
+
+<h3>Input</h3>
+
+<p>
+  The input starts with one line containing one integer <b>T</b>: the number of
+  test cases. <b>T</b> test cases follow.
+</p>
+
+<p>
+  Each test case begins with one line containing 3 integers <b>N</b>, <b>M</b> and
+  <b>P</b>, indicating the number of locations, roads, and <i>Codejamon</i> to catch,
+  respectively.
+</p>
+
+<p>
+  Then, each test case continues with <b>M</b> lines; the i-th of these lines
+  contains three integers <b>U<sub>i</sub></b>, <b>V<sub>i</sub></b> and
+  <b>D<sub>i</sub></b>, indicating that the i-th road is between locations
+  <b>U<sub>i</sub></b> and <b>V<sub>i</sub></b>, and it takes <b>D<sub>i</sub></b>
+  minutes to travel on it in either direction.
+</p>
+
+<h3>Output</h3>
+
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where <code>x</code> is
+  the test case number (starting from 1) and <code>y</code> is the expected time in
+  minutes to catch <b>P</b> <i>Codejamon</i>. Your answer will be considered
+  correct if it is within an absolute or relative error of 10<sup>-4</sup> of the
+  correct answer.
+  See the <a href="https://code.google.com/codejam/resources/faq#real-number-behavior" target="_blank">FAQ</a>
+  for an explanation of what that means, and what formats of real numbers we accept.
+</p>
+
+<h3>Limits</h3>
+1 ≤ <b>T</b> ≤ 100.<br>
+<b>N</b> - 1 ≤ <b>M</b> ≤ (<b>N</b> * (<b>N</b> - 1)) / 2.<br>
+1 ≤ <b>D<sub>i</sub></b> ≤ 10, for all i.<br>
+1 ≤ <b>U<sub>i</sub></b> &lt; <b>V<sub>i</sub></b> ≤ <b>N</b>, for all i.<br>
+For all i and j with i ≠ j, <b>U<sub>i</sub></b> ≠ <b>U<sub>j</sub></b> and/or
+  <b>V<sub>i</sub></b> ≠ <b>V<sub>j</sub></b>. (There is at most one road between
+  any two locations.)<br>
+It is guaranteed that it is possible to reach any other location from location 1
+  by travelling on one or more roads.<br>
+
+<h4>Small dataset</h4>
+2 ≤ <b>N</b> ≤ 50.<br>
+1 ≤ <b>P</b> ≤ 200.<br>
+
+<h4>Large dataset</h4>
+2 ≤ <b>N</b> ≤ 100.<br>
+1 ≤ <b>P</b> ≤ 10<sup>9</sup>.<br>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">4
+5 4 1
+1 2 1
+2 3 2
+1 4 2
+4 5 1
+2 1 200
+1 2 5
+5 4 2
+1 2 1
+2 3 2
+1 4 2
+4 5 1
+3 3 1
+1 2 3
+1 3 1
+2 3 1
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 2.250000
+Case #2: 1000.000000
+Case #3: 5.437500
+Case #4: 1.500000
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  In Sample Case #1, there is only one Codejamon for us to catch. With equal
+  probability, it will appear at locations 2, 3, 4, and 5, which are at distances of
+  1, 3, 2, and 3, respectively, from our starting location 1. So the expected time it
+  will take is (1 + 3 + 2 + 3) / 4 = 2.25 minutes.
+</p><p>
+  In Sample Case #2, there are only two locations connected by one road. Every time
+  a Codejamon appears, it will be in the location other than our current one, and we
+  will have to take the road to get there. So we take the road 200 times, taking 5
+  minutes each time, for a total of 1000 minutes.
+</p><p>
+  Sample Case #3 uses the same map as Sample Case #1. There are 16 ordered-pair
+  possibilities for where the two Codejamon will appear, and doing the math yields
+  an expected 87/16 = 5.4375 minutes.
+</p><p>
+  In Sample Case #4, the one Codejamon we need to catch will appear at location 2 or
+  location 3. If it appears at location 2, it is better for us to get there in two
+  minutes via the 1-to-3 and 3-to-2 roads, instead of taking the more time-consuming
+  1-to-2 road. So the expected time taken is (2 + 1) / 2 = 1.5 minutes.
+</p>
+</div></div><div id="dsb-problem-page3" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text3"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table3"><tr><td class="dsb-input-table-description">Small input<br>8 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-0" class=""><div id="dsb-input-wrapper3-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-0" style="display: inline;">Solve D-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Dance Battle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-0">Download D-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-0">resubmit</span> for <span id="dsb-resubmit-timer3-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_6"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> D-small-practice.in.</div><form id="submit-formio_timer_6" action="https://code.google.com/codejam/contest/7254486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTdmYWJhN2U3YjcxMDgxODlkOTI5ZDdhMTYzYjUwMmN8fDE1MjI2NDk3MDk0MzIyNjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_6" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_6"><div id="input-file-divio_timer_6-0"><span id="source-fileio_timer_6-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_6-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_6" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_6" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_6" type="button" value="Hide"></div><div id="source-file-namesio_timer_6"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5707423411077120"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_6" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>12 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-1" class=""><div id="dsb-input-wrapper3-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-1" style="display: inline;">Solve D-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem B. Dance Battle_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-1">Download D-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-1">resubmit</span> for <span id="dsb-resubmit-timer3-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link3-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_7"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_7" action="https://code.google.com/codejam/contest/7254486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="YTdmYWJhN2U3YjcxMDgxODlkOTI5ZDdhMTYzYjUwMmN8fDE1MjI2NDk3MDk0MzIyNjA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_7" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_7"><div id="input-file-divio_timer_7-0"><span id="source-fileio_timer_7-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_7-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_7" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_7" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_7" type="button" value="Hide"></div><div id="source-file-namesio_timer_7"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5707423411077120"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_7" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div3" class="dsb-problem-content-div" style="width: 40em;"><h2>Problem</h2>
+
+<p>
+Wheatley is at the best party in the world: it has infinitely many cakes! Each cake is a square with an integer side length (in cm). The party has infinitely many cakes of every possible integer side length. The cakes all have the same depth, so we will only consider their areas.
+</p><p>
+Wheatley is determined to eat one or more cakes that have a total combined area of <i>exactly</i> <b>N</b> cm<sup>2</sup>. But, since he is health-conscious, he wants to eat as few cakes as possible. Can you help him calculate the minimum number of cakes he can eat?
+</p>
+
+<h3>Input</h3>
+
+<p>
+  The input starts with one line containing one integer <b>T</b>, which is the number of test cases. <b>T</b> test cases follow. Each case consists of one line with one integer <b>N</b>, which is the exact total cake area that Wheatley wants to eat.
+</p>
+
+<h3>Output</h3>
+
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where <code>x</code> is the test case number (starting from 1) and <code>y</code> is the minimum number of cakes that Wheatley can eat while eating the exact total area <b>N</b>.
+</p>
+
+<h3>Limits</h3>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>T</b> ≤ 50.<br>
+1 ≤ <b>N</b> ≤ 50.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+1 ≤ <b>N</b> ≤ 10000.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">3
+3
+4
+5
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 3
+Case #2: 1
+Case #3: 2
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  In Sample Case #1, the only possible strategy is for Wheatley to eat three cakes of side length 1.
+</p><p>
+  In Sample Case #2, Wheatley can eat one cake of side length 2, which requires fewer cakes than eating four cakes of side length 1.
+</p><p>
+  In Sample Case #3, the best strategy is for Wheatley to eat one cake of side length 2 and one cake of side length 1.
+</p>
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages"><div id="dsb-analysis-selections"><span id="dsb-analysis-selection-p4" class="dsb-analysis-selected">Overview</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p0" class="dsb-analysis-not-selected">Problem A</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p1" class="dsb-analysis-not-selected">Problem B</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p2" class="dsb-analysis-not-selected">Problem C</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p3" class="dsb-analysis-not-selected">Problem D</span></div><div id="dsb-problem-analysis-div4" class="dsb-problem-content-div"><p>
+  Thanks to everyone who participated! Kickstart Round G will take place next
+  month; check the Kickstart
+  <a href="https://code.google.com/codejam/kickstart/schedule" target="_blank">schedule</a>
+  for more details.
+</p>
+<hr>
+<p>
+  <b>Cast</b>
+</p><p>
+  Problem A (Kicksort): Written and prepared by Ian Tullis.
+</p><p>
+  Problem B (Dance Battle): Written by Ian Tullis and prepared by Jonathan Irvin Gunawan.
+</p><p>
+  Problem C (Catch Them All): Written and prepared by Celestine Lau.
+</p><p>
+  Problem D (Eat Cake): Written and prepared by Xianghong Luo.
+</p><p>
+  Solutions and other problem preparation and review by Ian Tullis, Yiming Li, Tony Wong, Xuanang Zhao, Jonathan Irvin Gunawan, Trung Thanh Nguyen and Xiaomeng Yang. Thanks for their great help!
+</p>
+<p></p><p>
+Analysis authors:
+</p>
+<ul>
+  <li>Kicksort: Ian Tullis</li>
+  <li>Dance Battle: Ian Tullis</li>
+  <li>Catch Them All: Xiaomeng Yang, Tony Wong</li>
+  <li>Eat Cake: Jonathan Irvin Gunawan</li>
+</ul>
+</div><div id="dsb-problem-analysis-div0" class="dsb-problem-content-div" style="display: none;"><h2>Kicksort: Analysis</h2>
+<p>
+  In Quicksort, the best pivots at any stage are the ones that are closest to
+  the <i>median</i> of the current list (although we would have no way of
+  knowing which ones those are without doing some additional work before
+  choosing!) This problem hinges on a misinterpretation of that idea, in which
+  we take pivots from near the middle <i>index</i> of the list instead. Unless
+  our sequence happens to be already sorted or close to sorted, this is no
+  better than choosing an arbitrary index!
+</p>
+<h3>A Small-only approach</h3>
+<p>
+  The sequences in the Small dataset can have between 2 and 4 elements. There
+  are only 2! + 3! + 4! = 32 different permutations that meet these criteria.
+  This enables some strategies that do not usually work in Kickstart. For
+  example, we can pre-solve each case by hand, or use nested conditional
+  statements that take advantage of the small size of the sequence. But we
+  recommend using one of the two approaches below instead.
+</p>
+<h3>A quadratic simulation approach</h3>
+<p>
+  The most straightforward general approach is to actually run the Kicksort
+  algorithm on the given sequence, and see whether it ever picks a pivot that
+  is <i>not</i> worst-case. One possible complication is figuring out how to
+  have this recursive algorithm pass information up the call chain if it does
+  find a non-worst-case pivot; one option is to have it throw an exception that
+  can then be caught. We must also be careful not to overflow the stack with
+  recursive calls, since there can be <b>N</b> of them; one way to avoid this
+  is to use our language's provided way to change the system's stack size.
+  (Warning: This sort of system tweaking can be dangerous in real-world
+  applications, which tend to avoid deep recursive strategies like this one.)
+</p><p>
+  Quicksort is famously O(<b>N</b><sup>2</sup>) when it consistently picks
+  worst-case pivots, and that is what many of our simulations will do, so this
+  strategy takes O(<b>N</b><sup>2</sup>) time. This is still fast enough to
+  solve the Large dataset in 8 minutes, but can we do better?
+</p>
+<h3>A linear approach</h3>
+<p>
+  First of all, let us consider different sequences of the same length that
+  have "YES" answers — that is, the ones for which Kicksort will always
+  pick worst-case pivots. Even though the pivots themselves may have different
+  values, Kicksort will always use the same <i>indexes</i>, in the same order,
+  as pivots. For a sequence of length 6, for example, it will pick index 2 as a
+  pivot, and then divide the other values into one empty list (which is
+  unimportant since no pivot is chosen from it) and one list of length 5
+  containing the remaining values. (It turns out not to matter for our purposes
+  whether that list is the "low" or "high" one.) Then it will pick index 2 from
+  that list of length 5, which corresponds to index 3 in the original list. If
+  we continue to trace such a case, we find that the indexes chosen from the
+  original list will be 2, 3, 1, 4, 0, 5. That is, we are starting at index
+  floor(<b>N</b> - 1) / 2, then jumping 1 to the right, then 2 to the left,
+  then 3 to the right, and so on. This does not depend at all on the values in
+  the list!
+</p><p>
+  A similar pattern holds for lists of odd length, although in that case, the
+  first jump is 1 to the left. Knowing this, we can visit the indexes of our
+  pivots in order, without doing any simulation. It is not too hard to
+  implement the pattern of changing direction and adding a distance of 1 with
+  each new jump.
+</p><p>
+  Each time we visit a new index, we check whether it holds either the lowest
+  or highest value that has not already been used. If this continues all the
+  way through the last index, we have a "YES" case. However, if we ever
+  encounter a value that does not satisfy those conditions, then we have a "NO"
+  case and we can stop.
+</p><p>
+  At this point, we can take advantage of the fact that our sequences are
+  permutations of numbers from 1 to <b>N</b>. (Of course, in real life, we
+  could "sort" such sequences in constant time, without ever reading them, if
+  we knew the length in advance!) We know at the outset that our lowest unused
+  value is 1 and our highest unused value is <b>N</b>. When our current value
+  matches this lower bound, we increment it by 1, because we already know that
+  the next lowest value is exactly 1 more than the previous lowest; similarly,
+  when our pivot matches the upper bound, we increment our upper bound by 1. We
+  only need to keep track of these two values as we go.
+</p><p>
+  Since we potentially have to bounce around the entire sequence, this strategy
+  takes O(<b>N</b>) time. It is unusual for a problem about sorting to have
+  a solution that takes less than O(<b>N</b> log <b>N</b>) time, but in this
+  case, it is a consequence of having restricted our sequences to permutations.
+</p>
+</div><div id="dsb-problem-analysis-div1" class="dsb-problem-content-div" style="display: none;"><h2>Dance Battle: Analysis</h2>
+<p>
+  Even before solving the Small dataset, we need to reduce the number of
+  options available to us, because the Delay action could allow a dance battle
+  to go on forever! A critical initial insight is that we can use Delay to
+  sort the opponents and face them in whatever order we want: we can delay
+  against everyone else until we face our first desired opponent, then take
+  some other non-delay action on that opponent, then keep delaying until we
+  face our second desired opponent, and so on.
+</p>
+<h3>Small dataset</h3>
+<p>
+  Once we know that we can use Delay to sort, the Small dataset's problem space
+  allows us to use brute force. We will consider the worst case, <b>N</b> = 5.
+  We can choose one of 5! possible orders in which to face the opponents; for
+  each opponent, we choose one of the three other actions (Dance, Truce, or
+  Recruit). That is a total of 5! × 3<sup>5</sup> = only 29160 possible
+  scenarios. We can simulate each of them to make sure that our energy does not
+  drop below 1, and our honor does not drop below 0. Then, we take the maximum
+  honor value among all valid scenarios. Each simulation takes linear time, so
+  the overall time complexity of this strategy is O(<b>N</b>! ×
+  3<sup><b>N</b></sup> × <b>N</b>).
+</p>
+<h3>Large dataset</h3>
+<p>
+  The brute force method above will not scale to 1000 opponents. Let us devise
+  an alternate strategy. For starters, we can observe that we cannot use the
+  Recruit action until we have defeated at least one opponent (and gained a
+  point of honor) by using Dance. So, if our starting energy level does not
+  let us defeat the opponent with the lowest dancing skill, then our best
+  option is to use Truce on everyone and finish with 0 honor.
+</p><p>
+  Suppose that we can defeat at least one opponent by using Dance. Then we have
+  no reason not to choose the opponent with the lowest dancing skill, since all
+  opponents give the same amount of honor when defeated via Dance. Moreover, we
+  may as well continue dancing against the weakest remaining opponent as long
+  as we have the energy to do so.
+</p><p>
+  What happens when we do not have enough energy to Dance against any remaining
+  opponent? We can either use Truce to send everyone else away, or Recruit some
+  opponent. If we are going to recruit someone, we should pick the opponent
+  with the highest energy, since the cost of recruiting any opponent is the
+  same. But how do we decide whether to use Recruit or Truce?
+</p><p>
+  As long as there are at least two opponents remaining, it cannot hurt us to
+  recruit the one with the most energy, because after that, we can surely
+  defeat at least the one with the least energy. Even if we can defeat only
+  one, and that one has the same skill as the opponent we recruited, we have
+  lost one honor and gained one honor, and we have had no net change in energy,
+  so we are no worse off than if we had used Truce to remove the same two
+  opponents.
+</p><p>
+  So, we can sort the opponent list from lowest to highest energy, and start
+  with one pointer at each end. Setting aside the case in which we cannot
+  defeat anyone: first, we move our left pointer forward, defeating opponents
+  by dancing until we no longer can. Then, as long as there are at least two
+  step, recruiting the strongest opponent and gaining energy. We repeat this
+  until the pointers meet, or we have one opponent left that we cannot defeat
+  (in which case we should use Truce instead of wasting a point of honor by
+  using Recruit). Whatever amount of honor we have at that point is our answer.
+</p><p>
+  This algorithm has an O(<b>N</b> log <b>N</b>) sorting step followed by an
+  O(<b>N</b>) execution step. Other O(<b>N</b>) execution steps are possible;
+  for example, we can notice that the algorithm above will terminate with the
+  pointers either zero or one opponent apart, so we can use partial sums and
+  binary search to directly find that point.
+</p>
+</div><div id="dsb-problem-analysis-div2" class="dsb-problem-content-div" style="display: none;"><h2>Catch Them All: Analysis</h2>
+<h3>Small dataset</h3>
+<p>
+  We can start by computing the shortest distance between each pair of
+  locations using the
+  <a href="https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm" target="_blank">Floyd-Warshall</a> algorithm. We will use dis[i, j] to represent the shortest
+  distance between locations i and j.
+</p>
+<p>
+  Let dp[K, L] be the expected time needed to catch K Codejamons when starting
+  from location L. Then we can use a dynamic programming algorithm with the
+  following state transition equation:
+</p>
+<pre>  if (K == 0):
+    dp[K, L] = 0;
+  else:
+    dp[K, L] = Σ<sub>i!=L</sub>(dp[K-1, i] + dis[L, i]) / (<b>N</b>-1).
+</pre>
+<p>
+  The algorithm above takes O(<b>N</b><sup>2</sup><b>P</b>) time, which is fast
+  enough to solve the Small dataset.
+</p>
+<h3>Large dataset</h3>
+<p>
+  We can find that for each dp[K, L], the answer is a linear expression of
+  dp[K-1, i] when K != 0. So, we can rewrite the state transition equation as
+  the product of a matrix and a column vector, as shown below.
+</p>
+<p>
+Let S[i] = Σ<sub>j!=i</sub>(dis[i, j]).
+</p>
+<pre>  +----------+   +---------------------------------------------+   +------------+
+  | dp[K, 1] |   |    0   , 1/(N-1), ... , 1/(N-1), S[1]/(N-1) |   | dp[K-1, 1] |
+  | dp[K, 2] |   | 1/(N-1),    0   , ... , 1/(N-1), S[2]/(N-1) |   | dp[K-1, 2] |
+  |   ...    | = |   ...  ,   ...  , ... ,   ...  ,     ...    | * |    ...     |
+  | dp[K, N] |   | 1/(N-1), 1/(N-1), ... ,    0   , S[N]/(N-1) |   | dp[K-1, N] |
+  |    1     |   |    0   ,    0   , ... ,    0   ,     1      |   |     1      |
+  +----------+   +---------------------------------------------+   +------------+
+</pre>
+<p>
+  Let F<sub>K</sub> denote the column vector of dp[K, i], and let A denote the
+  transition matrix. Then we have F<sub>K</sub> = A * F<sub>K-1</sub> =
+  A<sup>K</sup> * F<sub>0</sub>.
+</p>
+<p>
+  With the approach above, we can use
+  <a href="https://en.wikipedia.org/wiki/Exponentiation_by_squaring" target="_blank">exponentiation by squaring</a>
+  to accelerate the computation of A<sup>K</sup>. This gives us an
+  O(<b>N</b><sup>3</sup>log<b>P</b>) algorithm which can solve the Large
+  dataset.
+</p>
+
+<h3>Other solutions</h3>
+<p>
+  Let Pr<sub>t</sub> be the probability of being at location 1 after catching t
+  Codejamons. Initially, Pr<sub>0</sub> = 1. Since at any time, the
+  probabilities of being at locations 2, 3, ..., <b>N</b> (let's call them the
+  "other locations") are the same, we can calculate the probability of the next
+  Codejamon appearing at location 1 by multiplying the probability of being at
+  any of the other locations by the probability of location 1 being chosen.
+  Therefore, we have Pr<sub>t</sub> = (1 - Pr<sub>t-1</sub>) / (<b>N</b>-1).
+</p>
+<p>
+  After computing the values of Pr<sub>i</sub> for i = 1, 2,..., <b>P</b>-1,
+  the answer to the problem is:
+</p>
+<p>
+  Σ(Pr<sub>i</sub> * (expected distance from location 1) + Σ(1 - Pr<sub>i</sub>) / (N-1) * (expected distance from location j) for j = 2, 3, ..., N) for i = 0, 1, ..., <b>P</b>-1.
+</p>
+<p>
+  Note: the expected distance from location i equals Σdis[i, j] /
+  (<b>N</b>-1) for j = 1, 2, ..., <b>N</b>.
+</p>
+<p>
+  We might not have enough time to compute all <b>P</b> values of the sequence
+  Pr<sub>i</sub>, but one may notice that this sequence converges quickly
+  (except for <b>N</b>=2, which we can handle separately). Intuitively, as the
+  game progresses, the probabilities of you being at each of the <b>N</b>
+  locations become more equal. For example, if <b>N</b>=4, the first few values
+  for Pr<sub>t</sub> are 1, 0, 0.333, 0.222, 0.259, 0.247, 0.251, 0.250, ...
+  Once this value gets very close to 1 / <b>N</b>, after some threshold like
+  i = 100 (depending on the numerical error allowed), we can simply approximate
+  Pr<sub>i</sub> = 1/<b>N</b> for all i larger than the threshold. Then
+  i = 100, 101, ..., <b>P</b>-1 in the previous summation can be replaced by a
+  multiplication: (<b>P</b>-100) * Σ(expected distance from location j) /
+  <b>N</b> for j = 1, 2, ..., <b>N</b>.
+</p>
+<p>
+  The time complexity for the above algorithm is O(<b>N</b><sup>3</sup> + C),
+  where C depends on the numerical error allowed.
+</p>
+<p>
+  Using the sequence of Pr<sub>t</sub> values, it is also possible to calculate
+  the exact answer. Let's make another sequence A<sub>i</sub> =
+  Pr<sub>i</sub> - 1/<b>N</b>. This sequence converges to 0 and is a geometric
+  progression because:
+</p>
+<ul>
+  <li>Pr<sub>i</sub> = (1 - Pr<sub>i-1</sub>) / (<b>N</b>-1)</li>
+  <li>A<sub>i</sub> + 1/<b>N</b> = (1 - A<sub>i-1</sub> - 1/<b>N</b>) /
+    (<b>N</b>-1)</li>
+  <li>A<sub>i</sub> + 1/<b>N</b> = -A<sub>i-1</sub> / (<b>N</b>-1) +
+    1/<b>N</b></li>
+  <li>A<sub>i</sub> = -A<sub>i-1</sub> / (<b>N</b>-1).</li>
+</ul>
+<p>
+  ΣA<sub>i</sub> for i = 0, 1, ..., <b>P</b>-1 can be calculated using
+  the formula for the sum of a
+  <a href="https://en.wikipedia.org/wiki/Geometric_progression#Geometric_series" target="_blank">geometric series</a>.
+  With ΣA<sub>i</sub>, we can obtain ΣPr<sub>i</sub>
+  = 1/<b>N</b> * <b>P</b> + ΣA<sub>i</sub>, and ultimately the answer.
+  The time complexity for the above algorithm is O(<b>N</b><sup>3</sup>).
+</p>
+
+<h3>Other solutions</h3>
+<p>
+  Let Pr<sub>t</sub> be the probability of being at location 1 after catching t
+  Codejamons. Initially, Pr<sub>0</sub> = 1. Since at any time, the
+  probabilities of being at locations 2, 3, ..., <b>N</b> (let's call them the
+  "other locations") are the same, we can calculate the probability of the next
+  Codejamon appearing at location 1 by multiplying the probability of being at
+  any of the other locations by the probability of location 1 being chosen.
+  Therefore, we have Pr<sub>t</sub> = (1 - Pr<sub>t-1</sub>) / (<b>N</b>-1).
+</p>
+<p>
+  After computing the values of Pr<sub>i</sub> for i = 1, 2,..., <b>P</b>-1,
+  the answer to the problem is:
+</p>
+<p>
+  Σ(Pr<sub>i</sub> * (expected distance from location 1) + Σ(1 - Pr<sub>i</sub>) / (N-1) * (expected distance from location j) for j = 2, 3, ..., N) for i = 0, 1, ..., <b>P</b>-1.
+</p>
+<p>
+  Note: the expected distance from location i equals Σdis[i, j] /
+  (<b>N</b>-1) for j = 1, 2, ..., <b>N</b>.
+</p>
+<p>
+  We might not have enough time to compute all <b>P</b> values of the sequence
+  Pr<sub>i</sub>, but one may notice that this sequence converges quickly
+  (except for <b>N</b>=2, which we can handle separately). Intuitively, as the
+  game progresses, the probabilities of you being at each of the <b>N</b>
+  locations become more equal. For example, if <b>N</b>=4, the first few values
+  for Pr<sub>t</sub> are 1, 0, 0.333, 0.222, 0.259, 0.247, 0.251, 0.250, ...
+  Once this value gets very close to 1 / <b>N</b>, after some threshold like
+  i = 100 (depending on the numerical error allowed), we can simply approximate
+  Pr<sub>i</sub> = 1/<b>N</b> for all i larger than the threshold. Then
+  i = 100, 101, ..., <b>P</b>-1 in the previous summation can be replaced by a
+  multiplication: (<b>P</b>-100) * Σ(expected distance from location j) /
+  <b>N</b> for j = 1, 2, ..., <b>N</b>.
+</p>
+<p>
+  The time complexity for the above algorithm is O(<b>N</b><sup>3</sup> + C),
+  where C depends on the numerical error allowed.
+</p>
+<p>
+  Using the sequence of Pr<sub>t</sub> values, it is also possible to calculate
+  the exact answer. Let's make another sequence A<sub>i</sub> =
+  Pr<sub>i</sub> - 1/<b>N</b>. This sequence converges to 0 and is a geometric
+  progression because:
+</p>
+<ul>
+  <li>Pr<sub>i</sub> = (1 - Pr<sub>i-1</sub>) / (<b>N</b>-1)</li>
+  <li>A<sub>i</sub> + 1/<b>N</b> = (1 - A<sub>i-1</sub> - 1/<b>N</b>) /
+    (<b>N</b>-1)</li>
+  <li>A<sub>i</sub> + 1/<b>N</b> = -A<sub>i-1</sub> / (<b>N</b>-1) +
+    1/<b>N</b></li>
+  <li>A<sub>i</sub> = -A<sub>i-1</sub> / (<b>N</b>-1).</li>
+</ul>
+<p>
+  ΣA<sub>i</sub> for i = 0, 1, ..., <b>P</b>-1 can be calculated using
+  the formula for the sum of a
+  <a href="https://en.wikipedia.org/wiki/Geometric_progression#Geometric_series" target="_blank">geometric series</a>.
+  With ΣA<sub>i</sub>, we can obtain ΣPr<sub>i</sub>
+  = 1/<b>N</b> * <b>P</b> + ΣA<sub>i</sub>, and ultimately the answer.
+  The time complexity for the above algorithm is O(<b>N</b><sup>3</sup>).
+</p></div><div id="dsb-problem-analysis-div3" class="dsb-problem-content-div" style="display: none;"><h2>Cake: Analysis</h2>
+<h3>Small dataset</h3>
+<p>
+  Let f(<b>N</b>) be the minimum number of cakes that have to be eaten such that
+  the total combined area of the eaten cakes is <b>N</b>. To compute
+  f(<b>N</b>), we can try for every possible area of the first eaten cake. If
+  the first eaten cake has an area of A × A, then we need to eat the
+  remaining cake of the total combined area <b>N</b> - A × A, which
+  requires at least f(<b>N</b> - A × A) cakes to be eaten. Therefore,
+  f(<b>N</b>) can be recursively computed as follows
+</p><pre>f(N)
+  if (N = 0)
+    return 0
+  ans = infinity
+  for i in [1, sqrt(N)]
+    ans = min(ans, f(N - i * i) + 1)
+  return ans
+</pre><p>
+  The algorithm above is fast enough to solve the small dataset.
+</p>
+<h3>Large dataset</h3>
+<p>
+  We need to use <a href="https://en.wikipedia.org/wiki/Dynamic_programming" target="_blank">
+  dynamic programming </a> (DP) to solve the large dataset. If the value of
+  f(<b>N</b>) has been recursively computed before, the next time we need to
+  know the value of f(<b>N</b>), we can simply use the previously computed value
+  in O(1) using a DP table of O(<b>N</b>) size. Since the table size is
+  O(<b>N</b>), and computing each value of f(<b>N</b>) takes
+  O(<b>N</b><sup>0.5</sup>) time, the total time for this algorithm is
+  O(<b>N</b><sup>1.5</sup>).
+</p><pre>f(N)
+  if (N = 0)
+    return 0
+  if (already_computed[N])
+    return dp[N]
+  already_computed[N] = true
+  dp[N] = infinity
+  for i in [1, sqrt(N)]
+    dp[N] = min(dp[N], f(N - i * i) + 1)
+  return dp[N]
+</pre>
+<h4>Alternative solution</h4>
+<p>
+  There is another solution that does not even require a recursive observation.
+  Due to
+  <a href="https://en.wikipedia.org/wiki/Lagrange%27s_four-square_theorem" target="_blank">
+  Lagrange's four-square theorem</a>, f(<b>N</b>) is always not more than four.
+  Therefore, for each k (0 ≤ k ≤ 3), we can simply have k nested loops of
+  cake areas to determine whether k cakes are enough. If three cakes are still
+  not enough, then the answer must be four.
+</p><pre>f(N)
+  for i in [1, sqrt(N)]
+    if (i * i = N)
+      return 1
+  for i in [1, sqrt(N)]
+    for j in [i, sqrt(N)]
+      if (i * i + j * j = N)
+        return 2
+  for i in [1, sqrt(N)]
+    for j in [i, sqrt(N)]
+      for k in [j, sqrt(N)]
+        if (i * i + j * j + k * k = N)
+          return 3
+  return 4
+</pre><p>
+  Since we need three nested loops of
+  O(<b>N</b><sup>0.5</sup>) each, the total time for this algorithm is also
+  O(<b>N</b><sup>1.5</sup>).
+</p></div></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table" style="display: block;">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">[General]<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">1:04:19</td><td></td><td><i>Do I need to resubmitted Problem A, it seems disappeared.</i></td><td></td><td class="clarTimeColumn" style="color: red;">1:06:12</td><td></td><td><i>Please do not resubmit the problems you have accepted. All the submissions will be counted after the contest.</i></td></tr><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">[General]<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">40:43</td><td></td><td><i>Is there something wrong with the server?</i></td><td></td><td class="clarTimeColumn" style="color: red;">42:47</td><td></td><td><i>Now there is a bug in the dashboard. We will clean up the dashboard after the contest.</i></td></tr><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">[General]<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">19:26</td><td></td><td><i>Why there are only three problems? The former notification email says that there are four problems.</i></td><td></td><td class="clarTimeColumn" style="color: red;">40:55</td><td></td><td><i>We are fixing the dashboard issues. Please do not resubmit your solution if you have accepted the problem.</i></td></tr></tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification" style="display: none;">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="YWM3NGI3MmYxN2I3MmFmZWRjYTM4NmIwYjIwY2JjNGF8fDE1MjI2NDk3MDg4OTExMzA="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="5659235706732544">A. Kicksort</option><option value="5755342361198592">B. Dance Battle</option><option value="5676019365183488">C. Catch Them All</option><option value="5707423411077120">D. Eat Cake</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0px 0.3em; display: block;">You cannot ask questions at this time. Please email us at codejam@google.com.</div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2018 Google</span>
+  <a href="https://www.google.com/">Google Home</a> -
+  <a href="https://code.google.com/codejam/kickstart/terms">Terms and Conditions</a> -
+  <a href="http://www.google.com/intl/en/policies">Privacy Policies and Principles</a>
+  <br><br>
+  <a href="http://cloud.google.com/"><img width="125" height="91" src="./Problem B. Dance Battle_files/powered_by_gcp_logo.png"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div></body></html>

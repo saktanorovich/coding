@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["siwKG"]); }
+
+__d("SetIdleTimeoutAcrossTransitions",["WebSpeedJSExperiments","cancelIdleCallback","requestIdleCallbackAcrossTransitions","setTimeoutAcrossTransitions"],(function a(b,c,d,e,f,g){__p&&__p();"use strict";var h=c("WebSpeedJSExperiments").idle_logging&&b.requestIdleCallback,i={},j={start:function k(l,m){__p&&__p();var n;if(h){var n=function(){var o=c("setTimeoutAcrossTransitions")(function(){var p=c("requestIdleCallbackAcrossTransitions")(function(){l();delete i[p]});i[o]=p},m);return{v:o}}();if(typeof n==="object")return n.v}else return c("setTimeoutAcrossTransitions")(l,m)},clear:function k(l){clearTimeout(l);if(l in i){c("cancelIdleCallback")(i[l]);delete i[l]}}};f.exports=j}),null);

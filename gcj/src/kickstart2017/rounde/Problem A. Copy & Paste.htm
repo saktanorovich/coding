@@ -1,0 +1,793 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0058)https://code.google.com/codejam/contest/12234486/dashboard -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - Kickstart Round E 2017 - Google Code Jam
+  </title>
+
+    <style>@import '//www.google.com/css/modules/buttons/g-button-sparrow.css';</style>
+    <link rel="stylesheet" type="text/css" href="./Problem A. Copy &amp; Paste_files/app.css">
+
+
+
+
+
+    <script type="text/javascript" async="" src="./Problem A. Copy &amp; Paste_files/ga.js"></script><script src="./Problem A. Copy &amp; Paste_files/App_en.js"></script><style></style>
+    
+
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.dashboardMain().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "12234486";
+      GCJ.contest.name = "Kickstart Round E 2017";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 4;
+      
+      GCJ.contest.start_int = 1503810000;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=12234486"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam/kickstart2017";
+    };
+  //-->
+  </script>
+</head>
+
+<body onload="GCJ.dashboardMain()" class="page-dashboard">
+
+<div id="logo-div">
+  <a href="https://code.google.com/codejam/kickstart/">
+    <img src="./Problem A. Copy &amp; Paste_files/logo_kickstart_2017.jpg" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">Kickstart Round E 2017</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-open" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link">A. Copy &amp; Paste  </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. Trapezoid Counting  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link">C. Blackhole  </div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-analysis-tab-close" tabindex="0" role="button" style="display: block;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab" class="dsb-has-new-question-tab">Questions asked<span class="dsb-unread-count">1</span></div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();">
+      <img id="dsb-status-panel-button" src="./Problem A. Copy &amp; Paste_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Copy &amp; Paste</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">11pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: block;"><b>1009/1378 users</b> correct (73%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">23pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: block;"><b>213/734 users</b> correct (29%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Trapezoid Counting</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">10pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: block;"><b>826/1037 users</b> correct (80%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_1" class="inputName">19pt</td>      <td class="status">        <div id="selfStat1_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_1" class="globalStat" style="display: block;"><b>347/596 users</b> correct (58%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Blackhole</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">8pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: block;"><b>1228/1357 users</b> correct (90%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">29pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: block;"><b>3/112 users</b> correct (3%)</div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)">
+          <img id="dsb-scoreboard-panel-button" src="./Problem A. Copy &amp; Paste_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td class="dsb-name-td" id="sbName_0">wifi</td><td class="dsb-score-td" id="sbScore_0">77</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td class="dsb-name-td" id="sbName_1">ONP</td><td class="dsb-score-td" id="sbScore_1">77</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td class="dsb-name-td" id="sbName_2">Tangjz</td><td class="dsb-score-td" id="sbScore_2">77</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td class="dsb-name-td" id="sbName_3">fjzzq2002</td><td class="dsb-score-td" id="sbScore_3">71</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td class="dsb-name-td" id="sbName_4">globalpointer</td><td class="dsb-score-td" id="sbScore_4">71</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td class="dsb-name-td" id="sbName_5">Kasugano.Sora</td><td class="dsb-score-td" id="sbScore_5">71</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td class="dsb-name-td" id="sbName_6">z.shi</td><td class="dsb-score-td" id="sbScore_6">71</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td class="dsb-name-td" id="sbName_7">caoxiaoran</td><td class="dsb-score-td" id="sbScore_7">71</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td class="dsb-name-td" id="sbName_8">Tian.Xie</td><td class="dsb-score-td" id="sbScore_8">71</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td class="dsb-name-td" id="sbName_9">JTJL</td><td class="dsb-score-td" id="sbScore_9">71</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-sub-link" style="display: none;">View submissions.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">Practice Mode</span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div" style="display: none;">
+          Rank: <span id="dsb-current-rank-span">--</span>
+        </span>
+        <span id="dsb-current-score-div" style="display: none;">
+          Score: <span id="dsb-current-score-span">--</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="https://code.google.com/codejam/contest/12234486/scoreboard?c=12234486">Contest scoreboard</a> | <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://code.google.com/codejam/contest/dashboard%253Fc%253D12234486">Sign in</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;"><span style="color:#666">Problem A.</span> Copy &amp; Paste</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages" style="display: block;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>11 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Copy &amp; Paste_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_0"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> A-small-practice.in.</div><form id="submit-formio_timer_0" action="https://code.google.com/codejam/contest/12234486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MDliMjM5Yzk1ODc4NzhhNGFiYmJiMDYzYjFkNGYzOTN8fDE1MjI2NDk1NDM4Nzc0NTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_0" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_0"><div id="input-file-divio_timer_0-0"><span id="source-fileio_timer_0-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_0-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_0" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_0" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_0" type="button" value="Hide"></div><div id="source-file-namesio_timer_0"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5703481436405760"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_0" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>23 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Copy &amp; Paste_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1">Download A-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_1"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_1" action="https://code.google.com/codejam/contest/12234486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MDliMjM5Yzk1ODc4NzhhNGFiYmJiMDYzYjFkNGYzOTN8fDE1MjI2NDk1NDM4Nzc0NTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_1" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_1"><div id="input-file-divio_timer_1-0"><span id="source-fileio_timer_1-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_1-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_1" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_1" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_1" type="button" value="Hide"></div><div id="source-file-namesio_timer_1"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5703481436405760"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_1" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+You want to create a certain target string <b>S</b>, which consists only of lowercase English letters. You start with an empty string, and you are allowed to perform the following operations:
+</p>
+<ul>
+<li>Add any single lowercase letter to the end of your string.</li>
+<li>Copy any substring of your string (that is, all of the characters between some start point in your string and some end point in your string) to the clipboard. Doing this overwrites whatever was in the clipboard before. The clipboard starts off empty.</li>
+<li>Add the <i>entire</i> contents of the clipboard to the end of your string. (The contents of the clipboard do not change.)</li>
+</ul>
+<p>
+What is the smallest number of operations needed to create your target string? Note that you must create exactly the target string, with no additional letters.
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>. <b>T</b> lines follow. Each line contains the target string <b>S</b>.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where <code>x</code> is the test case number (starting from 1) and <code>y</code> is the minimum number of operations (as described in the problem statement) needed to create the target string.
+</p>
+
+<h3>Limits</h3>
+<b>S</b> consists only of lowercase English letters in the range <code>a</code> through <code>z</code>.
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+1 ≤ length of <b>S</b> ≤ 6.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+1 ≤ length of <b>S</b> ≤ 100.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">3
+abcabab
+aaaaaaaaaaa
+vnsdmvnsnsdmkvdmkvnsdmk
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 6
+Case #2: 7
+Case #3: 15
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+<p>
+The optimal solution for Sample Case #1 is:
+</p><ol>
+<li>Type <code>a</code>.</li>
+<li>Type <code>b</code>.</li>
+<li>Type <code>c</code>.</li>
+<li>Copy <code>ab</code> to the clipboard.</li>
+<li>Paste <code>ab</code> at the end of the string.</li>
+<li>Paste <code>ab</code> at the end of the string.</li>
+</ol>
+The optimal solution for Sample Case #2 is:
+<ol>
+<li>Type <code>a</code>.</li>
+<li>Type <code>a</code>.</li>
+<li>Type <code>a</code>.</li>
+<li>Copy <code>aaa</code> to the clipboard.</li>
+<li>Paste <code>aaa</code> at the end of the string.</li>
+<li>Copy <code>aaaaa</code> to the clipboard.</li>
+<li>Paste <code>aaaaa</code> at the end of the string.</li>
+</ol>
+<p></p>
+</div></div><div id="dsb-problem-page1" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Copy &amp; Paste_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_2"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> B-small-practice.in.</div><form id="submit-formio_timer_2" action="https://code.google.com/codejam/contest/12234486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MDliMjM5Yzk1ODc4NzhhNGFiYmJiMDYzYjFkNGYzOTN8fDE1MjI2NDk1NDM4Nzc0NTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_2" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_2"><div id="input-file-divio_timer_2-0"><span id="source-fileio_timer_2-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_2-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_2" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_2" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_2" type="button" value="Hide"></div><div id="source-file-namesio_timer_2"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5751678166892544"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_2" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>19 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-1" class=""><div id="dsb-input-wrapper1-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-1" style="display: inline;">Solve B-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Copy &amp; Paste_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-1">Download B-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_3"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_3" action="https://code.google.com/codejam/contest/12234486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MDliMjM5Yzk1ODc4NzhhNGFiYmJiMDYzYjFkNGYzOTN8fDE1MjI2NDk1NDM4Nzc0NTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_3" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_3"><div id="input-file-divio_timer_3-0"><span id="source-fileio_timer_3-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_3-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_3" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_3" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_3" type="button" value="Hide"></div><div id="source-file-namesio_timer_3"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5751678166892544"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_3" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+  In this problem, we will consider a <i>trapezoid</i> to be a convex quadrilateral with
+  <u>exactly</u> one pair of parallel sides. If the lengths of the two non-parallel sides are equal,
+  we say the trapezoid is <i>isosceles</i>.
+</p>
+<p>
+  You have some wooden sticks of various lengths, and you need to pick exactly four of them to form
+  the four sides of an <b>isosceles trapezoid</b>. How many different sets of four sticks will allow
+  this? Even if two sticks have the same length, they are considered to be different sticks. Sticks
+  could not be bended and broke into parts.
+</p>
+
+<h3>Input</h3>
+<p>
+  The first line of the input gives the number of test cases, <b>T</b>. <b>T</b> test cases follow;
+  each consists of two lines. The first line consists of one integer <b>N</b>, the number of sticks.
+  The second line consists of <b>N</b> integers; the i-th of these, <b>L<sub>i</sub></b>,
+  represents the length of the i-th stick.
+</p>
+
+<h3>Output</h3>
+<p>
+  For each test case, output one line containing <code>Case #x: y</code>, where
+  <code>x</code> is the test case number (starting from 1), and <code>y</code>
+  is the number of different sets of four sticks that can form an isosceles trapezoid, as described
+  above.
+</p>
+
+<h3>Limits</h3>
+<p>
+  1 ≤ <b>T</b> ≤ 100.<br>
+  1 ≤ <b>L<sub>i</sub></b> ≤ 10<sup>9</sup>.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+  1 ≤ <b>N</b> ≤ 50.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+  1 ≤ <b>N</b> ≤ 5000.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">5
+5
+2 3 3 4 3
+4
+1 5 3 1
+4
+2 2 3 3
+4
+999999998 999999999 999999999 1000000000
+9
+3 4 1 4 2 5 3 1 3
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 5
+Case #2: 0
+Case #3: 0
+Case #4: 1
+Case #5: 73
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<p>
+  In Sample Case #1, there are five ways to choose four out of the five given sticks, and any one of
+  those five sets of four sticks can be used to form an isosceles trapezoid. <br>
+  In Sample Case #2, note that the set {1, 1, 3, 5} cannot form an isosceles trapezoid, even though
+  two of its sticks are of equal length.<br>
+  In Sample Case #3, note that the set {2, 2, 3, 3} can form a rectangle, but in this problem, a
+  rectangle is not considered to be an isosceles trapezoid.<br>
+</p>
+</div></div><div id="dsb-problem-page2" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="https://code.google.com/codejam/resources/quickstart-guide#gcj" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input<br>8 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Copy &amp; Paste_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_4"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice.in.</div><form id="submit-formio_timer_4" action="https://code.google.com/codejam/contest/12234486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MDliMjM5Yzk1ODc4NzhhNGFiYmJiMDYzYjFkNGYzOTN8fDE1MjI2NDk1NDM4Nzc0NTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_4" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_4"><div id="input-file-divio_timer_4-0"><span id="source-fileio_timer_4-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_4-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_4" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_4" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_4" type="button" value="Hide"></div><div id="source-file-namesio_timer_4"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5722549430255616"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_4" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>29 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./Problem A. Copy &amp; Paste_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1">Download C-large-practice.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_5"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_5" action="https://code.google.com/codejam/contest/12234486/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="MDliMjM5Yzk1ODc4NzhhNGFiYmJiMDYzYjFkNGYzOTN8fDE1MjI2NDk1NDM4Nzc0NTA="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_5" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_5"><div id="input-file-divio_timer_5-0"><span id="source-fileio_timer_5-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_5-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_5" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_5" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_5" type="button" value="Hide"></div><div id="source-file-namesio_timer_5"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="5722549430255616"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_5" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><h2>Problem</h2>
+
+<p>
+Alice is trying to prevent dangerous black holes from threatening Earth. Right now, there are three black holes that are different points in 3-D space. Alice will create exactly three containment spheres, and all three must have the same radius. Spheres do not interfere with each other, so they may overlap.
+</p>
+
+<p>
+Alice must place these spheres so that each black hole is covered by at least one sphere. Moreover, to ensure stability, the total set of points covered by at least one sphere must form a single connected area.
+</p>
+
+<p>
+Alice wants to solve this critical problem as inexpensively as possible. What is the minimum radius that she can use?
+</p>
+
+<h3>Input</h3>
+<p>
+The input starts with one line with one integer <b>T</b>: the number of test cases. <b>T</b> test cases follow. Each test case consists of three lines. The i-th of those lines consists of three integers <b>X<sub>i</sub></b>, <b>Y<sub>i</sub></b>, and <b>Z<sub>i</sub></b>, representing the 3-D coordinates of the i-th black hole.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line <code>Case #x: y</code>, where <code>x</code> is the test case number (starting from 1) and <code>y</code> is a rational representing the minimum radius that Alice can use to solve the problem. <code>y</code> will be considered correct if it is within an absolute or relative error of 10<sup>-6</sup> of the correct answer.  See the <a href="https://code.google.com/codejam/resources/faq#real-number-behavior" target="_blank">FAQ</a> for an explanation of what that means, and what formats of real numbers we accept.
+</p>
+
+<h3>Limits</h3>
+  1 ≤ <b>T</b> ≤ 100.<br>
+-1000 ≤ <b>X<sub>i</sub></b> ≤ 1000, for all i.<br>
+For all j ≠ k, (<b>X<sub>j</sub></b>, <b>Y<sub>j</sub></b>, <b>Z<sub>j</sub></b>) ≠ (<b>X<sub>k</sub></b>, <b>Y<sub>k</sub></b>, <b>Z<sub>k</sub></b>). (No two of the points have the same coordinates.)<br>
+
+<h4>Small dataset</h4>
+<b>Y<sub>i</sub></b> = 0, for all i.<br>
+<b>Z<sub>i</sub></b> = 0, for all i.<br>
+
+<h4>Large dataset</h4>
+-1000 ≤ <b>Y<sub>i</sub></b> ≤ 1000, for all i.<br>
+-1000 ≤ <b>Z<sub>i</sub></b> ≤ 1000, for all i.<br>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">4
+0 0 0
+1 0 0
+-1 0 0
+4 0 0
+5 0 0
+-2 0 0
+0 0 0
+1 1 1
+-1 -1 -1
+-4 2 -2
+5 1 -4
+0 4 -9
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 0.3333333333
+Case #2: 1.1666666667
+Case #3: 0.5773502692
+Case #4: 2.1373179212
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+Note that the last two sample cases would not appear in the Small dataset.<br>
+In Sample Case #1, the smallest radius we can use is 1/3. Our three spheres should be centered at (-2/3, 0, 0), (0, 0, 0), and (2/3, 0, 0).
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages"><div id="dsb-analysis-selections"><span id="dsb-analysis-selection-p3" class="dsb-analysis-selected">Overview</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p0" class="dsb-analysis-not-selected">Problem A</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p1" class="dsb-analysis-not-selected">Problem B</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p2" class="dsb-analysis-not-selected">Problem C</span></div><div id="dsb-problem-analysis-div3" class="dsb-problem-content-div"><p>
+  Thanks to everyone who participated! Kickstart Round F will take place next
+  month; check the Kickstart
+  <a href="https://code.google.com/codejam/kickstart/schedule" target="_blank">schedule</a>
+  for more details.
+</p>
+<hr>
+<p>
+  <b>Cast</b>
+</p><p>
+  Problem A (Copy &amp; Paste): Written and prepared by Satoru Yamauchi.
+</p><p>
+  Problem B (Trapezoid Counting): Written and prepared by Xuanang Zhao.
+</p><p>
+  Problem C (BlackHole): Written and prepared by Ruoyu Zhang.
+</p><p>
+  Solutions and other problem preparation and review by Ian Tullis, Yiming Li, Yang Xiao, 
+  Xuanang Zhao, Beiyu Li and Lin Jin. Thanks for their great help!
+</p>
+<p></p><p>
+Analysis authors:
+</p>
+<ul>
+  <li>Copy &amp; Paste: Yang Xiao</li>
+  <li>Trapezoid Counting: Beiyu Li</li>
+  <li>BlackHole: Ruoyu Zhang</li>
+</ul>
+</div><div id="dsb-problem-analysis-div0" class="dsb-problem-content-div" style="display: none;"><h2>Copy &amp; Paste: Analysis</h2>
+
+<h3>Small dataset</h3>
+<p>
+Let N be the length of the target string <b>S</b>. We can observe that:
+</p>
+<ul>
+<li>Copying and pasting a single character is always strictly worse than just typing another instance of that character, which takes only one operation.</li>
+<li>Copying and pasting two or more characters can be useful, but it turns out not to be for N ≤ 5. Suppose that we wanted to use copying and pasting to create a string of length 5. Then the only possible copy/paste operation that uses two or more characters is to start with a string of length 3 and copy/paste two of its characters. But then we could have just typed the two characters instead, using the same number of operations.</li>
+<li>For N = 6, there are some patterns for which the optimal strategy requires copying and pasting. With some brute-force experimentation or case-based analysis, you can find that they are of all of the of the form 111111, 121212, or 123123 (in which each number consistently stands for a particular letter)..</li>
+</ul>
+<p>
+It is also possible to use a brute-force breadth/depth-first search to solve the Small.
+</p>
+
+<h3>Large dataset</h3>
+<p>
+For the Large dataset, we can use dynamic programming. We will keep track of the minimum number of operations used to reach a state with the following parameters, as the target string is being built from left to right:
+</p>
+<ul>
+<li>Current length - the length of the prefix of the target string that we have built so far</li>
+<li>Clipboard content - the content in the clipboard</li>
+</ul>
+<p>
+There can be at most O(N<sup>2</sup>) substrings, so there are O(N<sup>3</sup>) states in total.
+
+For each state, we can choose to type a character, paste the contents of the clipboard, or copy something into the clipboard. Since there are O(N<sup>2</sup>) substrings that we could choose to copy, there are O(N<sup>2</sup>) possible moves from each of the O(N<sup>3</sup>) possible states, and so the overall time complexity is O(N<sup>5</sup>). This approach is fast enough to pass all the test cases within 8 minutes.
+</p>
+
+<p>
+Notice that the copy operation is needed only when the copied string needs to be pasted as the next operation. It reduces the number of candidate strings that need to be copied in each move to O(N) because the number of substring starting with next character is O(N).  Thus, this approach leads to an O(N<sup>4</sup>) solution.
+</p>
+
+<p>
+There is even an O(N<sup>3</sup>) approach. Can you find it?
+</p></div><div id="dsb-problem-analysis-div1" class="dsb-problem-content-div" style="display: none;"><h2>Trapezoid Counting: Analysis
+</h2><h3>Small dataset</h3>
+<p>
+  There are at most 50 sticks, which means we can enumerate all different sets
+  of four sticks directly.
+</p>
+<p>
+  For a set of sticks to form the four sides of an isosceles trapezoid, it must
+  meet all of the following conditions:
+  </p><ul>
+    <li> There must be a pair of sticks with equal length. Call this length C.
+    </li><li> The remaining two sticks must have unequal lengths. Call the shorter of
+      those lengths A, and the longer one B.
+    </li><li> The four sticks must be able to actually connect to form an isosceles
+      trapezoid, so we need to obey an isosceles trapezoid equivalent of the
+      triangle inequality: B &lt; A + 2 × C.
+  </li></ul>
+  Then we just need to count how many different sets of four sticks meet these
+  conditions.
+<p></p>
+<h3>Large dataset</h3>
+<p>
+  First, we can create a Length array with all the unique length values, and a
+  Count array with the counts of each of those values.
+  For example, for sticks with lengths [3, 4, 1, 4, 2, 6, 3, 1, 3], we would get
+  the Length array [1, 2, 3, 4, 6] and the Count array [2, 1, 3, 2, 1].
+</p>
+<p>
+  Consider the inequality above: B &lt; A + 2 × C.
+  There are two possible situations in which valid isosceles trapezoids can be
+  formed:
+  </p><ul>
+    <li> A is equal to C or B is equal to C.
+    </li><li> A, B, and C are all different values. (Recall that we cannot have A
+      equal B, or else the shape would not meet the problem's definition of an
+      isosceles trapezoid.)
+  </li></ul>
+<p></p>
+<p>
+  For the first situation, we consider all possible values C = Length[i] such
+  that Count[i] ≥ 3.
+  For each of these, we have to count how many sticks have length less than 3
+  × C but not equal to C.
+  We can do this quickly by using a prefix sum of the Count array (which we only
+  need to create once). Then we add that number, multiplied by (Count[i] choose
+  3), to our answer.
+</p>
+<p>
+  For the second situation, we consider all possible values C = Length[i] such
+  that Count[i] ≥ 2.
+  For each of these, we consider all A = Length[j] (with i ≠ j).
+  For each of those (C, A) pairs, we need to count how many sticks have length B
+  such that B ≠ C, A &lt; B, and B &lt; A + 2 × C.
+  The number of valid B is the prefix sum of Count up to A + 2 × C, minus
+  the prefix sum of Count up to A, possibly minus the Count of C if it is in
+  that range.
+  Then we add that number, multiplied by (Count[i] choose 2), to our answer.
+</p>
+<p>
+  This method avoids double-counting any sets, and it runs in
+  O(<b>N</b><sup>2</sup>) time, which is easily fast enough for <b>N</b> ≤
+  5000.
+</p></div><div id="dsb-problem-analysis-div2" class="dsb-problem-content-div" style="display: none;"><h2>Blackhole: Analysis</h2>
+<p>
+</p>
+<h3>Small Dataset</h3>
+<p>
+In the Small dataset, all three black holes are along the x-axis, so the solution is simple: the three spheres should be placed in a row (touching only at single points) to cover the distance spanned by the leftmost and rightmost of the black holes. So the answer is just the distance between leftmost and rightmost black holes, divided by 6.
+</p>
+<img src="./Problem A. Copy &amp; Paste_files/saved_resource">
+<h3>Large Dataset</h3>
+<p>
+To solve the Large dataset, it is helpful to notice that although this is a 3-D problem, it only has three points (black holes), and there is at least one plane that contains all three of the points. It is therefore possible to simplify the problem into a 2-D problem: how can we use three connected circles of equal radius to cover three points on a plane?
+</p>
+<p>
+Suppose that we have Circles A, B, and C, with circle A connected to circle B, circle B connected to circle C, and circles A and C possibly (but not necessarily) connected. Then these are the only two potentially optimal ways to cover the points:
+</p>
+<p>
+Type I: Each point is in a different circle.
+<img src="./Problem A. Copy &amp; Paste_files/saved_resource(1)">
+</p>
+<p>
+Type II: Two points are in circle A, and a third point is in circle C.
+<img src="./Problem A. Copy &amp; Paste_files/saved_resource(2)">
+</p>
+<p>
+If we call the points X, Y, and Z, then there are three Type I possibilities and three Type II possibilities. For example, one possibility for Type I is to have Point X in Circle A, Point Y in Circle B, and Point Z in Circle C. One possibility for Type II is to have Points Y and Z in Circle A, and Point X in Circle C.
+</p>
+<p>
+Any other arrangement cannot be optimal. For instance, if all three points are in one circle, we are wasting the other two circles. If two points are in one circle and one point is in another circle, and the third circle does not connect the first two, then we could make the circles smaller and use the third to connect the first two.
+</p>
+<p>
+To find the minimum valid radius for a possible configuration, we can use binary search. But we still need a way to determine whether a radius is valid.
+</p>
+<p>
+For Type I possibilities, how can we determine whether a radius R is valid? Let K be the center of circle B. Then:
+</p>
+<ol>
+<li>The distance between K and the point in circle B must be no greater than R, or else the point would not be in B.</li>
+<li>The distance between K and the point in circle A must be no greater than 3R, or else circles A and B would not be connected.</li>
+<li>The distance between K and the point in circle C must be no greater than 3R, or else circles B and C would not be connected.</li>
+</ol>
+<p>
+It is equivalent to check that point K is in all three of these circles:
+</p>
+<ol>
+<li>A circle of radius R centered at the point in circle B</li>
+<li>A circle of radius 3R centered at the point in circle A</li>
+<li>A circle of radius 3R centered at the point in circle C</li>
+</ol>
+<p>
+So, if those three circles have any common intersection, then we know that radius R is valid, without having to choose a specific point K.
+</p>
+<p>
+We can use a similar strategy for Type II possibilities. Let K be the center of circle A. Then:
+</p>
+<ol>
+<li>The distance between K and the point in circle C must be no greater than 5R, or else circles A and C would not be connected.</li>
+<li>The distance between K and the first point in circle A must be no greater than R, or else the point would not be in circle A.</li>
+<li>The same is true of the second point in circle B.</li>
+</ol>
+<p>
+and so we only need to look for a common intersection of these three circles:
+</p>
+<ol>
+<li>A circle of radius 5R centered at the point in circle C</li>
+<li>A circle of radius R centered at the first point in circle A</li>
+<li>A circle of radius R centered at the second point in circle B</li>
+</ol>
+<p>
+There are many ways to determine whether three circles have a common intersection, here we introduce one way: First we can calculate the distance between each two circles, if there's any including or disjoint pair found, we can easily tell if the three circles have common intersection. For the case that each two circles are cross, if the three circles have a common intersection, there must be one circle which has part of its arc inside the other two circles. By now the problem is completely solved.
+</p>
+<p>
+Once we have found the minimum radius for each cover method, the minimum of those is our final answer.
+</p></div></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table" style="display: block;">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">Blackhole<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">13:34</td><td></td><td><i>What does this line mean " the total set of points covered by at least one sphere must form a single connected area." ???</i></td><td></td><td class="clarTimeColumn" style="color: red;">19:30</td><td></td><td><i>Forming a single connected area means the spheres must be connected.</i></td></tr></tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification" style="display: none;">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="OTI0ODY1MjdkYjhiMWI4NGZkNzk0NGUzZDc2NzQ4MTV8fDE1MjI2NDk1NDMyODgwMzA="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="5703481436405760">A. Copy &amp; Paste</option><option value="5751678166892544">B. Trapezoid Counting</option><option value="5722549430255616">C. Blackhole</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0px 0.3em; display: block;">You cannot ask questions at this time. Please email us at codejam@google.com.</div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2018 Google</span>
+  <a href="https://www.google.com/">Google Home</a> -
+  <a href="https://code.google.com/codejam/kickstart/terms">Terms and Conditions</a> -
+  <a href="http://www.google.com/intl/en/policies">Privacy Policies and Principles</a>
+  <br><br>
+  <a href="http://cloud.google.com/"><img width="125" height="91" src="./Problem A. Copy &amp; Paste_files/powered_by_gcp_logo.png"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div></body></html>
