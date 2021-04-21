@@ -1,0 +1,708 @@
+html {
+	margin: 0px; padding: 0px; color: rgb(51, 51, 51); line-height: 1.4; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);
+}
+body {
+	margin: 0px; padding: 0px; color: rgb(51, 51, 51); line-height: 1.4; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);
+}
+img {
+	border: currentColor; border-image: none;
+}
+a:link {
+	color: rgb(0, 0, 255); text-decoration: underline;
+}
+a:visited {
+	color: rgb(0, 0, 102); text-decoration: underline;
+}
+a:hover {
+	color: rgb(255, 0, 0);
+}
+a:active {
+	color: rgb(255, 0, 0);
+}
+ul {
+	padding-left: 10px; margin-left: 10px;
+}
+li {
+	padding-top: 2px; padding-bottom: 2px;
+}
+.noSpace {
+	margin: 0px; padding: 0px;
+}
+table {
+	empty-cells: show;
+}
+td {
+	color: rgb(51, 51, 51); line-height: 1.4; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12px; text-decoration: none;
+}
+th {
+	color: rgb(51, 51, 51); line-height: 1.4; font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 12px; text-decoration: none;
+}
+h1 {
+	margin: 0px; padding: 0px; font-family: Arial, Helvetica, Verdana, sans-serif; font-weight: bold; text-decoration: none;
+}
+h2 {
+	margin: 0px; padding: 0px; font-family: Arial, Helvetica, Verdana, sans-serif; font-weight: bold; text-decoration: none;
+}
+h3 {
+	margin: 0px; padding: 0px; font-family: Arial, Helvetica, Verdana, sans-serif; font-weight: bold; text-decoration: none;
+}
+h1 {
+	font-size: 24px;
+}
+h2 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 14px;
+}
+h1 a:link {
+	text-decoration: none;
+}
+h2 a:link {
+	text-decoration: none;
+}
+h3 a:link {
+	text-decoration: none;
+}
+h1 a:visited {
+	text-decoration: none;
+}
+h2 a:visited {
+	text-decoration: none;
+}
+h3 a:visited {
+	text-decoration: none;
+}
+h1 a:hover {
+	text-decoration: underline;
+}
+h2 a:hover {
+	text-decoration: underline;
+}
+h3 a:hover {
+	text-decoration: underline;
+}
+h1 a:active {
+	text-decoration: underline;
+}
+h2 a:active {
+	text-decoration: underline;
+}
+h3 a:active {
+	text-decoration: underline;
+}
+div.topBar {
+	color: rgb(255, 255, 255); font-size: 11px;
+}
+div.topBar div {
+	color: rgb(255, 255, 255); font-size: 11px;
+}
+div.memberCountBox {
+	color: rgb(255, 255, 255); font-size: 11px;
+}
+div.memberCountBox {
+	left: 3px; top: 5px; position: absolute; z-index: 1;
+}
+div.topBar {
+	background: url("../i/cimages/top_bg.gif") repeat-x top; margin: 0px; padding: 0px 10px 0px 3px; height: 84px; vertical-align: top; white-space: nowrap;
+}
+#outerLogo {
+	width: 360px; position: relative; z-index: 2;
+}
+#innerLogo {
+	left: 0px; position: absolute;
+}
+#shortcutBar {
+	background: url("../i/cimages/shortcutBar.png") no-repeat right top; left: 0px; top: 32px; height: 30px; padding-right: 30px; position: absolute;
+}
+#shortcutBar div.icon {
+	background: none; margin-left: 4px; float: left;
+}
+.small {
+	font-size: 10px;
+}
+a.prevNext:link {
+	color: rgb(0, 0, 255); text-decoration: none;
+}
+a.prevNext:visited {
+	color: rgb(0, 0, 102); text-decoration: none;
+}
+a.prevNext:hover {
+	color: rgb(255, 0, 0);
+}
+a:active {
+	color: rgb(255, 0, 0);
+}
+.footer {
+	background: rgb(238, 238, 238); text-align: center; color: rgb(102, 102, 102); padding-top: 5px; padding-bottom: 5px; font-size: 11px; font-style: normal; font-weight: normal; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 4px; border-bottom-style: solid; white-space: nowrap;
+}
+.footerStripe {
+	background: rgb(204, 204, 204);
+}
+a.footerLinks:link {
+	color: rgb(0, 0, 255); text-decoration: none;
+}
+a.footerLinks:visited {
+	color: rgb(0, 0, 102); text-decoration: none;
+}
+a.footerLinks:hover {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+a.footerLinks:active {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+.copyright {
+	background: rgb(255, 255, 255); text-align: center; color: rgb(0, 0, 0); padding-top: 4px; padding-bottom: 15px; font-size: 10px; font-style: normal; font-weight: normal; white-space: nowrap;
+}
+table.pageTitleTable {
+	margin: -5px 0px 5px; border: 0px currentColor; border-image: none; width: 100%;
+}
+table.pageTitleTable td.pagetitle {
+	margin: 30px 0px 0px; width: 100%; text-align: left; padding-top: 10px; border-bottom-color: rgb(102, 102, 102); border-bottom-width: 1px; border-bottom-style: solid; white-space: nowrap;
+}
+table.pageTitleTable td.pageSubtitle {
+	margin: 0px; padding: 0px 0px 3px; text-align: right; color: rgb(51, 51, 51); font-size: 12px; font-weight: bold; vertical-align: bottom; border-bottom-color: rgb(102, 102, 102); border-bottom-width: 1px; border-bottom-style: solid; white-space: nowrap;
+}
+div.linkBox {
+	padding: 0px 0px 20px 20px; text-align: left; line-height: normal; font-size: 11px; float: right; white-space: nowrap;
+}
+div.linkBox a:link {
+	text-decoration: none;
+}
+div.linkBox a:visited {
+	text-decoration: none;
+}
+div.linkBox a:hover {
+	text-decoration: underline;
+}
+div.linkBox a:active {
+	text-decoration: underline;
+}
+.invisible {
+	display: none;
+}
+div.authorPhoto {
+	margin: 0px 8px 10px 0px; float: left;
+}
+div.authorPhoto img {
+	border: 1px solid rgb(204, 204, 204); border-image: none; width: 55px; height: 61px;
+}
+div.authorText {
+	margin: 12px 8px 10px 0px; height: 49px; float: left;
+}
+div.authorText em {
+	font-size: 11px;
+}
+div.popUp {
+	margin: 0px; left: 0px; top: 0px; display: none; position: absolute; z-index: 100;
+}
+div.popUp div {
+	background: rgb(255, 255, 204); margin: 0px; padding: 4px 6px; border: 1px solid rgb(153, 153, 153); border-image: none; line-height: normal; font-size: 11px; font-weight: normal; float: left; white-space: nowrap;
+}
+.bodytext {
+	color: rgb(51, 51, 51); font-size: 12px; font-style: normal; font-weight: normal;
+}
+span.title {
+	font-size: 160%; font-weight: bold; text-decoration: none;
+}
+span.subtitle {
+	font-size: 14px; font-weight: bold;
+}
+span.bodySubtitle {
+	font-size: 14px; font-weight: bold;
+}
+.bigRed {
+	color: rgb(255, 0, 0); font-size: 12px; font-weight: bold; text-decoration: none;
+}
+a.bigRed:link {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+a.bigRed:visited {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+a.bigRed:active {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+a.bigRed:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.bigGreen {
+	color: rgb(0, 153, 0); font-size: 12px; font-weight: bold; text-decoration: none;
+}
+a.bigGreen:link {
+	color: rgb(0, 153, 0); text-decoration: underline;
+}
+a.bigGreen:visited {
+	color: rgb(0, 153, 0); text-decoration: underline;
+}
+a.bigGreen:active {
+	color: rgb(0, 153, 0); text-decoration: underline;
+}
+a.bigGreen:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.grayedOut {
+	color: rgb(153, 153, 153);
+}
+a.grayedOut:link {
+	color: rgb(153, 153, 153); text-decoration: underline;
+}
+a.grayedOut:visited {
+	color: rgb(153, 153, 153); text-decoration: underline;
+}
+a.grayedOut:active {
+	color: rgb(153, 153, 153); text-decoration: underline;
+}
+a.grayedOut:hover {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+td.bodyColumn {
+	padding: 0px 15px 40px; vertical-align: top;
+}
+div.fixedWidthBody {
+	margin: 0px auto; padding: 0px; width: 510px; text-align: left;
+}
+div.fixedWidth700Body {
+	margin: 0px auto; padding: 0px; width: 700px; text-align: left;
+}
+div.maxWidthBody {
+	max-width: 650px;
+}
+div.sectionHeader {
+	background: url("../i/cimages/headerBG.gif") top rgb(153, 153, 153); padding: 3px 5px; border: 1px solid rgb(153, 153, 153); border-image: none; text-align: left; font-size: 12px; font-weight: bold; text-decoration: none; margin-bottom: 10px; white-space: nowrap;
+}
+div.bodyIndented {
+	padding-left: 15px;
+}
+a.button {
+	margin: 0px; padding: 3px 6px; text-align: center; line-height: normal; font-size: 11px; font-weight: bold; text-decoration: none; display: block; white-space: nowrap;
+}
+div.button {
+	margin: 0px; padding: 3px 6px; text-align: center; line-height: normal; font-size: 11px; font-weight: bold; text-decoration: none; display: block; white-space: nowrap;
+}
+a.button:link {
+	background: url("../i/cimages/buttonBg.png") top rgb(210, 210, 210); border: 1px solid rgb(153, 153, 153); border-image: none; color: rgb(51, 51, 51); text-decoration: none;
+}
+a.button:visited {
+	background: url("../i/cimages/buttonBg.png") top rgb(210, 210, 210); border: 1px solid rgb(153, 153, 153); border-image: none; color: rgb(51, 51, 51); text-decoration: none;
+}
+a.button:hover {
+	background: url("../i/cimages/buttonBg_on.png") top rgb(106, 106, 106); border: 1px solid rgb(153, 153, 153); border-image: none; color: rgb(255, 255, 255); text-decoration: none;
+}
+a.button:active {
+	background: url("../i/cimages/buttonBg_on.png") top rgb(106, 106, 106); border: 1px solid rgb(153, 153, 153); border-image: none; color: rgb(255, 255, 255); text-decoration: none;
+}
+div.button {
+	background: url("../i/cimages/buttonBg_off.png") top rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); border-image: none; color: rgb(187, 187, 187);
+}
+a.bigButton {
+	margin: 0px; padding: 4px 8px; text-align: center; line-height: normal; font-size: 14px; font-weight: bold; text-decoration: none; display: block; white-space: nowrap;
+}
+div.bigButton {
+	margin: 0px; padding: 4px 8px; text-align: center; line-height: normal; font-size: 14px; font-weight: bold; text-decoration: none; display: block; white-space: nowrap;
+}
+a.bigButton:link {
+	background: url("../i/cimages/buttonBg.png") top rgb(210, 210, 210); border: 1px solid rgb(153, 153, 153); border-image: none; color: rgb(51, 51, 51); text-decoration: none;
+}
+a.bigButton:visited {
+	background: url("../i/cimages/buttonBg.png") top rgb(210, 210, 210); border: 1px solid rgb(153, 153, 153); border-image: none; color: rgb(51, 51, 51); text-decoration: none;
+}
+a.bigButton:hover {
+	background: url("../i/cimages/buttonBg_on.png") top rgb(106, 106, 106); border: 1px solid rgb(153, 153, 153); border-image: none; color: rgb(255, 255, 255); text-decoration: none;
+}
+a.bigButton:active {
+	background: url("../i/cimages/buttonBg_on.png") top rgb(106, 106, 106); border: 1px solid rgb(153, 153, 153); border-image: none; color: rgb(255, 255, 255); text-decoration: none;
+}
+div.bigButton {
+	background: url("../i/cimages/buttonBg_off.png") top rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); border-image: none; color: rgb(187, 187, 187); text-decoration: none;
+}
+span.selected {
+	padding: 0px 4px; border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+table.stat {
+	border-width: 1px 1px 7px; border-style: solid; border-color: rgb(153, 153, 153) rgb(153, 153, 153) rgb(204, 204, 204); padding: 0px; border-image: none; vertical-align: top;
+}
+table.stat td {
+	padding: 2px 4px; line-height: normal;
+}
+table.stat th {
+	padding: 2px 4px; line-height: normal;
+}
+table.stat th.title {
+	text-align: left; font-size: 12px; font-weight: bold; text-decoration: none; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: solid; white-space: nowrap; background-image: url("../i/cimages/headerBG.gif"); background-color: rgb(153, 153, 153);
+}
+table.stat td.title {
+	text-align: left; font-size: 12px; font-weight: bold; text-decoration: none; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: solid; white-space: nowrap; background-image: url("../i/cimages/headerBG.gif"); background-color: rgb(153, 153, 153);
+}
+table.stat th {
+	color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; vertical-align: middle; background-color: rgb(229, 229, 229);
+}
+table.stat td.header {
+	color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; vertical-align: middle; background-color: rgb(229, 229, 229);
+}
+table.stat td.headerC {
+	color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; vertical-align: middle; background-color: rgb(229, 229, 229);
+}
+table.stat td.headerR {
+	color: rgb(0, 0, 0); font-size: 11px; font-weight: bold; vertical-align: middle; background-color: rgb(229, 229, 229);
+}
+table.stat tr.light td {
+	background-color: rgb(245, 245, 245);
+}
+table.stat tr.dark td {
+	background-color: rgb(239, 239, 239);
+}
+table.stat td.value {
+	font-size: 11px; vertical-align: top; border-top-color: rgb(255, 255, 255); border-top-width: 1px; border-top-style: solid;
+}
+table.stat td.valueC {
+	font-size: 11px; vertical-align: top; border-top-color: rgb(255, 255, 255); border-top-width: 1px; border-top-style: solid;
+}
+table.stat td.valueR {
+	font-size: 11px; vertical-align: top; border-top-color: rgb(255, 255, 255); border-top-width: 1px; border-top-style: solid;
+}
+table.stat td.field {
+	font-size: 11px; vertical-align: top; border-top-color: rgb(255, 255, 255); border-top-width: 1px; border-top-style: solid;
+}
+table.stat td.headerC {
+	text-align: center;
+}
+table.stat td.valueC {
+	text-align: center;
+}
+table.stat td.headerR {
+	text-align: right;
+}
+table.stat td.valueR {
+	text-align: right;
+}
+table.stat td.field {
+	color: rgb(0, 0, 0); font-weight: bold;
+}
+table.stat a:link {
+	text-decoration: none;
+}
+table.stat a:visited {
+	text-decoration: none;
+}
+table.stat a:hover {
+	text-decoration: underline;
+}
+table.stat a:active {
+	text-decoration: underline;
+}
+table.stat tr.highlight td {
+	font-weight: bold; border-top-color: rgb(0, 0, 255); border-bottom-color: rgb(0, 0, 255); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(238, 238, 255);
+}
+table.stat td.B {
+	border-right-color: rgb(153, 153, 153); border-right-width: 1px; border-right-style: solid;
+}
+table.stat td.M {
+	vertical-align: middle;
+}
+table.stat td.NW {
+	white-space: nowrap;
+}
+table.stat tbody.show {
+	display: table-row-group;
+}
+table.stat tbody.hide {
+	display: none;
+}
+#navbar {
+	background: url("../i/cimages/leftnav_bg.gif") repeat-y right rgb(53, 62, 68); margin: 0px; padding: 0px; width: 185px; font-size: 11px; font-weight: bold; float: left;
+}
+div.leftColContent {
+	background: url("../i/cimages/leftnav_bg.gif") repeat-y right rgb(53, 62, 68); margin: 0px; padding: 0px; width: 185px; font-size: 11px; font-weight: bold; float: left;
+}
+#navbar ul {
+	margin: 0px; padding: 0px 0px 0px 3px; float: left;
+}
+#navbar ul li.title {
+	margin: 0px; padding: 0px 4px 0px 5px; text-align: right; font-weight: bold; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#navbar ul li {
+	background: none; margin: 0px; padding: 0px; width: 182px; float: left; list-style-type: none;
+}
+#navbar ul li ul {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; display: none;
+}
+#navbar ul.OPEN {
+	padding-bottom: 8px; display: block;
+}
+#navbar ul.CLOSED {
+	padding-bottom: 0px; display: none;
+}
+#navbar li.highlight a:link {
+	color: rgb(255, 255, 255); background-color: rgb(153, 0, 0);
+}
+#navbar li.highlight a:visited {
+	color: rgb(255, 255, 255); background-color: rgb(153, 0, 0);
+}
+#navbar li.highlight a:hover {
+	color: rgb(255, 255, 255); background-color: rgb(153, 0, 0);
+}
+#navbar li.exp li a:link {
+	background-image: none;
+}
+#navbar li.exp li a:visited {
+	background-image: none;
+}
+#navbar li.exp li a:hover {
+	background-image: none;
+}
+#navbar li.exp li a:active {
+	background-image: none;
+}
+#navbar li.exp li li a:link {
+	background-image: none;
+}
+#navbar li.exp li li a:visited {
+	background-image: none;
+}
+#navbar li.exp li li a:hover {
+	background-image: none;
+}
+#navbar li.exp li li a:active #navbar li.exp li li li a:link {
+	background-image: none;
+}
+#navbar li.exp li li li a:visited {
+	background-image: none;
+}
+#navbar li.exp li li li a:hover {
+	background-image: none;
+}
+#navbar li.exp li li li a:active {
+	background-image: none;
+}
+#navbar li.exp li li li li a:link {
+	background-image: none;
+}
+#navbar li.exp li li li li a:visited {
+	background-image: none;
+}
+#navbar li.exp li li li li a:hover {
+	background-image: none;
+}
+#navbar li.exp li li li li a:active {
+	background-image: none;
+}
+#navbar li.exp_ed li a:link {
+	background-image: none;
+}
+#navbar li.exp_ed li a:visited {
+	background-image: none;
+}
+#navbar li.exp_ed li a:hover {
+	background-image: none;
+}
+#navbar li.exp_ed li a:active {
+	background-image: none;
+}
+#navbar li.exp_ed li li a:link {
+	background-image: none;
+}
+#navbar li.exp_ed li li a:visited {
+	background-image: none;
+}
+#navbar li.exp_ed li li a:hover {
+	background-image: none;
+}
+#navbar li.exp_ed li li a:active {
+	background-image: none;
+}
+#navbar li.exp_ed li li li a:link {
+	background-image: none;
+}
+#navbar li.exp_ed li li li a:visited {
+	background-image: none;
+}
+#navbar li.exp_ed li li li a:hover {
+	background-image: none;
+}
+#navbar li.exp_ed li li li a:active {
+	background-image: none;
+}
+#navbar li.exp_ed li li li li a:link {
+	background-image: none;
+}
+#navbar li.exp_ed li li li li a:visited {
+	background-image: none;
+}
+#navbar li.exp_ed li li li li a:hover {
+	background-image: none;
+}
+#navbar li.exp_ed li li li li a:active {
+	background-image: none;
+}
+#navbar li.exp a:link {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp.gif"); background-repeat: no-repeat;
+}
+#navbar li.exp a:visited {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp.gif"); background-repeat: no-repeat;
+}
+#navbar li li.exp a:link {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp.gif"); background-repeat: no-repeat;
+}
+#navbar li li.exp a:visited {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp.gif"); background-repeat: no-repeat;
+}
+#navbar li li li.exp a:link {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp.gif"); background-repeat: no-repeat;
+}
+#navbar li li li.exp a:visited {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp.gif"); background-repeat: no-repeat;
+}
+#navbar li li li li.exp a:link {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp.gif"); background-repeat: no-repeat;
+}
+#navbar li li li li.exp a:visited {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp.gif"); background-repeat: no-repeat;
+}
+#navbar li.exp a:hover {
+	background-image: url("../i/cimages/exp_w.gif");
+}
+#navbar li li.exp a:hover {
+	background-image: url("../i/cimages/exp_w.gif");
+}
+#navbar li li li.exp a:hover {
+	background-image: url("../i/cimages/exp_w.gif");
+}
+#navbar li li li li.exp a:hover {
+	background-image: url("../i/cimages/exp_w.gif");
+}
+#navbar li.exp_ed a:link {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp_ed.gif"); background-repeat: no-repeat;
+}
+#navbar li.exp_ed a:visited {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp_ed.gif"); background-repeat: no-repeat;
+}
+#navbar li li.exp_ed a:link {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp_ed.gif"); background-repeat: no-repeat;
+}
+#navbar li li.exp_ed a:visited {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp_ed.gif"); background-repeat: no-repeat;
+}
+#navbar li li li.exp_ed a:link {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp_ed.gif"); background-repeat: no-repeat;
+}
+#navbar li li li.exp_ed a:visited {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp_ed.gif"); background-repeat: no-repeat;
+}
+#navbar li li li li.exp_ed a:link {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp_ed.gif"); background-repeat: no-repeat;
+}
+#navbar li li li li.exp_ed a:visited {
+	background-position: 1px 50%; background-image: url("../i/cimages/exp_ed.gif"); background-repeat: no-repeat;
+}
+#navbar li.exp_ed a:hover {
+	background-image: url("../i/cimages/exp_ed_w.gif");
+}
+#navbar li li.exp_ed a:hover {
+	background-image: url("../i/cimages/exp_ed_w.gif");
+}
+#navbar li li li.exp_ed a:hover {
+	background-image: url("../i/cimages/exp_ed_w.gif");
+}
+#navbar li li li li.exp_ed a:hover {
+	background-image: url("../i/cimages/exp_ed_w.gif");
+}
+#navbar li a:link {
+	margin: 0px 15px 0px 0px; padding: 3px 10px; color: rgb(255, 204, 51); line-height: 100%; font-size: 12px; text-decoration: none; float: left;
+}
+#navbar li a:visited {
+	margin: 0px 15px 0px 0px; padding: 3px 10px; color: rgb(255, 204, 51); line-height: 100%; font-size: 12px; text-decoration: none; float: left;
+}
+#navbar li li a:link {
+	margin: 0px 15px 0px 5px; padding: 5px 10px; color: rgb(221, 221, 221); font-size: 12px;
+}
+#navbar li li a:visited {
+	margin: 0px 15px 0px 5px; padding: 5px 10px; color: rgb(221, 221, 221); font-size: 12px;
+}
+#navbar li li li a:link {
+	margin: 0px 15px 0px 12px; padding: 5px 10px; color: rgb(187, 187, 187); font-size: 11px;
+}
+#navbar li li li a:visited {
+	margin: 0px 15px 0px 12px; padding: 5px 10px; color: rgb(187, 187, 187); font-size: 11px;
+}
+#navbar li li li li a:link {
+	margin: 0px 15px 0px 20px; padding: 5px 10px; color: rgb(153, 153, 153); font-size: 11px;
+}
+#navbar li li li li a:visited {
+	margin: 0px 15px 0px 20px; padding: 5px 10px; color: rgb(153, 153, 153); font-size: 11px;
+}
+#navbar li li li li li a:link {
+	margin: 0px 15px 0px 27px; color: rgb(153, 153, 153); font-size: 11px;
+}
+#navbar li li li li li a:visited {
+	margin: 0px 15px 0px 27px; color: rgb(153, 153, 153); font-size: 11px;
+}
+#navbar li a:hover {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+#navbar li li a:hover {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+#navbar li li li a:hover {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+#navbar li li li li a:hover {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+#navbar li li li li li a:hover {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+#navbarSearch {
+	margin: 10px 0px 10px 3px; padding: 5px 0px 0px 3px; color: rgb(255, 255, 255); clear: left; float: left; white-space: nowrap;
+}
+a.gMetal:link {
+	color: rgb(255, 204, 51); text-decoration: none;
+}
+a.gMetal:visited {
+	color: rgb(204, 153, 51); text-decoration: none;
+}
+a.gMetal:hover {
+	color: rgb(170, 170, 170); text-decoration: underline;
+}
+a.gMetal:active {
+	color: rgb(170, 170, 170); text-decoration: underline;
+}
+div.leftColContent {
+	color: rgb(255, 255, 255);
+}
+div.leftColContent td {
+	color: rgb(255, 255, 255);
+}
+div.rightColContent {
+	width: 170px;
+}
+.problemText {
+	color: rgb(255, 255, 255); font-family: Courier, Courier New, sans-serif; font-size: 11px; font-weight: normal; text-decoration: none;
+}
+.bc {
+	color: rgb(51, 51, 51); font-size: 11px; font-style: normal;
+}
+a.bcLink:link {
+	color: rgb(0, 0, 255); text-decoration: none;
+}
+a.bcLink:visited {
+	color: rgb(0, 0, 255); text-decoration: none;
+}
+a.bcLink:hover {
+	color: rgb(255, 0, 0); text-decoration: none;
+}
+a.bcLink:active {
+	color: rgb(0, 0, 255); text-decoration: none;
+}
+.statTableHolderSpecial .statTable {
+	margin-bottom: 0px;
+}
+.increaseTR td {
+	line-height: 20px; vertical-align: middle;
+}
+.topOrderMedal {
+	background: url("../i/cimages/top-order-medal.gif") no-repeat left; padding-left: 24px; display: inline-block;
+}
+.topOrderStar {
+	background: url("../i/cimages/top-order-star.gif") no-repeat left; padding-left: 24px; display: inline-block;
+}

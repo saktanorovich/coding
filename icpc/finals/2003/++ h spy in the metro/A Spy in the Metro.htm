@@ -1,0 +1,171 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>2728 - A Spy in the Metro</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="A%20Spy%20in%20the%20Metro_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>2728 - A Spy in the Metro</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2002"><b>World Finals - Beverly Hills - 2002/2003</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p2728.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=2728"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=2728"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+Secret agent Maria was sent to Algorithms City to carry out an especially
+dangerous mission. After several thrilling
+events we find her in the first station of Algorithms City Metro, examining the
+time table. The Algorithms City
+Metro consists of a single line with trains running both ways,
+so its time table is not complicated.
+
+</p><p>
+Maria has an appointment with a local spy at the last station of Algorithms City Metro.
+Maria knows that a powerful
+organization is after her. She also knows that while waiting at a station,
+she is at great risk of being caught. To hide
+in a running train is much safer, so she decides to stay in running trains
+as much as possible, even if this means
+traveling backward and forward. Maria needs to know a schedule with minimal
+waiting time at the stations that gets
+her to the last station in time for her appointment. You must write a program
+that finds the total waiting time in a
+best schedule for Maria.
+
+</p><p>
+The Algorithms City Metro system has <span class="MATH"><i>N</i></span> stations, consecutively numbered from 1 to <span class="MATH"><i>N</i></span>.
+Trains move in both
+directions: from the first station to the last station and from the last station
+back to the first station. The time
+required for a train to travel between two consecutive stations is fixed since
+all trains move at the same speed.
+Trains make a very short stop at each station, which you can ignore for simplicity.
+Since she is a very fast agent,
+Maria can always change trains at a station even if the trains involved stop in that
+station at the same time.
+
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p2728.eps}$
+ -->
+<img src="A%20Spy%20in%20the%20Metro_files/p2728.gif" alt="\epsfbox{p2728.eps}" align="bottom" border="0" height="160" width="635">
+</div>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+The input file contains several test cases. Each test case consists of seven lines with
+information as follows.
+<dl>
+<dt><strong>Line 1.</strong></dt>
+<dd>The integer <span class="MATH"><i>N</i></span> (<!-- MATH
+ $2 \le N \le 50$
+ -->
+<span class="MATH">2<img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>N</i><img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">50</span>), which is the number of stations.
+</dd>
+<dt><strong>Line 2.</strong></dt>
+<dd>The integer <span class="MATH"><i>T</i></span> (<!-- MATH
+ $0 \le T \le 200$
+ -->
+<span class="MATH">0<img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>T</i><img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">200</span>), which is the time of the appointment.
+</dd>
+<dt><strong>Line 3.</strong></dt>
+<dd><span class="MATH"><i>N</i> - 1</span> integers: <!-- MATH
+ $t_1, t_2, \dots, t_{N-1}$
+ -->
+<span class="MATH"><i>t</i><sub>1</sub>, <i>t</i><sub>2</sub>,..., <i>t</i><sub>N - 1</sub></span> (<!-- MATH
+ $1 \le t_i \le 20$
+ -->
+<span class="MATH">1<img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" $args[="" xmax="" ]="1*$i;" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>t</i><sub>i</sub><img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">70</span>),
+representing the travel times for the trains between two
+consecutive stations: <span class="MATH"><i>t</i><sub>1</sub></span> represents the travel time between the first two stations,
+<span class="MATH"><i>t</i><sub>2</sub></span> the time between the second and the third station, and so on.
+</dd>
+<dt><strong>Line 4.</strong></dt>
+<dd>The integer <span class="MATH"><i>M</i>1</span> (<!-- MATH
+ $1 \le M1 \le 50$
+ -->
+<span class="MATH">1<img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>M</i>1<img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">50</span>), representing the number of trains
+departing from the first station.
+</dd>
+<dt><strong>Line 5.</strong></dt>
+<dd><span class="MATH"><i>M</i>1</span> integers: <!-- MATH
+ $d_1, d_2, \dots, d_{M1}$
+ -->
+<span class="MATH"><i>d</i><sub>1</sub>, <i>d</i><sub>2</sub>,..., <i>d</i><sub>M1</sub></span> (<!-- MATH
+ $0 \le d_i \le 250$
+ -->
+<span class="MATH">0<img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>d</i><sub>i</sub><img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">250</span>
+and <!-- MATH
+ $d_i < d_{i+1}$
+ -->
+<span class="MATH"><i>d</i><sub>i</sub> &lt; <i>d</i><sub>i + 1</sub></span>), representing the times at which trains depart from the first station.
+</dd>
+<dt><strong>Line 6.</strong></dt>
+<dd>The integer <span class="MATH"><i>M</i>2</span> (<!-- MATH
+ $1 \le M2 \le 50$
+ -->
+<span class="MATH">1<img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>M</i>2<img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">50</span>), representing the number of trains
+departing from the <span class="MATH"><i>N</i></span>-th station.
+</dd>
+<dt><strong>Line 7.</strong></dt>
+<dd><span class="MATH"><i>M</i>2</span> integers: <!-- MATH
+ $e_1, e_2, \dots, e_{M2}$
+ -->
+<span class="MATH"><i>e</i><sub>1</sub>, <i>e</i><sub>2</sub>,..., <i>e</i><sub>M2</sub></span> (<!-- MATH
+ $0 \le e_i \le 250$
+ -->
+<span class="MATH">0<img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>e</i><sub>i</sub><img src="A%20Spy%20in%20the%20Metro_files/2728img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">250</span>
+and <!-- MATH
+ $e_i < e_{i+1}$
+ -->
+<span class="MATH"><i>e</i><sub>i</sub> &lt; <i>e</i><sub>i + 1</sub></span>) representing the times at which trains depart from the <span class="MATH"><i>N</i></span>-th station.
+</dd>
+</dl>
+
+<p>
+The last case is followed by a line containing a single zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+For each test case, print a line containing the case number (starting with 1) and an
+integer representing the total
+waiting time in the stations for a best schedule, or the word `<tt>impossible</tt>' in case
+Maria is unable to make the
+appointment. Use the format of the sample output.
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>4
+55
+5 10 15
+4
+0 5 10 20
+4
+0 5 10 15
+4
+18
+1 2 3
+5
+0 3 6 10 12
+6
+0 3 5 7 12 15
+2
+30
+20
+1
+20
+7
+1 3 5 7 11 13 17
+0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>Case Number 1: 5
+Case Number 2: 0
+Case Number 3: impossible
+</pre>
+
+<p>
+</p><hr><address>Beverly Hills 2002-2003</address><p></p></body></html>

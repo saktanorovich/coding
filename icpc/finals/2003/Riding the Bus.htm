@@ -1,0 +1,140 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>2723 - Riding the Bus</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Riding%20the%20Bus_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>2723 - Riding the Bus</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2002"><b>World Finals - Beverly Hills - 2002/2003</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p2723.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=2723"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=2723"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+The latest research in reconfigurable multiprocessor chips focuses on the use of a
+single bus that winds around the
+chip. Processor components, which can be anywhere on the chip, are attached to
+<em>connecting points</em> on the bus so
+that they can communicate with each other.
+
+</p><p>
+Some research involves bus layout that uses recursively-defined ``SZ" curves,
+also known as ``S-shaped Peano
+curves." Two examples of these curves are shown below. Each curve is drawn
+on the unit square. The order-1
+curve, shown on the left, approximates the letter ``S" and consists of line
+segments connecting the points (0,0), (1,0),
+(1,0.5), (0,0.5), (0,1), and (1,1) in order. Each horizontal line in
+an ``S" or ``Z" curve is twice as long as each vertical
+line. For the order-1 curve, the length of a vertical line, <span class="MATH"><i>len</i></span>, is 0.5.
+
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p2723.eps}$
+ -->
+<img src="Riding%20the%20Bus_files/p2723.gif" alt="\epsfbox{p2723.eps}" align="bottom" border="0">
+</div>
+
+<p>
+The order-2 curve, shown on the right, contains 9 smaller copies of the order-1 curve
+(4 of which are reversed left to
+right to yield ``Z" curves). These copies are connected by line segments of
+length <span class="MATH"><i>len</i></span>, shown as dotted lines. Since
+the width and height of the order-2 curve is <!-- MATH
+ $8 \times len$
+ -->
+<span class="MATH">8*<i>len</i></span>, and the curve is
+drawn on the unit square, <!-- MATH
+ $len = 0.125$
+ -->
+<span class="MATH"><i>len</i> = 0.125</span> for the
+order-2 curve.
+
+</p><p>
+The order-3 curve contains 9 smaller copies of the order-2 curve
+(with 4 reversed left to right), connected by line
+segments, as described for the order-2 curve. Higher order curves are
+drawn in a similar manner. The <em>connecting
+points</em> to which processor components attach are evenly spaced every <span class="MATH"><i>len</i></span> units
+along the bus.
+The first connecting
+point is at (0,0) and the last is at (1,1). There are <span class="MATH">9<sup>k</sup></span> connecting points along the
+order-<span class="MATH"><i>k</i></span> curve, and the total bus
+length is <!-- MATH
+ $(9^k - 1) *\times len$
+ -->
+<span class="MATH">(9<sup>k</sup> - 1)*<i>len</i></span> units.
+
+</p><p>
+You must write a program to determine the total distance that signals must travel
+between two processor
+components. Each component's coordinates are given as an <span class="MATH"><i>x</i></span>, <span class="MATH"><i>y</i></span> pair, <!-- MATH
+ $0 \le x \le 1$
+ -->
+<span class="MATH">0<img src="Riding%20the%20Bus_files/2723img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>x</i><img src="Riding%20the%20Bus_files/2723img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">1</span>
+and <!-- MATH
+ $0 \le y \le 1$
+ -->
+<span class="MATH">0<img src="Riding%20the%20Bus_files/2723img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>y</i><img src="Riding%20the%20Bus_files/2723img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">1</span>, where <span class="MATH"><i>x</i></span> is the distance
+from the left side of the chip, and <span class="MATH"><i>y</i></span> is the distance from the lower edge of the chip.
+Each component is attached to
+the closest connecting point by a straight line. If multiple connecting points are
+equidistant from a component, the
+one with the smallest <span class="MATH"><i>x</i></span> coordinate and smallest <span class="MATH"><i>y</i></span> coordinate is used.
+The total distance a signal must travel between
+two components is the sum of the length of the lines connecting the components
+to the bus, and the length of the bus
+between the two connecting points. For example, the distance between components
+located at (0.5, 0.25) and (1.0, 0.875) on a chip using the order-1 curve is 3.8750 units.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+The input contains several cases. For each case, the input consists of an integer
+that gives the order of the SZ curve
+used as the bus (no larger than 8), and then four real numbers <!-- MATH
+ $x_1, y_1, x_2, y_2$
+ -->
+<span class="MATH"><i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>, <i>x</i><sub>2</sub>, <i>y</i><sub>2</sub></span>
+that give the coordinates of the processor
+components to be connected. While each processor component should actually be
+in a unique location not on the
+bus, your program must correctly handle all possible locations.
+
+<p>
+The last case in the input is followed by a single zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+For each case, display the case number (starting with 1 for the first case) and
+the distance between the processor
+components when they are connected as described. Display the distance with 4
+digits to the right of the decimal point.
+
+<p>
+Use the same format as that shown in the sample output shown below. Leave a
+blank line between the output lines for consecutive cases.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>1 0.5 .25 1 .875
+1 0 0 1 1
+2 .3 .3 .7 .7
+2 0 0 1 1
+0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>Case 1.  Distance is 3.8750
+
+Case 2.  Distance is 4.0000
+
+Case 3.  Distance is 8.1414
+
+Case 4.  Distance is 10.0000
+</pre>
+
+<p>
+</p><hr><address>Beverly Hills 2002-2003</address><p></p></body></html>

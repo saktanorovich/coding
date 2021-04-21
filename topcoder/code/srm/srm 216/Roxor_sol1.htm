@@ -1,0 +1,2645 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0075)http://www.topcoder.com/stat?c=problem_solution&cr=10481120&rd=5862&pm=2987 -->
+<HTML><HEAD><TITLE>TopCoder Statistics - Problem Solution</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<SCRIPT language=JavaScript src="Roxor_sol1_files/tcscript.js" 
+type=text/javascript></SCRIPT>
+<LINK href="Roxor_sol1_files/style.css" type=text/css rel=stylesheet><LINK 
+href="Roxor_sol1_files/coders.css" type=text/css rel=stylesheet><LINK 
+href="Roxor_sol1_files/tcStyles.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2800.1081" name=GENERATOR></HEAD>
+<BODY>
+<SCRIPT language=javascript type=text/javascript>
+<!--
+var objPopUp = null;
+function popUpUnder(event,objectID){
+   objPopTrig = document.getElementById(event);
+   alert(objPopTrig);
+   objPopUp = document.getElementById(objectID);
+   xPos = objPopTrig.offsetLeft;
+   if(xPos + objPopUp.offsetWidth > document.body.clientWidth) xPos = xPos - objPopUp.offsetWidth;
+   objPopUp.style.left = xPos + 'px';
+   objPopUp.style.display = 'block';
+}
+function popDescription(objectID){
+   objPopUp = document.getElementById(objectID);
+   objPopUp.style.visibility = 'visible';
+//   objPopUp.style.display = 'block';
+}
+function hideDescription(){
+   objPopUp.style.visibility = 'hidden';
+//   objPopUp.style.display = 'none';
+   objPopUp = null;
+}
+
+// -->
+</SCRIPT>
+
+<STYLE type=text/css>DIV.topBar {
+	FONT-SIZE: 11px; COLOR: #ffffff
+}
+DIV.topBar DIV {
+	FONT-SIZE: 11px; COLOR: #ffffff
+}
+DIV.memberCountBox {
+	FONT-SIZE: 11px; COLOR: #ffffff
+}
+DIV.memberCountBox {
+	Z-INDEX: 1; LEFT: 3px; POSITION: absolute; TOP: 5px
+}
+DIV.topBar {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 3px; BACKGROUND: url(/i/interface/top_bg.gif) #ffffff repeat-x center top; PADDING-BOTTOM: 80px; VERTICAL-ALIGN: top; PADDING-TOP: 5px; WHITE-SPACE: nowrap
+}
+DIV.launchPopUp {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: black 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 11px; Z-INDEX: 3; VISIBILITY: hidden; PADDING-BOTTOM: 3px; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid; POSITION: absolute; BACKGROUND-COLOR: #ffffcc
+}
+#outerLogo {
+	Z-INDEX: 2; WIDTH: 360px; POSITION: relative
+}
+#innerLogo {
+	LEFT: 0px; POSITION: absolute
+}
+</STYLE>
+
+<DIV class=launchPopUp id=launch0 style="LEFT: 73px; TOP: 65px">Competitions 
+Home</DIV>
+<DIV class=launchPopUp id=launch1 style="LEFT: 108px; TOP: 65px">Launch 
+Algorithm Competitions Arena</DIV>
+<DIV class=launchPopUp id=launch2 style="LEFT: 155px; TOP: 65px">Launch High 
+School Competitions Arena</DIV>
+<DIV class=launchPopUp id=launch3 style="LEFT: 181px; TOP: 65px">Component 
+Design Active Contests</DIV>
+<DIV class=launchPopUp id=launch4 style="LEFT: 207px; TOP: 65px">Component 
+Development Active Contests</DIV>
+<DIV class=launchPopUp id=launch5 style="LEFT: 252px; TOP: 65px">Marathon Match 
+Active Contests</DIV><MAP name=competeBar><AREA 
+  onmouseover="popDescription('launch0')" onmouseout=hideDescription() 
+  shape=RECT alt="" coords=0,0,66,30 href="http://www.topcoder.com/tc"><AREA 
+  onmouseover="popDescription('launch1')" onmouseout=hideDescription() 
+  shape=RECT alt="" coords=68,0,106,30 href="javascript:arena();"><AREA 
+  onmouseover="popDescription('launch2')" onmouseout=hideDescription() 
+  shape=RECT alt="" coords=107,0,153,30 href="javascript:arena();"><AREA 
+  onmouseover="popDescription('launch3')" onmouseout=hideDescription() 
+  shape=RECT alt="" coords=154,0,179,30 
+  href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112"><AREA 
+  onmouseover="popDescription('launch4')" onmouseout=hideDescription() 
+  shape=RECT alt="" coords=180,0,205,30 
+  href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113"><AREA 
+  onmouseover="popDescription('launch5')" onmouseout=hideDescription() 
+  shape=RECT alt="" coords=206,0,250,30 
+  href="http://www.topcoder.com/longcontest/?module=ViewActiveContests"></MAP>
+<DIV id=register_now_container 
+style="LEFT: 0px; WIDTH: 100%; POSITION: absolute; TOP: 31px">
+<DIV style="LEFT: 0px; POSITION: absolute; TOP: 0px"><IMG alt="" 
+src="Roxor_sol1_files/competeBar.gif" useMap=#competeBar> </DIV>
+<DIV style="FLOAT: right; WIDTH: 790px" align=right><A 
+href="http://www.topcoder.com/reg/?nrg=false"><IMG style="DISPLAY: block" 
+alt="Update My Profile" 
+src="Roxor_sol1_files/update_my_profile.gif"></A></DIV></DIV>
+<DIV style="MARGIN: 0px 290px 0px 280px" align=center>
+<DIV id=outerLogo>
+<DIV id=innerLogo><A href="http://www.topcoder.com/"><IMG alt=TopCoder 
+src="Roxor_sol1_files/topcoder.gif"></A> </DIV></DIV></DIV>
+<DIV class=memberCountBox>Member Count: 92,084 - September 12, 2006 &nbsp;<A 
+class=gMetal href="javascript:tcTime()">[Get Time]</A> </DIV>
+<DIV class=topBar>
+<DIV style="FLOAT: right; MARGIN-LEFT: 650px">Hello,&nbsp;<A 
+class=coderTextWhite 
+href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22057667">j_black</A> 
+&nbsp;&nbsp;|&nbsp;&nbsp;<A class=gMetal 
+href="http://www.topcoder.com/tc?module=Logout">Logout</A> </DIV></DIV>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width=180>
+      <SCRIPT language=JavaScript src="Roxor_sol1_files/arena.js" 
+      type=text/javascript></SCRIPT>
+
+      <SCRIPT language=javascript type=text/javascript>
+<!--
+function toggleMenu(menuTitle,menuID){
+   var menu = document.getElementById(menuID);
+   if(menu.style.display == 'block') menu.className = 'CLOSED';
+   else if(menu.className == 'OPEN' && menu.style.display != 'none') menu.className = 'CLOSED';
+   else {
+      menu.className = 'OPEN';
+   }
+   if(menuTitle.blur)menuTitle.blur();
+   if(menuTitle.className == 'exp') menuTitle.className = 'exp_ed';
+   else menuTitle.className = 'exp';
+   return;
+}
+function flipMenu(myMenuName){
+   var menuName = document.getElementById(myMenuName);
+   menuName.className = 'exp_ed';
+}
+
+// -->
+</SCRIPT>
+<!--node is m_algo_stats -->
+      <DIV 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px"><IMG 
+      alt="" src="Roxor_sol1_files/leftnav_top.gif"></DIV>
+      <DIV id=navbar>
+      <UL>
+        <LI class=exp_ed><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_competitions')" 
+        href="javascript:void(0)">Competitions</A> 
+        <UL class=OPEN id=m_competitions>
+          <LI><A href="http://www.topcoder.com/tc">Home</A> </LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_competitor_stats')" 
+          href="javascript:void(0)">The Tops</A> 
+          <UL id=m_competitor_stats>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_top_rated_competitors')" 
+            href="javascript:void(0)">Top Ranked</A> 
+            <UL id=m_top_rated_competitors>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=AlgoRank">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_designers">Design</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_developers">Development</A> 
+              </LI>
+              <LI><A href="http://www.topcoder.com/tc?module=HSRank">High 
+              School</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_recordbook')" 
+            href="javascript:void(0)">Record Book</A> 
+            <UL id=m_recordbook>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=statistics&amp;d2=recordbook_home">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=compstats&amp;d2=comp_recordbook_home">Component</A> 
+              </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_com')" 
+            href="javascript:void(0)">Coder of the Month</A> 
+            <UL id=m_com>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=5">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=6">Design</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=7">Development</A> 
+              </LI></UL></LI></UL></LI>
+          <LI class=exp_ed><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_algo_competitions')" 
+          href="javascript:void(0)">Algorithm</A> 
+          <UL class=OPEN id=m_algo_competitions>
+            <LI><A href="javascript:arena();">Launch Arena</A> </LI>
+            <LI class=exp_ed><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_algo_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL class=OPEN id=m_algo_stats>
+              <LI><A href="http://www.topcoder.com/tc?module=MatchList">Match 
+              Archive</A> </LI>
+              <LI><A href="http://www.topcoder.com/stat?c=round_overview">Match 
+              Overviews</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=SrmDivisionWins">Match 
+              Winners</A> </LI>
+              <LI><A href="http://www.topcoder.com/stat?c=last_match">Match 
+              Results</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=match_editorials&amp;d2=archive">Match 
+              Editorials</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ProblemArchive">Problem 
+              Archive</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_algo_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_algo_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=index">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=faqIndex">FAQs</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=sampleProblems">Sample 
+              Problems</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=ratings">Rating 
+              System</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=algo_get_paid">How 
+              to Get Paid</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=charity">Charity 
+              Donations</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_des_competitions')" 
+          href="javascript:void(0)">Software Design</A> 
+          <UL id=m_des_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ContestStatus&amp;ph=112">Contest 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;ph=112">Review 
+            Opportunities</A> </LI>
+            <LI><A 
+            href="http://software.topcoder.com/forum/c_active_collab.jsp?ft=2">TCS 
+            Developer Forums</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit 
+            Deliverables &amp; Reviews</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=CompList&amp;ph=112">Statistics</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ReviewBoard&amp;ph=112">Meet 
+            the Review Board</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_des_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_des_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desGettingStarted">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desDocumentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desRatings">Ratings</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desReliability">Reliability 
+              Ratings</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=des_get_paid">How 
+              to Get Paid</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_dev_competitions')" 
+          href="javascript:void(0)">Software Development</A> 
+          <UL id=m_dev_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ContestStatus&amp;ph=113">Contest 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;ph=113">Review 
+            Opportunities</A> </LI>
+            <LI><A 
+            href="http://software.topcoder.com/forum/c_active_collab.jsp?ft=2">TCS 
+            Developer Forums</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit 
+            Deliverables &amp; Reviews</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=CompList&amp;ph=113">Statistics</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ReviewBoard&amp;ph=113">Meet 
+            the Review Board</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_dev_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_dev_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devGettingStarted">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devDocumentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devRatings">Ratings</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devReliability">Reliability 
+              Ratings</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=dev_get_paid">How 
+              to Get Paid</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_competitions')" 
+          href="javascript:void(0)">Software Assembly</A> 
+          <UL id=m_assembly_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=activeContests">Active 
+            Contests</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_assembly_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=tutorial">Tutorial</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=documentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=assem_get_paid">How 
+              to Get Paid</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_testing_competitions')" 
+          href="javascript:void(0)">Software Testing</A> 
+          <UL id=m_testing_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=activeContests">Active 
+            Contests</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_testing_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_testing_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=tutorial">Tutorial</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=documentation">Documentation</A> 
+              </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_hs_competitions')" 
+          href="javascript:void(0)">High School</A> 
+          <UL id=m_hs_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=home">Overview</A> 
+            </LI>
+            <LI><A href="javascript:arena();">Launch Arena</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_hs_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_hs_stats>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundOverview">Match 
+              Overview</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundStatsTeam">Match 
+              Results (Team)</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundStatsInd">Match 
+              Results (Indiv.)</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=match_editorials&amp;d3=archive">Match 
+              Editorials</A> </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=sponsorship">Sponsorship</A> 
+            </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_hs_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_hs_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=index">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=faqIndex">FAQs</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=sampleProblems">Sample 
+              Problems</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=ratings">Rating 
+              System</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_long_contests')" 
+          href="javascript:void(0)">Marathon Matches</A> 
+          <UL id=m_long_contests>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewActiveContests">Compete</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewPractice&amp;rt=14">Practice</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=intel_overview">Intel 
+            Multi-Threading Competition Series</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewActiveContests&amp;rt=15">Intel 
+            Active Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewPractice&amp;rt=16">Intel 
+            Practice</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewQueue">Queue 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=match_editorials&amp;d2=archive">Match 
+            Editorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=instructions">Support 
+            / FAQs</A> </LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_tournaments')" 
+          href="javascript:void(0)">Tournaments</A> 
+          <UL id=m_tournaments>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tournaments&amp;d2=home">TopCoder</A> 
+            </LI>
+            <LI><A href="http://www.topcoder.com/pl/">Powered by TopCoder</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=CRPFStatic&amp;d1=crpf&amp;d2=crpf_overview">Charity</A> 
+            </LI></UL></LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=digital_run&amp;d2=description">The 
+          Digital Run</A> </LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_edu_content')" 
+          href="javascript:void(0)">Educational Content</A> 
+          <UL id=m_edu_content>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=education&amp;d2=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=alg_index">Algorithm 
+            Tutorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=comp_index">Component 
+            Tutorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=features&amp;d2=archive">Features</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=writeForTC">Write 
+            for TopCoder</A> </LI></UL></LI></UL></LI>
+        <LI><A href="http://forums.topcoder.com/">Forums</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?module=Static&amp;d1=calendar&amp;d2=thisMonth">Event 
+        Calendar</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+        Room</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?&amp;module=SurveyList">Surveys</A> 
+        </LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_my_tc')" 
+        href="javascript:void(0)">My TopCoder</A> 
+        <UL id=m_my_tc>
+          <LI><A href="http://www.topcoder.com/reg/?nrg=false">Update My 
+          Profile</A> </LI>
+          <LI><A href="http://www.topcoder.com/tc?module=ViewReferrals">Member 
+          Referrals</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/PactsMemberServlet?t=affidavit&amp;c=affidavit_history">Affidavits 
+          / Payments</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=card&amp;d2=description">Cards 
+          / Badges</A> </LI></UL></LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_about_tc')" 
+        href="javascript:void(0)">About TopCoder</A> 
+        <UL id=m_about_tc>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index">Overview</A> 
+          </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus">Contact 
+          Us</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=whyjoin">Why 
+          Join TopCoder?</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=jobs">Working 
+          at TopCoder</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=management">Management 
+          Team</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms">Terms, 
+          Revisions</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy">Privacy 
+          Policy</A> </LI></UL></LI></UL>
+      <DIV id=navbarSearch><B>Member Search:</B> 
+      <FORM class=noSpace name=simpleSearchForm 
+      action=http://www.topcoder.com/tc method=get><INPUT class=noSpace 
+      type=hidden value=SimpleSearch name=module> <INPUT class=noSpace 
+      onblur="javascript:&#10;         if (document.simpleSearchForm.ha.value == '')&#10;            document.simpleSearchForm.ha.value = 'Handle:';" 
+      onfocus="javascript:&#10;         if (document.simpleSearchForm.ha.value=='Handle:')&#10;            document.simpleSearchForm.ha.value = '';" 
+      maxLength=15 size=12 value=Handle: name=ha> <A class=gMetal 
+      href="javascript:void%20document.simpleSearchForm.submit();">Go</A><BR><A 
+      class=gMetal 
+      href="http://www.topcoder.com/tc?module=ViewAdvanced">Advanced Search</A> 
+      </FORM></DIV></DIV>
+      <DIV 
+      style="CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 23px; PADDING-TOP: 0px"><IMG 
+      alt="" src="Roxor_sol1_files/leftnav_bottom.gif"></DIV></TD>
+    <TD vAlign=top width=10><IMG height=1 src="Roxor_sol1_files/clear.gif" 
+      width=10 border=0></TD>
+    <TD class=bodyText vAlign=top width="100%"><IMG height=1 
+      src="Roxor_sol1_files/clear.gif" width=240 vspace=5 border=0><BR><!-- BEGIN BODY -->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=bottom align=left width=11 height=26><IMG height=26 
+            src="Roxor_sol1_files/steelblue_top_left1.gif" width=11 border=0></TD>
+          <TD vAlign=bottom align=left width=180><IMG height=26 
+            src="Roxor_sol1_files/header_statistics.gif" width=180 border=0></TD>
+          <TD class=bodyTextBold vAlign=center width="100%">&nbsp;<SPAN 
+            class=bodySubhead>&nbsp;&nbsp;Problem Statistics&nbsp;&nbsp;</SPAN> 
+          </TD>
+          <TD vAlign=top align=right width=10><IMG height=26 alt="" 
+            src="Roxor_sol1_files/clear.gif" width=10 
+      border=0></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=10 width="100%" bgColor=#001b35 
+        border=0><TBODY>
+        <TR>
+          <TD vAlign=top width="100%"><IMG height=1 alt="" 
+            src="Roxor_sol1_files/clear.gif" width=240 border=0><BR>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD class=statText colSpan=4><IMG height=10 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statText colSpan=4><IMG height=8 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 
+              border=0></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#001b35 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD colSpan=7><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=5 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statTextBig 
+                background=Roxor_sol1_files/steel_gray_bg.gif colSpan=7 
+                height=18>&nbsp;Problem Statistics for Single Round Match 
+                  216&nbsp;&gt;&nbsp;Round 1&nbsp;&gt;&nbsp;Room 
+                  6&nbsp;&gt;&nbsp;ivan_metelsky </TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif 
+                  height=18>Class Name</TD>
+                <TD class=statText vAlign=center align=middle 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif>Method Name</TD>
+                <TD class=statText vAlign=center align=middle 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif>Difficulty</TD>
+                <TD class=statText vAlign=center align=middle 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif>Status</TD>
+                <TD class=statText vAlign=center align=middle 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif>Points</TD>
+                <TD vAlign=top width=10 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 
+              border=0></TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" height=18><A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=problem_solution&amp;rd=5862&amp;rm=&amp;cr=10481120&amp;pm=2984">RockStar</A> 
+                </TD>
+                <TD class=statText vAlign=center align=middle>getNumSongs</TD>
+                <TD class=statText vAlign=center align=middle>Level One</TD>
+                <TD class=statText vAlign=center align=middle>Passed System 
+                  Test</TD>
+                <TD class=statText vAlign=center align=right>226,03</TD>
+                <TD vAlign=top width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" height=18><A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=problem_solution&amp;rd=5862&amp;rm=&amp;cr=10481120&amp;pm=2986">Refactoring</A> 
+                </TD>
+                <TD class=statText vAlign=center align=middle>refactor</TD>
+                <TD class=statText vAlign=center align=middle>Level Two</TD>
+                <TD class=statText vAlign=center align=middle>Passed System 
+                  Test</TD>
+                <TD class=statText vAlign=center align=right>334,25</TD>
+                <TD vAlign=top width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" height=18><SPAN 
+                  class=coderBrackets>[&nbsp;</SPAN><SPAN 
+                  class=statText>Roxor</SPAN><SPAN 
+                  class=coderBrackets>&nbsp;]</SPAN> </TD>
+                <TD class=statText vAlign=center align=middle>play</TD>
+                <TD class=statText vAlign=center align=middle>Level Three</TD>
+                <TD class=statText vAlign=center align=middle>Passed System 
+                  Test</TD>
+                <TD class=statText vAlign=center align=right>630,11</TD>
+                <TD vAlign=top width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=3 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statText background=Roxor_sol1_files/steel_blue_bg.gif 
+                colSpan=7><IMG height=5 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statText colSpan=7><IMG height=16 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statText vAlign=center align=middle colSpan=7><A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=problem_statement&amp;pm=2987&amp;rd=5862&amp;rm=&amp;cr=10481120">View&nbsp;Roxor&nbsp; 
+                  Problem Statement</A> </TD></TR>
+              <TR>
+                <TD class=problemText vAlign=center align=left 
+                  colSpan=7>import&nbsp;java.util.*; 
+                  <BR>public&nbsp;class&nbsp;Roxor&nbsp;{ 
+                  <BR>&nbsp;&nbsp;int[]&nbsp;f&nbsp;=&nbsp;new&nbsp;int[16]; 
+                  <BR><BR>&nbsp;&nbsp;public&nbsp;boolean&nbsp;canwin(int[]&nbsp;piles)&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;l&nbsp;=&nbsp;piles.length; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;s&nbsp;=&nbsp;0; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;i=0;&nbsp;i&lt;l;&nbsp;i++)&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(piles[i]&nbsp;%&nbsp;2&nbsp;==&nbsp;1)&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s&nbsp;=&nbsp;s&nbsp;^&nbsp;f[l-i-1]; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;} 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(s&nbsp;!=&nbsp;0)&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;true; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;false; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;} <BR>&nbsp;&nbsp;} 
+                  <BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;int[]&nbsp;play(int[]&nbsp;piles)&nbsp;{ 
+                  <BR>&nbsp;&nbsp;f[0]&nbsp;=&nbsp;0; 
+                  <BR>&nbsp;&nbsp;for&nbsp;(int&nbsp;i=1;&nbsp;i&lt;=15;&nbsp;i++)&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;boolean[]&nbsp;used&nbsp;=&nbsp;new&nbsp;boolean[100]; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;Arrays.fill(used,&nbsp;false); 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;j=0;&nbsp;j&lt;i;&nbsp;j++)&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;k=0;&nbsp;k&lt;i;&nbsp;k++)&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;used[f[j]^f[k]]&nbsp;=&nbsp;true; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;} 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;f[i]&nbsp;=&nbsp;0; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;(used[f[i]])&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f[i]++; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;} <BR>&nbsp;&nbsp;} 
+                  <BR>&nbsp;&nbsp;if&nbsp;(!canwin(piles))&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;int[]&nbsp;res&nbsp;=&nbsp;new&nbsp;int[0]; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;res; 
+                  <BR>&nbsp;&nbsp;}&nbsp;else&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;i=0;&nbsp;i+1&lt;piles.length;&nbsp;i++)&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(piles[i]&nbsp;&gt;&nbsp;0)&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;j=i+1;&nbsp;j&lt;piles.length;&nbsp;j++)&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;k=j;&nbsp;k&lt;piles.length;&nbsp;k++)&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;piles[i]--;&nbsp;piles[j]++;&nbsp;piles[k]++; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!canwin(piles))&nbsp;{ 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[]&nbsp;res&nbsp;=&nbsp;new&nbsp;int[3]; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res[0]&nbsp;=&nbsp;i;&nbsp;res[1]&nbsp;=&nbsp;j;&nbsp;res[2]&nbsp;=&nbsp;k; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;res; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;piles[i]++;&nbsp;piles[j]--;&nbsp;piles[k]--; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp; 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;} <BR>&nbsp;&nbsp;} 
+                  <BR>&nbsp;&nbsp;int[]&nbsp;res&nbsp;=&nbsp;new&nbsp;int[0]; 
+                  <BR>&nbsp;&nbsp;return&nbsp;res; <BR>&nbsp;&nbsp;&nbsp;} 
+                  <BR><BR>} 
+                  <BR><BR><BR><BR>//&nbsp;Powered&nbsp;by&nbsp;FileEdit<BR>//&nbsp;Powered&nbsp;by&nbsp;CodeProcessor<BR></TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=5 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 
+              border=0></TD></TR></TBODY></TABLE><!-- Defenses --><!-- End Defense --><!-- System Testing -->
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#001b35 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD colSpan=9><IMG height=5 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statTextBig 
+                background=Roxor_sol1_files/steel_gray_bg.gif colSpan=9 
+                height=18>&nbsp;System Test Results</TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif height=18>Test 
+                  Arguments</TD>
+                <TD vAlign=center width=5 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText vAlign=center align=right 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif>Expected 
+                  Results</TD>
+                <TD vAlign=center width=5 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText vAlign=center align=right 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif>Success</TD>
+                <TD vAlign=center width=5 
+                background=Roxor_sol1_files/steel_bluebv_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{0, 0, 1, 0, 1, 100}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{2, 4, 5}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{1000, 1000, 
+                  1000, 1000, 1000}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{2, 1, 1, 1, 5}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 1}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{14, 301, 391, 
+                  410, 511, 681, 58, 259, 981, 81, 5, 42, 251, 401, 120}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{2, 5, 14}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{193, 584}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 1}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{895, 746, 858, 
+                  513, 14, 364, 165, 445}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 3, 6}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{0, 1, 531}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{1, 2, 2}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{607, 663, 352, 
+                  607, 802, 301, 726, 925, 142}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 1}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{862, 779, 996, 611, 266, 840, 
+                  375, 677}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 1}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{1, 275}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 1}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{691, 726, 205, 468, 949}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 2, 4}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{599, 734, 572, 
+                  151, 425, 517, 751, 168, 491, 699, 147, 141}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 7, 11}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{303, 70, 683, 877, 582, 177, 
+                  475, 503, 405, 568, 755, 475, 367, 35}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 12, 13}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{426, 949, 549, 
+                  471, 846, 456, 982, 739, 195}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 7, 8}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{397, 890, 994, 50, 194, 626, 
+                  197, 123, 743, 941, 336, 733}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 3, 7}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{600, 252, 1, 
+                  806, 210, 553, 0, 454, 686, 73, 201, 290, 232}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 4, 12}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{628, 504, 695, 189, 178, 457, 
+                  97, 94, 931, 894}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{1, 2, 5}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{769, 201, 604, 
+                  466, 634, 828}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 5}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{565, 184, 555, 242, 604, 584, 
+                  494, 740, 620, 804}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 2, 9}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{867, 614, 43, 
+                  976}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 2, 3}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{305, 108, 851, 154, 79, 640}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 3}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{448, 298, 501, 
+                  323, 313, 959, 725, 943, 65, 524, 956, 875, 322}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 2, 12}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{227, 919, 662}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 2}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{379, 793, 
+                382}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 2}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{606, 5, 100, 863, 747, 380, 
+                  552, 955, 176, 131, 951}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 1}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{329, 639, 847, 
+                  596, 853, 0, 707, 217, 168, 340}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 2, 9}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{660, 806, 611, 900, 630, 
+253}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{1, 3, 4}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{66, 573, 
+548}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{1, 2, 2}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{110, 134, 788, 789, 615}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 2}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{228, 229, 542, 
+                  53, 524, 94, 891}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 2, 6}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{125, 80, 58, 914, 432}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 1}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{534, 693, 259, 
+                  0, 954, 241, 255, 945, 890, 0, 601, 576, 222, 4, 82}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 13, 14}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{64, 662, 802, 685, 689, 777, 
+                  868, 706, 551, 58, 145}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{2, 8, 10}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{292, 367, 218, 
+                  240, 902, 902, 80, 171, 775, 210, 3, 114, 311, 38, 189}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 1}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{620, 939, 779, 656, 455}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 3, 4}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{150, 569, 942, 
+                  578, 255, 350, 795, 70, 590, 197, 644, 604, 441, 396}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 11}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{199, 875, 987, 895, 442, 708, 
+                  285, 407, 710, 896, 397, 308, 570}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 10}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{745, 739, 200, 
+                  680, 367, 109}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 4}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{517, 438, 90, 75, 355, 697, 
+                  394, 675, 198, 615, 543, 545, 974, 969}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 9, 13}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{679, 372, 49, 
+                  169, 310, 212, 484, 0, 507, 758, 349, 942}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 6}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{53, 863, 306, 26, 391, 0, 455, 
+                  936, 727, 808}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 2}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{595, 793, 590, 
+                  569, 672, 10, 341, 770, 869, 725, 893, 535, 780, 197}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 12, 13}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{953, 890, 185, 264, 732, 170, 
+                  480, 806, 124, 573, 762, 727, 15, 691}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 9}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{274, 838, 371, 
+                  232}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{2, 3, 3}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{204, 281, 769, 46, 0, 643, 414, 
+                  90, 699, 657}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{1, 3, 9}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{570, 465, 426, 
+                  486, 565, 778, 850, 864, 746, 765, 908, 521, 107, 823}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 6}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{0, 773, 89, 683, 154, 48, 
+18}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{1, 2, 3}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{53, 637, 21, 
+                  391, 781, 826, 634, 983, 214, 782, 480, 102, 755, 456, 998}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 2, 5}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{621, 688, 567, 548, 246, 492, 
+                  669, 623, 798, 988, 629, 591}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 4}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{489, 889, 182, 
+                  203, 941, 41, 34, 544, 61, 127, 50, 660, 315, 410}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 2, 13}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{678, 497, 802, 4, 375, 827, 
+                891}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 1}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{514, 737, 465, 
+                  112, 821, 108, 761, 416, 67, 211, 591}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 8, 10}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{580, 731, 669}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{1, 2, 2}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{378, 772, 170, 
+                  181, 195, 190}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{1, 2, 5}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{120, 46, 761, 1, 426, 461, 
+                749}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 5}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{92, 893, 59, 
+                  632, 756}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 3, 4}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{791, 552, 522, 704, 731}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 1}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{875, 305, 481, 
+                  651, 0, 756, 154, 670, 345}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{436, 635, 476, 79, 143, 917, 
+                  373, 46, 239, 256, 208}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 5, 10}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{874, 844, 40, 
+                  183, 449}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 2}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{623, 911, 730, 969}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 3}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{146, 284, 973, 
+                  716, 645, 735, 124, 375, 915, 32, 448, 0, 418, 919}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 9}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{754, 213, 771, 556, 851, 538, 
+                  869, 227, 371}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 7}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{561, 119, 898, 
+                  940, 849, 445, 634}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{423, 0, 139, 291, 561, 607, 
+                  422, 739, 516}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 7, 8}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{1, 333}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 1}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{767, 630, 682, 500, 265, 646, 
+                  263, 460, 351, 0, 626, 383, 288, 883}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 12}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{382, 10, 865, 
+                  699, 602, 559, 378, 937}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 1}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{608, 76, 305, 80, 304, 932, 
+                  216, 560, 250, 727, 231, 446, 574, 995, 0}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 12, 14}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{256, 116}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{959, 79, 279, 490, 924}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 1, 2}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{475, 951, 834, 
+                  801, 870, 939, 943, 127, 472, 26}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 6, 9}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{862, 14}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{797, 658, 781, 
+                  842}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 2, 3}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{23, 30, 715, 180, 182}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 2, 4}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{58, 358, 158, 
+                  131, 181, 249, 346, 664, 932, 105, 557, 895}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 4}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{822, 548, 450}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{982, 594, 131, 
+                  600, 355}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{0, 1, 3}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{691, 671, 237, 235, 484}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Roxor_sol1_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{570, 348, 290, 
+                  922, 806, 686}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>{}</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText align=right 
+                background=Roxor_sol1_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 background=Roxor_sol1_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="Roxor_sol1_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD background=Roxor_sol1_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{1000, 999, 1000, 999, 1000, 
+                  999, 1000, 999, 1000, 999, 1000, 999, 1000, 999, 1000}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>{0, 2, 5}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Roxor_sol1_files/clear.gif" width=1 
+              border=0></TD></TR></TBODY></TABLE><!-- End System Testing --></TD></TR>
+        <TR>
+          <TD width="100%"><IMG height=10 alt="" 
+            src="Roxor_sol1_files/clear.gif" width=1 
+      border=0></TD></TR></TBODY></TABLE>
+      <P><BR></P><!-- END BODY --></TD>
+    <TD width=10><IMG height=1 src="Roxor_sol1_files/clear.gif" width=10 
+      border=0></TD>
+    <TD vAlign=top width=180><IMG height=1 src="Roxor_sol1_files/clear.gif" 
+      width=180 border=0> <!-- Member Profiles, Search Pages, and Private Label Events Pages begins -->
+      <DIV class=rightColContent><BR><BR></DIV></TD><!-- Gutter -->
+    <TD width=10><IMG height=1 src="Roxor_sol1_files/clear.gif" width=10 
+      border=0></TD><!-- Gutter Ends --></TR></TBODY></TABLE><!-- Footer Include Begins -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><!-- TopCoder Links Begins -->
+  <TBODY>
+  <TR>
+    <TD class=footer width="100%"><A class=footerLinks 
+      href="http://www.topcoder.com/">Home</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A 
+      class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index">About 
+      TopCoder</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+      Room</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus">Contact 
+      Us</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy">Privacy</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+      <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms">Terms</A></TD></TR><!-- TopCoder Links Ends --><!-- Member Sites Begins -->
+  <TR>
+    <TD class=footer width="100%"><A class=footerLinks 
+      href="http://www.topcoder.com/tc">Developer 
+      Center</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/corp/?module=Static&amp;d1=corp&amp;d2=index">Corporate 
+      Services</A> <!-- Member Sites Ends -->
+  <TR>
+    <TD class=footerStripe height=4><IMG height=4 
+      src="C:\Documents and Settings\Samurai\Desktop\dp\Roxor_sol1_files\clear(1).gif" 
+      width=10 border=0></TD></TR>
+  <TR>
+    <TD class=copyright width="100%">Copyright © 2001-2006, TopCoder, Inc. All 
+      rights 
+reserved.</TD></TR></TBODY></TABLE><!-- Footer Include Ends --></BODY></HTML>

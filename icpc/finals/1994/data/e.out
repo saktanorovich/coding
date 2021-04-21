@@ -1,0 +1,3024 @@
+Data set 1
+Order: 17
+Error: 0
+Data set 2
+Order: 57 65
+Error: 0
+Data set 3
+Order: 33 9 13
+Error: 0
+Data set 4
+Order: 37 49 53 69
+Error: 0
+Data set 5
+Order: 13 13 77 41 41
+Error: 0
+Data set 6
+Order: 45 21 65 57 77 73
+Error: 0
+Data set 7
+Order: 57 25 29 41 73 33 69
+Error: 0
+Data set 8
+Order: 61 49 17 53 81 5 37 21
+Error: 0
+Data set 9
+Order: 9 9 5 29 53 69
+Error: 0
+Data set 10
+Order: 81 21
+Error: 127
+Data set 11
+Order: 37 21 53 17 49 81
+Error: 18
+Data set 12
+Order: 9 21 37 49 65 81
+Error: 8
+Data set 13
+Order: 61 17 33 49 69
+Error: 45
+Data set 14
+Order: 17 49 37
+Error: 19
+Data set 15
+Order: 21 5 77
+Error: 54
+Data set 16
+Order: 13 13 41 21 29 61 81
+Error: 0
+Data set 17
+Order: 29 13 5 17 37 49 81
+Error: 9
+Data set 18
+Order: 25 13 37 69 13
+Error: 32
+Data set 19
+Order: 37 49 49 57
+Error: 14
+Data set 20
+Order: 81 9 17 57 69 81 81
+Error: 110
+Data set 21
+Order: 13 33 45 41 69
+Error: 11
+Data set 22
+Order: 49
+Error: 20
+Data set 23
+Order: 5 21 45 21 77
+Error: 2
+Data set 24
+Order: 25 25 13 45 53
+Error: 0
+Data set 25
+Order: 13 77 77 57
+Error: 139
+Data set 26
+Order: 33 9
+Error: 215
+Data set 27
+Order: 37 41 53
+Error: 28
+Data set 28
+Order: 29 41 45 33 37 61
+Error: 57
+Data set 29
+Order: 69 33 37 37 45
+Error: 22
+Data set 30
+Order: 9 17 5
+Error: 14
+Data set 31
+Order: 17 21 41 41 25 41 65 73
+Error: 6
+Data set 32
+Order: 9 29 41 5 13 41 45 53
+Error: 0
+Data set 33
+Order: 33 73
+Error: 184
+Data set 34
+Order: 57
+Error: 31
+Data set 35
+Order: 53
+Error: 181
+Data set 36
+Order: 29
+Error: 0
+Data set 37
+Order: 25 73 73 77 81
+Error: 5
+Data set 38
+Order: 17 73 41
+Error: 152
+Data set 39
+Order: 13 13 33 45 49 53 57
+Error: 5
+Data set 40
+Order: 49 61
+Error: 38
+Data set 41
+Order: 9 25 69 13 49 69 77
+Error: 116
+Data set 42
+Order: 21 5 41 17 25 49 77
+Error: 1
+Data set 43
+Order: 13 13 13 25 57 77
+Error: 2
+Data set 44
+Order: 57 29 61 57 17 57 61
+Error: 81
+Data set 45
+Order: 69 65 17
+Error: 112
+Data set 46
+Order: 29
+Error: 15
+Data set 47
+Order: 45 5 49 65 69 77
+Error: 4
+Data set 48
+Order: 33 45 21 53
+Error: 0
+Data set 49
+Order: 17 53 77
+Error: 18
+Data set 50
+Order: 61 13 13 21 33 57 81
+Error: 22
+Data set 51
+Order: 13 17 9 21 13 17 37 53
+Error: 9
+Data set 52
+Order: 21 37 5 29 49 61 73 77
+Error: 19
+Data set 53
+Order: 41
+Error: 536
+Data set 54
+Order: 9 9 61 45 49 57 73
+Error: 73
+Data set 55
+Order: 17 69 13 73
+Error: 39
+Data set 56
+Order: 25 61 17 45 45 69
+Error: 56
+Data set 57
+Order: 57 37 13
+Error: 26
+Data set 58
+Order: 45 37 37 57 77 81
+Error: 46
+Data set 59
+Order: 57
+Error: 314
+Data set 60
+Order: 9 25 9 61 61 73 81
+Error: 17
+Data set 61
+Order: 21 45 17 49 49 53 73 73
+Error: 0
+Data set 62
+Order: 33 49 5 69
+Error: 108
+Data set 63
+Order: 41 9 53 77
+Error: 37
+Data set 64
+Order: 53 9 17 41 57 65 81
+Error: 6
+Data set 65
+Order: 41 77 57 57 65 65 65 73
+Error: 55
+Data set 66
+Order: 65 17 61 45 5 45
+Error: 91
+Data set 67
+Order: 49 37
+Error: 0
+Data set 68
+Order: 69 77 33
+Error: 102
+Data set 69
+Order: 13 21 81
+Error: 49
+Data set 70
+Order: 57 49 45 45 5 25
+Error: 75
+Data set 71
+Order: 13 21 81 29 41 45 49 81
+Error: 59
+Data set 72
+Order: 21 81 81
+Error: 52
+Data set 73
+Order: 41 45 33 33 57 65 65
+Error: 65
+Data set 74
+Order: 25 5 13
+Error: 339
+Data set 75
+Order: 21 57 53 17 61 73 73
+Error: 23
+Data set 76
+Order: 41 9 49 53 65 69 81
+Error: 56
+Data set 77
+Order: 37 61 45
+Error: 73
+Data set 78
+Order: 9 65 5
+Error: 0
+Data set 79
+Order: 53 61 25 69 77
+Error: 30
+Data set 80
+Order: 57 45 61 33 69 73 81
+Error: 66
+Data set 81
+Order: 69 5 17 65 81
+Error: 24
+Data set 82
+Order: 21 29 25 13 45 81
+Error: 3
+Data set 83
+Order: 81 33 37 61
+Error: 70
+Data set 84
+Order: 53 17 77
+Error: 104
+Data set 85
+Order: 81 57 53 17 5 73 73
+Error: 68
+Data set 86
+Order: 73 25 5 37 41 73
+Error: 34
+Data set 87
+Order: 29 53 69
+Error: 17
+Data set 88
+Order: 37 57 33 69
+Error: 0
+Data set 89
+Order: 13 41 29
+Error: 385
+Data set 90
+Order: 41 45 33 53 61 61 69
+Error: 0
+Data set 91
+Order: 17 25 9 13 21 49 69 69
+Error: 4
+Data set 92
+Order: 5
+Error: 80
+Data set 93
+Order: 17 45 69
+Error: 22
+Data set 94
+Order: 45 57 57 5 81
+Error: 107
+Data set 95
+Order: 33 49 5 29 41 49 53
+Error: 22
+Data set 96
+Order: 69 17 61 77
+Error: 26
+Data set 97
+Order: 17 53 41 41 45 45 53 73
+Error: 24
+Data set 98
+Order: 5 73 21 33 17
+Error: 124
+Data set 99
+Order: 65 37 13 77
+Error: 102
+Data set 100
+Order: 57 9 13 61 9 77 81
+Error: 114
+Data set 101
+Order: 29 5 45 57 61 69 77
+Error: 15
+Data set 102
+Order: 29 33 21 45 53 57 69 77
+Error: 0
+Data set 103
+Order: 41
+Error: 52
+Data set 104
+Order: 81 29 53 25 45 77
+Error: 76
+Data set 105
+Order: 5 37 17 9 25 45
+Error: 3
+Data set 106
+Order: 49 5 5 13 17 61 77
+Error: 26
+Data set 107
+Order: 33
+Error: 525
+Data set 108
+Order: 73
+Error: 241
+Data set 109
+Order: 53 9 13 17 45 21 77
+Error: 74
+Data set 110
+Order: 9
+Error: 8
+Data set 111
+Order: 29 5 33 45 69 73 81 81
+Error: 6
+Data set 112
+Order: 29 57 65 69 73 81
+Error: 53
+Data set 113
+Order: 69 13 25 61 9 33 45
+Error: 63
+Data set 114
+Order: 29 17 45 41 5 49 65
+Error: 16
+Data set 115
+Order: 69 21 69
+Error: 60
+Data set 116
+Order: 37 21 77
+Error: 10
+Data set 117
+Order: 41
+Error: 153
+Data set 118
+Order: 33
+Error: 434
+Data set 119
+Order: 65 9 33 57
+Error: 29
+Data set 120
+Order: 57 13
+Error: 0
+Data set 121
+Order: 49 9 45 69 81
+Error: 35
+Data set 122
+Order: 21 21 45 33 21 49 61 73
+Error: 10
+Data set 123
+Order: 65
+Error: 152
+Data set 124
+Order: 37
+Error: 622
+Data set 125
+Order: 17 21 49 53 57 65
+Error: 6
+Data set 126
+Order: 69
+Error: 269
+Data set 127
+Order: 33 21 69 81
+Error: 9
+Data set 128
+Order: 25 53 77
+Error: 4
+Data set 129
+Order: 21 9 33 33 45 77
+Error: 1
+Data set 130
+Order: 57 81 33 53
+Error: 152
+Data set 131
+Order: 69 9 13 49 33 37 37
+Error: 53
+Data set 132
+Order: 29
+Error: 716
+Data set 133
+Order: 37
+Error: 100
+Data set 134
+Order: 77 21 61
+Error: 61
+Data set 135
+Order: 49 37 9 25 41 45 73
+Error: 59
+Data set 136
+Order: 9 25 13 33 53 69 77
+Error: 39
+Data set 137
+Order: 65 21
+Error: 0
+Data set 138
+Order: 13 25 21 25 41 49 53
+Error: 6
+Data set 139
+Order: 41 9 21 37 61 69
+Error: 45
+Data set 140
+Order: 57 69 33 65 77
+Error: 87
+Data set 141
+Order: 17 57 69 65 65 73 77 81
+Error: 100
+Data set 142
+Order: 33 33 53 81 81
+Error: 28
+Data set 143
+Order: 29 13 37 37 37 49 73
+Error: 3
+Data set 144
+Order: 33 45 33
+Error: 44
+Data set 145
+Order: 13 29 77 25 81 81
+Error: 50
+Data set 146
+Order: 13 49 29 21 53 53 81
+Error: 49
+Data set 147
+Order: 65 13 61 61 61 69 81
+Error: 22
+Data set 148
+Order: 17 17 65
+Error: 6
+Data set 149
+Order: 69 29 37 41 5
+Error: 55
+Data set 150
+Order: 21 29 9 37 73 77
+Error: 0
+Data set 151
+Order: 29 29 41 45 57 65 73 81
+Error: 9
+Data set 152
+Order: 29 53 17 57 61
+Error: 0
+Data set 153
+Order: 17 29 73 61 17
+Error: 59
+Data set 154
+Order: 37 45 33 61 69 81
+Error: 0
+Data set 155
+Order: 29 49
+Error: 5
+Data set 156
+Order: 73
+Error: 259
+Data set 157
+Order: 17 9 61
+Error: 0
+Data set 158
+Order: 13 13 21 25 73 77 81
+Error: 9
+Data set 159
+Order: 25 81 41 53 57 61 69
+Error: 75
+Data set 160
+Order: 45 25 21 57 73 77
+Error: 7
+Data set 161
+Order: 53
+Error: 0
+Data set 162
+Order: 49 29 21 33 53 57 61 73
+Error: 22
+Data set 163
+Order: 49 5 33
+Error: 27
+Data set 164
+Order: 5 33 45 81 33
+Error: 69
+Data set 165
+Order: 13 25 37 65
+Error: 26
+Data set 166
+Order: 81 61 45 5
+Error: 113
+Data set 167
+Order: 17 37 13 37 25
+Error: 252
+Data set 168
+Order: 17 17 13 29 69 73 77 81
+Error: 5
+Data set 169
+Order: 37 45 5 9 65 73 77
+Error: 78
+Data set 170
+Order: 77 5 5 5 61
+Error: 212
+Data set 171
+Order: 69 65 41 41 69 77 77
+Error: 68
+Data set 172
+Order: 17 73 41 9 33 69 81
+Error: 60
+Data set 173
+Order: 37 25 37 45 53 53 73 73
+Error: 12
+Data set 174
+Order: 53 45 17 21 29 37 41 49
+Error: 50
+Data set 175
+Order: 29 5
+Error: 236
+Data set 176
+Order: 57
+Error: 41
+Data set 177
+Order: 9 13 17 29 53 77 77 81
+Error: 2
+Data set 178
+Order: 33 61 33
+Error: 53
+Data set 179
+Order: 57 73 41 81
+Error: 98
+Data set 180
+Order: 13 25
+Error: 275
+Data set 181
+Order: 21 13 45 49 73
+Error: 1
+Data set 182
+Order: 5 9 41 65 41 53 57 73
+Error: 85
+Data set 183
+Order: 81
+Error: 126
+Data set 184
+Order: 69 5 73 77
+Error: 25
+Data set 185
+Order: 29 41 9 25 37 69
+Error: 15
+Data set 186
+Order: 45 17 9 29 41 61
+Error: 16
+Data set 187
+Order: 53
+Error: 123
+Data set 188
+Order: 49 53 13 13
+Error: 136
+Data set 189
+Order: 77
+Error: 0
+Data set 190
+Order: 37 17 41 21 49 65 69 73
+Error: 15
+Data set 191
+Order: 41 41 5 81
+Error: 0
+Data set 192
+Order: 57 33 37 49 53 73
+Error: 78
+Data set 193
+Order: 17 33 17 37 49 49 53 69
+Error: 0
+Data set 194
+Order: 21 53 49 69
+Error: 16
+Data set 195
+Order: 17
+Error: 276
+Data set 196
+Order: 37 9 49
+Error: 223
+Data set 197
+Order: 21 45 5 9 53 57 61
+Error: 15
+Data set 198
+Order: 5 5 9 13 25 41 69 73
+Error: 0
+Data set 199
+Order: 33 17 5 5 41 65
+Error: 2
+Data set 200
+Order: 53 25 53
+Error: 65
+Data set 201
+Order: 17 73
+Error: 122
+Data set 202
+Order: 13 33 37 57 73 77
+Error: 5
+Data set 203
+Order: 49 25 53 29 53 49 65
+Error: 51
+Data set 204
+Order: 13 25 61 17 9 77 77
+Error: 54
+Data set 205
+Order: 41
+Error: 743
+Data set 206
+Order: 9
+Error: 242
+Data set 207
+Order: 29 77
+Error: 121
+Data set 208
+Order: 21 21 25 33 73
+Error: 13
+Data set 209
+Order: 9 5 5 33 53 73
+Error: 1
+Data set 210
+Order: 37 17 29
+Error: 4
+Data set 211
+Order: 53 69 29 73
+Error: 0
+Data set 212
+Order: 17
+Error: 252
+Data set 213
+Order: 45 29 25 37 49 73
+Error: 26
+Data set 214
+Order: 37 45 5 49 57 81
+Error: 0
+Data set 215
+Order: 25 45 5 9 9 17 81
+Error: 14
+Data set 216
+Order: 17 17 81
+Error: 87
+Data set 217
+Order: 41 21
+Error: 351
+Data set 218
+Order: 33
+Error: 165
+Data set 219
+Order: 41 53
+Error: 56
+Data set 220
+Order: 69 81 25 21 77 77
+Error: 73
+Data set 221
+Order: 77 65 25
+Error: 282
+Data set 222
+Order: 29 73
+Error: 337
+Data set 223
+Order: 9 17 73 45 9 33 37
+Error: 84
+Data set 224
+Order: 9 9 81 41 41 73
+Error: 58
+Data set 225
+Order: 21 41 41 49 81
+Error: 1
+Data set 226
+Order: 37 29 13 77
+Error: 61
+Data set 227
+Order: 5 5 41 29 49 65 73
+Error: 39
+Data set 228
+Order: 21 61
+Error: 1
+Data set 229
+Order: 49 33 81 33 9 21 49 81
+Error: 73
+Data set 230
+Order: 57 77 77
+Error: 111
+Data set 231
+Order: 41 73
+Error: 64
+Data set 232
+Order: 49 25 13 21 17 17 41 57
+Error: 6
+Data set 233
+Order: 53 37
+Error: 93
+Data set 234
+Order: 77 41 13 53 37 21 13 81
+Error: 52
+Data set 235
+Order: 29 21 25 57 13 25
+Error: 22
+Data set 236
+Order: 29 77 49 65 73
+Error: 106
+Data set 237
+Order: 5 77
+Error: 14
+Data set 238
+Order: 69 25 33 57 77
+Error: 37
+Data set 239
+Order: 69 77 17 77
+Error: 0
+Data set 240
+Order: 37 13 9 9 57 77 77
+Error: 10
+Data set 241
+Order: 25 25
+Error: 180
+Data set 242
+Order: 41 17
+Error: 460
+Data set 243
+Order: 53 9 17
+Error: 211
+Data set 244
+Order: 33
+Error: 4
+Data set 245
+Order: 53 57 69 81
+Error: 33
+Data set 246
+Order: 5 13 17 57 61 65 65
+Error: 2
+Data set 247
+Order: 49 41 49 61 73 81
+Error: 29
+Data set 248
+Order: 9 21 21 25 29 41 69
+Error: 12
+Data set 249
+Order: 5 45 9 49 49 57
+Error: 22
+Data set 250
+Order: 5 49 45 37 21 21 73 81
+Error: 61
+Data set 251
+Order: 41 5 5 41 41
+Error: 262
+Data set 252
+Order: 9 29 17 45 69 61 77
+Error: 90
+Data set 253
+Order: 9 25 21 65 77
+Error: 9
+Data set 254
+Order: 9 25 9 81 65
+Error: 107
+Data set 255
+Order: 37 41 17 69
+Error: 0
+Data set 256
+Order: 13 53 25 61
+Error: 21
+Data set 257
+Order: 29
+Error: 902
+Data set 258
+Order: 41 17 37 61 65
+Error: 3
+Data set 259
+Order: 25 33 29 17
+Error: 97
+Data set 260
+Order: 9 9 5 21 37 61 65 69
+Error: 0
+Data set 261
+Order: 49 45 45 69
+Error: 28
+Data set 262
+Order: 25 29 5 29 61
+Error: 0
+Data set 263
+Order: 33 17 13 73
+Error: 54
+Data set 264
+Order: 61 13
+Error: 63
+Data set 265
+Order: 53 21 49 69
+Error: 33
+Data set 266
+Order: 25 29 25 37 45 45
+Error: 0
+Data set 267
+Order: 25
+Error: 440
+Data set 268
+Order: 49 33 53 57
+Error: 22
+Data set 269
+Order: 37 65 29 9 73
+Error: 26
+Data set 270
+Order: 53
+Error: 47
+Data set 271
+Order: 69 29 17 41 41 45 77
+Error: 34
+Data set 272
+Order: 5 5 21 13 17 25 69 81
+Error: 1
+Data set 273
+Order: 5 81
+Error: 221
+Data set 274
+Order: 21 73 29 45 57
+Error: 56
+Data set 275
+Order: 21 41 57 53 13 73 77 81
+Error: 69
+Data set 276
+Order: 25 29 33 25 53 69 73 81
+Error: 10
+Data set 277
+Order: 41 77 25
+Error: 70
+Data set 278
+Order: 77 77
+Error: 83
+Data set 279
+Order: 29
+Error: 477
+Data set 280
+Order: 73 77
+Error: 81
+Data set 281
+Order: 33 37 37 13 33 45 57 77
+Error: 38
+Data set 282
+Order: 73 37 9 13
+Error: 47
+Data set 283
+Order: 49 21 29 49
+Error: 34
+Data set 284
+Order: 69 33 69 81 81
+Error: 49
+Data set 285
+Order: 33 37 37 37 69
+Error: 35
+Data set 286
+Order: 77 81 21
+Error: 0
+Data set 287
+Order: 21 25 73 37 41
+Error: 92
+Data set 288
+Order: 45 33 13 41 49 69
+Error: 17
+Data set 289
+Order: 77 49 13
+Error: 124
+Data set 290
+Order: 5 81
+Error: 0
+Data set 291
+Order: 53
+Error: 382
+Data set 292
+Order: 41 25 21 37 37 37 65 81
+Error: 12
+Data set 293
+Order: 57 5 13 65 69 81
+Error: 16
+Data set 294
+Order: 33
+Error: 37
+Data set 295
+Order: 61 53 21 13 45 77 77 81
+Error: 48
+Data set 296
+Order: 73 5
+Error: 63
+Data set 297
+Order: 5 21 65 37
+Error: 56
+Data set 298
+Order: 17 21 49 53 57 61
+Error: 1
+Data set 299
+Order: 53 37 37
+Error: 22
+Data set 300
+Order: 25 53 41 61 5
+Error: 96
+Data set 301
+Order: 21 33 45 45 45 57 69 73
+Error: 13
+Data set 302
+Order: 37 33 53 61
+Error: 1
+Data set 303
+Order: 21 81 5 37 61 65
+Error: 67
+Data set 304
+Order: 37 69 21 81
+Error: 0
+Data set 305
+Order: 5 17 17 13 17 9 49 81
+Error: 5
+Data set 306
+Order: 5 17 17 37 57
+Error: 13
+Data set 307
+Order: 9 13 69 9 41 53 77
+Error: 33
+Data set 308
+Order: 69 77
+Error: 66
+Data set 309
+Order: 13 29 17 9
+Error: 83
+Data set 310
+Order: 57 25 29 69 73 81
+Error: 36
+Data set 311
+Order: 29
+Error: 165
+Data set 312
+Order: 9 61 81
+Error: 8
+Data set 313
+Order: 77 9 21
+Error: 71
+Data set 314
+Order: 21 21 25 33 37 41 61 77
+Error: 8
+Data set 315
+Order: 53 77 69 5
+Error: 149
+Data set 316
+Order: 5 9 33 49 69
+Error: 25
+Data set 317
+Order: 37 45 13 77
+Error: 22
+Data set 318
+Order: 9 5 33 53 61 65 69 73
+Error: 13
+Data set 319
+Order: 37 25 57
+Error: 89
+Data set 320
+Order: 33 33 69 5
+Error: 31
+Data set 321
+Order: 13 49 61 61
+Error: 19
+Data set 322
+Order: 17 17 33 41 65 77
+Error: 1
+Data set 323
+Order: 9 33 5 13 21 49 53 65
+Error: 2
+Data set 324
+Order: 41 17 73
+Error: 6
+Data set 325
+Order: 25 29 5 77
+Error: 7
+Data set 326
+Order: 9 9 41 33 29 29 5 9
+Error: 53
+Data set 327
+Order: 37 41 33 41 41 49 69 73
+Error: 0
+Data set 328
+Order: 33 45 17 61 73
+Error: 0
+Data set 329
+Order: 37
+Error: 379
+Data set 330
+Order: 9 29 5 45 57 61
+Error: 0
+Data set 331
+Order: 45
+Error: 378
+Data set 332
+Order: 57 77 45
+Error: 0
+Data set 333
+Order: 45 49 41 53 61
+Error: 0
+Data set 334
+Order: 5 17 53 65 69 69 81 81
+Error: 42
+Data set 335
+Order: 33 77 33 77 9 45 25 61
+Error: 98
+Data set 336
+Order: 73
+Error: 503
+Data set 337
+Order: 57 57 29 61
+Error: 0
+Data set 338
+Order: 81 29
+Error: 106
+Data set 339
+Order: 41 13 45 65 81
+Error: 27
+Data set 340
+Order: 45 49 21 57
+Error: 0
+Data set 341
+Order: 65 73
+Error: 48
+Data set 342
+Order: 13
+Error: 96
+Data set 343
+Order: 41 29
+Error: 17
+Data set 344
+Order: 81 69 77 13
+Error: 136
+Data set 345
+Order: 5 13 45 25 69 69
+Error: 23
+Data set 346
+Order: 53 33 21 5 13 53 61 73
+Error: 49
+Data set 347
+Order: 33
+Error: 47
+Data set 348
+Order: 53 9 37 57 65 69 77
+Error: 13
+Data set 349
+Order: 33 29 73
+Error: 16
+Data set 350
+Order: 41 41 53 13
+Error: 210
+Data set 351
+Order: 57 77
+Error: 11
+Data set 352
+Order: 29 13 49 21 29 29 33 61
+Error: 10
+Data set 353
+Order: 49
+Error: 184
+Data set 354
+Order: 9
+Error: 8
+Data set 355
+Order: 13 13 49 61 77 81
+Error: 9
+Data set 356
+Order: 17 73 33 5 5 77
+Error: 88
+Data set 357
+Order: 25 25 5
+Error: 44
+Data set 358
+Order: 29
+Error: 69
+Data set 359
+Order: 13
+Error: 40
+Data set 360
+Order: 45 17 21 61 49
+Error: 58
+Data set 361
+Order: 53 9 45 25 17 41 33 69
+Error: 31
+Data set 362
+Order: 5
+Error: 135
+Data set 363
+Order: 5 13 45 53 65 69 73
+Error: 24
+Data set 364
+Order: 13 53 73 21 5 53
+Error: 98
+Data set 365
+Order: 37 45
+Error: 22
+Data set 366
+Order: 81
+Error: 230
+Data set 367
+Order: 41 37 61 69 81
+Error: 57
+Data set 368
+Order: 5 73
+Error: 442
+Data set 369
+Order: 53
+Error: 35
+Data set 370
+Order: 29 69 5 49 77
+Error: 83
+Data set 371
+Order: 41 9 17
+Error: 645
+Data set 372
+Order: 77 25 25
+Error: 76
+Data set 373
+Order: 45 33 61 13 65
+Error: 47
+Data set 374
+Order: 13
+Error: 85
+Data set 375
+Order: 33 37 5 73 9 37 73
+Error: 67
+Data set 376
+Order: 69
+Error: 57
+Data set 377
+Order: 13
+Error: 433
+Data set 378
+Order: 9 17 13 25 53 5 37 29
+Error: 29
+Data set 379
+Order: 29 37 21 37 45 49
+Error: 0
+Data set 380
+Order: 53 21 25 57
+Error: 16
+Data set 381
+Order: 17 25 57 5 13 29 29 29
+Error: 30
+Data set 382
+Order: 65 21 41 57 65 73
+Error: 35
+Data set 383
+Order: 29 17
+Error: 279
+Data set 384
+Order: 21 37 37 53 65 65 65 77
+Error: 16
+Data set 385
+Order: 33 53
+Error: 450
+Data set 386
+Order: 25 45 21 49 53 73 81
+Error: 19
+Data set 387
+Order: 29 37 5
+Error: 0
+Data set 388
+Order: 25 49 17 17
+Error: 191
+Data set 389
+Order: 69 41 33 45 57 57 65
+Error: 78
+Data set 390
+Order: 21 33 33 45 49 49
+Error: 8
+Data set 391
+Order: 17 21 9 29 45 69 81
+Error: 0
+Data set 392
+Order: 29 73 41 61 37 61
+Error: 101
+Data set 393
+Order: 13 29 33 25 69 69
+Error: 35
+Data set 394
+Order: 29 29 49 49 9
+Error: 223
+Data set 395
+Order: 5
+Error: 254
+Data set 396
+Order: 21 41 9 73 81
+Error: 0
+Data set 397
+Order: 41 29 13
+Error: 20
+Data set 398
+Order: 17 81
+Error: 62
+Data set 399
+Order: 33 25 37
+Error: 48
+Data set 400
+Order: 41 21
+Error: 9
+Data set 401
+Order: 9
+Error: 633
+Data set 402
+Order: 29
+Error: 12
+Data set 403
+Order: 45 21 73
+Error: 43
+Data set 404
+Order: 13 13 53 69 73 73 81
+Error: 2
+Data set 405
+Order: 45 13 21 5 37 25
+Error: 23
+Data set 406
+Order: 25 25 61 5
+Error: 87
+Data set 407
+Order: 77 33 61
+Error: 125
+Data set 408
+Order: 53 21 41 45 49 49 61 73
+Error: 10
+Data set 409
+Order: 57
+Error: 165
+Data set 410
+Order: 61 13 13 9 29 57 65 69
+Error: 20
+Data set 411
+Order: 21 81 77
+Error: 152
+Data set 412
+Order: 29 57 17 21 65 69 69 77
+Error: 40
+Data set 413
+Order: 17 41 53
+Error: 20
+Data set 414
+Order: 13 29 5 5 81 33 65 81
+Error: 65
+Data set 415
+Order: 21 21 45 53 57 77
+Error: 19
+Data set 416
+Order: 37 25
+Error: 112
+Data set 417
+Order: 21 5 13 25 25 41 49
+Error: 2
+Data set 418
+Order: 53 61 49
+Error: 0
+Data set 419
+Order: 61 73 13 77
+Error: 0
+Data set 420
+Order: 25 53 57
+Error: 22
+Data set 421
+Order: 5 29 29 21 73
+Error: 2
+Data set 422
+Order: 61 9
+Error: 446
+Data set 423
+Order: 13 17 17 37 57 61 65 73
+Error: 19
+Data set 424
+Order: 49 21 25 33 69 81
+Error: 28
+Data set 425
+Order: 61
+Error: 83
+Data set 426
+Order: 9 57 61 13 13 53
+Error: 95
+Data set 427
+Order: 13 73 45 77
+Error: 53
+Data set 428
+Order: 29
+Error: 704
+Data set 429
+Order: 81 41
+Error: 122
+Data set 430
+Order: 73 69 37 53 57 61 61
+Error: 101
+Data set 431
+Order: 17 21 33 49 57 61 73 77
+Error: 13
+Data set 432
+Order: 17 69 69 81
+Error: 6
+Data set 433
+Order: 13 29 37 45 49 65 77 81
+Error: 12
+Data set 434
+Order: 29 49 49 17 61 17
+Error: 60
+Data set 435
+Order: 5 25 37 41 49 57 61 69
+Error: 2
+Data set 436
+Order: 33 33 33 53 53 61 77 81
+Error: 58
+Data set 437
+Order: 9 21 5 9 33 5 53 57
+Error: 2
+Data set 438
+Order: 9 25 5 45 53 81
+Error: 0
+Data set 439
+Order: 33 45 77 41 41 69
+Error: 48
+Data set 440
+Order: 57
+Error: 526
+Data set 441
+Order: 65
+Error: 269
+Data set 442
+Order: 61 81 33
+Error: 82
+Data set 443
+Order: 9 13 25 57 73
+Error: 5
+Data set 444
+Order: 81 41 49 61
+Error: 58
+Data set 445
+Order: 17 17 5 21 29 61 65 73
+Error: 0
+Data set 446
+Order: 21
+Error: 548
+Data set 447
+Order: 21 49
+Error: 67
+Data set 448
+Order: 21 61 61 5 53 37 57
+Error: 67
+Data set 449
+Order: 9 29 53 65 65 81
+Error: 13
+Data set 450
+Order: 37 53 53 57 61 61 65 81
+Error: 2
+Data set 451
+Order: 9 29 45 77
+Error: 2
+Data set 452
+Order: 49 9 21 57 77 77
+Error: 25
+Data set 453
+Order: 5 13 25 33 21 33 65
+Error: 8
+Data set 454
+Order: 25 25 37 53
+Error: 8
+Data set 455
+Order: 13 29 61 65 69 73
+Error: 2
+Data set 456
+Order: 13 17 13 21 49 65 77 81
+Error: 10
+Data set 457
+Order: 81
+Error: 0
+Data set 458
+Order: 57 65 13 81
+Error: 108
+Data set 459
+Order: 65 33 33 73 81
+Error: 62
+Data set 460
+Order: 37 65 25 65 69
+Error: 0
+Data set 461
+Order: 53
+Error: 53
+Data set 462
+Order: 13 21 5 65 81
+Error: 0
+Data set 463
+Order: 57 25
+Error: 404
+Data set 464
+Order: 65
+Error: 60
+Data set 465
+Order: 9 17 33 41 53 65 73 77
+Error: 3
+Data set 466
+Order: 25 73 5 5 33 57 77
+Error: 48
+Data set 467
+Order: 65 21
+Error: 367
+Data set 468
+Order: 45 21 21 37 73 73
+Error: 9
+Data set 469
+Order: 53
+Error: 8
+Data set 470
+Order: 9 37 65 5 33 53
+Error: 41
+Data set 471
+Order: 37 45
+Error: 8
+Data set 472
+Order: 9 33 13 5 49 49 65
+Error: 19
+Data set 473
+Order: 81 45 5 49 49 65 65
+Error: 56
+Data set 474
+Order: 25 65
+Error: 282
+Data set 475
+Order: 49 65 65 5 17 65 69
+Error: 60
+Data set 476
+Order: 33
+Error: 312
+Data set 477
+Order: 41 33 53
+Error: 3
+Data set 478
+Order: 69 5 9 73 25 81 57
+Error: 100
+Data set 479
+Order: 9 21 17 13 77
+Error: 125
+Data set 480
+Order: 25 25 29 5 33 37 41
+Error: 11
+Data set 481
+Order: 9 21 9 9 33 57 77
+Error: 1
+Data set 482
+Order: 45 53
+Error: 8
+Data set 483
+Order: 37 73 5 17 13 29
+Error: 61
+Data set 484
+Order: 53 25
+Error: 362
+Data set 485
+Order: 9 41
+Error: 654
+Data set 486
+Order: 25 53 5
+Error: 0
+Data set 487
+Order: 25 37 13 41 61
+Error: 0
+Data set 488
+Order: 9 29 33 57 65
+Error: 5
+Data set 489
+Order: 25 37 73 49 49 49 53 81
+Error: 47
+Data set 490
+Order: 5 25 17 69 73
+Error: 9
+Data set 491
+Order: 57 29 37 45 45 57 69 81
+Error: 22
+Data set 492
+Order: 57
+Error: 11
+Data set 493
+Order: 37 25 29 81 41 57 65
+Error: 51
+Data set 494
+Order: 17 33
+Error: 593
+Data set 495
+Order: 13 81
+Error: 5
+Data set 496
+Order: 33 61 13 37 17
+Error: 88
+Data set 497
+Order: 65 25 45 57 17 45 61 61
+Error: 65
+Data set 498
+Order: 73 13 65 49 73
+Error: 83
+Data set 499
+Order: 9
+Error: 93
+Data set 500
+Order: 65 81 61
+Error: 0
+Data set 501
+Order: 73
+Error: 0
+Data set 502
+Order: 5 13 65 49 65 69
+Error: 36
+Data set 503
+Order: 45 33 37 73 73
+Error: 2
+Data set 504
+Order: 33 69 21 53 77 81
+Error: 39
+Data set 505
+Order: 65 9 41 37 25 29
+Error: 58
+Data set 506
+Order: 45 65 5 33 65
+Error: 25
+Data set 507
+Order: 29 37 49 69
+Error: 42
+Data set 508
+Order: 29 45 77 13 17 41 73
+Error: 54
+Data set 509
+Order: 41 5 45 45 53 61 81
+Error: 6
+Data set 510
+Order: 77 77 65
+Error: 0
+Data set 511
+Order: 13 33 53 69
+Error: 4
+Data set 512
+Order: 9 69 45 29 41 53 61
+Error: 77
+Data set 513
+Order: 25 5 29 13 41 49 53 53
+Error: 54
+Data set 514
+Order: 21 37 65 77 41 49 65 73
+Error: 95
+Data set 515
+Order: 45 73 5 53 9 33 49 53
+Error: 52
+Data set 516
+Order: 5 45 33 73
+Error: 20
+Data set 517
+Order: 5 9 9 29 13 13 65
+Error: 20
+Data set 518
+Order: 57 17 57 45 49 53
+Error: 49
+Data set 519
+Order: 37 61 81
+Error: 20
+Data set 520
+Order: 21
+Error: 36
+Data set 521
+Order: 9 9 53 61 33
+Error: 66
+Data set 522
+Order: 53 49 65 65 69 77 81
+Error: 97
+Data set 523
+Order: 33 61 81 73
+Error: 127
+Data set 524
+Order: 53
+Error: 0
+Data set 525
+Order: 53 9 25 61 5 13 13 73
+Error: 47
+Data set 526
+Order: 49
+Error: 293
+Data set 527
+Order: 37 9 21 21 73 77 77
+Error: 2
+Data set 528
+Order: 41 45 17
+Error: 45
+Data set 529
+Order: 41 21 21 29 53 57
+Error: 18
+Data set 530
+Order: 69 13 45 9 45 33 65 81
+Error: 103
+Data set 531
+Order: 17 53 81 37 57
+Error: 88
+Data set 532
+Order: 17 29 37 37 5 21 77 81
+Error: 25
+Data set 533
+Order: 21 9 21 37 37 57 73
+Error: 17
+Data set 534
+Order: 17 5 13 25 53 61 81
+Error: 1
+Data set 535
+Order: 37 41 25 53 57 61 65
+Error: 0
+Data set 536
+Order: 5 17 29 49 61 69 73 73
+Error: 20
+Data set 537
+Order: 25 25 77
+Error: 398
+Data set 538
+Order: 69 61 17 61 37 65 81
+Error: 86
+Data set 539
+Order: 29
+Error: 673
+Data set 540
+Order: 5 69 25 61 61
+Error: 52
+Data set 541
+Order: 45 5 13 33 41 65 81
+Error: 1
+Data set 542
+Order: 65
+Error: 55
+Data set 543
+Order: 25
+Error: 5
+Data set 544
+Order: 9 45 65 5 29 61 57 61
+Error: 76
+Data set 545
+Order: 45 17 25 21 5 21 29 49
+Error: 10
+Data set 546
+Order: 45 69 49 29 61 65
+Error: 87
+Data set 547
+Order: 49
+Error: 0
+Data set 548
+Order: 49 41 77
+Error: 25
+Data set 549
+Order: 25 57 41 45 61
+Error: 10
+Data set 550
+Order: 81 53
+Error: 112
+Data set 551
+Order: 5
+Error: 144
+Data set 552
+Order: 21 21 69 21
+Error: 44
+Data set 553
+Order: 9 13 5 37 45 57
+Error: 0
+Data set 554
+Order: 69 29 53 57 65 73
+Error: 46
+Data set 555
+Order: 45 5 13 57 61 65
+Error: 2
+Data set 556
+Order: 29 53 61 61
+Error: 6
+Data set 557
+Order: 5 81
+Error: 47
+Data set 558
+Order: 5 13 21 25 37 41 41 81
+Error: 4
+Data set 559
+Order: 45 45
+Error: 14
+Data set 560
+Order: 29 9 21 41 57
+Error: 12
+Data set 561
+Order: 37 21
+Error: 4
+Data set 562
+Order: 5 21 25 9 25 53 53 77
+Error: 12
+Data set 563
+Order: 17 17 13 21 29 33 41 57
+Error: 0
+Data set 564
+Order: 69 69 9
+Error: 88
+Data set 565
+Order: 29 17 37 53 57 61 69 81
+Error: 57
+Data set 566
+Order: 45 25
+Error: 291
+Data set 567
+Order: 13 25 37 37
+Error: 398
+Data set 568
+Order: 5 21 25 65
+Error: 62
+Data set 569
+Order: 77
+Error: 68
+Data set 570
+Order: 17 41 49
+Error: 17
+Data set 571
+Order: 29 77 9 13 41 45
+Error: 91
+Data set 572
+Order: 33 5 45 53 69
+Error: 4
+Data set 573
+Order: 21 29 57 61 77 81
+Error: 6
+Data set 574
+Order: 25 41 9 21 49 57 57
+Error: 2
+Data set 575
+Order: 5 9 65 5 21
+Error: 36
+Data set 576
+Order: 13 29 53 13 65 69
+Error: 12
+Data set 577
+Order: 81
+Error: 439
+Data set 578
+Order: 77 29 53 13
+Error: 324
+Data set 579
+Order: 9 17 57 81
+Error: 15
+Data set 580
+Order: 33 29 73 41 41 69 77 81
+Error: 63
+Data set 581
+Order: 13 9
+Error: 0
+Data set 582
+Order: 45 73 73 77 81
+Error: 47
+Data set 583
+Order: 29 45 77 5 5
+Error: 67
+Data set 584
+Order: 37 57 13
+Error: 157
+Data set 585
+Order: 69 49 41
+Error: 65
+Data set 586
+Order: 69 77
+Error: 197
+Data set 587
+Order: 17 25 37 61 65 69 77
+Error: 8
+Data set 588
+Order: 9
+Error: 1074
+Data set 589
+Order: 69 77 65 13 17 5 77
+Error: 79
+Data set 590
+Order: 25 73 29
+Error: 26
+Data set 591
+Order: 57 37 29 53
+Error: 39
+Data set 592
+Order: 21 25 33 57 81
+Error: 17
+Data set 593
+Order: 9 37 13 21 61 61 77
+Error: 7
+Data set 594
+Order: 25 25 21 45 81
+Error: 0
+Data set 595
+Order: 25 65 9
+Error: 254
+Data set 596
+Order: 45 13 41 69
+Error: 2
+Data set 597
+Order: 9 81 25 45 53
+Error: 46
+Data set 598
+Order: 53 49
+Error: 126
+Data set 599
+Order: 33 41 5 5 9 49 57 61
+Error: 8
+Data set 600
+Order: 77 5 49 53 69
+Error: 79
+Data set 601
+Order: 13 77 9 49 37 57 61 69
+Error: 83
+Data set 602
+Order: 53
+Error: 0
+Data set 603
+Order: 65 33 13 57 57 81
+Error: 32
+Data set 604
+Order: 53 29 33 73
+Error: 42
+Data set 605
+Order: 77 45 9 5 13 25 77
+Error: 42
+Data set 606
+Order: 65 33 5 37 37 45 69
+Error: 35
+Data set 607
+Order: 29 57 37 5 9 37 73
+Error: 26
+Data set 608
+Order: 45 49 45 5 53 57 73
+Error: 39
+Data set 609
+Order: 49 17
+Error: 84
+Data set 610
+Order: 29 53 33 17 33 41
+Error: 40
+Data set 611
+Order: 33 25 29 45 57 73 77 81
+Error: 10
+Data set 612
+Order: 37 57 21 61 77 77
+Error: 0
+Data set 613
+Order: 37 41 65
+Error: 16
+Data set 614
+Order: 5 9 25 33 81 49
+Error: 93
+Data set 615
+Order: 13 49 29 29 65 73 81
+Error: 5
+Data set 616
+Order: 17 45 5 61 65
+Error: 0
+Data set 617
+Order: 61
+Error: 157
+Data set 618
+Order: 33 81 29 81
+Error: 0
+Data set 619
+Order: 25 29 21 45
+Error: 0
+Data set 620
+Order: 53 49 21
+Error: 180
+Data set 621
+Order: 5 21 17 29
+Error: 337
+Data set 622
+Order: 33 5 9 13 41 41 73 77
+Error: 7
+Data set 623
+Order: 13 37 69
+Error: 211
+Data set 624
+Order: 57 61 17 65 65 77
+Error: 0
+Data set 625
+Order: 61 53 25 9 73
+Error: 71
+Data set 626
+Order: 29 9
+Error: 20
+Data set 627
+Order: 49 41 81
+Error: 4
+Data set 628
+Order: 73 33
+Error: 0
+Data set 629
+Order: 17
+Error: 425
+Data set 630
+Order: 69 25 13 37 9 53 73
+Error: 66
+Data set 631
+Order: 81
+Error: 99
+Data set 632
+Order: 69 69
+Error: 123
+Data set 633
+Order: 13 37 9 25 41 41
+Error: 9
+Data set 634
+Order: 13 13 21 37 77
+Error: 5
+Data set 635
+Order: 9 21 69
+Error: 276
+Data set 636
+Order: 21 53 41 37 33 69 73
+Error: 49
+Data set 637
+Order: 9 41 53
+Error: 27
+Data set 638
+Order: 41 65 33
+Error: 0
+Data set 639
+Order: 41 17 41 21 13 57 61
+Error: 49
+Data set 640
+Order: 65 69 49
+Error: 0
+Data set 641
+Order: 41 45
+Error: 269
+Data set 642
+Order: 37 13 77
+Error: 81
+Data set 643
+Order: 21 29 53 61
+Error: 2
+Data set 644
+Order: 49 13 25 29 49 37 25 77
+Error: 50
+Data set 645
+Order: 45 49 33 21 57 49 69
+Error: 56
+Data set 646
+Order: 5
+Error: 308
+Data set 647
+Order: 13 37 61 65 73 77 81
+Error: 14
+Data set 648
+Order: 77 45 65
+Error: 84
+Data set 649
+Order: 53 17
+Error: 195
+Data set 650
+Order: 65 33 41 73 81
+Error: 23
+Data set 651
+Order: 37 61 49 25 33 57 69
+Error: 49
+Data set 652
+Order: 37 49 25 21 17 65 73 73
+Error: 33
+Data set 653
+Order: 49 21 37 49 57
+Error: 22
+Data set 654
+Order: 57 65
+Error: 222
+Data set 655
+Order: 61 29
+Error: 340
+Data set 656
+Order: 29 17
+Error: 14
+Data set 657
+Order: 41 25 25 69
+Error: 22
+Data set 658
+Order: 17 29 13 49 49
+Error: 0
+Data set 659
+Order: 33 65 45 45 45 73
+Error: 84
+Data set 660
+Order: 21 29 49 73 21 21
+Error: 73
+Data set 661
+Order: 21 25 5 33 41
+Error: 0
+Data set 662
+Order: 9 69
+Error: 0
+Data set 663
+Order: 65 37 69 17 37 41
+Error: 91
+Data set 664
+Order: 21 65 53 13 17 33 69
+Error: 55
+Data set 665
+Order: 25 77 21 37 41 53 57
+Error: 54
+Data set 666
+Order: 53 69 45
+Error: 90
+Data set 667
+Order: 65 5 49 21 61
+Error: 72
+Data set 668
+Order: 73 33
+Error: 53
+Data set 669
+Order: 81 57
+Error: 101
+Data set 670
+Order: 33 37 41 49
+Error: 8
+Data set 671
+Order: 29
+Error: 318
+Data set 672
+Order: 5 65
+Error: 67
+Data set 673
+Order: 45 45 81 37
+Error: 70
+Data set 674
+Order: 33 25
+Error: 456
+Data set 675
+Order: 17 41 45 45 53 69
+Error: 0
+Data set 676
+Order: 49 33 9 17 57
+Error: 12
+Data set 677
+Order: 57 41 45 69 73 73 81
+Error: 30
+Data set 678
+Order: 45 25 37 49 69
+Error: 22
+Data set 679
+Order: 5 21 53
+Error: 280
+Data set 680
+Order: 21 17 41 49 57 65 73 73
+Error: 8
+Data set 681
+Order: 61 5 21 41 45 69 81 81
+Error: 20
+Data set 682
+Order: 49 69 77
+Error: 158
+Data set 683
+Order: 13 29 41 5 45 69 73 77
+Error: 32
+Data set 684
+Order: 5 9 77 73 41 57 65 65
+Error: 99
+Data set 685
+Order: 5 13 41 41 49 57
+Error: 50
+Data set 686
+Order: 25 29 17 33 41 49 65
+Error: 0
+Data set 687
+Order: 37 49 17 9 73 73
+Error: 27
+Data set 688
+Order: 57 17
+Error: 406
+Data set 689
+Order: 33 33 61 77
+Error: 1
+Data set 690
+Order: 33 57 25 69 77
+Error: 0
+Data set 691
+Order: 17 29 53 25 53 57 81
+Error: 19
+Data set 692
+Order: 41 57 17 29 33 61 77
+Error: 32
+Data set 693
+Order: 53 61 25 13 45
+Error: 70
+Data set 694
+Order: 17 41
+Error: 534
+Data set 695
+Order: 65
+Error: 0
+Data set 696
+Order: 13 45
+Error: 508
+Data set 697
+Order: 9 13 57 57 65
+Error: 16
+Data set 698
+Order: 69
+Error: 55
+Data set 699
+Order: 33 41 57 13 57 61 65 73
+Error: 33
+Data set 700
+Order: 21 37 49 61 65 81
+Error: 20
+Data set 701
+Order: 17 21 9 29
+Error: 0
+Data set 702
+Order: 13 33 5 37 65 69 81
+Error: 0
+Data set 703
+Order: 61 49 13 65 9 61 69 81
+Error: 78
+Data set 704
+Order: 21 13 49 49
+Error: 23
+Data set 705
+Order: 17 21 49 77 53 53 61 65
+Error: 75
+Data set 706
+Order: 21 33 5 33
+Error: 0
+Data set 707
+Order: 17 17 9 37 41 61 65 69
+Error: 8
+Data set 708
+Order: 21 21
+Error: 149
+Data set 709
+Order: 29 69 41 45 49
+Error: 43
+Data set 710
+Order: 21 61 77
+Error: 129
+Data set 711
+Order: 73
+Error: 104
+Data set 712
+Order: 65 25 65 77
+Error: 31
+Data set 713
+Order: 13 33 53 5 61 81
+Error: 53
+Data set 714
+Order: 21 61 69
+Error: 10
+Data set 715
+Order: 61 73
+Error: 121
+Data set 716
+Order: 25 49 41 57
+Error: 33
+Data set 717
+Order: 13 21 49 81
+Error: 13
+Data set 718
+Order: 21 17 45 49 53 65
+Error: 5
+Data set 719
+Order: 81
+Error: 0
+Data set 720
+Order: 17
+Error: 317
+Data set 721
+Order: 73 25 33 57
+Error: 80
+Data set 722
+Order: 45 49 25 53 61 65 81
+Error: 0
+Data set 723
+Order: 41 9 25 29 65 73 81
+Error: 0
+Data set 724
+Order: 29 37 41 37 77 77 77
+Error: 64
+Data set 725
+Order: 77 29 57 65 69 69 81
+Error: 72
+Data set 726
+Order: 29 61 17 37 25 69 73
+Error: 98
+Data set 727
+Order: 69 5 57 13 25 69 77
+Error: 85
+Data set 728
+Order: 13 9
+Error: 691
+Data set 729
+Order: 49 77
+Error: 156
+Data set 730
+Order: 37 45 57 57
+Error: 14
+Data set 731
+Order: 29 29 21
+Error: 435
+Data set 732
+Order: 9
+Error: 0
+Data set 733
+Order: 73
+Error: 88
+Data set 734
+Order: 41 41 73 5 53 73
+Error: 76
+Data set 735
+Order: 5 33 5 25 13 65 81 81
+Error: 69
+Data set 736
+Order: 53
+Error: 117
+Data set 737
+Order: 61
+Error: 223
+Data set 738
+Order: 17 5
+Error: 778
+Data set 739
+Order: 33 33
+Error: 503
+Data set 740
+Order: 5 69
+Error: 83
+Data set 741
+Order: 33 21 49 13 49 9 77
+Error: 26
+Data set 742
+Order: 13 53 53
+Error: 105
+Data set 743
+Order: 37 61 17 17 45 49 53 73
+Error: 46
+Data set 744
+Order: 61 65 5
+Error: 110
+Data set 745
+Order: 17 33 37 81 29 25 73
+Error: 50
+Data set 746
+Order: 33 13 41 81
+Error: 7
+Data set 747
+Order: 13
+Error: 682
+Data set 748
+Order: 5 41 37 33 33 53 61 77
+Error: 7
+Data set 749
+Order: 21 53 17 77 77
+Error: 0
+Data set 750
+Order: 9 13 25 81
+Error: 2
+Data set 751
+Order: 13 41 65
+Error: 97
+Data set 752
+Order: 81 9 9 81
+Error: 55
+Data set 753
+Order: 45 53 73 13 25 53 65
+Error: 46
+Data set 754
+Order: 65 65 73
+Error: 38
+Data set 755
+Order: 65 21 57
+Error: 22
+Data set 756
+Order: 21 17 29 33 37 45 69
+Error: 2
+Data set 757
+Order: 33 65 29
+Error: 46
+Data set 758
+Order: 33 33 57 57 65 77
+Error: 31
+Data set 759
+Order: 9 17 33 33 37 45 49
+Error: 4
+Data set 760
+Order: 9 25 5 69
+Error: 0
+Data set 761
+Order: 33 17 61 61 65 65 65 81
+Error: 5
+Data set 762
+Order: 13
+Error: 14
+Data set 763
+Order: 5 69
+Error: 3
+Data set 764
+Order: 25 33
+Error: 351
+Data set 765
+Order: 33 21 33 9 37 45 73 73
+Error: 30
+Data set 766
+Order: 9 41 13 21 29 41 81
+Error: 3
+Data set 767
+Order: 29
+Error: 199
+Data set 768
+Order: 13 13 21 41 57 77
+Error: 13
+Data set 769
+Order: 37 9 29 45 73
+Error: 9
+Data set 770
+Order: 21 81 29 25
+Error: 166
+Data set 771
+Order: 5 49 29
+Error: 197
+Data set 772
+Order: 5
+Error: 912
+Data set 773
+Order: 73 73 17
+Error: 0
+Data set 774
+Order: 73
+Error: 182
+Data set 775
+Order: 17 65 69 81
+Error: 38
+Data set 776
+Order: 65 5 69
+Error: 141
+Data set 777
+Order: 37 49 5 13 61 65
+Error: 22
+Data set 778
+Order: 13 41 45 29
+Error: 32
+Data set 779
+Order: 5 25 45 9 53
+Error: 3
+Data set 780
+Order: 61 13 33 29
+Error: 158
+Data set 781
+Order: 45 41 13 69 73 25
+Error: 87
+Data set 782
+Order: 21 5 33 53 61 65
+Error: 2
+Data set 783
+Order: 77 37 41 41 49
+Error: 39
+Data set 784
+Order: 77 25 9 37 41 45 61 69
+Error: 93
+Data set 785
+Order: 69 53
+Error: 172
+Data set 786
+Order: 5 29 61
+Error: 130
+Data set 787
+Order: 5 33 81 21
+Error: 91
+Data set 788
+Order: 53 29 69
+Error: 49
+Data set 789
+Order: 9 9 17 33 73
+Error: 2
+Data set 790
+Order: 57
+Error: 488
+Data set 791
+Order: 25 77 13
+Error: 44
+Data set 792
+Order: 9 65 17 49 41 61 69 69
+Error: 61
+Data set 793
+Order: 21 25 61 13 69 81
+Error: 19
+Data set 794
+Order: 5 13 29 25 37 73
+Error: 2
+Data set 795
+Order: 41 5 25 73 17 17 5 65
+Error: 59
+Data set 796
+Order: 61
+Error: 623
+Data set 797
+Order: 57 41 17 17 29 45 65 65
+Error: 36
+Data set 798
+Order: 25 37 45 69 77
+Error: 53
+Data set 799
+Order: 9 49 57
+Error: 67
+Data set 800
+Order: 61 33 33 41 53 61 73 81
+Error: 32
+Data set 801
+Order: 65 13 17
+Error: 472
+Data set 802
+Order: 81
+Error: 137
+Data set 803
+Order: 21 13 29 49 45 65 69
+Error: 53
+Data set 804
+Order: 37 41 25 57 57 65 65 81
+Error: 0
+Data set 805
+Order: 33 49 21 49
+Error: 0
+Data set 806
+Order: 49 21 65 81
+Error: 29
+Data set 807
+Order: 37 13 45
+Error: 8
+Data set 808
+Order: 33 17 25 25 45 49 57 61
+Error: 17
+Data set 809
+Order: 41 9 13 13 17 17 69
+Error: 1
+Data set 810
+Order: 53
+Error: 38
+Data set 811
+Order: 13 17 5 21 65
+Error: 0
+Data set 812
+Order: 49 53 5 53 61 69
+Error: 67
+Data set 813
+Order: 25 5 9 61 25 65 77
+Error: 25
+Data set 814
+Order: 17 77 5 57 57
+Error: 84
+Data set 815
+Order: 5 29 77
+Error: 30
+Data set 816
+Order: 49 29 37 65 65
+Error: 6
+Data set 817
+Order: 9 37 37 53
+Error: 138
+Data set 818
+Order: 9 13 21 21
+Error: 1
+Data set 819
+Order: 49
+Error: 455
+Data set 820
+Order: 17
+Error: 68
+Data set 821
+Order: 25 5 41 49 73
+Error: 2
+Data set 822
+Order: 17
+Error: 24
+Data set 823
+Order: 73
+Error: 268
+Data set 824
+Order: 73 77 57 81
+Error: 0
+Data set 825
+Order: 45 57 13 57
+Error: 49
+Data set 826
+Order: 9 29
+Error: 56
+Data set 827
+Order: 5 61 49 21 65
+Error: 29
+Data set 828
+Order: 21 25 9 69 77
+Error: 0
+Data set 829
+Order: 9 9 21
+Error: 302
+Data set 830
+Order: 29
+Error: 0
+Data set 831
+Order: 45 9 25 37 41 61
+Error: 23
+Data set 832
+Order: 69
+Error: 60
+Data set 833
+Order: 9 41 9 45 49 57 81 81
+Error: 0
+Data set 834
+Order: 13 41 21 57 57
+Error: 75
+Data set 835
+Order: 37 17 17 33 33 57 73 77
+Error: 1
+Data set 836
+Order: 25
+Error: 922
+Data set 837
+Order: 17 25 61 69 73 73
+Error: 43
+Data set 838
+Order: 29 45 29 77
+Error: 0
+Data set 839
+Order: 41 9 33 53 57
+Error: 9
+Data set 840
+Order: 65 25
+Error: 62
+Data set 841
+Order: 9 49 53 33 57 57 69 73
+Error: 61
+Data set 842
+Order: 17 53 49 73
+Error: 60
+Data set 843
+Order: 49 37 29 57 61 69 77 81
+Error: 25
+Data set 844
+Order: 37 57 69
+Error: 39
+Data set 845
+Order: 5
+Error: 53
+Data set 846
+Order: 17 53 53
+Error: 46
+Data set 847
+Order: 41 5 9 5 9 69 73 81
+Error: 17
+Data set 848
+Order: 77 13 81
+Error: 99
+Data set 849
+Order: 41 5 5 57 61 77
+Error: 58
+Data set 850
+Order: 41 21 29 29 33 61 65
+Error: 0
+Data set 851
+Order: 13 69 73 81
+Error: 16
+Data set 852
+Order: 57 5 9 45
+Error: 31
+Data set 853
+Order: 53 17 33 37 45 65 81
+Error: 17
+Data set 854
+Order: 29 73 5 45 61 73
+Error: 41
+Data set 855
+Order: 33 21 25 61 77
+Error: 13
+Data set 856
+Order: 53
+Error: 183
+Data set 857
+Order: 53 61 25 65 73 73 77
+Error: 0
+Data set 858
+Order: 25 29
+Error: 166
+Data set 859
+Order: 73 73 57
+Error: 84
+Data set 860
+Order: 45 53 61 9
+Error: 69
+Data set 861
+Order: 17 17 29
+Error: 142
+Data set 862
+Order: 49 29 81 25 5 69
+Error: 56
+Data set 863
+Order: 49 45
+Error: 0
+Data set 864
+Order: 9 29 17 45 49 53 53 65
+Error: 3
+Data set 865
+Order: 53 21 77 81
+Error: 50
+Data set 866
+Order: 41 5
+Error: 0
+Data set 867
+Order: 81 29 53 49
+Error: 107
+Data set 868
+Order: 37 65 69 77
+Error: 1
+Data set 869
+Order: 45 17 13 29 77 81
+Error: 50
+Data set 870
+Order: 5 13 21 33 49 53
+Error: 2
+Data set 871
+Order: 45
+Error: 499
+Data set 872
+Order: 33
+Error: 99
+Data set 873
+Order: 5 21 21 9 29 73
+Error: 0
+Data set 874
+Order: 13 29 77 69 29
+Error: 128
+Data set 875
+Order: 25 29 41 65 69
+Error: 6
+Data set 876
+Order: 9 29 9 69
+Error: 0
+Data set 877
+Order: 5 13 25 17 41
+Error: 2
+Data set 878
+Order: 25 69
+Error: 48
+Data set 879
+Order: 41 69 73 5 5 9
+Error: 140
+Data set 880
+Order: 17 25 13 41 53 61 69
+Error: 0
+Data set 881
+Order: 41 33 9 57 33
+Error: 103
+Data set 882
+Order: 13 65 65 61
+Error: 88
+Data set 883
+Order: 33 33 13 69 69
+Error: 0
+Data set 884
+Order: 13 41 41
+Error: 75
+Data set 885
+Order: 41 73 81 57 9 17 21
+Error: 120
+Data set 886
+Order: 45 61 41 57
+Error: 197
+Data set 887
+Order: 49 49 13 13 29
+Error: 40
+Data set 888
+Order: 57
+Error: 293
+Data set 889
+Order: 33 5 45 49 61
+Error: 10
+Data set 890
+Order: 29 29 17 53 13 57
+Error: 35
+Data set 891
+Order: 69
+Error: 75
+Data set 892
+Order: 33 25 33 33 45 61 69 69
+Error: 15
+Data set 893
+Order: 37 45 13 49 77 77
+Error: 0
+Data set 894
+Order: 21
+Error: 0
+Data set 895
+Order: 5 9 33 5 25 21 29 13
+Error: 38
+Data set 896
+Order: 69 73 13 81
+Error: 0
+Data set 897
+Order: 5 57 49 65 69 77 77
+Error: 16
+Data set 898
+Order: 73 5 5 21 41 77
+Error: 56
+Data set 899
+Order: 45 41
+Error: 343
+Data set 900
+Order: 29 53 17 73
+Error: 13
+Data set 901
+Order: 77 49 45 13 21
+Error: 56
+Data set 902
+Order: 49 21 61 41 65 81
+Error: 88
+Data set 903
+Order: 9 41 17 49 57 81
+Error: 6
+Data set 904
+Order: 45 13 21 21 69
+Error: 10
+Data set 905
+Order: 81 25 73
+Error: 57
+Data set 906
+Order: 33 5 13
+Error: 66
+Data set 907
+Order: 57 13 61 69
+Error: 87
+Data set 908
+Order: 41
+Error: 168
+Data set 909
+Order: 37 77 41 9 57
+Error: 63
+Data set 910
+Order: 33 29 13 49 53
+Error: 2
+Data set 911
+Order: 41 17 29 33 33 69 73
+Error: 15
+Data set 912
+Order: 49 37 37 41 25 57
+Error: 24
+Data set 913
+Order: 73 49
+Error: 41
+Data set 914
+Order: 9 9 29 57 69 81
+Error: 28
+Data set 915
+Order: 9
+Error: 99
+Data set 916
+Order: 9 29 9 17 53 13
+Error: 51
+Data set 917
+Order: 41 9 5 49
+Error: 10
+Data set 918
+Order: 81 53
+Error: 69
+Data set 919
+Order: 21
+Error: 32
+Data set 920
+Order: 5 41 5 37 41 49 49 77
+Error: 12
+Data set 921
+Order: 21
+Error: 366
+Data set 922
+Order: 53 17 69 77
+Error: 23
+Data set 923
+Order: 77 77 41
+Error: 122
+Data set 924
+Order: 17 65 73 25 29 57
+Error: 91
+Data set 925
+Order: 41 41 33 61 61 69 69 73
+Error: 28
+Data set 926
+Order: 9 57
+Error: 57
+Data set 927
+Order: 65
+Error: 29
+Data set 928
+Order: 41 29
+Error: 30
+Data set 929
+Order: 73 9 25 65 69 61 61 65
+Error: 87
+Data set 930
+Order: 33 5 37 41 49 53
+Error: 2
+Data set 931
+Order: 61 37 53 21 21
+Error: 61
+Data set 932
+Order: 41 13 29 73 57 57 61
+Error: 86
+Data set 933
+Order: 81 57 13 73 29
+Error: 140
+Data set 934
+Order: 81 25 17
+Error: 84
+Data set 935
+Order: 41 5 53 53 73 77
+Error: 39
+Data set 936
+Order: 33 53 13 25 69
+Error: 34
+Data set 937
+Order: 53 33 33 53 73 13
+Error: 69
+Data set 938
+Order: 73 21 33 29
+Error: 157
+Data set 939
+Order: 41 5 53 73 77
+Error: 49
+Data set 940
+Order: 77 69 17 29
+Error: 81
+Data set 941
+Order: 21 29 9 33 33 37 73 77
+Error: 0
+Data set 942
+Order: 69 73 25 25 29 61
+Error: 62
+Data set 943
+Order: 21 21 5 41 57 61 73
+Error: 0
+Data set 944
+Order: 65 21 21 21 37 53 61 77
+Error: 43
+Data set 945
+Order: 33 53 9 45 61 65 65 69
+Error: 46
+Data set 946
+Order: 21 49 21 77
+Error: 82
+Data set 947
+Order: 37 77
+Error: 140
+Data set 948
+Order: 5 57 5 33 77 69 73
+Error: 115
+Data set 949
+Order: 17 25
+Error: 7
+Data set 950
+Order: 49 37 17 65
+Error: 38
+Data set 951
+Order: 5 77
+Error: 124
+Data set 952
+Order: 41 17 37 53 73 77
+Error: 22
+Data set 953
+Order: 53 33 37 37 5 13 29 69
+Error: 15
+Data set 954
+Order: 69 69
+Error: 87
+Data set 955
+Order: 57 45 45 45 45 81 81
+Error: 51
+Data set 956
+Order: 65
+Error: 62
+Data set 957
+Order: 45 33 21
+Error: 208
+Data set 958
+Order: 73 13 77 45 65 65
+Error: 78
+Data set 959
+Order: 5 21 17 29 13 45 61
+Error: 10
+Data set 960
+Order: 17
+Error: 399
+Data set 961
+Order: 69 37 45 81
+Error: 33
+Data set 962
+Order: 69 37 77 17 45 29
+Error: 85
+Data set 963
+Order: 57 41 73 21 29 37 53
+Error: 90
+Data set 964
+Order: 33 53 29 73
+Error: 31
+Data set 965
+Order: 57 57 77
+Error: 22
+Data set 966
+Order: 81 13 33 81 81
+Error: 70
+Data set 967
+Order: 65 37 5 9 9 69
+Error: 39
+Data set 968
+Order: 29 41 61 9 73 77 81
+Error: 63
+Data set 969
+Order: 77 49 33 77
+Error: 102
+Data set 970
+Order: 25 49 17 21 53
+Error: 21
+Data set 971
+Order: 29 41 61 77
+Error: 3
+Data set 972
+Order: 53 37 25 57 21
+Error: 44
+Data set 973
+Order: 5 37 53 37 57 29 33 57
+Error: 75
+Data set 974
+Order: 9 13 25
+Error: 9
+Data set 975
+Order: 25 69 73 73
+Error: 38
+Data set 976
+Order: 65 29 33
+Error: 210
+Data set 977
+Order: 9 29 5 37 45 57 73 77
+Error: 0
+Data set 978
+Order: 9 37 41 45 13 65
+Error: 6
+Data set 979
+Order: 45 9 21 29
+Error: 2
+Data set 980
+Order: 33 73
+Error: 1
+Data set 981
+Order: 41
+Error: 353
+Data set 982
+Order: 49
+Error: 194
+Data set 983
+Order: 41 13 45
+Error: 331
+Data set 984
+Order: 45 49 13 53
+Error: 0
+Data set 985
+Order: 9 13
+Error: 4
+Data set 986
+Order: 17 45 49 53 53 73 77
+Error: 11
+Data set 987
+Order: 37 5 13 25 61 61 73
+Error: 80
+Data set 988
+Order: 5 5 17 53
+Error: 5
+Data set 989
+Order: 61 21 45 17 41 65 73
+Error: 16
+Data set 990
+Order: 33 21 49 61 81
+Error: 8
+Data set 991
+Order: 9 33 5 33
+Error: 1
+Data set 992
+Order: 9 13 49 73 77 77
+Error: 8
+Data set 993
+Order: 13 65 69 69 81 81
+Error: 45
+Data set 994
+Order: 49 53 17 57 61 61 65
+Error: 0
+Data set 995
+Order: 13 17 13 29 33 37 41 65
+Error: 0
+Data set 996
+Order: 45 29 57
+Error: 61
+Data set 997
+Order: 37 77 41 37 17
+Error: 62
+Data set 998
+Order: 53
+Error: 0
+Data set 999
+Order: 21 13 57 49 37 41
+Error: 47
+Data set 1000
+Order: 61 65 41
+Error: 71
+Data set 1001
+Order: 45 29 25 29 37 57 65 77
+Error: 25
+Data set 1002
+Order: 57 41 13 73 77 77 77 77
+Error: 29
+Data set 1003
+Order: 65 13 21 29 57 65
+Error: 56
+Data set 1004
+Order: 45 21 61 5 65 81
+Error: 61
+Data set 1005
+Order: 29 9 61 65
+Error: 80
+Data set 1006
+Order: 57 37
+Error: 42
+Data set 1007
+Order: 57
+Error: 324
+Data set 1008
+Order: 45 49 33 37 61 65 77
+Error: 12

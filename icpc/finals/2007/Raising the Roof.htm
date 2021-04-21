@@ -1,0 +1,105 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3809 - Raising the Roof</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Raising%20the%20Roof_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3809 - Raising the Roof</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2006"><b>World Finals - Tokyo - 2006/2007</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3809.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3809"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3809"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+You have agreed to help a roofer estimate the amount of material
+required to protect the surface of a roof from sun damage by computing
+the surface area of the roof that can be seen when viewed from directly
+above. </p><p>
+The geometry of a roof is defined by the vertices of the triangles that enclose the plane surfaces of the roof. The <span class="MATH"><i>x</i></span>
+<tex2html_verbatim_mark> and <span class="MATH"><i>y</i></span>
+<tex2html_verbatim_mark> coordinates of a vertex are determined from an aerial view of the roof, and the <span class="MATH"><i>z</i></span>
+<tex2html_verbatim_mark> coordinate is the height of the vertex above
+the ground, assuming that the ground is level (which we do). For
+example, a line segment with vertices (10,10,10) and (10,20,10) is
+parallel to the ground, and is 10 units long. A line segment with
+vertices (10,10,10) and (10,18,16) slopes from 10 units to 16 units
+above the ground; in the aerial view of the roof it is 8 units long,
+but the actual length is 10 units. </tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+In an aerial view of a roof, one region of the roof can sometimes
+obscure a lower region. Only visible portions of the roof should be
+included in the total. For example, suppose you view a two-story
+building with a second floor that is smaller than the first floor.
+Obviously the area of the second floor's roof must be included in the
+total, but the visible surface area of the first floor's roof will not
+include the area directly underneath the second floor's roof.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input consists of several test cases corresponding to roof descriptions. A test case begins with a line containing integers <span class="MATH"><i>V</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(1 \le V \le 300)$
+ -->
+<span class="MATH">(1<img src="Raising%20the%20Roof_files/3809img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>V</i><img src="Raising%20the%20Roof_files/3809img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18">300)</span>
+<tex2html_verbatim_mark>, which is the number of vertices, and <span class="MATH"><i>T</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(1 \le T \le 1000)$
+ -->
+<span class="MATH">(1<img src="Raising%20the%20Roof_files/3809img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>T</i><img src="Raising%20the%20Roof_files/3809img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18">1000)</span>
+<tex2html_verbatim_mark>, which is the number of triangles. Each of the next <span class="MATH"><i>V</i></span>
+<tex2html_verbatim_mark> lines contains the coordinates <span class="MATH"><i>x</i></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>y</i></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>z</i></span>
+<tex2html_verbatim_mark> of a vertex. The test case concludes with <span class="MATH"><i>T</i></span>
+<tex2html_verbatim_mark> triangle descriptions, each consisting of the
+three vertex indices describing the vertices of a roof triangle.
+Vertices are numbered sequentially in the order they appear in the
+input, starting with 1. </tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+All coordinates are positive integers no greater than 100. No roof
+triangles are degenerate, and all pairs of roof triangles have disjoint
+interiors -- that is, they may touch but they will not overlap or
+intersect. </p><p>
+The last test case is followed by a line containing two zeroes.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, print a line containing the test case number
+(beginning with 1) followed by the total visible surface area of the
+roof, accurate to two fractional digits. Use the sample output format
+and print a blank line after each case.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>6 2 
+10 10 10 
+10 20 10 
+20 10 10 
+10 10 20 
+10 20 20
+20 20 20
+1 2 3 
+4 5 6 
+3 1 
+10 10 
+10 18 16 
+20 10 10 
+1 2 3 
+0 0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: 75.00 
+
+Case 2: 50.00
+</pre> 
+
+<p>
+</p><hr><address>Tokyo 2006-2007</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

@@ -1,0 +1,110 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3562 - Remember the A La Mode!</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Remember%20the%20A%20La%20Mode%21_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3562 - Remember the A La Mode!</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2005"><b>World Finals - San Antonio - Texas - 2005/2006</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3562.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3562"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3562"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+Hugh Samston owns the ``You Want It, Hugh Got It" catering service,
+which has been asked to supply desserts for the participants in this
+year's ICPC World Finals. Hugh will provide pie slices topped with ice
+cream at the various social functions scheduled throughout the week. As
+with any other dedicated entrepreneur, Hugh would like to offer the
+best service possible, so he has ordered a wide variety of pies and ice
+creams to satisfy even the most eclectic tastes. </p><p>
+Hugh plans to serve each pie slice with a single scoop of ice cream,
+leaving the exact combination up to the whim of the customer. But of
+course, as with any other dedicated entrepreneur, Hugh would also like
+to make as much profit as possible from this enterprise. He knows ahead
+of time how much profit he can make on each combination of pie slice
+and ice cream scoop, as well as which combinations of pie and ice cream
+should never be put together (example: Peppermint Banana Chunk ice
+cream on Key Lime pie). </p><p>
+Given this information, along with the number of slices and scoops he
+has of each variety of pie and ice cream, Hugh figures he can determine
+both the minimum and maximum profits he can expect. Since he hopes to
+be the caterer at subsequent World Finals, he would like a general
+program to solve this and future problems.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+Input will consist of multiple problem instances. Each problem instance will start with a line containing two integers <span class="MATH"><i>P</i></span> <!-- MATH
+ $(P \le 50)$
+ -->
+<span class="MATH">(<i>P</i><img src="Remember%20the%20A%20La%20Mode%21_files/3562img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18">50)</span> and <span class="MATH"><i>I</i></span> <!-- MATH
+ $(I \le 50)$
+ -->
+<span class="MATH">(<i>I</i><img src="Remember%20the%20A%20La%20Mode%21_files/3562img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18">50)</span>, indicating the number of types of pie and ice cream, respectively. The next line will contain <span class="MATH"><i>P</i></span> integers indicating the number of slices available for each of the pie types. The line after that will contain <span class="MATH"><i>I</i></span>
+integers indicating the number of scoops available for each of the ice
+cream types. The total number of pie slices will always equal the total
+number of ice cream scoops available, and it is assumed that all pie
+slices and ice cream scoops will be used. </p><p>
+Each problem instance will end with <span class="MATH"><i>P</i></span> lines each containing <span class="MATH"><i>I</i></span>
+floating point numbers indicating the profit for each pie/ice cream
+combination: the first value indicates the profit if a slice of pie
+type 0 is topped with a scoop of ice cream type 0; the next value
+indicates the profit if a slice of pie type 0 is topped with a scoop of
+ice cream type 1, and so on. A profit value of `<tt>-1</tt>' indicates
+that no combinations of that pie type and ice cream type should ever be
+sold. All other integers (number of slices for each type of pie and
+number of scoops for each type of ice cream) will be less than or equal
+to 100 and the profit on each one of the pie/ice cream combinations
+(other than `<tt>-1</tt>') will be larger than 0 and less than or equal to 10, with at most two digits after the decimal point. 
+
+</p><p>
+The last problem instance is followed by a line containing two zeroes.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each problem instance, output the problem number (starting at 1)
+followed by the minimum and maximum profits, using the format shown in
+the sample output. Display all numbers with two fractional digits. All
+problem instances are guaranteed to have at least one solution using
+all of the pie slices and ice cream scoops.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>2 3 
+40 50 
+27 30 33 
+1.11 1.27 0.70 
+-1 2 0.34 
+4 4 
+10 10 10 10 
+10 10 10 10 
+1.01 -1 -1 -1 
+-1 1.01 -1 -1 
+-1 -1 1.01 -1 
+-1 -1 -1 1.01 
+0 0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Problem 1: 91.70 to 105.87 
+Problem 2: 40.40 to 40.40
+</pre> 
+
+<p>
+</p><p>
+<b>Claimer:</b>
+The data used in this problem is unofficial data
+prepared by Derek Kisman. So any mistake here does not
+imply mistake in the offcial judge data. Only Derek
+Kisman is responsible for the mistakes. Report
+mistakes to dkisman@acm.org
+
+</p><hr><address>San Antonio - Texas 2005-2006</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

@@ -1,0 +1,3643 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0073)http://www.topcoder.com/stat?c=problem_solution&cr=144400&rd=6534&pm=4427 -->
+<HTML><HEAD><TITLE>TopCoder Statistics - Problem Solution</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<SCRIPT language=JavaScript src="StepperMotor_sol2_files/tcscript.js" 
+type=text/javascript></SCRIPT>
+<LINK href="StepperMotor_sol2_files/style.css" type=text/css 
+rel=stylesheet><LINK href="StepperMotor_sol2_files/coders.css" type=text/css 
+rel=stylesheet><LINK href="StepperMotor_sol2_files/tcStyles.css" type=text/css 
+rel=stylesheet>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY>
+<SCRIPT type=text/javascript>
+var objTopPopUp = null;
+// called when you topPopup at the bottom right of an object
+function topPopUp(topPopper,topPopupID) {
+    var pos = findPos(topPopper);
+    var x = pos[0] + topPopper.offsetWidth + 2;
+    var y = pos[1] + topPopper.offsetHeight + 2;
+    topPopShow(x,y,topPopupID);
+}
+// called when you know the exact spot you want to topPop up at
+function topPopShow(posX,posY,topPopupID) {
+    objTopPopUp = document.getElementById(topPopupID);
+    objTopPopUp.style.left = posX + 'px';
+    objTopPopUp.style.top = posY + 'px';
+    objTopPopUp.style.display = 'block';
+}
+function topPopHide() {
+    objTopPopUp.style.display = 'none';
+    objTopPopUp = null;
+}
+function findPos(obj) {
+    var curLeft = curTop = 0;
+    if (obj.offsetParent) {
+        curLeft = obj.offsetLeft;
+        curTop = obj.offsetTop;
+        while (obj = obj.offsetParent) {
+            curLeft += obj.offsetLeft;
+            curTop += obj.offsetTop;
+        }
+    }
+    return [curLeft,curTop];
+}
+</SCRIPT>
+
+<DIV class=popUp id=launch0>
+<DIV><STRONG>Competitions Home</STRONG></DIV></DIV>
+<DIV class=popUp id=launch1>
+<DIV><STRONG>Launch Algorithm Competitions Arena</STRONG></DIV></DIV>
+<DIV class=popUp id=launch2>
+<DIV><STRONG>Launch High School Competitions Arena</STRONG></DIV></DIV>
+<DIV class=popUp id=launch3>
+<DIV><STRONG>Component Design Active Contests</STRONG></DIV></DIV>
+<DIV class=popUp id=launch4>
+<DIV><STRONG>Component Development Active Contests</STRONG></DIV></DIV>
+<DIV class=popUp id=launch5>
+<DIV><STRONG>Marathon Match Active Contests</STRONG></DIV></DIV><MAP 
+name=competeBar><AREA onmouseover="topPopShow(73,65,'launch0')" 
+  onmouseout=topPopHide() shape=RECT alt="" coords=0,0,66,30 
+  href="http://www.topcoder.com/tc"><AREA 
+  onmouseover="topPopShow(108,65,'launch1')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=68,0,106,30 href="javascript:arena();"><AREA 
+  onmouseover="topPopShow(155,65,'launch2')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=107,0,153,30 href="javascript:arena();"><AREA 
+  onmouseover="topPopShow(181,65,'launch3')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=154,0,179,30 
+  href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112"><AREA 
+  onmouseover="topPopShow(207,65,'launch4')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=180,0,205,30 
+  href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113"><AREA 
+  onmouseover="topPopShow(252,65,'launch5')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=206,0,250,30 
+  href="http://www.topcoder.com/longcontest/?module=ViewActiveContests"></MAP>
+<DIV 
+style="BACKGROUND: none transparent scroll repeat 0% 0%; LEFT: 0px; POSITION: absolute; TOP: 31px"><IMG 
+alt="" src="StepperMotor_sol2_files/competeBar.gif" useMap=#competeBar> </DIV>
+<DIV style="RIGHT: 0px; POSITION: absolute; TOP: 31px"><A 
+href="http://www.topcoder.com/reg/?nrg=false"><IMG style="DISPLAY: block" 
+alt="Update My Profile" 
+src="StepperMotor_sol2_files/update_my_profile.gif"></A></DIV>
+<DIV style="MARGIN: 0px 290px 0px 280px" align=center>
+<DIV id=outerLogo>
+<DIV id=innerLogo><A href="http://www.topcoder.com/"><IMG alt=TopCoder 
+src="StepperMotor_sol2_files/topcoder.gif"></A> </DIV></DIV></DIV>
+<DIV class=memberCountBox>Member Count: 103,881 - February 6, 2007 &nbsp;<A 
+class=gMetal href="javascript:tcTime()">[Get Time]</A> </DIV>
+<DIV class=topBar>
+<DIV style="FLOAT: right; MARGIN-LEFT: 650px">Hello,&nbsp;<A 
+class=coderTextWhite 
+href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22057667">j_black</A> 
+&nbsp;&nbsp;|&nbsp;&nbsp;<A class=gMetal 
+href="http://www.topcoder.com/tc?module=Logout">Logout</A> </DIV></DIV>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width=180>
+      <SCRIPT language=JavaScript src="StepperMotor_sol2_files/arena.js" 
+      type=text/javascript></SCRIPT>
+
+      <SCRIPT language=javascript type=text/javascript>
+<!--
+function toggleMenu(menuTitle,menuID){
+   var menu = document.getElementById(menuID);
+   if(menu.style.display == 'block') menu.className = 'CLOSED';
+   else if(menu.className == 'OPEN' && menu.style.display != 'none') menu.className = 'CLOSED';
+   else {
+      menu.className = 'OPEN';
+   }
+   if(menuTitle.blur)menuTitle.blur();
+   if(menuTitle.className == 'exp') menuTitle.className = 'exp_ed';
+   else menuTitle.className = 'exp';
+   return;
+}
+function flipMenu(myMenuName){
+   var menuName = document.getElementById(myMenuName);
+   menuName.className = 'exp_ed';
+}
+
+// -->
+</SCRIPT>
+<!--node is m_algo_stats -->
+      <DIV 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px"><IMG 
+      alt="" src="StepperMotor_sol2_files/leftnav_top.gif"></DIV>
+      <DIV id=navbar>
+      <UL>
+        <LI class=exp_ed><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_competitions')" 
+        href="javascript:void(0)">Competitions</A> 
+        <UL class=OPEN id=m_competitions>
+          <LI><A href="http://www.topcoder.com/tc">Home</A> </LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_competitor_stats')" 
+          href="javascript:void(0)">The Tops</A> 
+          <UL id=m_competitor_stats>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_top_rated_competitors')" 
+            href="javascript:void(0)">Top Ranked</A> 
+            <UL id=m_top_rated_competitors>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=AlgoRank">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_designers">Design</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_developers">Development</A> 
+              </LI>
+              <LI><A href="http://www.topcoder.com/tc?module=HSRank">High 
+              School</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_recordbook')" 
+            href="javascript:void(0)">Record Book</A> 
+            <UL id=m_recordbook>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=statistics&amp;d2=recordbook_home">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=compstats&amp;d2=comp_recordbook_home">Component</A> 
+              </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_com')" 
+            href="javascript:void(0)">Coder of the Month</A> 
+            <UL id=m_com>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=5">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=6">Design</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=7">Development</A> 
+              </LI></UL></LI></UL></LI>
+          <LI class=exp_ed><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_algo_competitions')" 
+          href="javascript:void(0)">Algorithm</A> 
+          <UL class=OPEN id=m_algo_competitions>
+            <LI><A href="javascript:arena();">Launch Arena</A> </LI>
+            <LI class=exp_ed><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_algo_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL class=OPEN id=m_algo_stats>
+              <LI><A href="http://www.topcoder.com/tc?module=MatchList">Match 
+              Archive</A> </LI>
+              <LI><A href="http://www.topcoder.com/stat?c=round_overview">Match 
+              Overviews</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=SrmDivisionWins">Match 
+              Winners</A> </LI>
+              <LI><A href="http://www.topcoder.com/stat?c=last_match">Match 
+              Results</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=match_editorials&amp;d2=archive">Match 
+              Editorials</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ProblemArchive">Problem 
+              Archive</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=1">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=dataFeed">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_algo_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_algo_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=index">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=faqIndex">FAQs</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=sampleProblems">Sample 
+              Problems</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=ratings">Rating 
+              System</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=algo_get_paid">How 
+              to Get Paid</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=charity">Charity 
+              Donations</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_des_competitions')" 
+          href="javascript:void(0)">Software Design</A> 
+          <UL id=m_des_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ContestStatus&amp;ph=112">Contest 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;ph=112">Review 
+            Opportunities</A> </LI>
+            <LI><A 
+            href="http://software.topcoder.com/forum/c_active_collab.jsp?ft=2">TCS 
+            Developer Forums</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit &amp; 
+            Review</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_des_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_des_stats>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;ph=112">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=112">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desDataFeed">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ReviewBoard&amp;ph=112">Meet 
+            the Review Board</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_des_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_des_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desGettingStarted">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desDocumentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desRatings">Ratings</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desReliability">Reliability 
+              Ratings</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=des_get_paid">How 
+              to Get Paid</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_dev_competitions')" 
+          href="javascript:void(0)">Software Development</A> 
+          <UL id=m_dev_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ContestStatus&amp;ph=113">Contest 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;ph=113">Review 
+            Opportunities</A> </LI>
+            <LI><A 
+            href="http://software.topcoder.com/forum/c_active_collab.jsp?ft=2">TCS 
+            Developer Forums</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit &amp; 
+            Review</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_dev_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_dev_stats>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;ph=113">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=113">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devDataFeed">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ReviewBoard&amp;ph=113">Meet 
+            the Review Board</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_dev_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_dev_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devGettingStarted">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devDocumentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devRatings">Ratings</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devReliability">Reliability 
+              Ratings</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=dev_get_paid">How 
+              to Get Paid</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_competitions')" 
+          href="javascript:void(0)">Software Assembly</A> 
+          <UL id=m_assembly_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=activeContests">Active 
+            Contests</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_assembly_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=tutorial">Tutorial</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=documentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=assem_get_paid">How 
+              to Get Paid</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_testing_competitions')" 
+          href="javascript:void(0)">Software Testing</A> 
+          <UL id=m_testing_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=activeContests">Active 
+            Contests</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_testing_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_testing_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=tutorial">Tutorial</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=documentation">Documentation</A> 
+              </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_hs_competitions')" 
+          href="javascript:void(0)">High School</A> 
+          <UL id=m_hs_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=home">Overview</A> 
+            </LI>
+            <LI><A href="javascript:arena();">Launch Arena</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_hs_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_hs_stats>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundOverview">Match 
+              Overview</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundStatsTeam">Match 
+              Results (Team)</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundStatsInd">Match 
+              Results (Indiv.)</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=match_editorials&amp;d3=archive">Match 
+              Editorials</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=2">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=dataFeed">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=sponsorship">Sponsorship</A> 
+            </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_hs_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_hs_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=index">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=faqIndex">FAQs</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=sampleProblems">Sample 
+              Problems</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=ratings">Rating 
+              System</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_long_contests')" 
+          href="javascript:void(0)">Marathon Matches</A> 
+          <UL id=m_long_contests>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewActiveContests">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewPractice&amp;rt=14">Practice</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=intel_overview">Intel 
+            Multi-Threading Competition Series</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewActiveContests&amp;rt=15">Intel 
+            Active Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewQueue">Queue 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=match_editorials&amp;d2=archive">Match 
+            Editorials</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_long_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_long_support>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=ratings">Rating 
+              System</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_tournaments')" 
+          href="javascript:void(0)">Tournaments</A> 
+          <UL id=m_tournaments>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tournaments&amp;d2=home">TopCoder</A> 
+            </LI>
+            <LI><A href="http://www.topcoder.com/pl/">Powered by TopCoder</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=CRPFStatic&amp;d1=crpf&amp;d2=crpf_overview">Charity</A> 
+            </LI></UL></LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=digital_run&amp;d2=description">The 
+          Digital Run</A> </LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_edu_content')" 
+          href="javascript:void(0)">Educational Content</A> 
+          <UL id=m_edu_content>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=education&amp;d2=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=alg_index">Algorithm 
+            Tutorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=comp_index">Component 
+            Tutorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=features&amp;d2=archive">Features</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=writeForTC">Write 
+            for TopCoder</A> </LI></UL></LI></UL></LI>
+        <LI><A href="http://forums.topcoder.com/">Forums</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?module=Static&amp;d1=calendar&amp;d2=thisMonth">Event 
+        Calendar</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+        Room</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?&amp;module=SurveyList">Surveys</A> 
+        </LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_my_tc')" 
+        href="javascript:void(0)">My TopCoder</A> 
+        <UL id=m_my_tc>
+          <LI><A href="http://www.topcoder.com/reg/?nrg=false">Update My 
+          Profile</A> </LI>
+          <LI><A href="http://www.topcoder.com/tc?module=ViewReferrals">Member 
+          Referrals</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/PactsMemberServlet?module=AffidavitHistory">Affidavits</A> 
+          </LI>
+          <LI><A 
+          href="http://www.topcoder.com/PactsMemberServlet?module=PaymentHistory">Payments</A> 
+          </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=card&amp;d2=description">Cards 
+          / Badges</A> </LI></UL></LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_about_tc')" 
+        href="javascript:void(0)">About TopCoder</A> 
+        <UL id=m_about_tc>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index">Overview</A> 
+          </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus">Contact 
+          Us</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=whyjoin">Why 
+          Join TopCoder?</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=jobs">Working 
+          at TopCoder</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=management">Management 
+          Team</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms">Terms, 
+          Revisions</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy">Privacy 
+          Policy</A> </LI></UL></LI></UL>
+      <DIV id=navbarSearch><B>Member Search:</B> 
+      <FORM class=noSpace name=simpleSearchForm 
+      action=http://www.topcoder.com/tc method=get><INPUT class=noSpace 
+      type=hidden value=SimpleSearch name=module> <INPUT class=noSpace 
+      onblur="javascript:&#10;         if (document.simpleSearchForm.ha.value == '')&#10;            document.simpleSearchForm.ha.value = 'Handle:';" 
+      onfocus="javascript:&#10;         if (document.simpleSearchForm.ha.value=='Handle:')&#10;            document.simpleSearchForm.ha.value = '';" 
+      maxLength=15 size=12 value=Handle: name=ha> <A class=gMetal 
+      href="javascript:void%20document.simpleSearchForm.submit();">Go</A><BR><A 
+      class=gMetal 
+      href="http://www.topcoder.com/tc?module=ViewAdvanced">Advanced Search</A> 
+      </FORM></DIV></DIV>
+      <DIV 
+      style="CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 23px; PADDING-TOP: 0px"><IMG 
+      alt="" src="StepperMotor_sol2_files/leftnav_bottom.gif"></DIV></TD>
+    <TD vAlign=top width=10><IMG height=1 
+      src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+    <TD class=bodyText vAlign=top width="100%"><IMG height=1 
+      src="StepperMotor_sol2_files/clear.gif" width=240 vspace=5 border=0><BR><!-- BEGIN BODY -->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=bottom align=left width=11 height=26><IMG height=26 
+            src="StepperMotor_sol2_files/steelblue_top_left1.gif" width=11 
+            border=0></TD>
+          <TD vAlign=bottom align=left width=180><IMG height=26 
+            src="StepperMotor_sol2_files/header_statistics.gif" width=180 
+            border=0></TD>
+          <TD class=bodyTextBold vAlign=center width="100%">&nbsp;<SPAN 
+            class=bodySubhead>&nbsp;&nbsp;Problem Statistics&nbsp;&nbsp;</SPAN> 
+          </TD>
+          <TD vAlign=top align=right width=10><IMG height=26 alt="" 
+            src="StepperMotor_sol2_files/clear.gif" width=10 
+        border=0></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=10 width="100%" bgColor=#001b35 
+        border=0><TBODY>
+        <TR>
+          <TD vAlign=top width="100%"><IMG height=1 alt="" 
+            src="StepperMotor_sol2_files/clear.gif" width=240 border=0><BR>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD class=statText colSpan=4><IMG height=10 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD class=statText colSpan=4><IMG height=8 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+              border=0></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#001b35 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD colSpan=8><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=8><IMG height=5 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD class=statTextBig 
+                background=StepperMotor_sol2_files/steel_gray_bg.gif colSpan=8 
+                height=18>&nbsp;Problem Statistics for Single Round Match 
+                  235&nbsp;&gt;&nbsp;Round 1&nbsp;&gt;&nbsp;Room 
+                  5&nbsp;&gt;&nbsp;tomek </TD></TR>
+              <TR>
+                <TD colSpan=8><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif 
+                  height=18>Class Name</TD>
+                <TD class=statText vAlign=center align=middle 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif>Method 
+                  Name</TD>
+                <TD class=statText vAlign=center align=middle 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif>&nbsp;</TD>
+                <TD class=statText vAlign=center align=middle 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif>Difficulty</TD>
+                <TD class=statText vAlign=center align=middle 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif>Status</TD>
+                <TD class=statText vAlign=center align=right 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif>Score</TD>
+                <TD vAlign=top width=10 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD></TR>
+              <TR>
+                <TD colSpan=8><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" height=18><SPAN 
+                  class=coderBrackets>[&nbsp;</SPAN><SPAN 
+                  class=statText>StepperMotor</SPAN><SPAN 
+                  class=coderBrackets>&nbsp;]</SPAN> </TD>
+                <TD class=statText vAlign=center 
+                align=middle>rotateToNearest</TD>
+                <TD class=statText vAlign=center align=middle><A 
+                  class=statText 
+                  href="http://www.topcoder.com/tc?module=ProblemDetail&amp;rd=6534&amp;pm=4427">problem 
+                  details</A> </TD>
+                <TD class=statText vAlign=center align=middle>Level One</TD>
+                <TD class=statText vAlign=center align=middle>Passed System 
+                  Test</TD>
+                <TD class=statText vAlign=center align=right>290,41</TD>
+                <TD vAlign=top width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 
+              border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" height=18><A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=problem_solution&amp;rd=6534&amp;rm=&amp;cr=144400&amp;pm=4436">PerforatedSheet</A> 
+                </TD>
+                <TD class=statText vAlign=center 
+                align=middle>getCenterOfMass</TD>
+                <TD class=statText vAlign=center align=middle><A 
+                  class=statText 
+                  href="http://www.topcoder.com/tc?module=ProblemDetail&amp;rd=6534&amp;pm=4436">problem 
+                  details</A> </TD>
+                <TD class=statText vAlign=center align=middle>Level Two</TD>
+                <TD class=statText vAlign=center align=middle>Passed System 
+                  Test</TD>
+                <TD class=statText vAlign=center align=right>383,46</TD>
+                <TD vAlign=top width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 
+              border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" height=18><A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=problem_solution&amp;rd=6534&amp;rm=&amp;cr=144400&amp;pm=4022">RemoteRover</A> 
+                </TD>
+                <TD class=statText vAlign=center align=middle>optimalTravel</TD>
+                <TD class=statText vAlign=center align=middle><A 
+                  class=statText 
+                  href="http://www.topcoder.com/tc?module=ProblemDetail&amp;rd=6534&amp;pm=4022">problem 
+                  details</A> </TD>
+                <TD class=statText vAlign=center align=middle>Level Three</TD>
+                <TD class=statText vAlign=center align=middle>Passed System 
+                  Test</TD>
+                <TD class=statText vAlign=center align=right>663,37</TD>
+                <TD vAlign=top width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 
+              border=0></TD></TR>
+              <TR>
+                <TD colSpan=8><IMG height=3 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD class=statText 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                  colSpan=8><IMG height=5 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD class=statText colSpan=8><IMG height=16 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD class=statText vAlign=center align=middle colSpan=8><A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=problem_statement&amp;pm=4427&amp;rd=6534&amp;rm=&amp;cr=144400">View&nbsp;StepperMotor 
+                  &nbsp; Problem Statement</A> </TD></TR>
+              <TR>
+                <TD class=problemText vAlign=center align=left 
+                  colSpan=8>#include&nbsp;&lt;algorithm&gt;<BR>#include&nbsp;&lt;cstdio&gt;<BR>#include&nbsp;&lt;cstdlib&gt;<BR>#include&nbsp;&lt;cctype&gt;<BR>#include&nbsp;&lt;cmath&gt;<BR>#include&nbsp;&lt;iostream&gt;<BR>#include&nbsp;&lt;sstream&gt;<BR>#include&nbsp;&lt;string&gt;<BR>#include&nbsp;&lt;utility&gt;<BR>#include&nbsp;&lt;vector&gt;<BR>using&nbsp;namespace&nbsp;std;<BR>#define&nbsp;FOREACH(it,c)&nbsp;for(typeof((c).begin())&nbsp;it=(c).begin();it!=(c).end();++it)<BR>typedef&nbsp;long&nbsp;long&nbsp;LL;<BR>const&nbsp;int&nbsp;INFLL&nbsp;=&nbsp;1000000000000000000LL;<BR>&nbsp;<BR>LL&nbsp;myabs(LL&nbsp;x)&nbsp;{&nbsp;return&nbsp;x&lt;0&nbsp;?&nbsp;-x&nbsp;:&nbsp;x;&nbsp;}<BR>&nbsp;<BR>struct&nbsp;StepperMotor&nbsp;{<BR>&nbsp;<BR>&nbsp;&nbsp;//&nbsp;MAIN<BR>&nbsp;&nbsp;int&nbsp;rotateToNearest(int&nbsp;n,&nbsp;int&nbsp;current,&nbsp;vector&nbsp;&lt;int&gt;&nbsp;target)&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;LL&nbsp;best&nbsp;=&nbsp;INFLL;<BR>&nbsp;&nbsp;&nbsp;&nbsp;LL&nbsp;nn&nbsp;=&nbsp;n;<BR>&nbsp;&nbsp;&nbsp;&nbsp;FOREACH(it,target)&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;t&nbsp;=&nbsp;*it;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LL&nbsp;v&nbsp;=&nbsp;((LL(t)-LL(current))%nn+nn)%nn;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(myabs(v)&lt;myabs(best)&nbsp;||&nbsp;myabs(v)==myabs(best)&nbsp;&amp;&amp;&nbsp;v&gt;=0)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;best&nbsp;=&nbsp;v;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v&nbsp;-=&nbsp;nn;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(myabs(v)&lt;myabs(best)&nbsp;||&nbsp;myabs(v)==myabs(best)&nbsp;&amp;&amp;&nbsp;v&gt;=0)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;best&nbsp;=&nbsp;v;<BR>&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;int(best);<BR>&nbsp;&nbsp;}<BR>&nbsp;<BR>};<BR>&nbsp;<BR>//&nbsp;Powered&nbsp;by&nbsp;FileEdit<BR>&nbsp;<BR>//&nbsp;Powered&nbsp;by&nbsp;TomekAI<BR>//&nbsp;Powered&nbsp;by&nbsp;TZTester&nbsp;1.01&nbsp;[25-Feb-2003]<BR>&nbsp;<BR>//&nbsp;Powered&nbsp;by&nbsp;CodeProcessor<BR></TD></TR>
+              <TR>
+                <TD colSpan=8><IMG height=5 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+              border=0></TD></TR></TBODY></TABLE><!-- Defenses --><!-- End Defense --><!-- System Testing -->
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#001b35 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD colSpan=9><IMG height=5 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD class=statTextBig 
+                background=StepperMotor_sol2_files/steel_gray_bg.gif colSpan=9 
+                height=18>&nbsp;System Test Results</TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif 
+                  height=18>Test Arguments</TD>
+                <TD vAlign=center width=5 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText vAlign=center align=right 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif>Expected 
+                  Results</TD>
+                <TD vAlign=center width=5 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText vAlign=center align=right 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif>Success</TD>
+                <TD vAlign=center width=5 
+                background=StepperMotor_sol2_files/steel_bluebv_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>10, 0, {-2, -3, 4, 5, 6, 
+                9999999}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2, 
+                  314159, {10, 8, 6, 4, 2}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1, -2147483648, {-2147483648, 
+                  -2147483648, 2147483647, 2147483647}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>23, 10, 
+                  {64077, -567273, 105845, -279980, 35557, -286190, -652879, 
+                  -431665, -634870, -454044}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-11</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1000000000, 1403466951, 
+                  {1233321992, 11423750, 1356595134, 1130863021, 1183514764, 
+                  1943494859, 1714480374, 1529875954, 1738756510, 1190153525}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-46871817</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2, 
+                  999999999, {-10, -8, -6, -4, -2, 0, 2, 4, 6, 8, 10}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1234606884, -1269631868, 
+                  {63898276, -1478856578, -1781791632, -1587308300, 
+                -1217280692}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>52351176</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>324112531, 
+                  -1005686761, {1837061486}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-74264532</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1309873021, -1189918674, 
+                  {1359647161, 2027815943, -1762293394, 820352209, -88785247, 
+                  -1200699068, -1136408750, 1545780181, -30494064, -1332285260, 
+                  1946724780, 914720102, 1942179809, 1132098562, 2134480634, 
+                  814791424, -384293268, -1282313338, -1653590810, 779910114, 
+                  -265436391, -1903853184, -1885115958, -1524975801, 1285976867, 
+                  -612284614, -613181181, -1862554745}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-10780394</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1934820548, 
+                  -605865686, {415501376, -1701013064, -1905491487, -378543610, 
+                  142898498, 697590879, 533252332, 1389016634, -578962518, 
+                  -138524734, 1624971525, -1549923231, 967056534, 1423628648, 
+                  1019529178, -952357432, -1730424236, 1801059004, -2037611635, 
+                  -624999386, -847907760, -1095399441, -1140475224, 1331837183, 
+                  590988606, -1090935755, -1679002785, -803625706}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2882321</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1311370311, 1262873336, 
+                  {-433651567, -597407311, 106725470, 937188748, 1600501195, 
+                  365605064, 838099973, -1558039025, -793406560, -1381997842, 
+                  -1419122157, 863057886, -1012535025, 1267381340, -823815270, 
+                  2072772566}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>4508004</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>96990042, 
+                  1143957701, {-1958563732, 1048967690, -1628981179, -131451257, 
+                  -1864581415, 2142493772, -1405515047, 1451265788, 37209319, 
+                  940980913, 1495517033, -142685813, 927897518, -297250619, 
+                  1077280562, -1647309043, -763035103, -1929410877, -1167432977, 
+                  1426624541, -1111927733, 169580984, 170416961, -1836332636, 
+                  -132169352, -364183515, 1675415717, 568696673, 1497579854}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1159911</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1086781749, -1491126637, 
+                  {-122790625, 1617889415, -1341411906, -1197790095, 372522899, 
+                  -211061941, 709591014}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>27154153</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1631696329, 
+                  1856122239, {508898489, -636733422, -1253821802, -632504575, 
+                  -1356742156, 355529149, 2027016196, -188341327, 606082068, 
+                  -1915500800, 1845811281, 415956185, 1987489374, -1939391419, 
+                  1317682200, 587110328, -941622233, 425465376, -158152490, 
+                  -858158142, -1127538876, -128873016, 1297842643, -560012285, 
+                  678998222, -1008433492, -1800894448, -801609162, 808473800, 
+                  1655878120, -2106512406, -1590247101, -1135899100, 
+                  -1263496039, -645664320, -375660173}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-10310958</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1988365113, 496313541, 
+                  {-477951433, -1514829366, 1379761995, -1597449138}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-22777794</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>443413992, 
+                  -332339155, {-438216833, -849741615, -32951219, 545319145, 
+                  -393464738, -1852767207, 1271489581, 1797191598, -2135492007, 
+                  1825217903, -1213060974, -1363644923, 521754198, 1882854501, 
+                  -734539320, -1566417111}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-1876304</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1285491931, -311643833, 
+                  {-2079782327, 817817397, 445810906}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-156030701</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1245703705, 
+                  -1146310400, {943267478, -791030826, 1347521089, 307036888, 
+                  437911212, -267509736, -1626544924, -1567425135, 93124841, 
+                  1875999040, -1211322067, -726678339, -797966826, 1952275462, 
+                  -2103362578, 997413544, 745493277, -1552378478, -2116258164, 
+                  -292844976, -337731819, 443413446, 1029026105, 1746945450, 
+                  -909900276, -1214840100, -2141298822, -711564312, -393920417, 
+                  518134338, 1681591982, 99090561, 551072331, 1244287381, 
+                  -1732779257, -127212515, -1125178143, -1168999721, 1030834864, 
+                  2018909730, -1653220355, -366733487, 889872173, 41065868}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-302744</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>77522399, 1640933224, 
+                  {-537141489, 7933473, -182596770, -836381185, 648138545, 
+                  -1444787380, -501527731, -1613643964, -1606544479, 
+                  -2098694751, -1686944961, -971682757, 189129672, 422179706, 
+                  735698338}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>1363570</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>332437278, 
+                  -2078081305, {1000033143, 1173430178, 13665640, 2016818839, 
+                  1817234272, 1013863978}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-72861297</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1493341144, 425349443, 
+                  {1715559205, -682116304, -884337959, -790956693, 1160358791, 
+                  2132804493, 2096514027, -1709705357, 855697858, -782793075, 
+                  540698023, -1544508989, -1178361866, 2136189342, 2054146761, 
+                  -1892664208, 1233419886, 49173701, 1971918831, -862141950, 
+                  -1763519291, 510224882, 1545887831}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>53228244</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2071319703, 
+                  170951153, {-477123266, 1840496224, -1326371213}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-401774632</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>2110534659, -137255652, 
+                  {-766687848, -1346780578, 174672679, 1238322585, 698890968, 
+                  223208085, 460466181, -1781121380, 552933345, 1080461362, 
+                  844805602, -1869730788, -1970867844, 52122747, 808737003, 
+                  -1864211361, -1538944332, 1272926586, -522610508, 
+                -1468244656}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>189378399</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>231446783, 
+                  208699839, {1455487182, -1197581358, -27846002, 1265985636, 
+                  914914999}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-5099058</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1373650207, -1422050426, 
+                  {-1321271462, -1883394078, -868773755, 1764027592, -949749319, 
+                  -1395708467, 1419859409, 1777166755, 1237747051, -1707357882, 
+                  -1368051418, -70415450, 685335918, -1135516970, -1613189211, 
+                  1253198443, -360099475, 910493811, 860850142, 1467051079, 
+                  -2117015490, 62981778, 406167512, 373458151, 711901091, 
+                  1397221526, -2062209559, -1837570124, 305050470, 1069932124, 
+                  -2103234750, -1791538794, -856165988, -1346703384, 247564226, 
+                  900565016, 1830245105, 1584202532, 654511346, -1744206883, 
+                  -1175648890, 829435151, -502905093}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-22015231</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>876371784, 
+                  -129800009, {-1684294877, 577660437, -298323600, 1356533997, 
+                  1065293310, 1396567254, 345903503, 1408803196, 1594401857, 
+                  1691612257, 143767931, -970006990, -1114222645, 740227390, 
+                  -1688382962, 589876499, -2094035063, 1864370194}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-6344385</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>2073623506, 1995141706, 
+                  {195478956, -284793955, -1965859132, -419273404, -1081494701, 
+                  1751066518, 1281802038, -1663556741, 1619017080, 277460370, 
+                  1894841365, -1831923262, -1008161774, 1755289713, -1567768951, 
+                  1895174347, 805907279, 563914634, -2073590926, -1190754654, 
+                  -2085116171, 1768725797, 457501567, 1861170651, 605473548, 
+                  584469643, 981024042, -1237762574, 544172723, -1623837030, 
+                  1490858508, -247139665, -1333105787, 1280483396}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>66989135</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1770393013, 
+                  -458428426, {1766134470, 1862641955, -1390207453, -1318635397, 
+                  644469788, -713856367, 1218163265, -1104203885, -1498498428, 
+                  -298126497, -1069605532, 744686623, 1982428220, -389879773, 
+                  986810535, 625373131, 1026451505, -1314101148, -365448170}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>68548653</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>200716390, 804554339, 
+                  {1494752339, 554628014, -1607307783, 790646893, 879006024, 
+                  2133939938, -1841821746, -237581376, -1441527224, -1712753086, 
+                  -207412416, -806125902, -2143751561, -156586701, -556265667, 
+                  -1765061546, 1662495688, 548264075, -1158923630, -1367352123, 
+                  318193325, 1752687344, 94413724, 344886147, 1851010111, 
+                  -1406602798, 2107114376, -9850176, 293606704, -1997629186, 
+                  1379942471, 1999656054, -1622390741, 1254938844, 991840654, 
+                  -2056992971, -1532600700, -1775002599}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-3265442</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1190931003, 
+                  -1195594129, {-1244892749, 470053993, 1286280801, -2001748914, 
+                  -1696819760, 556214842, 1570362178, 1869362283, 930820422, 
+                  144464397, -1974178725, -1253956233, 1723987290, -1298895497, 
+                  2090630683, -1599773077, -1967344477, 1220207765, 1938728444, 
+                  54439954, 1908500847, 340927001, 1130450247, -1547874576, 
+                  302104855, -1826316992, -385973514}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>33939888</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1316189613, -1630352634, 
+                  {925219773, -1805985613, 481294542, 915197610, -1164163158, 
+                  1081972749, 212495868, 1526031366, 277373890, 1358121762, 
+                  -1580842522, 1077807063, 1405322094, 2057268862, -1216198599, 
+                  -851126349, 1122869457, -690931514, -588760206, 738874121, 
+                  1152473526, 973969833, 472285650, -1708922403, 964173405, 
+                  1397520255, -1815934177, 1092138828, -1716975382, 759291036, 
+                  -82987713, 50776776, 968425032, 591001176, -1926979610, 
+                  1211790756}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-28056759</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>68569360, 
+                  -582059828, {-1280625957, 1297637112, 470243454, -2086928839, 
+                  199388415, -1816825837, -877484597, 1965146273, -953219244, 
+                  -1889509167, 981470626, -700450299, -1065266233, -706687862, 
+                  -1887273907, -76344934, -3304802, 1919851926, -1044768949, 
+                  1750009041, 911304048, 534645786, 682377216, -1386760811, 
+                  -1035180982, 1461579626, 1435357513, 152796898, 349801415, 
+                  -1348947292, -2399424, 2011948018, 2025500496, 25311728, 
+                  -669745604, -1318419296, 574122313, 1831300063, 
+-1019855894}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-517529</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1704816054, 1211063670, 
+                  {419592819, -1401097360, 993072251, -1203220607, -1164240874, 
+                  -1384941570, 1856816860, -1443596633, 326436767, 385484239, 
+                  -847691119, -997442804, -1662621472, -874194, 2039368049}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-217991419</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>843930618, 
+                  -670662123, {1015024174, -1969218793, -259057028, 192814104, 
+                  -1720990209, -552852917, 1203782259, -664712497, 1780055682, 
+                  -461622735, 1335608349, 1436993256, 2475039, 177616122, 
+                  1691142948, 1239956937, -1959036831, 1649873349, 169150386, 
+                  21525213, 1741001163, 1240552644, -1812497334, -511847626, 
+                  42799746, 2006604618, -613353270, -845622012, 163698609, 
+                  1617822185, -1777848393, -793182642, 715873838, -1459078704, 
+                  -884421020, -2130464055, 966652932, 1177847719, 735371801, 
+                  -1709313340, 1992861702, 749068039, -865533717, 739395111, 
+                  1258883442, -1529838386, 2033408214, 1843887162, 
+1963562366}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-2174939</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1878057736, -675171841, 
+                  {-1749960017, -869271836, -645008102, 699841767, 1537869672, 
+                  -584839737, -421352200, -97739642, -1703352199}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>30163739</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>230126552, 
+                  -810319434, {1515545520, 79014573, 1350221078, 967269421, 
+                  -1549036423, 944320605, 439330020, -1541081333, -86229001, 
+                  -476563510, -1601697769, 429232918, -980739346, -372218857, 
+                  -1049846855, 1281574157, 1217036580, -369003865, -1788993294, 
+                  968136787, -28059251, 2105360021, -471470153, 866106771, 
+                  -1383599808, 1728311800, -180450259, -1611694092, 
+                -2074283456}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>7239162</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1364717164, 123541976, 
+                  {-684916511, 838822800, -1563171997, 360506265, -1049256851, 
+                  567454859, 87184809, 1881970894, 613673625, -839876974, 
+                  1116592899, 1381900301, 1712227419, -769709358, -192784687, 
+                  685062727, 1245611753, 1228592101, 1913855467, -1732852770, 
+                  1113780195, 433453686, 1515368938, 78660410, -815642894}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>27109798</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1298650083, 
+                  -442328038, {-52964110, -1341811103, 417732147, 944569902, 
+                  114804172, 2074159475, 1009579233, 1164744823, 2122578789, 
+                  -1299687478, -1258281349, -2069020515, -649079667, 
+                  -1801635973, -957454156, 628955266, 2049378597, 724254194, 
+                  -1101519865, 1784141510, -2111646806, -492975125, -1541765807, 
+                  -1879034646, 951151800, -1990684311, 958778974, 2049654262, 
+                  -577836784, -1800581802, -510875058}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-32393339</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1417289523, -1113451299, 
+                  {-1206052919, 1560339906, -186229923, 752121628, 697830066, 
+                  -971862312, 1590614757, 1997029023, 646889840, 1779070350, 
+                  -758581739, -2017851559, -1913902885, -1640444709, -797765505, 
+                  -1350118808, -2068630257, -282952791, -1401002529, 368125070, 
+                  -787711352}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>57942603</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1115097892, 
+                  -1000929758, {-1993804319, 1444989347, -1010357195, 
+                  2114474007, -459149038, 795989486, -1333611407, -779655320, 
+                  -1579697066, 1217407876, -1754320404, -145109204, -213488360, 
+                  728648624, 1917312826, -598568646, -968376977, -844169486, 
+                  2134721498, 134688810, 2115665959, -1505480319, -1391119082, 
+                  191792611, 859978514, 2016552814, -1890526092, -601085236, 
+                  1796856868, 1112432769, -1017048050, 1317598782, -1772943076, 
+                  1973966479, 1164207552, 348512323, 1836504259, -780476325, 
+                  1455735421, -543298391, -2010876334, 1817675555, 1934878461, 
+                  -807505193, -876285331, 1942783981, -1201518709}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-9427437</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>2062790576, 1159823765, 
+                  {-876342651, 361805867, -1372193326, 1060126024, 1332277262, 
+                  -1597024014, 826386970, -1971914690, 301488877, 1941509187, 
+                  -1561077124, -1103038114, -1934090326, -444438127, 1232966138, 
+                  -595932842, 1373155850, -555440451, -563930579, -1927928014, 
+                  -733605938, -1497471470, -329564923, -546325756, -1036852769, 
+                  -320734536, -1279625661, -617475441}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>26624160</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>10, 9, 
+                {4}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>5</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>10, 100, {395}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>5</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>3, 
+                  -2000000000, {2000000000}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>10000, 2147483647, 
+                {-2147483647}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>2706</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1000000000, 
+                  1403466951, {1233321992, 11423750, 1356595134, 1130863021, 
+                  1183514764, 1943494859, 1714480374, 1529875954, 1738756510, 
+                  1190153525}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-46871817</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>2100000000, 2000000000, 
+                  {-1000000000}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-900000000</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>10, 4, 
+                  {2, -99995}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>2, 314159, {10, 8, 6, 4, 2}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>10, 5, 
+                  {4, 6}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>10, 9, {7, 1}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>2</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1000, 10, 
+                  {8, 12}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>2147483647, 2, {3}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2147483640, 
+                  0, {2147483637}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-3</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>2000000001, -2000000000, 
+                  {2000000000}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-2</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2, 
+                  5000000, {5}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>100, 2147483647, 
+{-2147483648}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>5</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2, 
+                  2147000000, {1}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>3, 1, {0, 2}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2000000, 
+                  1000000, {2}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-999998</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>5, 1, {-1}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-2</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2000000000, 
+                  -2147483648, {2147483647}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>294967295</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1000000000, 2147483647, 
+                  {-2147483648}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-294967295</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>10, 0, 
+                  {-2, -3, 4, 5, 6, 9999999}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>2147483647, -2147483647, 
+                  {2147483647}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>9, 0, 
+                {0}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>0</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>5, 3, {4}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>5, 2, {3, 
+                  1}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>2000000000, -2003466951, 
+                  {1233321992, 11423750, 1356595134, 1130863021, 1183514764, 
+                  1943494859, 1714480374, 1529875954, 1738756510, 1190153525}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>14890701</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2147483647, 
+                  0, {-2147483648, -2147483648, 2147483647, 2147483647}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>0</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>3, 0, {2, 1}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>10, 
+                  2147483647, {-2147483648}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>5</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>5, 0, {0, 1}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2, 
+                  314159, {10, 8, 6, 4, 2, 1}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>0</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>2, -2147483648, {-2147483648, 
+                  -2147483648, -2147483648, -2147483648, -2147483648, 
+                  -2147483648, -2147483648, -2147483648, -2147483648, 
+                  -2147483648, -2147483648, -2147483648, -2147483648, 
+                  -2147483648, -2147483648, -2147483648, -2147483648, 
+                  -2147483648, -2147483648, -2147483648, -2147483648, 
+                  -2147483648, -2147483648, -2147483648, -2147483648, 
+                  -2147483648, -2147483648, -2147483648, -2147483648, 
+                  -2147483648, -2147483648, -2147483648, -2147483648, 
+                  -2147483648, -2147483648, -2147483648, -2147483648, 
+                  -2147483648, -2147483648, -2147483648, -2147483648, 
+                  -2147483648, -2147483648, -2147483648, -2147483648, 
+                  -2147483648, -2147483648, -2147483648, -2147483648, 
+                  -2147483648}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>3, 
+                  -2147483648, {0}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>5, 2, {-2}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>100, 2, 
+                  {6, 0, 3}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1000000000, 1403466951, 
+                  {476575848, 236473284, 443856834, 854676746, 234678234, 
+                  783465744, 746574447, 398758745}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-4708206</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>5, 0, 
+                {3}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-2</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>2147483647, 10, {64077, -567273, 
+                  105845, -279980, 35557, -286190, -652879, -431665, -634870, 
+                  -454044}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>35547</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2, 
+                  -2147483648, {-2147483648, -2147483648, 2147483647, 
+                  2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 
+                  2147483647, 1000000000, 1000000000, 1000000000, 1000000000, 
+                  1000000000, 1000000000, -1000000000, -1000000000, 
+                -1000000000}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>0</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>2147483647, -1324123, 
+                  {-2147483648}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>1324122</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2147483647, 
+                  -2147483648, {1073741823}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-1073741823</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>1000001, 2147483646, 
+                  {-2147483647}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>37002</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>10, 0, 
+                  {-1, 1, -1, -1}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>10, 5, {6, 4}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>5, 2, {1, 
+                  3}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>100, 2, {0, 4}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>2</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>10, 0, 
+                  {-6, -6}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>4</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>100, -99, {99}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-2</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2000000000, 
+                  1999999999, {-1999999999}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>2</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>5, 0, {-1, 1}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>10, 23, 
+                  {-2, -3, 4, 5, 6, 9999999}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>10, 5, {3, 7}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>2</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=10 border=0></TD>
+                <TD class=statText align=left 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>3, 
+                  9999997, {-999999999, -999999999, -999999999, -999999999, 
+                  -999999999, -999999999, -999999999, -999999999, -999999999, 
+                  -999999999, -999999999, -999999999, -999999999, -999999999, 
+                  -999999999, -999999999, -999999999, -999999999, -999999999, 
+                  -999999999, -999999999, -999999999, -999999999, -999999999, 
+                  -999999999, -999999999, -999999999, -999999999, -999999999, 
+                  -999999999, -999999999, -999999999, -999999999, -999999999, 
+                  -999999999, -999999999, -999999999, -999999999, -999999999, 
+                  -999999999, -999999999, -999999999, -999999999, -999999999, 
+                  -999999999, -999999999, -999999999, -999999999, -999999999, 
+                  -999999999}</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>-1</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=StepperMotor_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=StepperMotor_sol2_files/steel_blue_bg.gif><IMG 
+                  height=1 alt="" src="StepperMotor_sol2_files/clear.gif" 
+                  width=5 border=0></TD></TR>
+              <TR>
+                <TD background=StepperMotor_sol2_files/steel_blue_bg.gif 
+                colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>500000, 2147483637, 
+                  {-2147483617, -444444}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>32746</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=5 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="StepperMotor_sol2_files/clear.gif" width=1 
+              border=0></TD></TR></TBODY></TABLE><!-- End System Testing --></TD></TR>
+        <TR>
+          <TD width="100%"><IMG height=10 alt="" 
+            src="StepperMotor_sol2_files/clear.gif" width=1 
+        border=0></TD></TR></TBODY></TABLE>
+      <P><BR></P><!-- END BODY --></TD>
+    <TD width=10><IMG height=1 src="StepperMotor_sol2_files/clear.gif" 
+      width=10 border=0></TD>
+    <TD vAlign=top width=180><IMG height=1 
+      src="StepperMotor_sol2_files/clear.gif" width=180 border=0>
+      <SCRIPT language=javascript type=text/javascript>
+
+</SCRIPT>
+       
+      <DIV class=rightColContent><BR><BR></DIV></TD><!-- Gutter -->
+    <TD width=10><IMG height=1 src="StepperMotor_sol2_files/clear.gif" 
+      width=10 border=0></TD><!-- Gutter Ends --></TR></TBODY></TABLE><!-- Footer Include Begins -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><!-- TopCoder Links Begins -->
+  <TBODY>
+  <TR>
+    <TD class=footer width="100%"><A class=footerLinks 
+      href="http://www.topcoder.com/">Home</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A 
+      class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index">About 
+      TopCoder</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+      Room</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus">Contact 
+      Us</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy">Privacy</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+      <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms">Terms</A></TD></TR><!-- TopCoder Links Ends --><!-- Member Sites Begins -->
+  <TR>
+    <TD class=footer width="100%"><A class=footerLinks 
+      href="http://www.topcoder.com/tc">Developer 
+      Center</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/corp/?module=Static&amp;d1=corp&amp;d2=index">Corporate 
+      Services</A> <!-- Member Sites Ends -->
+  <TR>
+    <TD class=footerStripe height=4><IMG height=4 
+      src="C:\Documents and Settings\Samurai\Desktop\tc\StepperMotor_sol2_files\clear(1).gif" 
+      width=10 border=0></TD></TR>
+  <TR>
+    <TD class=copyright width="100%">Copyright © 2001-2007, TopCoder, Inc. All 
+      rights 
+reserved.</TD></TR></TBODY></TABLE><!-- Footer Include Ends --></BODY></HTML>

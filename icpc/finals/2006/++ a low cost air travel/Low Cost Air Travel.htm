@@ -1,0 +1,151 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3561 - Low Cost Air Travel</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Low%20Cost%20Air%20Travel_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3561 - Low Cost Air Travel</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2005"><b>World Finals - San Antonio - Texas - 2005/2006</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3561.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3561"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3561"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+Air fares are crazy! The cost of a ticket is determined by numerous
+factors, and is usually not directly related to the distance traveled.
+Many travelers try to be creative, sometimes using only parts of
+tickets with stops in various cities to achieve lower-cost travel.
+However, the airlines are aware of this behavior, and usually require
+that the travel covered by a ticket be completed in order and without
+intervening travel. For example, if you have a ticket for travel from
+City-1 to City-2 then to City-3, you are not allowed to use only the
+portion of the ticket for travel from City-2 to City-3. You must always
+start at the first city on the ticket. In addition, you are not allowed
+to travel from City-1 to City-2, fly elsewhere and return, and then
+continue your journey from City-2 to City-3. </p><p>
+
+</p><p>
+<br>
+Let's consider an example. Suppose you are allowed to purchase three types of tickets: 
+
+</p><p>
+
+</p><p>
+<br>
+<table cols="3">
+<col align="left"><col align="left"><col align="left">
+<tbody><tr><td align="left" nowrap="nowrap" valign="baseline">
+Ticket #1: </td><td align="left" nowrap="nowrap" valign="baseline"> City-1 to City-3 to City-4 </td><td align="left" nowrap="nowrap" valign="baseline"> $225.00 </td></tr>
+<tr><td align="left" nowrap="nowrap" valign="baseline"> 
+Ticket #2: </td><td align="left" nowrap="nowrap" valign="baseline"> City-1 to City-2 </td><td align="left" nowrap="nowrap" valign="baseline"> $200.00 </td></tr>
+<tr><td align="left" nowrap="nowrap" valign="baseline"> 
+Ticket #3: </td><td align="left" nowrap="nowrap" valign="baseline"> City-2 to City-3 </td><td align="left" nowrap="nowrap" valign="baseline"> $50.00 </td></tr>
+</tbody></table>
+
+</p><p>
+
+</p><p>
+<br>
+Suppose you wanted to travel from City-1 to City-3. There are two ways to get there using only the available ticket choices: 
+
+</p><p>
+
+</p><p>
+<br>
+<table cols="1">
+<col align="left">
+<tbody><tr><td align="left" nowrap="nowrap" valign="baseline">
+Purchase Ticket #1 for $225.00 and use only the first leg of the ticket. </td></tr>
+<tr><td align="left" nowrap="nowrap" valign="baseline"> 
+Purchase Ticket #2 for $200.00 and Ticket #3 for $50. </td></tr>
+</tbody></table>
+
+</p><p>
+
+</p><p>
+<br>
+The first choice is the cheapest. 
+
+</p><p>
+
+</p><p>
+<br>
+Given a set of airline ticket offers, and one or more trip itineraries,
+you must determine how to purchase tickets in order to minimize the
+cost of travel. Each trip will be possible.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+Input consists of multiple test cases, each describing a set of ticket offers and a set of trip itineraries. 
+
+</p><p>
+Each case begins with a line containing <span class="MATH"><i>NT</i></span>, the number of ticket offers, followed by <span class="MATH"><i>NT</i></span>
+offer descriptions, one to a line. Each description consists of a
+positive integer specifying the price of the ticket, the number of
+cities in the ticket's route, and then that many cities. Each city in a
+case has an arbitrary, but unique, integer identification number. Note
+that several tickets may be purchased from the same offer. </p><p>
+The next line contains <span class="MATH"><i>NI</i></span>, the number of trips that are to have their cost minimized. <span class="MATH"><i>NI</i></span>
+lines follow, giving the itineraries for each trip. Each line consists
+of the number of cities in the itinerary (including the starting city),
+followed by that many city identification numbers, given in the order
+they are to be visited. </p><p>
+There will be no more than 20 ticket offers or 20 itineraries in a test
+case. Each offer and itinerary lists from 2 to 10 cities. No ticket
+price exceeds $10,000. Adjacent cities in a route or itinerary will be
+distinct. Tickets and trips are numbered sequentially in each set,
+starting with 1. </p><p>
+The last case is followed by a line containing a zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each trip, output two lines containing the case number, the trip
+number, the minimum cost of the trip, and the numbers of the tickets
+used for the trip, in the order they will be used. Follow the output
+format shown below. The output will always be unique.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>3 
+225 3 1 3 4 
+200 2 1 2 
+50 2 2 3 
+1 
+2 1 3 
+3 
+100 2 2 4 
+100 3 1 4 3 
+200 3 1 2 3 
+2 
+3 1 4 3 
+3 1 2 4 
+0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>Case 1, Trip 1: Cost = 225
+  Tickets used: 1
+Case 2, Trip 1: Cost = 100
+  Tickets used: 2
+Case 2, Trip 2: Cost = 300
+  Tickets used: 3 1
+</pre> 
+
+<p>
+</p><p>
+<b>Claimer:</b>
+The data used in this problem is unofficial data
+prepared by Derek Kisman. So any mistake here does not
+imply mistake in the offcial judge data. Only Derek
+Kisman is responsible for the mistakes. Report
+mistakes to dkisman@acm.org
+
+</p><hr><address>San Antonio - Texas 2005-2006</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

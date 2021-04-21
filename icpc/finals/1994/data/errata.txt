@@ -1,0 +1,4 @@
+a: book can be borrowed even if not in the shelve
+d: icpc93d.htm was modified to allow multiple data sets
+f: allows empty lines (f_gen: no, f.c: yes)
+g: icpc93g.htm was modified in OUTPUT specification.

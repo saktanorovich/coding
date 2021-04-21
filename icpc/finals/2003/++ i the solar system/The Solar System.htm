@@ -1,0 +1,162 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>2729 - The Solar System</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="The%20Solar%20System_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>2729 - The Solar System</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2002"><b>World Finals - Beverly Hills - 2002/2003</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p2729.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=2729"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=2729"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+It is common knowledge that the Solar System consists of the sun at its center and
+nine planets moving around the
+sun on elliptical orbits. Less well known is the fact that the planets' orbits are
+not at all arbitrary. In fact, the orbits
+obey three laws discovered by Johannes Kepler. These laws, also called
+``The Laws of Planetary Motion," are the following.
+
+</p><ol>
+<li>The orbits of the planets are ellipses, with the sun at one focus of the ellipse.
+(Recall that the two foci of an
+ellipse are such that the sum of the distances to them is the same for all points on the ellipse.)
+</li>
+<li>The line joining a planet to the sun sweeps over equal areas during equal time
+intervals as the planet travels around the ellipse.
+</li>
+<li>The ratio of the squares of the revolutionary periods of two planets is equal
+to the ratio of the cubes of their semi major axes.
+</li>
+</ol>
+
+<p>
+By Kepler's first law, the path of the planet shown in the
+figure on the left is an ellipse. According to Kepler's second
+law, if the planet goes from M to N in time <span class="MATH"><i>t</i><sub>A</sub></span> and from P to Q
+in time <span class="MATH"><i>t</i><sub>B</sub></span> and if <span class="MATH"><i>t</i><sub>A</sub> = <i>t</i><sub>B</sub></span>, then area A equals area B. Kepler's
+third law is illustrated next.
+
+</p><p>
+
+<img src="The%20Solar%20System_files/p2729a.gif" alt="$\textstyle \parbox{.5\textwidth}{
+\begin{center}
+\mbox{}
+\epsfxsize=3.25in
+\epsfbox{p2729a.eps}
+\end{center}}$" align="middle" border="0" height="221" width="377"><img src="The%20Solar%20System_files/p2729b.gif" alt="$\textstyle \parbox{.49\textwidth}{
+\begin{center}
+\mbox{}
+\epsfxsize=3.25in
+\epsfbox{p2729b.eps}
+\end{center}}$" align="middle" border="0" height="309" width="377">
+</p><p>
+Consider an ellipse whose center is at the origin
+0 and that is symmetric with respect to the two
+coordinate axes. The <span class="MATH"><i>x</i></span>-axis intersects the
+ellipse at points A and B and the <span class="MATH"><i>y</i></span>-axis
+intersects the ellipse at points C and D. Set
+<!-- MATH
+ $a = {1 \over 2}|AB|$
+ -->
+<span class="MATH"><i>a</i> = <img src="The%20Solar%20System_files/2729img3.gif" alt="$ {1 \over 2}$" align="middle" border="0" height="38" width="15">| <i>AB</i>|</span> and <!-- MATH
+ $b = {1 \over 2}|CD|$
+ -->
+<span class="MATH"><i>b</i> = <img src="The%20Solar%20System_files/2729img3.gif" alt="$ {1 \over 2}$" align="middle" border="0" height="38" width="15">| <i>CD</i>|</span>. Then the ellipse is
+defined by the equation <!-- MATH
+ ${x^2 \over a^2} + {y^2 \over b^2} = 1$
+ -->
+<span class="MATH"><img src="The%20Solar%20System_files/2729img4.gif" alt="$ {x^2 \over a^2}$" align="middle" border="0" height="43" width="22"> + <img src="The%20Solar%20System_files/2729img5.gif" alt="$ {y^2 \over b^2}$" align="middle" border="0" height="45" width="22"> = 1</span>. If <span class="MATH"><i>a</i><img src="The%20Solar%20System_files/2729img6.gif" alt="$ \ge$" align="middle" border="0" height="30" width="18"><i>b</i></span>,
+AB is called the major axis, CD the minor
+axis, and OA (with length <span class="MATH"><i>a</i></span>) is called the semi
+major axis. When two planets are revolving
+around the sun in times <span class="MATH"><i>t</i><sub>1</sub></span> and <span class="MATH"><i>t</i><sub>2</sub></span> respectively,
+and the semi major axes of their orbits have
+lengths <span class="MATH"><i>a</i><sub>1</sub></span> and <span class="MATH"><i>a</i><sub>2</sub></span>, then according to Kepler's
+third law <!-- MATH
+ $({t_1 \over t_2})^2 = ({a_1 \over a_2})^3$
+ -->
+<span class="MATH">(<img src="The%20Solar%20System_files/2729img7.gif" alt="$ {t_1 \over t_2}$" align="middle" border="0" height="37" width="20">)<sup>2</sup> = (<img src="The%20Solar%20System_files/2729img8.gif" alt="$ {a_1 \over a_2}$" align="middle" border="0" height="33" width="22">)<sup>3</sup></span>.
+
+</p><p>
+
+</p><p>
+<br>
+In this problem, you are to compute the location of a planet using Kepler's laws.
+You are given the description of
+one planet in the Solar System (i.e., the length of its semi-major axis, semi-minor axis,
+and its revolution time) and
+the description of a second planet (its semi-major axis and semi-minor axis).
+Assume that the second planet's orbit
+is aligned with the coordinate axes (as in the above figure), that it moves
+in counter clockwise direction, and that the
+sun is located at the focal point with non-negative <span class="MATH"><i>x</i></span>-coordinate.
+You are to compute the position of the second
+planet a specified amount of time after it starts at the point with
+maximal <span class="MATH"><i>x</i></span>-coordinate on its orbit (point B in the
+above figure).
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+The input file contains several descriptions of pairs of planets. Each line contains
+six integers <!-- MATH
+ $a_1, b_1, t_1, a_2, b_2, t$
+ -->
+<span class="MATH"><i>a</i><sub>1</sub>, <i>b</i><sub>1</sub>, <i>t</i><sub>1</sub>, <i>a</i><sub>2</sub>, <i>b</i><sub>2</sub>, <i>t</i></span>. The
+first five integers are positive, and describe two planets as follows:
+
+<p>
+
+</p><p>
+<br>
+<span class="MATH"><i>a</i><sub>1</sub></span> = semi major axis of the first planet's orbit
+
+</p><p>
+<span class="MATH"><i>b</i><sub>1</sub></span> = semi minor axis of the first planet's orbit
+
+</p><p>
+<span class="MATH"><i>t</i><sub>1</sub></span> = period of revolution of the first planet (in days)
+
+</p><p>
+<span class="MATH"><i>a</i><sub>2</sub></span> = semi major axis of the second planet's orbit
+
+</p><p>
+<span class="MATH"><i>b</i><sub>2</sub></span> = semi minor axis of the second planet's orbit
+
+</p><p>
+
+</p><p>
+<br>
+The non-negative integer <span class="MATH"><i>t</i></span> is the time (in days) at which you have to
+determine the position of the second planet,
+assuming that the planet starts in position <span class="MATH">(<i>a</i><sub>2</sub>, 0)</span>.
+
+</p><p>
+The last description is followed by a line containing six zeros.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+For each pair of planets described in the input, produce one line of output.
+For each line, print the number of the test
+case. Then print the <span class="MATH"><i>x</i></span>- and <span class="MATH"><i>y</i></span>-coordinates of the position of the second
+planet after <span class="MATH"><i>t</i></span> days. These values must be
+exact to three digits to the right of the decimal point. Follow the format of
+the sample output provided below.
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>10 5 10 10 5 10
+10 5 10 20 10 10
+0 0 0 0 0 0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>Solar System 1: 10.000 0.000
+Solar System 2: -17.525 4.819
+</pre>
+
+<p>
+</p><hr><address>Beverly Hills 2002-2003</address><p></p></body></html>

@@ -1,0 +1,139 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251"><title>2721 - Building Bridges</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Building%20Bridges_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>2721 - Building Bridges</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2002"><b>World Finals - Beverly Hills - 2002/2003</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p2721.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=2721"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=2721"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+The City Council of New Altonville plans to build a system of bridges connecting all of its
+downtown buildings together so people can walk from one building to another without going outside.
+You must write a program to help determine an optimal bridge configuration.
+
+</p><p>
+New Altonville is laid out as a grid of squares. Each building occupies a connected set
+of one or more squares. Two
+occupied squares whose corners touch are considered to be a single building and
+do not need a bridge. Bridges may
+be built only on the grid lines that form the edges of the squares.
+Each bridge must be built in a straight line and
+must connect exactly two buildings.
+
+</p><p>
+For a given set of buildings, you must find the minimum number of bridges needed to
+connect all the buildings. If
+this is impossible, find a solution that minimizes the number of disconnected groups
+of buildings. Among possible
+solutions with the same number of bridges, choose the one that minimizes the
+sum of the lengths of the bridges,
+measured in multiples of the grid size. Two bridges may cross, but in this
+case they are considered to be on separate
+levels and do not provide a connection from one bridge to the other.
+
+</p><p>
+The figure below illustrates four possible city configurations. City 1 consists
+of five buildings that can be connected
+by four bridges with a total length of 4. In City 2, no bridges are possible,
+since no buildings share a common grid
+line. In City 3, no bridges are needed because there is only one building.
+In City 4, the best solution uses a single
+bridge of length 1 to connect two buildings, leaving two disconnected groups
+(one containing two buildings and one containing a single building).
+
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p2721.eps}$
+ -->
+<img src="Building%20Bridges_files/p2721.gif" alt="\epsfbox{p2721.eps}" align="bottom" border="0">
+</div>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+The input data set describes several rectangular cities. Each city description begins
+with a line containing two
+integers <span class="MATH"><i>r</i></span> and <span class="MATH"><i>c</i></span>, representing the size of the city on the north-south and
+east-west axes measured in grid lengths
+(<!-- MATH
+ $1 \le r \le 100$
+ -->
+<span class="MATH">1<img src="Building%20Bridges_files/2721img2.png" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>r</i><img src="Building%20Bridges_files/2721img2.png" alt="$ \le$" align="middle" border="0" height="30" width="18">100</span> and <!-- MATH
+ $1 \le c \le 100$
+ -->
+<span class="MATH">1<img src="Building%20Bridges_files/2721img2.png" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>c</i><img src="Building%20Bridges_files/2721img2.png" alt="$ \le$" align="middle" border="0" height="30" width="18">100</span>). These numbers are followed by exactly <span class="MATH"><i>r</i></span> lines,
+each consisting of <span class="MATH"><i>c</i></span> hash (`<tt>#</tt>') and dot
+(`<tt>.</tt>') characters. Each character corresponds to one square of the grid.
+A hash character corresponds to a square that
+is occupied by a building, and a dot character corresponds to a square that
+is not occupied by a building.
+
+<p>
+The input data for the last city will be followed by a line containing two zeros.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+For each city description, print two or three lines of output as shown below.
+The first line consists of the city
+number. If the city has fewer than two buildings, the second line is
+the sentence `<tt>No bridges are needed.</tt>'. If the city
+has two or more buildings but none of them can be connected by bridges,
+the second line is the sentence `<tt>No
+bridges are possible.</tt>'. Otherwise, the second line is `<tt><span class="MATH"><i>N</i></span> bridges of total
+length <span class="MATH"><i>L</i></span></tt>' where <span class="MATH"><i>N</i></span> is the number of bridges
+and <span class="MATH"><i>L</i></span> is the sum of the lengths of the bridges of the best solution.
+(If <span class="MATH"><i>N</i></span> is 1, use the word `<tt>bridge</tt>' rather than
+`<tt>bridges.</tt>') If the solution leaves two or more disconnected groups of buildings,
+print a third line containing the number of disconnected groups.
+
+<p>
+Print a blank line between cases. Use the output format shown in the example.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>3 5
+#...#
+..#..
+#...#
+3 5
+##...
+.....
+....#
+3 5
+#.###
+#.#.#
+###.#
+3 5
+#.#..
+.....
+....#
+0 0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>City 1
+4 bridges of total length 4
+
+City 2
+No bridges are possible.
+2 disconnected groups
+
+City 3
+No bridges are needed.
+
+City 4
+1 bridge of total length 1
+2 disconnected groups
+</pre>
+
+<p>
+
+
+</p><p>
+</p><hr><address>Beverly Hills 2002-2003</address><p></p></body></html>

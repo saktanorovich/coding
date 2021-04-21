@@ -1,0 +1,1371 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:expr="http://www.google.com/2005/gml/expr" xmlns:data="http://www.google.com/2005/gml/data" xmlns:b="http://www.google.com/2005/gml/b" xmlns="http://www.w3.org/1999/xhtml" dir="ltr"><head>
+
+
+<script type="text/javascript">(function() { var a=window;function d(b){this.t={};this.tick=function(c,h,e){var i=e?e:(new Date).getTime();this.t[c]=[i,h]};this.tick("start",null,b)}var f=new d;a.jstiming={Timer:d,load:f};try{a.jstiming.pt=a.external.pageT}catch(g){};function j(b){var c=0;if(b.offsetParent){do c+=b.offsetTop;while(b=b.offsetParent)}return c}a.tickAboveFold=function(b){j(b)<=750&&a.jstiming.load.tick("aft")};var k=false;function l(){if(!k){k=true;a.jstiming.load.tick("firstScrollTime")}}a.addEventListener?a.addEventListener("scroll",l,false):a.attachEvent("onscroll",l); })();</script>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="true" name="MSSmartTagsPreventParsing">
+<meta content="blogger" name="generator">
+<link href="http://www.blogger.com/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+<link rel="alternate" type="application/atom+xml" title="Algorithm problems for dummies: Petr Mitrichev's blog - Atom" href="http://petr-mitrichev.blogspot.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="Algorithm problems for dummies: Petr Mitrichev's blog - RSS" href="http://petr-mitrichev.blogspot.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="Algorithm problems for dummies: Petr Mitrichev's blog - Atom" href="http://www.blogger.com/feeds/1953325079793449971/posts/default">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=1953325079793449971">
+<link rel="me" href="http://www.blogger.com/profile/00138130656174416711">
+<link rel="openid.server" href="http://www.blogger.com/openid-server.g">
+<title>Algorithm problems for dummies: Petr Mitrichev's blog</title>
+<style>
+
+   span.fullpost {display:none;} 
+
+</style>
+<style id="page-skin-1" type="text/css"><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Minima Stretch
+Designer: Douglas Bowman / Darren Delaye
+URL:      www.stopdesign.com
+Date:     26 Feb 2004
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="bgcolor" description="Page Background Color"
+type="color" default="#fff">
+<Variable name="textcolor" description="Text Color"
+type="color" default="#333">
+<Variable name="linkcolor" description="Link Color"
+type="color" default="#58a">
+<Variable name="pagetitlecolor" description="Blog Title Color"
+type="color" default="#666">
+<Variable name="descriptioncolor" description="Blog Description Color"
+type="color" default="#999">
+<Variable name="titlecolor" description="Post Title Color"
+type="color" default="#c60">
+<Variable name="bordercolor" description="Border Color"
+type="color" default="#ccc">
+<Variable name="sidebarcolor" description="Sidebar Title Color"
+type="color" default="#999">
+<Variable name="sidebartextcolor" description="Sidebar Text Color"
+type="color" default="#666">
+<Variable name="visitedlinkcolor" description="Visited Link Color"
+type="color" default="#999">
+<Variable name="bodyfont" description="Text Font"
+type="font" default="normal normal 100% Georgia, Serif">
+<Variable name="headerfont" description="Sidebar Title Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif">
+<Variable name="pagetitlefont" description="Blog Title Font"
+type="font"
+default="normal normal 200% Georgia, Serif">
+<Variable name="descriptionfont" description="Blog Description Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
+<Variable name="postfooterfont" description="Post Footer Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+/* Use this with templates/template-twocol.html */
+body {
+background:#ffffff;
+margin:0;
+color:#333333;
+font:x-small Georgia Serif;
+font-size/* */:/**/small;
+font-size: /**/small;
+text-align: center;
+}
+a:link {
+color:#5588aa;
+text-decoration:none;
+}
+a:visited {
+color:#999999;
+text-decoration:none;
+}
+a:hover {
+color:#cc6600;
+text-decoration:underline;
+}
+a img {
+border-width:0;
+}
+/* Header
+-----------------------------------------------
+*/
+#header-wrapper {
+margin:0 2% 10px;
+border:1px solid #cccccc;
+}
+#header {
+margin: 5px;
+border: 1px solid #cccccc;
+text-align: center;
+color:#666666;
+}
+#header-inner {
+background-position: center;
+margin-left: auto;
+margin-right: auto;
+}
+#header h1 {
+margin:5px 5px 0;
+padding:15px 20px .25em;
+line-height:1.2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+font: normal normal 200% Georgia, Serif;
+}
+#header a {
+color:#666666;
+text-decoration:none;
+}
+#header a:hover {
+color:#666666;
+}
+#header .description {
+margin:0 5px 5px;
+padding:0 20px 15px;
+text-transform:uppercase;
+letter-spacing:.2em;
+line-height: 1.4em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+color: #999999;
+}
+#header img {
+margin-left: auto;
+margin-right: auto;
+}
+/* Outer-Wrapper
+----------------------------------------------- */
+#outer-wrapper {
+margin:0;
+padding:10px;
+text-align:left;
+font: normal normal 100% Georgia, Serif;
+}
+#main-wrapper {
+margin-left: 2%;
+width: 67%;
+float: left;
+display: inline;       /* fix for doubling margin in IE */
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+}
+#sidebar-wrapper {
+margin-right: 2%;
+width: 25%;
+float: right;
+display: inline;       /* fix for doubling margin in IE */
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+margin:1.5em 0 .75em;
+font:normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#999999;
+}
+/* Posts
+-----------------------------------------------
+*/
+h2.date-header {
+margin:1.5em 0 .5em;
+}
+.post {
+margin:.5em 0 1.5em;
+border-bottom:1px dotted #cccccc;
+padding-bottom:1.5em;
+}
+.post h3 {
+margin:.25em 0 0;
+padding:0 0 4px;
+font-size:140%;
+font-weight:normal;
+line-height:1.4em;
+color:#cc6600;
+}
+.post h3 a, .post h3 a:visited, .post h3 strong {
+display:block;
+text-decoration:none;
+color:#cc6600;
+font-weight:normal;
+}
+.post h3 strong, .post h3 a:hover {
+color:#333333;
+}
+.post-body {
+margin:0 0 .75em;
+line-height:1.6em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+margin: .75em 0;
+color:#999999;
+text-transform:uppercase;
+letter-spacing:.1em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+line-height: 1.4em;
+}
+.comment-link {
+margin-left:.6em;
+}
+.post img {
+padding:4px;
+border:1px solid #cccccc;
+}
+.post blockquote {
+margin:1em 20px;
+}
+.post blockquote p {
+margin:.75em 0;
+}
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+margin:1em 0;
+font-weight: bold;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color: #999999;
+}
+#comments-block {
+margin:1em 0 1.5em;
+line-height:1.6em;
+}
+#comments-block .comment-author {
+margin:.5em 0;
+}
+#comments-block .comment-body {
+margin:.25em 0 0;
+}
+#comments-block .comment-footer {
+margin:-.25em 0 2em;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.1em;
+}
+#comments-block .comment-body p {
+margin:0 0 .75em;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+}
+#blog-pager-newer-link {
+float: left;
+}
+#blog-pager-older-link {
+float: right;
+}
+#blog-pager {
+text-align: center;
+}
+/* Sidebar Content
+----------------------------------------------- */
+.sidebar {
+color: #666666;
+line-height: 1.5em;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 0;
+padding:0 0 0;
+}
+.sidebar li {
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:.25em;
+padding-left:15px;
+text-indent:-15px;
+line-height:1.5em;
+}
+.sidebar .widget, .main .widget {
+border-bottom:1px dotted #cccccc;
+margin:0 0 1.5em;
+padding:0 0 1.5em;
+}
+.main .Blog {
+border-bottom-width: 0;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 0;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+padding: 4px;
+border: 1px solid #cccccc;
+}
+.profile-data {
+margin:0;
+text-transform:uppercase;
+letter-spacing:.1em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+color: #999999;
+font-weight: bold;
+line-height: 1.6em;
+}
+.profile-datablock {
+margin:.5em 0 .5em;
+}
+.profile-textblock {
+margin: 0.5em 0;
+line-height: 1.6em;
+}
+.profile-link {
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+text-transform: uppercase;
+letter-spacing: .1em;
+}
+/* Footer
+----------------------------------------------- */
+#footer {
+width:660px;
+clear:both;
+margin:0 auto;
+padding-top:15px;
+line-height: 1.6em;
+text-transform:uppercase;
+letter-spacing:.1em;
+text-align: center;
+}
+
+--></style>
+<link type="text/css" rel="stylesheet" href="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/2300090209-widget_css_bundle.css"> <link rel="stylesheet" type="text/css" href="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/3727950723-blog_controls.css">
+ <link rel="stylesheet" type="text/css" href="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/authorization.css">
+<style type="text/css">#navbar-iframe { display:block }
+</style>
+
+</head><body>
+<div class="navbar section" id="navbar"><div class="widget Navbar" id="Navbar1"><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<iframe src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/navbar.htm" marginwidth="0" marginheight="0" id="navbar-iframe" title="Blogger Navigation and Search" scrolling="no" width="100%" frameborder="0" height="30"></iframe>
+<div></div></div></div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5922201-1");
+pageTracker._trackPageview();
+</script>
+<div id="outer-wrapper"><div id="wrap2">
+<!-- skip links for text browsers -->
+<span id="skiplinks" style="display: none;">
+<a href="#main">skip to main </a> |
+      <a href="#sidebar">skip to sidebar</a>
+</span>
+<div id="header-wrapper">
+<div class="header section" id="header"><div class="widget Header" id="Header1">
+<div id="header-inner">
+<div class="titlewrapper">
+<h1 class="title">
+Algorithm problems for dummies: Petr Mitrichev's blog
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+<div id="content-wrapper">
+<div id="crosscol-wrapper" style="text-align: center;">
+<div class="crosscol section" id="crosscol"></div>
+</div>
+<div id="main-wrapper">
+<div class="main section" id="main"><div class="widget Blog" id="Blog1">
+<div class="blog-posts hfeed">
+<!-- google_ad_section_start -->
+<h2 class="date-header">Tuesday, April 21, 2009</h2>
+<div class="post hentry uncustomized-post-template">
+<a name="2269445810510176660"></a>
+<h3 class="post-title entry-title">
+<a href="http://petr-mitrichev.blogspot.com/2009/04/icpc-2009-world-finals.html">ICPC 2009 World Finals</a>
+</h3>
+<div class="post-header-line-1"></div>
+<div class="post-body entry-content">
+Here're the problem statements: <a href="http://cm2prod.baylor.edu/resources/pdf/2009Problems.pdf">http://cm2prod.baylor.edu/resources/pdf/2009Problems.pdf</a> (mirrored at <a href="http://77.41.63.3/icpc2009/statements/problems.pdf">http://77.41.63.3/icpc2009/statements/problems.pdf</a>)<br>Here're the standings: <a href="http://zibada.ru/pcms/finals/">http://zibada.ru/pcms/finals/</a><br>Here's the SnarkNews coverage: <a href="http://acm.math.spbu.ru/%7Esnark/finals/">http://acm.math.spbu.ru/~snark/finals/</a><br><br>I'll try to post some analysis here.<br><br>Problem A.<br>First,
+we loop over 8! possible orderings for the landing of the planes. Then,
+we do binary search on the answer. Having fixed the answer, we simply
+land each plane in the chosen order at the earliest possible time.<div><br></div><div>Problem B.</div><div>This
+problem requires careful checking of all boundary cases, and doesn't
+seem to require any particular insight. One just verifies the output of
+the original scheme on all given inputs, as well as the output of all
+"wrong" schemes that can be obtained from the given one by introducing
+one mistake (since there's not more than 19 gates, there's not more
+than 57 such schemes), and then checks if the output can be uniquely
+determined. But there surely is some trickiness to implementing that.</div><div><br></div><div>Problem C.</div><div>This
+is a very well-known problem if the ant moves along the surface of the
+cube; the octahedron doesn't change much. We try all possible ways to
+lay out the octahedron's sides on the plane (first place the first
+side, then place any of its neighbors next to it, and so on). The
+number of possible layouts should be on the order of hundreds or
+thousands. And in at least one layout, the shortest path will be just a
+straight segment - so we need to check those segments in all layouts,
+throw away those that go outside the layout, and then find the shortest
+one of the remaining. This solution should work as long as no shortest
+path passes through the same side twice; I don't have a proof for that,
+but intuitively it seems true. The implementation will require a LOT of
+accuracy, though.</div><div><br></div><div>Problem D.</div><div>One
+thing that comes to mind is to draw all possible layouts on paper, and
+figure out the formulas for the answer in each of them. But that's very
+error-prone, so I hope there's a more concise solution.</div><div><br></div><div>Problem E.</div><div>Take
+any vertex in the graph. Let's say it has a "nice left" if any path
+from the start to that vertex has the same cost. Let's say is has a
+"nice right" if any path from the end to that vertex has the same cost.</div><div>This can be determined by DFSen.</div><div>If
+there's a vertex without both nice left and nice right, then there's no
+solution: at least one of the roads to the right of it will have to be
+modified, and at least one of the roads to the left of it will have to
+be modified - so there will be a path with two modified roads.</div><div>Otherwise,
+the vertices split into 3 sets: A - vertices with nice left but no nice
+right, B - vertices with nice left and nice right, and C - vertices
+with nice right but no nice left. If both A and C are empty, the
+constraints are already satisfied and there's no need to change
+anything. Othewise, A will always have the start vertex, C will always
+have the end vertex.</div><div>Let's assume for now that B is empty.
+The above argument about no path with two modified roads tells us that
+the only way to achieve what's required is to modify the roads that
+lead from A to C. More specifically: take all pairs of vertices a from
+A and c from C, where there exists and edge from a to c. The cost of
+that edge plus the cost of the path from start to a and from c to end
+is a lower bound for the answer. Take the highest of those lower
+bounds, say H, and change the cost of each edge between a from A and c
+from C to H-cost(start,a)-cost(c,end). This will quite obviously be the
+minimal possible answer, and every path will have the same cost of H
+since it will pass along exactly one edge from A to C.</div><div>Now,
+how to deal with B? It turns out that we can simply put all vertices
+from B to C, and the above solution will still work - since it always
+leaves at least one route from start to end unchanged, it can't make a
+non-optimal answer; and it will always produce a correct answer since
+the only thing it requires is for all vertices from A have a "nice
+left" and all vertices from C have a "nice right".</div><div>Does that make sense? :)</div><div><br></div><div>Problem F.</div><div>First,
+let's learn how to calculate the length of one fence required to
+enclose the given set of points. To find that fence, we find the convex
+hull of that set of points, and then "extend" it to the outside by the
+given margin. The result may have a complex structure of straight and
+circular segments, but its total length is easily computed: the total
+length of straight segments is equal to the perimeter of the convex
+hull, and the total length of circular segments is equal to one circle,
+2*pi*margin (because you have to "rotate" by 2*pi to complete the cycle
+- when you're moving in straight line, your direction doesn't change).</div><div>The
+rest of the problem is standard: we do a DP that calculates the minimum
+possible cost for each subset of points, by choosing a subset of that
+subset to be contained by one fence, and taking the previously-computed
+DP value for the rest of the points.</div><div><br></div><div>Problem G.</div><div>I
+think this problem requires one just to implement the game's rules
+carefully. The number of possible states in the game is reasonably
+small: the position is characterized by the number of cards still lying
+in the row, the cards held by both players, if any, and the layout of
+the "top line" of the house of cards - which will always include not
+more than 8 cards. This gives us a rough estimate of C(26,10)*26
+states, which is roughly 100 million - but in reality much less of the
+states will be reachable, since the top line only contains 8 cards in
+one case, and so on.</div><div><br></div><div>Problem H.</div><div>If
+we introduce variables x1,x2,... for the decisions on the bills, then
+satisfying all ministers can be formulated via statements of form "if
+x5 is false, then x7 is true" (since if at least one decision
+contradicts minister's choices, then all his other choices must be
+respected). That gives us an instance of 2-CNF satisfiability problem,
+and its solution is well-known. Checking which variables have the same
+value in any solution is also quite routinely added to that well-known
+solution (for example, we fix that variable and run the satisfiability
+checking again).</div><div><br></div><div>Problem I.</div><div>Another
+implementation problem here. One should understand the problem
+statement, and then simulate all resizes going from the outermost
+window inside. </div><div><br></div><div>Problem J.</div><div>We can
+try solving this with a binary search + DP. We binary search over the
+answer, then do a DP on subtrees. For each subtree, consider all
+possible roundings that don't contradict the chosen answer (that is,
+the paths completely inside the subtree don't change by more than that
+answer), and from each of those roundings, we're interested in the
+lowest and highest differences for paths from the root of that subtree
+to its vertices (these two values are the only ones that affect paths
+that pass through the root of that subtree). So the DP can be: for a
+subtree T and a lower bound L on the difference on the paths from its
+root, what is the lowest possible upper bound U on that difference?
+This should give us only at most of 100*30*100 states, and I think the
+processing of all states can be done in at most 100*30*100 time (since
+there're only 100 edges, and "updating" along each edge will take one
+scan along a 30*100 array that has the U's for each L), thus even a
+binary search outside still leaves the running time reasonable.</div><div>I
+know this is very unclear, but I think the only way to figure out the
+details is to actually start coding the solution, and I'm too lazy for
+that :)</div><div><div>A shot at clarifying: for a subtree, there're 3 parameters:</div><div>1) the maixmum modulus of delta for paths inside that subtree</div><div>2) the maximum delta for paths from the root of that subtree into the subtree</div><div>3) the minimum delta for paths from the root of that subtree into the subtree</div><div>Without
+the binary search, we'd be forced to add the 1st parameter to the DP,
+and that would make it too slow. That's why we use binary search
+outside.</div></div><div><br></div><div>Problem K.</div><div>Consider
+the chain of transformation in the optimal answer. Consider the
+change(s) that affect the leftmost character of the string. Between
+those changes, the transformation is split into independent parts. That
+gives us the possibility of the following DP: consider the set of all
+suffixes of length L of all given strings (S,T, and all transformation
+strings). There're at most 202 of those for each L. Now, let's
+calculate the best way to transform each of those strings to each
+other, given that we know such answers for smaller values of L. First,
+we account for the transformations that don't involve the whole L
+characters - we can just take the value from the L-1 step. And then,
+there are transformations with the whole L characters - they are given
+by rules of length exactly L. And then, we need to combine those two
+kinds with a shortest-paths algorithm, like the Floyd-Warshall. That
+gives us 202^3 running time for each L, so about 160 million very
+simple operation for each testcase - that should be enough.</div><div><br></div><div>So
+that makes about 170 minutes for all solutions with some interruptions
+:) It's nice that they don't have problems that are theoretically
+impossible to solve during the contest.</div><div><br></div><div>I
+think the problems are nice and continue the usual trend of World
+Finals problems. Thanks for all judges for composing this contest, and
+for KTH and ACM for organizing it!</div>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<script charset="utf-8" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/PetrMitrichev_002.js" type="text/javascript"></script><script src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/PetrMitrichev.htm" type="text/javascript"></script><div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+Posted by
+<span class="fn">Petr</span>
+</span>
+<span class="post-timestamp">
+at
+<a class="timestamp-link" href="http://petr-mitrichev.blogspot.com/2009/04/icpc-2009-world-finals.html" rel="bookmark" title="permanent link"><abbr class="published" title="2009-04-21T12:19:00+04:00">12:19 PM</abbr></a>
+</span>
+<span class="reaction-buttons">
+</span>
+<span class="star-ratings">
+</span>
+<span class="post-comment-link">
+<a class="comment-link" href="https://www.blogger.com/comment.g?blogID=1953325079793449971&amp;postID=2269445810510176660" onclick="">14
+comments</a>
+</span>
+<span class="post-backlinks post-comment-link">
+<a class="comment-link" href="http://petr-mitrichev.blogspot.com/2009/04/icpc-2009-world-finals.html#links">Links to this post</a>
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-553662571">
+<a href="http://www.blogger.com/post-edit.g?blogID=1953325079793449971&amp;postID=2269445810510176660" title="Edit Post">
+<img alt="" class="icon-action" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon18_edit_allbkg.gif" width="18" height="18">
+</a>
+</span>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"></div>
+</div>
+</div>
+<h2 class="date-header">Sunday, March 22, 2009</h2>
+<div class="post hentry uncustomized-post-template">
+<a name="5418898414684068155"></a>
+<h3 class="post-title entry-title">
+<a href="http://petr-mitrichev.blogspot.com/2009/03/tco-r2-and-r3-screencasts.html">TCO R1, R2 and R3 screencasts</a>
+</h3>
+<div class="post-header-line-1"></div>
+<div class="post-body entry-content">
+<div>This is another interesting-only-for-TopCoder-players post.</div><div><br></div>I've uploaded the screencasts of TopCoder Open 2009 Elimination Rounds 1 (<a href="http://77.41.63.3/topcoder/screencast/tco09r1/stream.html">Streaming</a>, <a href="http://77.41.63.3/topcoder/screencast/tco09r1/tco09r1.avi">AVI</a>, <a href="http://77.41.63.3/topcoder/screencast/tco09r1/tco09r1.mov">MOV</a>, <a href="http://narod.ru/disk/6414815000/tco09r1.avi.html">AVI from narod.ru</a>), 2 (<a href="http://77.41.63.3/topcoder/screencast/tco09r2/stream.html">Streaming</a>, <a href="http://77.41.63.3/topcoder/screencast/tco09r2/tco09r2.avi">AVI</a>, <a href="http://77.41.63.3/topcoder/screencast/tco09r2/tco09r2.mov">MOV</a>, <a href="http://narod.ru/disk/6879036000/tco09r2.avi.html">AVI from narod.ru</a>) and 3 (<a href="http://77.41.63.3/topcoder/screencast/tco09r3/stream.html">Streaming</a>, <a href="http://77.41.63.3/topcoder/screencast/tco09r3/tco09r3.avi" onclick="javascript: pageTracker._trackPageview('/outgoing/testr3'); ">AVI</a>, <a href="http://77.41.63.3/topcoder/screencast/tco09r3/tco09r3.mov">MOV</a>, <a href="http://narod.ru/disk/6879096000/tco09r3.avi.html">AVI from narod.ru</a>).
+The R1 screencast is quite usual, with a resubmit because of a slightly
+too slow solution; the R2 screencast features my frustration as I'm
+unable to fix my solution for the medium (I knew that it was wrong
+because it has failed a stress test with a dumb solution) as the time
+is running out, and the R3 screencast features a new challenging
+strategy I've discovered: look at other challenged solutions (from
+other rooms) to see possible mistakes to look for in the solutions of
+your room. This sounds obvious, but I've never used that successfully
+before yesterday.<div><div><br></div><div>I've liked <a href="http://www.topcoder.com/stat?c=problem_statement&amp;pm=10256">the hard problem from R3</a>
+a lot. I think it is an excellent example of how dynamic programming
+problems can be very non-standard (and the medium problem from the same
+round provides an example of how they can be very standard :)) and
+beautiful. The regular appearance of such problems makes me sure that
+we'll never run out of ideas in algorithm competitions. Although I'm
+biased for sure.</div></div>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<script charset="utf-8" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/PetrMitrichev.js" type="text/javascript"></script><div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+Posted by
+<span class="fn">Petr</span>
+</span>
+<span class="post-timestamp">
+at
+<a class="timestamp-link" href="http://petr-mitrichev.blogspot.com/2009/03/tco-r2-and-r3-screencasts.html" rel="bookmark" title="permanent link"><abbr class="published" title="2009-03-22T12:35:00+03:00">12:35 PM</abbr></a>
+</span>
+<span class="reaction-buttons">
+</span>
+<span class="star-ratings">
+</span>
+<span class="post-comment-link">
+<a class="comment-link" href="https://www.blogger.com/comment.g?blogID=1953325079793449971&amp;postID=5418898414684068155" onclick="">6
+comments</a>
+</span>
+<span class="post-backlinks post-comment-link">
+<a class="comment-link" href="http://petr-mitrichev.blogspot.com/2009/03/tco-r2-and-r3-screencasts.html#links">Links to this post</a>
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-553662571">
+<a href="http://www.blogger.com/post-edit.g?blogID=1953325079793449971&amp;postID=5418898414684068155" title="Edit Post">
+<img alt="" class="icon-action" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon18_edit_allbkg.gif" width="18" height="18">
+</a>
+</span>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"></div>
+</div>
+</div>
+<h2 class="date-header">Saturday, March 14, 2009</h2>
+<div class="post hentry uncustomized-post-template">
+<a name="7164556540882424822"></a>
+<h3 class="post-title entry-title">
+<a href="http://petr-mitrichev.blogspot.com/2009/03/couple-recent-fails.html">A couple recent FAILs</a>
+</h3>
+<div class="post-header-line-1"></div>
+<div class="post-body entry-content">
+I've recently lost my 1st TopCoder rating to <a href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=19849563">ACRush</a>
+and have already fell quite a bit behind. This is mostly due to his
+superb performance (great job Lou!), but it also highlighted several of
+the weaknesses of the choices I've made for my competing style: namely,
+using C# and expecting the time limit to have some margin, and not
+having any pre-written code to use in the competition.<div><br></div><div>All
+3 last matches made me think again about those questions. In TCO09
+Round 1 the hard problem turned out to have a rather strict time limit,
+and thus my asymptotically correct solution timed out slightly (I
+believe it ran within 3 seconds) and I had to resubmit, placing only
+10th. SRM 436's hard was about fast multiplication of polynomials, and
+as I don't understand Fast Fourier Transformation good enough to code
+it and don't have it prewritten, I've resorted to the Karatsuba
+algorithm and again, my solution was very little over the time limit,
+so I've spent a lot of time until finally getting it under the time
+limit (and again, it turned out that this solution was expected to be
+correct by the problem authors), scored very low and placed only 15th.
+Today, me failing the medium problem was totally my fault (I couldn't
+invent the correct solution) - but even if it didn't fail, I would
+place below Lou because he had a pre-written implementation of the
+Dinic maximum flow algorithm for the hard problem, and it turned out
+that one could run that 2500 times under the time limit. This was not
+possible with the stupid maximum flow algorithm I've used, and thus I
+had to spent a bit more time implementing a slightly more complex
+approach.</div><div><br></div><div>I still believe that all this
+happening in a row is just a bad coincidence, and in the long term my
+strategy has more pros than cons. Next couple of months will show :)</div>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<script charset="utf-8" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/PetrMitrichev_003.js" type="text/javascript"></script><div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+Posted by
+<span class="fn">Petr</span>
+</span>
+<span class="post-timestamp">
+at
+<a class="timestamp-link" href="http://petr-mitrichev.blogspot.com/2009/03/couple-recent-fails.html" rel="bookmark" title="permanent link"><abbr class="published" title="2009-03-14T23:25:00+03:00">11:25 PM</abbr></a>
+</span>
+<span class="reaction-buttons">
+</span>
+<span class="star-ratings">
+</span>
+<span class="post-comment-link">
+<a class="comment-link" href="https://www.blogger.com/comment.g?blogID=1953325079793449971&amp;postID=7164556540882424822" onclick="">16
+comments</a>
+</span>
+<span class="post-backlinks post-comment-link">
+<a class="comment-link" href="http://petr-mitrichev.blogspot.com/2009/03/couple-recent-fails.html#links">Links to this post</a>
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-553662571">
+<a href="http://www.blogger.com/post-edit.g?blogID=1953325079793449971&amp;postID=7164556540882424822" title="Edit Post">
+<img alt="" class="icon-action" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon18_edit_allbkg.gif" width="18" height="18">
+</a>
+</span>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"></div>
+</div>
+</div>
+<h2 class="date-header">Monday, March 9, 2009</h2>
+<div class="post hentry uncustomized-post-template">
+<a name="1900393042762140016"></a>
+<h3 class="post-title entry-title">
+<a href="http://petr-mitrichev.blogspot.com/2009/03/self-referential-sentence-solution.html">Self-referential sentence solution</a>
+</h3>
+<div class="post-header-line-1"></div>
+<div class="post-body entry-content">
+OK, here's the sentence:<br><br>This
+sentence has seven hundred and seventeen letters, one hundred and
+fifty-six words, forty-six commas, one dot, six dashes, one hundred and
+forty-nine spaces, eighty-two quotes, two words "This", five words
+"and", two words "commas", one word "dash", two words "dashes", two
+words "dot", one word "eight", two words "eighteen", two words
+"eighty", one word "eleven", one word "fifteen", two words "fifty", two
+words "five", three words "forty", four words "four", one word
+"fourteen", two words "has", four words "hundred", two words "letters",
+two words "nine", one word "nineteen", one word "ninety", eighteen
+words "one", two words "quotes", two words "sentence", two words
+"seven", two words "seventeen", one word "seventy", four words "six",
+one word "sixteen", one word "sixty", two words "spaces", one word
+"ten", two words "thirteen", two words "thirty", three words "three",
+one word "twelve", two words "twenty", twenty-one words "two", thirteen
+words "word" and thirty-one words "words".<br><br>Now, how to build
+that one? Amazingly, the following very simple approach works. Start
+with some string. Build a sentence that describes it. Now build a
+sentence that describes the previous sentence. And so on, until at one
+point you find that the sentences stop changing. It's true that this
+can never happen - but it turns out that trying out several initial
+strings is enough to find one that leads to a solution. It's true that
+the solution will be excessively long (e.g., all [one word "smth"]
+clauses look really unnecessary, don't they?), but who cares?<br><br>Here's the code:<br><a href="http://77.41.63.3/blog/self-referential/SelfReferentialSentence.html">http://77.41.63.3/blog/self-referential/SelfReferentialSentence.html</a><br><a href="http://77.41.63.3/blog/self-referential/NumberSpelling.html">http://77.41.63.3/blog/self-referential/NumberSpelling.html</a>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<script charset="utf-8" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/PetrMitrichev_006.js" type="text/javascript"></script><div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+Posted by
+<span class="fn">Petr</span>
+</span>
+<span class="post-timestamp">
+at
+<a class="timestamp-link" href="http://petr-mitrichev.blogspot.com/2009/03/self-referential-sentence-solution.html" rel="bookmark" title="permanent link"><abbr class="published" title="2009-03-09T13:06:00+03:00">1:06 PM</abbr></a>
+</span>
+<span class="reaction-buttons">
+</span>
+<span class="star-ratings">
+</span>
+<span class="post-comment-link">
+<a class="comment-link" href="https://www.blogger.com/comment.g?blogID=1953325079793449971&amp;postID=1900393042762140016" onclick="">4
+comments</a>
+</span>
+<span class="post-backlinks post-comment-link">
+<a class="comment-link" href="http://petr-mitrichev.blogspot.com/2009/03/self-referential-sentence-solution.html#links">Links to this post</a>
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-553662571">
+<a href="http://www.blogger.com/post-edit.g?blogID=1953325079793449971&amp;postID=1900393042762140016" title="Edit Post">
+<img alt="" class="icon-action" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon18_edit_allbkg.gif" width="18" height="18">
+</a>
+</span>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"></div>
+</div>
+</div>
+<h2 class="date-header">Friday, February 27, 2009</h2>
+<div class="post hentry uncustomized-post-template">
+<a name="2727641072740533324"></a>
+<h3 class="post-title entry-title">
+<a href="http://petr-mitrichev.blogspot.com/2009/02/self-referential-sentence.html">Self-referential sentence</a>
+</h3>
+<div class="post-header-line-1"></div>
+<div class="post-body entry-content">
+Here's one funny problem back from 1998 summer training camp for Russian IOI team hopefuls. Construct a sentence of form:<br><br>This
+sentence has one hundred and ninety letters, twenty one word, twelve
+commas, one dot, seventy five spaces, fifteen quotes, one word "This",
+seven words "word" and two words "twenty".<br><br>Which is completely
+true and has nothing missing. At the camp, there were only so many
+participants, so the results were checked by hand with help of a
+computer program, and thus some leeway was allowed in interpreting the
+problem statement. However, the problem doesn't suffer if we fix what's
+needed precisely: the sentence should be like the above but obviously
+with different numbers (but still spelled in "canonical" English way)
+and all words listed with correct amounts in case-sensitive way, with
+no word from the sentence missing.<br><br>I couldn't solve it back in
+1998, and the solution looked like a very innovative idea to me at that
+time. It doesn't anymore, but I hope some of you will enjoy thinking
+about it. Any suggestions on the approach? Any solutions? :)<br><br>// I know that this is a well-known idea, and Googling the title of this post reveals a lot of examples and solutions :)<br><br>// To give you some context: here's me at the similar camp a year later in 1999:<br><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_h2GzU7Ta2Ho/SahWURRhoCI/AAAAAAAAAK0/OFQLhqa8BwM/s1600-h/PHOTO%7E14.JPG"><img style="margin: 0pt 10px 10px 0pt; float: left; cursor: pointer; width: 320px; height: 240px;" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/PHOTO14.JPG" alt="" id="BLOGGER_PHOTO_ID_5307587067090411554" border="0"></a>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<script charset="utf-8" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/PetrMitrichev_005.js" type="text/javascript"></script><div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+Posted by
+<span class="fn">Petr</span>
+</span>
+<span class="post-timestamp">
+at
+<a class="timestamp-link" href="http://petr-mitrichev.blogspot.com/2009/02/self-referential-sentence.html" rel="bookmark" title="permanent link"><abbr class="published" title="2009-02-27T23:50:00+03:00">11:50 PM</abbr></a>
+</span>
+<span class="reaction-buttons">
+</span>
+<span class="star-ratings">
+</span>
+<span class="post-comment-link">
+<a class="comment-link" href="https://www.blogger.com/comment.g?blogID=1953325079793449971&amp;postID=2727641072740533324" onclick="">6
+comments</a>
+</span>
+<span class="post-backlinks post-comment-link">
+<a class="comment-link" href="http://petr-mitrichev.blogspot.com/2009/02/self-referential-sentence.html#links">Links to this post</a>
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-553662571">
+<a href="http://www.blogger.com/post-edit.g?blogID=1953325079793449971&amp;postID=2727641072740533324" title="Edit Post">
+<img alt="" class="icon-action" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon18_edit_allbkg.gif" width="18" height="18">
+</a>
+</span>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"></div>
+</div>
+</div>
+<h2 class="date-header">Saturday, February 21, 2009</h2>
+<div class="post hentry uncustomized-post-template">
+<a name="4705640641619295162"></a>
+<h3 class="post-title entry-title">
+<a href="http://petr-mitrichev.blogspot.com/2009/02/screencasts-since-fall.html">Screencasts since fall</a>
+</h3>
+<div class="post-header-line-1"></div>
+<div class="post-body entry-content">
+<div>This will probably only be interesting for TopCoder players, and
+they've probably already seen this on the forum, but anyway. Here're
+the screencasts for the SRMs that happened since my next-to-last post.</div><div><br></div><div><a href="http://petr-mitrichev.blogspot.com/2009/02/screencasts-since-fall.html">Read more</a></div><span class="fullpost"><div>SRM 429 screencast: <a href="http://77.41.63.3/topcoder/screencast/srm429/stream.html" target="_blank" style="text-decoration: underline;">Streaming</a>, <a href="http://77.41.63.3/topcoder/screencast/srm429/srm429.avi" target="_blank" style="text-decoration: underline;">Download AVI</a>, <a href="http://77.41.63.3/topcoder/screencast/srm429/srm429.mov" target="_blank" style="text-decoration: underline;">Download MOV</a>, <a href="http://narod.ru/disk/4331398000/srm429.avi.html" target="_blank" style="text-decoration: underline;">Download AVI from narod.ru</a><br></div><div>With
+problems not being very difficult, all came down to the challenge
+phase, and I was lucky to emerge in the 1st place in the end :) There
+was nothing particularly interesting about my challenges - I've had a
+pre-crafted case for the medium where I felt many can hit integer
+overflow, but only found one solution to challenge with it; and I've
+found a timeout case for a backtracking solution in the hard.</div><div><br></div><div>SRM 430 screencast: <a href="http://77.41.63.3/topcoder/screencast/srm430/stream.html" target="_blank" style="text-decoration: underline;">Streaming</a>, <a href="http://77.41.63.3/topcoder/screencast/srm430/srm430.avi" target="_blank" style="text-decoration: underline;">Download AVI</a>, <a href="http://77.41.63.3/topcoder/screencast/srm430/srm430.mov" target="_blank" style="text-decoration: underline;">Download MOV</a>, <a href="http://narod.ru/disk/4517001000/srm430.avi.html" target="_blank" style="text-decoration: underline;">Download AVI from narod.ru</a></div><div>Nothing
+exceptional except stupid switch to C++ to use upper_bound that costed
+me quite a lot of time and points instead of just using binary search :)</div><div><br></div><div>SRM 431 screencast: <a href="http://77.41.63.3/topcoder/screencast/srm431/stream.html" target="_blank" style="text-decoration: underline;">Streaming</a>, <a href="http://77.41.63.3/topcoder/screencast/srm431/srm431.avi" target="_blank" style="text-decoration: underline;">Download AVI</a>, <a href="http://77.41.63.3/topcoder/screencast/srm431/srm431.mov" target="_blank" style="text-decoration: underline;">Download MOV</a>, <a href="http://narod.ru/disk/4586372000/srm431.avi.html" target="_blank" style="text-decoration: underline;">Download AVI from narod.ru</a></div><div>This
+SRM highlights one of the techniques that I believe has improved my
+TopCoder results quite a bit - doing a stress-test against a stupid
+solution on random testcases. I've managed to resubmit the hard problem
+correctly because of it.</div><div><br></div><div>SRM 433 - no screencast - but just a comment.</div><div>Wasn't
+it stupid to do a last-second challenge on a possible hash collision
+when I was in first place with less than 25 points of margin? Yes it
+was.</div><div><br></div><div>SRM 434 screencast: <a href="http://77.41.63.3/topcoder/screencast/srm434/stream.html" target="_blank" style="text-decoration: underline;">Streaming</a>, <a href="http://77.41.63.3/topcoder/screencast/srm434/srm434.avi" target="_blank" style="text-decoration: underline;">Download AVI</a>, <a href="http://77.41.63.3/topcoder/screencast/srm434/srm434.mov" target="_blank" style="text-decoration: underline;">Download MOV</a>, <a href="http://narod.ru/disk/5537922000/srm434.avi.html" target="_blank" style="text-decoration: underline;">Download AVI from narod.ru</a><br></div><div>With
+problems that seemed to suit me and a late resubmission by ACRush,
+there was no need in much challenge activity. And since I've chosen the
+wrong problem to challenge (who would've thought of so many ways to
+fail the easy? :)), the screencast should be rather boring in the
+challenge phase.</div><div><br></div><div>SRM 435 screencast: <a href="http://77.41.63.3/topcoder/screencast/srm435/stream.html" target="_blank" style="text-decoration: underline;">Streaming</a>, <a href="http://77.41.63.3/topcoder/screencast/srm435/srm435.avi" target="_blank" style="text-decoration: underline;">Download AVI</a>, <a href="http://77.41.63.3/topcoder/screencast/srm435/srm435.mov" target="_blank" style="text-decoration: underline;">Download MOV</a>, <a href="http://narod.ru/disk/5674534000/srm435.avi.html" target="_blank" style="text-decoration: underline;">Download AVI from narod.ru</a><br></div><div>Very nice problems, but too slow thinking at 5AM. And very thorough example cases.</div></span>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<script charset="utf-8" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/PetrMitrichev_007.js" type="text/javascript"></script><div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+Posted by
+<span class="fn">Petr</span>
+</span>
+<span class="post-timestamp">
+at
+<a class="timestamp-link" href="http://petr-mitrichev.blogspot.com/2009/02/screencasts-since-fall.html" rel="bookmark" title="permanent link"><abbr class="published" title="2009-02-21T20:33:00+03:00">8:33 PM</abbr></a>
+</span>
+<span class="reaction-buttons">
+</span>
+<span class="star-ratings">
+</span>
+<span class="post-comment-link">
+<a class="comment-link" href="https://www.blogger.com/comment.g?blogID=1953325079793449971&amp;postID=4705640641619295162" onclick="">3
+comments</a>
+</span>
+<span class="post-backlinks post-comment-link">
+<a class="comment-link" href="http://petr-mitrichev.blogspot.com/2009/02/screencasts-since-fall.html#links">Links to this post</a>
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-553662571">
+<a href="http://www.blogger.com/post-edit.g?blogID=1953325079793449971&amp;postID=4705640641619295162" title="Edit Post">
+<img alt="" class="icon-action" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon18_edit_allbkg.gif" width="18" height="18">
+</a>
+</span>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"></div>
+</div>
+</div>
+<div class="post hentry uncustomized-post-template">
+<a name="8620977411764129058"></a>
+<h3 class="post-title entry-title">
+<a href="http://petr-mitrichev.blogspot.com/2009/02/remembering-petr-mitrichev-contest-1.html">Remembering Petr Mitrichev Contest 1</a>
+</h3>
+<div class="post-header-line-1"></div>
+<div class="post-body entry-content">
+Naturally, after taking part in so many programming contests, one
+accumulates enough ideas to start being a problemsetter. My first
+ACM-style contest was Petr Mitrichev Contest 1, which I set in August
+2006 at the Petrozavodsk training camp, and which was later replayed at
+http://acm.sgu.ru. I'll try to remember how I came up with those
+problems.<div><br></div><div><a href="http://petr-mitrichev.blogspot.com/2009/02/remembering-petr-mitrichev-contest-1.html">Read more</a></div><span class="fullpost"><div><a href="http://acm.sgu.ru/problem.php?contest=0&amp;problem=306">Problem A - Balance</a>&nbsp;was
+created when went to a website with a lot of mathematical puzzles in
+search of inspiration; different "find fake coin" problems didn't seem
+very well suited to programming competitions, but requiring to output
+the script and placing rather low constraints turned it from a
+purely-mathematical problem to quite an interesting DP requiring some
+accuracy.</div><div><br></div><div><a href="http://acm.sgu.ru/problem.php?contest=0&amp;problem=307">Problem B - Cipher</a>&nbsp;was created (or found in some paper, I don't know exactly) by a friend of mine as a side effect of his research.</div><div><br></div><div><a href="http://acm.sgu.ru/problem.php?contest=0&amp;problem=308">Problem C - Hyperboloid Distance</a>&nbsp;was
+created in search of a geometrical problem requiring an algorithmic
+idea. The more I thought of whether it's possible to solve it exactly
+or at least reduce it to a computation of &nbsp;some integral, the more
+I liked it (since mathematical solution, if at all possible, seemed way
+more difficult than the approximate algorithmic one); The precision of
+0.1 was there to be absolutely certain that my solution was correct and
+to make the problem a little easier, although I believe my solution had
+output much more correct digits after the decimal point.</div><div><br></div><div><a href="http://acm.sgu.ru/problem.php?contest=0&amp;problem=309">Problem D - Real Fun</a>&nbsp;was
+a special case in a research article that I was reading; I was amazed
+at the beauty and simplicity of the solution, and I still believe this
+problem follows the spirit of ACM ICPC-styled contests the most (among
+the problems of this contest).</div><div><br></div><div><a href="http://acm.sgu.ru/problem.php?contest=0&amp;problem=310">Problem E - Hippopotamus</a>&nbsp;was
+created as the "first problem to solve" for this contest, by adapting
+the idea of a simpler problem requiring exactly k iron boards among
+each m. This problem is quite standard, and stands out a little in
+terms of difficulty, but without such problem the contest could've
+become even more boring :)</div><div><br></div><div><a href="http://acm.sgu.ru/problem.php?contest=0&amp;problem=311">Problem F - Ice-cream Tycoon</a>&nbsp;was
+created because I've wanted at least one problem requiring log(n)-style
+data structures. There's nothing particularly interesting about it, as
+almost every similar question can be solved in a similar way using
+almost the same data structures. This is the kind of problems that's
+very easy to come up with.</div><div><br></div><div><a href="http://acm.sgu.ru/problem.php?contest=0&amp;problem=312">Problem G - 4-3 King</a>&nbsp;was
+one of the problems that I've had in mind for a long time (maybe a
+couple of years), but it was difficult to choose the exact variation of
+this idea (separate the given not-necessarily-convex n-gon in the given
+way) that will be both solvable and interesting to solve. I like the
+final version of the problem, and I've thought it would be the second
+easiest problem in the contest, but somehow the contestants didn't
+prove that :)</div><div><br></div><div><a href="http://acm.sgu.ru/problem.php?contest=0&amp;problem=313">Problem H - Circular Railway</a>&nbsp;was
+again a special simple case in a research article that I was reading.
+Luckily, it allowed for several different solutions, and thus I think
+was quite appropriate for the format.</div><div><br></div><div><a href="http://acm.sgu.ru/problem.php?contest=0&amp;problem=314">Problem I - Shortest Paths</a>&nbsp;was
+directly based on an entire research paper by David Eppstein, and I
+didn't expect anyone to solve it during the contest - the sole purpose
+was to share the amazing fact that there's such an effective solution
+to it with the participants :)</div><div><br></div><div>Comments?</div></span><div><br></div><div>And while we're talking about problemsetting, please note the two upcoming contests: <ul><li>Petr Mitrichev Contest 3 (including problems by Michael Levin and Irina Shitova) will take place on <a href="http://www.timeanddate.com/worldclock/fixedtime.html?day=1&amp;month=3&amp;year=2009&amp;hour=11&amp;min=0&amp;sec=0&amp;p1=166">March 1, 2009 11:00 (Moscow Time)</a>,<br></li><li>Petr, Michael_Levin and VitalyGoldstein Contest (aka Petr Mitrichev Contest 4) will take place on <a href="http://www.timeanddate.com/worldclock/fixedtime.html?day=15&amp;month=3&amp;year=2009&amp;hour=11&amp;min=0&amp;sec=0&amp;p1=166">March 15, 2009 11:00 (Moscow Time)</a>.</li></ul>These contests will take place at <a href="http://acm.sgu.ru/">http://acm.sgu.ru</a>
+under the standard ACM ICPC rules. They were set earlier at the
+Petrozavodsk training camps. For those of you who find this timing
+inconvenient, they'll be available on <a href="http://acm.sgu.ru/">http://acm.sgu.ru</a> afterwards as virtual contests, so that you can solve them and have the scoreboard reflect your 'current' position.<br>&nbsp;</div>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<script charset="utf-8" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/PetrMitrichev_004.js" type="text/javascript"></script><div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+Posted by
+<span class="fn">Petr</span>
+</span>
+<span class="post-timestamp">
+at
+<a class="timestamp-link" href="http://petr-mitrichev.blogspot.com/2009/02/remembering-petr-mitrichev-contest-1.html" rel="bookmark" title="permanent link"><abbr class="published" title="2009-02-21T19:12:00+03:00">7:12 PM</abbr></a>
+</span>
+<span class="reaction-buttons">
+</span>
+<span class="star-ratings">
+</span>
+<span class="post-comment-link">
+<a class="comment-link" href="https://www.blogger.com/comment.g?blogID=1953325079793449971&amp;postID=8620977411764129058" onclick="">2
+comments</a>
+</span>
+<span class="post-backlinks post-comment-link">
+<a class="comment-link" href="http://petr-mitrichev.blogspot.com/2009/02/remembering-petr-mitrichev-contest-1.html#links">Links to this post</a>
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-553662571">
+<a href="http://www.blogger.com/post-edit.g?blogID=1953325079793449971&amp;postID=8620977411764129058" title="Edit Post">
+<img alt="" class="icon-action" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon18_edit_allbkg.gif" width="18" height="18">
+</a>
+</span>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"></div>
+</div>
+</div>
+<!-- google_ad_section_end -->
+</div>
+<div class="blog-pager" id="blog-pager">
+<span id="blog-pager-older-link">
+<a class="blog-pager-older-link" href="http://petr-mitrichev.blogspot.com/search?updated-max=2009-02-21T19%3A12%3A00%2B03%3A00&amp;max-results=7" id="Blog1_blog-pager-older-link" title="Older Posts">Older Posts</a>
+</span>
+</div>
+<div class="clear"></div>
+<div class="blog-feeds">
+<div class="feed-links">
+Subscribe to:
+<a class="feed-link" href="http://petr-mitrichev.blogspot.com/feeds/posts/default" target="_blank" type="application/atom+xml">Posts (Atom)</a>
+</div>
+</div>
+</div></div>
+</div>
+<div id="sidebar-wrapper">
+<div class="sidebar section" id="sidebar"><div class="widget Subscribe" id="Subscribe1">
+<div style="white-space: nowrap;">
+<h2 class="title">Subscribe</h2>
+<div class="widget-content">
+<div class="subscribe-wrapper subscribe-type-POST">
+<div class="subscribe expanded subscribe-type-POST" id="SW_READER_LIST_Subscribe1POST" style="display: none;">
+<div class="top">
+<span class="inner" onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img class="subscribe-dropdown-arrow" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/arrow_dropdown.gif">
+<img alt="" class="feed-icon" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon_feed12.png" align="absmiddle" border="0">
+Posts
+</span>
+<ul class="feed-reader-links">
+<a class="feed-reader-link" href="http://www.google.com/ig/add?source=bstp&amp;feedurl=http%3A%2F%2Fpetr-mitrichev.blogspot.com%2Ffeeds%2Fposts%2Fdefault" target="_blank">
+<img src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/subscribe-google.png">
+</a>
+<a class="feed-reader-link" href="http://www.bloglines.com/sub/http://petr-mitrichev.blogspot.com/feeds/posts/default" target="_blank">
+<img src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/subscribe-bloglines.png">
+</a>
+<a class="feed-reader-link" href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fpetr-mitrichev.blogspot.com%2Ffeeds%2Fposts%2Fdefault" target="_blank">
+<img src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/subscribe-netvibes.png">
+</a>
+<a class="feed-reader-link" href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Fpetr-mitrichev.blogspot.com%2Ffeeds%2Fposts%2Fdefault" target="_blank">
+<img src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/subscribe-newsgator.png">
+</a>
+<a class="feed-reader-link" href="http://add.my.yahoo.com/content?url=http%3A%2F%2Fpetr-mitrichev.blogspot.com%2Ffeeds%2Fposts%2Fdefault" target="_blank">
+<img src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/subscribe-yahoo.png">
+</a>
+<a class="feed-reader-link" href="http://petr-mitrichev.blogspot.com/feeds/posts/default" target="_blank">
+<img class="feed-icon" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon_feed12.png" align="absmiddle">
+                Atom
+              </a>
+</ul>
+</div>
+<div class="bottom"></div>
+</div>
+<div class="subscribe" id="SW_READER_LIST_CLOSED_Subscribe1POST" onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<div class="top">
+<span class="inner">
+<img class="subscribe-dropdown-arrow" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/arrow_dropdown.gif">
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img alt="" class="feed-icon" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon_feed12.png" align="absmiddle" border="0">
+Posts
+</span>
+</span>
+</div>
+<div class="bottom"></div>
+</div>
+</div>
+<div class="subscribe-wrapper subscribe-type-COMMENT">
+<div class="subscribe expanded subscribe-type-COMMENT" id="SW_READER_LIST_Subscribe1COMMENT" style="display: none;">
+<div class="top">
+<span class="inner" onclick='return(_SW_toggleReaderList(event, "Subscribe1COMMENT"));'>
+<img class="subscribe-dropdown-arrow" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/arrow_dropdown.gif">
+<img alt="" class="feed-icon" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon_feed12.png" align="absmiddle" border="0">
+All Comments
+</span>
+<ul class="feed-reader-links">
+<a class="feed-reader-link" href="http://www.google.com/ig/add?source=bstp&amp;feedurl=http%3A%2F%2Fpetr-mitrichev.blogspot.com%2Ffeeds%2Fcomments%2Fdefault" target="_blank">
+<img src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/subscribe-google.png">
+</a>
+<a class="feed-reader-link" href="http://www.bloglines.com/sub/http://petr-mitrichev.blogspot.com/feeds/comments/default" target="_blank">
+<img src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/subscribe-bloglines.png">
+</a>
+<a class="feed-reader-link" href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fpetr-mitrichev.blogspot.com%2Ffeeds%2Fcomments%2Fdefault" target="_blank">
+<img src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/subscribe-netvibes.png">
+</a>
+<a class="feed-reader-link" href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Fpetr-mitrichev.blogspot.com%2Ffeeds%2Fcomments%2Fdefault" target="_blank">
+<img src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/subscribe-newsgator.png">
+</a>
+<a class="feed-reader-link" href="http://add.my.yahoo.com/content?url=http%3A%2F%2Fpetr-mitrichev.blogspot.com%2Ffeeds%2Fcomments%2Fdefault" target="_blank">
+<img src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/subscribe-yahoo.png">
+</a>
+<a class="feed-reader-link" href="http://petr-mitrichev.blogspot.com/feeds/comments/default" target="_blank">
+<img class="feed-icon" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon_feed12.png" align="absmiddle">
+                Atom
+              </a>
+</ul>
+</div>
+<div class="bottom"></div>
+</div>
+<div class="subscribe" id="SW_READER_LIST_CLOSED_Subscribe1COMMENT" onclick='return(_SW_toggleReaderList(event, "Subscribe1COMMENT"));'>
+<div class="top">
+<span class="inner">
+<img class="subscribe-dropdown-arrow" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/arrow_dropdown.gif">
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1COMMENT"));'>
+<img alt="" class="feed-icon" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon_feed12.png" align="absmiddle" border="0">
+All Comments
+</span>
+</span>
+</div>
+<div class="bottom"></div>
+</div>
+</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=1953325079793449971&amp;widgetType=Subscribe&amp;widgetId=Subscribe1&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("Subscribe1"));' target="configSubscribe1" title="Edit">
+<img alt="" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget HTML" id="HTML1">
+<div class="widget-content">
+<a href="http://feedburner.google.com/fb/a/mailverify?uri=PetrMitrichev&amp;loc=en_US">Subscribe via Email</a>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=1953325079793449971&amp;widgetType=HTML&amp;widgetId=HTML1&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target="configHTML1" title="Edit">
+<img alt="" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget AdSense" id="AdSense1">
+<div class="widget-content">
+<script type="text/javascript"><!--
+google_ad_client="pub-0833796315566102";
+google_ad_host="pub-1556223355139109";
+google_ad_width=160;
+google_ad_height=600;
+google_ad_format="160x600_as";
+google_ad_type="text";
+google_color_border="FFFFFF";
+google_color_bg="FFFFFF";
+google_color_link="999999";
+google_color_url="5588AA";
+google_color_text="666666";
+//--></script>
+<script type="text/javascript" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/show_ads.js">
+</script><script src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/expansion_embed.js"></script><script src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/test_domain.js"></script><script>window.google_render_ad();</script><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: inline-table; height: 600px; position: relative; visibility: visible; width: 160px;"><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: block; height: 600px; position: relative; visibility: visible; width: 160px;"><iframe allowtransparency="true" hspace="0" id="google_ads_frame1" marginheight="0" marginwidth="0" name="google_ads_frame" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/ads.htm" style="left: 0pt; position: absolute; top: 0pt;" vspace="0" scrolling="no" width="160" frameborder="0" height="600"></iframe></ins></ins>
+</div>
+</div><div class="widget BlogArchive" id="BlogArchive1">
+<h2>Blog Archive</h2>
+<div class="widget-content">
+<div id="ArchiveList">
+<div id="BlogArchive1_ArchiveList">
+<ul>
+<li class="archivedate expanded">
+<a class="toggle" href="http://petr-mitrichev.blogspot.com/?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=close&amp;toggle=YEARLY-1230757200000&amp;toggleopen=MONTHLY-1238529600000">
+<span class="zippy toggle-open">▼ </span>
+</a>
+<a class="post-count-link" href="http://petr-mitrichev.blogspot.com/search?updated-min=2009-01-01T00%3A00%3A00%2B03%3A00&amp;updated-max=2010-01-01T00%3A00%3A00%2B03%3A00&amp;max-results=7">2009</a>
+<span class="post-count" dir="ltr">(7)</span>
+<ul>
+<li class="archivedate expanded">
+<a class="toggle" href="http://petr-mitrichev.blogspot.com/?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=close&amp;toggle=MONTHLY-1238529600000&amp;toggleopen=MONTHLY-1238529600000">
+<span class="zippy toggle-open">▼ </span>
+</a>
+<a class="post-count-link" href="http://petr-mitrichev.blogspot.com/2009_04_01_archive.html">April</a>
+<span class="post-count" dir="ltr">(1)</span>
+<ul class="posts">
+<li><a href="http://petr-mitrichev.blogspot.com/2009/04/icpc-2009-world-finals.html">ICPC 2009 World Finals</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://petr-mitrichev.blogspot.com/?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1235854800000&amp;toggleopen=MONTHLY-1238529600000">
+<span class="zippy">
+
+              ►
+            
+</span>
+</a>
+<a class="post-count-link" href="http://petr-mitrichev.blogspot.com/2009_03_01_archive.html">March</a>
+<span class="post-count" dir="ltr">(3)</span>
+<ul class="posts">
+<li><a href="http://petr-mitrichev.blogspot.com/2009/03/tco-r2-and-r3-screencasts.html">TCO R1, R2 and R3 screencasts</a></li>
+<li><a href="http://petr-mitrichev.blogspot.com/2009/03/couple-recent-fails.html">A couple recent FAILs</a></li>
+<li><a href="http://petr-mitrichev.blogspot.com/2009/03/self-referential-sentence-solution.html">Self-referential sentence solution</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://petr-mitrichev.blogspot.com/?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1233435600000&amp;toggleopen=MONTHLY-1238529600000">
+<span class="zippy">
+
+              ►
+            
+</span>
+</a>
+<a class="post-count-link" href="http://petr-mitrichev.blogspot.com/2009_02_01_archive.html">February</a>
+<span class="post-count" dir="ltr">(3)</span>
+<ul class="posts">
+<li><a href="http://petr-mitrichev.blogspot.com/2009/02/self-referential-sentence.html">Self-referential sentence</a></li>
+<li><a href="http://petr-mitrichev.blogspot.com/2009/02/screencasts-since-fall.html">Screencasts since fall</a></li>
+<li><a href="http://petr-mitrichev.blogspot.com/2009/02/remembering-petr-mitrichev-contest-1.html">Remembering Petr Mitrichev Contest 1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://petr-mitrichev.blogspot.com/?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=YEARLY-1199134800000&amp;toggleopen=MONTHLY-1238529600000">
+<span class="zippy">
+
+              ►
+            
+</span>
+</a>
+<a class="post-count-link" href="http://petr-mitrichev.blogspot.com/search?updated-min=2008-01-01T00%3A00%3A00%2B03%3A00&amp;updated-max=2009-01-01T00%3A00%3A00%2B03%3A00&amp;max-results=11">2008</a>
+<span class="post-count" dir="ltr">(11)</span>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://petr-mitrichev.blogspot.com/?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1225486800000&amp;toggleopen=MONTHLY-1238529600000">
+<span class="zippy">
+
+              ►
+            
+</span>
+</a>
+<a class="post-count-link" href="http://petr-mitrichev.blogspot.com/2008_11_01_archive.html">November</a>
+<span class="post-count" dir="ltr">(4)</span>
+<ul class="posts">
+<li><a href="http://petr-mitrichev.blogspot.com/2008/11/sum-of-15.html">Sum of 15</a></li>
+<li><a href="http://petr-mitrichev.blogspot.com/2008/11/some-more-srm-experiences.html">Some more SRM experiences</a></li>
+<li><a href="http://petr-mitrichev.blogspot.com/2008/11/long-time-no-see.html">Long time no see</a></li>
+<li><a href="http://petr-mitrichev.blogspot.com/2008/11/burnsides-lemma.html">Burnside's lemma</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://petr-mitrichev.blogspot.com/?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1222804800000&amp;toggleopen=MONTHLY-1238529600000">
+<span class="zippy">
+
+              ►
+            
+</span>
+</a>
+<a class="post-count-link" href="http://petr-mitrichev.blogspot.com/2008_10_01_archive.html">October</a>
+<span class="post-count" dir="ltr">(5)</span>
+<ul class="posts">
+<li><a href="http://petr-mitrichev.blogspot.com/2008/10/solutions-for-previous-problems.html">Solutions for previous problems</a></li>
+<li><a href="http://petr-mitrichev.blogspot.com/2008/10/xxi-st-petersburg-state-university.html">XXI St. Petersburg State University Championship -...</a></li>
+<li><a href="http://petr-mitrichev.blogspot.com/2008/10/short-math-problem-instead-of-long.html">A short math problem instead of a long philosophic...</a></li>
+<li><a href="http://petr-mitrichev.blogspot.com/2008/10/ioi-2002-frog.html">IOI 2002: Frog</a></li>
+<li><a href="http://petr-mitrichev.blogspot.com/2008/10/screencast-and-challenging.html">Screencast and challenging</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://petr-mitrichev.blogspot.com/?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1220212800000&amp;toggleopen=MONTHLY-1238529600000">
+<span class="zippy">
+
+              ►
+            
+</span>
+</a>
+<a class="post-count-link" href="http://petr-mitrichev.blogspot.com/2008_09_01_archive.html">September</a>
+<span class="post-count" dir="ltr">(1)</span>
+<ul class="posts">
+<li><a href="http://petr-mitrichev.blogspot.com/2008/09/my-lj-archive.html">My LJ Archive</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="archivedate collapsed">
+<a class="toggle" href="http://petr-mitrichev.blogspot.com/?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1209585600000&amp;toggleopen=MONTHLY-1238529600000">
+<span class="zippy">
+
+              ►
+            
+</span>
+</a>
+<a class="post-count-link" href="http://petr-mitrichev.blogspot.com/2008_05_01_archive.html">May</a>
+<span class="post-count" dir="ltr">(1)</span>
+<ul class="posts">
+<li><a href="http://petr-mitrichev.blogspot.com/2008/05/my-very-first-algorithm-problem.html">My very first algorithm problem experience</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=1953325079793449971&amp;widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target="configBlogArchive1" title="Edit">
+<img alt="" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget Profile" id="Profile1">
+<h2>About Me</h2>
+<div class="widget-content">
+<dl class="profile-datablock">
+<dt class="profile-data">Petr</dt>
+</dl>
+<a class="profile-link" href="http://www.blogger.com/profile/00138130656174416711">View my complete profile</a>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=1953325079793449971&amp;widgetType=Profile&amp;widgetId=Profile1&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("Profile1"));' target="configProfile1" title="Edit">
+<img alt="" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+</div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+<div class="clear">&nbsp;</div>
+</div>
+<!-- end content-wrapper -->
+<div id="footer-wrapper">
+<div class="footer section" id="footer"></div>
+</div>
+</div></div>
+<!-- end outer-wrapper -->
+<script type="text/javascript" src="Algorithm%20problems%20for%20dummies%20%20Petr%20Mitrichev%27s%20blog_files/3553028423-widgets.js"></script>
+<script type="text/javascript">
+_WidgetManager._Init('http://www.blogger.com/rearrange?blogID=1953325079793449971', 'http://petr-mitrichev.blogspot.com/','1953325079793449971');
+_WidgetManager._SetPageActionUrl('http://www.blogger.com/display?blogID=1953325079793449971', 'S7QN1Rwe60WljstifsyAIJCq018:1240522390439');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'title': 'Algorithm problems for dummies: Petr Mitrichev\47s blog', 'pageType': 'index', 'url': 'http://petr-mitrichev.blogspot.com/', 'homepageUrl': 'http://petr-mitrichev.blogspot.com/', 'searchLabel': '', 'searchQuery': '', 'pageName': '', 'pageTitle': 'Algorithm problems for dummies: Petr Mitrichev\47s blog', 'encoding': 'UTF-8', 'locale': 'en-US', 'isPrivate': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Algorithm problems for dummies: Petr Mitrichev\47s blog - Atom\42 href\75\42http://petr-mitrichev.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Algorithm problems for dummies: Petr Mitrichev\47s blog - RSS\42 href\75\42http://petr-mitrichev.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Algorithm problems for dummies: Petr Mitrichev\47s blog - Atom\42 href\75\42http://www.blogger.com/feeds/1953325079793449971/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\0751953325079793449971\42 /\076', 'meTag': '\74link rel\75\42me\42 href\75\42http://www.blogger.com/profile/00138130656174416711\42 /\76\n', 'openIdOpTag': '\74link rel\75\42openid.server\42 href\75\42http://www.blogger.com/openid-server.g\42 /\76\n', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window;function d(b){this.t\75{};this.tick\75function(c,h,e){var i\75e?e:(new Date).getTime();this.t[c]\75[i,h]};this.tick(\42start\42,null,b)}var f\75new d;a.jstiming\75{Timer:d,load:f};try{a.jstiming.pt\75a.external.pageT}catch(g){};function j(b){var c\0750;if(b.offsetParent){do c+\75b.offsetTop;while(b\75b.offsetParent)}return c}a.tickAboveFold\75function(b){j(b)\74\075750\46\46a.jstiming.load.tick(\42aft\42)};var k\75false;function l(){if(!k){k\75true;a.jstiming.load.tick(\42firstScrollTime\42)}}a.addEventListener?a.addEventListener(\42scroll\42,l,false):a.attachEvent(\42onscroll\42,l); })();\74/script\076'}}]);
+_WidgetManager._SetSystemMarkup({'layout': {'varName': '', 'template': '\74div class\75\47widget-wrap1\47\76\n\74div class\75\47widget-wrap2\47\76\n\74div class\75\47widget-wrap3\47\76\n\74div class\75\47widget-content\47\76\n\74div class\75\47layout-title\47\76\74data:layout-title\76\74/data:layout-title\76\74/div\76\n\74a class\75\47editlink\47 expr:href\75\47data:widget.quickEditUrl\47 expr:onclick\75\47\46quot;return _WidgetManager._PopupConfig(document.getElementById(\\\46quot;\46quot; +       data:widget.instanceId + \46quot;\\\46quot;));\46quot;\47 target\75\47chooseWidget\47\76\74data:edit-link\76\74/data:edit-link\76\74/a\76\n\74/div\76\n\74/div\76\n\74/div\76\n\74/div\076'}, 'quickedit': {'varName': '', 'template': '\74div class\75\47clear\47\76\74/div\76\n\74span class\75\47widget-item-control\47\76\n\74span class\75\47item-control blog-admin\47\76\n\74a class\75\47quickedit\47 expr:href\75\47data:widget.quickEditUrl\47 expr:onclick\75\47\46quot;return _WidgetManager._PopupConfig(document.getElementById(\\\46quot;\46quot; +       data:widget.instanceId + \46quot;\\\46quot;));\46quot;\47 expr:target\75\47\46quot;config\46quot; + data:widget.instanceId\47 expr:title\75\47data:edit-link\47\76\n\74img alt\75\47\47 height\75\04718\47 src\75\47http://img1.blogblog.com/img/icon18_wrench_allbkg.png\47 width\75\04718\47/\76\n\74/a\76\n\74/span\76\n\74/span\76\n\74div class\75\47clear\47\76\74/div\076'}, 'all-head-content': {'varName': 'page', 'template': '\74data:blog.latencyHeadScript\76\74/data:blog.latencyHeadScript\76\n\74meta expr:content\75\47\46quot;text/html; charset\75\46quot; + data:page.encoding\47 http-equiv\75\47Content-Type\47/\76\n\74meta content\75\47true\47 name\75\47MSSmartTagsPreventParsing\47/\76\n\74meta content\75\47blogger\47 name\75\47generator\47/\76\n\74link href\75\47http://www.blogger.com/favicon.ico\47 rel\75\47icon\47 type\75\47image/vnd.microsoft.icon\47/\76\n\74data:blog.feedLinks\76\74/data:blog.feedLinks\76\n\74data:blog.meTag\76\74/data:blog.meTag\76\n\74data:blog.openIdOpTag\76\74/data:blog.openIdOpTag\76\n\74b:if cond\75\47data:page.isPrivate\47\76\n\74meta content\75\47NOINDEX,NOFOLLOW\47 name\75\47robots\47/\76\n\74/b:if\076'}});
+_WidgetManager._RegisterWidget('_SubscribeView', new _WidgetInfo('Subscribe1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:isPublic\47\76\n\74div style\75\47white-space:nowrap\47\76\n\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74b:loop values\75\47data:feeds\47 var\75\47feed\47\76\n\74div expr:class\75\47\46quot;subscribe-wrapper subscribe-type-\46quot; + data:feed.type\47\76\n\74div expr:class\75\47\46quot;subscribe expanded subscribe-type-\46quot; + data:feed.type\47 expr:id\75\47\46quot;SW_READER_LIST_\46quot; + data:widgetId + data:feed.type\47 style\75\47display:none;\47\76\n\74div class\75\47top\47\76\n\74span class\75\47inner\47 expr:onclick\75\47\46quot;return(_SW_toggleReaderList(event, \\\46quot;\46quot; + data:widgetId +data:feed.type + \46quot;\\\46quot;));\46quot;\47\76\n\74img class\75\47subscribe-dropdown-arrow\47 expr:src\75\47data:arrowDropdownImg\47/\76\n\74img align\75\47absmiddle\47 alt\75\47\47 border\75\0470\47 class\75\47feed-icon\47 expr:src\75\47data:feedIconImg\47/\76\n\74data:feed.title\76\74/data:feed.title\76\n\74/span\76\n\74ul class\75\47feed-reader-links\47\76\n\74a class\75\47feed-reader-link\47 expr:href\75\47\46quot;http://www.google.com/ig/add?source\75bstp\46amp;feedurl\75\46quot; + data:feed.encodedUrl\47 target\75\47_blank\47\76\n\74img expr:src\75\47data:imagePathBase + \46quot;subscribe-google.png\46quot;\47/\76\n\74/a\76\n\74a class\75\47feed-reader-link\47 expr:href\75\47\46quot;http://www.bloglines.com/sub/\46quot; + data:feed.url\47 target\75\47_blank\47\76\n\74img expr:src\75\47data:imagePathBase + \46quot;subscribe-bloglines.png\46quot;\47/\76\n\74/a\76\n\74a class\75\47feed-reader-link\47 expr:href\75\47\46quot;http://www.netvibes.com/subscribe.php?url\75\46quot; + data:feed.encodedUrl\47 target\75\47_blank\47\76\n\74img expr:src\75\47data:imagePathBase + \46quot;subscribe-netvibes.png\46quot;\47/\76\n\74/a\76\n\74a class\75\47feed-reader-link\47 expr:href\75\47\46quot;http://www.newsgator.com/ngs/subscriber/subext.aspx?url\75\46quot; + data:feed.encodedUrl\47 target\75\47_blank\47\76\n\74img expr:src\75\47data:imagePathBase + \46quot;subscribe-newsgator.png\46quot;\47/\76\n\74/a\76\n\74a class\75\47feed-reader-link\47 expr:href\75\47\46quot;http://add.my.yahoo.com/content?url\75\46quot; + data:feed.encodedUrl\47 target\75\47_blank\47\76\n\74img expr:src\75\47data:imagePathBase + \46quot;subscribe-yahoo.png\46quot;\47/\76\n\74/a\76\n\74a class\75\47feed-reader-link\47 expr:href\75\47data:feed.url\47 target\75\47_blank\47\76\n\74img align\75\47absmiddle\47 class\75\47feed-icon\47 expr:src\75\47data:feedIconImg\47/\76\n                Atom\n              \74/a\76\n\74/ul\76\n\74/div\76\n\74div class\75\47bottom\47\76\74/div\76\n\74/div\76\n\74div class\75\47subscribe\47 expr:id\75\47\46quot;SW_READER_LIST_CLOSED_\46quot; + data:widgetId +data:feed.type\47 expr:onclick\75\47\46quot;return(_SW_toggleReaderList(event, \\\46quot;\46quot; + data:widgetId +data:feed.type + \46quot;\\\46quot;));\46quot;\47\76\n\74div class\75\47top\47\76\n\74span class\75\47inner\47\76\n\74img class\75\47subscribe-dropdown-arrow\47 expr:src\75\47data:arrowDropdownImg\47/\76\n\74span expr:onclick\75\47\46quot;return(_SW_toggleReaderList(event, \\\46quot;\46quot; + data:widgetId +data:feed.type + \46quot;\\\46quot;));\46quot;\47\76\n\74img align\75\47absmiddle\47 alt\75\47\47 border\75\0470\47 class\75\47feed-icon\47 expr:src\75\47data:feedIconImg\47/\76\n\74data:feed.title\76\74/data:feed.title\76\n\74/span\76\n\74/span\76\n\74/div\76\n\74div class\75\47bottom\47\76\74/div\76\n\74/div\76\n\74/div\76\n\74/b:loop\76\n\74div style\75\47clear:both\47\76\74/div\76\n\74/div\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/b:if\076'}}, document.getElementById('Subscribe1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AdSenseView', new _WidgetInfo('AdSense1', 'sidebar',{'main': {'varName': '', 'template': '\74div class\75\47widget-content\47\76\n\74data:adCode\76\74/data:adCode\76\n\74/div\076'}}, document.getElementById('AdSense1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title\47\76\n\74h2\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74div id\75\47ArchiveList\47\76\n\74div expr:id\75\47data:widget.instanceId + \46quot;_ArchiveList\46quot;\47\76\n\74b:if cond\75\47data:style \75\75 \46quot;HIERARCHY\46quot;\47\76\n\74b:include data\75\47data\47 name\75\47interval\47\76\74/b:include\76\n\74/b:if\76\n\74b:if cond\75\47data:style \75\75 \46quot;FLAT\46quot;\47\76\n\74b:include data\75\47data\47 name\75\47flat\47\76\74/b:include\76\n\74/b:if\76\n\74b:if cond\75\47data:style \75\75 \46quot;MENU\46quot;\47\76\n\74b:include data\75\47data\47 name\75\47menu\47\76\74/b:include\76\n\74/b:if\76\n\74/div\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}, 'flat': {'varName': 'data', 'template': '\74ul\76\n\74b:loop values\75\47data:data\47 var\75\47i\47\76\n\74li class\75\47archivedate\47\76\n\74a expr:href\75\47data:i.url\47\76\74data:i.name\76\74/data:i.name\76\74/a\76 (\74data:i.post-count\76\74/data:i.post-count\76)\n      \74/li\76\n\74/b:loop\76\n\74/ul\076'}, 'menu': {'varName': 'data', 'template': '\74select expr:id\75\47data:widget.instanceId + \46quot;_ArchiveMenu\46quot;\47\76\n\74option value\75\47\47\76\74data:title\76\74/data:title\76\74/option\76\n\74b:loop values\75\47data:data\47 var\75\47i\47\76\n\74option expr:value\75\47data:i.url\47\76\74data:i.name\76\74/data:i.name\76 (\74data:i.post-count\76\74/data:i.post-count\76)\74/option\76\n\74/b:loop\76\n\74/select\076'}, 'interval': {'varName': 'intervalData', 'template': '\74b:loop values\75\47data:intervalData\47 var\75\47i\47\76\n\74ul\76\n\74li expr:class\75\47\46quot;archivedate \46quot; + data:i.expclass\47\76\n\74b:include data\75\47i\47 name\75\47toggle\47\76\74/b:include\76\n\74a class\75\47post-count-link\47 expr:href\75\47data:i.url\47\76\74data:i.name\76\74/data:i.name\76\74/a\76\n\74span class\75\47post-count\47 dir\75\47ltr\47\76(\74data:i.post-count\76\74/data:i.post-count\76)\74/span\76\n\74b:if cond\75\47data:i.data\47\76\n\74b:include data\75\47i.data\47 name\75\47interval\47\76\74/b:include\76\n\74/b:if\76\n\74b:if cond\75\47data:i.posts\47\76\n\74b:include data\75\47i.posts\47 name\75\47posts\47\76\74/b:include\76\n\74/b:if\76\n\74/li\76\n\74/ul\76\n\74/b:loop\076'}, 'toggle': {'varName': 'interval', 'template': '\74b:if cond\75\47data:interval.toggleId\47\76\n\74b:if cond\75\47data:interval.expclass \75\75 \46quot;expanded\46quot;\47\76\n\74a class\75\47toggle\47 expr:href\75\47data:widget.actionUrl + \46quot;\46amp;action\75toggle\46quot; +       \46quot;\46amp;dir\75close\46amp;toggle\75\46quot; + data:interval.toggleId +       \46quot;\46amp;toggleopen\75\46quot; + data:toggleopen\47\76\n\74span class\75\47zippy toggle-open\47\76\46#9660; \74/span\76\n\74/a\76\n\74b:else\76\74/b:else\76\n\74a class\75\47toggle\47 expr:href\75\47data:widget.actionUrl + \46quot;\46amp;action\75toggle\46quot; +         \46quot;\46amp;dir\75open\46amp;toggle\75\46quot; + data:interval.toggleId +         \46quot;\46amp;toggleopen\75\46quot; + data:toggleopen\47\76\n\74span class\75\47zippy\47\76\n\74b:if cond\75\47data:blog.languageDirection \75\75 \46quot;rtl\46quot;\47\76\n              \46#9668;\n            \74b:else\76\74/b:else\76\n              \46#9658;\n            \74/b:if\76\n\74/span\76\n\74/a\76\n\74/b:if\76\n\74/b:if\076'}, 'posts': {'varName': 'posts', 'template': '\74ul class\75\47posts\47\76\n\74b:loop values\75\47data:posts\47 var\75\47i\47\76\n\74li\76\74a expr:href\75\47data:i.url\47\76\74data:i.title\76\74/data:i.title\76\74/a\76\74/li\76\n\74/b:loop\76\n\74/ul\076'}}, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74b:if cond\75\47data:team \75\75 \46quot;true\46quot;\47\76\n\74ul\76\n\74b:loop values\75\47data:authors\47 var\75\47i\47\76\n\74li\76\74a expr:href\75\47data:i.userUrl\47\76\74data:i.display-name\76\74/data:i.display-name\76\74/a\76\74/li\76\n\74/b:loop\76\n\74/ul\76\n\74b:else\76\74/b:else\76\n\74b:if cond\75\47data:photo.url !\75 \46quot;\46quot;\47\76\n\74a expr:href\75\47data:userUrl\47\76\74img class\75\47profile-img\47 expr:alt\75\47data:photo.alt\47 expr:height\75\47data:photo.height\47 expr:src\75\47data:photo.url\47 expr:width\75\47data:photo.width\47/\76\74/a\76\n\74/b:if\76\n\74dl class\75\47profile-datablock\47\76\n\74dt class\75\47profile-data\47\76\74data:displayname\76\74/data:displayname\76\74/dt\76\n\74b:if cond\75\47data:showlocation \75\75 \46quot;true\46quot;\47\76\n\74dd class\75\47profile-data\47\76\74data:location\76\74/data:location\76\74/dd\76\n\74/b:if\76\n\74b:if cond\75\47data:aboutme !\75 \46quot;\46quot;\47\76\74dd class\75\47profile-textblock\47\76\74data:aboutme\76\74/data:aboutme\76\74/dd\76\74/b:if\76\n\74/dl\76\n\74a class\75\47profile-link\47 expr:href\75\47data:userUrl\47\76\74data:viewProfileMsg\76\74/data:viewProfileMsg\76\74/a\76\n\74/b:if\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}}, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main'));
+</script>
+</body></html>

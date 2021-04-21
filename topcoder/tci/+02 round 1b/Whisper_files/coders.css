@@ -1,0 +1,468 @@
+.coderTextRed {
+	font-weight: bold; background-color: transparent;
+}
+.coderTextYellow {
+	font-weight: bold; background-color: transparent;
+}
+.coderTextBlue {
+	font-weight: bold; background-color: transparent;
+}
+.coderTextGreen {
+	font-weight: bold; background-color: transparent;
+}
+.coderTextGray {
+	font-weight: bold; background-color: transparent;
+}
+.coderTextOrange {
+	font-weight: bold; background-color: transparent;
+}
+.coderTextRed:link {
+	text-decoration: none;
+}
+.coderTextYellow:link {
+	text-decoration: none;
+}
+.coderTextBlue:link {
+	text-decoration: none;
+}
+.coderTextGreen:link {
+	text-decoration: none;
+}
+.coderTextGray:link {
+	text-decoration: none;
+}
+.coderTextOrange:link {
+	text-decoration: none;
+}
+.coderTextWhite:link {
+	text-decoration: none;
+}
+.coderTextBlack:link {
+	text-decoration: none;
+}
+.coderTextRed:visited {
+	text-decoration: none;
+}
+.coderTextYellow:visited {
+	text-decoration: none;
+}
+.coderTextBlue:visited {
+	text-decoration: none;
+}
+.coderTextGreen:visited {
+	text-decoration: none;
+}
+.coderTextGray:visited {
+	text-decoration: none;
+}
+.coderTextOrange:visited {
+	text-decoration: none;
+}
+.coderTextWhite:visited {
+	text-decoration: none;
+}
+.coderTextBlack:visited {
+	text-decoration: none;
+}
+a.coderTextRed:hover {
+	text-decoration: underline;
+}
+a.coderTextYellow:hover {
+	text-decoration: underline;
+}
+a.coderTextBlue:hover {
+	text-decoration: underline;
+}
+a.coderTextGreen:hover {
+	text-decoration: underline;
+}
+a.coderTextGray:hover {
+	text-decoration: underline;
+}
+a.coderTextOrange:hover {
+	text-decoration: underline;
+}
+a.coderTextWhite:hover {
+	text-decoration: underline;
+}
+a.coderTextBlack:hover {
+	text-decoration: underline;
+}
+.coderTextRed:active {
+	text-decoration: underline;
+}
+.coderTextYellow:active {
+	text-decoration: underline;
+}
+.coderTextBlue:active {
+	text-decoration: underline;
+}
+.coderTextGreen:active {
+	text-decoration: underline;
+}
+.coderTextGray:active {
+	text-decoration: underline;
+}
+.coderTextOrange:active {
+	text-decoration: underline;
+}
+.coderTextWhite:active {
+	text-decoration: underline;
+}
+.coderTextBlack:active {
+	text-decoration: underline;
+}
+.coderTextOrange {
+	color: rgb(255, 153, 0);
+}
+.coderTextOrange:link {
+	color: rgb(255, 153, 0);
+}
+.coderTextOrange:visited {
+	color: rgb(255, 153, 0);
+}
+.coderTextOrange:hover {
+	color: rgb(255, 153, 0);
+}
+.coderTextOrange:active {
+	color: rgb(255, 153, 0);
+}
+.coderTextRed {
+	color: rgb(238, 0, 0);
+}
+.coderTextRed:link {
+	color: rgb(238, 0, 0);
+}
+.coderTextRed:visited {
+	color: rgb(238, 0, 0);
+}
+.coderTextRed:hover {
+	color: rgb(238, 0, 0);
+}
+.coderTextRed:active {
+	color: rgb(238, 0, 0);
+}
+.coderTextYellow {
+	color: rgb(221, 204, 0);
+}
+.coderTextYellow:link {
+	color: rgb(221, 204, 0);
+}
+.coderTextYellow:visited {
+	color: rgb(221, 204, 0);
+}
+.coderTextYellow:hover {
+	color: rgb(221, 204, 0);
+}
+.coderTextYellow:active {
+	color: rgb(221, 204, 0);
+}
+.coderTextBlue {
+	color: rgb(102, 102, 255);
+}
+.coderTextBlue:link {
+	color: rgb(102, 102, 255);
+}
+.coderTextBlue:visited {
+	color: rgb(102, 102, 255);
+}
+.coderTextBlue:hover {
+	color: rgb(102, 102, 255);
+}
+.coderTextBlue:active {
+	color: rgb(102, 102, 255);
+}
+.coderTextGreen {
+	color: rgb(0, 169, 0);
+}
+.coderTextGreen:link {
+	color: rgb(0, 169, 0);
+}
+.coderTextGreen:visited {
+	color: rgb(0, 169, 0);
+}
+.coderTextGreen:hover {
+	color: rgb(0, 169, 0);
+}
+.coderTextGreen:active {
+	color: rgb(0, 169, 0);
+}
+.coderTextGray {
+	color: rgb(153, 153, 153);
+}
+.coderTextGray:link {
+	color: rgb(153, 153, 153);
+}
+.coderTextGray:visited {
+	color: rgb(153, 153, 153);
+}
+.coderTextGray:hover {
+	color: rgb(153, 153, 153);
+}
+.coderTextGray:active {
+	color: rgb(153, 153, 153);
+}
+.coderTextWhite {
+	color: rgb(255, 255, 255);
+}
+.coderTextWhite:link {
+	color: rgb(255, 255, 255);
+}
+.coderTextWhite:visited {
+	color: rgb(255, 255, 255);
+}
+.coderTextWhite:hover {
+	color: rgb(255, 255, 255);
+}
+.coderTextWhite:active {
+	color: rgb(255, 255, 255);
+}
+.coderTextBlack {
+	color: rgb(0, 0, 0);
+}
+.coderTextBlack:link {
+	color: rgb(0, 0, 0);
+}
+.coderTextBlack:visited {
+	color: rgb(0, 0, 0);
+}
+.coderTextBlack:hover {
+	color: rgb(0, 0, 0);
+}
+.coderTextBlack:active {
+	color: rgb(0, 0, 0);
+}
+.coderTextRed {
+	font-weight: bold !important; background-color: transparent !important;
+}
+.coderTextYellow {
+	font-weight: bold !important; background-color: transparent !important;
+}
+.coderTextBlue {
+	font-weight: bold !important; background-color: transparent !important;
+}
+.coderTextGreen {
+	font-weight: bold !important; background-color: transparent !important;
+}
+.coderTextGray {
+	font-weight: bold !important; background-color: transparent !important;
+}
+.coderTextOrange {
+	font-weight: bold !important; background-color: transparent !important;
+}
+.coderTextRed:link {
+	text-decoration: none !important;
+}
+.coderTextYellow:link {
+	text-decoration: none !important;
+}
+.coderTextBlue:link {
+	text-decoration: none !important;
+}
+.coderTextGreen:link {
+	text-decoration: none !important;
+}
+.coderTextGray:link {
+	text-decoration: none !important;
+}
+.coderTextOrange:link {
+	text-decoration: none !important;
+}
+.coderTextWhite:link {
+	text-decoration: none !important;
+}
+.coderTextBlack:link {
+	text-decoration: none !important;
+}
+.coderTextRed:visited {
+	text-decoration: none !important;
+}
+.coderTextYellow:visited {
+	text-decoration: none !important;
+}
+.coderTextBlue:visited {
+	text-decoration: none !important;
+}
+.coderTextGreen:visited {
+	text-decoration: none !important;
+}
+.coderTextGray:visited {
+	text-decoration: none !important;
+}
+.coderTextOrange:visited {
+	text-decoration: none !important;
+}
+.coderTextWhite:visited {
+	text-decoration: none !important;
+}
+.coderTextBlack:visited {
+	text-decoration: none !important;
+}
+.coderTextRed:hover {
+	text-decoration: underline !important;
+}
+.coderTextYellow:hover {
+	text-decoration: underline !important;
+}
+.coderTextBlue:hover {
+	text-decoration: underline !important;
+}
+.coderTextGreen:hover {
+	text-decoration: underline !important;
+}
+.coderTextGray:hover {
+	text-decoration: underline !important;
+}
+.coderTextOrange:hover {
+	text-decoration: underline !important;
+}
+.coderTextWhite:hover {
+	text-decoration: underline !important;
+}
+.coderTextBlack:hover {
+	text-decoration: underline !important;
+}
+.coderTextRed:active {
+	text-decoration: underline !important;
+}
+.coderTextYellow:active {
+	text-decoration: underline !important;
+}
+.coderTextBlue:active {
+	text-decoration: underline !important;
+}
+.coderTextGreen:active {
+	text-decoration: underline !important;
+}
+.coderTextGray:active {
+	text-decoration: underline !important;
+}
+.coderTextOrange:active {
+	text-decoration: underline !important;
+}
+.coderTextWhite:active {
+	text-decoration: underline !important;
+}
+.coderTextBlack:active {
+	text-decoration: underline !important;
+}
+.coderTextOrange {
+	color: rgb(255, 153, 0) !important;
+}
+.coderTextOrange:link {
+	color: rgb(255, 153, 0) !important;
+}
+.coderTextOrange:visited {
+	color: rgb(255, 153, 0) !important;
+}
+.coderTextOrange:hover {
+	color: rgb(255, 153, 0) !important;
+}
+.coderTextOrange:active {
+	color: rgb(255, 153, 0) !important;
+}
+.coderTextRed {
+	color: rgb(238, 0, 0) !important;
+}
+.coderTextRed:link {
+	color: rgb(238, 0, 0) !important;
+}
+.coderTextRed:visited {
+	color: rgb(238, 0, 0) !important;
+}
+.coderTextRed:hover {
+	color: rgb(238, 0, 0) !important;
+}
+.coderTextRed:active {
+	color: rgb(238, 0, 0) !important;
+}
+.coderTextYellow {
+	color: rgb(221, 204, 0) !important;
+}
+.coderTextYellow:link {
+	color: rgb(221, 204, 0) !important;
+}
+.coderTextYellow:visited {
+	color: rgb(221, 204, 0) !important;
+}
+.coderTextYellow:hover {
+	color: rgb(221, 204, 0) !important;
+}
+.coderTextYellow:active {
+	color: rgb(221, 204, 0) !important;
+}
+.coderTextBlue {
+	color: rgb(102, 102, 255) !important;
+}
+.coderTextBlue:link {
+	color: rgb(102, 102, 255) !important;
+}
+.coderTextBlue:visited {
+	color: rgb(102, 102, 255) !important;
+}
+.coderTextBlue:hover {
+	color: rgb(102, 102, 255) !important;
+}
+.coderTextBlue:active {
+	color: rgb(102, 102, 255) !important;
+}
+.coderTextGreen {
+	color: rgb(0, 169, 0) !important;
+}
+.coderTextGreen:link {
+	color: rgb(0, 169, 0) !important;
+}
+.coderTextGreen:visited {
+	color: rgb(0, 169, 0) !important;
+}
+.coderTextGreen:hover {
+	color: rgb(0, 169, 0) !important;
+}
+.coderTextGreen:active {
+	color: rgb(0, 169, 0) !important;
+}
+.coderTextGray {
+	color: rgb(153, 153, 153) !important;
+}
+.coderTextGray:link {
+	color: rgb(153, 153, 153) !important;
+}
+.coderTextGray:visited {
+	color: rgb(153, 153, 153) !important;
+}
+.coderTextGray:hover {
+	color: rgb(153, 153, 153) !important;
+}
+.coderTextGray:active {
+	color: rgb(153, 153, 153) !important;
+}
+.coderTextWhite {
+	color: rgb(255, 255, 255) !important;
+}
+.coderTextWhite:link {
+	color: rgb(255, 255, 255) !important;
+}
+.coderTextWhite:visited {
+	color: rgb(255, 255, 255) !important;
+}
+.coderTextWhite:hover {
+	color: rgb(255, 255, 255) !important;
+}
+.coderTextWhite:active {
+	color: rgb(255, 255, 255) !important;
+}
+.coderTextBlack {
+	color: rgb(0, 0, 0) !important;
+}
+.coderTextBlack:link {
+	color: rgb(0, 0, 0) !important;
+}
+.coderTextBlack:visited {
+	color: rgb(0, 0, 0) !important;
+}
+.coderTextBlack:hover {
+	color: rgb(0, 0, 0) !important;
+}
+.coderTextBlack:active {
+	color: rgb(0, 0, 0) !important;
+}

@@ -1,0 +1,167 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>2377 - Grand Prix</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Grand%20Prix_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>2377 - Grand Prix</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2006"><b>World Finals - Tokyo - 2006/2007</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p2377.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=2377"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=2377"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+You are the chief designer of a road race that will be held in a hilly area. The racecourse consists of <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> connected straight line segments; that is, the end of the <span class="MATH"><i>k</i></span>
+<tex2html_verbatim_mark>th segment coincides with the beginning of the <span class="MATH">(<i>k</i> + 1)</span>
+<tex2html_verbatim_mark>st segment. During planning, these segments are
+laid out on a planar surface, so 2-dimensional Cartesian coordinates
+identify the endpoints. The first segment begins at the origin. Figure
+1 shows the planar view of a racecourse with 6 segments.
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p2377a.eps}$
+ -->
+<img src="Grand%20Prix_files/p2377a.jpg" alt="\epsfbox{p2377a.eps}" border="0">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+The actual race is run on the side of a hill. For simplicity, assume the hill makes an angle <span class="MATH"><img src="Grand%20Prix_files/2377img2.png" alt="$ \theta$" align="bottom" border="0" height="15" width="13"></span>
+<tex2html_verbatim_mark> with the horizontal plane, as illustrated in Figure 2. 
+
+</tex2html_verbatim_mark></p><p>
+The plane of the hill and the horizontal plane intersect in the <span class="MATH"><i>y</i></span>
+<tex2html_verbatim_mark>-axis. Each 2-dimensional Cartesian coordinate <!-- MATH
+ $(x_{i}, y_{i})$
+ -->
+<span class="MATH">(<i>x</i><sub>i</sub>, <i>y</i><sub>i</sub>)</span>
+<tex2html_verbatim_mark> corresponds to a 3-dimensional form <!-- MATH
+ $(x_{i}^{'}, y_{i}^{'}, z_{i}^{'})$
+ -->
+<span class="MATH">(<i>x</i><sub>i</sub><sup>'</sup>, <i>y</i><sub>i</sub><sup>'</sup>, <i>z</i><sub>i</sub><sup>'</sup>)</span>
+<tex2html_verbatim_mark>, with <span class="MATH"><i>z</i><sub>i</sub><sup>'</sup></span>
+<tex2html_verbatim_mark> representing the height of the endpoint of the <span class="MATH"><i>i</i></span>
+<tex2html_verbatim_mark>th linear segment. The height of the origin is 0.
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>This
+particular race is intended for novice drivers, so the racecourse must
+not include any segments that require downhill travel. That is, if the
+height of the endpoint of segment <span class="MATH"><i>k</i></span>
+<tex2html_verbatim_mark> is <span class="MATH"><i>z</i><sub>k</sub><sup>'</sup></span>
+<tex2html_verbatim_mark>, then the height of the endpoint of each segment after segment <span class="MATH"><i>k</i></span>
+<tex2html_verbatim_mark> must not be less than <span class="MATH"><i>z</i><sub>k</sub><sup>'</sup></span>
+<tex2html_verbatim_mark>. Formally we can write <!-- MATH
+ $z_{k}^{'} \le z_{m}^{'}$
+ -->
+<span class="MATH"><i>z</i><sub>k</sub><sup>'</sup><img src="Grand%20Prix_files/2377img3.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>z</i><sub>m</sub><sup>'</sup></span>
+<tex2html_verbatim_mark>, for <span class="MATH"><i>m</i><img src="Grand%20Prix_files/2377img4.png" alt="$ \ge$" align="middle" border="0" height="31" width="18"><i>k</i></span>
+<tex2html_verbatim_mark>. 
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+If a proposed racecourse includes downhill segments, it might be
+possible to transform it into a racecourse with no downhill segments by
+rotating the planar view of the entire course about the origin, without
+changing the angle between consecutive pairs of segments. However there
+may be proposed racecourses that cannot be made acceptable by such a
+rotation. </p><p>
+In this problem you must determine if a proposed racecourse is
+acceptable (that is, if it does not contain any downhill segments). If
+it is not acceptable, you must determine the minimum angle through
+which the racecourse must be rotated to make it acceptable, if that is
+possible. </p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p2377b.eps}$
+ -->
+<img src="Grand%20Prix_files/p2377b.jpg" alt="\epsfbox{p2377b.eps}" border="0">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input consists of multiple test cases. Each test case is a
+description of a proposed racecourse and the slope of the hillside on
+which it will be run. The first line of each description contains two
+integers <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(1 \le N \le 10000)$
+ -->
+<span class="MATH">(1<img src="Grand%20Prix_files/2377img3.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>N</i><img src="Grand%20Prix_files/2377img3.png" alt="$ \le$" align="middle" border="0" height="31" width="18">10000)</span>
+<tex2html_verbatim_mark> and <!-- MATH
+ $\theta (0^{o} \le \theta \le 45^{o})$
+ -->
+<span class="MATH"><img src="Grand%20Prix_files/2377img2.png" alt="$ \theta$" align="bottom" border="0" height="15" width="13">(0<sup>o</sup><img src="Grand%20Prix_files/2377img3.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><img src="Grand%20Prix_files/2377img2.png" alt="$ \theta$" align="bottom" border="0" height="15" width="13"><img src="Grand%20Prix_files/2377img3.png" alt="$ \le$" align="middle" border="0" height="31" width="18">45<sup>o</sup>)</span>
+<tex2html_verbatim_mark>. <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> denotes the number of segments in the course and <span class="MATH"><img src="Grand%20Prix_files/2377img2.png" alt="$ \theta$" align="bottom" border="0" height="15" width="13"></span>
+<tex2html_verbatim_mark> denotes the angle (in degrees) that the hillside makes with the horizontal plane. Each of the next <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> lines contains a pair of integers <!-- MATH
+ $(x_{i}, y_{i})$
+ -->
+<span class="MATH">(<i>x</i><sub>i</sub>, <i>y</i><sub>i</sub>)</span>
+<tex2html_verbatim_mark>, <!-- MATH
+ $(1 \le i \le N)$
+ -->
+<span class="MATH">(1<img src="Grand%20Prix_files/2377img3.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>i</i><img src="Grand%20Prix_files/2377img3.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>N</i>)</span>
+<tex2html_verbatim_mark>, which are the endpoints of the linear segments comprising the racecourse. The first segment begins at the origin, and segment <span class="MATH"><i>k</i> + 1</span>
+<tex2html_verbatim_mark> begins at the endpoint of segment <span class="MATH"><i>k</i></span>
+<tex2html_verbatim_mark>. No segment has zero length. 
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+The last test case is followed by a line containing two zeroes.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, print a line containing the test case number
+(beginning with 1). If the proposed course is acceptable without
+rotation, print ``<tt>Acceptable as proposed</tt>". If the course is not acceptable as proposed, but can be made acceptable by rotating it about the origin, print ``<tt>Acceptable after clockwise rotation of <span class="MATH"><i>X</i></span>
+<tex2html_verbatim_mark> degrees</tex2html_verbatim_mark></tt>" or ``<tt>Acceptable after counterclockwise rotation of <span class="MATH"><i>X</i></span>
+<tex2html_verbatim_mark> degrees</tex2html_verbatim_mark></tt>". The value <span class="MATH"><i>X</i></span>
+<tex2html_verbatim_mark> should be an unsigned number. For our purposes, a clockwise rotation would rotate the positive <span class="MATH"><i>y</i></span>
+<tex2html_verbatim_mark>-axis toward the positive <span class="MATH"><i>x</i></span>
+<tex2html_verbatim_mark>-axis. If both a clockwise and a
+counterclockwise rotation can make the course acceptable, choose the
+one with the smaller angle. If both rotations have the same angle, then
+choose the clockwise rotation. If the course cannot be made acceptable
+by any rotation, print ``<tt>Unacceptable</tt>". Display the angles of rotation rounded to two fractional digits. 
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+Print a blank line after the output for each test case. Use an output format similar to that shown in the sample output below.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>2 45 
+10 10 
+0 1 
+2 0 
+1 1 
+2 0 
+3 45 
+10 10 
+1 10 
+5 6 
+0 0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: Acceptable after clockwise rotation of 131.99 degrees 
+
+Case 2: Acceptable as proposed
+
+Case 3: Unacceptable
+</pre> 
+
+<p>
+</p><hr><address>Tokyo 2006-2007</address><p></p></body></html>

@@ -1,0 +1,118 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>2999 - Navigation</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Navigation_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>2999 - Navigation</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2003"><b>World Finals - Prague - 2003/2004</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p2999.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=2999"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=2999"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+Global Positioning System (GPS) is a navigation system based on a set of satellites orbiting approximately
+20,000 kilometers above the earth. Each satellite follows a known orbit and transmits a radio signal that encodes
+the current time. If a GPS-equipped vehicle has a very accurate clock, it can compare its own local time with the
+time encoded in the signals received from the satellites. Since radio signals propagate at a known rate, the
+vehicle can compute the distance between its current location and the location of the satellite when the signal
+was broadcast. By measuring its distance from several satellites in known orbits, a vehicle can compute its
+position very accurately.
+
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p2999.eps}$
+ -->
+<img src="Navigation_files/p2999.gif" alt="\epsfbox{p2999.eps}" align="bottom" border="0">
+</div>
+
+<p>
+You must write a simple ``autopilot" program based on GPS navigation. To make the problem easier, we state it
+as a two-dimen sional problem. In other words, you do not need to take into account the curvature of the earth or
+the altitude of the satellites. Furthermore, the problem uses speeds that are more appropriate for airplanes and
+sound waves than for satellites and radio waves.
+
+</p><p>
+Given a set of signals from moving sources, your program must compute the receiving position on the Cartesian
+plane. Then, given a destination point on the plane, your program must compute the compass heading required
+to go from the receiving position to the destination. All compass headings are stated in degrees. Compass
+heading 0 (North) corresponds to the positive y direction, and compass heading 90 (East) corresponds to the
+positive x direction, as shown in Figure 1.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+The input consists of multiple data sets.
+
+<p>
+The first line of input in each data set contains an integer <span class="MATH"><i>N</i></span> (<!-- MATH
+ $1 \le N \le 10$
+ -->
+<span class="MATH">1<img src="Navigation_files/2999img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>N</i><img src="Navigation_files/2999img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">10</span>), which is the number of signal sources
+in the set. This is followed by three floating point numbers: <span class="MATH"><i>t</i></span>, <span class="MATH"><i>x</i></span>, and <span class="MATH"><i>y</i></span>. Here, <span class="MATH"><i>t</i></span> denotes the exact local time when
+all the signals are received, represented in seconds after the reference time (time 0), and <span class="MATH"><i>x</i></span> and <span class="MATH"><i>y</i></span> represent the
+coordinates of the destination point on the Cartesian plane. Each of the next <span class="MATH"><i>N</i></span> lines contains four floating-point
+numbers that carry information about one signal source. The first two numbers represent the known position of
+the signal source on the Cartesian plane at the reference time. The third number represents the direction of travel
+of the signal source in the form of a compass heading <span class="MATH"><i>D</i></span> (<!-- MATH
+ $0 \le D < 360$
+ -->
+<span class="MATH">0<img src="Navigation_files/2999img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>D</i> &lt; 360</span>). The fourth number is the time that is
+encoded in the signal-that is, the time when the signal was transmitted, represented in seconds after the
+reference time. The magnitudes of all numbers in the input file are less than 10000 and no floating-point number
+has more than 5 digits after the decimal point.
+
+</p><p>
+The last data set is followed by a line containing four zeros.
+
+</p><p>
+The unit distance in the coordinate space is one meter. Assume that each signal source is moving over the
+Cartesian plane at a speed of 100 meters per second and that the broadcast signal propagates at a speed of 350
+meters per second. Due to inaccuracies in synchronizing clocks, assume that your  distance calculations are
+accurate only to 0.1 meter. That is, if two points are computed to be within 0.1 meter of each other, you should
+treat them as the same point. There is also the possibility that a signal may have been corrupted in transmission,
+so the data received from multiple signals may be inconsistent.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+For each trial, print the trial number followed by the compass heading from the receiving location to the
+destination, in degrees rounded to the nearest integer. Use the labeling as shown in the example output. If the
+signals do not contain enough information to compute the receiving location (that is, more than one position is
+consistent with the signals), print `<tt>Inconclusive</tt>'. If the signals are inconsistent (that is, no
+position is consistent
+with the signals), print `<tt>Inconsistent</tt>'. If the receiving location is within 0.1 meter of the destination, print
+`<tt>Arrived</tt>'. If the situation is Inconclusive or Inconsistent, then you do not need to consider the case Arrived.
+
+<p>
+Figure 2 above corresponds to the first sample input. The locations of the three satellites at time
+<span class="MATH"><i>t</i> = 0</span> are A (-100,350), B (350,-100) and C (350,800). The signals received by the GPS unit were transmitted at
+time <span class="MATH"><i>t</i> = 1.75</span>, when the satellites were at locations A', B', and C'  (however, in general the signals
+received by the
+GPS unit might have been transmitted at different times). The signals from the three satellites converge at D at
+time <!-- MATH
+ $t = 2.53571$
+ -->
+<span class="MATH"><i>t</i> = 2.53571</span>, which means D is the location of the receiving GPS unit. From point D, a compass course of
+45 degrees leads toward the destination point of (1050, 1050).
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>3  2.53571  1050.0  1050.0
+-100.0   350.0   90.0  1.75
+ 350.0  -100.0    0.0  1.75
+ 350.0   800.0  180.0  1.75
+2  2.0  1050.0  1050.0
+-100.0   350.0   90.0  1.0
+ 350.0  -100.0    0.0  1.0
+0  0  0  0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>Trial 1: 45 degrees
+Trial 2: Inconclusive
+</pre>
+
+<p>
+</p><hr><address>Prague 2003-2004</address><p></p></body></html>

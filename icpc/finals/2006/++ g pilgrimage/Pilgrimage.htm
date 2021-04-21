@@ -1,0 +1,163 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3567 - Pilgrimage</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Pilgrimage_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3567 - Pilgrimage</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2005"><b>World Finals - San Antonio - Texas - 2005/2006</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3567.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3567"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3567"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+Jack is making a long distance walk with some friends along the old
+pilgrim road from Vézelay to Santiago de Compostela. Jack administers
+money for the group. His administration is quite simple. Whenever an
+amount (&#8364; 60, say) has to be paid for the common good he will pay it,
+and write in his booklet: <tt>PAY 60</tt>. 
+
+</p><p>
+When needed, Jack will ask every member of the group, including
+himself, to pay an amount (&#8364; 50, say) to the collective purse, and
+write in his booklet: <tt>COLLECT 50</tt>. If the group size is 7, he collects &#8364; 350 in total. 
+
+</p><p>
+Unfortunately some of the group members cannot participate in the full
+walk. So sometimes the group will grow, sometimes it will shrink. How
+does Jack handle these comings and goings of group members in terms of
+collective money? Suppose, for example, the group size is 7, and that
+Jack has &#8364; 140 in cash, which is &#8364; 20 for every group member. If two
+group members leave, each will receive &#8364; 20, and Jack will write in his
+booklet: <tt>OUT 2</tt>. If under the same circumstances three new group members arrive, they will each have to pay &#8364; 20, and Jack will write: <tt>IN 3</tt>. 
+
+</p><p>
+In these cases the amount in cash could easily be divided, without
+fractions. As a strange coincidence, this happened during the whole
+trip. Jack never had to make calculations with fractional numbers of
+euros. </p><p>
+Near the end of the trip, Jack was joined by all his fellow travelers.
+Nobody was willing to miss the glorious finale of the trip. It was then
+that Jack tried to remember what the group size had been during each
+part of the trip. He could not remember. </p><p>
+Given a page of Jack's booklet, could you figure out the size of the group at the beginning of that page?
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input file contains several test cases. Each test case is a
+sequence of lines in Jack's booklet. The first line of each test case
+will give the number <span class="MATH"><i>N</i></span> <!-- MATH
+ $(0 < N \le 50)$
+ -->
+<span class="MATH">(0 &lt; <i>N</i><img src="Pilgrimage_files/3567img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18">50)</span> of lines to follow. The next <span class="MATH"><i>N</i></span> lines have the format: <span class="MATH">&lt; <i>keyword</i> &gt;</span> <span class="MATH">&lt; <i>num</i> &gt;</span>, where 
+
+</p><p>
+
+</p><p>
+<br>
+
+<span class="MATH">&lt; <i>keyword</i> &gt;</span> = <tt>PAY <span class="MATH">|</span> COLLECT <span class="MATH">|</span> IN <span class="MATH">|</span> OUT</tt> 
+
+</p><p>
+
+</p><p>
+<br>
+and <span class="MATH">&lt; <i>num</i> &gt;</span> is a positive integer, with the following restrictions: 
+
+</p><p>
+
+</p><p>
+<br>
+<table cols="2">
+<col align="left"><col align="left">
+<tbody><tr><td align="left" nowrap="nowrap" valign="baseline">
+<tt>IN</tt> <span class="MATH"><i>k</i></span> </td><td align="left" nowrap="nowrap" valign="baseline"> <span class="MATH"><i>k</i><img src="Pilgrimage_files/3567img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18">20</span> </td></tr>
+<tr><td align="left" nowrap="nowrap" valign="baseline"> 
+<tt>OUT</tt> <span class="MATH"><i>k</i></span> </td><td align="left" nowrap="nowrap" valign="baseline"> <span class="MATH"><i>k</i><img src="Pilgrimage_files/3567img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18">20</span> </td></tr>
+<tr><td align="left" nowrap="nowrap" valign="baseline"> 
+<tt>COLLECT</tt> <span class="MATH"><i>k</i></span> </td><td align="left" nowrap="nowrap" valign="baseline"> <span class="MATH"><i>k</i><img src="Pilgrimage_files/3567img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18">200</span> </td></tr>
+<tr><td align="left" nowrap="nowrap" valign="baseline"> 
+<tt>PAY</tt> <span class="MATH"><i>k</i></span> </td><td align="left" nowrap="nowrap" valign="baseline"> <!-- MATH
+ $k \le 2000$
+ -->
+<span class="MATH"><i>k</i><img src="Pilgrimage_files/3567img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18">2000</span> </td></tr>
+</tbody></table>
+
+</p><p>
+
+</p><p>
+<br>
+The last case is followed by a line containing a single zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, print a single line describing the size of the
+group at the beginning of the part of the trip described in the test
+case. This line contains: </p><p>
+
+</p><ul>
+<li>The word `<tt>IMPOSSIBLE</tt>', if the data are inconsistent. 
+</li>
+<li>A single number giving the size of the group just prior to the
+sequence of lines in Jack's booklet, if this size is uniquely
+determined by the data. </li>
+<li>Several numbers, in increasing order, separated by spaces, giving
+the possible sizes of the group, in case the number of solutions is
+finite, but the solution is not unique.
+</li>
+<li>A statement in the format: `<tt>SIZE &gt;= <span class="MATH"><i>N</i></span></tt>', giving a lower bound for the size of the group, in case the number of solutions is infinite. Observe that the inequality <tt>SIZE &gt;= <span class="MATH">1</span></tt> always applies, since at least Jack himself did the whole trip.
+</li>
+</ul>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>5 
+IN 1 
+PAY 7 
+IN 1 
+PAY 7 
+IN 1 
+7 
+IN 1 
+COLLECT 20 
+PAY 30 
+PAY 12 
+IN 2 
+PAY 30 
+OUT 3 
+3 
+IN 1 
+PAY 8 
+OUT 3 
+1 
+OUT 5 
+0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>IMPOSSIBLE 
+2 
+3 7 
+SIZE &gt;= 6
+</pre> 
+
+<p>
+</p><p>
+<b>Claimer:</b>
+The data used in this problem is unofficial data
+prepared by Derek Kisman. So any mistake here does not
+imply mistake in the offcial judge data. Only Derek
+Kisman is responsible for the mistakes. Report
+mistakes to dkisman@acm.org
+
+</p><hr><address>San Antonio - Texas 2005-2006</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

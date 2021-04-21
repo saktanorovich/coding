@@ -1,0 +1,74 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>2995 - Image Is Everything</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Image%20Is%20Everything_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>2995 - Image Is Everything</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2003"><b>World Finals - Prague - 2003/2004</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p2995.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=2995"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=2995"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+Your new company is building a robot that can hold small lightweight objects. The robot will have the
+intelligence to determine if an object is light enough to hold. It does this by taking pictures of the object from
+the 6 cardinal directions, and then inferring an upper limit on the object's weight based on those images. You
+must write a program to do that for the robot.
+
+</p><p>
+You can assume that each object is formed from an <!-- MATH
+ $N \times N \times N$
+ -->
+<span class="MATH"><i>N</i>×<i>N</i>×<i>N</i></span> lattice of cubes, some of which may be missing.
+Each <!-- MATH
+ $1 \times 1 \times 1$
+ -->
+<span class="MATH">1×1×1</span> cube weighs 1 gram, and each cube is painted a single solid color. The object is not necessarily
+connected.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+The input for this problem consists of several test cases representing different objects. Every case begins with a
+line containing <span class="MATH"><i>N</i></span>, which is the size of the object (<!-- MATH
+ $1 \le N \le 10$
+ -->
+<span class="MATH">1<img src="Image%20Is%20Everything_files/2995img1.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>N</i><img src="Image%20Is%20Everything_files/2995img1.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">10</span>). The next <span class="MATH"><i>N</i></span> lines are the different <!-- MATH
+ $N \times N$
+ -->
+<span class="MATH"><i>N</i>×<i>N</i></span>
+views of the object, in the order front, left, back, right, top, bottom. Each view will be separated by a single space from
+the view that follows it. The bottom edge of the top view corresponds to the top edge of the front view.
+Similarly, the top edge of the bottom view corresponds to the bottom edge of the front view. In each view,
+colors are represented by single, unique capital letters, while a period (<tt>.</tt>) indicates that the object can be seen
+through at that location.
+
+<p>
+Input for the last test case is followed by a line consisting of the number 0.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+For each test case, print a line containing the maximum possible weight of the object, using the format shown
+below.
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>3
+.R. YYR .Y. RYY .Y. .R.
+GRB YGR BYG RBY GYB GRB
+.R. YRR .Y. RRY .R. .Y.
+2
+ZZ ZZ ZZ ZZ ZZ ZZ
+ZZ ZZ ZZ ZZ ZZ ZZ
+0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>Maximum weight: 11 gram(s)
+Maximum weight: 8 gram(s)
+</pre>
+
+<p>
+</p><hr><address>Prague 2003-2004</address><p><b>Tests-Setter:</b> Rujia Liu<br><b>Special Thanks:</b> Yao Guan<br></p></body></html>

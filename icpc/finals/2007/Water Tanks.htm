@@ -1,0 +1,142 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3810 - Problem: Water Tanks</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Water%20Tanks_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3810 - Problem: Water Tanks</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2006"><b>World Finals - Tokyo - 2006/2007</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3810.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3810"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3810"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+The Aqua Container Management company manages water storage facilities.
+They are considering a system of storing water in a series of connected
+vertical tanks. Each tank has a horizontal cross-sectional area of one
+square meter, but the tanks have different heights. The base of each
+tank is at ground level. Each tank is connected by a pipe to the
+previous tank in the series and by another pipe to the next tank in the
+series. The pipes connecting the tanks are level and are at increasing
+heights (that is, the pipe connecting tank <span class="MATH"><i>i</i></span>
+<tex2html_verbatim_mark> to tank <span class="MATH"><i>i</i> + 1</span>
+<tex2html_verbatim_mark> is at a higher level than the pipe connecting tank <span class="MATH"><i>i</i></span>
+<tex2html_verbatim_mark> to tank <span class="MATH"><i>i</i> - 1</span>
+<tex2html_verbatim_mark>.) Tank 1 is open so that air and water can
+flow into it freely at the top. All the other tanks are closed so that
+air and water can flow in and out only through the connecting pipes.
+The connecting pipes are large enough that water and air can flow
+through them freely and simultaneously but small enough that their
+dimensions can be ignored in this problem. </tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+The series of tanks is filled by pouring water slowly into the top of
+tank 1, continuing until the water level reaches the top of tank 1. As
+the water level rises above the connecting pipes, water flows among the
+tanks. </p><p>
+Aqua Container Management needs a program to compute the cubic meters
+of water that can be poured into the series of tanks before the water
+level reaches the top of tank 1. </p><p>
+The figure below illustrates a simple case involving only two tanks.
+After the filling procedure is completed, the air in the upper part of
+the second tank is compressed (its air pressure is greater than one
+atmosphere), so the water level in the second tank is lower than the
+water level in the first tank.
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3810.eps}$
+ -->
+<img src="Water%20Tanks_files/p3810.jpg" alt="\epsfbox{p3810.eps}" align="bottom" border="0">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>The following physical principles are helpful in solving this
+problem (some of these are approximations that are acceptable for the
+purposes of this problem): </p><p>
+
+</p><ul>
+<li>Water flows downhill. 
+</li>
+<li>In an open space, the air pressure is equal to one atmosphere. 
+</li>
+<li>Air is compressible (the volume occupied by a given amount of air
+depends on pressure). Water is not compressible (the volume occupied by
+a given amount of water is constant, independent of pressure). </li>
+<li>Air pressure is the same everywhere within a closed space. If the
+volume of the closed space changes, the product of the volume and the
+air pressure within the space remains constant. For example, suppose an
+enclosed airspace has an initial volume <span class="MATH"><i>V</i><sub>1</sub></span>
+<tex2html_verbatim_mark> and pressure <span class="MATH"><i>P</i><sub>1</sub></span>
+<tex2html_verbatim_mark>. If the volume of the airspace changes to <span class="MATH"><i>V</i><sub>2</sub></span>
+<tex2html_verbatim_mark>, then the new pressure <span class="MATH"><i>P</i><sub>2</sub></span>
+<tex2html_verbatim_mark> satisfies <!-- MATH
+ $P_{1}V_{1} = P_{2}V_{2}$
+ -->
+<span class="MATH"><i>P</i><sub>1</sub><i>V</i><sub>1</sub> = <i>P</i><sub>2</sub><i>V</i><sub>2</sub></span>
+<tex2html_verbatim_mark>. 
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></li>
+<li>In a column of water below an airspace, the water pressure at a level <span class="MATH"><i>D</i></span>
+<tex2html_verbatim_mark> meters below the water surface is equal to the air pressure at the surface plus <!-- MATH
+ $0.097 \cdot D$
+ -->
+<span class="MATH">0.097<sup> . </sup><i>D</i></span>
+<tex2html_verbatim_mark> atmospheres. This is true regardless of whether the airspace is open or enclosed. 
+</tex2html_verbatim_mark></tex2html_verbatim_mark></li>
+<li>In a connected body of water (for example, when two or more tanks
+are connected by pipes below the water line), the water pressure is
+constant at any given level.
+</li>
+</ul>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>The input consists of several test cases representing different
+series of water tanks. Each test case has three lines of data. The
+first line contains an integer <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(2 \le N \le 10)$
+ -->
+<span class="MATH">(2<img src="Water%20Tanks_files/3810img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>N</i><img src="Water%20Tanks_files/3810img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">10)</span>
+<tex2html_verbatim_mark> which is the number of tanks in the test case. The second line contains <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> positive floating point numbers that are the heights, in meters, of tanks 1 through <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark>. The third line contains <span class="MATH"><i>N</i> - 1</span>
+<tex2html_verbatim_mark> floating point numbers. On this line, the <span class="MATH"><i>k</i></span>
+<tex2html_verbatim_mark>th number represents the height above the ground of the pipe that connects tank <span class="MATH"><i>k</i></span>
+<tex2html_verbatim_mark> and tank <span class="MATH"><i>k</i> + 1</span>
+<tex2html_verbatim_mark>. The numbers on the third line are increasing (each number is greater than the preceding number). 
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+The last test case is followed by a line containing the integer zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, print a line containing the test case number
+(beginning with 1) followed by the amount of water, in cubic meters,
+that can be poured into tank 1 before the water level reaches the top
+of tank 1. Print the results with three digits to the right of the
+decimal point. </p><p>
+Print a blank line after the output for each test case. Use the format of the sample output.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>2 
+10.0 8.0 
+4.0 
+0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: 15.260
+</pre> 
+
+<p>
+</p><hr><address>Tokyo 2006-2007</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

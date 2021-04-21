@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "bsuir.algorithm": {
+      "commandName": "Project",
+      "commandLineArgs": "-s"
+    }
+  }
+}

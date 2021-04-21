@@ -1,0 +1,13 @@
+Case 1: 2
+Case 2: 3
+Case 3: 2
+Case 4: 1
+Case 5: 3
+Case 6: 1
+Case 7: 4
+Case 8: 1
+Case 9: 1
+Case 10: 21
+Case 11: 1
+Case 12: 26
+Case 13: 2

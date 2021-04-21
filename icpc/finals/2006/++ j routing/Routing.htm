@@ -1,0 +1,118 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3570 - Routing</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Routing_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3570 - Routing</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2005"><b>World Finals - San Antonio - Texas - 2005/2006</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3570.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3570"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3570"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+As more and more transactions between companies and people are being
+carried out electronically over the Internet, secure communications
+have become an important concern. The Internet Cryptographic Protocol
+Company (ICPC) specializes in secure business-to-business transactions
+carried out over a network. The system developed by ICPC is peculiar in
+the way it is deployed in the network. </p><p>
+A network like the Internet can be modeled as a directed graph: nodes
+represent machines or routers, and edges correspond to direct
+connections, where data can be transmitted along the direction of an
+edge. For two nodes to communicate, they have to transmit their data
+along directed paths from the first node to the second, and from the
+second node to the first.
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3570.eps}$
+ -->
+<img src="Routing_files/p3570.gif" alt="\epsfbox{p3570.eps}" align="bottom" border="0" height="764" width="1166">
+</div>
+
+<p>To perform a secure transaction, ICPC's system requires the
+installation of their software not only on the two endnodes that want
+to communicate, but also on all intermediate nodes on the two paths
+connecting the end-nodes. Since ICPC charges customers according to how
+many copies of their software have to be installed, it would be
+interesting to have a program that for any network and end-node pair
+finds the cheapest way to connect the nodes.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input consists of several descriptions of networks. The first line of each description contains two integers <span class="MATH"><i>N</i></span> and <span class="MATH"><i>M</i></span> <!-- MATH
+ $(2 \le N \le 100)$
+ -->
+<span class="MATH">(2<img src="Routing_files/3570img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>N</i><img src="Routing_files/3570img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">100)</span>, the number of nodes and edges in the network, respectively. The nodes in the network are labeled <!-- MATH
+ $1, 2, \ldots, N$
+ -->
+<span class="MATH">1, 2,..., <i>N</i></span>, where nodes 1 and 2 are the ones that want to communicate. The first line of the description is followed by <span class="MATH"><i>M</i></span> lines containing two integers <span class="MATH"><i>X</i></span> and <span class="MATH"><i>Y</i></span> <!-- MATH
+ $(1 \le X, Y \le N)$
+ -->
+<span class="MATH">(1<img src="Routing_files/3570img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>X</i>, <i>Y</i><img src="Routing_files/3570img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>N</i>)</span>, denoting that there is a directed edge from <span class="MATH"><i>X</i></span> to <span class="MATH"><i>Y</i></span> in the network. 
+
+</p><p>
+The last description is followed by a line containing two zeroes.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>For each network description in the input, display its number in the
+sequence of descriptions. Then display the minimum number of nodes on
+which the software has to be installed, such that there is a directed
+path from node 1 to node 2 using only the nodes with the software, and
+also a path from node 2 to node 1 with the same property. (Note that a
+node can be on both paths but a path need not contain all the nodes.)
+The count should include nodes 1 and 2. </p><p>
+If node 1 and 2 cannot communicate, display `<tt>Impossible</tt>' instead. 
+
+</p><p>
+Follow the format in the sample given below, and display a blank line after each test case.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>8 12
+1 3 
+3 4 
+4 2 
+2 5 
+5 6 
+6 1 
+1 7 
+7 1 
+8 7 
+7 8 
+8 2 
+2 8 
+
+2 1 
+1 2 
+
+0 0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Network 1 
+Minimum number of nodes = 4 
+
+Network 2 
+Impossible
+</pre> 
+
+<p>
+</p><p>
+<b>Claimer:</b>
+The data used in this problem is unofficial data
+prepared by Shahriar Manzoor. So any mistake here does not
+imply mistake in the offcial judge data. Only 
+Shahriar Manzoor is responsible for the mistakes.
+Report mistakes to Shahriar_manzoor@yahoo.com
+</p><hr><address>San Antonio - Texas 2005-2006</address><p><b>Tests-Setter:</b> Shahriar Manzoor<br></p></body></html>

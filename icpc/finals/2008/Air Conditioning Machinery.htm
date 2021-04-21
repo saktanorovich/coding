@@ -1,0 +1,136 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>4118 - Air Conditioning Machinery</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Air%20Conditioning%20Machinery_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>4118 - Air Conditioning Machinery</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2007"><b>World Finals - Banff Springs, Alberta - 2007/2008</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p4118.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4118"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4118"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+You are a technician for the Air Conditioning Machinery company (ACM).
+Unfortunately, when you arrive at a customer site to install some air
+conditioning ducts, you discover that you are running low on supplies.
+You have only six duct segments, and they are all of the same kind,
+called an ``elbow.''
+</p><p>You must install a duct in a confined space: a rectangular
+prism whose sides are multiples of a unit length. Think of the confined
+space as consisting of an array of unit cubes. Each elbow occupies
+exactly four unit cubes, as shown in Figure 1 below. A unit cube can be
+occupied by at most one elbow. Each elbow has exactly two openings, as
+indicated by the gray squares in the elbow shown in Figure 1. You may
+assemble the elbows into longer ducts, but your duct must be completely
+contained inside the given space. One way to connect two elbows is
+shown in Figure 2. Your task is to connect an inflow to an outflow. The
+inflow and the outflow are located on the exterior surface of the
+confined space, aligned with the unit cubes, as shown in Figure 3. To
+keep expenses down, you must accomplish this task while using the
+minimum number of elbows. out
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p4118.eps}$
+ -->
+<img src="Air%20Conditioning%20Machinery_files/p4118.png" alt="\epsfbox{p4118.eps}" align="bottom" border="0" height="328" width="1080">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>The input consists of several test cases, each of which consists of
+a single line containing eleven input values separated by blanks. The
+input values for each test case are as follows. </p><p>
+The first three input values are integers (<span class="MATH"><i>x</i><sub>max</sub></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>y</i><sub>max</sub></span>
+<tex2html_verbatim_mark>, and <span class="MATH"><i>z</i><sub>max</sub></span>
+<tex2html_verbatim_mark>) that indicate the size of the confined space in the <span class="MATH"><i>x</i></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>y</i></span>
+<tex2html_verbatim_mark>, and <span class="MATH"><i>z</i></span>
+<tex2html_verbatim_mark> dimensions, respectively. Each unit cube in the confined space can be identified by coordinates <span class="MATH">(<i>x</i>, <i>y</i>, <i>z</i>)</span>
+<tex2html_verbatim_mark> where <!-- MATH
+ $1 \le x \le x_{max}$
+ -->
+<span class="MATH">1<img src="Air%20Conditioning%20Machinery_files/4118img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>x</i><img src="Air%20Conditioning%20Machinery_files/4118img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>x</i><sub>max</sub></span>
+<tex2html_verbatim_mark>, <!-- MATH
+ $1 \le y \le y_{max}$
+ -->
+<span class="MATH">1<img src="Air%20Conditioning%20Machinery_files/4118img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>y</i><img src="Air%20Conditioning%20Machinery_files/4118img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>y</i><sub>max</sub></span>
+<tex2html_verbatim_mark>, and <!-- MATH
+ $1 \le z \le z_{max}$
+ -->
+<span class="MATH">1<img src="Air%20Conditioning%20Machinery_files/4118img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>z</i><img src="Air%20Conditioning%20Machinery_files/4118img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>z</i><sub>max</sub></span>
+<tex2html_verbatim_mark>. <span class="MATH"><i>x</i><sub>max</sub></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>y</i><sub>max</sub></span>
+<tex2html_verbatim_mark>, and <span class="MATH"><i>z</i><sub>max</sub></span>
+<tex2html_verbatim_mark> are all positive and not greater than 20.
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+The next three input values are integers that indicate the location of the inflow by identifying the <span class="MATH"><i>x</i></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>y</i></span>
+<tex2html_verbatim_mark>, and <span class="MATH"><i>z</i></span>
+<tex2html_verbatim_mark> coordinates of the unit cube that connects to the inflow. 
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+The next input value is a two-character string that indicates the
+direction of the inward flow, using one of the following codes:<!-- MATH
+ $+x, -x, +y, -y, +z, -z$
+ -->
+ <span class="MATH">+ <i>x</i>, - <i>x</i>, + <i>y</i>, - <i>y</i>, + <i>z</i>, - <i>z</i></span>
+<tex2html_verbatim_mark>. The inflow connection is on the face of the
+unit cube that receives this inward flow. For example, if the data
+specifies an inflow direction of <span class="MATH">+ <i>y</i></span>
+<tex2html_verbatim_mark>, the inflow connection is on the face of the unit cube that faces in the negative <span class="MATH"><i>y</i></span>
+<tex2html_verbatim_mark> direction. 
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+The next three input values are integers that indicate the location of the outflow by identifying the <span class="MATH"><i>x</i></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>y</i></span>
+<tex2html_verbatim_mark>, and <span class="MATH"><i>z</i></span>
+<tex2html_verbatim_mark> coordinates of the unit cube that connects to the outflow.
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+The last input value is a two-character string that indicates the
+direction of the outward flow, using the same codes described above.
+The outflow connection is on the face of the unit cube that generates
+this outward flow. For example, if the data specifies an outflow
+direction of <span class="MATH">+ <i>y</i></span>
+<tex2html_verbatim_mark>, the outflow connection is on the face of the unit cube that faces in the positive y direction. 
+
+</tex2html_verbatim_mark></p><p>
+The last line of the input file consists of a single zero to indicate end of input. 
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, print the case number (starting with 1) followed by
+the minimum number of elbows that are required to connect the inflow to
+the outflow without going outside the confined space. If the task
+cannot be accomplished with your supply of six elbow segments, print
+the word `<tt>Impossible</tt>' instead. Use the format in the sample data.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>5 4 3 3 1 1 +z 5 4 3 +x 
+5 4 3 3 1 1 +z 1 2 3 -x 
+0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: 2 
+Case 2: Impossible
+</pre> 
+
+<p>
+</p><hr><address>Banff Springs, Alberta 2007-2008</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

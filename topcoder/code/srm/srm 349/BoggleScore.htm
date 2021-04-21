@@ -1,0 +1,975 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0056)http://www.topcoder.com/stat?c=problem_statement&pm=4585 -->
+<HTML><HEAD><TITLE>TopCoder Statistics - Problem Statement</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<SCRIPT language=JavaScript src="BoggleScore_files/tcscript.js" 
+type=text/javascript></SCRIPT>
+<LINK href="BoggleScore_files/style.css" type=text/css rel=stylesheet><LINK 
+href="BoggleScore_files/coders.css" type=text/css rel=stylesheet><LINK 
+href="BoggleScore_files/tcStyles.css" type=text/css rel=stylesheet>
+<STYLE type=text/css>A:link {
+	COLOR: white
+}
+A:visited {
+	COLOR: white
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY text=#ffffff>
+<SCRIPT type=text/javascript>
+var objTopPopUp = null;
+// called when you topPopup at the bottom right of an object
+function topPopUp(topPopper,topPopupID) {
+    var pos = findPos(topPopper);
+    var x = pos[0] + topPopper.offsetWidth + 2;
+    var y = pos[1] + topPopper.offsetHeight + 2;
+    topPopShow(x,y,topPopupID);
+}
+// called when you know the exact spot you want to topPop up at
+function topPopShow(posX,posY,topPopupID) {
+    objTopPopUp = document.getElementById(topPopupID);
+    objTopPopUp.style.left = posX + 'px';
+    objTopPopUp.style.top = posY + 'px';
+    objTopPopUp.style.display = 'block';
+}
+function topPopHide() {
+    objTopPopUp.style.display = 'none';
+    objTopPopUp = null;
+}
+function findPos(obj) {
+    var curLeft = curTop = 0;
+    if (obj.offsetParent) {
+        curLeft = obj.offsetLeft;
+        curTop = obj.offsetTop;
+        while (obj = obj.offsetParent) {
+            curLeft += obj.offsetLeft;
+            curTop += obj.offsetTop;
+        }
+    }
+    return [curLeft,curTop];
+}
+</SCRIPT>
+
+<DIV class=popUp id=launch0>
+<DIV><STRONG>Competitions Home</STRONG></DIV></DIV>
+<DIV class=popUp id=launch1>
+<DIV><STRONG>Launch Algorithm Competitions Arena</STRONG></DIV></DIV>
+<DIV class=popUp id=launch2>
+<DIV><STRONG>Launch High School Competitions Arena</STRONG></DIV></DIV>
+<DIV class=popUp id=launch3>
+<DIV><STRONG>Component Design Active Contests</STRONG></DIV></DIV>
+<DIV class=popUp id=launch4>
+<DIV><STRONG>Component Development Active Contests</STRONG></DIV></DIV>
+<DIV class=popUp id=launch5>
+<DIV><STRONG>Marathon Match Active Contests</STRONG></DIV></DIV><MAP 
+id=competeBar name=competeBar><AREA onmouseover="topPopShow(73,65,'launch0')" 
+  onmouseout=topPopHide() shape=RECT alt="" coords=0,0,66,30 
+  href="http://www.topcoder.com/tc"><AREA 
+  onmouseover="topPopShow(108,65,'launch1')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=68,0,106,30 href="javascript:arena();"><AREA 
+  onmouseover="topPopShow(155,65,'launch2')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=107,0,153,30 href="javascript:arena();"><AREA 
+  onmouseover="topPopShow(181,65,'launch3')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=154,0,179,30 
+  href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112"><AREA 
+  onmouseover="topPopShow(207,65,'launch4')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=180,0,205,30 
+  href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113"><AREA 
+  onmouseover="topPopShow(252,65,'launch5')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=206,0,250,30 
+  href="http://www.topcoder.com/longcontest/?module=ViewActiveContests"></MAP>
+<DIV 
+style="BACKGROUND: none transparent scroll repeat 0% 0%; LEFT: 0px; POSITION: absolute; TOP: 31px"><IMG 
+alt="" src="BoggleScore_files/competeBar.gif" useMap=#competeBar> </DIV>
+<DIV style="RIGHT: 0px; POSITION: absolute; TOP: 31px"><A 
+href="http://www.topcoder.com/tc?module=MyHome"><IMG style="DISPLAY: block" 
+alt="My TopCoder" src="BoggleScore_files/myTopCoder.png"></A></DIV>
+<DIV style="MARGIN: 0px 290px 0px 280px" align=center>
+<DIV id=outerLogo>
+<DIV id=innerLogo><A href="http://www.topcoder.com/"><IMG style="DISPLAY: block" 
+alt=TopCoder src="BoggleScore_files/topcoder.gif"></A> </DIV></DIV></DIV>
+<DIV class=memberCountBox>Member Count: 130,391 - November 19, 2007 &nbsp;<A 
+class=gMetal href="javascript:tcTime()">[Get Time]</A> </DIV>
+<DIV class=topBar>
+<DIV style="FLOAT: right; MARGIN: 5px 0px 0px">Hello,&nbsp;<A 
+class=coderTextWhite 
+href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22057667">j_black</A> 
+| <A class=gMetal href="http://www.topcoder.com/tc?module=Logout">Logout</A> 
+</DIV></DIV>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width=180>
+      <SCRIPT language=JavaScript src="BoggleScore_files/arena.js" 
+      type=text/javascript></SCRIPT>
+
+      <SCRIPT language=JavaScript type=text/javascript>
+<!--
+function toggleMenu(menuTitle,menuID){
+   var menu = document.getElementById(menuID);
+   if(menu.style.display == 'block') menu.className = 'CLOSED';
+   else if(menu.className == 'OPEN' && menu.style.display != 'none') menu.className = 'CLOSED';
+   else {
+      menu.className = 'OPEN';
+   }
+   if(menuTitle.blur)menuTitle.blur();
+   if(menuTitle.className == 'exp') menuTitle.className = 'exp_ed';
+   else menuTitle.className = 'exp';
+   return;
+}
+function flipMenu(myMenuName){
+   var menuName = document.getElementById(myMenuName);
+   menuName.className = 'exp_ed';
+}
+
+// -->
+</SCRIPT>
+
+      <DIV 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px"><IMG 
+      alt="" src="BoggleScore_files/leftnav_top.gif"></DIV>
+      <DIV id=navbar>
+      <UL>
+        <LI class=exp_ed><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_competitions')" 
+        href="javascript:void(0)">Competitions</A> 
+        <UL class=OPEN id=m_competitions>
+          <LI><A href="http://www.topcoder.com/tc">Home</A> </LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_competitor_stats')" 
+          href="javascript:void(0)">The Tops</A> 
+          <UL id=m_competitor_stats>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_top_rated_competitors')" 
+            href="javascript:void(0)">Top Ranked</A> 
+            <UL id=m_top_rated_competitors>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=AlgoRank">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_designers">Design</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_developers">Development</A> 
+              </LI>
+              <LI><A href="http://www.topcoder.com/tc?module=HSRank">High 
+              School</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/stats/?module=CoderRank">Marathon 
+              Match</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_recordbook')" 
+            href="javascript:void(0)">Record Book</A> 
+            <UL id=m_recordbook>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=statistics&amp;d2=recordbook_home">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=compstats&amp;d2=comp_recordbook_home">Component</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=stats&amp;d2=recordbook_home">Marathon 
+              Match</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_com')" 
+            href="javascript:void(0)">Coder of the Month</A> 
+            <UL id=m_com>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=5">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=6">Design</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=7">Development</A> 
+              </LI></UL></LI></UL></LI>
+          <LI class=exp_ed><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_algo_competitions')" 
+          href="javascript:void(0)">Algorithm</A> 
+          <UL class=OPEN id=m_algo_competitions>
+            <LI><A href="javascript:arena();">Launch Arena</A> </LI>
+            <LI class=exp_ed><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_algo_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL class=OPEN id=m_algo_stats>
+              <LI><A href="http://www.topcoder.com/tc?module=MatchList">Match 
+              Archive</A> </LI>
+              <LI><A href="http://www.topcoder.com/stat?c=round_overview">Match 
+              Overviews</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=SrmDivisionWins">Match 
+              Winners</A> </LI>
+              <LI><A href="http://www.topcoder.com/stat?c=last_match">Match 
+              Results</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=match_editorials&amp;d2=archive">Match 
+              Editorials</A> </LI>
+              <LI class=highlight><A 
+              href="http://www.topcoder.com/tc?module=ProblemArchive">Problem 
+              Archive</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=1">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=dataFeed">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_algo_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_algo_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=index">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=faqIndex">FAQs</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=sampleProblems">Sample 
+              Problems</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=ratings">Rating 
+              System</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=problemWriter&amp;node=algo_write">Write 
+              Problems</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=algo_get_paid">How 
+              to Get Paid</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=charity">Charity 
+              Donations</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_des_competitions')" 
+          href="javascript:void(0)">Software Design</A> 
+          <UL id=m_des_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ContestStatus&amp;ph=112">Contest 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;ph=112">Review 
+            Opportunities</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit &amp; 
+            Review</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=umltool&amp;d3=description&amp;node=des_uml_tool">UML 
+            Tool</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_des_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_des_stats>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;ph=112">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=112">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desDataFeed">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ReviewBoard&amp;ph=112">Meet 
+            the Review Board</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_des_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_des_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desGettingStarted">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desDocumentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desRatings">Ratings</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desReliability">Reliability 
+              Ratings</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=des_get_paid">How 
+              to Get Paid</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_dev_competitions')" 
+          href="javascript:void(0)">Software Development</A> 
+          <UL id=m_dev_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ContestStatus&amp;ph=113">Contest 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;ph=113">Review 
+            Opportunities</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit &amp; 
+            Review</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=umltool&amp;d3=description&amp;node=dev_uml_tool">UML 
+            Tool</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_dev_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_dev_stats>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;ph=113">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=113">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devDataFeed">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ReviewBoard&amp;ph=113">Meet 
+            the Review Board</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_dev_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_dev_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devGettingStarted">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devDocumentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devRatings">Ratings</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devReliability">Reliability 
+              Ratings</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=dev_get_paid">How 
+              to Get Paid</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_competitions')" 
+          href="javascript:void(0)">Software Assembly</A> 
+          <UL id=m_assembly_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=overview">Overview</A> 
+            </LI>
+            <LI><A href="http://www.topcoder.com/registration/">Active 
+            Contests</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit &amp; 
+            Review</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_assembly_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=tutorial">Tutorial</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=documentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=assem_get_paid">How 
+              to Get Paid</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_testing_competitions')" 
+          href="javascript:void(0)">Software Testing</A> 
+          <UL id=m_testing_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=activeContests">Active 
+            Contests</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_testing_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_testing_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=tutorial">Tutorial</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=documentation">Documentation</A> 
+              </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_hs_competitions')" 
+          href="javascript:void(0)">High School</A> 
+          <UL id=m_hs_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=home">Overview</A> 
+            </LI>
+            <LI><A href="javascript:arena();">Launch Arena</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_hs_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_hs_stats>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundOverview">Match 
+              Overview</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundStatsTeam">Match 
+              Results (Team)</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundStatsInd">Match 
+              Results (Indiv.)</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=match_editorials&amp;d3=archive">Match 
+              Editorials</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=2">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=dataFeed">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=sponsorship">Sponsorship</A> 
+            </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_hs_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_hs_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=index">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=faqIndex">FAQs</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=sampleProblems">Sample 
+              Problems</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=ratings">Rating 
+              System</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=problemWriter&amp;node=hs_write">Write 
+              Problems</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_long_contests')" 
+          href="javascript:void(0)">Marathon Matches</A> 
+          <UL id=m_long_contests>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewActiveContests">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewPractice">Practice</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewQueue">Queue 
+            Status</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_long_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_long_stats>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/stats/?module=MatchList">Match 
+              Archive</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/stats/?module=ViewOverview">Match 
+              Overview</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/stats/?module=MatchWinners">Match 
+              Winners</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=match_editorials&amp;d2=archive">Match 
+              Editorials</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=dataFeed">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_long_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_long_support>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=ratings">Rating 
+              System</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_tournaments')" 
+          href="javascript:void(0)">Tournaments</A> 
+          <UL id=m_tournaments>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tournaments&amp;d2=home">TopCoder</A> 
+            </LI>
+            <LI><A href="http://www.topcoder.com/pl/">Powered by TopCoder</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=CRPFStatic&amp;d1=crpf&amp;d2=crpf_overview">Charity</A> 
+            </LI></UL></LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=digital_run&amp;d2=description">The 
+          Digital Run</A> </LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_edu_content')" 
+          href="javascript:void(0)">Educational Content</A> 
+          <UL id=m_edu_content>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=education&amp;d2=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=alg_index">Algorithm 
+            Tutorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=comp_index">Component 
+            Tutorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=mm_index">Marathon 
+            Tutorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=features&amp;d2=archive">Features</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=writeForTC">Write 
+            for TopCoder</A> </LI></UL></LI></UL></LI>
+        <LI><A href="http://forums.topcoder.com/">Forums</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?module=Static&amp;d1=calendar&amp;d2=thisMonth">Event 
+        Calendar</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+        Room</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?&amp;module=SurveyList">Surveys</A> 
+        </LI>
+        <LI><A href="http://www.topcoder.com/tc?module=MyHome">My TopCoder</A> 
+        </LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_about_tc')" 
+        href="javascript:void(0)">About TopCoder</A> 
+        <UL id=m_about_tc>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index">Overview</A> 
+          </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus">Contact 
+          Us</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=whyjoin">Why 
+          Join TopCoder?</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=jobs">Working 
+          at TopCoder</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=management">Management 
+          Team</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms">Terms, 
+          Revisions</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy">Privacy 
+          Policy</A> </LI></UL></LI></UL>
+      <DIV 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 17px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 10px"><A 
+      href="http://www.topcoder.com/tc?module=LinkTracking&amp;link=/tc?module=Static%26d1=media%26d2=tcchannel&amp;refer=leftnav"><IMG 
+      alt="TC Channel" src="BoggleScore_files/leftnavLogo.png"></A> </DIV>
+      <DIV id=navbarSearch><B>Member Search:</B> 
+      <FORM class=noSpace id=simpleSearchForm name=simpleSearchForm 
+      action=http://www.topcoder.com/tc method=get><INPUT class=noSpace 
+      type=hidden value=SimpleSearch name=module> <INPUT class=noSpace 
+      onblur="javascript:&#10;         if (document.simpleSearchForm.ha.value == '')&#10;            document.simpleSearchForm.ha.value = 'Handle:';" 
+      onfocus="javascript:&#10;         if (document.simpleSearchForm.ha.value=='Handle:')&#10;            document.simpleSearchForm.ha.value = '';" 
+      maxLength=15 size=12 value=Handle: name=ha> <A class=gMetal 
+      href="javascript:void%20document.simpleSearchForm.submit();">Go</A><BR><A 
+      class=gMetal 
+      href="http://www.topcoder.com/tc?module=ViewAdvanced">Advanced Search</A> 
+      </FORM></DIV></DIV>
+      <DIV 
+      style="CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 23px; PADDING-TOP: 0px"><IMG 
+      alt="" src="BoggleScore_files/leftnav_bottom.gif"></DIV>
+      <DIV style="CLEAR: left; FLOAT: left; MARGIN: 0px; WIDTH: 170px" 
+      align=center><IMG style="MARGIN-BOTTOM: 23px" alt="" 
+      src="BoggleScore_files/brackets.png"> </DIV></TD>
+    <TD vAlign=top width=10><IMG height=1 src="BoggleScore_files/clear.gif" 
+      width=10 border=0></TD>
+    <TD class=bodyText vAlign=top width="100%"><IMG height=1 
+      src="BoggleScore_files/clear.gif" width=240 vspace=5 border=0><BR><!-- BEGIN BODY -->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=bottom align=left width=11 height=26><IMG height=26 
+            src="BoggleScore_files/steelblue_top_left1.gif" width=11 
+border=0></TD>
+          <TD vAlign=bottom align=left width=180><IMG height=26 
+            src="BoggleScore_files/header_statistics.gif" width=180 border=0></TD>
+          <TD class=bodyTextBold vAlign=center width="100%">&nbsp;<SPAN 
+            class=bodySubhead>&nbsp;&nbsp;Problem Statement&nbsp;&nbsp;</SPAN> 
+          </TD>
+          <TD vAlign=top align=right width=10><IMG height=26 alt="" 
+            src="BoggleScore_files/clear.gif" width=10 
+      border=0></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=10 width="100%" bgColor=#001b35 
+        border=0><TBODY>
+        <TR>
+          <TD vAlign=top width="100%"><IMG height=1 alt="" 
+            src="BoggleScore_files/clear.gif" width=240 border=0><BR>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD colSpan=7><IMG height=1 alt="" 
+                  src="BoggleScore_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=5 alt="" 
+                  src="BoggleScore_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statTextBig 
+                background=BoggleScore_files/steel_gray_bg.gif colSpan=7 
+                height=18>&nbsp;Problem Statement for BoggleScore</TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=1 alt="" 
+                  src="BoggleScore_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=1 alt="" 
+                  src="BoggleScore_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=problemText vAlign=center align=left>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD class=statText colSpan=2>
+                        <H3>Problem Statement</H3></TD></TR>
+                    <TR>
+                      <TD class=statText>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                      <TD class=statText>
+                        <P>In the word game Boggle, a player is presented with a 
+                        4x4 grid of letters and has the task of finding words 
+                        hidden among the letters. A word may start at any 
+                        location, and each succeeding letter of the word must be 
+                        adjacent to the preceding letter horizontally, 
+                        vertically, or diagonally.</P>
+                        <P>In our version of the game, a player is restricted to 
+                        finding words from a given list of acceptable words. The 
+                        same letter may be used multiple times in the spelling 
+                        of a word, and it is permitted to spell words that are 
+                        part of longer words. For instance, in the following 
+                        example, one could form the word SANDS, even though 
+                        there is only a single S:</P><PRE>XXXX
+XSAX
+XDNX
+XXXX
+</PRE>
+                        <P>Notice that the above configuration would also yield 
+                        other words, like SAND, AND, and SAD.</P>
+                        <P>If a word can be formed in more than one way, it may 
+                        be counted more than once; for instance, the word EYE 
+                        may be counted multiple times here since it can be found 
+                        in different directions (see examples):</P><PRE>XEYE
+XXXX
+XXXX
+XXXX
+</PRE>
+                        <P>Here, the word EYE could still be formed, but only 
+                        once, since we are allowed to reuse letters:</P><PRE>XXEY
+XXXX
+XXXX
+XXXX
+</PRE>
+                        <P>Here, the word TREE may be formed two different ways 
+                        (down-right-up or down-diagonal-down):</P><PRE>TEXX
+REXX
+XXXX
+XXXX
+</PRE>
+                        <P>The score for each word is the square of its length. 
+                        Thus, three letter words are worth 9 points, four letter 
+                        words are 16 points, etc.</P>
+                        <P>You are given a String[] <B>grid</B> with exactly 
+                        four elements, with each element containing 4 letters, 
+                        describing the grid of letters you are to search. You 
+                        are also given a String[] <B>words</B>, each element of 
+                        which represents an acceptable word.</P>
+                        <P>You are to return a long indicating the maximum score 
+                        you can achieve after finding all possible paths to 
+                        spell out acceptable words, summing together the scores 
+                        from each individual word. Since the maximum score could 
+                        potentially be quite large, return the result MOD 1E13 
+                        (10000000000000).</P></TD></TR>
+                    <TR>
+                      <TD class=statText colSpan=2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=statText colSpan=2>
+                        <H3>Definition</H3></TD></TR>
+                    <TR>
+                      <TD class=statText>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                      <TD class=statText>
+                        <TABLE>
+                          <TBODY>
+                          <TR>
+                            <TD class=statText>Class:</TD>
+                            <TD class=statText>BoggleScore</TD></TR>
+                          <TR>
+                            <TD class=statText>Method:</TD>
+                            <TD class=statText>bestScore</TD></TR>
+                          <TR>
+                            <TD class=statText>Parameters:</TD>
+                            <TD class=statText>String[], String[]</TD></TR>
+                          <TR>
+                            <TD class=statText>Returns:</TD>
+                            <TD class=statText>long</TD></TR>
+                          <TR>
+                            <TD class=statText>Method signature:</TD>
+                            <TD class=statText>long bestScore(String[] grid, 
+                              String[] words)</TD></TR>
+                          <TR>
+                            <TD class=statText colSpan=2>(be sure your method 
+                              is public)</TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD class=statText>&nbsp;&nbsp;&nbsp;&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=statText></TD></TR>
+                    <TR>
+                      <TD class=statText colSpan=2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=statText colSpan=2>
+                        <H3>Constraints</H3></TD></TR>
+                    <TR>
+                      <TD class=statText vAlign=top align=middle>-</TD>
+                      <TD class=statText><B>grid</B> will contain exactly four 
+                        elements.</TD></TR>
+                    <TR>
+                      <TD class=statText vAlign=top align=middle>-</TD>
+                      <TD class=statText>Each element of <B>grid</B> will 
+                        contain exactly four characters.</TD></TR>
+                    <TR>
+                      <TD class=statText vAlign=top align=middle>-</TD>
+                      <TD class=statText>Each character of each element of 
+                        <B>grid</B> will be an uppercase ('A'-'Z') letter.</TD></TR>
+                    <TR>
+                      <TD class=statText vAlign=top align=middle>-</TD>
+                      <TD class=statText><B>words</B> will contain between 1 
+                        and 50 elements, inclusive.</TD></TR>
+                    <TR>
+                      <TD class=statText vAlign=top align=middle>-</TD>
+                      <TD class=statText>Each element of <B>words</B> will 
+                        contain between 1 and 50 characters, inclusive.</TD></TR>
+                    <TR>
+                      <TD class=statText vAlign=top align=middle>-</TD>
+                      <TD class=statText>Each character of each element of 
+                        <B>words</B> will be an uppercase ('A'-'Z') 
+letter.</TD></TR>
+                    <TR>
+                      <TD class=statText vAlign=top align=middle>-</TD>
+                      <TD class=statText>No two elements of <B>words</B> will 
+                        be the same.</TD></TR>
+                    <TR>
+                      <TD class=statText colSpan=2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=statText colSpan=2>
+                        <H3>Examples</H3></TD></TR>
+                    <TR>
+                      <TD class=statText noWrap align=middle>0)</TD>
+                      <TD class=statText></TD></TR>
+                    <TR>
+                      <TD class=statText>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                      <TD class=statText>
+                        <TABLE>
+                          <TBODY>
+                          <TR>
+                            <TD class=statText>
+                              <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD class=statText><PRE>{"XXEY",
+ "XXXX",
+ "XXXX",
+ "XXXX"}</PRE></TD></TR>
+                                <TR>
+                                <TD class=statText><PRE>{"EYE"}</PRE></TD></TR></TBODY></TABLE></TD></TR>
+                          <TR>
+                            <TD class=statText><PRE>Returns: 9</PRE></TD></TR>
+                          <TR>
+                            <TD class=statText>
+                              <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD class=statText colSpan=2>From the problem 
+                                statement. There's exactly one way to spell EYE, 
+                                and it's worth 9 
+                            points.</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD class=statText noWrap align=middle>1)</TD>
+                      <TD class=statText></TD></TR>
+                    <TR>
+                      <TD class=statText>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                      <TD class=statText>
+                        <TABLE>
+                          <TBODY>
+                          <TR>
+                            <TD class=statText>
+                              <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD class=statText><PRE>{"XEYE",
+ "XXXX",
+ "XXXX",
+ "XXXX"}</PRE></TD></TR>
+                                <TR>
+                                <TD class=statText><PRE>{"EYE"}</PRE></TD></TR></TBODY></TABLE></TD></TR>
+                          <TR>
+                            <TD class=statText><PRE>Returns: 36</PRE></TD></TR>
+                          <TR>
+                            <TD class=statText>
+                              <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD class=statText colSpan=2>Also from the 
+                                problem statement. Here, there are four ways to 
+                                spell EYE. If we number the positions in the 
+                                grid from 0-15 (top to bottom, left to right), 
+                                then we can spell EYE by going: 123, 121, 321, 
+                                323. 
+                      </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD class=statText noWrap align=middle>2)</TD>
+                      <TD class=statText></TD></TR>
+                    <TR>
+                      <TD class=statText>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                      <TD class=statText>
+                        <TABLE>
+                          <TBODY>
+                          <TR>
+                            <TD class=statText>
+                              <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD class=statText><PRE>{"TEXX",
+ "REXX",
+ "XXXX",
+ "XXXX"}</PRE></TD></TR>
+                                <TR>
+                                <TD class=statText><PRE>{"TREE"}</PRE></TD></TR></TBODY></TABLE></TD></TR>
+                          <TR>
+                            <TD class=statText><PRE>Returns: 32</PRE></TD></TR>
+                          <TR>
+                            <TD class=statText>
+                              <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD class=statText colSpan=2>Again, from the 
+                                problem statement. There are two ways to spell 
+                                TREE, a word worth 16 
+                              points.</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD class=statText noWrap align=middle>3)</TD>
+                      <TD class=statText></TD></TR>
+                    <TR>
+                      <TD class=statText>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                      <TD class=statText>
+                        <TABLE>
+                          <TBODY>
+                          <TR>
+                            <TD class=statText>
+                              <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD class=statText><PRE>{"XXXX",
+ "XSAX",
+ "XDNX",
+ "XXXX"}</PRE></TD></TR>
+                                <TR>
+                                <TD class=statText><PRE>{"SANDS", "SAND", "SAD", "AND"}</PRE></TD></TR></TBODY></TABLE></TD></TR>
+                          <TR>
+                            <TD class=statText><PRE>Returns: 59</PRE></TD></TR>
+                          <TR>
+                            <TD class=statText>
+                              <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD class=statText colSpan=2>Each word occurs 
+                                once, so 25 + 16 + 9 + 9 = 
+                              59.</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD class=statText noWrap align=middle>4)</TD>
+                      <TD class=statText></TD></TR>
+                    <TR>
+                      <TD class=statText>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                      <TD class=statText>
+                        <TABLE>
+                          <TBODY>
+                          <TR>
+                            <TD class=statText>
+                              <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD class=statText><PRE>{"TREX",
+ "XXXX",
+ "XXXX",
+ "XXXX"}</PRE></TD></TR>
+                                <TR>
+                                <TD class=statText><PRE>{"TREE"}</PRE></TD></TR></TBODY></TABLE></TD></TR>
+                          <TR>
+                            <TD class=statText><PRE>Returns: 0</PRE></TD></TR>
+                          <TR>
+                            <TD class=statText>
+                              <TABLE>
+                                <TBODY>
+                                <TR>
+                                <TD class=statText colSpan=2>With only a single 
+                                E on the board, we can't make the word 
+                                TREE.</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+                  <HR>
+
+                  <P>This problem statement is the exclusive and proprietary 
+                  property of TopCoder, Inc. Any unauthorized use or 
+                  reproduction of this information without the prior written 
+                  consent of TopCoder, Inc. is strictly prohibited. (c)2006, 
+                  TopCoder, Inc. All rights reserved. </P></TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=3 alt="" 
+                  src="BoggleScore_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statText 
+                background=BoggleScore_files/steel_blue_bg.gif colSpan=7><IMG 
+                  height=5 alt="" src="BoggleScore_files/clear.gif" width=1 
+                  border=0></TD></TR>
+              <TR>
+                <TD class=statText colSpan=7><IMG height=16 alt="" 
+                  src="BoggleScore_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statText colSpan=7>This problem was used for: 
+                  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A 
+                  href="http://www.topcoder.com/tc?module=ProblemDetail&amp;rd=10673&amp;pm=4585">Single 
+                  Round Match 349 Round 1 - Division II, Level Three</A> 
+              </TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD width="100%"><IMG height=10 alt="" 
+            src="BoggleScore_files/clear.gif" width=1 
+      border=0></TD></TR></TBODY></TABLE>
+      <P><BR></P><!-- END BODY --></TD>
+    <TD width=10><IMG height=1 src="BoggleScore_files/clear.gif" width=10 
+      border=0></TD>
+    <TD vAlign=top width=180><IMG height=1 src="BoggleScore_files/clear.gif" 
+      width=180 border=0>
+      <SCRIPT language=javascript type=text/javascript>
+
+</SCRIPT>
+       
+      <DIV class=rightColContent><BR><BR></DIV></TD><!-- Gutter -->
+    <TD width=10><IMG height=1 src="BoggleScore_files/clear.gif" width=10 
+      border=0></TD><!-- Gutter Ends --></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD class=footer width="100%"><A class=footerLinks 
+      href="http://www.topcoder.com/">Home</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A 
+      class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index">About 
+      TopCoder</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+      Room</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus">Contact 
+      Us</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy">Privacy</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+      <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms">Terms</A> 
+      <BR><A class=footerLinks href="http://www.topcoder.com/tc">Developer 
+      Center</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/corp/?module=Static&amp;d1=corp&amp;d2=index">Corporate 
+      Services</A> </TD></TR>
+  <TR>
+    <TD class=copyright width="100%">Copyright © 2001-2007, TopCoder, Inc. All 
+      rights reserved.</TD></TR></TBODY></TABLE></BODY></HTML>
