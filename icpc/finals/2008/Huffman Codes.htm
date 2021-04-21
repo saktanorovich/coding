@@ -1,0 +1,120 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>4122 - Huffman Codes</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Huffman%20Codes_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>4122 - Huffman Codes</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2007"><b>World Finals - Banff Springs, Alberta - 2007/2008</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p4122.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4122"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4122"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+Dan McAmbi is a member of a crack counter-espionage team and has
+recently obtained the partial contents of a file containing information
+vital to his nation's interests. The file had been compressed using
+Huffman encoding. Unfortunately, the part of the file that Dan has
+shows only the Huffman codes themselves, not the compressed
+information. Since Huffman codes are based on the frequencies of the
+characters in the original message, Dan's boss thinks that some
+information might be obtained if Dan can reverse the Huffman encoding
+process and obtain the character frequencies from the Huffman codes.
+Dan's gut reaction to this is that any given set of codes could be
+obtained from a wide variety of frequency distributions, but his boss
+is not impressed with this reasoned analysis. So Dan has come to you to
+get more definitive proof to take back to his boss. </p><p>
+Huffman encoding is an optimal data compression method if you know in
+advance the relative frequencies of letters in the text to be
+compressed. The method works by first constructing a <span class="textit">Huffman tree</span>
+as follows. Start with a forest of trees, each tree a single node
+containing a character from the text and its frequency (the character
+value is used only in the leaves of the resulting tree). Each step of
+the construction algorithm takes the two trees with the lowest
+frequency values (choosing arbitrarily if there are ties), and replaces
+them with a new tree formed by joining the two trees as the left and
+right subtrees of a new root node. The frequency value of the new root
+is the sum of the frequencies of the two subtrees. This procedure
+repeats until only one tree is left. An example of this is shown below,
+assuming we have a file with only 5 characters -- A, B, C, D and E --
+with frequencies 10%, 14%, 31%, 25% and 20%, respectively.
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p4122a.eps}$
+ -->
+<img src="Huffman%20Codes_files/p4122a.png" alt="\epsfbox{p4122a.eps}" align="bottom" border="0" height="172" width="944">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+<div align="center">
+ =6in
+<!-- MATH
+ $\epsfbox{p4122b.eps}$
+ -->
+<img src="Huffman%20Codes_files/p4122b.png" alt="\epsfbox{p4122b.eps}" align="bottom" border="0" height="224" width="735">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>After you have constructed a Huffman tree, assign the Huffman codes
+to the characters as follows. Label each left branch of the tree with a
+0 and each right branch with a 1. Reading down from the root to each
+character gives the Huffman code for that character. The tree above
+results in the following Huffman codes: A - 010, B - 011, C - 11, D -
+10 and E - 00. </p><p>
+For the purpose of this problem, the tree with the lower frequency <span class="textit">always</span>
+becomes the left subtree of the new tree. If both trees have the same
+frequencies, either of the two trees can be chosen as the left subtree.
+Note that this means that for some frequency distributions, there are
+several valid Huffman encodings. </p><p>
+The same Huffman encoding can be obtained from several different
+frequency distributions: change 14% to 13% and 31% to 32%, and you
+still get the same tree and thus the same codes. Dan wants you to write
+a program to determine the total number of distinct ways you could get
+a given Huffman encoding, assuming that all percentages are positive
+integers. Note that two frequency distributions that differ only in the
+ordering of their percentages (for example 30% 70% for one distribution
+and 70% 30% for another) are not distinct. </p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+The input consists of several test cases. Each test case consists of a single line starting with a positive integer <span class="MATH"><i>n</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(2 \le n \le 20)$
+ -->
+<span class="MATH">(2<img src="Huffman%20Codes_files/4122img3.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>n</i><img src="Huffman%20Codes_files/4122img3.png" alt="$ \le$" align="middle" border="0" height="31" width="18">20)</span>
+<tex2html_verbatim_mark>, which is the number of different characters in the compressed document, followed by <span class="MATH"><i>n</i></span>
+<tex2html_verbatim_mark> binary strings giving the Huffman encoding of
+each character. You may assume that these strings are indeed a Huffman
+encoding of some frequency distribution (though under our additional
+assumptions, it may still be the case that the answer is 0 -- see the
+last sample case below). </tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+The last test case is followed by a line containing a single zero. 
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+For each test case, print a line containing the test case number
+(beginning with 1) followed by the number of distinct frequency
+distributions that could result in the given Huffman codes. </p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>5 010 011 11 10 00 
+8 00 010 011 10 1100 11010 11011 111 
+8 1 01 001 0001 00001 000001 0000001 0000000 
+0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: 3035 
+Case 2: 11914 Case 3: 0
+</pre> 
+
+<p>
+</p><hr><address>Banff Springs, Alberta 2007-2008</address><p><b>Tests-Setter:</b> Derek Kisman, Per Austrin<br></p></body></html>

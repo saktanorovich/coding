@@ -1,0 +1,139 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3269 - Eyeball Benders</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Eyeball%20Benders_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3269 - Eyeball Benders</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2004"><b>World Finals - Shanghai - 2004/2005</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3269.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3269"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3269"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+``Eyeball benders" are a popular kind of puzzle in which the reader must identify a common object based on a close-
+up view of a part of that object. For instance, an image that looks like a regular array of colored cones might be a
+view of an open box of new crayons. Figure 1 shows an example where the puzzle is on the left and the solution is
+on the right.
+
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3269a.eps}$
+ -->
+<img src="Eyeball%20Benders_files/p3269a.jpg" alt="\epsfbox{p3269a.eps}" align="bottom" border="0">
+</div>
+<p>
+</p><div align="center">Figure 1. A sample eyeball-bender puzzle and solution image (a floppy disk)
+
+</div>
+
+<p>
+You must verify solutions to a simplified version of the ``eyeball bender" puzzle. You will be given a number of 
+pairs of images, each one a collection of line segments. All line segments will be either horizontal or vertical, and 
+they include their endpoints. Figure 2 shows an example. 
+
+</p><p>
+
+</p><p>
+<br>
+You must determine whether the images form a valid pair in which the first image is a magnified view of some
+portion of the second image. Lines are assumed to have zero thickness in both images. At least one endpoint in the 
+puzzle image of a valid pair must be an endpoint of a line segment in the solution image. 
+
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3269b.eps}$
+ -->
+<img src="Eyeball%20Benders_files/p3269b.jpg" alt="\epsfbox{p3269b.eps}" align="bottom" border="0">
+</div>
+<p>
+</p><div align="center">Figure 2. The left image is the portion of the right image inside the dotted rectangle, magnified 3 times.
+
+</div>
+
+<p>
+Coordinates describe <span class="textit">relative</span> positions and scale within a single image. The coordinates in one image do not
+necessarily use the same origin or scale as those in the other image. The magnification of the puzzle image relative
+to the solution image is required to be greater than or equal to 1. For Figure 2, your program should determine that
+this is a valid puzzle/solution image pair.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input consists of multiple cases. The input for each case begins with two positive integers <span class="MATH"><i>M</i></span> and <span class="MATH"><i>N</i></span>,
+<!-- MATH
+ $(1 \le M,N \le 50)$
+ -->
+<span class="MATH">(1<img src="Eyeball%20Benders_files/3269img3.png" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>M</i>, <i>N</i><img src="Eyeball%20Benders_files/3269img3.png" alt="$ \le$" align="middle" border="0" height="30" width="18">50)</span>. <span class="MATH"><i>M</i></span> is the number of line segments in the puzzle image. <span class="MATH"><i>N</i></span> is the number of line segments in the 
+proposed solution image. The following lines contain <span class="MATH"><i>M</i> + <i>N</i></span> pairs of points. The first <span class="MATH"><i>M</i></span> pairs of points are the 
+endpoints of the line segments in the puzzle image; the remaining <span class="MATH"><i>N</i></span> pairs are the endpoints of the line segments in 
+the proposed solution image. The <span class="MATH"><i>x</i></span> and <span class="MATH"><i>y</i></span> coordinates for each pair satisfy <!-- MATH
+ $-100 \le x ,y \le 100$
+ -->
+<span class="MATH">-100<img src="Eyeball%20Benders_files/3269img3.png" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>x</i>, <i>y</i><img src="Eyeball%20Benders_files/3269img3.png" alt="$ \le$" align="middle" border="0" height="30" width="18">100</span> and are given to at
+most three decimal places of precision. All input values are separated by white space (blanks or new line characters).
+
+</p><p>
+
+</p><p>
+<br>
+No pair of distinct points in a given image will be closer than .005 to another (relative to the scale of the image) and
+all segments will have length at least .005. No two horizontal segments overlap and no two vertical segments
+overlap. However, horizontal segments may intersect vertical segments either internally or at segment endpoints.
+
+</p><p>
+
+</p><p>
+<br>
+The input data for the last case is followed by a line consisting of the integers `<tt>0 0</tt>'.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each input case, display the case number (1, 2, ...) followed by the words `<tt>valid puzzle</tt>' if the proposed
+solution image matches a closed rectangular sub-region of the puzzle image (including at least one endpoint),
+magnified by a factor of one or greater, and possibly translated by some amount. Line segments that are not included
+in the puzzle image will be at least 0.005 distant from the rectangle.
+
+</p><p>
+
+</p><p>
+<br>
+If the match condition fails to hold, print `<tt>impossible</tt>'. Follow the format of the sample output.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>                                                                 
+
+<p>
+</p><pre>3 12                                                                        
+9 8 7.5 8 1.5 8 1.5 3.5                                                     
+0 5 9 5                                                                     
+4 2 8 2 5 7 2 7 10 6 8 6 8 7 8 4                                               
+1 9 8 9 
+9 3 7 3 4 10 4 5 
+4 2 4 4 5 8 5 7 3 6 6 6 0 3 3 3 5 1 5 3 
+4 12 
+-50 -5 50 -5 0 10 0 -10 50 5 -50 5 -50 0 50 0 
+4 2 8 2 5 7 2 7 10 6 8 6 8 7 8 4 
+1 9 8 9 
+9 3 7 3 4 10 4 5 
+4 2 4 4 5 8 5 7 3 6 6 6 0 3 3 3 5 1 5 3 
+0 0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: valid puzzle
+   
+Case 2: impossible
+</pre> 
+
+<p>
+</p><hr><address>Shanghai 2004-2005</address><p></p></body></html>

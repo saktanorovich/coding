@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0070)http://acmicpc-live-archive.uva.es/nuevoportal/data/problem.php?p=3278 -->
+<HTML><HEAD><TITLE>3278 - Zones</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>
+<TABLE cellSpacing=0 cellPadding=3 align=center border=1>
+  <TBODY>
+  <TR vAlign=center>
+    <TD vAlign=center align=middle rowSpan=2><FONT color=#0000a0 
+      size=5><B><IMG src="Zones_files/icono.gif"></B></FONT></TD>
+    <TD align=middle width=500 colSpan=5><FONT color=#0000a0 size=5><B>3278 - 
+      Zones</B></FONT><BR><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2004"><B>World 
+      Finals - Shanghai - 2004/2005</B></A></FONT></TD></TR>
+  <TR vAlign=center>
+    <TD align=middle width=100><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3278.pdf"><B>PDF</B></A></TD>
+    <TD align=middle width=100><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3278.ps.gz"><B>PostScript</B></A></TD>
+    <TD align=middle width=100><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3278"><B>Submit</B></A></TD>
+    <TD width=100>&nbsp;</TD>
+    <TD align=middle width=100><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3278"><B>Ranking</B></A></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+<P>Telephone poles are part of an outdated technology. Cell phones nowadays 
+allow us to call whoever we want, wherever we want, independent of any wire. 
+There is one problem - without a service tower nearby a cell phone is useless. 
+<P>
+<P><BR>In the absence of hills and mountains, a service tower will provide 
+coverage for a circular area. Instead of planning where to place the wires, a 
+wireless telephone company has to plan where to build its service towers. 
+Building the towers too far apart causes holes in the coverage and increases 
+complaints. Building the towers too close to each other results in large areas 
+covered by more than one service tower, which is redundant and inefficient. 
+<P>
+<P><BR>International Cell Phone Company is developing a network strategy to 
+determine the optimal placement of service towers. Since most customers have 
+replaced their old wired home phones by cell phones, the strategy for planning 
+service towers is therefore to cover as many homes of customers as possible. 
+<P>
+<P><BR>The figure below shows the service areas for the five towers ICPC's 
+strategic department planned to build this year. Tower 5 will serve 24 
+customers, 6 of which are also served by tower 4. Towers 1, 2 and 3 have a 
+common service area containing 3 customers. 
+<P>
+<DIV align=center><!-- MATH
+ $\epsfbox{p3278.eps}$
+ --><IMG 
+alt=\epsfbox{p3278.eps} src="Zones_files/p3278.jpg" align=bottom border=0> 
+</DIV>
+<P>Shortly after the plans for these five towers had been published, higher 
+management issued a stop on all tower building. Protesting customers forced them 
+to weaken this decree, and allow the building of three towers out of the five 
+planned. These three towers should serve as many customers as possible, of 
+course. Finding the best possible choice for the towers to build is not trivial 
+(the best choice in this case is towers 2, 4 and 5, serving 68 customers). 
+<P>
+<P><BR>You must write a program to help ICPC choose which towers to build in 
+cases like these. If several choices of towers serve the same number of 
+customers, choices including tower 1 are preferable. If this rule still leaves 
+room for more than one solution, solutions including tower 2 are preferable, and 
+so on. 
+<P>
+<H2><FONT color=#ff0000 size=4><A 
+name=SECTION0001001000000000000000>Input</A>&nbsp;</FONT> </H2>
+<P>The input file contains several test cases. The first line of each test case 
+contains two positive integers: the number <SPAN class=MATH><I>n</I></SPAN> <!-- MATH
+ $(n \le 20)$
+ --><SPAN class=MATH>(<I>n</I><IMG height=30 
+alt="$ \le$" src="Zones_files/3278img2.png" width=18 align=middle 
+border=0>20)</SPAN> of towers planned, and the number of towers to be actually 
+built. The next line contains <SPAN class=MATH><I>n</I></SPAN> numbers, each 
+giving the number of customers served by a planned tower. (The first number 
+refers to the first tower, and so on.) No tower serves more than a million 
+people. The next line contains the number <SPAN class=MATH><I>m</I></SPAN> <!-- MATH
+ $(m \le 10)$
+ --><SPAN class=MATH>(<I>m</I><IMG height=30 
+alt="$ \le$" src="Zones_files/3278img2.png" width=18 align=middle 
+border=0>10)</SPAN> of common service areas. Each of the next <SPAN 
+class=MATH><I>m</I></SPAN> lines contains the description of a common service 
+area. Such a line starts with the number <SPAN class=MATH><I>t</I></SPAN> <SPAN 
+class=MATH>(<I>t</I> &gt; 1)</SPAN> of towers for which this is a common service 
+area, followed by the <SPAN class=MATH><I>t</I></SPAN> numbers of the towers. 
+The last number on the line is the number of customers in the common service 
+area. The last line of the input file consists of the two integers `<TT>0 
+0</TT>'. 
+<P>
+<H2><FONT color=#ff0000 size=4><A 
+name=SECTION0001002000000000000000>Output</A>&nbsp;</FONT> </H2>
+<P>For each test case, display the number of customers served and the best 
+choice for the location of the towers. Follow the format of the sample output. 
+All numbers are left-justified and there are no blank spaces at the end of any 
+line. Print a blank line after each test case. 
+<P>
+<H2><FONT color=#ff0000 size=4><A name=SECTION0001003000000000000000>Sample 
+Input</A>&nbsp;</FONT> </H2>
+<P><PRE>5  3                                                       
+15 20 25 30 24                                             
+5                                                           
+2  1 2     7                                               
+3  1 2 3   3                                               
+2  2 3     2                                               
+2  3 4     5                                                
+2  4 5     6                                               
+5  3                                                       
+25 25 25 25 25                                             
+4                                                           
+2  1 2     5 
+2  2 3     5 
+2  3 4     5 
+2  4 5     5 
+5  3 
+25 25 25 25 25 
+0 
+0 0
+</PRE>
+<P>
+<H2><FONT color=#ff0000 size=4><A name=SECTION0001004000000000000000>Sample 
+Output</A>&nbsp;</FONT> </H2>
+<P><PRE>Case Number  1 
+Number of Customers: 68 
+Locations recommended: 2 4 5 
+  
+Case Number  2 
+Number of Customers: 75 
+Locations recommended: 1 3 5 
+  
+Case Number  3 
+Number of Customers: 75 
+Locations recommended: 1 2 3
+</PRE>
+<P>
+<HR>
+
+<ADDRESS>Shanghai 2004-2005</ADDRESS>
+<P></P></BODY></HTML>

@@ -1,0 +1,97 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>4123 - Glenbow Museum</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Glenbow%20Museum_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>4123 - Glenbow Museum</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2007"><b>World Finals - Banff Springs, Alberta - 2007/2008</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p4123.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4123"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4123"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+The famous Glenbow Museum in Calgary is Western Canada's largest
+museum, with exhibits ranging from art to cultural history to
+mineralogy. A brand new section is being planned, devoted to brilliant
+computer programmers just like you. Unfortunately, due to lack of
+space, the museum is going to have to build a brand new building and
+relocate into it. </p><p>
+The size and capacity of the new building differ from those of the
+original building. But the floor plans of both buildings are orthogonal
+polygons. An orthogonal polygon is a polygon whose internal angles are
+either 90° or 270°. If 90° angles are denoted as R (Right) and 270°
+angles are denoted as O (Obtuse) then a string containing only R and O
+can roughly describe an orthogonal polygon. For example, a rectangle
+(Figure 1) is the simplest orthogonal polygon and it can be described
+as RRRR (the angles are listed in counter-clockwise order, starting
+from any corner). Similarly, a cross-shaped orthogonal polygon (Figure
+2) can be described by the sequence RRORRORRORRO, RORRORRORROR, or
+ORRORRORRORR. These sequences are called <span class="textit">angle strings</span>.
+
+</p><p>
+</p><div align="center">
+
+<!-- MATH
+ $\epsfbox{p4123.eps}$
+ -->
+<img src="Glenbow%20Museum_files/p4123.png" alt="\epsfbox{p4123.eps}" align="bottom" border="0" height="344" width="900">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+Of course, an angle string does not completely specify the shape of a
+polygon -- it says nothing about the length of the sides. And some
+angle strings cannot possibly describe a valid orthogonal polygon
+(RRROR, for example). </p><p>
+To complicate things further, not all orthogonal polygons are
+acceptable floor plans for the museum. A museum contains many valuable
+objects, and these objects must be guarded. Due to cost considerations,
+no floor can have more than one guard. So a floor plan is acceptable
+only if there is a place within the floor from which one guard can see
+the entire floor. Similarly, an angle string is acceptable only if it
+describes at least one acceptable polygon. Note that the cross-shaped
+polygon in Figure 2 can be guarded by someone standing in the center,
+so it is acceptable. Thus the angle string RRORRORRORRO is acceptable,
+even though it also describes other polygons that cannot be properly
+guarded by a single guard. </p><p>
+Help the designers of the new building determine how many acceptable angle strings there are of a given length. 
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+The input file contains several test cases. Each test case consists of a line containing a positive integer <span class="MATH"><i>L</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(1 \le L \le 1000)$
+ -->
+<span class="MATH">(1<img src="Glenbow%20Museum_files/4123img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>L</i><img src="Glenbow%20Museum_files/4123img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">1000)</span>
+<tex2html_verbatim_mark>, which is the desired length of an angle string. The input will end with a line containing a single zero.
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+For each test case, print a line containing the test case number
+(beginning with 1) followed by the number of acceptable angle strings
+of the given length. Follow the format of the sample output. </p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>4 
+6 
+0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: 1 
+Case 2: 6
+</pre>
+
+<p>
+</p><hr><address>Banff Springs, Alberta 2007-2008</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

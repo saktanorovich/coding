@@ -1,0 +1,45 @@
+6
+8 L 5 U 3 R 2 U 5 R 7 D
+14
+2 R 2 U 2 L 1 U 3 L 2 U 1 R 1 U 2 R 1 D 2 L 2 D 2 R 1 U
+18
+1 U 1 L 3 D 3 R 1 D 2 R 1 U 2 R 4 U 1 L 1 U 4 R 1 D 1 L 1 D 1 R 2 D 1 L
+12
+1 D 2 R 2 U 1 R 2 D 3 L 2 D 4 R 6 U 6 L 3 D 2 R
+22
+1 D 2 R 1 D 2 R 1 U 2 R 1 U 1 R 2 U 1 L 2 U 1 L 1 U 2 L 1 D 2 L 1 D 2 L 1 D 1 L 2 D 2 R
+14
+1 R 1 D 7 R 1 U 1 L 4 U 1 L 2 U 4 L 1 D 1 L 1 D 1 L 4 D
+26
+1 D 2 R 2 U 2 R 2 D 2 R 2 U 2 R 2 D 1 R 4 U 2 L 1 U 4 L 1 D 3 R 1 D 4 L 2 U 3 L 2 D 2 R 1 D 2 L 1 D 1 R
+14
+2 D 2 R 1 D 2 R 2 U 2 R 5 U 2 L 1 U 5 L 1 D 1 L 3 D 2 R
+8
+1 D 3 R 1 U 3 L 3 L 1 U 3 R 1 D
+4
+2 R 2 U 2 L 2 D
+10
+10 R 10 U 10 L 10 U 10 R 5 U 30 L 20 D 20 R 5 D
+12
+1 R 1 U 1 R 1 U 1 L 1 U 1 L 1 D 1 L 1 D 1 R 1 D
+22
+1 R 1 U 1 R 1 U 1 L 1 U 1 R 1 U 1 L 1 D 2 L 1 D 1 R 1 D 1 L 1 D 1 L 1 D 1 L 1 D 1 R 2 U
+20
+2 R 1 U 2 R 2 U 1 R 1 U 1 R 2 U 3 L 1 U 1 L 2 U 4 L 3 D 2 L 2 D 2 R 2 D 2 R 2 D
+10
+6 R 4 U 1 L 1 U 5 R 1 D 1 L 3 D 1 R 1 D
+4
+50 L 50 U 50 R 50 D
+20
+1 R 1 U 1 R 1 D 1 R 1 U 1 R 1 U 1 L 1 U 1 L 1 D 1 L 1 U 1 L 1 D 1 L 1 D 1 R 1 D
+20
+50 R 50 U 50 R 50 D 50 R 50 U 50 R 50 U 50 L 50 U 50 L 50 D 50 L 50 U 50 L 50 D 50 L 50 D 50 R 50 D
+14
+1 R 1 D 3 R 3 U 1 L 1 U 1 L 1 D 2 L 1 U 2 L 2 D 2 R 1 D
+12
+3 R 3 U 4 L 5 D 4 R 1 D 6 L 7 U 7 R 5 D 4 L 1 U
+20
+2 R 1 D 2 R 2 U 1 L 1 U 1 R 2 U 2 L 1 U 1 L 1 U 2 L 2 D 1 L 1 D 1 R 1 D 1 R 1 D
+6
+2 R 2 R 1 U 2 L 2 L 1 D
+0

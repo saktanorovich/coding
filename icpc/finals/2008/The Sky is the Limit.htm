@@ -1,0 +1,96 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>4127 - The Sky is the Limit</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="The%20Sky%20is%20the%20Limit_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>4127 - The Sky is the Limit</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2007"><b>World Finals - Banff Springs, Alberta - 2007/2008</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p4127.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4127"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4127"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+The city of Banff hired an advertising agency to promote the city's
+attractions to potential visitors. One of the planned slogans stated
+that the mountain ranges around the city form the most beautiful
+skyline in Canada. But the Institute for Consumer Protection in Canada
+(ICPC) decided that ``the most beautiful skyline" was a subjective and
+unverifiable claim, and could therefore be considered misleading. </p><p>
+The advertising agency then came up with the slogan ``Banff - the
+longest skyline in Canada." Although not as catchy, it is hopefully
+verifiable, and therefore admissible under Canada's tricky advertising
+laws. </p><p>
+This is where you come in. What the advertising agency needs is a
+program that determines the length of a skyline. Consider each mountain
+as a two-dimensional triangle having two upper sides the same length. A
+skyline is the outline of one or more mountains. The skyline's length
+is the total length of the outline. The left illustration below shows
+three mountains. The right illustration shows (with bold lines) the
+skyline and (with dashed lines) the portion of the mountains' upper
+edges that are not part of the skyline. Note that parts of the horizon
+line that lie between mountains are not considered part of the skyline.
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p4127.eps}$
+ -->
+<img src="The%20Sky%20is%20the%20Limit_files/p4127.png" alt="\epsfbox{p4127.eps}" align="bottom" border="0" height="210" width="1027">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2> 
+
+<p>Each input file contains one or more test cases, which are
+descriptions of mountain ranges. Each description starts with a line
+containing a positive integer <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark>, which specifies the number of mountains in the range. Each of the next <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> lines describes a mountain with three integers <span class="MATH"><i>X</i></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>H</i></span>
+<tex2html_verbatim_mark>, and <span class="MATH"><i>B</i></span>
+<tex2html_verbatim_mark>, which specify the horizontal position of the
+mountain's peak relative to some fixed point, the height of the peak,
+and the width of the base of the mountain, respectively. The base of
+each mountain coincides with a horizontal line. The values satisfy the
+conditions <span class="MATH"><i>N</i><img src="The%20Sky%20is%20the%20Limit_files/4127img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">100</span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>H</i> &gt; 0</span>
+<tex2html_verbatim_mark>, and <span class="MATH"><i>B</i> &gt; 0</span>
+<tex2html_verbatim_mark>. 
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+The last test case is followed by a line containing a zero. 
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+For each test case, print the case number (beginning with 1) and the
+length of the skyline. Print the length rounded to the nearest integer,
+with 0.5 rounded up. Print a blank line after the output of each test
+case. Use the format shown in the sample output below. </p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>1 
+100 50 100 
+3 
+20  30  35 
+37 24   29 
+60 20 13 
+0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: 141 
+
+Case 2: 138
+</pre>
+
+<p>
+</p><hr><address>Banff Springs, Alberta 2007-2008</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

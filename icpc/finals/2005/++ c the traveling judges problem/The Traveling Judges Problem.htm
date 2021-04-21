@@ -1,0 +1,168 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3271 - The Traveling Judges Problem</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="The%20Traveling%20Judges%20Problem_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3271 - The Traveling Judges Problem</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2004"><b>World Finals - Shanghai - 2004/2005</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3271.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3271"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3271"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+A group of judges must get together to judge a contest held in a particular city, and they need to figure out the 
+cheapest way of renting cars in order to get everyone to the contest. They observed that it might be cheaper if several 
+judges share a rental car during all or part of the trip, thus reducing the overall cost. Your task is to identify the 
+routes the judges should take in order to minimize the total cost of their car rentals. 
+
+</p><p>
+
+</p><p>
+<br>
+We will make the following assumptions:
+
+</p><p>
+
+</p><ul>
+<li>The cost of a rental car is proportional to the distance it is driven. There are no charges for more than one 
+occupant in the car, fuel, insurance, or leaving the car in a city other than that in which it was rented. 
+</li>
+<li>All rental cars are billed at the same rate per mile. 
+</li>
+<li>A rental car can accommodate any number of passengers. 
+</li>
+<li>At most one road directly connects any pair of cities. Each road is two-way and has an integer length 
+greater than zero. 
+</li>
+<li>There is at least one route from every judge's starting city to the city in which the contest is held. 
+</li>
+<li>All judges whose routes to the contest take them from or through the same city travel from that city to the 
+contest together. (A judge might arrive at a city in one car and leave that city in a different car.) 
+</li>
+</ul>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+The input contains several test cases. Each test case includes a route map, the destination city where the contest is 
+being held, and the cities where the judges are initially located. 
+
+</p><p>
+
+</p><p>
+<br>
+Each case appears in the input as a list of integers separated by blanks and/or ends of lines. The order and
+interpretation of the integers in each case is as follows: 
+
+</p><p>
+
+</p><ul>
+<li><span class="MATH"><i>NC</i></span>-the number of cities that appear in the route map; this will be no larger than 20. 
+</li>
+<li><span class="MATH"><i>DC</i></span>-the number of the destination city, assuming the cities are numbered 1 to <span class="MATH"><i>NC</i></span>. 
+</li>
+<li><span class="MATH"><i>NR</i></span>-the number of roads in the route map. Each road connects a distinct pair of cities.
+</li>
+<li>For each of the <span class="MATH"><i>NR</i></span> roads, three integers <span class="MATH"><i>C</i>1</span>, <span class="MATH"><i>C</i>2</span>, and <span class="MATH"><i>DIST</i></span>. <span class="MATH"><i>C</i>1</span> and <span class="MATH"><i>C</i>2</span> identify two cities connected
+by a road, and <span class="MATH"><i>DIST</i></span> gives the distance between these cities along that road.
+</li>
+<li><span class="MATH"><i>NJ</i></span>-the number of judges. This number will be no larger than 10. 
+</li>
+<li><span class="MATH"><i>NJ</i></span>-integers, one for each judge  each of these is a city number identifying the initial location of that judge. 
+</li>
+</ul> 
+
+<p>
+
+</p><p>
+<br>
+The data for the last case will be followed by a line consisting of the integer `<tt>-1</tt>'.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+For each test case, display the case number <!-- MATH
+ $(1, 2, \dots)$
+ -->
+<span class="MATH">(1, 2,...)</span> and the shortest total distance traveled by the rental cars 
+conveying the judges to the contest. Then display the list of routes used by the judges, each route on a separate line, 
+in the same order as the ordering of starting cities given in the input. Each route consists of the cities that the 
+corresponding judge must visit, listed in the order in which they are visited, starting with the judge's starting city
+and ending with the contest city. Any other cities along the route are listed in the order in which they are visited
+during the judge's travels. Separate the numbers in the route with `<tt>-</tt>', and precede each route by three spaces.
+
+</p><p>
+
+</p><p>
+<br>
+If multiple sets of routes have the same minimum distance, choose a set that requires the fewest number of cities. If
+several sets of cities of the same cardinality may be used, choose the set that comes lexicographically first when 
+ordered by city number (e.g., {2, 3, 6} rather than {2, 10, 5}). If multiple routes are still available, output any set
+of routes that meets the requirements.
+
+</p><p>
+
+</p><p>
+<br>
+Follow the format of the sample output.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>5
+3 5                  
+1 2 1              
+2 3 2              
+3 4 3              
+4 5 1              
+2 4 2              
+2
+5
+1                
+                   
+4                   
+4 3                   
+1 3 1               
+2 3 2               
+3 4 2               
+2                   
+1
+2                 
+                    
+3
+3 3               
+1 2 2               
+1 3 3               
+2 3 1               
+2
+2
+1               
+                    
+-1
+</pre>                   
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: distance = 6 
+   5-4-2-3 
+   1-2-3
+ 
+Case 2: distance = 5 
+   1-3-4 
+   2-3-4 
+ 
+Case 3: distance = 3 
+   2-3 
+   1-2-3
+</pre> 
+
+<p>
+</p><hr><address>Shanghai 2004-2005</address><p></p></body></html>

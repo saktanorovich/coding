@@ -1,0 +1,1494 @@
+#tces {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #001b35; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.bigTitle {
+	BORDER-BOTTOM: 0px; TEXT-ALIGN: left; BORDER-LEFT: 0px; LINE-HEIGHT: 1.4; FONT-STYLE: normal; COLOR: #333333; FONT-SIZE: 18px; BORDER-TOP: 0px; FONT-WEIGHT: bold; BORDER-RIGHT: 0px
+}
+.aboutTCBody {
+	TEXT-ALIGN: left; LINE-HEIGHT: 1.4; FONT-STYLE: normal; WIDTH: 540px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+.affidavitCell {
+	PADDING-BOTTOM: 10px; FONT-STYLE: normal; PADDING-LEFT: 15px; WIDTH: 100%; PADDING-RIGHT: 15px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; PADDING-TOP: 10px
+}
+.affidavitText {
+	LINE-HEIGHT: 1.4; FONT-STYLE: normal; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.bodyGeneric {
+	COLOR: #0000cc; FONT-SIZE: 12px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.bodyGeneric:link {
+	COLOR: #00f; TEXT-DECORATION: none
+}
+A.bodyGeneric:visited {
+	COLOR: #006; TEXT-DECORATION: none
+}
+A.bodyGeneric:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+A.bodyGeneric:active {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+.bodySubhead {
+	COLOR: #666666; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.bodyText {
+	FONT-STYLE: normal; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.bodyTextBold {
+	FONT-STYLE: normal; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.bodyTextItal {
+	FONT-STYLE: normal; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.bodyTextTitle {
+	FONT-STYLE: normal; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.bodyText {
+	LINE-HEIGHT: 1.4; FONT-WEIGHT: normal
+}
+.bodyTextItal {
+	FONT-STYLE: italic; FONT-WEIGHT: normal
+}
+A.bodyText:link {
+	COLOR: #00f; TEXT-DECORATION: underline
+}
+A.bodyText:visited {
+	COLOR: #006; TEXT-DECORATION: underline
+}
+A.bodyText:hover {
+	COLOR: #f00; TEXT-DECORATION: none
+}
+A.bodyText:active {
+	COLOR: #f00; TEXT-DECORATION: none
+}
+.bodyTitle {
+	LINE-HEIGHT: 1.2; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+.bodySubtitle {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.bolddate {
+	COLOR: #cc0000; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.bolddateoff {
+	COLOR: #cc0000; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.bolddateoff {
+	COLOR: #000000
+}
+A.bolddate:link {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A.bolddate:visited {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A.bolddate:hover {
+	COLOR: #666666; TEXT-DECORATION: underline
+}
+A.bolddate:active {
+	COLOR: #cc0000; TEXT-DECORATION: underline
+}
+.brackets {
+	COLOR: #000000; FONT-SIZE: 22px; FONT-WEIGHT: bold
+}
+.buttonRedL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; BACKGROUND: url(/i/handleBG_L.gif) no-repeat left 50%; FLOAT: left; PADDING-TOP: 0px
+}
+.buttonRedR {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 10px; DISPLAY: block; BACKGROUND: url(/i/handleBG_R.gif) no-repeat right 50%; PADDING-TOP: 4px
+}
+.buttonBar {
+	PADDING-BOTTOM: 11px; PADDING-LEFT: 11px; PADDING-RIGHT: 11px; PADDING-TOP: 11px
+}
+#calendar {
+	TEXT-ALIGN: left; BACKGROUND-COLOR: #eee; COLOR: #000000; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+#calendarMini {
+	TEXT-ALIGN: left; BACKGROUND-COLOR: #eee; COLOR: #000000; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+#calendarBlank {
+	TEXT-ALIGN: left; BACKGROUND-COLOR: #eee; COLOR: #000000; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+#calendarBlankMini {
+	TEXT-ALIGN: left; BACKGROUND-COLOR: #eee; COLOR: #000000; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+#calChat {
+	TEXT-ALIGN: left; BACKGROUND-COLOR: #ffffcc; COLOR: #000000; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+#calChatDate {
+	COLOR: #000000; FONT-WEIGHT: bold
+}
+A.calChatLink:link {
+	COLOR: #000066; TEXT-DECORATION: underline
+}
+A.calChatLink:visited {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A.calChatLink:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+#calendarMini {
+	BACKGROUND-IMAGE: none; TEXT-ALIGN: center; VERTICAL-ALIGN: middle
+}
+#calendarMonth {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: #ffffff; FONT-SIZE: 13px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold; PADDING-TOP: 2px
+}
+#calendarBlank {
+	BACKGROUND-COLOR: #ccc
+}
+#calendarBlankMini {
+	BACKGROUND-COLOR: #ccc
+}
+#calendarBlank {
+	BACKGROUND-IMAGE: url(/i/calendar_bg.gif)
+}
+#calendarCRPFMini {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #4c9ed8; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: bold
+}
+#calendarTCOSRM {
+	BACKGROUND-IMAGE: url(/i/tournament/tco04/miniTCOSRM.gif); TEXT-ALIGN: center; BACKGROUND-COLOR: #ffffff; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: bold
+}
+#calendarFrame {
+	BORDER-BOTTOM: #43515e 1px solid; BORDER-LEFT: #43515e 1px solid; BACKGROUND-COLOR: #43515e; BORDER-TOP: #43515e 1px solid; BORDER-RIGHT: #43515e 1px solid
+}
+#calendarDays {
+	BACKGROUND-IMAGE: url(/i/graybv_xlite_bg.gif); TEXT-ALIGN: center; BACKGROUND-COLOR: #666; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+#calendarSRM {
+	TEXT-ALIGN: left; BACKGROUND-COLOR: #fff; COLOR: #000; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+#calendarSRMMini {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #00f; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: bold
+}
+#calendarSRMDate {
+	COLOR: #f00; FONT-WEIGHT: bold
+}
+#calendarTCCC05 {
+	TEXT-ALIGN: left; BACKGROUND-COLOR: #7a7a89; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+#calendarTCCC05Mini {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #7a7a89; COLOR: #ffffff; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+#calendarTCCC05Date {
+	COLOR: #ffffff; FONT-WEIGHT: bold
+}
+A.calendarTCCC05Link:link {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.calendarTCCC05Link:visited {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.calendarTCCC05Link:hover {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+#calendarTCO05 {
+	TEXT-ALIGN: left; BACKGROUND-COLOR: #ffea53; COLOR: #333; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+#calendarTCO05Mini {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #ffea53; COLOR: #333; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+#calendarTCO05Date {
+	COLOR: #333; FONT-WEIGHT: bold
+}
+A.calendarTCO05Link:link {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+A.calendarTCO05Link:visited {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+A.calendarTCO05Link:hover {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.calendarTCCC05Link:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A#miniTCCCDate:link {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A#miniTCCCDate:visited {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A#miniTCCCDate:hover {
+	COLOR: #fc3; TEXT-DECORATION: none
+}
+A#miniTCCCDate:active {
+	COLOR: #fc3; TEXT-DECORATION: none
+}
+#calendarTCO03Date {
+	COLOR: #00ff00; FONT-WEIGHT: bold
+}
+#calendarTCO03 {
+	BACKGROUND-IMAGE: url(/i/tournament/tco03/tco03_cal_bkgd.gif); TEXT-ALIGN: left; BACKGROUND-COLOR: #003300; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+#calendarTCO03Mini {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #003300; COLOR: #00ff00; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+#calendarGoogleMini {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #ffff00; COLOR: #ff0000; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+#calendarGoogleDate {
+	COLOR: #ff0000; FONT-WEIGHT: bold
+}
+#calendarTourney {
+	BACKGROUND-IMAGE: url(/i/tournament/tccc03/tccc03_bkgd.gif); TEXT-ALIGN: left; BACKGROUND-COLOR: #444; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+#calendarTourneyMini {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #444; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+#calendarIntel {
+	TEXT-ALIGN: left; BACKGROUND-COLOR: #007dc5; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+#calendarIntelDate {
+	COLOR: #fff; FONT-WEIGHT: bold
+}
+A#calendarIntelLink:link {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+A#calendarIntelLink:visited {
+	COLOR: #99ccff; TEXT-DECORATION: underline
+}
+A#calendarIntelLink:hover {
+	COLOR: #000; TEXT-DECORATION: none
+}
+#calendarIntelMini {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #007dc5; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+A#miniIntelDate:link {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A#miniIntelDate:visited {
+	COLOR: #99ccff; TEXT-DECORATION: none
+}
+A#miniIntelDate:hover {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A#miniSRMDate:link {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A#miniSRMDate:visited {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A#miniSRMDate:hover {
+	COLOR: #fc3; TEXT-DECORATION: none
+}
+A#miniSRMDate:active {
+	COLOR: #fc3; TEXT-DECORATION: none
+}
+.captionText {
+	LINE-HEIGHT: 16px; COLOR: #fff; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.cardCell {
+	PADDING-BOTTOM: 15px; FONT-STYLE: normal; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+.cardBody {
+	TEXT-ALIGN: left; LINE-HEIGHT: 1.4; FONT-STYLE: normal; WIDTH: 540px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+.cardCode {
+	COLOR: #660000; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.cardRightTop {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #000; FONT-SIZE: 11px; VERTICAL-ALIGN: top; BORDER-TOP: 0px; FONT-WEIGHT: normal; BORDER-RIGHT: 0px; PADDING-TOP: 15px
+}
+.cardRight {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #000; FONT-SIZE: 11px; VERTICAL-ALIGN: top; BORDER-TOP: 0px; FONT-WEIGHT: normal; BORDER-RIGHT: 0px; PADDING-TOP: 10px
+}
+.code {
+	FONT-FAMILY: Courier New; COLOR: #000; FONT-SIZE: 12px
+}
+.codeOUT {
+	FONT-FAMILY: Courier New; COLOR: #000; FONT-SIZE: 12px; TEXT-DECORATION: line-through
+}
+.coderBrackets {
+	COLOR: #ffcc33; FONT-SIZE: 11px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.coderTextRedLarge {
+	COLOR: #ff0000; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.contractNote {
+	BORDER-BOTTOM: #999 1px solid; BORDER-LEFT: #999 1px solid; PADDING-BOTTOM: 10px; LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; MARGIN: 20px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #333; FONT-SIZE: 11px; BORDER-TOP: #999 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #999 1px solid; PADDING-TOP: 10px
+}
+.devProjectText {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.devProjectWinner {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.devProjectWinner2 {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.devProjectSecond {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.devProjectSecond2 {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.devProjectSecondMoney {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.devProjectSecondMoney2 {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.devProjectWinnerMoney {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.devProjectWinnerMoney2 {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.devProjectInquire {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.devProjectDate {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.devProjectWinner {
+	FONT-WEIGHT: bold
+}
+.devProjectWinner2 {
+	FONT-WEIGHT: bold
+}
+.devProjectSecond {
+	FONT-WEIGHT: bold
+}
+.devProjectSecond2 {
+	FONT-WEIGHT: bold
+}
+.devProjectWinnerMoney {
+	FONT-WEIGHT: bold
+}
+.devProjectWinnerMoney2 {
+	FONT-WEIGHT: bold
+}
+.devProjectSecondMoney {
+	FONT-WEIGHT: bold
+}
+.devProjectSecondMoney2 {
+	FONT-WEIGHT: bold
+}
+.devProjectInquire {
+	FONT-WEIGHT: bold
+}
+.devProjectDate {
+	FONT-WEIGHT: bold
+}
+.devProjectWinner {
+	BACKGROUND-COLOR: #ffffff
+}
+.devProjectWinnerMoney {
+	BACKGROUND-COLOR: #ffffff
+}
+.devProjectSecond2 {
+	BACKGROUND-COLOR: #ffffff
+}
+.devProjectSecondMoney2 {
+	BACKGROUND-COLOR: #ffffff
+}
+.devProjectInquire {
+	BACKGROUND-COLOR: #ffffff
+}
+.devProjectDate {
+	BACKGROUND-COLOR: #ffffff
+}
+.devProjectWinnerMoney {
+	TEXT-ALIGN: right
+}
+.devProjectWinnerMoney2 {
+	TEXT-ALIGN: right
+}
+.devProjectSecondMoney {
+	TEXT-ALIGN: right
+}
+.devProjectSecondMoney2 {
+	TEXT-ALIGN: right
+}
+.devProjectDate {
+	TEXT-ALIGN: right
+}
+.devProjectWinnerMoney {
+	COLOR: #cc0000
+}
+.devProjectWinnerMoney2 {
+	COLOR: #cc0000
+}
+.devSubhead {
+	FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.devRightSpacer {
+	MARGIN: 10px 0px 0px; VERTICAL-ALIGN: top
+}
+.dropdown {
+	BACKGROUND-COLOR: #ffffff; COLOR: #666666; FONT-SIZE: 11px
+}
+.errorText {
+	COLOR: #ff0000; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.errorTextEven {
+	COLOR: #ff0000; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.errorTextOdd {
+	COLOR: #ff0000; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.errorTextEven {
+	BACKGROUND-COLOR: #eee
+}
+.errorTextOdd {
+	BACKGROUND-COLOR: #eee
+}
+.errorTextOdd {
+	BACKGROUND-COLOR: #fff
+}
+.extraSmallText {
+	LINE-HEIGHT: 12px; FONT-SIZE: 10px; FONT-WEIGHT: normal
+}
+.formFrame {
+	BORDER-BOTTOM: #999 1px solid; BORDER-LEFT: #999 1px solid; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #999 1px solid
+}
+.formHead {
+	COLOR: #666; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+.formHeadSmall {
+	COLOR: #000; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.formSubhead {
+	COLOR: #666; FONT-SIZE: 15px; FONT-WEIGHT: bold
+}
+.formHandleEven {
+	BACKGROUND-COLOR: #222; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+.formHandleOdd {
+	BACKGROUND-COLOR: #222; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+.formTextEven {
+	BACKGROUND-COLOR: #222; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+.formTextOdd {
+	BACKGROUND-COLOR: #222; COLOR: #fff; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+.formHandleOdd {
+	BACKGROUND-COLOR: #333
+}
+.formTextEven {
+	BACKGROUND-COLOR: #eee; COLOR: #000
+}
+.formTextOdd {
+	BACKGROUND-COLOR: #eee; COLOR: #000
+}
+.formTextOdd {
+	BACKGROUND-COLOR: #fff
+}
+.formLabelEven {
+	TEXT-ALIGN: right; BACKGROUND-COLOR: #eee; WHITE-SPACE: nowrap; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+.formLabelOdd {
+	TEXT-ALIGN: right; BACKGROUND-COLOR: #eee; WHITE-SPACE: nowrap; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+.formLabelOdd {
+	BACKGROUND-COLOR: #fff
+}
+.genTitle {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #666666; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #ffffff; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.genHeader {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #cccccc; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.genCells {
+	PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: normal; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.globalNav {
+	COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.globalNav_on {
+	COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+A.globalNav:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.globalNav:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.globalNav:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A.globalNav:active {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.globalNavDots {
+	COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.globalNav_on {
+	COLOR: #000000
+}
+A.globalNav_on:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.globalNav_on:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.globalNav_on:hover {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+A.globalNav_on:active {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.globalNavSmall {
+	BACKGROUND-COLOR: #333; COLOR: #cccccc; FONT-SIZE: 10px; FONT-WEIGHT: normal
+}
+A.globalNavSmall:link {
+	COLOR: #cccccc; TEXT-DECORATION: none
+}
+A.globalNavSmall:visited {
+	COLOR: #cccccc; TEXT-DECORATION: none
+}
+A.globalNavSmall:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.globalNavSmall:active {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.globalNavSmall_on {
+	COLOR: #ffffff; FONT-SIZE: 10px; FONT-WEIGHT: normal
+}
+A.globalNavSmall_on:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.globalNavSmall_on:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.globalNavSmall_on:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.globalNavSmall_on:active {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.grayLine {
+	COLOR: #cccccc; FONT-SIZE: 10px
+}
+.guide {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 510px; PADDING-RIGHT: 0px; PADDING-TOP: 15px
+}
+.guideSubTitle {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: Arial, Helvetica, Verdana, sans-serif; FONT-SIZE: 150%; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+.guideQuestion {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; FONT-STYLE: italic; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #990000; FONT-SIZE: 15px; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+.guideDesc {
+	PADDING-BOTTOM: 6px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: normal; PADDING-TOP: 6px
+}
+.guideTable {
+	BORDER-BOTTOM: #999 1px solid; BORDER-LEFT: #999 1px solid; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; VERTICAL-ALIGN: text-top; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #999 1px solid; PADDING-TOP: 0px
+}
+.guideHead {
+	PADDING-BOTTOM: 8px; LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #333; FONT-SIZE: 11px; VERTICAL-ALIGN: text-top; FONT-WEIGHT: normal; PADDING-TOP: 8px
+}
+.guideCell {
+	PADDING-BOTTOM: 8px; LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #333; FONT-SIZE: 11px; VERTICAL-ALIGN: text-top; FONT-WEIGHT: normal; PADDING-TOP: 8px
+}
+.homeTopBar {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #333333; FONT-STYLE: normal; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 10px; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.homeLogo {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #000000; FONT-STYLE: normal; MARGIN: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+.homeRedBar {
+	BACKGROUND-IMAGE: url(/i/redbv_lite_bg.gif); BORDER-BOTTOM: #000000 2px solid; TEXT-ALIGN: center; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #000; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 12px; BORDER-TOP: #666666 4px solid; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.header {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #999999; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 14px; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+A.header:link {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #ffffff; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+A.header:visited {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #ffffff; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+A.header:hover {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #ffcc00; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+A.header:hover {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #ffcc00; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.headerWhite {
+	COLOR: #ffffff; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+.headStripe {
+	BACKGROUND: #666
+}
+.leadPhoto {
+	POSITION: relative; MARGIN: 0px 2px 4px 10px; WIDTH: 200px; FLOAT: right; TOP: 0px
+}
+.leadPhotoCaption {
+	MARGIN-TOP: 5px; COLOR: #333333; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+A.left:link {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A.left:visited {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A.left:hover {
+	COLOR: #f00; TEXT-DECORATION: none
+}
+A.left:active {
+	COLOR: #f00; TEXT-DECORATION: none
+}
+A.leftOn:link {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A.leftOn:visited {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A.leftOn:hover {
+	COLOR: #f00; TEXT-DECORATION: none
+}
+A.leftOn:active {
+	COLOR: #f00; TEXT-DECORATION: none
+}
+.leftColumn {
+	BACKGROUND-COLOR: #ccc
+}
+#leftDate {
+	BORDER-BOTTOM: #7d7d7d 1px solid; BORDER-LEFT: #7d7d7d 0px solid; PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #e3e3e3; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #7d7d7d 0px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #7d7d7d 0px solid; PADDING-TOP: 4px
+}
+#leftNav {
+	BORDER-BOTTOM: #7d7d7d 1px solid; BORDER-LEFT: #7d7d7d 0px solid; PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #e3e3e3; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #7d7d7d 0px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #7d7d7d 0px solid; PADDING-TOP: 4px
+}
+#leftNavApplet {
+	BORDER-BOTTOM: #7d7d7d 1px solid; BORDER-LEFT: #7d7d7d 0px solid; PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #e3e3e3; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #7d7d7d 0px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #7d7d7d 0px solid; PADDING-TOP: 4px
+}
+#leftNavOn {
+	BORDER-BOTTOM: #7d7d7d 1px solid; BORDER-LEFT: #7d7d7d 0px solid; PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #e3e3e3; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #7d7d7d 0px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #7d7d7d 0px solid; PADDING-TOP: 4px
+}
+#leftNavSelect {
+	BORDER-BOTTOM: #7d7d7d 1px solid; BORDER-LEFT: #7d7d7d 0px solid; PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #e3e3e3; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #7d7d7d 0px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #7d7d7d 0px solid; PADDING-TOP: 4px
+}
+#leftSubnavOld {
+	BORDER-BOTTOM: #7d7d7d 1px solid; BORDER-LEFT: #7d7d7d 0px solid; PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #e3e3e3; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #7d7d7d 0px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #7d7d7d 0px solid; PADDING-TOP: 4px
+}
+#leftSubnavOldOn {
+	BORDER-BOTTOM: #7d7d7d 1px solid; BORDER-LEFT: #7d7d7d 0px solid; PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #e3e3e3; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #7d7d7d 0px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #7d7d7d 0px solid; PADDING-TOP: 4px
+}
+#leftSubnav {
+	BORDER-BOTTOM: #7d7d7d 1px solid; BORDER-LEFT: #7d7d7d 0px solid; PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #e3e3e3; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #7d7d7d 0px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #7d7d7d 0px solid; PADDING-TOP: 4px
+}
+#leftSubnavOn {
+	BORDER-BOTTOM: #7d7d7d 1px solid; BORDER-LEFT: #7d7d7d 0px solid; PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #e3e3e3; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #7d7d7d 0px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #7d7d7d 0px solid; PADDING-TOP: 4px
+}
+#leftNavSubtitle {
+	BORDER-BOTTOM: #7d7d7d 1px solid; BORDER-LEFT: #7d7d7d 0px solid; PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #e3e3e3; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #7d7d7d 0px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #7d7d7d 0px solid; PADDING-TOP: 4px
+}
+#leftNavTitle {
+	BORDER-BOTTOM: #7d7d7d 1px solid; BORDER-LEFT: #7d7d7d 0px solid; PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #e3e3e3; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-TOP: #7d7d7d 0px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #7d7d7d 0px solid; PADDING-TOP: 4px
+}
+#leftNav {
+	FONT-WEIGHT: bold
+}
+#leftNavApplet {
+	BACKGROUND-COLOR: #fc3; FONT-WEIGHT: bold
+}
+#leftNavOn {
+	BACKGROUND-IMAGE: url(/i/left_nav_select_bkgd.gif); BORDER-BOTTOM-COLOR: #585858; BACKGROUND-COLOR: #585858; BORDER-TOP-COLOR: #585858; BORDER-RIGHT-COLOR: #585858; BORDER-LEFT-COLOR: #585858; FONT-WEIGHT: bold
+}
+#leftNavSelect {
+	BORDER-BOTTOM-COLOR: #313131; BACKGROUND-COLOR: #313131; BORDER-TOP-COLOR: #313131; BORDER-RIGHT-COLOR: #313131; BORDER-LEFT-COLOR: #313131; FONT-WEIGHT: bold
+}
+#leftSubnav {
+	BACKGROUND-IMAGE: url(/i/left_nav_select_bkgd.gif); BORDER-BOTTOM-COLOR: #585858; BACKGROUND-COLOR: #585858; BORDER-TOP-COLOR: #585858; PADDING-LEFT: 15px; BORDER-RIGHT-COLOR: #585858; BORDER-LEFT-COLOR: #585858; FONT-WEIGHT: bold
+}
+#leftSubnavOn {
+	BORDER-BOTTOM-COLOR: #313131; BACKGROUND-COLOR: #313131; BORDER-TOP-COLOR: #313131; PADDING-LEFT: 15px; BORDER-RIGHT-COLOR: #313131; BORDER-LEFT-COLOR: #313131; FONT-WEIGHT: bold
+}
+#leftSubnavOld {
+	BACKGROUND-IMAGE: url(/i/left_nav_select_bkgd.gif); BORDER-BOTTOM-COLOR: #585858; BACKGROUND-COLOR: #585858; BORDER-TOP-COLOR: #585858; PADDING-LEFT: 15px; BORDER-RIGHT-COLOR: #585858; BORDER-LEFT-COLOR: #585858; FONT-WEIGHT: normal
+}
+#leftSubnavOldOn {
+	BORDER-BOTTOM-COLOR: #313131; BACKGROUND-COLOR: #313131; BORDER-TOP-COLOR: #313131; PADDING-LEFT: 15px; BORDER-RIGHT-COLOR: #313131; BORDER-LEFT-COLOR: #313131; FONT-WEIGHT: normal
+}
+#leftNavSubtitle {
+	BACKGROUND-IMAGE: url(/i/left_nav_select_bkgd.gif); BORDER-BOTTOM-COLOR: #585858; BACKGROUND-COLOR: #585858; BORDER-TOP-COLOR: #585858; COLOR: #ccc; BORDER-RIGHT-COLOR: #585858; BORDER-LEFT-COLOR: #585858; FONT-WEIGHT: bold
+}
+#leftNavTitle {
+	BACKGROUND-COLOR: #cccccc; FONT-WEIGHT: bold
+}
+.devInstrTable {
+	BORDER-BOTTOM: #999999 1px solid; MARGIN-TOP: 5px; BORDER-TOP: #999999 1px solid
+}
+.devInstrTitle {
+	MARGIN-TOP: 15px
+}
+.devInstrHeader {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; PADDING-TOP: 4px
+}
+.devInstr {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; PADDING-TOP: 4px
+}
+.noSpList {
+	MARGIN-TOP: 0px; PADDING-TOP: 0px
+}
+.noSpListTitle {
+	PADDING-BOTTOM: 0px; MARGIN-BOTTOM: 0px
+}
+.login {
+	FONT-STYLE: normal; COLOR: #fff; FONT-SIZE: 10px; FONT-WEIGHT: normal
+}
+.loginForm {
+	BACKGROUND-COLOR: #666
+}
+A.loginLinks:link {
+	COLOR: #ffffff; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.loginLinks:visited {
+	COLOR: #ffffff; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.loginLinks:hover {
+	COLOR: #fc3; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A.loginLinks:active {
+	COLOR: #fc3; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+.loginText {
+	WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+A.loginText:link {
+	COLOR: #fc3; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.loginText:visited {
+	COLOR: #fc3; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.loginText:hover {
+	COLOR: #c00; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A.loginText:active {
+	COLOR: #c00; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+.memberhandle {
+	COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.memberPhoto {
+	BORDER-BOTTOM: #999999 2px solid; BORDER-LEFT: #999999 2px solid; BACKGROUND-COLOR: #ffffff; BORDER-TOP: #999999 2px solid; BORDER-RIGHT: #999999 2px solid
+}
+.messageBoxFrame {
+	BORDER-BOTTOM: #999 1px solid; BORDER-LEFT: #999 1px solid; WIDTH: 180px; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #999 1px solid
+}
+.messageBoxText {
+	PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #ddddff; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+.messageSmall {
+	COLOR: #ffffff; FONT-SIZE: 10px; FONT-WEIGHT: normal
+}
+A.messageSmall:link {
+	COLOR: #ffcc33; TEXT-DECORATION: none
+}
+A.messageSmall:visited {
+	COLOR: #ffcc33; TEXT-DECORATION: none
+}
+A.messageSmall:hover {
+	COLOR: #666666; TEXT-DECORATION: underline
+}
+A.messageSmall:active {
+	COLOR: #666666; TEXT-DECORATION: underline
+}
+.methNav {
+	FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+A.methNav:link {
+	COLOR: #00f; TEXT-DECORATION: none
+}
+A.methNav:visited {
+	COLOR: #006; TEXT-DECORATION: none
+}
+A.methNav:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+A.methNav:active {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+.moduleSubhead {
+	COLOR: #cc0000; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+A.moduleSubhead:link {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A.moduleSubhead:visited {
+	COLOR: #990000; TEXT-DECORATION: none
+}
+A.moduleSubhead:hover {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+A.moduleSubhead:active {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+.moduleText {
+	COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+A.moduleText:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.moduleText:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.moduleText:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A.moduleText:active {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.moduleTitle {
+	COLOR: #cccccc; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.multiColText {
+	TEXT-INDENT: -5px; MARGIN: 0px 0px 0px 5px; COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.myStatsRatingName {
+	TEXT-ALIGN: left; COLOR: #ffffff; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: normal
+}
+.myStatsRatingAmount {
+	TEXT-ALIGN: left; COLOR: #ffffff; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: normal
+}
+.myStatsEarningsName {
+	TEXT-ALIGN: left; COLOR: #ffffff; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: normal
+}
+.myStatsEarningsAmount {
+	TEXT-ALIGN: left; COLOR: #ffffff; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: normal
+}
+.myStatsTitle {
+	TEXT-ALIGN: left; COLOR: #ffffff; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: normal
+}
+.myStatsRatingName {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 5px; PADDING-RIGHT: 3px; PADDING-TOP: 3px
+}
+.myStatsEarningsName {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 5px; PADDING-RIGHT: 3px; PADDING-TOP: 3px
+}
+.myStatsTitle {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 5px; PADDING-RIGHT: 3px; PADDING-TOP: 3px
+}
+.myStatsRatingAmount {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 5px; PADDING-TOP: 3px
+}
+.myStatsEarningsAmount {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 5px; PADDING-TOP: 3px
+}
+.myStatsRatingName {
+	BACKGROUND-COLOR: #222222
+}
+.myStatsRatingAmount {
+	BACKGROUND-COLOR: #222222
+}
+.myStatsEarningsName {
+	BACKGROUND-COLOR: #333333
+}
+.myStatsEarningsAmount {
+	BACKGROUND-COLOR: #333333
+}
+.myStatsPhoto {
+	BORDER-BOTTOM: #999999 2px solid; BORDER-LEFT: #999999 2px solid; BACKGROUND-COLOR: #ffffff; MARGIN: 5px; BORDER-TOP: #999999 2px solid; BORDER-RIGHT: #999999 2px solid
+}
+.myStatsTitle {
+	BACKGROUND-IMAGE: url(/i/graybv_lite_bg.gif); BACKGROUND-COLOR: #444444; FONT-WEIGHT: bold
+}
+.myTCBody {
+	TEXT-ALIGN: left; LINE-HEIGHT: 1.4; FONT-STYLE: normal; WIDTH: 540px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal
+}
+.newsIconCell {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-LEFT: 0px; PADDING-RIGHT: 10px; WHITE-SPACE: nowrap; COLOR: #333333; FONT-SIZE: 11px; VERTICAL-ALIGN: top; BORDER-TOP: #666666 1px solid; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.newsLinksCell {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 8px; FONT-STYLE: normal; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+.newsTextCell {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; BORDER-TOP: #666666 1px solid; FONT-WEIGHT: normal; PADDING-TOP: 2px
+}
+.newsPhotoTable {
+	FONT-STYLE: normal; WIDTH: 100%; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.newsPhoto {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; FONT-STYLE: italic; PADDING-LEFT: 5px; WIDTH: 1%; PADDING-RIGHT: 0px; WHITE-SPACE: nowrap; COLOR: #000000; FONT-SIZE: 11px; PADDING-TOP: 0px
+}
+.newsTitle {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.newsText {
+	COLOR: #666; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.nonBreadcrumb {
+	BACKGROUND-COLOR: #000
+}
+.ongray {
+	COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+A.ongray:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.ongray:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.ongray:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A.ongray:active {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.oppDesc {
+	PADDING-BOTTOM: 15px; FONT-STYLE: normal; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 10px; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+.openProjects {
+	COLOR: #cc0000; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+A.openProjects:link {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A.openProjects:visited {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A.openProjects:hover {
+	COLOR: #666666; TEXT-DECORATION: underline
+}
+A.openProjects:active {
+	COLOR: #666666; TEXT-DECORATION: underline
+}
+.outline1 {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.4; FONT-STYLE: normal; PADDING-LEFT: 15px; PADDING-RIGHT: 0px; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+.outline2 {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.4; FONT-STYLE: normal; PADDING-LEFT: 30px; PADDING-RIGHT: 0px; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+.outline3 {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.4; FONT-STYLE: normal; PADDING-LEFT: 45px; PADDING-RIGHT: 0px; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+.outline4 {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.4; FONT-STYLE: normal; PADDING-LEFT: 60px; PADDING-RIGHT: 0px; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+.photoFrameBig {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; BACKGROUND-COLOR: #cccccc; BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid
+}
+.photoFrameSmall {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #000 1px solid; BACKGROUND-COLOR: #cccccc; MARGIN: 2px 4px; BORDER-TOP: #000 1px solid; BORDER-RIGHT: #000 1px solid
+}
+.pointsName {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 8px; BACKGROUND-COLOR: #eeeeee; MARGIN: 1px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; WHITE-SPACE: nowrap; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 8px
+}
+.pointsScore {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 8px; BACKGROUND-COLOR: #eeeeee; MARGIN: 1px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; WHITE-SPACE: nowrap; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 8px
+}
+.pointsLabel {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 8px; BACKGROUND-COLOR: #eeeeee; MARGIN: 1px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; WHITE-SPACE: nowrap; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 8px
+}
+.points {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 8px; BACKGROUND-COLOR: #eeeeee; MARGIN: 1px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; WHITE-SPACE: nowrap; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 8px
+}
+.pointsName {
+	WIDTH: 100px
+}
+.points {
+	TEXT-ALIGN: right
+}
+.pointsScore {
+	TEXT-ALIGN: right
+}
+.pointsScore {
+	WIDTH: 30px
+}
+.pointsTable {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BACKGROUND-COLOR: #ffffff; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+A.problemText:link {
+	COLOR: #ffcc33; TEXT-DECORATION: none
+}
+A.problemText:visited {
+	COLOR: #cccccc; TEXT-DECORATION: none
+}
+A.problemText:hover {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+A.problemText:active {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+.promoCallout {
+	LINE-HEIGHT: 20px; COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.projectTitles {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #666666; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #ffffff; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.projectHeaders {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #cccccc; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.projectCells {
+	PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: normal; TEXT-DECORATION: none; PADDING-TOP: 5px
+}
+.promoCorp {
+	LINE-HEIGHT: 1.4; COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.promoText {
+	LINE-HEIGHT: 18px; COLOR: #000000; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.prHead {
+	COLOR: #666; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.prOtherPubs {
+	COLOR: #666; FONT-SIZE: 10px; FONT-WEIGHT: normal
+}
+.prText {
+	LINE-HEIGHT: 20px; COLOR: #000000; FONT-SIZE: 13px; FONT-WEIGHT: normal
+}
+.quickstatText {
+	COLOR: #ffcc33; FONT-SIZE: 10px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.quickstatText:link {
+	COLOR: #ffcc33; TEXT-DECORATION: none
+}
+A.quickstatText:visited {
+	COLOR: #ffcc33; TEXT-DECORATION: none
+}
+A.quickstatText:hover {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+A.quickstatText:active {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+.rPic {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 0px 5px 0px 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.registerLabel {
+	TEXT-ALIGN: right; BACKGROUND-COLOR: #43515e; COLOR: #ffffff; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+A.registerLabel:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.registerLabel:visited {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+A.registerLabel:hover {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+A.registerLabel:active {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.registerNav {
+	COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+A.registerNav:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.registerNav:visited {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+A.registerNav:hover {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+A.registerNav:active {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.registerNav_on {
+	COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+A.registerNav_on:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.registerNav_on:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.registerNav_on:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A.registerNav_on:active {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.registerToday {
+	COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+A.registerToday:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.registerToday:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.registerToday:hover {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+A.registerToday:active {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+.searchSpacer {
+	PADDING-LEFT: 50%; WIDTH: 550px; PADDING-RIGHT: 50%
+}
+.searchHeaders {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #cccccc; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.searchText {
+	BACKGROUND-COLOR: #eeeeee; COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.search {
+	BACKGROUND-COLOR: #333333; FONT-STYLE: normal; COLOR: #fff; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.sectionTitle {
+	COLOR: #000000; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+.sectionTitleBrackets {
+	COLOR: #cc0000; FONT-SIZE: 17px; FONT-WEIGHT: bold
+}
+.sidebarBox {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+.sidebarText {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.sidebarTextIndent {
+	LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 25px; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.sidebarTitle {
+	BACKGROUND-COLOR: #cccccc; COLOR: #333; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.sideNote {
+	BORDER-BOTTOM: #999 1px solid; BORDER-LEFT: #999 1px solid; PADDING-BOTTOM: 10px; LINE-HEIGHT: 14px; BACKGROUND-COLOR: #eeeeee; MARGIN: 20px; PADDING-LEFT: 10px; WIDTH: 500px; PADDING-RIGHT: 10px; COLOR: #333; FONT-SIZE: 11px; BORDER-TOP: #999 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #999 1px solid; PADDING-TOP: 10px
+}
+.smallBrackets {
+	COLOR: #cc0000; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.smallFoot {
+	COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+A.smallFoot:link {
+	COLOR: #ccc; TEXT-DECORATION: none
+}
+A.smallFoot:visited {
+	COLOR: #ccc; TEXT-DECORATION: none
+}
+A.smallFoot:hover {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+A.smallFoot:active {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+.smallText {
+	LINE-HEIGHT: 1.4; COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+A.smallText:link {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A.smallText:visited {
+	COLOR: #990000; TEXT-DECORATION: none
+}
+A.smallText:hover {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+A.smallText:active {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+#specialMessage {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #cc6; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #c00; FONT-SIZE: 11px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.statsCellsDk {
+	PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: normal; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.statsCellsLt {
+	PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: normal; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.statsHighlight {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #000000; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.statText {
+	COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.statTextBig {
+	COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.statTextLarge {
+	COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.statText:link {
+	COLOR: #fc3; TEXT-DECORATION: none
+}
+A.statText:visited {
+	COLOR: #b98b30; TEXT-DECORATION: none
+}
+A.statText:hover {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+A.statText:active {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+.statTextBig {
+	FONT-WEIGHT: bold
+}
+.statTextLarge {
+	FONT-WEIGHT: bold
+}
+A.statTextBig:link {
+	COLOR: #fc3; TEXT-DECORATION: none
+}
+A.statTextBig:visited {
+	COLOR: #b98b30; TEXT-DECORATION: none
+}
+A.statTextBig:hover {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+A.statTextBig:active {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+.statTextSmall {
+	COLOR: #ffffff; FONT-SIZE: 10px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.statTextSmall:link {
+	COLOR: #fc3; TEXT-DECORATION: none
+}
+A.statTextSmall:visited {
+	COLOR: #b98b30; TEXT-DECORATION: none
+}
+A.statTextSmall:hover {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+A.statTextSmall:active {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+.statTableIndent {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #001b35; PADDING-LEFT: 10px; WIDTH: 100%; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+.subNav {
+	COLOR: #ffcc33; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+A.subNav:link {
+	COLOR: #ffcc33; TEXT-DECORATION: none
+}
+A.subNav:visited {
+	COLOR: #ffcc33; TEXT-DECORATION: none
+}
+A.subNav:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.subNav:active {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.subNav_on {
+	COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+A.subNav_on:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.subNav_on:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.subNav_on:hover {
+	COLOR: #666666; TEXT-DECORATION: underline
+}
+A.subNav_on:active {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.super {
+	FONT-SIZE: 6px; VERTICAL-ALIGN: super
+}
+.surveyButtons {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #ffffff; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+.surveyFrame {
+	BORDER-BOTTOM: #999 1px solid; BORDER-LEFT: #999 1px solid; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #999 1px solid
+}
+.surveyText {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+.surveyTextBig {
+	COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+#tccc_banner {
+	BACKGROUND-IMAGE: url(/i/tournament/tccc03/tccc_banner_bkgd.jpg); BACKGROUND-COLOR: #333
+}
+#tccc_bkgd {
+	BACKGROUND-IMAGE: url(/i/tournament/tccc03/tccc03_bkgd.gif); BACKGROUND-COLOR: #333
+}
+.tco04Message {
+	PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #ff6600; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+A.tco04MessageLink:link {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.tco04MessageLink:visited {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.tco04MessageLink:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.tco04MessageLink:active {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.tco04DevHeader {
+	BACKGROUND-IMAGE: url(/i/tournament/tco04/bv_lite_bg.gif); PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; MARGIN: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #ffffff; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.tco04UsdcCombo {
+	BACKGROUND-IMAGE: url(/i/tournament/tco04Usdc.gif); PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; MARGIN: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #ffffff; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.tccc05Message {
+	PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #7a7a89; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+A.tccc05MessageLink:link {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.tccc05MessageLink:visited {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.tccc05MessageLink:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.tccc05MessageLink:active {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.tco05Message {
+	PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #333333; FONT-SIZE: 11px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+.terciary {
+	TEXT-ALIGN: right; FONT-STYLE: normal; WHITE-SPACE: nowrap; COLOR: #666666; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+.terciary A:link {
+	COLOR: #00f; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+}
+.terciary A:visited {
+	COLOR: #006; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+}
+.terciary A:hover {
+	COLOR: #f00; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.terciary A:active {
+	COLOR: #f00; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.testTableTitle {
+	BACKGROUND-IMAGE: url(/i/graybv_lite_bg.gif); BACKGROUND-COLOR: #666; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+.testTableTitle_on {
+	BACKGROUND-IMAGE: url(/i/graybv_bg.gif); BACKGROUND-COLOR: #666; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+.testTableTitle_off {
+	BACKGROUND-IMAGE: url(/i/graybv_lite_bg.gif); BACKGROUND-COLOR: #666; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+.testTableTitleSmall {
+	BACKGROUND-COLOR: #666; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+.time {
+	COLOR: #ffffff; FONT-SIZE: 10px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.time:link {
+	COLOR: #fc3; TEXT-DECORATION: none
+}
+A.time:visited {
+	COLOR: #b98b30; TEXT-DECORATION: none
+}
+A.time:hover {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+A.time:active {
+	COLOR: #999999; TEXT-DECORATION: underline
+}
+.topPage {
+	TEXT-ALIGN: right
+}
+.topNavBar {
+	BACKGROUND-IMAGE: url(/i/redbv_lite_bg.gif); BACKGROUND-COLOR: #900
+}
+.topNav {
+	BACKGROUND-IMAGE: url(/i/redbv_lite_bg.gif); PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #900; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.topNavOn {
+	BACKGROUND-IMAGE: url(/i/redbv_dark_bg.gif); PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #600; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+A.topLink:link {
+	WHITE-SPACE: nowrap; COLOR: #fff; TEXT-DECORATION: none
+}
+A.topLink:visited {
+	WHITE-SPACE: nowrap; COLOR: #fff; TEXT-DECORATION: none
+}
+A.topLink:hover {
+	WHITE-SPACE: nowrap; COLOR: #fc3; TEXT-DECORATION: none
+}
+A.topLink:active {
+	WHITE-SPACE: nowrap; COLOR: #fc3; TEXT-DECORATION: none
+}
+.tourney_bkgd {
+	BACKGROUND-COLOR: #2a2a2a
+}
+.tourney_subhead1 {
+	BACKGROUND-IMAGE: url(/i/graybv_lite_bg.gif); PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #6c6c6c; MARGIN: 0px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 11px; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.tourney_subhead2 {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #4a4a4a; MARGIN: 0px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 11px; FONT-WEIGHT: normal; PADDING-TOP: 3px
+}
+.tourney_subject {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #505050; MARGIN: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; COLOR: #fff; FONT-SIZE: 11px; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.tourney_subnav {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #4a4a4a; MARGIN: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 11px; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.tourney_subnav_on {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #3a3a3a; MARGIN: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 11px; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.tutorBody {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 10px; LINE-HEIGHT: 1.4; FONT-STYLE: normal; PADDING-LEFT: 15px; WIDTH: 540px; PADDING-RIGHT: 15px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; PADDING-TOP: 10px
+}
+.tutorBodyFull {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 10px; LINE-HEIGHT: 1.4; FONT-STYLE: normal; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; PADDING-TOP: 10px
+}
+.tutorHeader {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #999999; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 14px; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.tutorOdd {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.tutorEven {
+	PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #333333; FONT-SIZE: 12px; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.vbcON {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #990000; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #ffffff; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.vbcOFF {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; WHITE-SPACE: nowrap; COLOR: #990000; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+A.vbcLINK:link {
+	COLOR: #990000; TEXT-DECORATION: none
+}
+A.vbcLINK:visited {
+	COLOR: #990000; TEXT-DECORATION: none
+}
+A.vbcLINK:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+A.vbcLINK:active {
+	COLOR: #990000; TEXT-DECORATION: underline
+}
+.usdc_banner {
+	BACKGROUND-IMAGE: url(/i/development/usdc_banner.gif); PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #02359b; MARGIN: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #ffffff; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.usdcTitle {
+	COLOR: #000000; FONT-SIZE: 18px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.usdcTitle:link {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A.usdcTitle:visited {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A.usdcTitle:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+A.usdcTitle:active {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+.usdcSubtitle {
+	COLOR: #000000; FONT-SIZE: 15px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.usdcSubtitle:link {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A.usdcSubtitle:visited {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A.usdcSubtitle:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+A.usdcSubtitle:active {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+.usdcSubNav {
+	BACKGROUND-IMAGE: url(/i/development/usdc_bv_light.gif); BACKGROUND-COLOR: #003399; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.usdcSubNav_On {
+	BACKGROUND-IMAGE: url(/i/development/usdc_bv_light.gif); BACKGROUND-COLOR: #003399; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; WHITE-SPACE: nowrap; COLOR: #fff; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.usdcSubNav_On {
+	BACKGROUND-IMAGE: url(/i/development/usdc_bv_dark.gif); BACKGROUND-COLOR: #003399
+}

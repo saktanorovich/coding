@@ -1,0 +1,125 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3808 - Network</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Network_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3808 - Network</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2006"><b>World Finals - Tokyo - 2006/2007</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3808.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3808"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3808"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+A packet-switching network handles information in small units, breaking
+long messages into multiple packets before routing. Although each
+packet may travel along a different path, and the packets comprising a
+message may arrive at different times or out of order, the receiving
+computer reassembles the original message correctly. </p><p>
+The receiving computer uses a buffer memory to hold packets that arrive
+out of order. You must write a program that calculates the minimum
+buffer size in bytes needed to reassemble the incoming messages when
+the number of messages (<span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark>), the number of packets (<span class="MATH"><i>M</i></span>
+<tex2html_verbatim_mark>), the part of the messages in each packet, the size of each message, and the order of the incoming packets are given. 
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+When each packet arrives, it may be placed into the buffer or moved
+directly to the output area. All packets that are held in the buffer
+are available to be moved to the output area at any time. A packet is
+said to ``pass the buffer" when it is moved to the output area. A
+message is said to ``pass the buffer" when all of its packets have
+passed the buffer. </p><p>
+The packets of any message must be ordered so the data in the sequence
+of packets that pass the buffer is in order. For example, the packet
+containing bytes 3 through 5 of a message must pass the buffer before
+the packet containing bytes 6 through 10 of the same message. Messages
+can pass the buffer in any order, but all packets from a single message
+must pass the buffer consecutively and in order (but not necessarily at
+the same time). Note that unlike actual buffering systems, the process
+for this problem can look ahead at all incoming packets to make its
+decisions. </p><p>
+The packets consist of data and header. The header contains three
+numbers: the message number, the starting byte number of data in the
+packet, and the ending byte number of data in the packet respectively.
+The first byte number in any message is 1. </p><p>
+For example, the figure below shows three messages (with sizes of 10,
+20, and 5 bytes) and five packets. The minimum buffer size for this
+example is 10 bytes. As they arrive, packet #1 and packet #2 are stored
+in the buffer. They occupy 10 bytes. Then packet #3 passes the buffer
+directly. Packet #4 passes the buffer directly and then packet #2 exits
+the buffer. Finally, packet #5 passes the buffer directly and packet #1
+exits the buffer.
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3808.eps}$
+ -->
+<img src="Network_files/p3808.jpg" alt="\epsfbox{p3808.eps}" align="bottom" border="0">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input file contains several test cases. The first line of each test case contains two integers <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(1 \le N \le 5)$
+ -->
+<span class="MATH">(1<img src="Network_files/3808img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>N</i><img src="Network_files/3808img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">5)</span>
+<tex2html_verbatim_mark> and <span class="MATH"><i>M</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(1 \le M \le 1000)$
+ -->
+<span class="MATH">(1<img src="Network_files/3808img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>M</i><img src="Network_files/3808img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">1000)</span>
+<tex2html_verbatim_mark>. The second line contains <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> integers that are the sizes of messages in
+bytes; the first number denotes the size of message #1, the second
+number denotes the size of message #2, and so on. Each of the following
+<span class="MATH"><i>M</i></span>
+<tex2html_verbatim_mark> lines describes a packet with three integers:
+the message number and the starting and ending byte numbers of data in
+the packet. No packet contains more 64 bytes of data. </tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+The last test case is followed by a line containing two zeroes.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, print a line containing the test case number
+(beginning with 1) followed by the minimum buffer size in bytes
+required to reassemble the original messages. Put a blank line after
+the output for each test case. Use the format of the sample output.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>3 3 
+5 5 5 
+1 1 5 
+2 1 5 
+3 1 5 
+3 5 
+10 20 5 
+2 16 20 
+1 6 10 
+3 1 5 
+1 1 5 
+2 1 15 
+0 0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: 0 
+
+Case 2: 10
+</pre> 
+
+<p>
+</p><hr><address>Tokyo 2006-2007</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

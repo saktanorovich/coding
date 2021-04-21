@@ -1,0 +1,173 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3566 - Building a Clock</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Building%20a%20Clock_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3566 - Building a Clock</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2005"><b>World Finals - San Antonio - Texas - 2005/2006</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3566.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3566"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3566"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3566.eps}$
+ -->
+<img src="Building%20a%20Clock_files/p3566.gif" alt="\epsfbox{p3566.eps}" align="right" border="0" height="434" width="455">
+</div>
+
+<p>
+In Old Town Square in the city of Prague, there is a beautiful
+Astronomical Clock, constructed in the year 1410. For centuries, the
+clockmaker's art consisted of using gears to connect a shaft, turning
+at a known rate, to other shafts until, by the proper combination of
+gears, two shafts could be made to turn at the correct rates to
+represent minutes and hours. </p><p>
+You must write a program that, given an input shaft speed and a
+collection of gears, computes how the gears can be connected to create
+a clock with an hour hand and a minute hand. You may use as many shafts
+as you like, but each shaft may have a maximum of three gears. All the
+gears on a shaft turn at the same rate. If a gear having <span class="MATH"><i>T</i>1</span> teeth turning at a rate <span class="MATH"><i>R</i>1</span> is engaged with another gear having <span class="MATH"><i>T</i>2</span> teeth, the turning rate of the second gear is <!-- MATH
+ $-R1(T1/T2)$
+ -->
+<span class="MATH">- <i>R</i>1(<i>T</i>1/<i>T</i>2)</span>. Your
+solution must include two shafts, a minute shaft that turns clockwise
+at the rate of one revolution per hour, and an hour shaft that turns
+clockwise at the rate of one revolution per twelve hours. Your solution
+is not required to use all the available gears.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input consists of several trials, each described by one line of input. Each input line begins with an integer <span class="MATH"><i>N</i></span> <!-- MATH
+ $(3 \le N \le 6)$
+ -->
+<span class="MATH">(3<img src="Building%20a%20Clock_files/3566img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>N</i><img src="Building%20a%20Clock_files/3566img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">6)</span>, the number of gears available for building a clock. <span class="MATH"><i>N</i></span> is followed by another integer <span class="MATH"><i>R</i></span> <!-- MATH
+ $(-3600 \le R \le 3600, R \neq 0)$
+ -->
+<span class="MATH">(- 3600<img src="Building%20a%20Clock_files/3566img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>R</i><img src="Building%20a%20Clock_files/3566img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">3600, <i>R</i> <img src="Building%20a%20Clock_files/3566img3.png" alt="$ \neq$" align="middle" border="0" height="33" width="18"> 0)</span>,
+the turning rate of the input shaft, which is the number of revolutions
+made by the shaft in 24 hours. (A positive number represents clockwise
+rotation, and a negative number represents counter-clockwise rotation.)
+<span class="MATH"><i>R</i></span> is followed by <span class="MATH"><i>N</i></span> gear descriptions. Each gear description is a pair: a one-character name that identifies the gear, followed by an integer <span class="MATH"><i>T</i></span> <!-- MATH
+ $(6 \le T \le 120)$
+ -->
+<span class="MATH">(6<img src="Building%20a%20Clock_files/3566img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>T</i><img src="Building%20a%20Clock_files/3566img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">120)</span>,
+that is the number of teeth on the gear. The names and numbers on each
+input line are separated by spaces, as shown in the sample input. </p><p>
+The last trial is followed by a line containing a single zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each trial, print a line containing the trial number, as shown in
+the sample output. If it is possible to construct a clock using the
+given set of gears, the line containing the trial number must be
+followed by two more output lines, one for the minute hand and one for
+the hour hand. Otherwise, the line containing the trial number must end
+with the words `<tt>IS IMPOSSIBLE</tt>' as shown in the sample output. 
+
+</p><p>
+The line for the minute hand starts with `<tt>Minutes:</tt>'
+followed by a plan that shows how the input shaft is connected by a
+sequence of gears to the minute shaft. The plan consists of a sequence
+of shafts, separated by hyphens. Each shaft is represented by one or
+two characters. The first character is the name of the driven gear ---
+the gear on the shaft that is engaged with a gear on the previous
+shaft. For the input shaft, use an asterisk (<tt>*</tt>) to represent
+the absence of a driven gear. The second character describing a shaft
+is the name of the driving gear --- the gear on the shaft that is
+engaged with a gear on the next shaft. The driven gear and the driving
+gear can be the same gear, in which case the shaft is described by a
+single character which is the name of this gear. The last shaft in the
+plan is the minute shaft, described by a single letter which is the
+name of its driven gear. </p><p>
+The line for the hour hand starts with `<tt>Hours:</tt>' followed by a plan for connecting the input shaft to the hour shaft. Use the same format as the minute plan.
+
+</p><p>
+Each gear may occur only once in the clock. The minute plan and the
+hour plan may have an initial part in common, however. A gear in a
+common initial part will occur both in the minute plan and the hour
+plan. For the same reason, a given shaft can be used in both the hour
+plan and the minute plan. If a shaft is used in both plans, it may or
+may not have the same description in both plans. For example, a shaft
+containing a single gear named A will be represented as A in both
+plans. On the other hand, a shaft containing three gears named A, B,
+and C might be represented as AB in the minute plan (if B is the
+driving gear in that plan) and as AC in the hour plan (if C is the
+driving gear in that plan). </p><p>
+The following lines represent valid output lines: 
+
+</p><p>
+
+</p><p>
+<br>
+
+</p><div align="center">
+<table cols="3">
+<col align="left"><col align="left"><col align="justify" width="5">
+<tbody><tr><td align="left" nowrap="nowrap" valign="baseline">
+<tt>Hours:</tt> </td><td align="left" nowrap="nowrap" valign="baseline"> <tt>*A-BC-D</tt> </td><td align="left" valign="baseline" width="360">
+An input shaft having one gear, engaged with an intermediate shaft
+having two gears, engaged with an hour shaft having one gear. </td></tr>
+<tr><td></td><td></td><td></td></tr>
+<tr><td align="left" nowrap="nowrap" valign="baseline"> 
+<tt>Minutes:</tt> </td><td align="left" nowrap="nowrap" valign="baseline"> <tt>*A-B-C</tt> </td><td align="left" valign="baseline" width="360">
+An input shaft having one gear, engaged with an intermediate shaft
+having one gear, engaged with a minute shaft having one gear. </td></tr>
+<tr><td></td><td></td><td></td></tr>
+<tr><td align="left" nowrap="nowrap" valign="baseline"> 
+<tt>Minutes:</tt> </td><td align="left" nowrap="nowrap" valign="baseline"> <tt>*</tt> </td><td align="left" valign="baseline" width="360"> A plan in which no gears are needed because the input shaft is turning at  the correct rate for the minute shaft. </td></tr>
+</tbody></table>
+
+</div>
+
+<p>
+
+</p><p>
+<br>
+If there are multiple ways to build a clock using the given gears, print the solution that uses the 
+minimum number of shafts. In case of a tie for the minimum number of shafts, print the solution that 
+uses the minimum number of gears. In case of a tie for both the minimum numbers of shafts and gears, 
+print the solution whose string description is alphabetically first. The string description of a 
+solution is its minute plan, followed by its hour plan, concatenated together with asterisks and 
+hyphens removed. For example, a solution in which the minute plan is `<tt>*A-B</tt>' and the hour 
+plan is `<tt>*A-BC-D-E</tt>' has the string description `<tt>ABABCDE</tt>'. 
+
+</p><p>
+Print one blank line between trials.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>6 40 P 7 Q 84 R 50 A 40 B 30 C 14 
+6 40 P 7 Q 84 R 45 A 40 B 30 C 14 
+0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Trial 1 
+Minutes: *B-A-R  
+Hours:   *B-A-RP-C-Q
+
+Trial 2 IS IMPOSSIBLE
+</pre> 
+
+<p>
+</p><p>
+<b>Claimer:</b>
+The data used in this problem is unofficial data
+prepared by Derek Kisman. So any mistake here does not
+imply mistake in the offcial judge data. Only Derek
+Kisman is responsible for the mistakes. Report
+mistakes to dkisman@acm.org
+
+</p><hr><address>San Antonio - Texas 2005-2006</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>
