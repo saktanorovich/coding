@@ -34,10 +34,10 @@ namespace coding.leetcode {
 
             public void handle(Token token) {
                 switch (token.type) {
-                    case 0: A(token); break;
-                    case 1: N(token); break;
-                    case 2: O(token); break;
-                    case 3: C(token); break;
+                    case 0: AtomName(token); break;
+                    case 1: AtomsCnt(token); break;
+                    case 2: OBracket(token); break;
+                    case 3: CBracket(token); break;
                 }
                 lastToken = token;
             }
@@ -47,7 +47,7 @@ namespace coding.leetcode {
                 return stack.Single();
             }
 
-            private void A(Token token) {
+            private void AtomName(Token token) {
                 if (lastToken?.type == 0) {
                     add(lastToken.value, 1);
                 }
@@ -56,7 +56,7 @@ namespace coding.leetcode {
                 }
             }
 
-            private void N(Token token) {
+            private void AtomsCnt(Token token) {
                 var num = int.Parse(token.value);
                 if (lastToken.type == 0) {
                     add(lastToken.value, num);
@@ -67,7 +67,7 @@ namespace coding.leetcode {
                 }
             }
 
-            private void O(Token token) {
+            private void OBracket(Token token) {
                 if (lastToken?.type == 0) {
                     add(lastToken.value, 1);
                 }
@@ -77,7 +77,7 @@ namespace coding.leetcode {
                 stack.Push(new Dictionary<string, int>());
             }
 
-            private void C(Token token) {
+            private void CBracket(Token token) {
                 if (lastToken?.type == 0) {
                     add(lastToken.value, 1);
                 }
