@@ -1,0 +1,2743 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0076)http://www.topcoder.com/stat -->
+<HTML><HEAD><TITLE>TopCoder Statistics - Problem Solution</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<SCRIPT language=JavaScript type=text/javascript 
+src="RaceOrdering_sol_files/tcscript.js"></SCRIPT>
+<LINK rel=stylesheet type=text/css href="RaceOrdering_sol_files/style.css"><LINK 
+rel=stylesheet type=text/css href="RaceOrdering_sol_files/coders.css"><LINK 
+rel=stylesheet type=text/css 
+href="RaceOrdering_sol_files/tcStyles20080219.css"><LINK rel=stylesheet 
+type=text/css href="RaceOrdering_sol_files/jobsRemix.css">
+<META name=GENERATOR content="MSHTML 8.00.6001.23111"></HEAD>
+<BODY>
+<SCRIPT type=text/javascript src="RaceOrdering_sol_files/popup.js"></SCRIPT>
+
+<DIV id=shortcutBar>
+<DIV class=icon><A href="http://www.topcoder.com/tc"><IMG 
+onmouseover="postPopUpText('globalPopupText','Home'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" src="RaceOrdering_sol_files/scHome.png"></A></DIV>
+<DIV class=icon><A href="javascript:arena();"><IMG 
+onmouseover="postPopUpText('globalPopupText','Algorithm Competitions'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" src="RaceOrdering_sol_files/scAlgo.png"></A></DIV>
+<DIV class=icon><A 
+href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=23"><IMG 
+onmouseover="postPopUpText('globalPopupText','Software Conceptualization Competitions'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" 
+src="RaceOrdering_sol_files/scConceptualization.png"></A></DIV>
+<DIV class=icon><A 
+href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=6"><IMG 
+onmouseover="postPopUpText('globalPopupText','Software Specification Competitions'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" 
+src="RaceOrdering_sol_files/scSpecification.png"></A></DIV>
+<DIV class=icon><A 
+href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=7"><IMG 
+onmouseover="postPopUpText('globalPopupText','Software Architecture Competitions'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" 
+src="RaceOrdering_sol_files/scArchitecture.png"></A></DIV>
+<DIV class=icon><A 
+href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112"><IMG 
+onmouseover="postPopUpText('globalPopupText','Component Design Competitions'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" src="RaceOrdering_sol_files/scDesign.png"></A></DIV>
+<DIV class=icon><A 
+href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113"><IMG 
+onmouseover="postPopUpText('globalPopupText','Component Development Competitions'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" 
+src="RaceOrdering_sol_files/scDevelopment.png"></A></DIV>
+<DIV class=icon><A 
+href="http://www.topcoder.com/tc?module=ViewAssemblyActiveContests"><IMG 
+onmouseover="postPopUpText('globalPopupText','Software Assembly Competitions'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" 
+src="RaceOrdering_sol_files/scAssembly.png"></A></DIV>
+<DIV class=icon><A 
+href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=13"><IMG 
+onmouseover="postPopUpText('globalPopupText','Testing Competitions'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" 
+src="RaceOrdering_sol_files/scTesting.png"></A></DIV>
+<DIV class=icon><A 
+href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=35"><IMG 
+onmouseover="postPopUpText('globalPopupText','Content Creation Competitions'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" 
+src="RaceOrdering_sol_files/scContentCreation.gif"></A></DIV>
+<DIV class=icon><A href="javascript:arena();"><IMG 
+onmouseover="postPopUpText('globalPopupText','High School Competitions'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" src="RaceOrdering_sol_files/scTCHS.png"></A></DIV>
+<DIV class=icon><A 
+href="http://www.topcoder.com/longcontest/?module=ViewActiveContests"><IMG 
+onmouseover="postPopUpText('globalPopupText','Marathon Matches'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" 
+src="RaceOrdering_sol_files/scMarathon.png"></A></DIV>
+<DIV class=icon><A 
+href="http://studio.topcoder.com/?module=ViewActiveContests"><IMG 
+onmouseover="postPopUpText('globalPopupText','TopCoder Studio Competitions'); popUp(this,'globalPopup');" 
+onmouseout=popHide() alt="" 
+src="RaceOrdering_sol_files/scStudio.png"></A></DIV></DIV>
+<DIV id=globalPopup class=popUp>
+<DIV id=globalPopupText></DIV></DIV>
+<DIV style="POSITION: absolute; TOP: 31px; RIGHT: 0px"><A 
+href="http://www.topcoder.com/tc?module=MyHome"><IMG style="DISPLAY: block" 
+alt="My TopCoder" src="RaceOrdering_sol_files/myTopCoder.png"></A></DIV>
+<DIV style="MARGIN: 0px 290px 0px 280px" align=center>
+<DIV id=outerLogo>
+<DIV id=innerLogo><A href="http://www.topcoder.com/"><IMG style="DISPLAY: block" 
+alt=TopCoder src="RaceOrdering_sol_files/topcoder.gif"></A> </DIV></DIV></DIV>
+<DIV class=memberCountBox>Member Count: 290,225 - April 10, 2011 &nbsp;<A 
+class=gMetal href="javascript:tcTime()">[Get Time]</A> </DIV>
+<DIV class=topBar>
+<DIV style="MARGIN: 5px 0px 0px; FLOAT: right">Hello,&nbsp;<A 
+class=coderTextBlue 
+href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22714428">sergeva</A> 
+| <A class=gMetal href="http://www.topcoder.com/tc?module=Logout">Logout</A> 
+</DIV></DIV>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD vAlign=top width=180>
+      <SCRIPT language=JavaScript type=text/javascript 
+      src="RaceOrdering_sol_files/arena.js"></SCRIPT>
+
+      <SCRIPT language=JavaScript type=text/javascript>
+<!--
+function toggleMenu(menuTitle,menuID){
+   var menu = document.getElementById(menuID);
+   if(menu.style.display == 'block') menu.className = 'CLOSED';
+   else if(menu.className == 'OPEN' && menu.style.display != 'none') menu.className = 'CLOSED';
+   else {
+      menu.className = 'OPEN';
+   }
+   if(menuTitle.blur)menuTitle.blur();
+   if(menuTitle.className == 'exp') menuTitle.className = 'exp_ed';
+   else menuTitle.className = 'exp';
+   return;
+}
+function flipMenu(myMenuName){
+   var menuName = document.getElementById(myMenuName);
+   menuName.className = 'exp_ed';
+}
+
+// -->
+</SCRIPT>
+
+      <DIV 
+      style="PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px"><IMG 
+      alt="" src="RaceOrdering_sol_files/leftnav_top.gif"></DIV>
+      <DIV id=navbar>
+      <UL>
+        <LI class=exp_ed><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_competitions')" 
+        href="javascript:void(0)">Competitions</A> 
+        <UL id=m_competitions class=OPEN>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_competitions_overview')" 
+          href="javascript:void(0)">Overview</A> 
+          <UL id=m_competitions_overview>
+            <LI><A href="http://apps.topcoder.com/wiki/x/MQD9Ag">Reliability</A> 
+            </LI>
+            <LI><A href="http://apps.topcoder.com/wiki/x/lYE_/">Ratings</A> 
+</LI>
+            <LI><A href="http://apps.topcoder.com/wiki/x/aoE_/">How to Get 
+            Paid</A> </LI>
+            <LI><A href="http://apps.topcoder.com/wiki/x/2gRmAw">Administrative 
+            Overview </A></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_copilot_opportunities')" 
+          href="javascript:void(0)">Copilot Opportunities</A> 
+          <UL id=m_copilot_opportunities>
+            <LI><A 
+            href="http://apps.topcoder.com/wiki/display/tc/Copilot+Overview">Overview</A> 
+            </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_copilot_support')" 
+            href="javascript:void(0)">Track Information</A> 
+            <UL id=m_copilot_support>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Copilot+Opportunities">Tutorial</A> 
+              </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=29">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=CompList&amp;ph=140">Past 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewCopilotPool">Copilot 
+            Pool</A> </LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'competition_design')" 
+          href="javascript:void(0)">Design</A> 
+          <UL id=competition_design>
+            <LI><A href="http://studio.topcoder.com/">Studio</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_conceptualization_competitions')" 
+            href="javascript:void(0)">Conceptualization</A> 
+            <UL id=m_conceptualization_competitions>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/TopCoder+Conceptualization+Contests">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_conceptualization_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_conceptualization_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Conceptualization+Competitions">How 
+                to Compete</A> </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Conceptualization+Documentation">Documentation</A> 
+                </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Conceptualization+Submission+Instructions">Tutorial</A> 
+                </LI></UL></LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=23">Active 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=23">Contest 
+              Status</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;ph=134">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=23">Review 
+              Opportunities</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=23">Meet 
+              the Review Board</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_specification_competitions')" 
+            href="javascript:void(0)">Specification</A> 
+            <UL id=m_specification_competitions>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/TopCoder+Specification+Contests">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_specification_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_specification_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Specification+Competitions">How 
+                to Compete</A> </LI></UL></LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=6">Active 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=6">Contest 
+              Status</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;ph=117">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=6">Review 
+              Opportunities</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=6">Meet 
+              the Review Board</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_architecture_competitions')" 
+            href="javascript:void(0)">Architecture</A> 
+            <UL id=m_architecture_competitions>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/Architecture+Overview">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_architecture_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_architecture_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Architecture+Competitions">How 
+                to Compete</A> </LI></UL></LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=7">Active 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=7">Contest 
+              Status</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;ph=118">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=7">Review 
+              Opportunities</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=7">Meet 
+              the Review Board</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_des_competitions')" 
+            href="javascript:void(0)">Component Design</A> 
+            <UL id=m_des_competitions>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/Component+Design+Overview">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_des_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_des_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Design+Competitions">How 
+                to Compete</A> </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Component+Design+Documentation">Documentation</A> 
+                </LI>
+                <LI><A 
+                href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=112">Recent 
+                Color Changes</A> </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Component+Design+Data+Feeds">Data 
+                Feeds</A> </LI></UL></LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112">Active 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=1">Contest 
+              Status</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;ph=112">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=1">Review 
+              Opportunities</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=1">Meet 
+              the Review Board</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'competition_dev')" 
+          href="javascript:void(0)">Development</A> 
+          <UL id=competition_dev>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_dev_competitions')" 
+            href="javascript:void(0)">Component Development</A> 
+            <UL id=m_dev_competitions>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Development+Competitions">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_dev_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_dev_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Development+Competitions">How 
+                to Compete</A> </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Component+Development+Documentation">Documentation</A> 
+                </LI>
+                <LI><A 
+                href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=113">Recent 
+                Color Changes</A> </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Component+Development+Data+Feeds">Data 
+                Feeds</A> </LI></UL></LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113">Active 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=2">Contest 
+              Status</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;ph=113">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=2">Review 
+              Opportunities</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=2">Meet 
+              the Review Board</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_competitions')" 
+            href="javascript:void(0)">Assembly</A> 
+            <UL id=m_assembly_competitions>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/Assembly">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_assembly_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Assembly+Competitions">How 
+                to Compete</A> </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Assembly+Competition+Tutorial">Tutorial</A> 
+                </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Assembly+Competition+Documentation">Documentation</A> 
+                </LI></UL></LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewAssemblyActiveContests">Active 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=14">Contest 
+              Status</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;ph=125">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=14">Review 
+              Opportunities</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=14">Meet 
+              the Review Board</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_test_suites_competitions')" 
+            href="javascript:void(0)">Test Suites</A> 
+            <UL id=m_test_suites_competitions>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/Test+Scenarios+and+Scripts">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_test_suites_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_test_suites_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Testing+Competitions">How 
+                to Compete</A> </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Tutorial">Tutorial</A> 
+                </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Documentation">Documentation</A> 
+                </LI></UL></LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=13">Active 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=13">Contest 
+              Status</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;pt=13">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=13">Review 
+              Opportunities</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=13">Meet 
+              the Review Board</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'competition_ui_dev')" 
+          href="javascript:void(0)">UI Development</A> 
+          <UL id=competition_ui_dev>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_ui_prototype_competitions')" 
+            href="javascript:void(0)">UI Prototype</A> 
+            <UL id=m_ui_prototype_competitions>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/UI+Prototype+Competitions">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_ui_prototype_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_ui_prototype_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+UI+Prototype+Competitions">How 
+                to Compete</A> </LI></UL></LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=19">Active 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=19">Contest 
+              Status</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;pt=19">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=19">Review 
+              Opportunities</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=19">Meet 
+              the Review Board</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_ria_build_competitions')" 
+            href="javascript:void(0)">RIA Build</A> 
+            <UL id=m_ria_build_competitions>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/RIA+Build+Competitions">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_ria_build_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_ria_build_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+RIA+Builds">How 
+                to Compete</A> </LI></UL></LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=24">Active 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=24">Contest 
+              Status</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;pt=24">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=24">Review 
+              Opportunities</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=24">Meet 
+              the Review Board</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_content_creation_competitions')" 
+            href="javascript:void(0)">Content Creation</A> 
+            <UL id=m_content_creation_competitions>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/Content+Contests+Overview">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_content_creation_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_content_creation_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Content+Creation+Competitions">How 
+                to Compete</A> </LI></UL></LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=35">Active 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=35">Contest 
+              Status</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;pt=35">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=35">Review 
+              Opportunities</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=35">Meet 
+              the Review Board</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'competition_qa')" 
+          href="javascript:void(0)">QA and Maintenance</A> 
+          <UL id=competition_qa>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_test_scenarios_competitions')" 
+            href="javascript:void(0)">Test Scenarios</A> 
+            <UL id=m_test_scenarios_competitions>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/Test+Scenarios+and+Scripts">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_test_scenarios_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_test_scenarios_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Testing+Competitions">How 
+                to Compete</A> </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Tutorial">Tutorial</A> 
+                </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Testing+Competition+Documentation">Documentation</A> 
+                </LI></UL></LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ActiveContests&amp;pt=26">Active 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ContestStatus&amp;pt=26">Contest 
+              Status</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;pt=26">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;pt=26">Review 
+              Opportunities</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ReviewBoard&amp;pt=26">Meet 
+              the Review Board</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_bugraces_competitions')" 
+            href="javascript:void(0)">Bug Race</A> 
+            <UL id=m_bugraces_competitions>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/Bug+Race+Competition+Overview">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_bugraces_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_bugraces_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Bug+Race+Competitions">How 
+                to Compete</A> </LI></UL></LI>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/Active+Bug+Race+Competitions">Active 
+              Contests</A> </LI>
+              <LI><A href="http://apps.topcoder.com/wiki/x/FQG2AQ">Review 
+              Opportunities</A> </LI></UL></LI></UL></LI>
+          <LI class=exp_ed><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'competition_algo')" 
+          href="javascript:void(0)">Algorithm</A> 
+          <UL id=competition_algo class=OPEN>
+            <LI class=exp_ed><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_algo_competitions')" 
+            href="javascript:void(0)">Single Round Matches (SRM)</A> 
+            <UL id=m_algo_competitions class=OPEN>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Overview">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_algo_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_algo_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Algorithm+Competitions">How 
+                to Compete</A> </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Competition+FAQs">FAQs</A> 
+                </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Competition+Rating+System">Rating 
+                System</A> </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Write+Problems+for+TopCoder">Write 
+                Problems</A> </LI></UL></LI>
+              <LI class=exp_ed><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_algo_stats')" 
+              href="javascript:void(0)">Statistics</A> 
+              <UL id=m_algo_stats class=OPEN>
+                <LI><A href="http://www.topcoder.com/tc?module=MatchList">Match 
+                Archive</A> </LI>
+                <LI><A 
+                href="http://www.topcoder.com/stat?c=round_overview">Match 
+                Overviews</A> </LI>
+                <LI><A 
+                href="http://www.topcoder.com/tc?module=SrmDivisionWins">Match 
+                Winners</A> </LI>
+                <LI><A href="http://www.topcoder.com/stat?c=last_match">Match 
+                Results</A> </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis">Match 
+                Editorials</A> </LI>
+                <LI><A 
+                href="http://www.topcoder.com/tc?module=ProblemArchive">Problem 
+                Archive</A> </LI>
+                <LI><A 
+                href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=1">Recent 
+                Color Changes</A> </LI>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Data+Feeds">Data 
+                Feeds</A> </LI></UL></LI>
+              <LI><A href="javascript:arena();">Launch Arena</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_long_contests')" 
+            href="javascript:void(0)">Marathon Match</A> 
+            <UL id=m_long_contests>
+              <LI><A 
+              href="http://apps.topcoder.com/wiki/display/tc/Marathon+Match+Overview">Overview</A> 
+              </LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_long_support')" 
+              href="javascript:void(0)">Track Information</A> 
+              <UL id=m_long_support>
+                <LI><A 
+                href="http://apps.topcoder.com/wiki/display/tc/How+to+Compete+in+Marathon+Match+Events">How 
+                to Compete</A> </LI>
+                <LI><A 
+                href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=ratings">Rating 
+                System</A> </LI></UL></LI>
+              <LI class=exp><A 
+              onclick="Javascript:toggleMenu(this.parentNode,'m_long_stats')" 
+              href="javascript:void(0)">Statistics</A> 
+              <UL id=m_long_stats>
+                <LI><A 
+                href="http://www.topcoder.com/longcontest/stats/?module=MatchList">Match 
+                Archive</A> </LI>
+                <LI><A 
+                href="http://www.topcoder.com/longcontest/stats/?module=ViewOverview">Match 
+                Overview</A> </LI>
+                <LI><A 
+                href="http://www.topcoder.com/longcontest/stats/?module=MatchWinners">Match 
+                Winners</A> </LI>
+                <LI><A 
+                href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=match_editorials&amp;d2=archive">Match 
+                Editorials</A> </LI>
+                <LI><A 
+                href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=dataFeed">Data 
+                Feeds</A> </LI></UL></LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=ViewActiveContests">Active 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=ViewPractice">Practice</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=ViewQueue">Queue 
+              Status</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_hs_competitions')" 
+          href="javascript:void(0)">High School</A> 
+          <UL id=m_hs_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=home">Overview</A> 
+            </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_hs_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_hs_stats>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundOverview">Match 
+              Overview</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundStatsTeam">Match 
+              Results (Team)</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundStatsInd">Match 
+              Results (Indiv.)</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=match_editorials&amp;d3=archive">Match 
+              Editorials</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=2">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=dataFeed">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=spotlightSessions">Spotlight 
+            Sessions</A> </LI>
+            <LI><A href="javascript:arena();">Launch Arena</A> </LI></UL></LI>
+          <LI><A href="http://www.topcoder.com/dr">The Digital Run</A> </LI>
+          <LI><A href="http://software.topcoder.com/review">Submit &amp; 
+          Review</A> </LI></UL></LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_topcoder_networks')" 
+        href="javascript:void(0)">TopCoder Networks</A> 
+        <UL id=m_topcoder_networks>
+          <LI><A href="http://community.topcoder.com/alcatel/">Alcatel 
+          Lucent</A> </LI>
+          <LI><A href="http://community.topcoder.com/darpacs/">DARPA CS-STEM</A> 
+          </LI>
+          <LI><A href="http://community.topcoder.com/ntl/">NASA Tournament 
+          Lab</A> </LI>
+          <LI><A href="http://community.topcoder.com/x/">PayPalX</A> 
+        </LI></UL></LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_events')" 
+        href="javascript:void(0)">Events</A> 
+        <UL id=m_events>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=calendar&amp;d2=thisMonth">Event 
+          Calendar</A> </LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_tournaments')" 
+          href="javascript:void(0)">Tournaments</A> 
+          <UL id=m_tournaments>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tournaments&amp;d2=home">TopCoder</A> 
+            </LI>
+            <LI><A href="http://www.topcoder.com/pl/">Powered by TopCoder</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=CRPFStatic&amp;d1=crpf&amp;d2=crpf_overview">Charity</A> 
+            </LI></UL></LI></UL></LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_stats')" 
+        href="javascript:void(0)">Statistics</A> 
+        <UL id=m_stats>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_competitor_stats')" 
+          href="javascript:void(0)">The Tops</A> 
+          <UL id=m_competitor_stats>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_top_rated_competitors')" 
+            href="javascript:void(0)">Top Ranked</A> 
+            <UL id=m_top_rated_competitors>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=AlgoRank">Algorithm</A> 
+              </LI>
+              <LI><A href="http://www.topcoder.com/tc?module=HSRank">High 
+              School</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/stats/?module=CoderRank">Marathon 
+              Match</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_conceptors">Conceptualization</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_specificators">Specification</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_architects">Architecture</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_designers">Design</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_developers">Development</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_assemblers">Assembly</A> 
+              </LI>
+              <LI><A href="http://www.topcoder.com/stat?c=top_testers">Test 
+              Suites</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_recordbook')" 
+            href="javascript:void(0)">Record Book</A> 
+            <UL id=m_recordbook>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=statistics&amp;d2=recordbook_home">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=compstats&amp;d2=comp_recordbook_home">Component</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=stats&amp;d2=recordbook_home">Marathon 
+              Match</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_com')" 
+            href="javascript:void(0)">Coder of the Month</A> 
+            <UL id=m_com>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=5">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=6">Design</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=7">Development</A> 
+              </LI></UL></LI></UL></LI></UL></LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_edu_content')" 
+        href="javascript:void(0)">Tutorials</A> 
+        <UL id=m_edu_content>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=education&amp;d2=overview">Overview</A> 
+          </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=alg_index">Algorithm 
+          Tutorials</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=comp_index">Component 
+          Tutorials</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=mm_index">Marathon 
+          Tutorials</A> </LI>
+          <LI><A href="http://apps.topcoder.com/wiki/dashboard.action">Wiki</A> 
+          </LI></UL></LI>
+        <LI><A href="http://forums.topcoder.com/">Forums</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?&amp;module=SurveyList">Surveys</A> 
+        </LI>
+        <LI><A href="http://www.topcoder.com/tc?module=MyHome">My TopCoder</A> 
+        </LI>
+        <LI><A href="http://www.topcoder.com/home/help">Help Center</A> </LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_about_tc')" 
+        href="javascript:void(0)">About TopCoder</A> 
+        <UL id=m_about_tc>
+          <LI><A href="http://www.topcoder.com/home">Overview</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=whyjoin">Why 
+          Join TopCoder?</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=jobs">Working 
+          at TopCoder</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=management">Leadership</A> 
+          </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+          Room</A> </LI></UL></LI></UL>
+      <DIV 
+      style="PADDING-BOTTOM: 0px; PADDING-LEFT: 17px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 10px"><A 
+      href="http://www.topcoder.com/tc?module=LinkTracking&amp;link=http://apps.topcoder.com/wiki/x/L4TD&amp;refer=leftnav"><IMG 
+      alt="UML Tool" src="RaceOrdering_sol_files/umlTool.png"></A> </DIV>
+      <DIV id=navbarSearch><B>Member Search:</B> 
+      <FORM id=simpleSearchForm class=noSpace method=get name=simpleSearchForm 
+      action=http://www.topcoder.com/tc><INPUT class=noSpace value=SimpleSearch 
+      type=hidden name=module> <INPUT 
+      onblur="javascript:if (document.simpleSearchForm.ha.value == '')document.simpleSearchForm.ha.value = 'Handle:';" 
+      class=noSpace 
+      onfocus="javascript: if (document.simpleSearchForm.ha.value=='Handle:') document.simpleSearchForm.ha.value = '';" 
+      value=Handle: maxLength=15 size=12 name=ha> <A class=gMetal 
+      href="javascript:void document.simpleSearchForm.submit();">Go</A><BR><A 
+      class=gMetal 
+      href="http://www.topcoder.com/tc?module=ViewAdvanced">Advanced Search</A> 
+      </FORM></DIV></DIV>
+      <DIV 
+      style="PADDING-BOTTOM: 23px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; CLEAR: left; PADDING-TOP: 0px"><IMG 
+      alt="" src="RaceOrdering_sol_files/leftnav_bottom.gif"></DIV>
+      <DIV style="MARGIN: 0px; WIDTH: 170px; FLOAT: left; CLEAR: left" 
+      align=center><IMG style="MARGIN-BOTTOM: 23px" alt="" 
+      src="RaceOrdering_sol_files/brackets.png"> </DIV></TD>
+    <TD vAlign=top width=10><IMG border=0 
+      src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+    <TD class=bodyText vAlign=top width="100%"><IMG border=0 vspace=5 
+      src="RaceOrdering_sol_files/clear.gif" width=240 height=1><BR><!-- BEGIN BODY -->
+      <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD height=26 vAlign=bottom width=11 align=left><IMG border=0 
+            src="RaceOrdering_sol_files/steelblue_top_left1.gif" width=11 
+            height=26></TD>
+          <TD vAlign=bottom width=180 align=left><IMG border=0 
+            src="RaceOrdering_sol_files/header_statistics.gif" width=180 
+            height=26></TD>
+          <TD class=bodyTextBold vAlign=center width="100%">&nbsp;<SPAN 
+            class=bodySubhead>&nbsp;&nbsp;Problem Statistics&nbsp;&nbsp;</SPAN> 
+          </TD>
+          <TD vAlign=top width=10 align=right><IMG border=0 alt="" 
+            src="RaceOrdering_sol_files/clear.gif" width=10 
+        height=26></TD></TR></TBODY></TABLE>
+      <TABLE border=0 cellSpacing=0 cellPadding=10 width="100%" 
+        bgColor=#001b35><TBODY>
+        <TR>
+          <TD vAlign=top width="100%"><IMG border=0 alt="" 
+            src="RaceOrdering_sol_files/clear.gif" width=240 height=1><BR>
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+              <TBODY>
+              <TR>
+                <TD class=statText colSpan=4><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 
+height=10></TD></TR>
+              <TR>
+                <TD class=statText colSpan=4><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 
+              height=8></TD></TR></TBODY></TABLE>
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" 
+            bgColor=#001b35>
+              <TBODY>
+              <TR>
+                <TD colSpan=8><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=8><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=5></TD></TR>
+              <TR>
+                <TD class=statTextBig height=18 
+                background=RaceOrdering_sol_files/steel_gray_bg.gif 
+                  colSpan=8>&nbsp;Problem Statistics for <A class=statText 
+                  href="http://www.topcoder.com/stat?c=round_overview&amp;rd=10787">Single 
+                  Round Match 371&nbsp;&gt;&nbsp;Round 1</A> &gt; <A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=coder_room_stats&amp;cr=10574855&amp;rd=10787">Room 
+                  6</A> &gt; <A class=coderTextRed 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=10574855&amp;tab=alg">Petr</A> 
+                </TD></TR>
+              <TR>
+                <TD colSpan=8><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText height=18 vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                width="20%">Class Name</TD>
+                <TD class=statText vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                align=middle>Method Name</TD>
+                <TD class=statText vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                align=middle>&nbsp;</TD>
+                <TD class=statText vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                align=middle>Difficulty</TD>
+                <TD class=statText vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                align=middle>Status</TD>
+                <TD class=statText vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                align=right>Score</TD>
+                <TD vAlign=top 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 
+height=1></TD></TR>
+              <TR>
+                <TD colSpan=8><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD vAlign=center width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText height=18 vAlign=center width="20%"><A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=problem_solution&amp;rd=10787&amp;rm=&amp;cr=10574855&amp;pm=8262">SpiralRoute</A> 
+                </TD>
+                <TD class=statText vAlign=center 
+align=middle>thronePosition</TD>
+                <TD class=statText vAlign=center align=middle><A 
+                  class=statText 
+                  href="http://www.topcoder.com/tc?module=ProblemDetail&amp;rd=10787&amp;pm=8262">problem 
+                  details</A> </TD>
+                <TD class=statText vAlign=center align=middle>Level One</TD>
+                <TD class=statText vAlign=center align=middle>Passed System 
+                  Test</TD>
+                <TD class=statText vAlign=center align=right>246,76</TD>
+                <TD vAlign=top width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 
+height=1></TD></TR>
+              <TR>
+                <TD vAlign=center width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText height=18 vAlign=center width="20%"><A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=problem_solution&amp;rd=10787&amp;rm=&amp;cr=10574855&amp;pm=7726">ChessMatchup</A> 
+                </TD>
+                <TD class=statText vAlign=center align=middle>maximumScore</TD>
+                <TD class=statText vAlign=center align=middle><A 
+                  class=statText 
+                  href="http://www.topcoder.com/tc?module=ProblemDetail&amp;rd=10787&amp;pm=7726">problem 
+                  details</A> </TD>
+                <TD class=statText vAlign=center align=middle>Level Two</TD>
+                <TD class=statText vAlign=center align=middle>Passed System 
+                  Test</TD>
+                <TD class=statText vAlign=center align=right>485,94</TD>
+                <TD vAlign=top width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 
+height=1></TD></TR>
+              <TR>
+                <TD vAlign=center width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText height=18 vAlign=center width="20%"><SPAN 
+                  class=coderBrackets>[&nbsp;</SPAN><SPAN 
+                  class=statText>RaceOrdering</SPAN><SPAN 
+                  class=coderBrackets>&nbsp;]</SPAN> </TD>
+                <TD class=statText vAlign=center align=middle>countOrders</TD>
+                <TD class=statText vAlign=center align=middle><A 
+                  class=statText 
+                  href="http://www.topcoder.com/tc?module=ProblemDetail&amp;rd=10787&amp;pm=7703">problem 
+                  details</A> </TD>
+                <TD class=statText vAlign=center align=middle>Level Three</TD>
+                <TD class=statText vAlign=center align=middle>Passed System 
+                  Test</TD>
+                <TD class=statText vAlign=center align=right>785,32</TD>
+                <TD vAlign=top width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 
+height=1></TD></TR>
+              <TR>
+                <TD colSpan=8><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=3></TD></TR>
+              <TR>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  colSpan=8><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=5></TD></TR>
+              <TR>
+                <TD class=statText colSpan=8><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 
+height=16></TD></TR>
+              <TR>
+                <TD class=statText vAlign=center colSpan=8 align=middle><A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=problem_statement&amp;pm=7703&amp;rd=10787&amp;rm=&amp;cr=10574855">View&nbsp;RaceOrdering 
+                  &nbsp; Problem Statement</A> </TD></TR>
+              <TR>
+                <TD class=problemText vAlign=center colSpan=8 
+                  align=left>import&nbsp;java.util.*;<BR>&nbsp;<BR>public&nbsp;class&nbsp;RaceOrdering&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;final&nbsp;static&nbsp;long&nbsp;MOD&nbsp;=&nbsp;1000003;<BR>&nbsp;&nbsp;&nbsp;&nbsp;long[][]&nbsp;c;<BR>&nbsp;&nbsp;&nbsp;&nbsp;int[]&nbsp;first;<BR>&nbsp;&nbsp;&nbsp;&nbsp;int[]&nbsp;second;<BR>&nbsp;&nbsp;&nbsp;&nbsp;boolean[]&nbsp;mark;<BR>&nbsp;&nbsp;&nbsp;&nbsp;List&lt;Integer&gt;&nbsp;cur;<BR>&nbsp;&nbsp;&nbsp;&nbsp;long&nbsp;res;<BR>&nbsp;&nbsp;&nbsp;&nbsp;long&nbsp;cres;<BR>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;rem;<BR>&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;int&nbsp;countOrders(int&nbsp;n,&nbsp;int[]&nbsp;first,&nbsp;int[]&nbsp;second)&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;=&nbsp;new&nbsp;long[n&nbsp;+&nbsp;1][n&nbsp;+&nbsp;1];<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c[0][0]&nbsp;=&nbsp;1;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;i&nbsp;=&nbsp;1;&nbsp;i&nbsp;&lt;=&nbsp;n;&nbsp;++i)&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c[i][0]&nbsp;=&nbsp;1;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;j&nbsp;=&nbsp;1;&nbsp;j&nbsp;&lt;=&nbsp;n;&nbsp;++j)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c[i][j]&nbsp;=&nbsp;(c[i&nbsp;-&nbsp;1][j&nbsp;-&nbsp;1]&nbsp;+&nbsp;c[i&nbsp;-&nbsp;1][j])&nbsp;%&nbsp;MOD;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mark&nbsp;=&nbsp;new&nbsp;boolean[n];<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.first&nbsp;=&nbsp;first;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.second&nbsp;=&nbsp;second;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;=&nbsp;1;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rem&nbsp;=&nbsp;n;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;n;&nbsp;++i)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!mark[i])&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cur&nbsp;=&nbsp;new&nbsp;ArrayList&lt;Integer&gt;();<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dfs(i);<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;process();<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;=&nbsp;((res&nbsp;*&nbsp;cres)&nbsp;%&nbsp;MOD&nbsp;*&nbsp;c[rem][cur.size()])&nbsp;%&nbsp;MOD;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rem&nbsp;-=&nbsp;cur.size();<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(int)&nbsp;res;<BR>&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;void&nbsp;process()&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;n&nbsp;=&nbsp;cur.size();<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[]&nbsp;before&nbsp;=&nbsp;new&nbsp;int[n];<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;first.length;&nbsp;++i)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(cur.indexOf(second[i])&nbsp;&gt;=&nbsp;0)&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;a&nbsp;=&nbsp;cur.indexOf(first[i]);<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;b&nbsp;=&nbsp;cur.indexOf(second[i]);<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;before[b]&nbsp;|=&nbsp;(1&nbsp;&lt;&lt;&nbsp;a);<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[]&nbsp;am&nbsp;=&nbsp;new&nbsp;int[1&nbsp;&lt;&lt;&nbsp;n];<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;am[0]&nbsp;=&nbsp;1;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;i&nbsp;=&nbsp;1;&nbsp;i&nbsp;&lt;&nbsp;(1&nbsp;&lt;&lt;&nbsp;n);&nbsp;++i)&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;j&nbsp;=&nbsp;0;&nbsp;j&nbsp;&lt;&nbsp;n;&nbsp;++j)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(((i&nbsp;&gt;&gt;&nbsp;j)&nbsp;&amp;&nbsp;1)&nbsp;!=&nbsp;0&nbsp;&amp;&amp;&nbsp;((i&nbsp;&amp;&nbsp;before[j])&nbsp;==&nbsp;before[j]))&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;am[i]&nbsp;+=&nbsp;am[i&nbsp;^&nbsp;(1&nbsp;&lt;&lt;&nbsp;j)];<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(am[i]&nbsp;&gt;=&nbsp;MOD)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;am[i]&nbsp;-=&nbsp;MOD;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cres&nbsp;=&nbsp;am[(1&nbsp;&lt;&lt;&nbsp;n)&nbsp;-&nbsp;1];<BR>&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;void&nbsp;dfs(int&nbsp;at)&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(mark[at])<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mark[at]&nbsp;=&nbsp;true;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cur.add(at);<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;first.length;&nbsp;++i)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(first[i]&nbsp;==&nbsp;at)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dfs(second[i]);<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;if&nbsp;(second[i]&nbsp;==&nbsp;at)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dfs(first[i]);<BR>&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;<BR>}<BR>&nbsp;<BR>&nbsp;<BR>//&nbsp;Powered&nbsp;by&nbsp;FileEdit<BR>//&nbsp;Powered&nbsp;by&nbsp;RETester&nbsp;[based&nbsp;on&nbsp;ExampleBuilder]<BR>//&nbsp;Powered&nbsp;by&nbsp;CodeProcessor<BR></TD></TR>
+              <TR>
+                <TD colSpan=8><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 
+              height=5></TD></TR></TBODY></TABLE><!-- Defenses --><!-- End Defense --><!-- System Testing -->
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" 
+            bgColor=#001b35>
+              <TBODY>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=5></TD></TR>
+              <TR>
+                <TD class=statTextBig height=18 
+                background=RaceOrdering_sol_files/steel_gray_bg.gif 
+                  colSpan=9>&nbsp;System Test Results</TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText height=18 vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                width="20%">Test Arguments</TD>
+                <TD vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                align=right>Expected Results</TD>
+                <TD vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                align=right>Success</TD>
+                <TD vAlign=center 
+                background=RaceOrdering_sol_files/steel_bluebv_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>3, {1}, {2}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>3</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>4, {0, 0}, {1, 2}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                align=right>8</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>10, {1, 2, 3}, {2, 3, 1}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {}, {}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>90317</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>2, {0}, {1}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>3, {0, 1}, {1, 2}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                align=right>1</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>2, {0, 1}, {1, 0}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>3, {0, 1, 0}, {1, 2, 2}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                align=right>1</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {}, {}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>90317</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {0}, {9}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>545160</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>1, {}, {}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>10, {0, 1, 3, 4, 6, 7, 0, 3, 1, 4, 2, 5}, {1, 2, 4, 
+                  5, 7, 8, 3, 6, 4, 7, 5, 8}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>420</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {0, 2, 4, 6, 8, 10, 12, 14, 
+                  16, 18, 20, 22, 24, 26, 28}, {1, 3, 5, 7, 9, 11, 13, 15, 17, 
+                  19, 21, 23, 25, 27, 29}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>439976</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>16, {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+                  14}, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                align=right>1</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {29, 25, 21, 17, 13, 9, 5, 
+                  28, 24, 20, 16, 12, 8, 4, 1}, {27, 23, 19, 15, 11, 7, 3, 26, 
+                  22, 18, 14, 10, 6, 2, 0}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>439976</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>15, {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+                  14}, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 0}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                align=right>0</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>15, {0, 1, 2, 3, 4, 5, 6, 7, 8, 
+                  9, 10, 11, 12, 13, 9}, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 
+                  13, 14, 4}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>8, {0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2}, {3, 
+                  4, 5, 6, 7, 3, 4, 5, 6, 7, 4, 5, 6, 7}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>768</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>17, {0, 0, 1, 1, 2, 2, 3, 3, 4, 
+                  4, 5, 5, 6, 6, 7}, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+                  14, 2}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>20144</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>17, {0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7}, 
+                  {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 0}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                align=right>0</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>27, {0, 0, 3, 3, 6, 6, 9, 9, 12, 
+                  12, 15, 15, 18, 18, 20}, {1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 
+                  16, 17, 19, 20, 24}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>390723</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+                  {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>68145</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {1, 2, 3, 4, 5, 6, 7, 8, 9, 
+                  10, 11, 12, 13, 14, 15}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                  0, 0, 0}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>68145</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {1, 2, 3, 4, 5, 6, 7, 9, 9, 9, 9, 9, 9, 9, 9}, 
+                  {0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 0}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>681812</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>6, {0, 0, 0, 0, 0, 1, 1, 1, 1, 
+                  2, 2, 2, 3, 3, 4}, {1, 2, 3, 4, 5, 2, 3, 4, 5, 3, 4, 5, 4, 5, 
+                  5}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>15, {0, 9, 2, 1, 0, 2, 1, 9}, {1, 4, 5, 6, 1, 5, 6, 
+                  4}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>268542</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {22, 4, 17, 1, 27, 24, 10, 
+                  10, 4, 20, 10, 22, 0, 0, 17}, {1, 24, 3, 15, 20, 18, 20, 5, 
+                  15, 1, 24, 0, 5, 4, 15}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>779866</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>29, {17, 24, 13, 13, 13, 27, 18, 24, 21, 27, 17, 
+                  11, 27, 24, 18}, {7, 18, 18, 10, 11, 10, 10, 27, 23, 10, 10, 
+                  23, 23, 10, 11}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>487245</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>10, {5, 9, 5, 2, 8, 2, 9, 9, 2, 
+                  9, 8, 5, 9, 2, 5}, {3, 2, 3, 3, 5, 3, 5, 5, 5, 2, 3, 3, 5, 3, 
+                  3}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>90720</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {24, 10, 11, 14, 9, 7, 17, 10, 11, 2, 11, 14, 
+                  11, 5, 4}, {22, 12, 0, 18, 0, 18, 8, 28, 28, 0, 26, 24, 8, 18, 
+                  12}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>110128</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>28, {20, 8, 24, 10, 21, 2, 10, 
+                  17, 24, 24, 8, 15, 24, 17}, {7, 2, 0, 20, 16, 16, 24, 24, 25, 
+                  16, 14, 16, 2, 13}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>175276</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {0, 4, 15, 15, 10, 26, 7, 29, 28, 17, 9, 7, 8, 
+                  8, 4}, {5, 0, 27, 21, 0, 17, 24, 9, 29, 12, 5, 12, 24, 13, 
+                7}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>65712</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {0, 4, 15, 15, 10, 26, 7, 
+                  29, 28, 17, 9, 7, 8, 8, 4}, {5, 0, 27, 21, 0, 17, 24, 9, 29, 
+                  12, 5, 12, 24, 13, 7}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>65712</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {0, 0, 1, 25, 2, 3, 0, 0, 2, 5, 6, 7, 7, 9, 
+                  10}, {1, 1, 25, 4, 3, 4, 3, 2, 25, 6, 9, 6, 8, 10, 11}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>71776</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {0, 0, 3, 3, 6, 6, 9, 9, 12, 
+                  12, 15, 15, 18, 18, 21}, {1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 
+                  16, 17, 19, 20, 22}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>644970</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {1, 2, 3, 3, 4, 5, 1, 3, 12, 14, 16, 12, 18, 
+                  18, 22}, {2, 3, 4, 5, 6, 6, 6, 5, 13, 15, 17, 17, 19, 6, 1}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>701220</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {20, 7, 1, 6, 15, 6, 29, 4, 
+                  10, 19, 20, 17, 10, 0, 28}, {6, 17, 4, 14, 16, 19, 7, 17, 6, 
+                  17, 4, 14, 4, 19, 7}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>611149</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {0, 20, 20, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 
+                  13, 14}, {20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 15, 16, 17, 
+                  18, 19}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>959986</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {0, 2, 4, 6, 8, 10, 12, 14, 
+                  16, 18, 20, 20, 24, 19, 28}, {1, 3, 5, 7, 9, 11, 13, 15, 19, 
+                  19, 21, 23, 25, 27, 29}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>946647</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {1, 2, 3, 5, 6, 6, 6, 18, 19, 20, 20, 20, 20, 
+                  24, 25}, {5, 5, 5, 6, 7, 9, 19, 19, 23, 1, 21, 23, 24, 25, 
+                26}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>953931</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {1, 1, 2, 2, 3, 3, 5, 5, 4, 
+                  4, 6, 6, 7, 7, 9}, {2, 3, 4, 5, 4, 6, 7, 8, 8, 9, 9, 10, 11, 
+                  12, 12}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>818649</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {11, 2, 7, 15, 22, 3, 1, 20, 3, 17, 2, 17, 19, 
+                  2, 3}, {1, 5, 3, 3, 23, 29, 13, 25, 5, 1, 6, 3, 1, 3, 1}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>132019</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {3, 4, 5, 6, 7, 8, 9, 10, 
+                  20, 20, 20, 20, 27, 27, 28}, {20, 20, 20, 20, 27, 20, 20, 20, 
+                  11, 12, 13, 14, 15, 20, 29}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>717966</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {0, 0}, {1, 1}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>545160</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>27, {1, 1, 3, 4, 5, 7, 7, 9, 10, 
+                  6, 13}, {2, 5, 2, 3, 3, 6, 8, 8, 9, 10, 14}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>829866</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 
+                  26, 28}, {1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 
+                  29}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>439976</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {0, 1, 2, 3, 4, 5, 6, 7, 8, 
+                  9, 10, 11, 12, 13, 14}, {15, 16, 17, 18, 19, 20, 21, 22, 23, 
+                  24, 25, 26, 27, 28, 29}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>439976</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>12, {0, 0, 0, 3, 3, 8, 9, 5, 6, 10}, {1, 2, 3, 2, 
+                  4, 5, 5, 7, 7, 11}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>64445</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {0, 1, 2, 3, 4, 5, 6, 7, 8, 
+                  9, 10, 11, 12, 13}, {8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 
+                  13, 14, 14}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>88202</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {0, 0, 4, 4, 8, 8, 12, 12, 16, 16, 20, 20, 24, 
+                  24}, {1, 2, 5, 6, 9, 10, 13, 14, 17, 18, 21, 22, 25, 26}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>289937</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {11, 12, 13, 14, 15, 16, 17, 
+                  21, 22, 23, 24, 25, 26, 27, 28}, {10, 10, 10, 10, 10, 10, 10, 
+                  20, 20, 20, 20, 20, 20, 20, 20}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>681812</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {0, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 
+                  15, 15, 15}, {1, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 
+                  27, 28, 29}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>36344</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {1, 2, 3, 4, 5, 6, 7, 8, 9, 
+                  10, 11, 12, 13, 14, 15}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                  0, 0, 0}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>68145</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>3, {0, 1}, {2, 2}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                align=right>2</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {1, 4, 6, 2, 9, 12, 10}, {8, 
+                  2, 29, 7, 6, 11, 6}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>170453</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {0, 1, 2, 3, 4, 5, 20, 20, 24, 25}, {1, 6, 8, 
+                  9, 11, 11, 21, 23, 26, 26}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>853537</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {1, 3, 5, 7, 9, 11, 13, 15, 
+                  17, 19, 21, 23, 25, 27, 29}, {0, 2, 4, 6, 8, 10, 12, 14, 16, 
+                  18, 20, 22, 24, 26, 28}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>439976</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>24, {1, 1, 4, 5, 7, 8, 9}, {2, 3, 1, 1, 8, 9, 
+10}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>581259</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>9, {0, 1, 2, 3, 3, 4, 4, 4}, {2, 
+                  2, 3, 4, 4, 5, 5, 5}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>1008</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {0, 0, 0, 1, 1, 2, 5, 5, 10, 12, 14, 16, 18, 
+                  20, 22}, {1, 1, 2, 3, 4, 4, 1, 3, 11, 13, 15, 17, 19, 21, 
+                23}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>343893</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {1, 2, 3, 4, 5, 6, 7, 8, 0, 
+                  0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 11, 12, 13, 14, 
+                  15, 16, 17}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>102575</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 6, 7, 8, 9, 25}, 
+                  {1, 2, 3, 4, 5, 6, 7, 3, 5, 7, 10, 10, 10, 10, 26}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>734408</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>2, {1}, {0}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=left>30, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 
+                  15}, {16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+                  0}</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>439976</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText 
+                background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  align=right>Passed</TD>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                  width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD background=RaceOrdering_sol_files/steel_blue_bg.gif 
+                colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=10 height=1></TD>
+                <TD class=statText align=left>30, {5, 4, 4, 1, 0, 3, 2, 8}, 
+                  {4, 6, 0, 0, 2, 2, 7, 7}</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>321131</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=5 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 height=1></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG border=0 alt="" 
+                  src="RaceOrdering_sol_files/clear.gif" width=1 
+              height=1></TD></TR></TBODY></TABLE><!-- End System Testing --></TD></TR>
+        <TR>
+          <TD width="100%"><IMG border=0 alt="" 
+            src="RaceOrdering_sol_files/clear.gif" width=1 
+        height=10></TD></TR></TBODY></TABLE>
+      <P><BR></P><!-- END BODY --></TD>
+    <TD width=10><IMG border=0 src="RaceOrdering_sol_files/clear.gif" width=10 
+      height=1></TD>
+    <TD vAlign=top width=180><IMG border=0 
+      src="RaceOrdering_sol_files/clear.gif" width=180 height=1>
+      <SCRIPT language=javascript type=text/javascript>
+
+</SCRIPT>
+       
+      <DIV class=rightColContent><BR><BR></DIV></TD><!-- Gutter -->
+    <TD width=10><IMG border=0 src="RaceOrdering_sol_files/clear.gif" width=10 
+      height=1></TD><!-- Gutter Ends --></TR></TBODY></TABLE>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD class=footer width="100%"><A class=footerLinks 
+      href="http://www.topcoder.com/">Home</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A 
+      class=footerLinks href="http://www.topcoder.com/home">About 
+      TopCoder</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+      Room</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/home/lets-talk-2/">Contact 
+      Us</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=jobs">Careers</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+      <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy">Privacy</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+      <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms">Terms</A> 
+      <BR><A class=footerLinks 
+      href="http://www.topcoder.com/tc">Competitions</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+      <A class=footerLinks href="http://www.topcoder.com/cockpit">Cockpit</A> 
+  </TD></TR>
+  <TR>
+    <TD class=copyright width="100%">Copyright TopCoder, Inc. 2001-
+      <SCRIPT 
+      type=text/javascript>d=new Date();document.write(d.getFullYear());</SCRIPT>
+    </TD></TR></TBODY></TABLE>
+<SCRIPT type=text/javascript>
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6340959-1']);
+  _gaq.push(['_setDomainName', '.topcoder.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</SCRIPT>
+<!-- Start of HubSpot Logging Code  -->
+<SCRIPT language=javascript type=text/javascript>
+var hs_portalid=17680; 
+var hs_salog_version = "2.00";
+var hs_ppa = "topcoder.app101.hubspot.com";
+document.write(unescape("%3Cscript src='" + document.location.protocol + "//" + hs_ppa + "/salog.js.aspx' type='text/javascript'%3E%3C/script%3E"));
+</SCRIPT>
+<!-- End of HubSpot Logging Code --></BODY></HTML>

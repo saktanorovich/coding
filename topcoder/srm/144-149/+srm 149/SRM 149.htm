@@ -1,0 +1,1039 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0070)http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm149 -->
+<HTML><HEAD><TITLE>TopCoder Statistics</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+href="SRM 149_files/style.css" type=text/css rel=stylesheet><LINK 
+href="SRM 149_files/coders.css" type=text/css rel=stylesheet><LINK 
+href="SRM 149_files/stats.css" type=text/css rel=stylesheet><LINK 
+href="SRM 149_files/tcStyles.css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript src="SRM 149_files/tcscript.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=JavaScript src="SRM 149_files/print.js"></SCRIPT>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>
+<DIV id=onTop>
+<SCRIPT type=text/javascript>
+var objTopPopUp = null;
+// called when you topPopup at the bottom right of an object
+function topPopUp(topPopper,topPopupID) {
+    var pos = findPos(topPopper);
+    var x = pos[0] + topPopper.offsetWidth + 2;
+    var y = pos[1] + topPopper.offsetHeight + 2;
+    topPopShow(x,y,topPopupID);
+}
+// called when you know the exact spot you want to topPop up at
+function topPopShow(posX,posY,topPopupID) {
+    objTopPopUp = document.getElementById(topPopupID);
+    objTopPopUp.style.left = posX + 'px';
+    objTopPopUp.style.top = posY + 'px';
+    objTopPopUp.style.display = 'block';
+}
+function topPopHide() {
+    objTopPopUp.style.display = 'none';
+    objTopPopUp = null;
+}
+function findPos(obj) {
+    var curLeft = curTop = 0;
+    if (obj.offsetParent) {
+        curLeft = obj.offsetLeft;
+        curTop = obj.offsetTop;
+        while (obj = obj.offsetParent) {
+            curLeft += obj.offsetLeft;
+            curTop += obj.offsetTop;
+        }
+    }
+    return [curLeft,curTop];
+}
+</SCRIPT>
+
+<DIV class=popUp id=launch0>
+<DIV><STRONG>Competitions Home</STRONG></DIV></DIV>
+<DIV class=popUp id=launch1>
+<DIV><STRONG>Launch Algorithm Competitions Arena</STRONG></DIV></DIV>
+<DIV class=popUp id=launch2>
+<DIV><STRONG>Launch High School Competitions Arena</STRONG></DIV></DIV>
+<DIV class=popUp id=launch3>
+<DIV><STRONG>Component Design Active Contests</STRONG></DIV></DIV>
+<DIV class=popUp id=launch4>
+<DIV><STRONG>Component Development Active Contests</STRONG></DIV></DIV>
+<DIV class=popUp id=launch5>
+<DIV><STRONG>Marathon Match Active Contests</STRONG></DIV></DIV><MAP 
+id=competeBar name=competeBar><AREA onmouseover="topPopShow(73,65,'launch0')" 
+  onmouseout=topPopHide() shape=RECT alt="" coords=0,0,66,30 
+  href="http://www.topcoder.com/tc"><AREA 
+  onmouseover="topPopShow(108,65,'launch1')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=68,0,106,30 href="javascript:arena();"><AREA 
+  onmouseover="topPopShow(155,65,'launch2')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=107,0,153,30 href="javascript:arena();"><AREA 
+  onmouseover="topPopShow(181,65,'launch3')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=154,0,179,30 
+  href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112"><AREA 
+  onmouseover="topPopShow(207,65,'launch4')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=180,0,205,30 
+  href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113"><AREA 
+  onmouseover="topPopShow(252,65,'launch5')" onmouseout=topPopHide() shape=RECT 
+  alt="" coords=206,0,250,30 
+  href="http://www.topcoder.com/longcontest/?module=ViewActiveContests"></MAP>
+<DIV 
+style="BACKGROUND: none transparent scroll repeat 0% 0%; LEFT: 0px; POSITION: absolute; TOP: 31px"><IMG 
+alt="" src="SRM 149_files/competeBar.gif" useMap=#competeBar> </DIV>
+<DIV style="RIGHT: 0px; POSITION: absolute; TOP: 31px"><A 
+href="http://www.topcoder.com/tc?module=MyHome"><IMG style="DISPLAY: block" 
+alt="My TopCoder" src="SRM 149_files/myTopCoder.png"></A></DIV>
+<DIV style="MARGIN: 0px 290px 0px 280px" align=center>
+<DIV id=outerLogo>
+<DIV id=innerLogo><A href="http://www.topcoder.com/"><IMG style="DISPLAY: block" 
+alt=TopCoder src="SRM 149_files/topcoder.gif"></A> </DIV></DIV></DIV>
+<DIV class=memberCountBox>Member Count: 140,094 - February 18, 2008 &nbsp;<A 
+class=gMetal href="javascript:tcTime()">[Get Time]</A> </DIV>
+<DIV class=topBar>
+<DIV style="FLOAT: right; MARGIN: 5px 0px 0px">Hello,&nbsp;<A 
+class=coderTextWhite 
+href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22714428">sergeva</A> 
+| <A class=gMetal href="http://www.topcoder.com/tc?module=Logout">Logout</A> 
+</DIV></DIV></DIV>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR vAlign=top><!-- Left Column Begins-->
+    <TD id=onLeft width=180>
+      <SCRIPT language=JavaScript src="SRM 149_files/arena.js" 
+      type=text/javascript></SCRIPT>
+
+      <SCRIPT language=JavaScript type=text/javascript>
+<!--
+function toggleMenu(menuTitle,menuID){
+   var menu = document.getElementById(menuID);
+   if(menu.style.display == 'block') menu.className = 'CLOSED';
+   else if(menu.className == 'OPEN' && menu.style.display != 'none') menu.className = 'CLOSED';
+   else {
+      menu.className = 'OPEN';
+   }
+   if(menuTitle.blur)menuTitle.blur();
+   if(menuTitle.className == 'exp') menuTitle.className = 'exp_ed';
+   else menuTitle.className = 'exp';
+   return;
+}
+function flipMenu(myMenuName){
+   var menuName = document.getElementById(myMenuName);
+   menuName.className = 'exp_ed';
+}
+
+// -->
+</SCRIPT>
+
+      <DIV 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px"><IMG 
+      alt="" src="SRM 149_files/leftnav_top.gif"></DIV>
+      <DIV id=navbar>
+      <UL>
+        <LI class=exp_ed><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_competitions')" 
+        href="javascript:void(0)">Competitions</A> 
+        <UL class=OPEN id=m_competitions>
+          <LI><A href="http://www.topcoder.com/tc">Home</A> </LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_competitor_stats')" 
+          href="javascript:void(0)">The Tops</A> 
+          <UL id=m_competitor_stats>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_top_rated_competitors')" 
+            href="javascript:void(0)">Top Ranked</A> 
+            <UL id=m_top_rated_competitors>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=AlgoRank">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_designers">Design</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_developers">Development</A> 
+              </LI>
+              <LI><A href="http://www.topcoder.com/tc?module=HSRank">High 
+              School</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/stats/?module=CoderRank">Marathon 
+              Match</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_recordbook')" 
+            href="javascript:void(0)">Record Book</A> 
+            <UL id=m_recordbook>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=statistics&amp;d2=recordbook_home">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=compstats&amp;d2=comp_recordbook_home">Component</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=stats&amp;d2=recordbook_home">Marathon 
+              Match</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_com')" 
+            href="javascript:void(0)">Coder of the Month</A> 
+            <UL id=m_com>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=5">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=6">Design</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=7">Development</A> 
+              </LI></UL></LI></UL></LI>
+          <LI class=exp_ed><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_algo_competitions')" 
+          href="javascript:void(0)">Algorithm</A> 
+          <UL class=OPEN id=m_algo_competitions>
+            <LI><A href="javascript:arena();">Launch Arena</A> </LI>
+            <LI class=exp_ed><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_algo_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL class=OPEN id=m_algo_stats>
+              <LI><A href="http://www.topcoder.com/tc?module=MatchList">Match 
+              Archive</A> </LI>
+              <LI><A href="http://www.topcoder.com/stat?c=round_overview">Match 
+              Overviews</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=SrmDivisionWins">Match 
+              Winners</A> </LI>
+              <LI><A href="http://www.topcoder.com/stat?c=last_match">Match 
+              Results</A> </LI>
+              <LI class=highlight><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=match_editorials&amp;d2=archive">Match 
+              Editorials</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ProblemArchive">Problem 
+              Archive</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=1">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/Algorithm+Data+Feeds">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_algo_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_algo_support>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/How+To+Compete+in+Algorithm+Competitions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/Algorithm+Competition+FAQs">FAQs</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/Algorithm+Competition+Rating+System">Rating 
+              System</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/Write+Problems+for+TopCoder">Write 
+              Problems</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_architecture_competitions')" 
+          href="javascript:void(0)">Software Architecture</A> 
+          <UL id=m_architecture_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/wiki/display/tc/Architecture+Overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewArchitectureActiveContests">Active 
+            Contests</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit &amp; 
+            Review</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=umltool&amp;d3=description&amp;node=arch_uml_tool">UML 
+            Tool</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_architecture_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_architecture_support>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Architecture+Competitions">How 
+              to Compete</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_des_competitions')" 
+          href="javascript:void(0)">Software Design</A> 
+          <UL id=m_des_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ContestStatus&amp;ph=112">Contest 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;ph=112">Review 
+            Opportunities</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit &amp; 
+            Review</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=umltool&amp;d3=description&amp;node=des_uml_tool">UML 
+            Tool</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_des_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_des_stats>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;ph=112">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=112">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/Component+Design+Data+Feeds">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ReviewBoard&amp;ph=112">Meet 
+            the Review Board</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_des_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_des_support>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Design+Competitions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/Component+Design+Documentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/Component+Design+Ratings">Ratings</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/Component+Design+Reliability+Ratings">Reliability 
+              Ratings</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_dev_competitions')" 
+          href="javascript:void(0)">Software Development</A> 
+          <UL id=m_dev_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ContestStatus&amp;ph=113">Contest 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;ph=113">Review 
+            Opportunities</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit &amp; 
+            Review</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=umltool&amp;d3=description&amp;node=dev_uml_tool">UML 
+            Tool</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_dev_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_dev_stats>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=CompList&amp;ph=113">Past 
+              Contests</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ph=113">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/Component+Development+Data+Feeds">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ReviewBoard&amp;ph=113">Meet 
+            the Review Board</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_dev_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_dev_support>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Component+Development+Competitions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/Component+Development+Documentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/Component+Development+Ratings">Ratings</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/Component+Development+Reliability+Ratings">Reliability 
+              Ratings</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_competitions')" 
+          href="javascript:void(0)">Software Assembly</A> 
+          <UL id=m_assembly_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/registration/actions/Registration.do?method=openRegistrations">Active 
+            Contests</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit &amp; 
+            Review</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_assembly_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=tutorial">Tutorial</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=documentation">Documentation</A> 
+              </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_testing_competitions')" 
+          href="javascript:void(0)">Software Testing</A> 
+          <UL id=m_testing_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/wiki/display/tc/Testing+Active+Contests">Active 
+            Contests</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_testing_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_testing_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=tutorial">Tutorial</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=documentation">Documentation</A> 
+              </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_bugraces_competitions')" 
+          href="javascript:void(0)">Bug Races</A> 
+          <UL id=m_bugraces_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/wiki/display/tc/Bug+Races">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/wiki/display/tc/Active+Bug+Races">Active 
+            Contests</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_bugraces_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_bugraces_support>
+              <LI><A 
+              href="http://www.topcoder.com/wiki/display/tc/How+to+Compete+in+Bug+Races">How 
+              to Compete</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_hs_competitions')" 
+          href="javascript:void(0)">High School</A> 
+          <UL id=m_hs_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=home">Overview</A> 
+            </LI>
+            <LI><A href="javascript:arena();">Launch Arena</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_hs_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_hs_stats>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundOverview">Match 
+              Overview</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundStatsTeam">Match 
+              Results (Team)</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundStatsInd">Match 
+              Results (Indiv.)</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=match_editorials&amp;d3=archive">Match 
+              Editorials</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ColorChange&amp;ratid=2">Recent 
+              Color Changes</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=dataFeed">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=sponsorship">Sponsorship</A> 
+            </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_hs_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_hs_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=index">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=faqIndex">FAQs</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=sampleProblems">Sample 
+              Problems</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=ratings">Rating 
+              System</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=problemWriter&amp;node=hs_write">Write 
+              Problems</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_long_contests')" 
+          href="javascript:void(0)">Marathon Matches</A> 
+          <UL id=m_long_contests>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewActiveContests">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewPractice">Practice</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewQueue">Queue 
+            Status</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_long_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_long_stats>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/stats/?module=MatchList">Match 
+              Archive</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/stats/?module=ViewOverview">Match 
+              Overview</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/stats/?module=MatchWinners">Match 
+              Winners</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=match_editorials&amp;d2=archive">Match 
+              Editorials</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=dataFeed">Data 
+              Feeds</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_long_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_long_support>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=support&amp;d2=ratings">Rating 
+              System</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_tournaments')" 
+          href="javascript:void(0)">Tournaments</A> 
+          <UL id=m_tournaments>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tournaments&amp;d2=home">TopCoder</A> 
+            </LI>
+            <LI><A href="http://www.topcoder.com/pl/">Powered by TopCoder</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=CRPFStatic&amp;d1=crpf&amp;d2=crpf_overview">Charity</A> 
+            </LI></UL></LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=digital_run&amp;d2=description">The 
+          Digital Run</A> </LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_edu_content')" 
+          href="javascript:void(0)">Educational Content</A> 
+          <UL id=m_edu_content>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=education&amp;d2=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=alg_index">Algorithm 
+            Tutorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=comp_index">Component 
+            Tutorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=mm_index">Marathon 
+            Tutorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=features&amp;d2=archive">Features</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=writeForTC">Write 
+            for TopCoder</A> </LI></UL></LI>
+          <LI><A 
+          href="http://www.topcoder.com/wiki/display/tc/How+to+Get+Paid+for+Competing">How 
+          to Get Paid</A> </LI></UL></LI>
+        <LI><A href="http://forums.topcoder.com/">Forums</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?module=Static&amp;d1=calendar&amp;d2=thisMonth">Event 
+        Calendar</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+        Room</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?&amp;module=SurveyList">Surveys</A> 
+        </LI>
+        <LI><A href="http://www.topcoder.com/tc?module=MyHome">My TopCoder</A> 
+        </LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_about_tc')" 
+        href="javascript:void(0)">About TopCoder</A> 
+        <UL id=m_about_tc>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index">Overview</A> 
+          </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus">Contact 
+          Us</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=whyjoin">Why 
+          Join TopCoder?</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=jobs">Working 
+          at TopCoder</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=management">Management 
+          Team</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms">Terms, 
+          Revisions</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy">Privacy 
+          Policy</A> </LI></UL></LI></UL>
+      <DIV 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 17px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 10px"><A 
+      href="http://www.topcoder.com/tc?module=LinkTracking&amp;link=/tc?module=Static%26d1=media%26d2=tcchannel&amp;refer=leftnav"><IMG 
+      alt="TC Channel" src="SRM 149_files/leftnavLogo.png"></A> </DIV>
+      <DIV id=navbarSearch><B>Member Search:</B> 
+      <FORM class=noSpace id=simpleSearchForm name=simpleSearchForm 
+      action=http://www.topcoder.com/tc method=get><INPUT class=noSpace 
+      type=hidden value=SimpleSearch name=module> <INPUT class=noSpace 
+      onblur="javascript:&#10;         if (document.simpleSearchForm.ha.value == '')&#10;            document.simpleSearchForm.ha.value = 'Handle:';" 
+      onfocus="javascript:&#10;         if (document.simpleSearchForm.ha.value=='Handle:')&#10;            document.simpleSearchForm.ha.value = '';" 
+      maxLength=15 size=12 value=Handle: name=ha> <A class=gMetal 
+      href="javascript:void%20document.simpleSearchForm.submit();">Go</A><BR><A 
+      class=gMetal 
+      href="http://www.topcoder.com/tc?module=ViewAdvanced">Advanced Search</A> 
+      </FORM></DIV></DIV>
+      <DIV 
+      style="CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 23px; PADDING-TOP: 0px"><IMG 
+      alt="" src="SRM 149_files/leftnav_bottom.gif"></DIV>
+      <DIV style="CLEAR: left; FLOAT: left; MARGIN: 0px; WIDTH: 170px" 
+      align=center><IMG style="MARGIN-BOTTOM: 23px" alt="" 
+      src="SRM 149_files/brackets.png"> </DIV></TD><!-- Left Column Ends --><!-- Center Column Begins -->
+    <TD class=statTableSpacer vAlign=top width="100%">
+      <DIV class=bodyText>
+      <TABLE class=pageTitleTable cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD class=pageTitle width="100%"><IMG alt=statistics_w 
+            src="SRM 149_files/header_statistics_w.gif" border=0></TD>
+          <TD class=pageSubtitle align=right>&nbsp;Match 
+        Editorial</TD></TR></TBODY></TABLE>
+      <DIV class=linkBox><A 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=match_editorials&amp;d2=archive">Archive</A><BR><SPAN 
+      id=printableLink><A href="javascript:makeInvisible();">Printable 
+      view</A><BR></SPAN><SPAN class=invisible id=navigableLink><A 
+      href="javascript:makeNavigable();">Normal view</A><BR></SPAN><A 
+      href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=505585">Discuss 
+      this match</A></DIV><SPAN class=bodySubtitle>SRM 149</SPAN><BR>Monday, 
+      June 2, 2003 <BR><BR><SPAN class=bigTitle>Match summary</SPAN> 
+      <P>SRM 149 was pretty wild with 100 successful challenges, and only 15 
+      successful solutions to what seemed like a pretty easy division 1 medium. 
+      The hard problem also caused people some trouble, since it was somewhat 
+      novel. It was also was the first problem to return a double though that 
+      probably wasn't much of an issue for anyone. <STRONG>SnapDragon</STRONG> 
+      ended up winning division 1 by a fairly large margin, despite a 
+      resubmission on the hard (which he claims still has a bug which was missed 
+      by the system tests), and recaptured the all time highest rating. 
+      <STRONG>tomek</STRONG> continued to look good in his third match with the 
+      2nd highest score. In division 2, an experienced TopCoder, 
+      <STRONG>kmd-10</STRONG>, won by a wide margin and moved into division 
+      1.</P>
+      <H1>The Problems </H1><FONT 
+      size=+2><STRONG>FormatAmt</STRONG></FONT>&nbsp; <A class=statText 
+      href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=505585"><IMG 
+      alt="discuss it" src="SRM 149_files/btn_discuss_it.gif" 
+      border=0></A><BR>Used as: Division Two - Level One: 
+      <BLOCKQUOTE>
+        <TABLE cellSpacing=2 cellPadding=3>
+          <TBODY>
+          <TR>
+            <TD class=bodyText 
+            style="BACKGROUND: #eee"><STRONG>Value</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">250</TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>Submission 
+              Rate</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">174 / 202 (86.14%) 
+          </TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>Success 
+              Rate</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">134 / 174 
+          (77.01%)</TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>High 
+              Score</STRONG></TD>
+            <TD class=bodyText 
+              style="BACKGROUND: #eee"><STRONG>simcoen</STRONG> for 248.13 
+            points</TD></TR></TBODY></TABLE></BLOCKQUOTE>
+      <P>This was probably one of the harder division 2 easy problems that 
+      TopCoder has posed. The easiest way to do it was probably to add digits 
+      from right to left. First, add the number of cents to a String. Then, if 
+      the number of cents is less than 10, you have to add an extra '0'. Next, 
+      you add the decimal point. Now, adding the dollars is probably easiest to 
+      do three digits at a time. You can use the modulus operator (num % 1000) 
+      to get the last 3 digits, but you have to add leading zeroes if the number 
+      is less than 100 and there are more digits left to add. Then, you add a 
+      comma, divide the number by 1000, to cut off the last 3 digits, and 
+      repeat. Last, add the dollar sign and return. That is the approach I'll 
+      show in the reference solution here. Another way to do it is to add the 
+      dollars all at once, and then insert the commas afterwards. If you really 
+      knew your libraries well, there are formatting functions which can help. <PRE>   String s = "."+(cents&lt;10?"0":"")+cents;
+   do{
+      s = (dollars%1000)+s;
+      if(dollars/1000 &gt; 0){
+         if(dollars%1000&lt;100)s = "0"+s;
+         if(dollars%1000&lt;10)s = "0"+s;
+      }
+      dollars/=1000;
+      if(dollars&gt;0)s=","+s;
+   }while(dollars&gt;0);
+   return "$"+s;
+</PRE>
+      <P></P><FONT size=+2><STRONG>BigBurger</STRONG></FONT>&nbsp; <A 
+      class=statText 
+      href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=505585"><IMG 
+      alt="discuss it" src="SRM 149_files/btn_discuss_it.gif" 
+      border=0></A><BR>Used as: Division Two - Level Two: 
+      <BLOCKQUOTE>
+        <TABLE cellSpacing=2 cellPadding=3>
+          <TBODY>
+          <TR>
+            <TD class=bodyText 
+            style="BACKGROUND: #eee"><STRONG>Value</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">500</TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>Submission 
+              Rate</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">152 / 202 (75.25%) 
+          </TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>Success 
+              Rate</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">127 / 152 
+          (83.55%)</TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>High 
+              Score</STRONG></TD>
+            <TD class=bodyText 
+              style="BACKGROUND: #eee"><STRONG>kmd-10</STRONG> for 484.20 
+            points</TD></TR></TBODY></TABLE></BLOCKQUOTE>Used as: Division One - Level 
+      One: 
+      <BLOCKQUOTE>
+        <TABLE cellSpacing=2 cellPadding=3>
+          <TBODY>
+          <TR>
+            <TD class=bodyText 
+            style="BACKGROUND: #eee"><STRONG>Value</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">250</TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>Submission 
+              Rate</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">123 / 126 (97.62%) 
+          </TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>Success 
+              Rate</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">115 / 123 
+          (93.50%)</TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>High 
+              Score</STRONG></TD>
+            <TD class=bodyText 
+              style="BACKGROUND: #eee"><STRONG>radeye</STRONG> for 248.27 
+            points</TD></TR></TBODY></TABLE></BLOCKQUOTE>
+      <P>This was a pretty simple simulation. Since the input is given in order 
+      by arrival time, we can loop through all of the customers and serve them 
+      one at a time, keeping track of the current time as we go. When we get to 
+      a new person, if the current time is less than or equal to the arrival 
+      time, we set the current time to the arrival time. Otherwise, we check to 
+      see if the difference between the current time and the arrival time is 
+      greater than the maximum wait so far, and if it is, we update the maximum 
+      wait time. Then, we increase the current time by the amount of time it 
+      takes to prepare he food. <PRE>int t = 0;
+int ret = 0;
+for(int i = 0; i &lt; arrival.length; i++){
+   if(arrival[i] &gt; t)t=arrival[i];
+   ret = Math.max(ret,t-arrival[i]);
+   t += service[i];
+}
+return ret;
+</PRE>
+      <P></P><FONT size=+2><STRONG>Pricing</STRONG></FONT>&nbsp; <A 
+      class=statText 
+      href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=505585"><IMG 
+      alt="discuss it" src="SRM 149_files/btn_discuss_it.gif" 
+      border=0></A><BR>Used as: Division Two - Level Three: 
+      <BLOCKQUOTE>
+        <TABLE cellSpacing=2 cellPadding=3>
+          <TBODY>
+          <TR>
+            <TD class=bodyText 
+            style="BACKGROUND: #eee"><STRONG>Value</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">1000</TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>Submission 
+              Rate</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">55 / 202 (27.23%) 
+          </TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>Success 
+              Rate</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">39 / 55 (70.91%)</TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>High 
+              Score</STRONG></TD>
+            <TD class=bodyText 
+              style="BACKGROUND: #eee"><STRONG>kmd-10</STRONG> for 934.30 
+            points</TD></TR></TBODY></TABLE></BLOCKQUOTE>
+      <P>The first thing to observe is that the prices changed to each group 
+      should be one of the prices in the input. If it weren't, it would be 
+      better to increase it a little, since the same people would still be 
+      willing to pay. This suggests that we should pick the four prices for the 
+      groups, such that each of them is one of the prices from the input. To 
+      handle the case where there are less than 4 groups, we simply allow 
+      multiple groups to have the same price. So, to pick the 4 group prices, we 
+      just have 4 nested for loops. Then, we go through all of the people, and 
+      assign them to the group with the highest price that they are willing to 
+      pay. If we sort the input first, it makes things a little simpler and 
+      faster: <PRE>   Arrays.sort(price);
+   int ret = 0;
+   for(int i = 0; i&lt;price.length; i++){
+      for(int j = i; j&lt;price.length; j++){
+         for(int k = j; k&lt;price.length; k++){
+            for(int m = k; m&lt;price.length; m++){
+               int rev = 0;
+               for(int n = 0; n&lt;price.length; n++){
+                  if(price[n]&gt;=price[m]){
+                     rev+=price[m];
+                  }else if(price[n]&gt;=price[k]){
+                     rev+=price[k];
+                  }else if(price[n]&gt;=price[j]){
+                     rev+=price[j];
+                  }else if(price[n]&gt;=price[i]){
+                     rev+=price[i];
+                  }
+               }
+               ret=Math.max(ret,rev);
+            }
+         }
+      }
+   }
+   return ret;
+</PRE>
+      <P></P><FONT size=+2><STRONG>MessageMess</STRONG></FONT>&nbsp; <A 
+      class=statText 
+      href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=505585"><IMG 
+      alt="discuss it" src="SRM 149_files/btn_discuss_it.gif" 
+      border=0></A><BR>Used as: Division One - Level Two: 
+      <BLOCKQUOTE>
+        <TABLE cellSpacing=2 cellPadding=3>
+          <TBODY>
+          <TR>
+            <TD class=bodyText 
+            style="BACKGROUND: #eee"><STRONG>Value</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">250</TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>Submission 
+              Rate</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">117 / 202 (92.86%) 
+          </TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>Success 
+              Rate</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">15 / 117 
+(12.82%)</TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>High 
+              Score</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>ante</STRONG> 
+              for 458.06 points</TD></TR></TBODY></TABLE></BLOCKQUOTE>
+      <P>This problem tripped a lot of people up, mostly because the examples 
+      made it look like a brute force approach might work. But, as experienced 
+      TopCoders will tell you, medium level problems usually aren't that simple. 
+      To solve this problem in time required a little bit of simple dynamic 
+      programming. You should have a String[] to keep track of valid restored 
+      substrings. That is, element i of the String[] represents a valid 
+      restoration of the characters from 0 to i, if there is one. If there is no 
+      valid restoration, or if there is more than one valid restoration, the 
+      String[] should have "IMPOSSIBLE!", or "AMBIGUOUS!", respectively. So, how 
+      do we do this now? Well, if there is a valid restoration for a substring, 
+      then there is a last word in that restoration. So, if we have a valid 
+      restoration for characters 0 to i, then we check each word to see if 
+      adding that word to the restoration from 0 to i is consistent with the 
+      input. If it is, then we update the restoration from 0 to j, where j is 
+      the index of the character where the added word ends. Once we have this 
+      figured out, its pretty simple to handle the cases where the return is 
+      "AMBIGUOUS!" or "IMPOSSIBLE!". I should note that another way to solve 
+      this problem is to use memoized recursion, which involves a recursive 
+      function that determines whether a substring from character 0 to character 
+      i can be restored or not. Here is dgoodman's (the writer) code: <PRE>        int len = mess.length(); 
+        int[] ways = new int[len+1];
+        String[] ans = new String[len+1]; 
+        ways[0]=1;
+        ans[0]="";
+        for(int i=0; i&lt;len; i++){
+            if(ways[i]&gt;0){
+                for(int id = 0; id&lt;dic.length; id++){
+                    String word = dic[id]; int n = i + word.length();
+                    if(n&gt;len) continue; 
+                    if(!word.equals(mess.substring(i,n))) continue;
+                    if(ways[n]&gt;0) ways[n]=2; else ways[n]=ways[i];
+                    if(ways[n]==1) ans[n] = ans[i] + " " + word;
+                }
+            }
+        }
+        if(ways[len]&gt;1) return "AMBIGUOUS!";
+        if(ways[len]&lt;1) return "IMPOSSIBLE!";
+        return ans[mess.length()].trim();
+</PRE>
+      <P></P><FONT size=+2><STRONG>GForce</STRONG></FONT>&nbsp; <A 
+      class=statText 
+      href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=505585"><IMG 
+      alt="discuss it" src="SRM 149_files/btn_discuss_it.gif" 
+      border=0></A><BR>Used as: Division One - Level Three: 
+      <BLOCKQUOTE>
+        <TABLE cellSpacing=2 cellPadding=3>
+          <TBODY>
+          <TR>
+            <TD class=bodyText 
+            style="BACKGROUND: #eee"><STRONG>Value</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">250</TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>Submission 
+              Rate</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">15 / 202 (11.90%) 
+          </TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>Success 
+              Rate</STRONG></TD>
+            <TD class=bodyText style="BACKGROUND: #eee">4 / 15 (26.67%)</TD></TR>
+          <TR>
+            <TD class=bodyText style="BACKGROUND: #eee"><STRONG>High 
+              Score</STRONG></TD>
+            <TD class=bodyText 
+              style="BACKGROUND: #eee"><STRONG>SnapDragon</STRONG> for 529.16 
+              points</TD></TR></TBODY></TABLE></BLOCKQUOTE>
+      <P>There are a couple of ways to do this. One of them involves some 
+      searching, and the other involves solving some equations explicitly. I'll 
+      discuss the searching solution first, and then the faster solution that 
+      dispenses with any search.<BR><BR>Before we get into the solution though, 
+      lets talk a little about the calculus behind the problem. First, let's 
+      define a function avgForce(n) representing the average force starting at 
+      n. avgForce(n) is the same as the area under the curve from n to n+period, 
+      which is the same as the integral from n to n+period. Now, the integral 
+      from n to n+period is the sum of the integrals of all the pieces involved, 
+      and each of these integrals is a quadratic, since the integral of a linear 
+      equation is a quadratic. <BR><BR>So, one way to solve this problem is to 
+      break the function into a number of segments, each of which is continuous 
+      (doesn't have any of the points from the input in it) and then search that 
+      segment, which is a quadratic, for the maxima. To find the segments, we 
+      take all of the points in the input, and all of the point in the input and 
+      subtract period from them, and sort them. Each of the intervals between 
+      two adjacent points in the sorted list is one of the above segments. To 
+      search this segment for a maxima, we can use the trinary search discussed 
+      in the round tables a while ago (seen in SnapDragon's solution). There are 
+      a number of iterative approaches that would also work, including gradient 
+      ascent and Newton's method. Depending on which approach we use, we might 
+      also have to check all the endpoints separately. The last task remaining 
+      is to write a function to calculate the avgForce(n) function. Since the 
+      function isn't continuous, the simplest way to compute it is one piece at 
+      a time. We can try to do some calculus to solve this, and it isn't that 
+      tricky, but we can use some simple geometry instead. Each section in the 
+      integral is a rectangle with a triangle on top of it. So, if we just find 
+      the dimensions of the rectangles and triangles the areas follow. Using the 
+      slopes of the line segments, this is pretty simple. <BR><BR>Now, the 
+      solution without search. All of the previous observations apply, but here 
+      we also note that, at a maxima, the derivative (if it is defined) is zero. 
+      So, we can find the derivative of the quadratic, and then solve for when 
+      it is equal to zero. Finding the quadratic explicitly and solving it is 
+      more work than we need though. Instead, we observe that, unless one of the 
+      endpoints is one of the points in the input (when the derivative is not 
+      defined), the forces at the endpoints are equal. If they weren't we could 
+      slide the window one way or the other, and increase the total force. To 
+      see this, observe that when sliding the window some small amount, the 
+      force changes by that small amount times the difference between the 
+      forces. So, given a starting point, we want to slide the window to the 
+      point where the two forces are equal. If you work out the math, you'll 
+      find that this distance is the difference in the forces divided by the 
+      difference in the slopes. Once you have the point where the two forces are 
+      equal you check the force this produces, and also check all of windows 
+      with an endpoint at one of the points in the input. Here is the writer's 
+      solution, which uses this approach: <PRE>public class GForce{
+    int n; int[] f, time; double[] whole,slope;
+    //solution interval must either start at start, end at end, or be an
+    //interval whose endhts are equal to each other with left slope &gt;= right slope
+    public double avgAccel(int period, int[] zf,int[] zt){
+        n = zf.length; f=zf; time=zt;
+        whole = new double[n];  //[0] is gbg, [1] is 0..1  [n-1] is last segment
+        slope = new double[n];
+        for(int i=1; i&lt;n; i++) whole[i] = (time[i]-time[i-1])*(f[i]+f[i-1])*.5;
+        for(int i=1; i&lt;n; i++) slope[i] = (f[i]-f[i-1])*1.0/(time[i]-time[i-1]);
+        
+        int iFin = 1; // segment containing time[n-1]-period
+        for(int i=1; time[i]+period &lt; time[n-1]; i++) iFin = i+1;
+        double max = area(time[n-1]-period,iFin,time[n-1],n-1);
+        for(int i=1; i&lt;n; i++) for(int j=i; j&lt;n; j++){ //seg i to seg j?
+            double t1 = Math.max(time[i-1], time[j-1]-period); //start
+            double t2 = Math.min(time[i], time[j]-period);    //end
+            if(t1&gt;t2) continue;
+       double oldmax = max;
+            max = Math.max( max, area(t1,i,t1+period,j) );  //equal slopes?
+            if(max&gt;oldmax)System.out.println("improve "+t1+" =&gt;"+max);
+            max = Math.max( max, eqHt(i,j, t1,t2, period) );
+        }
+        return max/period;
+    }
+    double eqHt(int i, int j, double t1, double t2, int period){
+        if(slope[i]&lt;= slope[j]) return -1.0;
+        double tstar = t1 + (getY(j,t1+period) - getY(i,t1))/(slope[i]-slope[j]);
+        if(tstar&lt;t1 || tstar&gt;t2) return -1.0;
+        return area(tstar,i,tstar+period,j);
+    }
+    double getY(int i, double t){ return f[i-1] + slope[i]*(t-time[i-1]); }
+    
+    double area(double ti, int i, double tj, int j){//segi, time ti to segj,timetj
+        double ai = (time[i]-ti)  *.5*(f[i]  +getY(i,ti));
+        double aj = (tj-time[j-1])*.5*(f[j-1]+getY(j,tj));
+        double sum = ai+aj; if(i==j) sum -= whole[i];
+        for(int k=i+1; k&lt;j; k++) sum += whole[k];
+        return sum;
+    }
+}
+</PRE>
+      <P></P>
+      <DIV class=authorPhoto><IMG alt=Author 
+      src="SRM 149_files/lbackstrom_mug.gif"> </DIV>
+      <DIV class=authorText>By&nbsp;<A class=coderTextYellow 
+      href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=159052&amp;tab=alg">lbackstrom</A><BR><EM>TopCoder 
+      Member</EM> </DIV></DIV></TD><!-- Center Column Ends --><!-- Right Column Begins -->
+    <TD id=onRight width=170>
+      <SCRIPT language=javascript type=text/javascript>
+
+</SCRIPT>
+
+      <DIV align=center><A 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=tournaments&amp;d2=tco08&amp;d3=sponsorpatrons&amp;d4=nsa"><IMG 
+      alt=NSA src="SRM 149_files/right_nsa.png"></A> </DIV></TD><!-- Right Column Ends --><!-- Gutter -->
+    <TD width=10><IMG height=1 src="SRM 149_files/clear.gif" width=10 
+    border=0></TD><!-- Gutter Ends --></TR></TBODY></TABLE>
+<DIV id=onBottom>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD class=footer width="100%"><A class=footerLinks 
+      href="http://www.topcoder.com/">Home</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A 
+      class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index">About 
+      TopCoder</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+      Room</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus">Contact 
+      Us</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy">Privacy</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+      <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms">Terms</A> 
+      <BR><A class=footerLinks href="http://www.topcoder.com/tc">Developer 
+      Center</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/corp/?module=Static&amp;d1=corp&amp;d2=index">Corporate 
+      Services</A> </TD></TR>
+  <TR>
+    <TD class=copyright width="100%">Copyright © 2001-2008, TopCoder, Inc. All 
+      rights reserved.</TD></TR></TBODY></TABLE></DIV></BODY></HTML>

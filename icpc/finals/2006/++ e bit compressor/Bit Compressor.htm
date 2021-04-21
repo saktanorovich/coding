@@ -1,0 +1,87 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3565 - Bit Compressor</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Bit%20Compressor_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3565 - Bit Compressor</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2005"><b>World Finals - San Antonio - Texas - 2005/2006</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3565.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3565"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3565"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+The aim of data compression is to reduce redundancy in stored or
+communicated data. This increases effective data density and speeds up
+data transfer rates. One possible method to compress any binary message
+is the following: </p><p>
+</p><blockquote>
+Replace any maximal sequence of <span class="MATH"><i>n</i></span> 1's with the binary version of <span class="MATH"><i>n</i></span> whenever it shortens the length of the message.
+
+</blockquote> 
+
+<p>
+For example, the compressed form of the data <span class="textbf">11111111</span>00100<span class="textbf">111111111111111</span>0011 becomes <span class="textbf">1000</span>00100<span class="textbf">1111</span>0011. The original data is 32 bits long while the compressed data is only 17 bits long. 
+
+</p><p>
+The drawback of this method is that sometimes the decompression process
+yields more than one result for the original message, making it
+impossible to obtain the original message. Write a program that
+determines if the original message can be obtained from the compressed
+data when the length of the original message (<span class="MATH"><i>L</i></span>), the number of 1's in the original message (<span class="MATH"><i>N</i></span>)
+and the compressed data are given. The original message will be no
+longer than 16 Kbytes and the compressed data will be no longer than 40
+bits.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input file contains several test cases. Each test case has two lines. The first line contains <span class="MATH"><i>L</i></span> and <span class="MATH"><i>N</i></span> and the second line contains the compressed data. 
+
+</p><p>
+The last case is followed by a line containing two zeroes.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, output a line containing the case number (starting with 1) and a message 
+`<tt>YES</tt>', `<tt>NO</tt>' or `<tt>NOT UNIQUE</tt>'. `<tt>YES</tt>' means that the original 
+message can be 
+obtained. `<tt>NO</tt>' means that the compressed data has been corrupted and the original message 
+cannot be obtained. `<tt>NOT UNIQUE</tt>' means that more than one message could have been the 
+original message. Follow the format shown in the sample output.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>32 26 
+10000010011110011 
+9 7 
+1010101 
+14 14 
+111111 
+0 0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case #1: YES 
+Case #2: NOT UNIQUE 
+Case #3: NO
+</pre> 
+
+<p>
+</p><p>
+<b>Claimer:</b>
+The data used in this problem is unofficial data
+prepared by Derek Kisman. So any mistake here does not
+imply mistake in the offcial judge data. Only Derek
+Kisman is responsible for the mistakes. Report
+mistakes to dkisman@acm.org
+
+</p><hr><address>San Antonio - Texas 2005-2006</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

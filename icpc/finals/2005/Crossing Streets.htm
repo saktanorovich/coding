@@ -1,0 +1,134 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3274 - Crossing Streets</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Crossing%20Streets_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3274 - Crossing Streets</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2004"><b>World Finals - Shanghai - 2004/2005</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3274.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3274"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3274"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+Peter Longfoot is a student at the university of Suburbia. Every morning, Peter leaves home to walk to the university.
+Many other students are driving their cars or riding their bicycles to campus, but Peter prefers to walk, avoiding the
+chaotic traffic of the city as much as possible.
+
+</p><p>
+
+</p><p>
+<br>
+Unfortunately, Peter cannot avoid the traffic entirely, since he has to cross streets in order to reach the university.
+Recently, Peter has wondered how to minimize the number of streets he has to cross. For example, in the following
+map, streets are drawn as horizontal and vertical lines. To reach the university starting at his home, Peter has to
+cross at least two streets. Peter cannot cross a street pair at an intersection and Peter cannot walk along a street.
+
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3274.eps}$
+ -->
+<img src="Crossing%20Streets_files/p3274.jpg" alt="\epsfbox{p3274.eps}" align="bottom" border="0">
+</div>
+<p>
+</p><div align="center">Figure: Streets are shown as straight lines and the arrows show possible walking paths for Peter. The
+black arrows show one possible path for Peter where he only has to cross two streets. The gray arrows
+show a path for Peter where he needs to cross four streets. The path shown by the dotted arrows is not
+legal because it crosses two streets at an intersection. The figure above corresponds to the first sample
+input.
+
+</div>
+
+<p>
+Peter knows the locations of all streets in the city, but he has trouble figuring out the best way to the university. So
+you must write a program to help him.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input consists of several descriptions of cities. Each description starts with a line containing a single
+integer <span class="MATH"><i>n</i></span>
+<!-- MATH
+ $(1 \le n \le 500)$
+ -->
+<span class="MATH">(1<img src="Crossing%20Streets_files/3274img2.png" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>n</i><img src="Crossing%20Streets_files/3274img2.png" alt="$ \le$" align="middle" border="0" height="30" width="18">500)</span>, the number of streets in the city. This is followed by <span class="MATH"><i>n</i></span> lines, each containing four
+integers <span class="MATH"><i>x</i><sub>1</sub></span>, <span class="MATH"><i>y</i><sub>1</sub></span>, <span class="MATH"><i>x</i><sub>2</sub></span>, <span class="MATH"><i>y</i><sub>2</sub></span>, indicating that there is a street from coordinates <!-- MATH
+ $(x_{1}, y_{1})$
+ -->
+<span class="MATH">(<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>)</span>
+to <!-- MATH
+ $(x_{2}, y_{2})$
+ -->
+<span class="MATH">(<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>)</span>. All streets are parallel to either the <span class="MATH"><i>x</i></span>- or <span class="MATH"><i>y</i></span>-axis,
+since the city is built on a square grid. Streets can overlap, in which case they are counted as only one street.
+The city description is concluded by a line containing four integers <span class="MATH"><i>x</i><sub>h</sub></span>, <span class="MATH"><i>y</i><sub>h</sub></span>, <span class="MATH"><i>x</i><sub>u</sub></span>, <span class="MATH"><i>y</i><sub>u</sub></span>, the
+coordinates <!-- MATH
+ $(x_{h}, y_{h})$
+ -->
+<span class="MATH">(<i>x</i><sub>h</sub>, <i>y</i><sub>h</sub>)</span> of Peter's home, and the coordinates <!-- MATH
+ $(x_{u}, y_{u})$
+ -->
+<span class="MATH">(<i>x</i><sub>u</sub>, <i>y</i><sub>u</sub>)</span> of the university, respectively.
+Neither Peter's home nor the university will be located on a street. You should consider the streets as straight-line
+segments, so the streets have no width. Although the endpoints of the streets are integers, Peter doesn't need to walk
+along the grids. He can walk in any direction he likes. The magnitudes of all integers in the input file are less
+than <!-- MATH
+ $2 \times 10^{9}$
+ -->
+<span class="MATH">2×10<sup>9</sup></span>.
+
+</p><p>
+
+</p><p>
+<br>
+The input is terminated by a line consisting of the integer zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>  
+
+<p>
+For each city description, first output its number in the sequence of descriptions. Then output the minimum number 
+of streets that Peter has to cross to go from his home to the university. 
+
+</p><p>
+
+</p><p>
+<br>
+Follow the format of the sample output.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>8                                                           
+6 0 24 0                                                     
+24 0 24 4                                                   
+24 4 6 4                                                     
+6 4 6 0                                                     
+12 1 26 1                                                   
+26 1 26 6                                                   
+26 6 12 6                                                   
+12 6 12 1                                                   
+0 1 17 3                                                    
+1                                                           
+10 10 20 10                                                 
+1 1 30 30                                                   
+0
+</pre>                                                            
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>City 1 
+Peter has to cross 2 streets
+City 2 
+Peter has to cross 0 streets
+</pre> 
+
+<p>
+</p><hr><address>Shanghai 2004-2005</address><p></p></body></html>

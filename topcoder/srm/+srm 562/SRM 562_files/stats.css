@@ -1,0 +1,588 @@
+.memberProfileBody {
+	BORDER-BOTTOM: #000000 0px solid; BORDER-LEFT: #000000 0px solid; PADDING-BOTTOM: 5px; MARGIN: 10px 10px 0px; PADDING-LEFT: 5px; WIDTH: 100%; PADDING-RIGHT: 5px; BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; PADDING-TOP: 5px
+}
+.bottomSpacer {
+	MARGIN-BOTTOM: 10px
+}
+.statTableSpacer {
+	PADDING-BOTTOM: 15px; LINE-HEIGHT: 1.4; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; COLOR: #333333; FONT-SIZE: 11px; PADDING-TOP: 0px
+}
+.statTable {
+	MARGIN-BOTTOM: 10px
+}
+.divider {
+	WIDTH: 25%; VERTICAL-ALIGN: top; BORDER-RIGHT: #999999 1px solid
+}
+.statTableHolder {
+	BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; VERTICAL-ALIGN: top; BORDER-RIGHT: #999999 1px solid
+}
+.pagingBox {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; CLEAR: both; FONT-SIZE: 11px; PADDING-TOP: 10px
+}
+.photoCell {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; VERTICAL-ALIGN: top; PADDING-TOP: 5px
+}
+.bigHandle {
+	WHITE-SPACE: nowrap; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+.handleCell {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; FONT-SIZE: 18px; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; PADDING-TOP: 2px
+}
+.quoteCell {
+	VERTICAL-ALIGN: middle
+}
+.quoteBox {
+	PADDING-BOTTOM: 15px; FONT-STYLE: italic; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; COLOR: #666666; FONT-SIZE: 15px; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.quoteTitle {
+	FONT-STYLE: normal; COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.ratingBox {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 5px; LINE-HEIGHT: 24px; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; COLOR: #000000; FONT-SIZE: 24px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.graphHolder {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #eeeeee
+}
+.tabletitle {
+	BACKGROUND-IMAGE: url(../i/cimages/headerBG.gif); BORDER-BOTTOM: #999999 1px solid; TEXT-ALIGN: left; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #999999; BORDER-LEFT-STYLE: hidden; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-COLLAPSE: collapse; WHITE-SPACE: nowrap; COLOR: #333333; BORDER-RIGHT-STYLE: hidden; FONT-SIZE: 12px; BORDER-TOP: #999999 1px solid; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.tableHeader {
+	PADDING-BOTTOM: 2px; LINE-HEIGHT: 14px; BACKGROUND-COLOR: #dddddd; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000000; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; PADDING-TOP: 2px
+}
+.cat {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 14px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-SIZE: 11px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.catNW {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 14px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-SIZE: 11px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.stat {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 14px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-SIZE: 11px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.statNW {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 14px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-SIZE: 11px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.statR {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 14px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-SIZE: 11px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.statRNW {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 14px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-SIZE: 11px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.cat {
+	COLOR: #000000; FONT-WEIGHT: bold
+}
+.catNW {
+	COLOR: #000000; FONT-WEIGHT: bold
+}
+.stat {
+	COLOR: #333333; FONT-WEIGHT: normal
+}
+.statNW {
+	COLOR: #333333; FONT-WEIGHT: normal
+}
+.statR {
+	COLOR: #333333; FONT-WEIGHT: normal
+}
+.statRNW {
+	COLOR: #333333; FONT-WEIGHT: normal
+}
+.statR {
+	TEXT-ALIGN: right
+}
+.statRNW {
+	TEXT-ALIGN: right
+}
+.catNW {
+	WHITE-SPACE: nowrap
+}
+.statNW {
+	WHITE-SPACE: nowrap
+}
+.statRNW {
+	WHITE-SPACE: nowrap
+}
+.statR {
+	TEXT-ALIGN: right
+}
+.catLt {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000000; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; PADDING-TOP: 1px
+}
+.catDk {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000000; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; PADDING-TOP: 1px
+}
+.catLt {
+	BACKGROUND-COLOR: #ffffff
+}
+.catDk {
+	BACKGROUND-COLOR: #eeeeee
+}
+.statLt {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-SIZE: 11px; VERTICAL-ALIGN: top; PADDING-TOP: 2px
+}
+.statDk {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-SIZE: 11px; VERTICAL-ALIGN: top; PADDING-TOP: 2px
+}
+.statLt {
+	BACKGROUND-COLOR: #ffffff
+}
+.statDk {
+	BACKGROUND-COLOR: #eeeeee
+}
+.statHighlight {
+	PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #ddddff; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-SIZE: 11px; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; PADDING-TOP: 2px
+}
+.statLink {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.statLink:link {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.statLink:visited {
+	COLOR: #000066; TEXT-DECORATION: none
+}
+A.statLink:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.statLink:active {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+.tabIconOn {
+	BACKGROUND-IMAGE: url(../i/cimages/border.gif); PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: center top; PADDING-TOP: 0px
+}
+.tabIconOff {
+	BACKGROUND-IMAGE: url(../i/cimages/border.gif); PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: center top; PADDING-TOP: 0px
+}
+.tabIconNA {
+	BACKGROUND-IMAGE: url(../i/cimages/border.gif); PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: center top; PADDING-TOP: 0px
+}
+.tabTextOn {
+	BACKGROUND-IMAGE: url(../i/cimages/border.gif); LINE-HEIGHT: 14px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; BACKGROUND-REPEAT: repeat-x; WHITE-SPACE: nowrap; BACKGROUND-POSITION: center top; FONT-SIZE: 11px
+}
+.tabTextOff {
+	BACKGROUND-IMAGE: url(../i/cimages/border.gif); LINE-HEIGHT: 14px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; BACKGROUND-REPEAT: repeat-x; WHITE-SPACE: nowrap; BACKGROUND-POSITION: center top; FONT-SIZE: 11px
+}
+.tabTextNA {
+	BACKGROUND-IMAGE: url(../i/cimages/border.gif); LINE-HEIGHT: 14px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; BACKGROUND-REPEAT: repeat-x; WHITE-SPACE: nowrap; BACKGROUND-POSITION: center top; FONT-SIZE: 11px
+}
+.tabLeftOff {
+	BORDER-LEFT: #999999 1px solid; BACKGROUND-COLOR: #cccccc; BORDER-TOP: #999999 1px solid
+}
+.tabLeftOn {
+	BORDER-LEFT: #999999 1px solid; BACKGROUND-COLOR: #eeeeee; BORDER-TOP: #999999 1px solid
+}
+.tabLeftNA {
+	BORDER-LEFT: #cccccc 1px solid; BACKGROUND-COLOR: #dddddd; BORDER-TOP: #cccccc 1px solid
+}
+.tabMidOnOff {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center top; PADDING-TOP: 0px
+}
+.tabMidOffOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center top; PADDING-TOP: 0px
+}
+.tabMidOffOff {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center top; PADDING-TOP: 0px
+}
+.tabMidOnOff {
+	BACKGROUND-IMAGE: url(../i/cimages/tabMidOnOff.gif)
+}
+.tabMidOffOn {
+	BACKGROUND-IMAGE: url(../i/cimages/tabMidOffOn.gif)
+}
+.tabMidOffOff {
+	BACKGROUND-IMAGE: url(../i/cimages/tabMidOffOff.gif)
+}
+.tabRightOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 30px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right top; PADDING-TOP: 0px
+}
+.tabRightOff {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 30px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right top; PADDING-TOP: 0px
+}
+.tabRightOff {
+	BACKGROUND-IMAGE: url(../i/cimages/tabRightOff.gif)
+}
+.tabRightOn {
+	BACKGROUND-IMAGE: url(../i/cimages/tabRightOn.gif)
+}
+.tabIconOn {
+	BACKGROUND-COLOR: #eeeeee
+}
+.tabTextOn {
+	BACKGROUND-COLOR: #eeeeee
+}
+.tabIconOff {
+	BACKGROUND-COLOR: #cccccc
+}
+.tabTextOff {
+	BACKGROUND-COLOR: #cccccc
+}
+.tabIconNA {
+	BACKGROUND-IMAGE: url(../i/cimages/borderNA.gif); BACKGROUND-COLOR: #dddddd; COLOR: #999999
+}
+.tabTextNA {
+	BACKGROUND-IMAGE: url(../i/cimages/borderNA.gif); BACKGROUND-COLOR: #dddddd; COLOR: #999999
+}
+TABLE.tabTable {
+	BORDER-LEFT: #999999 1px solid; BORDER-COLLAPSE: collapse
+}
+A.tabLinkOn {
+	DISPLAY: block; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.tabLinkOn:link {
+	DISPLAY: block; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.tabLinkOff {
+	DISPLAY: block; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.tabLinkOff:link {
+	DISPLAY: block; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.tabLinkOn {
+	BACKGROUND: #eeeeee
+}
+A.tabLinkOn:link {
+	BACKGROUND: #eeeeee
+}
+A.tabLinkOff {
+	BACKGROUND: url(../i/cimages/tab_off.gif) #a5a5a5 repeat-x center top
+}
+A.tabLinkOff:link {
+	BACKGROUND: url(../i/cimages/tab_off.gif) #a5a5a5 repeat-x center top
+}
+A.tabLinkOn:visited {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.tabLinkOff:visited {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.tabLinkOn:hover {
+	BACKGROUND: #ffffff; TEXT-DECORATION: none
+}
+A.tabLinkOff:hover {
+	BACKGROUND: #ffffff; TEXT-DECORATION: none
+}
+A.tabLinkOn:active {
+	BACKGROUND: #ffffff; TEXT-DECORATION: none
+}
+A.tabLinkOff:hover {
+	BACKGROUND: #ffffff; TEXT-DECORATION: none
+}
+A.tabLinkOn {
+	FONT-SIZE: 11px
+}
+A.tabLinkOff {
+	FONT-SIZE: 11px
+}
+.tabLinkNA {
+	FONT-SIZE: 11px
+}
+A.tabLinkOn DIV {
+	FONT-WEIGHT: bold
+}
+.tabLinkNA {
+	BACKGROUND: url(../i/cimages/tab_na.gif) #999999 repeat-x center bottom; COLOR: #666666; FONT-SIZE: 11px
+}
+.tabTableTabListSpecial TD {
+	BACKGROUND: url(../i/cimages/tab_off.gif) #a5a5a5 repeat-x center top; VERTICAL-ALIGN: middle; BORDER-TOP: #999999 1px solid; BORDER-RIGHT: #999999 1px solid
+}
+.tabTableTabListSpecial TD .tabLinkNA {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; LINE-HEIGHT: 30px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; HEIGHT: 30px; PADDING-TOP: 0px
+}
+.tabTableTabListSpecial TD A {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; LINE-HEIGHT: 30px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: table-cell; HEIGHT: 30px; VERTICAL-ALIGN: middle; CURSOR: pointer; PADDING-TOP: 0px
+}
+.tabTableTabListSpecial TD A .twoLine {
+	LINE-HEIGHT: 12px; PADDING-TOP: 2px
+}
+.statTableHolderInnerTable {
+	MARGIN-TOP: 4px
+}
+.statTableHolderInnerTable TD {
+	PADDING-LEFT: 0px
+}
+.statTableProfileTable {
+	WIDTH: 100%
+}
+.quoteBadgesRecord {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 10px; PADDING-LEFT: 80px; PADDING-RIGHT: 80px; PADDING-TOP: 10px
+}
+.quoteBadgesRecord A {
+	WIDTH: 52px; DISPLAY: inline-block; HEIGHT: 52px; CURSOR: pointer
+}
+.quoteBadgesRecord SPAN.quoteBadgesItem {
+	WIDTH: 52px; DISPLAY: inline-block; HEIGHT: 52px; CURSOR: pointer
+}
+.quoteBadgesRecord IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.quoteBadgesRecord SPAN.quoteBadgesItem .achievementName {
+	DISPLAY: none
+}
+.quoteBadgesRecord SPAN.quoteBadgesItem .achievementDesc {
+	DISPLAY: none
+}
+.toolTips {
+	POSITION: absolute; WIDTH: 158px; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif
+}
+.toolTips H3 {
+	BORDER-BOTTOM: #474747 1px solid; BORDER-LEFT: #000000 1px solid; PADDING-BOTTOM: 4px; LINE-HEIGHT: 14px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; BACKGROUND: url(../i/cimages/toolTipsBg.png) 0px 0px; COLOR: #ffffff; FONT-SIZE: 11px; BORDER-TOP: #000000 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #000000 1px solid; PADDING-TOP: 5px
+}
+.toolTips .tipsContent {
+	BORDER-LEFT: #000000 1px solid; LINE-HEIGHT: 14px; BACKGROUND: url(../i/cimages/toolTipsBg.png) 0px 0px; COLOR: #ffffff; FONT-SIZE: 11px; BORDER-RIGHT: #000000 1px solid
+}
+.toolTips .tipsContent P {
+	BORDER-BOTTOM: #474747 1px solid; PADDING-BOTTOM: 10px; MARGIN: 0px; MIN-HEIGHT: 10px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; COLOR: #989898; PADDING-TOP: 12px
+}
+.toolTips .tipsContent .timeStamp {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; DISPLAY: block; COLOR: #595959; PADDING-TOP: 4px
+}
+.toolTips .tipsArrow {
+	WIDTH: 158px; DISPLAY: block; BACKGROUND: url(../i/cimages/toolTipsArrows.png) no-repeat 0px 0px; HEIGHT: 10px; OVERFLOW: hidden
+}
+.quoteBadgesItemTips H3 {
+	COLOR: #298ec5
+}
+.quoteBadgesItemTips .tipsContent P {
+	PADDING-BOTTOM: 17px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; PADDING-TOP: 19px
+}
+.flag1 {
+	BACKGROUND: url(../i/cimages/badge-profile-1.png) no-repeat left top
+}
+.flag2 {
+	BACKGROUND: url(../i/cimages/badge-profile-2.png) no-repeat left top
+}
+.flag3 {
+	BACKGROUND: url(../i/cimages/badge-profile-3.png) no-repeat left top
+}
+.flag4 {
+	BACKGROUND: url(../i/cimages/badge-profile-4.png) no-repeat left top
+}
+.flag5 {
+	BACKGROUND: url(../i/cimages/badge-profile-5.png) no-repeat left top
+}
+.flag6 {
+	BACKGROUND: url(../i/cimages/badge-profile-6.png) no-repeat left top
+}
+.flag7 {
+	BACKGROUND: url(../i/cimages/badge-profile-7.png) no-repeat left top
+}
+.smallBadge {
+	POSITION: relative; WIDTH: 17px; DISPLAY: inline-block; BACKGROUND: url(../images/badge.grid.small.png) no-repeat -68px -170px; HEIGHT: 17px; MARGIN-RIGHT: 3px; TOP: 3px; LEFT: 0px
+}
+.smallBadge1 {
+	BACKGROUND-POSITION: 0px 0px
+}
+.smallBadge2 {
+	BACKGROUND-POSITION: -17px 0px
+}
+.smallBadge3 {
+	BACKGROUND-POSITION: -34px 0px
+}
+.smallBadge4 {
+	BACKGROUND-POSITION: -51px 0px
+}
+.smallBadge5 {
+	BACKGROUND-POSITION: -68px 0px
+}
+.smallBadge6 {
+	BACKGROUND-POSITION: 0px -17px
+}
+.smallBadge7 {
+	BACKGROUND-POSITION: -17px -17px
+}
+.smallBadge8 {
+	BACKGROUND-POSITION: -34px -17px
+}
+.smallBadge9 {
+	BACKGROUND-POSITION: -51px -17px
+}
+.smallBadge10 {
+	BACKGROUND-POSITION: -68px -17px
+}
+.smallBadge11 {
+	BACKGROUND-POSITION: 0px -34px
+}
+.smallBadge12 {
+	BACKGROUND-POSITION: -17px -34px
+}
+.smallBadge13 {
+	BACKGROUND-POSITION: -34px -34px
+}
+.smallBadge14 {
+	BACKGROUND-POSITION: -51px -34px
+}
+.smallBadge15 {
+	BACKGROUND-POSITION: -68px -34px
+}
+.smallBadge16 {
+	BACKGROUND-POSITION: 0px -51px
+}
+.smallBadge17 {
+	BACKGROUND-POSITION: -17px -51px
+}
+.smallBadge18 {
+	BACKGROUND-POSITION: -34px -51px
+}
+.smallBadge19 {
+	BACKGROUND-POSITION: -51px -51px
+}
+.smallBadge20 {
+	BACKGROUND-POSITION: -68px -51px
+}
+.smallBadge21 {
+	BACKGROUND-POSITION: 0px -68px
+}
+.smallBadge22 {
+	BACKGROUND-POSITION: -17px -68px
+}
+.smallBadge23 {
+	BACKGROUND-POSITION: -34px -68px
+}
+.smallBadge24 {
+	BACKGROUND-POSITION: -51px -68px
+}
+.smallBadge25 {
+	BACKGROUND-POSITION: -68px -68px
+}
+.smallBadge54 {
+	BACKGROUND-POSITION: 0px -85px
+}
+.smallBadge119 {
+	BACKGROUND-POSITION: -17px -85px
+}
+.smallBadge120 {
+	BACKGROUND-POSITION: -34px -85px
+}
+.smallBadge121 {
+	BACKGROUND-POSITION: -51px -85px
+}
+.smallBadge122 {
+	BACKGROUND-POSITION: -68px -85px
+}
+.smallBadge52 {
+	BACKGROUND-POSITION: 0px -102px
+}
+.smallBadge123 {
+	BACKGROUND-POSITION: -17px -102px
+}
+.smallBadge124 {
+	BACKGROUND-POSITION: -34px -102px
+}
+.smallBadge125 {
+	BACKGROUND-POSITION: -51px -102px
+}
+.smallBadge126 {
+	BACKGROUND-POSITION: -68px -102px
+}
+.smallBadge53 {
+	BACKGROUND-POSITION: 0px -119px
+}
+.smallBadge127 {
+	BACKGROUND-POSITION: -17px -119px
+}
+.smallBadge51 {
+	BACKGROUND-POSITION: 0px -136px
+}
+.smallBadge77 {
+	BACKGROUND-POSITION: 0px -153px
+}
+.smallBadge75 {
+	BACKGROUND-POSITION: 0px -170px
+}
+.smallBadge76 {
+	BACKGROUND-POSITION: 0px -187px
+}
+.smallBadge89 {
+	BACKGROUND-POSITION: 0px -204px
+}
+.smallBadge90 {
+	BACKGROUND-POSITION: -17px -204px
+}
+.smallBadge91 {
+	BACKGROUND-POSITION: -34px -204px
+}
+.smallBadge92 {
+	BACKGROUND-POSITION: -51px -204px
+}
+.smallBadge93 {
+	BACKGROUND-POSITION: -68px -204px
+}
+.smallBadge94 {
+	BACKGROUND-POSITION: 0px -221px
+}
+.smallBadge95 {
+	BACKGROUND-POSITION: -17px -221px
+}
+.smallBadge96 {
+	BACKGROUND-POSITION: -34px -221px
+}
+.smallBadge97 {
+	BACKGROUND-POSITION: -51px -221px
+}
+.smallBadge98 {
+	BACKGROUND-POSITION: -68px -221px
+}
+.smallBadge99 {
+	BACKGROUND-POSITION: 0px -238px
+}
+.smallBadge100 {
+	BACKGROUND-POSITION: -17px -238px
+}
+.smallBadge101 {
+	BACKGROUND-POSITION: -34px -238px
+}
+.smallBadge102 {
+	BACKGROUND-POSITION: -51px -238px
+}
+.smallBadge103 {
+	BACKGROUND-POSITION: -68px -238px
+}
+.smallBadge104 {
+	BACKGROUND-POSITION: 0px -255px
+}
+.smallBadge105 {
+	BACKGROUND-POSITION: -17px -255px
+}
+.smallBadge106 {
+	BACKGROUND-POSITION: -34px -255px
+}
+.smallBadge107 {
+	BACKGROUND-POSITION: -51px -255px
+}
+.smallBadge108 {
+	BACKGROUND-POSITION: -68px -255px
+}
+.smallBadge109 {
+	BACKGROUND-POSITION: 0px -272px
+}
+.smallBadge110 {
+	BACKGROUND-POSITION: -17px -272px
+}
+.smallBadge111 {
+	BACKGROUND-POSITION: -34px -272px
+}
+.smallBadge112 {
+	BACKGROUND-POSITION: -51px -272px
+}
+.smallBadge113 {
+	BACKGROUND-POSITION: -68px -272px
+}
+.smallBadge114 {
+	BACKGROUND-POSITION: 0px -289px
+}
+.smallBadge115 {
+	BACKGROUND-POSITION: -17px -289px
+}
+.smallBadge116 {
+	BACKGROUND-POSITION: -34px -289px
+}
+.smallBadge117 {
+	BACKGROUND-POSITION: -51px -289px
+}
+.smallBadge118 {
+	BACKGROUND-POSITION: -68px -289px
+}
+.panelMacro {
+	MARGIN: 10px 20px
+}
+.infoMacro {
+	BORDER-BOTTOM: #3c78b5 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #3c78b5 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #d8e4f1; MARGIN-TOP: 5px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 5px; BORDER-TOP: #3c78b5 1px solid; BORDER-RIGHT: #3c78b5 1px solid; PADDING-TOP: 0px
+}

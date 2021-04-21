@@ -1,0 +1,143 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>2724 - Eurodiffusion</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Eurodiffusion_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>2724 - Eurodiffusion</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2002"><b>World Finals - Beverly Hills - 2002/2003</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p2724.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=2724"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=2724"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+On January 1, 2002, twelve European countries abandoned their national currency for
+a new currency, the euro. No
+more francs, marks, lires, guldens, kroner,... only euros, all over the eurozone.
+The same banknotes are used in all
+countries. And the same coins? Well, not quite. Each country has limited freedom
+to create its own euro coins:
+
+</p><p>
+</p><blockquote>
+``Every euro coin carries a common European face. On the obverse, member states decorate the
+coins with their own motif. No matter which motif is on the coin, it can be used anywhere in the 12
+Member States. For example, a French citizen is able to buy a hot dog in Berlin using a euro coin
+with the imprint of the King of Spain." (source: http://europa.eu.int/euro/html/entry.html)
+
+</blockquote>
+
+<p>
+On January 1, 2002, the only euro coins available in Paris were French coins.
+Soon the first non-French coins
+appeared in Paris. Eventually, one may expect all types of coins to be evenly
+distributed over the twelve
+participating countries. (Actually this will not be true. All countries continue
+minting and distributing coins with
+their own motifs. So even in a stable situation, there should be an excess of
+German coins in Berlin.) So, how long
+will it be before the first Finnish or Irish coins are in circulation in the
+south of Italy? How long will it be before
+coins of each motif are available everywhere?
+
+</p><p>
+You must write a program to simulate the dissemination of euro coins throughout
+Europe, using a highly simplified
+model. Restrict your attention to a single euro denomination. Represent European
+cities as points in a rectangular
+grid. Each city may have up to 4 neighbors (one to the north, east, south and west).
+Each city belongs to a country,
+and a country is a rectangular part of the plane. The figure below shows a map
+with 3 countries and 28 cities. The
+graph of countries is connected, but countries may border holes that represent seas,
+or non-euro countries such as
+Switzerland or Denmark. Initially, each city has one million (1000000) coins in
+its country's motif. Every day a
+representative portion of coins, based on the city's beginning day balance,
+is transported to each neighbor of the
+city. A representative portion is defined as one coin for every full 1000 coins of a motif.
+
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p2724.eps}$
+ -->
+<img src="Eurodiffusion_files/p2724.gif" alt="\epsfbox{p2724.eps}" align="bottom" border="0" height="280" width="310">
+</div>
+
+<p>
+A city is <em>complete</em> when at least one coin of each motif is present in that city.
+A country is <em>complete</em> when all of its
+cities are complete. Your program must determine the time required for each country
+to become complete.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input consists of several test cases. The first line of each test case
+is the number of countries (<!-- MATH
+ $1 \le c \le 20$
+ -->
+<span class="MATH">1<img src="Eurodiffusion_files/2724img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>c</i><img src="Eurodiffusion_files/2724img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">20</span>). The
+next <span class="MATH"><i>c</i></span> lines describe each country. The country description has the format:
+<!-- MATH
+ $name\ x_l\ y_l\ x_h\ y_h$
+ -->
+<span class="MATH"><i>name</i>&nbsp;<i>x</i><sub>l</sub>&nbsp;<i>y</i><sub>l</sub>&nbsp;<i>x</i><sub>h</sub>&nbsp;<i>y</i><sub>h</sub></span>, where <span class="MATH"><i>name</i></span> is a single
+word with at most 25 characters; <span class="MATH"><i>x</i><sub>l</sub></span>, <span class="MATH"><i>y</i><sub>l</sub></span> are the lower left city coordinates of
+that country (most southwestward city )
+and <span class="MATH"><i>x</i><sub>h</sub></span>, <span class="MATH"><i>y</i><sub>h</sub></span> are the upper right city coordinates of that country
+(most northeastward city). <!-- MATH
+ $1 \le x_l \le xh \le 10$
+ -->
+<span class="MATH">1<img src="Eurodiffusion_files/2724img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>x</i><sub>l</sub><img src="Eurodiffusion_files/2724img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>xh</i><img src="Eurodiffusion_files/2724img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">10</span> and
+<!-- MATH
+ $1 \le y_l \le y_h \le 10$
+ -->
+<span class="MATH">1<img src="Eurodiffusion_files/2724img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>y</i><sub>l</sub><img src="Eurodiffusion_files/2724img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>y</i><sub>h</sub><img src="Eurodiffusion_files/2724img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">10</span>.
+
+</p><p>
+The last case in the input is followed by a single zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+For each test case, print a line indicating the case number, followed by a line
+for each country with the country
+name and number of days for that country to become complete. Order the countries
+by days to completion. If two
+countries have identical days to completion, order them alphabetically by name.
+
+<p>
+Use the output format shown in the example.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>3
+France  1 4 4 6
+Spain          3 1 6 3
+Portugal    1 1 2 2
+1
+Luxembourg  1 1 1 1
+2
+Netherlands 1 3 2 4
+Belgium     1 1 2 2
+0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>Case Number 1
+   Spain   382
+   Portugal   416
+   France   1325
+Case Number 2
+   Luxembourg   0
+Case Number 3
+   Belgium   2
+   Netherlands   2
+</pre>
+
+<p>
+</p><hr><address>Beverly Hills 2002-2003</address><p></p></body></html>

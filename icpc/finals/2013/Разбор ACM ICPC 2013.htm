@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://habrahabr.ru/company/yandex/blog/186316/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Разбор задач финала чемпионата мира про программированию ACM ICPC 2013 / Блог компании Яндекс / Хабрахабр</title>
+		<meta name="description" content="На прошедшем неделю назад чемпионате мира по командному программированию ACM ICPC 2013 было 11 задач, одну из которых за отведённое время не смогла решить правильно ни одна из команд. 
+
+Но кроме...">		
+		<meta name="keywords" content="acm icpc, acm-icpc, world finals, разбор задач">
+		
+			<meta property="fb:app_id" content="444736788986613"> 
+<meta property="og:type" content="article"> 
+<meta property="og:url" content="http://habrahabr.ru/company/yandex/blog/186316/"> 
+<meta property="og:title" content="Разбор задач финала чемпионата мира про программированию ACM ICPC 2013"> 
+	<meta property="og:image" content="http://habr.habrastorage.org/post_images/e1c/4f2/75e/e1c4f275efb76d296c6ae9e305e32910.gif">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/e1c4f275efb76d296c6ae9e305e32910.gif"><meta property="og:image" content="http://habrastorage.org/getpro/habr/post_images/482/240/41c/48224041c6514af166a6ef9ac8778296.jpg">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/48224041c6514af166a6ef9ac8778296.jpg"><meta property="og:image" content="http://habr.habrastorage.org/post_images/5a8/b9d/bf9/5a8b9dbf9935c5844c70f750c150b63b.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/5a8b9dbf9935c5844c70f750c150b63b.png"><meta property="og:image" content="http://habrastorage.org/getpro/habr/post_images/bd4/140/986/bd41409860ba3cb74edd6717c8e83efd.gif">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/bd41409860ba3cb74edd6717c8e83efd.gif"><meta property="og:image" content="http://habrastorage.org/getpro/habr/post_images/240/fa6/e71/240fa6e712e7b4f1a12ff2cdab5aca61.gif">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/240fa6e712e7b4f1a12ff2cdab5aca61.gif"><meta property="og:image" content="http://habrastorage.org/getpro/habr/post_images/caa/823/fac/caa823fac36b24031ff443ca4e7dc9e5.gif">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/caa823fac36b24031ff443ca4e7dc9e5.gif"><meta property="og:image" content="http://habrastorage.org/getpro/habr/post_images/25e/f17/0ad/25ef170ada1002152195079fb9adf397.gif">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/25ef170ada1002152195079fb9adf397.gif"><meta property="og:image" content="http://habr.habrastorage.org/post_images/145/ed2/ecf/145ed2ecf6a9e8b06f0394d226c1d7c8.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/145ed2ecf6a9e8b06f0394d226c1d7c8.png"><meta property="og:image" content="http://habr.habrastorage.org/post_images/b93/c60/f87/b93c60f87484db0ecc54a480b6136d95.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/b93c60f87484db0ecc54a480b6136d95.png"><meta property="og:image" content="http://habrastorage.org/getpro/habr/post_images/38c/8a9/3ae/38c8a93ae5fb731d7e7d3ba947c9dc11.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/38c8a93ae5fb731d7e7d3ba947c9dc11.png"><meta property="og:image" content="http://habr.habrastorage.org/post_images/63b/39b/267/63b39b26711486aac19c0b02a54453e1.jpg">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/63b39b26711486aac19c0b02a54453e1.jpg"><meta property="og:image" content="http://habr.habrastorage.org/post_images/d8f/15b/e80/d8f15be80a993fe4bec2b95d1b6a8bf4.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/d8f15be80a993fe4bec2b95d1b6a8bf4.png"><meta property="og:image" content="http://habr.habrastorage.org/post_images/62f/c0d/734/62fc0d7347c18b2b3c3be0aa7959d64b.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/62fc0d7347c18b2b3c3be0aa7959d64b.png"><meta property="og:image" content="http://habrastorage.org/getpro/habr/post_images/e81/923/a15/e81923a15365e675be58717140afdea6.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/e81923a15365e675be58717140afdea6.png"><meta property="og:image" content="http://habr.habrastorage.org/post_images/4b1/3f3/03d/4b13f303d866f5b7473988d556b42881.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/4b13f303d866f5b7473988d556b42881.png"><meta property="og:image" content="http://habrastorage.org/getpro/habr/post_images/b81/ca2/74e/b81ca274e0cf340a5fa5d614dbf2f52b.gif">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/b81ca274e0cf340a5fa5d614dbf2f52b.gif"><meta property="og:image" content="http://habr.habrastorage.org/post_images/674/8f5/b1e/6748f5b1e82410bd615050c87a689751.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/6748f5b1e82410bd615050c87a689751.png"><meta property="og:image" content="http://habrastorage.org/getpro/habr/post_images/445/578/1da/4455781da0cdc76010be575f2c955b56.gif">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/4455781da0cdc76010be575f2c955b56.gif"><meta property="og:image" content="http://habrastorage.org/getpro/habr/post_images/344/f76/ec9/344f76ec9643c09352ca5e93cb28f342.gif">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/344f76ec9643c09352ca5e93cb28f342.gif"><meta property="og:image" content="http://habrastorage.org/storage2/86f/370/fa3/86f370fa3f676c192c27754f957881cb.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/86f370fa3f676c192c27754f957881cb.png"><meta property="og:image" content="http://habrastorage.org/storage2/a13/5e5/773/a135e577362a3b1f5ebac1dea72688ff.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/a135e577362a3b1f5ebac1dea72688ff.png"><meta property="og:image" content="http://habrastorage.org/storage2/a2c/0d7/fc4/a2c0d7fc420ae2d42e61fd5e0c6d0243.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/a2c0d7fc420ae2d42e61fd5e0c6d0243.png"><meta property="og:image" content="http://habrastorage.org/getpro/habr/post_images/b3c/5ae/232/b3c5ae232f95acaea5e31597431a5631.png">
+	<link rel="image_src" href="./Разбор ACM ICPC 2013_files/b3c5ae232f95acaea5e31597431a5631.png">
+	
+<meta property="og:description" content="На прошедшем неделю назад чемпионате мира по командному программированию ACM ICPC 2013 было 11 задач, одну из которых за отведённое время не смогла решить...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@habrahabr">
+	<meta property="al:ios:url" content="habrahabr://post/186316">
+<meta property="al:ios:app_store_id" content="778613673">
+<meta property="al:ios:app_name" content="Habrahabr">
+<meta property="al:android:url" content="habrahabr://post/186316">
+<meta property="al:android:app_name" content="Habrahabr">
+<meta property="al:android:package" content="ru.habrahabr">
+<meta property="al:windows_phone:url" content="habrahabr://post/186316">
+<meta property="al:windows_phone:app_name" content="Habrahabr">
+<meta property="al:windows_phone:app_id" content="460a6bd6-8955-470f-935e-9ea1726a6060">
+
+		
+    <link href="http://habrahabr.ru/styles/1401451875/reset.css" rel="stylesheet" media="all">
+    <link href="http://habrahabr.ru/styles/1401451875/company/branded/global.css" rel="stylesheet" media="all">
+    <link href="http://habrahabr.ru/styles/1401451875/htmlformat.css" rel="stylesheet" media="all">
+    <link href="http://habrahabr.ru/styles/1401451875/forms.css" rel="stylesheet" media="all">
+    <link href="http://habrahabr.ru/styles/1401451875/jquery.jgrowl.css" rel="stylesheet" media="all">
+		<link href="http://habrahabr.ru/styles/1401451875/tipTip.css" rel="stylesheet" media="all">
+		
+    <link rel="stylesheet" href="http://habrahabr.ru/fonts/fontello/css/habr.css?r=1401451875">
+		<!--[if IE 7]><link rel="stylesheet" href="/fonts/fontello/css/habr-ie7.css?r=1401451875"><![endif]-->
+		
+			<link href="http://habrahabr.ru/styles/1401451875/company/branded/all.css" rel="stylesheet" media="all">
+	<link href="http://habrahabr.ru/styles/1401451875/company/branded/sidebar.css" rel="stylesheet" media="all">
+	<link href="http://habrahabr.ru/styles/1401451875/_parts/posts.css" rel="stylesheet" media="all">
+	<link href="http://habrahabr.ru/styles/1401451875/_parts/comments.css" rel="stylesheet" media="all">
+	<link href="http://habrahabr.ru/styles/1401451875/highlight.css" rel="stylesheet" media="all">
+
+		
+				<link href="http://habrahabr.ru/styles/1401451875/company/branded/printer.css" rel="stylesheet" media="print">
+
+
+		
+		
+				
+				
+		
+		<script id="twitter-wjs" src="./Разбор ACM ICPC 2013_files/widgets.js"></script><script type="text/javascript" async="" src="./Разбор ACM ICPC 2013_files/watch.js"></script><script async="" src="./Разбор ACM ICPC 2013_files/analytics.js"></script><script type="text/javascript" src="./Разбор ACM ICPC 2013_files/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/swfobject.js"></script>
+
+		<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/jquery.autocomplete.js"></script>		
+		<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/jquery.jgrowl.js"></script>	
+		<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/jquery.tipTip.minified.js"></script>
+		<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/jquery.scrollTo-1.4.6-min.js"></script>
+
+		<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/global.js"></script>
+		<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/search.js"></script>	
+		<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/_forms.js"></script>	
+		
+		
+			<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/jquery.form.js"></script>
+	<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/jquery.cookie.js"></script>
+	<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/wysiwyg.js"></script>
+	<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/highlight.js"></script>
+	<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/jquery-ui-highlight.js"></script>
+	<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/all.js"></script>
+	<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/posts.js"></script>	 
+	<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/comments.js"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+			if( document.location.hash == '' && $(window).scrollTop() == 0){
+				$.scrollTo( $('.post').first(), 0,	{ axis: 'y', offset: -200 } );
+			}
+		})
+	</script>
+
+		
+
+		
+		
+
+
+    
+    
+<script type="text/javascript">
+
+    var user_type = "guest";
+    var username = 'guest';
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-726094-1',  'auto' ); 
+
+  ga('require', 'displayfeatures');
+  ga('set', 'dimension1', user_type); // user type - guest/readonly/habrauser
+  ga('set', 'dimension2', username); // username
+
+
+  ga('send', 'pageview');
+  
+</script>
+
+
+
+<script type="text/javascript">
+var pp_gemius_identifier = new String('p8zr4.NqiIZJgD2cnP2s5fWWnIQFHrAvZ280B955gIr.f7');
+</script>
+<script src="./Разбор ACM ICPC 2013_files/gemius.js"></script>
+
+
+
+
+
+
+
+    
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter24049213 = new Ya.Metrika({id:24049213,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/24049213" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+<!-- /Yandex.Metrika counter -->
+    
+	</head>
+
+	<body style="background: #FFFFFF url(http://habrastorage.org/getpro/habr/branding/dfc/524/07b/dfc52407bac3b897082362b42ded2ed0.png?r=3) no-repeat center top;" data-twttr-rendered="true">
+
+		<div id="header_mouse_activity">
+		
+		
+		<div id="header">
+			  
+		  <div class="body">
+					<div class="main_menu">
+						<a href="http://habrahabr.ru/posts/top/">посты</a><a href="http://toster.ru/">q&amp;a</a><a href="http://habrahabr.ru/hubs/">хабы</a><a href="http://habrahabr.ru/companies/" class="active">компании</a>
+					</div>
+				<div class="user_panel">
+  		        <a href="https://habrahabr.ru/auth/login/" class="login">войти</a> <a href="https://habrahabr.ru/auth/register/">зарегистрироваться</a>
+  	
+  		  </div>
+		    <div class="search_panel">
+		      <form action="http://habrahabr.ru/search/" method="get" id="search_form">
+		        <input type="text" name="q" value="поиск по сайту" onfocus="this.value = (this.value == &#39;поиск по сайту&#39;) ? &#39;&#39; : this.value" onblur="this.value = (this.value == &#39;&#39;) ? &#39;поиск по сайту&#39; : this.value" autocomplete="off">
+		        <input type="submit" value="">
+		      </form>
+		    </div>
+
+  		  <div class="clear"></div>
+  		</div>
+		</div>
+
+  		
+		</div>
+    <div id="layout">
+			<div id="header_parsed">		<div class="top_banner"><a href="http://www.yandex.ru/"><img src="./Разбор ACM ICPC 2013_files/04c528b76d30fb65291425e1904120f3.png" alt=""></a></div>
+</div>
+      
+      <div class="wrapper">
+        <div class="inner">
+  						<div class="corporation_head" id="company_id" rel="1">
+	<div class="info">    
+		<div class="rating" title="Хабраиндекс - абстрактный показатель популярности компании на Хабрахабре"><div class="label">Хабраиндекс</div>609,42</div>  
+
+
+	</div>
+    <div class="menu">    
+        
+        	<a href="http://habrahabr.ru/company/yandex/profile/"><span class="name">Профиль</span></a>
+        
+        
+        
+        	<a href="http://habrahabr.ru/company/yandex/blog/" class="active"><span class="name">Блог</span> <span class="count_new">+1</span></a>
+        
+        
+        
+        	<a href="http://habrahabr.ru/company/yandex/vacancies/"><span class="name">Вакансии (<span class="count">18</span>)</span></a>
+        
+        
+        
+        	<a href="http://habrahabr.ru/company/yandex/fans/"><span class="name">Подписчики</span> <span class="count_new">+78</span></a>
+        
+        
+      
+    </div>  
+    
+    <div class="submenu">
+    </div>
+    
+</div> 
+	
+	<div class="content_left">
+		<div class="company_post">
+			
+  <div class="post shortcuts_item" id="post_186316">
+  	<div class="published">12 июля 2013 в 12:08</div>
+    <h1 class="title">
+	    
+        <span class="post_title">Разбор задач финала чемпионата мира про программированию ACM ICPC 2013</span>
+      
+			
+  	</h1>
+  	
+  	<div class="hubs">
+		<a href="http://habrahabr.ru/hub/algorithms/" class="hub " title="Вы не подписаны на этот хаб">Алгоритмы</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+		<a href="http://habrahabr.ru/company/yandex/" class="hub " title="Вы не подписаны на этот хаб">Блог компании Яндекс</a>, 
+		<a href="http://habrahabr.ru/hub/sport_programming/" class="hub " title="Вы не подписаны на этот хаб">Спортивное программирование</a><span class="profiled_hub" title="Профильный хаб">*</span>
+</div>
+
+  	
+  	<div class="content html_format">
+    	<img src="./Разбор ACM ICPC 2013_files/e1c4f275efb76d296c6ae9e305e32910.gif">На прошедшем неделю назад <a href="http://habrahabr.ru/company/yandex/blog/185394/">чемпионате мира по командному программированию ACM ICPC 2013</a> было 11 задач, одну из которых за отведённое время не смогла решить правильно ни одна из команд. <br>
+<br>
+Но кроме команд, есть и другие люди, которые профессионально решают задачи, — аналитики чемпионата. В течение трансляции они разбиваются на группы, распределяют задачи и потом рассказывают о них в студии. Множество зрителей следят за эфиром, пока эти ребята не разберут самую последнюю задачу. Кроме того, аналитики подсказывают ведущему, что происходит «на поле», высматривают интересные куски кода, следят за картинкой с веб-камер участников.<br>
+<br>
+В этом году на ACM ICPC был 21 аналитик из Швеции, Нидерландов, США, Словакии, Беларуси и России. И 10 из них были из Яндекса. Все они в разные годы были призёрами ICPC. Специально для Хабра они разобрали все задания чемпионата.<br>
+<br>
+<a href="./Разбор ACM ICPC 2013_files/Разбор ACM ICPC 2013.htm"><img src="./Разбор ACM ICPC 2013_files/48224041c6514af166a6ef9ac8778296.jpg" alt="Разбор задачи «Матрёшка» во время трансляции ACM ICPC 2013"></a><br>
+<a name="habracut"></a><br>
+<h4>Задача A. Self-Assembly</h4><br>
+Одно высоконаучное химическое учреждение активно экспериментирует с Автоматическим Сборщиком Молекул. Молекулы, между которыми возможно образование химических связей, перемешивают и помещают в АСМ, где они образуют сложные молекулярные структуры. Однако иногда возникает проблема — молекулы образуют такую большую группу, что Сборщик заедает.<br>
+<br>
+Напишите программу, которая будет определять, может ли предоставленный набор молекул собираться в структуры неограниченного размера. При этом 1) задача ограничена плоскими структурами и 2) каждая молекула имеет вид квадрата, все молекулы имеют одинаковый размер. Четыре стороны квадрата обозначают поверхности, которыми молекулы могут соединяться с совместимыми молекулами.<br>
+<br>
+В каждом тесте вам будет представлен набор описаний молекул. Каждый тип молекулы описывается четырьмя парами символов — метками связей,<br>
+которые обозначают возможность соответствующей поверхности молекулы соединяться с другими молекулами. <br>
+<br>
+Существует два вида меток связей:<br>
+<ul>
+<li>Заглавная латинская буква (A..Z) и один из символов + или -. Две поверхности могут соединяться, если их метки связей обозначены одинаковыми буквами, но различными знаками. Например, A+ совместима с A-, но не совместима с A+ и B-.</li>
+<li>Два нуля 00. Метка связи 00 означает, что эта поверхность не может образовывать связь (даже с такой же поверхностью с меткой 00).</li>
+</ul><br>
+Предположим, что в Сборщике имеется неограниченное количество молекул каждого из описанных видов, которые можно поворачивать и переворачивать. При образовании молекулярных структур молекулы могут находиться рядом только, если они совместимы. Каждая поверхность молекулы при этом может быть соединена с ничем.<br>
+<br>
+Рисунок показывает пример молекул трех видов и структуры ограниченного размера, собранной из них (это не единственная возможная структура для заданных типов молекул).<br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/5a8b9dbf9935c5844c70f750c150b63b.png" alt="Задача A ACM ICPC 2013"><br>
+<br>
+<u>Входные данные</u>. Входные данные состоят из одного теста. Каждый тест состоит из двух строк. Первая строка содержит число <i>n</i> (1 ≤ <i>n</i> ≤ 40000) — количества типов молекул. Вторая строка содержит <i>n</i> подстрок по 8 символов каждая — описание каждого вида молекул, причем поверхности описываются по часовой стрелке.<br>
+<br>
+<u>Выходные данные</u>. Выведите слово unbounded, если молекулы могут создать бесконечную структуру и слово bounded в противном случае.<br>
+<br>
+<b>Решение задачи A</b><br>
+<i>Автор разбора — Василий Астахов, бронзовый медалист ACM ICPC 2011 в составе команды МГУ им. М.В. Ломоносова.</i><br>
+<br>
+<blockquote>В задаче требуется понять, существует ли неограниченная молекулярная структура, в которой молекулы имеют вид квадратов с различными связями на сторонах. Учитывая доступность операций поворота и отражения, для решения задачи необходимо и достаточно было понять, существует ли цикл из молекул. Тогда, например, смещаясь все время вправо и вниз, можно было бы получить неограниченную на плоскости структуру, при этом никакие связи, кроме соседних по циклу, не были бы задействованы в молекуле. Для нахождения цикла можно было бы построить граф, в котором вершины — это типы соединений, а ребра из типа соединения <i>X</i>[+/−] идут во все типы соединений <i>Y</i>, для которых существует молекула, содержащая одновременно <i>Y</i> и <i>X</i>[−/+] (парную вершину). Тогда, найдя цикл в таком графе, получим существование цикла в исходном. Задача нахождения цикла в ориентированном графе на 52 вершинах (<i>A</i>+, <i>A</i>−, …, <i>Z</i>+, <i>Z</i>−) является несложной и может быть решена, например, алгоритмом построения компонент сильной связности (существование компоненты размером более одной вершины будет означать цикл).<br>
+</blockquote><br>
+<h4>Задача B. Hey, Better Bettor</h4><br>
+Недавняя рецессия больно ударила по развлекательным заведениям, в том числе и по игорному бизнесу. Среди казино идет жесткая конкуренция, и, чтобы привлечь игроков, некоторые из них стали проводить особенно привлекательные акции. Акция казино включает следующее: вы можете играть столько, сколько хотите. И после того, как вы закончите, какую бы сумму вы ни проиграли с момента начала, казино возвращает <i>х%</i> ваших потерь. Естественно, если вы оказались в выигрыше, вы забираете его весь.<br>
+<br>
+При этом нет ограничений ни на продолжительность игры, ни на количество денег, с которым вы вступаете в игру, но вы можете воспользоваться этой акцией только один раз.<br>
+<br>
+Для простоты предположим, что все ставки стоят 1 доллар, а выигрыш составляет 2 доллара. Теперь допустим, что <i>х</i> равно 20. Если вы сделаете всего 10 ставок, перед тем как закончить игру, и только 3 из них выиграют, то ваши общие потери составят 3,2 доллара. Если 6 ставок выиграют, то ваш выигрыш составит 2 доллара.<br>
+<br>
+Даны <i>x</i> и <i>p</i> (вероятность выигрыша единичной ставки в процентах), вам требуется написать программу для определения максимального ожидаемого выигрыша, который вы можете получить, используя любую стратегию игры.<br>
+<br>
+<u>Входные данные</u>. Входные данные состоят из одного теста, который содержит процент возврата <i>х</i> (0 ≤ <i>х</i> &lt;100) и вероятность выигрыша в процентах <i>p</i> (0 ≤<i> p</i> ≤ 50). <i>x</i> и <i>p</i> имеют не более двух цифр после запятой.<br>
+<br>
+<u>Выходные данные</u>. Выведите максимальный ожидаемый выигрыш с абсолютной погрешностью не более 10<sup>-3</sup>.<br>
+<br>
+<b>Решение задачи B</b><br>
+<i>Автор разбора —&nbsp;<a href="http://codeforces.ru/profile/Michael">Михаил Левин</a>, бронзовый медалист ACM ICPC 2007 года, серебряный медалист ACM ICPC 2008 года в составе команды МГУ им. М.В. Ломоносова.</i><br>
+<br>
+<blockquote>Заметим, что решение остановить ли сейчас игру зависит только от текущего выигрыша или проигрыша игрока — история не имеет значения. Можно показать, что оптимальная стратегия в этом случае всегда имеет вид «остановиться, если на руках выигрыш <i>A</i> или проигрыш <i>B</i>», где <i>A</i> и <i>B</i> — некоторые целые неотрицательные числа. При фиксированных <i>A</i> и <i>B</i> для того чтобы вычислить ожидаемую прибыль, необходимо уметь решать такую задачу: найти вероятность P(<i>A</i>, <i>B</i>) того, что игрок в какой-то момент достигнет выигрыша <i>A</i>, при этом ни разу до того не имея на руках проигрыша <i>B</i> или большего. Если эта задача решена, то ожидаемая прибыль стратегии вычисляется как <img src="./Разбор ACM ICPC 2013_files/bd41409860ba3cb74edd6717c8e83efd.gif">, где <i>x</i>% — скидка, предоставляемая казино игроку в случае проигрыша.<br>
+<br>
+Для чисел P(<i>A</i>, <i>B</i>) выполнено рекуррентное соотношение:<br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/240fa6e712e7b4f1a12ff2cdab5aca61.gif">,<br>
+<br>
+где <i>p</i> — вероятность выигрыша при каждом броске монетки. При этом еще <nobr>P(0, <i>A</i> + <i>B</i>) = 1,</nobr> а <nobr>P(<i>A</i> + <i>B</i>, 0) = 0.</nobr> Если решить эту линейную рекурренту порядка 2, то получим <br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/caa823fac36b24031ff443ca4e7dc9e5.gif">,<br>
+<br>
+где <img src="./Разбор ACM ICPC 2013_files/25ef170ada1002152195079fb9adf397.gif">.<br>
+<br>
+Если бы мы могли перебрать все возможные пары (<i>A</i>, <i>B</i>) для каждого входа (<i>x</i>, <i>p</i>), то мы бы так и сделали, а потом выбрали лучшую. Пар (<i>A</i>, <i>B</i>) бесконечное количество, но если провести несколько численных экспериментов, то можно заметить, что при возрастании <i>A</i> и <i>B</i> ожидаемая прибыль сначала растет, а потом начинает падать (можно доказать выпуклость ожидаемой прибыли как функции от <i>A</i> и <i>B</i>), поэтому всегда достаточно проверить лишь конечное число пар. Кроме того, можно заметить, что наилучшие значения для <i>A</i> и <i>B</i> тем больше, чем ближе <i>p</i> к 0.5, а <i>x</i> — к 100. Худший возможный случай — <i>p</i> = 0.4999, <i>x</i> = 99.99. Оказывается, что в этом случае достаточно перебирать <i>A</i> до 21000, а <i>B</i> — до 2500, и такого перебора достаточно, чтобы решение проходило ограничения по времени.</blockquote><br>
+<br>
+<h4>Задача С. Surely You Congest</h4><br>
+Вы отвечаете за систему интеллектуального управления дорожным движением для новых автомобилей. Ваша цель — избежать пробок из водителей, добирающихся из спальных районов в центр города в утренний час пик, используя информацию об устройстве города и движении других автомобилей.<br>
+<br>
+К сожалению, из-за того что водители эгоистичны, они никогда не поедут по не самому короткому из возможных путей в центр, даже если вы попросите их об этом. Вы можете только советовать им, какой из нескольких кратчайших путей выбрать.<br>
+<br>
+Город состоит из перекрестков, соединенных двухсторонними дорогами, которые можно проехать за заданное время. Все водители начинают свое движение на перекрестках (возможно, различных) и заканчивают на одном обозначенном как центр города перекрестке номер 1. Если два водителя одновременно начнут движение по одной и той же дороге в одном направлении, то возникнет пробка и ваша цель будет провалена. Однако водители могут проезжать один и тот же перекресток одновременно или ехать по одной и той же дороге, въехав на нее в разное время.<br>
+<br>
+Определите максимальное количество водителей, которые могут добраться в центр города без пробок, если все водители начинают свое движение одновременно и ни один из них не поедет по неоптимальному пути.<br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/145ed2ecf6a9e8b06f0394d226c1d7c8.png" alt="image"><br>
+<br>
+На рисунке машины изображены в их начальном расположении. Один водитель уже находится в центре, а из машин, находящихся на 4 перекрестке, одна может двигаться вдоль пунктирной линии через перекресток 3, другая — вдоль пунктирной линии через перекресток 2, но оставшиеся две не смогут добраться до центра без пробок. Таким образом, ответ на этот тест будет 3.<br>
+<br>
+<u>Входные данные</u>. Вход содержит один тест. Первая строка содержит три числа <i>n, m</i> и <i>c</i>, где <nobr><i>n</i> (1≤ <i>n</i>≤ 25000)</nobr> — количество перекрестков, <nobr><i>m</i> (0 ≤ <i>m</i> ≤ 50000)</nobr> — количество дорог в городе и <nobr><i>c</i> (0 ≤ <i>c</i> ≤ 1000)</nobr> — количество водителей. Каждая из следующих <i>m</i> строк содержит три числа <i>x<sub>i</sub></i>, <i>y<sub>i</sub></i> и <i>t<sub>i</sub></i>, описывающие дорогу, где x<sub>i</sub> и <i>y<sub>i</sub></i> (1≤ <i>x<sub>i</sub></i>, <i>y<sub>i</sub></i> ≤ n) — номера различных перекрестков, которые соединяет описанная дорога и <i>t<sub>i</sub></i> (1≤ <i> t<sub>i</sub></i> ≤ 10000) — время, которое должен потратить водитель чтобы добраться от начала до конца дороги в любом направлении. Гарантируется, что можно добраться в центр с любого перекрестка. Последняя строка содержит c чисел, описывающих начальные перекрестки, на которых расположены машины.<br>
+<br>
+<u>Выходные данные</u>. Выведите максимальное количество водителей, которые смогут добраться в центр города без пробок.<br>
+<br>
+<b>Решение задачи С</b><br>
+<i>Автор разбора — Михаил Левин.</i><br>
+<br>
+<blockquote>Вычислим кратчайшие расстояния <i>d</i>(<i>u</i>) от всех вершин <i>u</i> до конечной вершины <i>e</i> при помощи алгоритма Дейкстры с кучей за O(<i>m</i> log <i>n</i>). Так как все стремятся ехать только по кратчайшему пути, то машины будут ездить только по таким ребрам (<i>u</i>, <i>v</i>) в сторону от <i>u</i> до <i>v</i>, что <i>d</i>(<i>u</i>) = <i>d</i>(<i>v</i>) + <i>l</i>(<i>u</i>, <i>v</i>), где <i>l</i>(<i>u</i>, <i>v</i>) — длина ребра (<i>u</i>, <i>v</i>). Построим новый ориентированный граф, состоящий только из таких ребер.<br>
+<br>
+Для любых двух машин, начавших двигаться одновременно и движущихся от своих исходных точек до конечной точки с одинаковой скоростью, разница расстояний до конечной вершины остается всегда постоянной. Поэтому две машины, начинавшие на разных расстояниях, никогда не могут проехать по одному и тому же ребру одновременно. Сгруппируем все машины по расстоянию от конечной точки. Тогда для каждой группы необходимо найти наибольшее количество попарно непересекающихся по ребрам путей из всех стартовых вершин до конечной вершины в новом ориентированном графе, Эта задача решается при помощи алгоритма нахождения максимального потока в графе: добавим в граф источник и проведем из него ребра во все вершины, в которых есть машины, с пропускной способностью, равной количеству машин в вершине. Все ребра ориентированного графа сделаем пропускной способности 1. Если найти в этом графе максимальный поток из источника в конечную вершину, то как раз и получится максимальное количество попарно не пересекающихся по ребрам путей.<br>
+<br>
+Найдем максимальный поток для каждой группы вершин на одном расстоянии от конечной и сложим ответы — это и будет ответ к задаче. На нахождение одного увеличивающего поток пути уходит O(<i>m</i>), а всего таких путей будет найдено не более <i>c</i>, поэтому суммарно все запуски нахождения максимального потока будут выполнены не более чем за O(<i>mc</i>). Итого сложность решения O(<i>m</i> log <i>n</i> + <i>mc</i>), что проходит в заданные ограничения.</blockquote><br>
+<br>
+<h4>Задача D. Factors</h4><br>
+Одна из фундаментальных теорем арифметики гласит, что любое число большее 1 можно единственным образом представить в виде произведения простых чисел. Однако этот уникальный набор простых множителей можно упорядочить различными способами. Например:<br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/b93c60f87484db0ecc54a480b6136d95.png"><br>
+<br>
+Обозначим как <i>f(k)</i> количество различных способов упорядочить простые множители числа <i>k</i>. Тогда <i>f</i>(20) = 3 и <i>f</i>(10) = 2.<br>
+<br>
+Вам дано целое положительное число <i>n</i>, причем гарантируется, что для любого <i>n</i> существует такое <i>k</i>, что <i>f(k)</i> = <i>n</i>. Определите такое минимальное <i>k</i>.<br>
+<br>
+<u>Входные данные</u>. Во входном файле приведены не более 1000 тестов, каждый из которых записан в отдельной строке. Каждый тест состоит из целого положительного числа <i>n</i> &lt; 2<sup>63</sup>.<br>
+<br>
+<u>Выходные данные</u>. Для каждого теста выведите число n и минимальное <i>k</i> &gt; 1 такое что <i>f</i>(<i>k</i>) = <i>n</i>. Числа в тестах выбраны таким образом, что <nobr><i>k</i> &lt; 2<sup>63</sup></nobr>.<br>
+<br>
+<b>Решение задачи D</b><br>
+<i>Автор разбора — <a href="http://codeforces.ru/profile/zeliboba">Ренат Гимадеев</a>, золотой медалист ACM ICPC 2012 в составе команды Физтеха.</i><br>
+<br>
+<blockquote>Это довольная простая задача, у которой было много разных решений. Приведу одно из самых коротких.<br>
+<br>
+Заметим, что если разложить на простые сомножители <i>n</i>=<i>p</i><sub>1</sub><sup><i>k</i><sub>1</sub></sup><i>p</i><sub>2</sub><sup><i>k</i><sub>2</sub></sup>...<i>p</i><sub><i>t</i></sub><sup><i>k</i><sub><i>t</i></sub></sup>, то количество упорядоченных представлений в виде произведения простых будет равно <img src="./Разбор ACM ICPC 2013_files/38c8a93ae5fb731d7e7d3ba947c9dc11.png">. Это следует из простых комбинаторных рассуждений: упорядочить N разных простых множителей можно N! способами. Если среди этих множителей есть одинаковые, то все упорядочивания, которые отличаются только порядком одинаковых множителей, на самом деле совпадают. Каждую группу по k<sub>i</sub> одинаковых множителей можно переставить k<sub>i</sub>! способами. Поэтому каждая уникальная перестановка была посчитана k<sub>1</sub>!k<sub>2</sub>!...k<sub>t</sub>! раз и на это число надо поделить. Эта формула дает нам возможность быстро вычислять <i>f</i>(<i>k</i>), зная разложение числа <i>k</i> на простые множители.<br>
+<br>
+Дальше нужно заметить, что количество упорядочиваний не зависит от того, чему равны <i>p</i><sub>i</sub> и как упорядочены между собой <i>k</i><sub>i</sub>. Поэтому если мы ищем минимальное число, то его надо искать среди чисел вида <i><i>n</i></i>=2<sup>k<sub>1</sub></sup>3<sup>k<sub>2</sub></sup>5<sup>k<sub>3</sub></sup>..., причем k<sub>1</sub>≥k<sub>2</sub>≥k<sub>3</sub>≥… Оказывается, что таких чисел среди чисел меньших 2<sup>63</sup> не так уж и много (в условии просят искать только те решения, которые меньше 2<sup>63</sup>), их около 40000 и они легко генерируются рекурсией. Для каждого из них можно найти <i>f(k)</i> по описанной выше формуле и сохранять в ассоциативном массиве минимальные значения числа <i>k</i> для каждого полученного <i>f(k</i>). После этого каждый запрос из условия обрабатывается за время обращения к этому ассоциативному массиву.</blockquote><br>
+<br>
+<h4>Задача E. Harvard</h4><br>
+<img src="./Разбор ACM ICPC 2013_files/63b39b26711486aac19c0b02a54453e1.jpg" align="right" alt="Задача E ACM ICPC 2013. Картинка — Wikimedia Commons">Термин «Гарвардская архитектура» применима к компьютеру с физически разделенной памятью для инструкций и данных. Термин происходит от имени компьютера <a href="http://en.wikipedia.org/wiki/Harvard_Mark_I">Harvard Mark I</a>, созданного в 1944 году. В нем для инструкций использовалась бумажная лента, а для данных — реле.<br>
+<br>
+Некоторые современные микроконтроллеры используют «Гарвардскую архитектуру», но не бумажные ленты и реле! Данные лежат в банках, каждый из которых содержит одинаковое число ячеек. Каждая инструкция обращения к данным имеет байт-смещение <i>f</i> в пределах банка и бит <i>a</i>, который используется для определения номера банка. Если <i>a</i> равно 0, то обращение происходит к банку с номером 0. Если a равно 1, то номер банка хранится в специальном регистре выбора банка (РВБ).<br>
+<br>
+Например, пусть у нас есть 4 банка с 8 ячейками каждый. Обратиться к ячейке с номером 5 можно двумя способами: одной инструкцией с <i>a</i> = 0 и <i>f</i> = 5 или двумя инструкциями, установив значение РВБ равным 0 и затем использовав инструкцию с <nobr><i>a</i> = 1</nobr> и<nobr><i> f </i>= 5</nobr>. Очевидно, что первый способ быстрее, ибо не нужно присваивать значение РВБ. Теперь предположим, что нужно обратиться к ячейке 20 в той же памяти. Сейчас применим только один способ: выполнить инструкцию, установив значение РВБ 2 (если в нем уже не хранится нужное значение), и затем инструкцию с <i>a</i> = 1 и <i>f </i>= 4. Программа представляет собой последовательность операций. Каждая операция это:<br>
+<br>
+ <ul>
+<li>обращение к переменной, записывается как <i>Vi</i>, где <i>i</i> — положительное целое число;</li>
+<li> повторение, записывается как <i>Rn<code> &lt; program &gt; </code>E</i>, где <i>n</i> — положительное целое число, а <code>&lt; program &gt;</code> — произвольная программа, эта операция эквивалентна выполнению программы <i>n</i> раз.</li>
+</ul><br>
+Задача состоит в определении минимального времени выполнения программы. А именно, зная количество и размер банков, а также имея программу, требуется определить минимальное количество инструкций 1(обращения к ячейкам и, возможно, установки значения РВБ) необходимое для выполнения программы. Для этого вам требуется ассоциировать переменные с ячейками памяти и среди всех отображений определить то, которое минимизирует число инструкций. Нужно выдать само это число. Обратите внимание, что значение РВБ до первого присвоения не определено.<br>
+<br>
+<u>Входные данные</u>. Содержат один тест, состоящий из двух строк. В первой <i>b</i> и <i>s</i> — количество и количество переменных, которое можно хранить в банке. Вторая строка содержит непустую программу с не более чем 1000 элементами (каждый из <i>Rn</i>, <i>V i</i> и <i>E</i> считается за один элемент).<br>
+<br>
+Можно предполагать, что:<br>
+<ul>
+<li>в повторении <i>Rn</i>, n удовлетворяет 1≤ n ≤ 10<sup>6</sup>;</li>
+<li>тело повторения <code>Rn &lt; program &gt; E &lt; program &gt;</code> не пусто;</li>
+<li>в обращении к переменной <i>Vi</i>, <i>i</i> удовлетворяет <i>1</i> ≤ <i>i</i> ≤ <i>min</i>(<i>bs; 13</i>);</li>
+<li>общее число обращений к переменным в программе не превосходит 10<sup>12</sup>.</li>
+</ul><br>
+<u>Выходные данные</u>. Выведите одно число — минимальное число инструкций, необходимое для выполнения программы.<br>
+<br>
+<b>Решение задачи E</b><br>
+<i>Автор разбора — <a href="http://codeforces.ru/profile/stan">Станислав Пак</a>, золотой медалист ACM ICPC 2009 в составе команды Саратовского государственного университета.</i><br>
+<br>
+<blockquote>Можно сделать наблюдение, что интересных отображений множества переменных на ячейки банков данных достаточно немного, чтобы их все перебрать. А именно (ячейки, задействованные в отображении, будем называть заполненными, аналогично банки, если все их ячейки заполнены):<br>
+<br>
+<ol>
+<li> Можно считать, что нулевой банк заполнен, если есть другой банк с заполненной ячейкой, потому что обращение к нулевому банку бесплатно. </li>
+<li> Банки с номерами больше нуля идентичны, поэтому можно полагать, что минимальные номера переменных, отображенных в ячейки этих банков, упорядочены, например, по возрастанию.</li>
+<li>Можно считать, что суммарное количество заполненных ячеек в двух любых банках больше <i>s</i>.</li>
+</ol><br>
+<br>
+С учетом отсечений 1 — 3 и ограничений входных данных интересных отображений около 3&nbsp;·&nbsp;10<sup>6</sup>.<br>
+<br>
+Так как обращение к нулевому банку бесплатно, то можно убрать из программы переменные, отображенные на этот банк. Для каждой пары оставшихся переменных <i>i</i> и <i>j</i> можно предпросчитать <i>C<sub>ij</sub></i> — стоимость операции обращения к переменной <i>j</i> после обращения к переменной <i>i</i>, после чего остается смоделировать работу программы.</blockquote><br>
+<br>
+<h4>Задача F. Low Power</h4><br>
+Вы проектируете продвинутые чипы для вычислительных машин. Производство чипов просто и поставлено на рельсы, однако проблему вызывают источники питания, так как доступные батареи имеют различные выходные мощности. <br>
+<br>
+Представьте, что у нас есть n машин с двумя чипами на каждой, а каждый чип питается от <i>k</i> батарей. Удивительно, но не имеет значения, сколько энергии потребляют чипы, однако важно, чтобы выходные мощности чипов как можно меньше отличались друг от друга, так как в этом случае машина работает наилучшим образом. Выходная мощность чипа — это минимальная выходная мощность среди всех <i>k</i> батарей в чипе. Вы располагаете <i>2nk</i> батареями, которые вам необходимо распределить по чипам машин. Может оказаться, что нет способа распределить батареи так, чтобы выходные мощности чипов были равны для всех машин. Тем не менее, вам нужно минимизировать разность мощностей. Подробнее, вы хотите гарантировать вашим заказчикам, что разность выходных мощностей чипов во всех машинах не превосходит <i>d</i>, при этом стараясь минимизировать <i>d</i>. Для этого вам нужно найти оптимальное распределение батарей по чипам.<br>
+<br>
+<u>Входные данные</u>. Состоят из одного теста, содержащего две строки. В первой строке два числа <i>n</i> и <i>k</i> (<i>2nk</i> ≤ 10<sup>6</sup>), во второй <i>2nk</i> целых чисел p<sub>i</sub> (1 ≤ p<sub>i</sub> ≤10<sup>9</sup>).<br>
+<br>
+<u>Выходные данные</u>. Выведите минимальное <i>d</i> такое, что существует распределение батарей по чипам, чтобы разность выходных мощностей чипов в каждой машине не превосходила <i>d</i>.<br>
+<br>
+<b>Решение задачи F</b><br>
+<i>Автор разбора — Станислав Пак.</i><br>
+<br>
+<blockquote>Эта задача одна из простых. Нужно из 2<i>nk</i> выбрать <i>n</i> пар (назовем их представителями) батареек, каждая из которых<br>
+ имеет минимальную мощность на своем чипе, чтобы максимум разности выходных мощностей батареек в паре был минимален. Предположим, что зафиксировано <i>d</i>, тогда можно узнать, существуют ли представители такие, что максимум не превосходит <i>d</i>. Отсортируем мощности <i>p</i><sub>1</sub> ≤ <i>p</i><sub>2</sub>… ≤ <i>p</i><sub>2nk</sub> и будем жадно набирать пары: в первую пару попадут батареи <i>p</i><sub>1</sub> и <i>p</i><sub>2</sub>. Если <nobr><i>p</i><sub>2</sub> — <i>p</i><sub>1</sub> &gt; <i>d</i>,</nobr> то представителей выбрать нельзя. Во вторую пару возьмем батареи (<i>p</i><sub>i2</sub>, <i>p</i><sub>i2+1</sub>) с разностью не больше <i>d</i> и минимальным индексом <i>i</i>2 ≤ 2<i>k</i> + 1, если это возможно. Аналогично в третью пару — (<i>p</i><sub>i3</sub>, <i>p</i><sub>i3 + 1</sub>), i3 ≤ 4k + 1.<br>
+ <br>
+Если с помощью этого алгоритма не удается набрать <i>n</i> пар, то этого сделать нельзя. Ответ найдем бинарным поиском.</blockquote><br>
+<br>
+<h4>Задача G. Map Tiles.</h4><br>
+<i>Это задача, которую в отведённое время не смогла решить правильно ни одна из команд.</i><br>
+<br>
+Печать карт — сложная задачка. Сначала нужно найти подходящее преобразование, чтобы уместить карту сферической земли на плоскости, потом оказывается, что для печати высококачественных карт нужно использовать несколько листов бумаги, потому что на один они не помещаются. Чтобы преодолеть эту трудность, издатели карт разбивают карту на несколько прямоугольных частей и печатают каждую часть отдельно. Именно в этом процессе вы примете участие в этой задаче.<br>
+<br>
+Международная ассоциация издателей карт старается сократить расходы на печать карт минимизируя количество отдельных листов, используемых для печати карт. Даже со стандартным размером листов и масштабом карты можно оптимизировать расход листов, подстраивая их расположение.<br>
+<br>
+В левой части рисунка показаны 14 листов, покрывающие область. В правой части показано, как ту же область можно покрыть всего 10 листами, не изменяя ориентацию области, размер листов и масштаб.<br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/d8f15be80a993fe4bec2b95d1b6a8bf4.png" alt="Самая сложная задача финала ACM ICPC 2013"><br>
+<i>Два разных способа разложить по листам Техас</i><br>
+<br>
+Ваша задача — помочь Международной ассоциации издателей карт найти минимальное количество листов, необходимое для покрытия заданной области. Для простоты область является замкнутым многоугольником без самопересечений.<br>
+<br>
+Обратите внимание, что все листы должны являться частями непрерывной решетки, со сторонами параллельными горизонтали и вертикали. Листы могут касаться только своими сторонами полностью и не могут быть повернуты. Кроме того, хотя все заданные координаты являются целочисленными, листы могут быть расположены в нецелочисленных координатах.<br>
+<br>
+Многоугольник может касаться сторон листов (как в примере 2). Однако, для того чтобы избежать проблем с машинным представлением рациональных чисел, можно предполагать, что ответ не изменится если вершина многоугольника будет находиться снаруди листа на расстоянии 10<sup>-6</sup>.<br>
+<br>
+<u>Входные данные</u>. Вход состоит из одного теста. В первой строке теста записаны три числа <i>n</i>, x<sub>s</sub> и y<sub>s</sub>. Количество вершин многоугольника <nobr><i>n</i> (3 ≤ <i>n</i> ≤ 50),</nobr> <i>x<sub>s</sub></i> и <i>y<sub>s</sub></i> (1≤ x<sub>s</sub>, y<sub>s</sub> ≤ 100) — размеры листов, которыми нужно покрыть картую. Каждая из следующих <i>n</i> строк содержит два целых числа <i>x</i> и <i>y</i> (0 ≤ x ≤ 10<i>x<sub>s</sub></i>, 0 ≤ <i>y</i> ≤ 10<i>y<sub>s</sub></i>), описывающих вершину многоугольника (в направлении обхода либо по часовой, либо против часовой стрелки).<br>
+<br>
+<u>Выходные данные</u>. Выведите минимальное количество листов, необходимых для покрытия многоугольника.<br>
+<br>
+<b>Решение задачи G</b><br>
+<i>Автор разбора — <a href="http://codeforces.ru/profile/Jacob">Яков Длугач</a>, золотой медалист ACM ICPC 2012 в составе команды Физтеха.</i><br>
+<br>
+<blockquote>Решение этой задачи разбивается на две части: генерацию вариантов расположения многоугольника и подсчёт количества занимаемых клеток для каждого из вариантов расположения.<br>
+<br>
+<h6>Генерация вариантов</h6><br>
+Заметим, что если мы нашли некоторое решение, то его можно «подвинуть», пока многоугольник не упрётся в сетку (то есть дальнейшее движение может изменить набор выбранных клеток). Фактически есть несколько случаев, когда многоугольник упирается в сетку:<br>
+<br>
+<ul>
+<li> одна из вершин многоугольника попадает на линию сетки; </li>
+<li> одно из рёбер многоугольника натыкается на узел сетки. </li>
+</ul><br>
+<br>
+При выполнении одного из этих условий у многоугольника всё ещё остаётся некоторая степень свободы:<br>
+<br>
+<ul>
+<li> в случае попадания вершины на линию сетки можно двигать многоугольник вдоль этой линии;</li>
+<li> в случае попадания ребра на узел сетки можно двигать многоугольник вдоль ребра.</li>
+</ul><br>
+<br>
+Заранее оговоримся, что сдвиги, отличающиеся по каждой из координат на число, кратное шагу сетки, мы будем считать равными.<br>
+<br>
+Поэтому фактически есть три варианта выбора «упора», чтобы положение многоугольника относительно сетки задавалось однозначно.<br>
+<br>
+<ol>
+<li> Одна из вершин попадает на вертикальную линию сетки, и одна из вершин попадает на горизонтальную линию сетки. Сюда входит случай, когда одна вершина попадает в узел сетки. То есть упор однозначно задаётся парой вершин, итого вариантов — <i>n</i><sup>2</sup>.</li>
+<li> Одна из вершин попадает на горизонтальную или вертикальную линию сетки. Без потери общности будем считать, что эта линия сетки — вертикальная и задаётся уравнением <i>x</i> = 0. <br>
+Пусть теперь одно из рёбер, не являющееся вертикальным, попадает на узел. Для выбора сдвига достаточно выбрать абсциссу этого узла, а это можно сделать не более чем <i>m</i>&nbsp;+&nbsp;1 способами. За <i>m</i> обозначено число 10. Итого вариантов — <i>n</i><sup>2</sup>(<i>m</i>&nbsp;+&nbsp;1).</li>
+<li> Два непараллельных ребра упираются в узел сетки. Тут для определения сдвига многоугольника помимо рёбер нужно зафиксировать «разность» между теми узлами сетки, в которые упираются эти рёбра. Итого — <i>n</i><sup>2</sup>(<i>m</i>&nbsp;+&nbsp;1)<sup>2</sup> вариантов.</li>
+</ol><br>
+<br>
+В результате получаем в худшем случае O(<i>n</i><sup>2</sup><i>m</i><sup>2</sup>) вариантов выбора сдвига многоугольника. Поскольку для каждого из вариантов затем нужно будет подсчитать количество занятых клеток, нужно, сгенерировав список всех вариантов, вычистить из него дубликаты: говорят, что это помогало уменьшить количество вариантов в «максимальных» тестах в 3&nbsp;—&nbsp;5&nbsp;раз.<br>
+<br>
+Стоит заметить, что многие команды забывали рассматривать некоторые из этих трёх случаев (большинство команд останавливались только на рассмотрении первого).<br>
+<br>
+<h6>Подсчёт занимаемых клеток</h6><br>
+Вторая сложность в этой задаче состояла в том, чтобы эффективно вычислить количество занимаемых клеток по заданному сдвигу. Наивный способ подсчёта — для (<i>m</i>&nbsp;+&nbsp;1)<sup>2</sup> клеток проверить наличие пересечения с многоугольником — работает за O(<i>m</i><sup>2</sup><i>n</i>) и не укладывается в ограничение по времени. Оказывается, что эффективнее будет считать количество занятых клеток в каждом из <i>m</i>&nbsp;+&nbsp;1 столбцов. Для этого нужно рассмотреть непрерывные куски границы многоугольника, проходящие через столбец: либо кусок границы «пересекает» столбец (один конец куска — на правой границе столбца,<br>
+а другой конец — на левой), либо оба конца куска находятся на одной границе столбца. Можно доказать, что куски первого типа разбиваются на пары, причём все клетки между этими кусками будут заняты. После этого к полученным клеткам нужно добавить клетки, через которые проходят куски второго типа. Этот метод можно реализовать за O(<i>m</i>(<i>m</i>&nbsp;+&nbsp;<i>n</i>)) = O(<i>mn</i>).<br>
+<br>
+Итоговая сложность алгоритма для этой задачи — O(<i>n</i><sup>3</sup><i>m</i><sup>3</sup>).</blockquote><br>
+<br>
+<h4>Задача H. Матрёшка</h4><br>
+<img src="./Разбор ACM ICPC 2013_files/62fc0d7347c18b2b3c3be0aa7959d64b.png" align="right" alt="Задача про матрёшку на ACM ICPC 2013">Матрёшкой называют набор традиционных русских деревянных кукол уменьшающегося размера, помещенных внутрь друг друга. Матрёшку можно открыть, чтобы достать изнутри меньшую матрёшку, у которой, в свою очередь, внутри также есть матрёшка и так далее.<br>
+<br>
+В Национальном Матрёшечном музее недавно проходила выставка матрёшек, на которой были представлены похожие по стилю, но отличающиеся количеством матрёшек в наборе куклы. С сожалению, один шаловливый (и оставленный без присмотра) ребенок разобрал все матрёшки и выставил все куклы в ряд.<br>
+<br>
+В ряду оказалось <i>n</i> матрёшек, про каждую известен её целочисленный размер. Вам нужно заново собрать все матрёшки в наборы, однако вы не знаете ни изначальное количество наборов, ни количество кукол в каждом из наборов. Вы знаете только то, что каждый набор состоит из кукол всех последовательных размеров от 1 до некоторого <i>m</i>, причём <i>m</i> может быть различным для различных наборов.<br>
+<br>
+При сборке наборов нужно руководствоваться следующими правилами:<br>
+<ul>
+<li>можно поместить матрёшку только внутрь матрёшку большего размера;</li>
+<li>можно объединить две матрёшки только если они стоят рядом в ряду;</li>
+<li>после того как матрешку помещают внутрь набора матрешек, ее нельзя переместить в другую группу матрешек или отделить от группы матрешек. Разрешается только временно разделить ее при объединении двух групп матрешек.</li>
+</ul><br>
+Ваше время очень ценно, поэтому вы хотите собрать все матрешки в группы как можно быстрее. Единственная часть процесса, которая занимает время, это открытие и после этого закрытие куклы, поэтому вы хотите минимизировать количество именно таких действий. Например, минимальное количество действий для объединения группы [1,2,6] и [4] — два, сначала нужно открыть матрешки размеров 6 и 4. Объединение групп [1,2,5] и [3,4] требует трех открытий.<br>
+<br>
+Напишите программу, которая вычислит минимальное количество открытий, необходимых для сборки всех наборов матрешек.<br>
+<br>
+<u>Входные данные</u>. Вам дан один тест, состоящий из двух строк. Первая строка содержит одно число <nobr><i>n</i> (1 ≤ n ≤ 500) —</nobr> количество отдельных кукол в изначальном ряду. Во второй строке находится <i>n</i> чисел, описывающих размер каждой куклы в ряду. Размер каждой куклы не менее 1 и не превосходит 500.<br>
+<br>
+<u>Выходные данные</u>. Выведите минимальное количество открытий матрешек, необходимое для того, чтобы собрать все наборы. Если сборка невозможна (ребенок мог забрать несколько кукол себе), выведите слово impossible.<br>
+<br>
+<b>Решение задачи H</b><br>
+<i>Автор разбора —&nbsp; <a href="http://codeforces.ru/profile/aropan">Алексей Ропан</a>, бронзовый медалист ACM ICPC 2012 в составе команды Белорусского государственного университета информатики и радиоэлектроники.</i><br>
+<br>
+<blockquote>Давайте скажем, что значение <i>F</i><sub><i>i</i></sub> — это минимальное количество открытий матрёшек, которые нужно сделать для того, чтобы разбить первые <i>i</i> матрешек по группам. Тогда <i>F</i><sub>0</sub>&nbsp;=&nbsp;0 и <i>F</i><sub>i</sub>&nbsp;= min<sub>0≤j&lt;i</sub> <i>F</i><sub><i>j</i></sub>&nbsp;+&nbsp;<i>G</i><sub><i>j</i>+1,i</sub>, где значение <i>G</i><sub><i>l</i>,<i>r</i></sub> — это минимальное количество открытий, которое нужно сделать, чтобы сложить матрёшки с <i>l</i> по <i>r</i> включительно в одну (нумерация матрешек с единицы), и на интервале от <i>j</i>&nbsp;+&nbsp;1 до <i>i</i> включительно все размеры матрёшек различные и не превышают <i>i</i> − <i>j</i>. Тогда ответ на задачу будет <i>F</i><sub><i>n</i></sub>, а сложность решения без учета вычисления значений <i>G</i> будет O(<i>n</i><sup>2</sup>). Для <i>G</i><sub><i>i</i>,<i>i</i></sub> значение всегда равно 0, а для <i>G</i><sub><i>i</i>,<i>j</i></sub> и i&nbsp;&lt;&nbsp;j на последнем этапе происходит объединение двух групп матрёшек. Пусть <i>k</i> — это номер матрёшки, на которой заканчивается левая группа. Тогда <i>G</i><sub><i>i</i>,<i>j</i></sub> = min<sub>i≤k&lt;j</sub> <i>G</i><sub><i>i</i>,<i>k</i></sub> + <i>G</i><sub>k+1,j</sub> + <i>C</i><sub><i>i</i>,<i>k</i>,<i>j</i></sub>, где значение <i>C</i><sub><i>i</i>,<i>k</i>,<i>j</i></sub> — это минимальное количество открытий матрёшек, которое потребуется для того, чтобы объединить группы матрёшек с <i>i</i>-й по <i>k</i>-ю и c <i>k</i>+1-й по <i>j</i>-ю. Пусть значение <i>M</i><sub><i>i</i>,<i>j</i></sub> — это минимальный размер матрёшки на интервале от <i>i</i> до <i>j</i> и значение <i>K</i><sub><i>i</i>,<i>j</i>,<i>s</i></sub> — количество матрёшек на интервале от <i>i</i> до <i>j</i>, размеры которых меньше <i>s</i>. Тогда <i>C</i><sub><i>i</i>,<i>k</i>,<i>j</i></sub> можно посчитать как <i>j</i> − <i>i</i> + 1 − <i>t</i>, где <i>t</i> — это количество матрёшек, которые при объединении не будут открыты, то есть <i>t</i> = <i>K</i><sub><i>k</i>+1,j,<i>M</i><sub><i>i,j</i></sub></sub> + <i>K</i><sub><i>i</i>,<i>j</i>,<i>M</i><sub><i>k</i>+1,<i>j</i></sub></sub> (можно заметить, что одно из слагаемых всегда будет равно нулю). Сложность вычисления <i>K</i> и <i>G</i> равна <img src="./Разбор ACM ICPC 2013_files/e81923a15365e675be58717140afdea6.png">.</blockquote><br>
+<br>
+<h4>Задача I. Pirate Chest</h4><br>
+Пират Джек устал от битв, мародерства, воровства и угнетения всех и вся в открытом море. Он решил уйти на пенсию, и даже нашел идеальный необитаемый островок в океане, на котором он достойно проведет остаток жизни, если у него, конечно, не закончатся деньги. Сейчас у него много золотых монет, которые он хочет сложить в сундук (он же в конце концов пират!). Джек может построить сундук в форме прямоугольного параллелепипеда с целочисленными сторонами и не превышающими заданный размерами дна сундука. Осталось лишь найти, куда спрятать сундук с сокровищами.<br>
+<br>
+Джек решил затопить сундук в тенистом пруду. Поверхность пруда представляет собой прямоугольник с заданными сторонами, пруд со всех сторон окружен вертикальными каменными берегами. Джек исследовал дно пруда и знает про каждый квадрат 1х1 пруда (в декартовой системе координат) глубину пруда в этом месте. Когда Джек утопит сундук, последний утонет на максимально возможную глубину до тех пор, пока не коснется дна хотя бы одним квадратом. Из-за утопленного сундука уровень воды в пруду поднимется. Берега пруда достаточно высоки, чтобы вода никогда не вылилась за его границы. Разумеется, так как сундук нужно спрятать, он должен полностью находиться ниже уровня воды в пруду. Ваша задача — найти максимальный объем сундука, который можно спрятать в пруду.<br>
+<br>
+На рисунке слева показан пруд без сундука, по центру — пруд в котором находится сундук объема 3, справа — сундук объема 4 (максимально возможного) в пруду. Обратите внимание, что если бы сундук с центрального рисунка был сделан на единицу большей высоты, то его верх был бы виден ровно на поверхности пруда.<br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/4b13f303d866f5b7473988d556b42881.png" alt="Задача I ACM ICPC 2013"><br>
+<br>
+<u>Входные данные</u>. Вход содержит один тест. Тест начинается со строки, содержащей четыре целых числа <i>a</i>, <i>b</i>, <i>m</i>, <i>n</i> (1≤ <i>a,b,m,n</i> ≤ 500). Размеры поверхности пруда — <i>m</i> x <i>n</i>, максимальный размер дна сундука — <i>a</i> x <i>b</i>. Кроме того, <i>a</i> и <i>b</i> достаточно, сундук никогда не покроет весь пруд полностью. Каждая из оставшихся m строк входа содержит <i>n</i> чисел d<sub>ij</sub>, описывающих глубину пруда в квадрате с координатами <i>(i,j)</i>, где 0≤ d<sub>ij</sub> ≤ 10<sup>9</sup> для любого 1≤ <i>i</i> ≤ <i>m</i>, 1≤ <i>j</i> ≤ <i>n</i>.<br>
+<br>
+<u>Выходные данные</u>. Выведите максимальный объем сундука с целочисленными сторонами, который можно спрятать в пруду под поверхностью воды, причем одно из измерений дна должно не превышать <i>a</i>, а другое — не превышать <i>b</i>. Если ни один сундук нельзя спрятать под водой, то выведите 0.<br>
+<br>
+<b>Решение задачи I</b><br>
+<i>Автор разбора —&nbsp;Василий Астахов.</i><br>
+<br>
+<blockquote>Для начала заметим, что если у нас есть участок дна размером <i>h</i> · <i>w</i>, глубиной хотя бы <i>d</i>, то мы можем положить туда сундук объемом <img src="./Разбор ACM ICPC 2013_files/b81ca274e0cf340a5fa5d614dbf2f52b.gif">, где S — площадь всего пруда. Отсюда получаем, что чем больше h · w, тем больший объем сундука мы можем погрузить, при фиксированном <i>d</i>. Перейдём теперь к решению задачи. По сути нам нужно проверить все прямоугольники (размером не превосходящем (<i>a,b</i>)) найти у них минимальную глубину дна, найти объем по формуле и выбрать максимум. <br>
+<br>
+Но такое решение будет работать слишком долго. Для ускорения работы, мы зафиксируем только x<sub>0</sub> и x<sub>1</sub> координаты прямоугольника <nobr>(<i>x</i><sub>0</sub>&lt;<i>x</i><sub>1</sub>, <i>x</i><sub>1</sub>-<i>x</i><sub>0</sub> ≤ <i>b</i>)</nobr>. Таким образом, мы имеем дело с полосками, идущими от <i>x</i><sub>0</sub> координаты до <i>x</i><sub>1</sub>. Посчитаем на каждой из них минимальную глубину (это можно сделать например препроцессингом за <i>n</i><sup>3</sup>). Теперь заметим, что если <i>w</i>=<i>x</i><sub>1</sub>-<i>x</i><sub>0</sub>≤ <i>a</i>, то имеем ограничение на длину по <i>y b</i>, иначе длина по y меньше или равна <i>a</i>. Теперь задача свелась к одномерной: нам нужно найти такой отрезок (с указанным ограничением на его длину <i>h</i>), чтобы значение объема было максимальным. Отсортируем глубины всех отрезков начиная с максимальной. Введем двусторонний список индексов по оси <i>y</i>. По ходу действия алгоритма мы будем рассматривать индексы, начиная с максимальной глубины, а после обработки удалять их из списка. <br>
+<br>
+Так для каждого элемента мы будем знать номер ближайшего слева и справа элементов с меньшей глубиной (в плане индекса в массиве отсортированных глубин), чем уже отработаны. Таким образом, весь отрезок между ними имеет глубину ≥ текущей обрабатываемой. Значит, найдем минимум между его длиной и ограничение на длину отрезка и сравним с наилучшим ответом по формуле для объема. Таким образом, время работы алгоритма O(<i>n</i><sup>2</sup> · <i>m</i> · log <i>m</i> ), где log берется из сортировки. </blockquote><br>
+<br>
+<h4>Задача J. Pollution Solution</h4><br>
+Будучи сотрудником отделения природопользования и охраны окружающей среды, вы должны следить за отходами, которые сбрасываются (иногда случайно, иногда специально) в реки, озёра и океаны. Одна из ваших задач — измерение влияния загрязнения на различные водные экосистемы, такие как коралловые рифы, места нереста и так далее.<br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/6748f5b1e82410bd615050c87a689751.png" alt="Задача J ACM ICPC 2013"><br>
+<br>
+Модель, которую вы используете при анализе, изображена на рисунке. Береговая линия (горизонтальная линия на рисунке) лежит на оси <i>x</i>, источник загрязнения расположен в начале координат (0,&nbsp;0).<br>
+Распространение загрязнения в воду представляется полукругом, а многоугольник означает интересующую вас экосистему. Вам требуется определить площадь экосистемы, которая подверглась загрязнению, то есть площадь тёмно-синей области на рисунке.<br>
+<br>
+<u>Входные данные</u>. Вход содержит один набор тестовых данных. Тест начинается строкой, содержащей два целых числа <i>n</i> и <i>r</i>, где 3 ≤ <i>n</i> ≤ 100 — это количество вершин многоугольника, 1 ≤ <i>r</i> ≤ 1000 — это радиус поля загрязнения. Следом идут <i>n</i> строк, каждая содержит по два целых числа <i>x</i><sub><i>i</i></sub> и <i>y</i><sub><i>i</i></sub> — координаты вершин многоугольника в порядке против часовой стрелки, причём −1500 ≤ <i>x</i><sub><i>i</i></sub> ≤ 1500 и 0 ≤ <i>y</i><sub><i>i</i></sub> ≤ 1500. Многоугольник не имеет самопересечений и самокасаний. Никакая вершина не лежит на окружности.<br>
+<br>
+<u>Выходные данные</u>. Выведите площадь части многоугольника, которая попадает в полукруг с центром в начале координат радиуса <i>r</i>. Дайте ответ с абсолютной погрешностью не более 10<sup>−3</sup>.<br>
+<br>
+<b>Решение задачи J</b><br>
+<i>Автор разбора — <a href="http://codeforces.ru/profile/SobolS">Сергей Соболь</a>, серебряный медалист ACM ICPC 2012 в составе команды Белорусского государственного университета.</i><br>
+<br>
+<blockquote>Это геометрическая задача с незамысловатым условием: требуется вычислить площадь пересечения полукруга и многоугольника, заданных на плоскости.<br>
+<br>
+Рассмотрим вначале удобный способ вычисления площадей произвольных простых многоугольников (без самопересечений, но не обязательно выпуклых). Пусть <i>O</i> — начало координат, а многоугольник задаётся <i>n</i> точками <i>P</i><sub>1</sub>, <i>P</i><sub>2</sub>, …, <i>P</i><sub><i>n</i></sub> в порядке обхода, которые можно отождествить с <i>n</i> двумерными радиус-векторами (<i>x</i><sub><i>i</i></sub>,&nbsp;<i>y</i><sub><i>i</i></sub>). Для простоты записи формул будем полагать, что <i>P</i><sub><i>n</i>+1</sub>&nbsp;=&nbsp;<i>P</i><sub><i>1</i></sub>. Тогда площадь фигуры выражается формулой<br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/4455781da0cdc76010be575f2c955b56.gif">,<br>
+<br>
+где <i>S</i>(<i>O</i> <i>P</i><sub><i>i</i></sub> <i>P</i><sub><i>i</i>+1</sub>) — ориентированная площадь треугольника с вершинами <i>O</i>, <i>P</i><sub><i>i</i></sub> и <i>P</i><sub><i>i</i>+1</sub>:<br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/344f76ec9643c09352ca5e93cb28f342.gif">.<br>
+<br>
+Эта величина по модулю равна площади треугольника, а знак её зависит от относительного расположения точек:<br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/86f370fa3f676c192c27754f957881cb.png"><br>
+<br>
+Когда суммируются все <i>n</i> таких значений, площади «лишних» частей треугольников, лежащих вне многоугольника, взаимно уничтожаются и остаётся лишь искомая площадь многоугольника, итоговый знак которой зависит от порядка обхода точек (по часовой стрелке или против).<br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/a135e577362a3b1f5ebac1dea72688ff.png"><br>
+<br>
+Вернёмся к нашей задаче. Заметим, что вместо полукруга можно рассматривать и целый круг, при этом ничего не поменяется, потому что многоугольник всегда лежит в верхней полуплоскости. Воспользуемся той же идеей: будем по очереди пересекать каждый треугольник <i>O</i><i>P</i><sub><i>i</i></sub><i>P</i><sub><i>i</i>+1</sub> с кругом и суммировать площади, которые получаются, с учётом ориентации.<br>
+<br>
+<img src="./Разбор ACM ICPC 2013_files/a2c0d7fc420ae2d42e61fd5e0c6d0243.png"><br>
+<br>
+Как найти площадь пересечения одного такого треугольника и заданного круга? Сначала стоит найти точки пересечения отрезка <i>P</i><sub><i>i</i></sub><i>P</i><sub><i>i</i>+1</sub> с окружностью. Это можно делать разными способами.<br>
+<br>
+<ul>
+<li> Каждая точка отрезка имеет вид <i>t&nbsp;P</i><sub><i>i</i></sub> + (1&nbsp;− <i>t</i>)&nbsp;<i>P</i><sub><i>i</i>+1</sub> при некотором <i>t</i> из [0,&nbsp;1] (параметрическое уравнение отрезка). Можно расписать расстояние от точки до начала координат в зависимости от <i>t</i>, приравнять его к радиусу окружности и решить квадратное уравнение. </li>
+<li> Исходя из чисто геометрических соображений можно придти к более красивым <a href="http://e-maxx.ru/algo/circle_line_intersection">результатам</a>. </li>
+</ul><br>
+<br>
+Легко видеть, что отрезок может иметь с окружностью одну (как <i>P</i><sub>1</sub><i>P</i><sub>2</sub> и <i>P</i><sub>3</sub><i>P</i><sub>4</sub> на рисунке), две точки пересечения (<i>P</i><sub>5</sub><i>P</i><sub>1</sub>) или не иметь ни одной (отрезки <i>P</i><sub>2</sub><i>P</i><sub>3</sub> и <i>P</i><sub>4</sub><i>P</i><sub>5</sub>).<br>
+<br>
+Область пересечения круга и каждого из треугольников <i>O</i><i>P</i><sub><i>i</i></sub><i>P</i><sub><i>i</i>+1</sub> тогда разобьётся на отдельные треугольники и сектора (например, для треугольника <i>O</i><i>P</i><sub>5</sub><i>P</i><sub>1</sub> это будут два сектора и треугольник). В решении придётся сделать разбор случаев (по сути все они изображены на рисунке), что не очень приятно, но в целом не сложно. Для площадей треугольника и сектора есть общеизвестные формулы.<br>
+<br>
+Таким образом, задача решается за время <img src="./Разбор ACM ICPC 2013_files/b3c5ae232f95acaea5e31597431a5631.png">.</blockquote><br>
+<br>
+<h4>Задача K. Up a Tree</h4> <br>
+Анатолий — типичный студент во многих смыслах. Всякий раз он пытается копипастить код вместо написания с нуля. Такой подход неизбежно доставляет ему проблемы. Например, когда он впервые познакомился с разными порядками обхода бинарных деревьев post, pre и in и получил код pre-обхода с вызовом функции вывода вершины output, он просто скопировал код, перенес вызов output в правильное место и переименовал функцию. Однако он забыл переименовать функции в теле обхода, получив неправильные функции обходов.<br>
+<br>
+Пример кода и результат копипасты с правками.<br>
+<pre><code class="javascript"><span class="keyword"><span class="keyword">void</span></span> prePrint(TNode t)
+{
+    output(t.value);
+    <span class="keyword"><span class="keyword">if</span></span> (t.left != <span class="literal"><span class="literal">null</span></span>)
+        prePrint(t.left);
+    <span class="keyword"><span class="keyword">if</span></span> (t.right != <span class="literal"><span class="literal">null</span></span>)
+        prePrint(t.right);
+}
+<span class="keyword"><span class="keyword">void</span></span> inPrint(TNode t)
+{
+    <span class="keyword"><span class="keyword">if</span></span> (t.left != <span class="literal"><span class="literal">null</span></span>)
+        prePrint(t.left);
+    output(t.value);
+    <span class="keyword"><span class="keyword">if</span></span> (t.right != <span class="literal"><span class="literal">null</span></span>)
+        prePrint(t.right);
+}
+<span class="keyword"><span class="keyword">void</span></span> postPrint(TNode t)
+{
+    <span class="keyword"><span class="keyword">if</span></span> (t.left != <span class="literal"><span class="literal">null</span></span>)
+        prePrint(t.left);
+    <span class="keyword"><span class="keyword">if</span></span> (t.right != <span class="literal"><span class="literal">null</span></span>)
+        prePrint(t.right);
+    output(t.value);
+}</code></pre><br>
+<br>
+И тут Анатолий проявил себя не как типичный студент — он стал тестировать свой код! К сожалению, когда он увидел, что функции работаю неправильно, он стал вести себе как обычный студент снова. Он стал паниковать и случайным образом переименовывать вызовы функций во всех трех обходах, надеясь, что они начнут работать правильно.<br>
+<br>
+Преподаватель Анатолия тестировал его код на случайных деревьях с символами в вершинах. Когда она посмотрела на выходные данные программы, то поняла, что случилось. Тем не менее, вместо того, чтобы посмотреть код, она попробовала восстановить код по его выводу. Для этого она сделала справедливые предположения:<br>
+<br>
+<ul>
+<li>команда вывода символа находится на правильном месте, например, между вызовами функций в inPrint обходе;</li>
+<li>среди всех 6 рекурсивных вызовов ровно по два вызова inPrint, prePrint и postPrint, возможно, стоящих в неправильных местах.</li>
+</ul><br>
+Вскоре преподаватель поняла, что восстановление кода Анатолия и тестового дерева по выводу программы не такая простая задача и что результат может быть неоднозначным. Вам предстоит помочь ей найти все возможные реконструкции кода Анатолия. Вдобавок, для каждого восстановленного кода необходимо найти лексикографически наименьшее дерево по выходным данным программы.<br>
+<br>
+<u>Входные данные.</u> Состоят из одного теста, содержащего три строки — выходные строки функций соответственно prePrint, inPrint и postPrint. Строки имеею одинаковую длину <i>n</i> (4 ≤ <i>n</i> ≤ 26), все символы каждой из строк различны.<br>
+<br>
+<u>Выходные данные.</u> Для каждого восстановления в отдельную строку выведите 6 слов из множества {Pre, In, Post} — префиксы имен функций в теле prePrint в порядке следования в коде, имена функций в теле inPrint и, наконец, postPrint. Далее, в трех остальных строках выведите результаты правильных prePrint, inPrint, postPrint функций на тестовом дереве, на котором эти результаты лексикографически минимальны, то есть результат prePrint минимально возможный, среди всех таких деревьев, такое, на котором результат inPrint минимален.<br>
+<br>
+<b>Решение задачи K</b><br>
+<i>Автор разбора — <a href="http://codeforces.ru/profile/egor">Егор Куликов</a>, бронзовый медалист ACM ICPC 2007 года в составе команды МГУ им. М.В. Ломоносова.</i><br>
+<br>
+<blockquote>Давайте для начала переберём вариант расстановки вызовов функций. Таких вариантов всего 90. Пусть расстановка вызовов фиксирована. Далее мы можем посчитать ответ динамическим программированием. В качестве состояния возмём <i>S</i>(<i>f</i><sub>1</sub>, <i>f</i><sub>2</sub>, <i>f</i><sub>3</sub>, <i>s</i><sub>1</sub>, <i>s</i><sub>2</sub>, <i>s</i><sub>3</sub>, <i>l</i>) — существует ли дерево, которое, если его напечатать функцией <i>f</i><sub><i>i</i></sub>, будет подстрокой <i>i</i>-й строки входных данных, начинающейся в позиции <i>s</i><sub><i>i</i></sub> и имеющей длину <i>l</i>, и если да — то найти такое дерево с лексикографически минимальной префиксной записью, а если и таких несколько — с лексикографически минимальной инфиксной записью.<br>
+<br>
+В каждой позиции мы можем просто перебрать число вершин в левом поддереве текущего поддерева, таким образом время работы динамического перехода O(<i>n</i><sup>2</sup>).<br>
+<br>
+Теоретически существует 3<sup>3</sup> n<sup>4</sup> возможных положений, но так как для положительного ответа набор букв в каждой подстроке должен совпадать, то содержательных позиций не более 3<sup>3</sup> n<sup>2</sup>, при n ≤ 26 это легко укладывается в ограничения по времени и памяти.<br>
+<br>
+</blockquote><br>
+<br>
+Конечно, это не единственный существующий разбор задач ACM ICPC 2013, есть и другие. Например, можете посмотреть на разбор, который опубликовал доцент Королевского технологического института Швеции <a href="http://www.csc.kth.se/~austrin/icpc/finals2013solutions.pdf">Per Austrin</a> (на английском). В разные годы он также бывал и участником, и судьёй ICPC. Оригиналы задач вы можете найти <a href="http://icpc.baylor.edu/download/worldfinals/problems/icpc2013.pdf">здесь</a>. 
+    	<div class="clear"></div> 	
+  	</div>
+    
+<ul class="tags">
+	<li><a href="http://habrahabr.ru/search/?q=%5Bacm%20icpc%5D&target_type=posts" rel="tag">acm icpc</a></li><li>, <a href="http://habrahabr.ru/search/?q=%5Bacm-icpc%5D&target_type=posts" rel="tag">acm-icpc</a></li><li>, <a href="http://habrahabr.ru/search/?q=%5Bworld%20finals%5D&target_type=posts" rel="tag">world finals</a></li><li>, <a href="http://habrahabr.ru/search/?q=%5B%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%5D&target_type=posts" rel="tag">разбор задач</a></li>
+</ul>
+
+    <div class="infopanel_wrapper">
+	<div class="infopanel " id="infopanel_post_186316">
+	
+				<div class="voting   ">
+	
+						<span class="plus" title="Голосовать могут только зарегистрированные пользователи."></span>
+	
+					<div class="mark positive ">
+							<span class="score" title="Всего 113: ↑110 и ↓3">+107</span>
+					</div>
+					
+						<span class="minus" title="Голосовать могут только зарегистрированные пользователи."></span>
+		
+				</div>
+	
+		<div class="pageviews" title="Просмотры поста">61987</div>
+			
+		<div class="favorite">
+				<a class="guest" href="http://habrahabr.ru/company/yandex/blog/186316/#" onclick="return false;" title="Только зарегистрированные пользователи могут добавлять посты в избранное"></a>
+		</div>
+		<div class="favs_count" title="Количество пользователей, добавивших пост в избранное">375</div>
+		
+		
+		
+	
+	
+	
+	
+				<div class="author">
+					<a title="Автор текста" href="http://habrahabr.ru/users/EgorK/">EgorK</a>
+					<span class="rating" title="рейтинг пользователя">34,5</span>
+				</div>
+		
+	
+	
+		
+			<div class="share">
+				<div class="twitter">
+					<a href="http://twitter.com/intent/tweet?text=%D0%A0%D0%B0%D0%B7%D0%B1%D0%BE%D1%80+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87+%D1%84%D0%B8%D0%BD%D0%B0%D0%BB%D0%B0+%D1%87%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82%D0%B0+%D0%BC%D0%B8%D1%80%D0%B0+%D0%BF%D1%80%D0%BE+%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E+ACM+ICPC+2013+http://habr.ru/p/186316/+via+%40habrahabr+%23habr" title="Опубликовать ссылку в Twitter" target="_blank"></a>
+				</div>
+				<div class="vkontakte">
+					<a href="http://vk.com/share.php?url=http://habrahabr.ru/company/yandex/blog/186316/" title="Опубликовать ссылку во ВКонтакте" onclick="window.open(this.href, &#39;Опубликовать ссылку во Вконтакте&#39;, &#39;width=800,height=300&#39;); return false"></a>
+				</div>
+				<div class="facebook">
+					<a href="https://www.facebook.com/sharer/sharer.php?u=http://habrahabr.ru/company/yandex/blog/186316/" title="Опубликовать ссылку в Facebook" onclick="window.open(this.href, &#39;Опубликовать ссылку в Facebook&#39;, &#39;width=640,height=436,toolbar=0,status=0&#39;); return false"></a>
+				</div>
+				<div class="googleplus">
+					<a href="https://plus.google.com/share?url=http://habrahabr.ru/company/yandex/blog/186316/" title="Опубликовать ссылку в Google Plus" onclick="window.open(this.href, &#39;Опубликовать ссылку в Google Plus&#39;, &#39;width=800,height=300&#39;); return false"></a>
+				</div>
+			</div>
+	
+	</div>
+	<div class="clear"></div>
+</div>
+
+
+
+
+    
+    
+	</div>
+
+				<div class="comments_list " id="comments">
+
+  <h2 class="title ">Комментарии (<span id="comments_count">13</span>)
+  
+  
+  </h2>
+
+    <div class="comment_item" id="comment_6484216">
+
+    <span class="parent_id" data-parent_id="0"></span>
+    <div class="comment_body">
+        <div class="info  " rel="6484216">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6484216" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark positive ">
+                    <span class="score" title="Всего 3: ↑2 и ↓1">+1</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/anton/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/bc097788bfaa62afa1ecbe6d5d2eac97_small.jpg" alt=""></a>
+            <a href="http://habrahabr.ru/users/anton/" class="username">anton</a><span class="comma">,</span>
+            <time>12 июля 2013 в 13:27</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6484216" class="link_to_comment">#</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format ">
+            G в разборе не кажется настолько сложной, какой казалась по итогам самого чемпионата. Всегда так.
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6484216">
+        <div class="comment_item" id="comment_6484516">
+
+    <span class="parent_id" data-parent_id="6484216"></span>
+    <div class="comment_body">
+        <div class="info  " rel="6484516">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6484516" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark  ">
+                    <span class="score" title="Всего 0: ↑0 и ↓0">0</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/pehat/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/7c2569aca9d6726a3c4972d1f0b8b3b0_small.png" alt=""></a>
+            <a href="http://habrahabr.ru/users/pehat/" class="username">pehat</a><span class="comma">,</span>
+            <time>12 июля 2013 в 14:13</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6484516" class="link_to_comment">#</a>
+                <div class="show_tree" data-id="6484516" data-parent_id="6484216" title="Показать ветку комментариев">↵</div>
+                <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6484216" data-id="6484516" data-parent_id="6484216" class="to_parent">↑</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format ">
+            С учетом того, что ее надо было закодить меньше, чем час, не все так просто)
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6484516">
+        <div class="comment_item" id="comment_6485074">
+
+    <span class="parent_id" data-parent_id="6484516"></span>
+    <div class="comment_body">
+        <div class="info  " rel="6485074">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6485074" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark  ">
+                    <span class="score" title="Всего 0: ↑0 и ↓0">0</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/anton/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/bc097788bfaa62afa1ecbe6d5d2eac97_small.jpg" alt=""></a>
+            <a href="http://habrahabr.ru/users/anton/" class="username">anton</a><span class="comma">,</span>
+            <time>12 июля 2013 в 15:41</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6485074" class="link_to_comment">#</a>
+                <div class="show_tree" data-id="6485074" data-parent_id="6484516" title="Показать ветку комментариев">↵</div>
+                <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6484516" data-id="6485074" data-parent_id="6484516" class="to_parent">↑</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format ">
+            Я потому и написал «всегда так» :)
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6485074">
+    </div>
+</div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+    <div class="comment_item" id="comment_6485898">
+
+    <span class="parent_id" data-parent_id="0"></span>
+    <div class="comment_body">
+        <div class="info  " rel="6485898">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6485898" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark  ">
+                    <span class="score" title="Всего 0: ↑0 и ↓0">0</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/Zver1992/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/stub-user-small.gif" alt=""></a>
+            <a href="http://habrahabr.ru/users/Zver1992/" class="username">Zver1992</a><span class="comma">,</span>
+            <time>12 июля 2013 в 17:17</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6485898" class="link_to_comment">#</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format ">
+            А что в задаче I нужно сортировать?<br>
+Вроде же всё просто, свели к одномерной, решили одномерную за линию, O(n*n*m), в дорешке заходит.
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6485898">
+    </div>
+</div>
+
+    <div class="comment_item" id="comment_6485920">
+
+    <span class="parent_id" data-parent_id="0"></span>
+    <div class="comment_body">
+        <div class="info  " rel="6485920">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6485920" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark  ">
+                    <span class="score" title="Всего 0: ↑0 и ↓0">0</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/Zver1992/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/stub-user-small.gif" alt=""></a>
+            <a href="http://habrahabr.ru/users/Zver1992/" class="username">Zver1992</a><span class="comma">,</span>
+            <time>12 июля 2013 в 17:20</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6485920" class="link_to_comment">#</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format ">
+            А что в задаче I нужно сортировать?<br>
+Вроде же всё просто, свели к одномерной, решили одномерную за линию, O(n*n*m), в дорешке заходит.<br>
+Туплю, там одномерная за m*lg(m) зачем-то решается, можно же со стеком за линию :(
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6485920">
+        <div class="comment_item" id="comment_6492950">
+
+    <span class="parent_id" data-parent_id="6485920"></span>
+    <div class="comment_body">
+        <div class="info  is_topic_starter  " rel="6492950">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6492950" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark positive ">
+                    <span class="score" title="Всего 2: ↑2 и ↓0">+2</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/EgorK/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/stub-user-small.gif" alt=""></a>
+            <a href="http://habrahabr.ru/users/EgorK/" class="username">EgorK</a><span class="comma">,</span>
+            <time>15 июля 2013 в 16:07</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6492950" class="link_to_comment">#</a>
+                <div class="show_tree" data-id="6492950" data-parent_id="6485920" title="Показать ветку комментариев">↵</div>
+                <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6485920" data-id="6492950" data-parent_id="6485920" class="to_parent">↑</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format ">
+            Да, можно решать одномерную и стеком за линию, но и решение с сортировкой проходило на финале.
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6492950">
+    </div>
+</div>
+
+    </div>
+</div>
+
+    <div class="comment_item" id="comment_6488592">
+
+    <span class="parent_id" data-parent_id="0"></span>
+    <div class="comment_body">
+        <div class="info  " rel="6488592">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6488592" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark  negative">
+                    <span class="score" title="Всего 4: ↑1 и ↓3">–2</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/ttools/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/a2899ca4a52ca4802a5eb1f9ccf94da9_small.jpg" alt=""></a>
+            <a href="http://habrahabr.ru/users/ttools/" class="username">ttools</a><span class="comma">,</span>
+            <time>13 июля 2013 в 14:55</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6488592" class="link_to_comment">#</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format bad bad2">
+            Задача B не нравится. Что такое «стратегия игры» (чем управляет игрок) из условий непонятно, а становится из разбора. Разбор тоже непонятен. Почему надо считать вероятность когда вопрос «определения максимального ожидаемого выигрыша». Что это означает также непонятно, я бы скорее решил, что это мат. ожидание в зависимости от каких-то параметров «стратегии»
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6488592">
+        <div class="comment_item" id="comment_6492948">
+
+    <span class="parent_id" data-parent_id="6488592"></span>
+    <div class="comment_body">
+        <div class="info  is_topic_starter  " rel="6492948">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6492948" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark positive ">
+                    <span class="score" title="Всего 2: ↑2 и ↓0">+2</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/EgorK/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/stub-user-small.gif" alt=""></a>
+            <a href="http://habrahabr.ru/users/EgorK/" class="username">EgorK</a><span class="comma">,</span>
+            <time>15 июля 2013 в 16:07</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6492948" class="link_to_comment">#</a>
+                <div class="show_tree" data-id="6492948" data-parent_id="6488592" title="Показать ветку комментариев">↵</div>
+                <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6488592" data-id="6492948" data-parent_id="6488592" class="to_parent">↑</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format ">
+            Игрок в любой момент может остановиться и забрать выигрыш, либо отдать часть проигрыша казино. Больше он не управляет ничем. Ожидаемый выигрыш при заданной стартегии — это и есть мат. ожидание выигрыша при заданной стратегии, возможно, недостаточно четко написали это. А раз мы считаем мат. ожидание чего-то, то логично, что в подсчетах участвуют вероятности различных возможных исходов.
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6492948">
+        <div class="comment_item" id="comment_6494418">
+
+    <span class="parent_id" data-parent_id="6492948"></span>
+    <div class="comment_body">
+        <div class="info  " rel="6494418">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6494418" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark  ">
+                    <span class="score" title="Всего 0: ↑0 и ↓0">0</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/ttools/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/a2899ca4a52ca4802a5eb1f9ccf94da9_small.jpg" alt=""></a>
+            <a href="http://habrahabr.ru/users/ttools/" class="username">ttools</a><span class="comma">,</span>
+            <time>15 июля 2013 в 22:55</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6494418" class="link_to_comment">#</a>
+                <div class="show_tree" data-id="6494418" data-parent_id="6492948" title="Показать ветку комментариев">↵</div>
+                <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6492948" data-id="6494418" data-parent_id="6492948" class="to_parent">↑</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format ">
+            1) «максимальный ожидаемый выигрыш». Первое, что я подумал, это сколько заработает игрок если ему предельно везет и все его ставки выигрывают. Но так как нет ограничений, вряд ли это имеется ввиду, значит, видимо, мат. ожидание, но уже есть неуверенность, я уже гадаю, вдруг что-то еще имелось ввиду, что я не понял<br>
+2) В разборе: «Заметим, что решение остановить ли сейчас игру зависит только от текущего выигрыша или проигрыша игрока — история не имеет значения...» Почему? В условии этого нет, что если, например, «стратегия игрока» включает условие «стоп, если C проигрышей подряд?» тогда будет P(A,B,C). Еще можно придумать несколько таких «стратегий». Переход к P(A,B) из условия задачи неочевиден. P.S. за что минусы, хоть аргументируйте
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6494418">
+        <div class="comment_item" id="comment_6500994">
+
+    <span class="parent_id" data-parent_id="6494418"></span>
+    <div class="comment_body">
+        <div class="info  is_topic_starter  " rel="6500994">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6500994" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark  ">
+                    <span class="score" title="Всего 0: ↑0 и ↓0">0</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/EgorK/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/stub-user-small.gif" alt=""></a>
+            <a href="http://habrahabr.ru/users/EgorK/" class="username">EgorK</a><span class="comma">,</span>
+            <time>17 июля 2013 в 18:58</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6500994" class="link_to_comment">#</a>
+                <div class="show_tree" data-id="6500994" data-parent_id="6494418" title="Показать ветку комментариев">↵</div>
+                <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6494418" data-id="6500994" data-parent_id="6494418" class="to_parent">↑</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format ">
+            1. Я, честно говоря, не понимаю, как можно интерпритировать эту фразу таким образом. Если нам все время везет, то при чем тут вообще стратегия?<br>
+<br>
+2. Потому, что никакая информация, кроме текущего выигрыша/проигрыша не влияет на дальнейшую игру. Либо матожидание дополнительного заработка выше нуля, либо нет.
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6500994">
+        <div class="comment_item" id="comment_6501876">
+
+    <span class="parent_id" data-parent_id="6500994"></span>
+    <div class="comment_body">
+        <div class="info  " rel="6501876">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6501876" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark  ">
+                    <span class="score" title="Всего 0: ↑0 и ↓0">0</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/ttools/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/a2899ca4a52ca4802a5eb1f9ccf94da9_small.jpg" alt=""></a>
+            <a href="http://habrahabr.ru/users/ttools/" class="username">ttools</a><span class="comma">,</span>
+            <time>17 июля 2013 в 21:49</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6501876" class="link_to_comment">#</a>
+                <div class="show_tree" data-id="6501876" data-parent_id="6500994" title="Показать ветку комментариев">↵</div>
+                <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6500994" data-id="6501876" data-parent_id="6500994" class="to_parent">↑</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format ">
+            1. В том и нестыковка. Задание «выведите максимальный ожидаемый выигрыш», но вывести надо не выигрыш при максимально благоприятных обстоятельствах, а матожидание<br>
+<br>
+2. <br>
+<blockquote>Потому, что никакая информация, кроме текущего выигрыша/проигрыша не влияет на дальнейшую игру<br>
+</blockquote><br>
+<br>
+Этого в условии задачи нет. Из условия игрок может выбирать любую «стратегию». Например, выйти на следующем ходе с вероятностью u, вне зависимости от выигрыша, проигрыша или текущего результата, тоже стратегия.<br>
+ 
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6501876">
+    </div>
+</div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+    <div class="comment_item" id="comment_6901246">
+
+    <span class="parent_id" data-parent_id="0"></span>
+    <div class="comment_body">
+        <div class="info  " rel="6901246">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6901246" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark  ">
+                    <span class="score" title="Всего 0: ↑0 и ↓0">0</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/coll3ctor/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/10256b1dc6e23b1d03031e5da2e3fa80_small.jpg" alt=""></a>
+            <a href="http://habrahabr.ru/users/coll3ctor/" class="username">coll3ctor</a><span class="comma">,</span>
+            <time>25 октября 2013 в 12:37</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6901246" class="link_to_comment">#</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format ">
+            Странно, вроде Российские ВУЗы далеко не лучшие в мире (по рейтингу), а призёров из всяких Гарвардов, MIT'ов, Кембреджей тут и в помине нету, не говоря о том, что почти все медали достаются Русским. В чём же дело?
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6901246">
+        <div class="comment_item" id="comment_6901336">
+
+    <span class="parent_id" data-parent_id="6901246"></span>
+    <div class="comment_body">
+        <div class="info  is_topic_starter  " rel="6901336">
+            <div class="folding-dot-holder"><div class="folding-dot"></div></div>
+            <div id="voting_6901336" class="voting   ">
+                <span class="minus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <span class="plus" title="Голосовать могут только зарегистрированные пользователи"></span>
+                <div class="mark positive ">
+                    <span class="score" title="Всего 1: ↑1 и ↓0">+1</span>
+                </div>
+            </div>
+            <a href="http://habrahabr.ru/users/EgorK/" class="avatar"><img src="./Разбор ACM ICPC 2013_files/stub-user-small.gif" alt=""></a>
+            <a href="http://habrahabr.ru/users/EgorK/" class="username">EgorK</a><span class="comma">,</span>
+            <time>25 октября 2013 в 12:50</time>
+
+            <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6901336" class="link_to_comment">#</a>
+                <div class="show_tree" data-id="6901336" data-parent_id="6901246" title="Показать ветку комментариев">↵</div>
+                <a href="http://habrahabr.ru/company/yandex/blog/186316/#comment_6901246" data-id="6901336" data-parent_id="6901246" class="to_parent">↑</a>
+            <span class="to_chidren"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="message html_format ">
+            Одну из причин можно почитать <a href="http://www.quora.com/Facebook-Hacker-Cup/Why-were-there-no-American-competitors-at-the-finals-of-the-2013-Facebook-Hacker-Cup">здесь</a> (на английском)
+        </div>
+        <div class="reply_form_placeholder"></div>
+        <div class="reply">
+            
+        </div>
+    </div>
+
+    <div class="reply_comments" id="reply_comments_6901336">
+    </div>
+</div>
+
+    </div>
+</div>
+
+</div>
+
+							<p class="for_users_only_msg">Только зарегистрированные пользователи могут оставлять комментарии.<br><a href="https://habrahabr.ru/auth/login/">Войдите</a>, пожалуйста.</p>
+
+
+			
+<form action="http://habrahabr.ru/json/favorites/" method="post" id="edit_tags_form" class="hidden">
+  <input type="hidden" name="action" value="add">
+  <input type="hidden" name="ti" value="0">
+  <input type="hidden" name="tt" value="0">
+  <label>Пометьте топик понятными вам метками, если хотите</label>
+  <input type="text" name="tags_string" class="tags_string" autocomplete="off">
+  <div class="description">Метки лучше разделять запятой. Например: <i>общение, социальные сети, myspace.com, подростки, мердок</i></div>
+  <input type="submit" value="Сохранить" class="submit"> или <a href="http://habrahabr.ru/company/yandex/blog/186316/#" class="close" onclick="return close_edit_tags()">закрыть</a>
+</form>
+
+		</div>
+	</div>
+	<div class="sidebar_right">
+		
+		<div class="block company_info">
+  <div class="title">О компании</div>
+  <div class="info">
+  
+    <div class="stats">
+      <div class="members_count" id="members_count">12240  подписчиков</div>
+      <div class="posts_count">1057  постов</div>
+    </div>
+    
+		
+  </div>
+</div>
+
+
+		
+<div class=" company_widgets">
+		<div class="block twitter_stream no_bg">
+	<div class="title">Twitter</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    var json = [{"created_at":"Thu May 29 15:08:54 +0000 2014","id":472031838320738304,"id_str":"472031838320738304","text":"\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u043c\u0435\u043d\u044f \u0437\u043e\u0432\u0443\u0442 \u041e\u043a\u0441\u0430\u043d\u0430, \u0438 \u044f \u0436\u0438\u0432\u0443 \u0432 \u0432\u0430\u0448\u0435\u043c \u042f\u043d\u0434\u0435\u043a\u0441.\u041d\u0430\u0432\u0438\u0433\u0430\u0442\u043e\u0440\u0435 http:\/\/t.co\/K3bfcSsQoX","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":274,"favorite_count":122,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/K3bfcSsQoX","expanded_url":"http:\/\/instagram.com\/p\/olGI3_F4VU\/","display_url":"instagram.com\/p\/olGI3_F4VU\/","indices":[68,90]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Thu May 29 11:22:43 +0000 2014","id":471974917479866368,"id_str":"471974917479866368","text":"\u041a\u0430\u043a \u0443\u0441\u0442\u0440\u043e\u0435\u043d\u043e \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u043d\u043e\u0435 \u0437\u0440\u0435\u043d\u0438\u0435, \u0438 \u043f\u043e\u0447\u0435\u043c\u0443 \u0438\u0433\u0440\u0430\u0442\u044c \u0432 \u0448\u0430\u0445\u043c\u0430\u0442\u044b \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u0443 \u043f\u043e\u043a\u0430 \u043f\u0440\u043e\u0449\u0435, \u0447\u0435\u043c \u0432\u0438\u0434\u0435\u0442\u044c http:\/\/t.co\/uq5yDIetGO","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":25,"favorite_count":36,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/uq5yDIetGO","expanded_url":"http:\/\/blog.yandex.ru\/post\/80564\/","display_url":"blog.yandex.ru\/post\/80564\/","indices":[94,116]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Wed May 28 12:18:07 +0000 2014","id":471626471040360449,"id_str":"471626471040360449","text":"\u041f\u0440\u0438\u0435\u043c \u0437\u0430\u044f\u0432\u043e\u043a \u043d\u0430 \u043b\u0435\u0442\u043d\u0438\u0439 Tolstoy Camp \u0437\u0430\u043a\u043e\u043d\u0447\u0438\u0442\u0441\u044f \u0443\u0436\u0435 \u0441\u043a\u043e\u0440\u043e, 1 \u0438\u044e\u043d\u044f. \u0421\u0442\u0430\u0440\u0442\u0430\u043f\u044b, \u043d\u0435 \u043e\u043f\u043e\u0437\u0434\u0430\u0439\u0442\u0435! http:\/\/t.co\/ubBdeFvTtK http:\/\/t.co\/f79WUrqadX","source":"\u003ca href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\" rel=\"nofollow\"\u003eTwitter for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":66,"favorite_count":30,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/ubBdeFvTtK","expanded_url":"http:\/\/tolstoy.yandex.ru","display_url":"tolstoy.yandex.ru","indices":[90,112]}],"user_mentions":[],"media":[{"id":471626470822248448,"id_str":"471626470822248448","indices":[113,135],"media_url":"http:\/\/pbs.twimg.com\/media\/BouNxsQIAAA83Wq.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/BouNxsQIAAA83Wq.jpg","url":"http:\/\/t.co\/f79WUrqadX","display_url":"pic.twitter.com\/f79WUrqadX","expanded_url":"http:\/\/twitter.com\/yandex\/status\/471626471040360449\/photo\/1","type":"photo","sizes":{"medium":{"w":600,"h":450,"resize":"fit"},"large":{"w":1024,"h":768,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"small":{"w":340,"h":255,"resize":"fit"}}}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Thu May 22 11:38:13 +0000 2014","id":469442100262883328,"id_str":"469442100262883328","text":"\u041e\u043f\u0443\u0431\u043b\u0438\u043a\u043e\u0432\u0430\u043d\u0430 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430 YaC\/m 2014 \u2014 \u0433\u043b\u0430\u0432\u043d\u043e\u0439 \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u043e\u0439 \u043a\u043e\u043d\u0444\u0435\u0440\u0435\u043d\u0446\u0438\u0438 \u042f\u043d\u0434\u0435\u043a\u0441\u0430 \u044d\u0442\u043e\u0433\u043e \u0433\u043e\u0434\u0430 http:\/\/t.co\/S4cJqrZ7a5 #yacm2014","source":"\u003ca href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\" rel=\"nofollow\"\u003eTwitter for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":28,"favorite_count":22,"entities":{"hashtags":[{"text":"yacm2014","indices":[112,121]}],"symbols":[],"urls":[{"url":"http:\/\/t.co\/S4cJqrZ7a5","expanded_url":"http:\/\/tech.yandex.ru\/events\/yac\/m2014\/#program","display_url":"tech.yandex.ru\/events\/yac\/m20\u2026","indices":[89,111]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"uk"},{"created_at":"Fri May 16 08:09:58 +0000 2014","id":467215366956269568,"id_str":"467215366956269568","text":"\u042f\u043d\u0434\u0435\u043a\u0441 \u0438\u0437\u043c\u0435\u0440\u0438\u0442 \u00ab\u043f\u0440\u043e\u0431\u043a\u0438\u00bb \u0432 \u043c\u0443\u0437\u0435\u044f\u0445. \u041f\u043e\u0434\u0440\u043e\u0431\u043d\u043e\u0441\u0442\u0438 \u0447\u0438\u0442\u0430\u0439\u0442\u0435 \u0432 \u043d\u0430\u0448\u0435\u043c \u0431\u043b\u043e\u0433\u0435 http:\/\/t.co\/613z0LFu7f","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":24,"favorite_count":17,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/613z0LFu7f","expanded_url":"http:\/\/blog.yandex.ru\/post\/80261\/","display_url":"blog.yandex.ru\/post\/80261\/","indices":[68,90]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Thu May 15 14:44:39 +0000 2014","id":466952302247829504,"id_str":"466952302247829504","text":"\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043b\u0438 SPDY \u0443\u0441\u043a\u043e\u0440\u0438\u0442 \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442? \u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b \u044d\u043a\u0441\u043f\u0435\u0440\u0438\u043c\u0435\u043d\u0442\u0430 \u042f\u043d\u0434\u0435\u043a\u0441.\u041f\u043e\u0447\u0442\u044b \u0438 Nginx \u0432 \u043d\u0430\u0448\u0435\u043c \u0442\u0435\u0445\u043d\u043e\u0431\u043b\u043e\u0433\u0435 http:\/\/t.co\/05zEJskjru","source":"\u003ca href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\" rel=\"nofollow\"\u003eTwitter for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":27,"favorite_count":30,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/05zEJskjru","expanded_url":"http:\/\/habrahabr.ru\/company\/yandex\/blog\/222951\/","display_url":"habrahabr.ru\/company\/yandex\u2026","indices":[104,126]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Fri May 09 06:33:54 +0000 2014","id":464654475102523392,"id_str":"464654475102523392","text":"\u0421 \u0414\u043d\u0451\u043c \u041f\u043e\u0431\u0435\u0434\u044b! \u00ab\u041f\u043e\u0431\u0435\u0434\u0438\u0442\u0435\u043b\u0438\u00bb \u2014 \u043c\u0443\u043b\u044c\u0442\u0438\u043c\u0435\u0434\u0438\u0439\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430 \u0412\u0435\u043b\u0438\u043a\u043e\u0439 \u041e\u0442\u0435\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439 \u0432\u043e\u0439\u043d\u044b http:\/\/t.co\/1Zi4eoHKu0","source":"\u003ca href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\" rel=\"nofollow\"\u003eTwitter for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":101,"favorite_count":71,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/1Zi4eoHKu0","expanded_url":"http:\/\/www.pobediteli.ru","display_url":"pobediteli.ru","indices":[79,101]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Tue May 06 16:12:10 +0000 2014","id":463712838213967873,"id_str":"463712838213967873","text":"\u0414\u0435\u043a\u0430\u043d \u043d\u043e\u0432\u043e\u0433\u043e \u0444\u0430\u043a\u0443\u043b\u044c\u0442\u0435\u0442\u0430 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u043d\u044b\u0445 \u043d\u0430\u0443\u043a \u0412\u0428\u042d \u0438 \u042f\u043d\u0434\u0435\u043a\u0441\u0430 \u0418\u0432\u0430\u043d \u0410\u0440\u0436\u0430\u043d\u0446\u0435\u0432 \u043e \u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0435\u043c \u0438 \u0431\u0443\u0434\u0443\u0449\u0435\u043c computer science \u0432 \u0420\u043e\u0441\u0441\u0438\u0438 http:\/\/t.co\/2kpbyodUJx","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":28,"favorite_count":50,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/2kpbyodUJx","expanded_url":"http:\/\/slon.ru\/biz\/1092456\/","display_url":"slon.ru\/biz\/1092456\/","indices":[118,140]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Tue May 06 12:36:41 +0000 2014","id":463658607402561536,"id_str":"463658607402561536","text":"\u041a \u0447\u0435\u043c\u043f\u0438\u043e\u043d\u0430\u0442\u0443 \u043c\u0438\u0440\u0430 \u043f\u043e \u0445\u043e\u043a\u043a\u0435\u044e \u0432 \u041c\u0438\u043d\u0441\u043a\u0435 \u043c\u044b \u0437\u0430\u043f\u0443\u0441\u0442\u0438\u043b\u0438 \u0445\u043e\u043a\u043a\u0435\u0439\u043d\u044b\u0439 \u0441\u043f\u0435\u0446\u043f\u0440\u043e\u0435\u043a\u0442. \u0412\u0441\u0451, \u0447\u0442\u043e \u043d\u0443\u0436\u043d\u043e \u0431\u043e\u043b\u0435\u043b\u044c\u0449\u0438\u043a\u0443, \u0432 \u043e\u0434\u043d\u043e\u043c \u043c\u0435\u0441\u0442\u0435 http:\/\/t.co\/6cBGxwyfPX","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":24,"favorite_count":18,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/6cBGxwyfPX","expanded_url":"http:\/\/h14.yandex.ru\/","display_url":"h14.yandex.ru","indices":[113,135]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Thu Apr 24 16:18:40 +0000 2014","id":459365820251275264,"id_str":"459365820251275264","text":"RT @yandexprobki: \u0421\u0430\u043c\u044b\u0435 \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u044b\u0435 \u0444\u0430\u043a\u0442\u044b \u043f\u0440\u043e \u0434\u0430\u0447\u043d\u044b\u0435 \u043f\u0440\u043e\u0431\u043a\u0438, \u0430 \u0442\u0430\u043a\u0436\u0435 \u043e \u0442\u043e\u043c, \u043a\u0430\u043a \u043f\u0440\u043e\u0432\u043e\u0434\u0438\u043b\u043e\u0441\u044c \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0435 http:\/\/t.co\/12dZSq7c4O","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Thu Apr 24 09:26:34 +0000 2014","id":459262109164253186,"id_str":"459262109164253186","text":"\u0421\u0430\u043c\u044b\u0435 \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u044b\u0435 \u0444\u0430\u043a\u0442\u044b \u043f\u0440\u043e \u0434\u0430\u0447\u043d\u044b\u0435 \u043f\u0440\u043e\u0431\u043a\u0438, \u0430 \u0442\u0430\u043a\u0436\u0435 \u043e \u0442\u043e\u043c, \u043a\u0430\u043a \u043f\u0440\u043e\u0432\u043e\u0434\u0438\u043b\u043e\u0441\u044c \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0435 http:\/\/t.co\/12dZSq7c4O","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":282568207,"id_str":"282568207","name":"\u042f\u043d\u0434\u0435\u043a\u0441.\u041f\u0440\u043e\u0431\u043a\u0438","screen_name":"yandexprobki","location":"","description":"\u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0439 twitter \u043f\u0440\u043e\u0435\u043a\u0442\u0430 \u042f\u043d\u0434\u0435\u043a\u0441.\u041f\u0440\u043e\u0431\u043a\u0438.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":23765,"friends_count":15,"listed_count":221,"created_at":"Fri Apr 15 13:18:15 +0000 2011","favourites_count":2,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1443,"lang":"ru","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"022330","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme15\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme15\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/473033724712726528\/uiKTBG7z_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/473033724712726528\/uiKTBG7z_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"A8C7F7","profile_sidebar_fill_color":"C0DFEC","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":23,"favorite_count":39,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/12dZSq7c4O","expanded_url":"http:\/\/blog.yandex.ru\/post\/79124\/","display_url":"blog.yandex.ru\/post\/79124\/","indices":[86,108]}],"user_mentions":[]},"favorited":false,"retweeted":true,"possibly_sensitive":false,"lang":"ru"},"retweet_count":23,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/12dZSq7c4O","expanded_url":"http:\/\/blog.yandex.ru\/post\/79124\/","display_url":"blog.yandex.ru\/post\/79124\/","indices":[104,126]}],"user_mentions":[{"screen_name":"yandexprobki","name":"\u042f\u043d\u0434\u0435\u043a\u0441.\u041f\u0440\u043e\u0431\u043a\u0438","id":282568207,"id_str":"282568207","indices":[3,16]}]},"favorited":false,"retweeted":true,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Wed Apr 23 11:54:21 +0000 2014","id":458936913190457345,"id_str":"458936913190457345","text":"\u042f\u043d\u0434\u0435\u043a\u0441.\u0422\u0430\u043a\u0441\u0438 \u0432\u0432\u043e\u0434\u0438\u0442 \u0441 1 \u043c\u0430\u044f \u043d\u043e\u0432\u044b\u0435 \u0442\u0430\u0440\u0438\u0444\u044b. \u0422\u0435\u043f\u0435\u0440\u044c 10 \u043c\u0438\u043d\u0443\u0442 \u043f\u043e\u0435\u0437\u0434\u043a\u0438 \u0432 \u044d\u043a\u043e\u043d\u043e\u043c\u043a\u043b\u0430\u0441\u0441\u0435 \u0431\u0443\u0434\u0443\u0442 \u0441\u0442\u043e\u0438\u0442\u044c \u043d\u0435 \u0431\u043e\u043b\u044c\u0448\u0435 199 \u0440\u0443\u0431\u043b\u0435\u0439 http:\/\/t.co\/sUfBLv4BJU","source":"\u003ca href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\" rel=\"nofollow\"\u003eTwitter for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":69,"favorite_count":16,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/sUfBLv4BJU","expanded_url":"http:\/\/blog.yandex.ru\/post\/79063\/","display_url":"blog.yandex.ru\/post\/79063\/","indices":[115,137]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Tue Apr 22 10:42:38 +0000 2014","id":458556477675147265,"id_str":"458556477675147265","text":"\u041d\u0430 \u042f\u043d\u0434\u0435\u043a\u0441.\u041c\u0443\u0437\u044b\u043a\u0435 \u043f\u043e\u044f\u0432\u0438\u043b\u0438\u0441\u044c Daft Punk, \u0411\u043e\u0431 \u0414\u0438\u043b\u0430\u043d, Depeche Mode \u0438 \u0434\u0440\u0443\u0433\u0438\u0435 \u0432\u0430\u0448\u0438 \u043b\u044e\u0431\u0438\u043c\u044b\u0435 \u0438\u0441\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u0438 http:\/\/t.co\/UKc19NL7Cm","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":70,"favorite_count":27,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/UKc19NL7Cm","expanded_url":"http:\/\/blog.yandex.ru\/post\/79018\/","display_url":"blog.yandex.ru\/post\/79018\/","indices":[96,118]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Mon Apr 21 13:06:25 +0000 2014","id":458230273122267137,"id_str":"458230273122267137","text":"RT @SU_HSE: 27 \u0430\u043f\u0440\u0435\u043b\u044f \u0412\u0428\u042d \u0438 @yandex \u043f\u0440\u0438\u0433\u043b\u0430\u0448\u0430\u044e\u0442 \u043d\u0430 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044e \u0424\u0430\u043a\u0443\u043b\u044c\u0442\u0435\u0442\u0430 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u043d\u044b\u0445 \u043d\u0430\u0443\u043a \u0441 \u0443\u0447\u0430\u0441\u0442\u0438\u0435\u043c \u042f.\u041a\u0443\u0437\u044c\u043c\u0438\u043d\u043e\u0432\u0430 \u0438 \u0410.\u0412\u043e\u043b\u043e\u0436\u0430 http:\/\/t.co\/P\u2026","source":"\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Mon Apr 21 12:32:58 +0000 2014","id":458221857742004224,"id_str":"458221857742004224","text":"27 \u0430\u043f\u0440\u0435\u043b\u044f \u0412\u0428\u042d \u0438 @yandex \u043f\u0440\u0438\u0433\u043b\u0430\u0448\u0430\u044e\u0442 \u043d\u0430 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044e \u0424\u0430\u043a\u0443\u043b\u044c\u0442\u0435\u0442\u0430 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u043d\u044b\u0445 \u043d\u0430\u0443\u043a \u0441 \u0443\u0447\u0430\u0441\u0442\u0438\u0435\u043c \u042f.\u041a\u0443\u0437\u044c\u043c\u0438\u043d\u043e\u0432\u0430 \u0438 \u0410.\u0412\u043e\u043b\u043e\u0436\u0430 http:\/\/t.co\/Pe8HL1ists","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":112250522,"id_str":"112250522","name":"\u041d\u0418\u0423 \u0412\u0428\u042d, HSE","screen_name":"SU_HSE","location":"\u041c\u043e\u0441\u043a\u0432\u0430, Moscow","description":"\u041d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0418\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u0439 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u0412\u044b\u0441\u0448\u0430\u044f \u0428\u043a\u043e\u043b\u0430 \u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0438, National Research University Higher School Of Economics","url":"http:\/\/t.co\/1lm3MWrttm","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/1lm3MWrttm","expanded_url":"http:\/\/www.hse.ru","display_url":"hse.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":6254,"friends_count":69,"listed_count":123,"created_at":"Sun Feb 07 20:05:40 +0000 2010","favourites_count":50,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":true,"verified":false,"statuses_count":4037,"lang":"ru","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/454607829333049345\/KKfJp3gF.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/454607829333049345\/KKfJp3gF.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/456772291339096064\/aNmF4wbo_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/456772291339096064\/aNmF4wbo_normal.jpeg","profile_link_color":"0084B4","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":28,"favorite_count":12,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/Pe8HL1ists","expanded_url":"http:\/\/bit.ly\/1nCitgD","display_url":"bit.ly\/1nCitgD","indices":[114,136]}],"user_mentions":[{"screen_name":"yandex","name":"\u042f\u043d\u0434\u0435\u043a\u0441","id":25697989,"id_str":"25697989","indices":[16,23]}]},"favorited":false,"retweeted":true,"possibly_sensitive":false,"lang":"ru"},"retweet_count":28,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/Pe8HL1ists","expanded_url":"http:\/\/bit.ly\/1nCitgD","display_url":"bit.ly\/1nCitgD","indices":[139,140]}],"user_mentions":[{"screen_name":"SU_HSE","name":"\u041d\u0418\u0423 \u0412\u0428\u042d, HSE","id":112250522,"id_str":"112250522","indices":[3,10]},{"screen_name":"yandex","name":"\u042f\u043d\u0434\u0435\u043a\u0441","id":25697989,"id_str":"25697989","indices":[28,35]}]},"favorited":false,"retweeted":true,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Fri Apr 18 08:11:50 +0000 2014","id":457068975948828672,"id_str":"457068975948828672","text":"\u041d\u0430 \u042f\u043d\u0434\u0435\u043a\u0441.\u041a\u0430\u0440\u0442\u0430\u0445 \u043f\u043e\u044f\u0432\u0438\u043b\u0438\u0441\u044c \u043f\u0430\u043d\u043e\u0440\u0430\u043c\u044b \u0410\u0440\u043a\u0442\u0438\u043a\u0438 \u2014 \u0430\u0440\u0445\u0438\u043f\u0435\u043b\u0430\u0433\u0430 \u0417\u0435\u043c\u043b\u044f \u0424\u0440\u0430\u043d\u0446\u0430-\u0418\u043e\u0441\u0438\u0444\u0430, \u0441\u0430\u043c\u043e\u0439 \u0441\u0435\u0432\u0435\u0440\u043d\u043e\u0439 \u0442\u0435\u0440\u0440\u0438\u0442\u043e\u0440\u0438\u0438 \u0420\u043e\u0441\u0441\u0438\u0438 http:\/\/t.co\/7SLlv0qo7A","source":"\u003ca href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\" rel=\"nofollow\"\u003eTwitter for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":77,"favorite_count":41,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/7SLlv0qo7A","expanded_url":"http:\/\/blog.yandex.ru\/post\/78927\/","display_url":"blog.yandex.ru\/post\/78927\/","indices":[111,133]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Wed Apr 16 13:05:36 +0000 2014","id":456418130638942208,"id_str":"456418130638942208","text":"RT @ya_events: \u041e\u0442\u043a\u0440\u044b\u0442 \u043d\u0430\u0431\u043e\u0440 \u0432 \u0428\u043a\u043e\u043b\u0443 \u0430\u043d\u0430\u043b\u0438\u0437\u0430 \u0434\u0430\u043d\u043d\u044b\u0445 \u2014 \u0436\u0434\u0435\u043c \u0441\u0442\u0443\u0434\u0435\u043d\u0442\u043e\u0432 \u0438 \u043c\u043e\u043b\u043e\u0434\u044b\u0445 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442\u043e\u0432. \u0417\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u0430\u043d\u043a\u0435\u0442\u0443 \u043c\u043e\u0436\u043d\u043e \u0434\u043e 15 \u043c\u0430\u044f http:\/\/t.co\/MO\u2026","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Wed Apr 16 12:18:36 +0000 2014","id":456406300511846400,"id_str":"456406300511846400","text":"\u041e\u0442\u043a\u0440\u044b\u0442 \u043d\u0430\u0431\u043e\u0440 \u0432 \u0428\u043a\u043e\u043b\u0443 \u0430\u043d\u0430\u043b\u0438\u0437\u0430 \u0434\u0430\u043d\u043d\u044b\u0445 \u2014 \u0436\u0434\u0435\u043c \u0441\u0442\u0443\u0434\u0435\u043d\u0442\u043e\u0432 \u0438 \u043c\u043e\u043b\u043e\u0434\u044b\u0445 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442\u043e\u0432. \u0417\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u0430\u043d\u043a\u0435\u0442\u0443 \u043c\u043e\u0436\u043d\u043e \u0434\u043e 15 \u043c\u0430\u044f http:\/\/t.co\/MOObhOvtIV","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":145210872,"id_str":"145210872","name":"\u042f\u043d\u0434\u0435\u043a\u0441.Events","screen_name":"ya_events","location":"Russia, Moscow","description":"\u0421\u0430\u043c\u044b\u0435 \u043f\u043e\u043b\u0435\u0437\u043d\u044b\u0435 \u0438 \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u044b\u0435 \u043c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u044f \u042f\u043d\u0434\u0435\u043a\u0441\u0430","url":"http:\/\/t.co\/qqczJiqmf4","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/qqczJiqmf4","expanded_url":"http:\/\/events.yandex.ru\/","display_url":"events.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":18749,"friends_count":22,"listed_count":379,"created_at":"Tue May 18 11:39:05 +0000 2010","favourites_count":1,"utc_offset":14400,"time_zone":"Abu Dhabi","geo_enabled":false,"verified":true,"statuses_count":2670,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"0099B9","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme4\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme4\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/2345968910\/0vdtkhsj1gpy2mf62ig2_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/2345968910\/0vdtkhsj1gpy2mf62ig2_normal.png","profile_link_color":"0099B9","profile_sidebar_border_color":"5ED4DC","profile_sidebar_fill_color":"95E8EC","profile_text_color":"3C3940","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":49,"favorite_count":45,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/MOObhOvtIV","expanded_url":"http:\/\/blog.yandex.ru\/post\/78842\/","display_url":"blog.yandex.ru\/post\/78842\/","indices":[110,132]}],"user_mentions":[]},"favorited":false,"retweeted":true,"possibly_sensitive":false,"lang":"ru"},"retweet_count":49,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/MOObhOvtIV","expanded_url":"http:\/\/blog.yandex.ru\/post\/78842\/","display_url":"blog.yandex.ru\/post\/78842\/","indices":[139,140]}],"user_mentions":[{"screen_name":"ya_events","name":"\u042f\u043d\u0434\u0435\u043a\u0441.Events","id":145210872,"id_str":"145210872","indices":[3,13]}]},"favorited":false,"retweeted":true,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Tue Apr 15 12:53:44 +0000 2014","id":456052754503720960,"id_str":"456052754503720960","text":"\u0422\u043e\u043c\u0438\u0442\u0430-\u043f\u0430\u0440\u0441\u0435\u0440 \u043e\u0442 \u042f\u043d\u0434\u0435\u043a\u0441\u0430. \u0422\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u044f, \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043c\u044b \u043d\u0430\u0443\u0447\u0438\u043b\u0438 \u043c\u0430\u0448\u0438\u043d\u0443 \u043f\u043e\u043d\u0438\u043c\u0430\u0442\u044c \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u044f\u0437\u044b\u043a  http:\/\/t.co\/kOrd1VZert","source":"\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":45,"favorite_count":57,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/kOrd1VZert","expanded_url":"http:\/\/habrahabr.ru\/company\/yandex\/blog\/219311\/","display_url":"habrahabr.ru\/company\/yandex\u2026","indices":[102,124]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Fri Apr 11 09:04:56 +0000 2014","id":454545625980612608,"id_str":"454545625980612608","text":"\u0412\u0440\u0435\u043c\u044f \u043c\u0435\u043d\u044f\u0442\u044c \u043f\u0430\u0440\u043e\u043b\u0438. \u0420\u0430\u0441\u0441\u043a\u0430\u0437 \u043e \u0442\u043e\u043c, \u043a\u0430\u043a \u043c\u044b \u0432 \u042f\u043d\u0434\u0435\u043a\u0441\u0435 \u0440\u0435\u0430\u0433\u0438\u0440\u0443\u0435\u043c \u043d\u0430 \u0443\u0433\u0440\u043e\u0437\u044b \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u0432\u0441\u0435\u043c\u0443 \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442\u0443 http:\/\/t.co\/5UQwqpeSWw","source":"\u003ca href=\"http:\/\/itunes.apple.com\/us\/app\/twitter\/id409789998?mt=12\" rel=\"nofollow\"\u003eTwitter for Mac\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":93,"favorite_count":61,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/5UQwqpeSWw","expanded_url":"http:\/\/habrahabr.ru\/company\/yandex\/blog\/218951\/","display_url":"habrahabr.ru\/company\/yandex\u2026","indices":[102,124]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Thu Apr 10 08:41:39 +0000 2014","id":454177376315113472,"id_str":"454177376315113472","text":"\u0418\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442 \u0432 \u0440\u0435\u0433\u0438\u043e\u043d\u0430\u0445 \u0420\u043e\u0441\u0441\u0438\u0438. \u041f\u0440\u043e\u043d\u0438\u043a\u043d\u043e\u0432\u0435\u043d\u0438\u0435, \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c \u0434\u043e\u0441\u0442\u0443\u043f\u0430, \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442, \u0432\u043e\u0442 \u044d\u0442\u043e \u0432\u043e\u0442 \u0432\u0441\u0451 http:\/\/t.co\/aQjVZxTi2I","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":65,"favorite_count":79,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/aQjVZxTi2I","expanded_url":"http:\/\/company.yandex.ru\/researches\/reports\/2014\/ya_internet_regions_2014.xml","display_url":"company.yandex.ru\/researches\/rep\u2026","indices":[115,137]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Wed Apr 09 08:00:31 +0000 2014","id":453804638484299776,"id_str":"453804638484299776","text":"\u042f\u043d\u0434\u0435\u043a\u0441.\u0410\u043b\u0433\u043e\u0440\u0438\u0442\u043c 2014 - \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f \u043e\u0442\u043a\u0440\u044b\u0442\u0430. \u0424\u0438\u043d\u0430\u043b \u043f\u0440\u043e\u0439\u0434\u0435\u0442 \u0432 \u0411\u0435\u0440\u043b\u0438\u043d\u0435 http:\/\/t.co\/gOxiRtuID5","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":50,"favorite_count":27,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/gOxiRtuID5","expanded_url":"http:\/\/blog.yandex.ru\/post\/78133\/","display_url":"blog.yandex.ru\/post\/78133\/","indices":[68,90]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"},{"created_at":"Fri Apr 04 15:14:50 +0000 2014","id":452101997081010176,"id_str":"452101997081010176","text":"\u0421\u0435\u0433\u043e\u0434\u043d\u044f, 4.04 \u2014 \u0414\u0435\u043d\u044c \u0432\u0435\u0431\u043c\u0430\u0441\u0442\u0435\u0440\u0430. \u0416\u0435\u043b\u0430\u0435\u043c \u0432\u0430\u043c \u043f\u043e\u043c\u0435\u043d\u044c\u0448\u0435 \u043e\u0448\u0438\u0431\u043e\u043a 404, \u0431\u043e\u043b\u044c\u0448\u0435 \u043d\u043e\u0432\u044b\u0445 \u0438\u0434\u0435\u0439 \u0438 \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u0441\u0430\u0439\u0442\u043e\u0432 http:\/\/t.co\/8KOXVncwjg","source":"\u003ca href=\"https:\/\/dev.twitter.com\/docs\/tfw\" rel=\"nofollow\"\u003eTwitter for Websites\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":25697989,"id_str":"25697989","name":"\u042f\u043d\u0434\u0435\u043a\u0441","screen_name":"yandex","location":"\u041c\u043e\u0441\u043a\u0432\u0430","description":"","url":"http:\/\/t.co\/RyDoyXD0l3","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/RyDoyXD0l3","expanded_url":"http:\/\/company.yandex.ru","display_url":"company.yandex.ru","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":1121290,"friends_count":18,"listed_count":3932,"created_at":"Sat Mar 21 17:10:37 +0000 2009","favourites_count":1,"utc_offset":14400,"time_zone":"Moscow","geo_enabled":false,"verified":true,"statuses_count":1348,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"FFFFFF","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/737938448\/d5a247cd20edcb6fb27e949fb4a66215.png","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/423511947183546368\/ca_ULwsD_normal.png","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/25697989\/1355493421","profile_link_color":"000000","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"FDC949","profile_text_color":"000000","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":135,"favorite_count":43,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/8KOXVncwjg","expanded_url":"http:\/\/youtu.be\/BLONJlEyWVQ","display_url":"youtu.be\/BLONJlEyWVQ","indices":[107,129]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ru"}];
+				json = json.slice(0, 3);
+
+				for(key in json){ 
+	    		
+	    		var text = replaceURLWithHTMLLinks(json[key].text);
+	    		var name = json[key].user.screen_name;
+	    		var date = H(json[key].created_at);
+	    			    		
+	    		$('#tweets_stream').append('<div class="tweet">\
+						<div class="date">'+date+'</div>\
+	    			<div class="username"><a href="http://twitter.com/'+name+'">'+name+'</a></div>\
+	    			<div class="text">'+text+'</div>\
+	    		</div>')
+	    	}
+
+			
+		})
+	</script>
+	<div class="tweets" id="tweets_stream">
+	<div class="tweet">						<div class="date">2 d</div>	    			<div class="username"><a href="http://twitter.com/yandex">yandex</a></div>	    			<div class="text">Здравствуйте, меня зовут Оксана, и я живу в вашем Яндекс.Навигаторе <a href="http://t.co/K3bfcSsQoX">http://t.co/K3bfcSsQoX</a></div>	    		</div><div class="tweet">						<div class="date">2 d</div>	    			<div class="username"><a href="http://twitter.com/yandex">yandex</a></div>	    			<div class="text">Как устроено компьютерное зрение, и почему играть в шахматы компьютеру пока проще, чем видеть <a href="http://t.co/uq5yDIetGO">http://t.co/uq5yDIetGO</a></div>	    		</div><div class="tweet">						<div class="date">3 d</div>	    			<div class="username"><a href="http://twitter.com/yandex">yandex</a></div>	    			<div class="text">Прием заявок на летний Tolstoy Camp закончится уже скоро, 1 июня. Стартапы, не опоздайте! <a href="http://t.co/ubBdeFvTtK">http://t.co/ubBdeFvTtK</a> http://t.co/f79WUrqadX</div>	    		</div></div>
+	
+	<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./Разбор ACM ICPC 2013_files/follow_button.1401325387.htm" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 147px; height: 28px;"></iframe>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);} }(document,"script","twitter-wjs");</script>
+
+
+</div>
+
+		<div class="block facebook_like_box no_bg">
+	<div id="facebook_like_box"><iframe src="./Разбор ACM ICPC 2013_files/likebox.htm" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:260px;" allowtransparency="true"></iframe></div>
+	<script type="text/javascript">
+		$(window).bind('load', function(){
+			var width = $('#facebook_like_box').width()
+			$('#facebook_like_box').html('<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fyandex&amp;width='+width+'&amp;height=260&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:260px;" allowTransparency="true"></iframe>')
+		})
+	</script>
+
+</div>
+
+		<div class="block vkontakte_groups no_bg">
+
+	<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/openapi.js"></script>
+
+	<!-- VK Widget -->
+	<div id="vk_groups" style="height: 290px; width: 240px; background: none;"><iframe name="fXDbae2b" frameborder="0" src="./Разбор ACM ICPC 2013_files/widget_community.htm" width="240" height="200" scrolling="no" id="vkwidget1" style="overflow: hidden; height: 290px;"></iframe></div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+		$(window).bind('load', function(){
+			var width = $('#vk_groups').width()
+			VK.Widgets.Group("vk_groups", {mode: 0, width: width, height: "290"}, 11283947);
+		})
+
+			
+		})
+	</script>
+</div>
+
+		<div class="block hantim_vacanies">
+  <div class="title">Вакансии</div>
+  <div class="job_items">
+    <div class="job_item  grey ">
+			<a href="http://brainstorage.me/jobs/15031">Старший разработчик качества поиска Яндекс.Картинок (С++)</a>
+		</div>
+    <div class="job_item  grey ">
+			<a href="http://brainstorage.me/jobs/16315">Разработчик распределенной системы хранения и обработки данных</a>
+		</div>
+    <div class="job_item  grey ">
+			<a href="http://brainstorage.me/jobs/16593">Разработчик Яндекс.Диска (C++)</a>
+		</div>
+    <div class="job_item  grey marked">
+			<a href="http://brainstorage.me/jobs/8459">Инженер по тестированию</a>
+		</div>
+    <div class="job_item  grey marked">
+			<a href="http://brainstorage.me/jobs/18009">Инженер по автоматизации тестирования (Java)</a>
+		</div>
+    <div class="job_item  grey ">
+			<a href="http://brainstorage.me/jobs/19197">Младший Java-разработчик</a>
+		</div>
+    <div class="job_item  grey ">
+			<a href="http://brainstorage.me/jobs/19195">Старший Java-разработчик</a>
+		</div>
+    <div class="job_item  grey ">
+			<a href="http://brainstorage.me/jobs/19193">Разработчик мобильных приложений для Android (медиасервисы)</a>
+		</div>
+    <div class="job_item  grey ">
+			<a href="http://brainstorage.me/jobs/19189">Разработчик мобильных приложений для iOS (медиасервисы)</a>
+		</div>
+    <div class="job_item  grey ">
+			<a href="http://brainstorage.me/jobs/19183">Разработчик сервисов извлечения знаний Яндекс.Маркета</a>
+		</div>
+  </div>
+	<div class="all"><a href="http://brainstorage.me/companies/yandex/jobs">Все вакансии</a></div>
+</div>
+
+		<div class="block corporate_news">
+  <div class="title">Новости</div>
+  <div class="posts_list">
+      <div class="post_item">
+        <a href="https://twitter.com/YandexJob/statuses/472404777717211136" class="post_name">[YandexJob] Сегодня сотрудники московского офиса организовали праздник для детей: провели квест и рассказали о наших сервисах http://t.co/YfkBymcudi</a> <div class="time">30 мая 2014 </div>
+      </div>
+      <div class="post_item">
+        <a href="https://twitter.com/YandexJob/statuses/472025271387037696" class="post_name">[YandexJob] @romskom Добрый день! Здесь можно изучить все текущие вакансии для Питера http://t.co/7l2vFSZ26m</a> <div class="time">29 мая 2014 </div>
+      </div>
+      <div class="post_item">
+        <a href="https://twitter.com/YandexJob/statuses/471618408904404992" class="post_name">[YandexJob] Яндекс ищет Java-разработчиков в Киеве для поддержки и развития медиасервисов и околомедийных проектов http://t.co/ovxJqgj0T0</a> <div class="time">28 мая 2014 </div>
+      </div>
+      <div class="post_item">
+        <a href="https://twitter.com/YandexJob/statuses/471187854975328256" class="post_name">[YandexJob] @Divorce_ED В списке вакансий тут http://t.co/UfmJ6I3u20 можно найти вполне подходящие и интересные предложения</a> <div class="time">27 мая 2014 </div>
+      </div>
+      <div class="post_item">
+        <a href="https://twitter.com/YandexJob/statuses/470901647313731585" class="post_name">[ya_events] Хотите запустить свой бизнес? До 1 июня продолжается набор в Tolstoy Startup Camp #yastart http://t.co/qTf1wqOmOH http://t.co/SiXR30UpTI</a> <div class="time">26 мая 2014 </div>
+      </div>
+      <div class="post_item">
+        <a href="https://twitter.com/YandexJob/statuses/470875606759247872" class="post_name">[ya_events] Открыта регистрация в Летнюю школу по программированию для учащихся 8-11 классов. Подать заявку можно до 31 мая http://t.co/vT6iksV9MA</a> <div class="time">26 мая 2014 </div>
+      </div>
+      <div class="post_item">
+        <a href="https://twitter.com/YandexJob/statuses/470863978395336704" class="post_name">[YandexJob] Марина Степанова — руководитель группы разработки API Карт. Вот что она нам рассказала https://t.co/RlqjpkZZWZ</a> <div class="time">26 мая 2014 </div>
+      </div>
+      <div class="post_item">
+        <a href="https://twitter.com/YandexJob/statuses/469711761521012737" class="post_name">[YandexJob] Яндекс ищет юриста гражданско-правовой специализации с опытом работы более двух лет в коммерческих организациях http://t.co/ktTWoKgs4z</a> <div class="time">23 мая 2014 </div>
+      </div>
+      <div class="post_item">
+        <a href="https://twitter.com/YandexJob/statuses/469413762798481408" class="post_name">[YandexJob] Коммерческому департаменту Яндекс.Денег нужен энергичный и дипломатичный менеджер проектов http://t.co/PFtpKDrVWZ</a> <div class="time">22 мая 2014 </div>
+      </div>
+      <div class="post_item">
+        <a href="https://twitter.com/YandexJob/statuses/469055548135309312" class="post_name">[ya_events] 25 мая пройдет квалификационный раунд соревнования по программированию Яндекс.Алгоритм 2014 – регистрация открыта http://t.co/h6WgCwtRce</a> <div class="time">21 мая 2014 </div>
+      </div>
+  </div>
+</div>
+
+</div>
+
+		
+		<div class="block corporate_blog">
+  <div class="title">Блог ↓</div>
+  <div class="posts_list">
+      <div class="post_item">
+        <a href="http://habrahabr.ru/company/yandex/blog/224719/">Как улучшить сегментацию пользовательской активности. Семинар в Яндексе</a> <div class="time">31 мая 2014 в 17:26 </div>
+      </div>
+      <div class="post_item">
+        <a href="http://habrahabr.ru/company/yandex/blog/224579/">Почему в поиске без лингвистики не обойтись?</a> <div class="time">29 мая 2014 в 16:46 </div>
+      </div>
+      <div class="post_item">
+        <a href="http://habrahabr.ru/company/yandex/blog/223957/">Какому языку можно научиться, задавая вопросы поисковой системе? Семинар в Яндексе</a> <div class="time">24 мая 2014 в 17:10 </div>
+      </div>
+      <div class="post_item">
+        <a href="http://habrahabr.ru/company/yandex/blog/223273/">Гипс на 3D-принтере и другие идеи команд от Tolstoy Camp, а также — нужен ли он вам?</a> <div class="time">19 мая 2014 в 13:16 </div>
+      </div>
+      <div class="post_item">
+        <a href="http://habrahabr.ru/company/yandex/blog/223121/">Анализ неявных предпочтений пользователей. Научно-технический семинар в Яндексе</a> <div class="time">17 мая 2014 в 15:51 </div>
+      </div>
+      <div class="post_item">
+        <a href="http://habrahabr.ru/company/yandex/blog/222951/">Совместный эксперимент команд Яндекс.Почты и Nginx: действительно ли SPDY ускорит интернет?</a> <div class="time">15 мая 2014 в 17:50 </div>
+      </div>
+      <div class="post_item">
+        <a href="http://habrahabr.ru/company/yandex/blog/222513/">Как не отключать картинки и скрипты в письмах, и при этом быть безопасными. История от Яндекс.Почты</a> <div class="time">12 мая 2014 в 18:09 </div>
+      </div>
+      <div class="post_item">
+        <a href="http://habrahabr.ru/company/yandex/blog/222303/">Психология роботов и умные компьютеры: как это работает и где этому научиться. Лекция Максима Мусина в Яндексе</a> <div class="time">10 мая 2014 в 17:57 </div>
+      </div>
+      <div class="post_item">
+        <a href="http://habrahabr.ru/company/yandex/blog/221379/">Magic Tester. Как неподготовленный человек замечает ошибки, и как научить тому же робота</a> <div class="time"> 7 мая 2014 в 15:56 </div>
+      </div>
+      <div class="post_item">
+        <a href="http://habrahabr.ru/company/yandex/blog/221881/">Сложный и противоречивый мир синтаксиса микроразметки. Почему стандартов так много? Опыт Яндекса</a> <div class="time"> 6 мая 2014 в 14:08 </div>
+      </div>
+  </div>
+</div>
+
+		
+		
+	</div>
+	<div class="clear"></div>
+
+
+  					<div id="footer">
+	<dl>
+		<dd><a href="https://habrahabr.ru/auth/login/">Войти</a></dd>
+		<dd><a href="https://habrahabr.ru/auth/register/">Регистрация</a></dd>
+	</dl>
+	<dl>
+		<dt>Разделы</dt>
+		<dd><a href="http://habrahabr.ru/posts/top/">Посты</a></dd>
+		<dd><a href="http://habrahabr.ru/hubs/">Хабы</a></dd>
+		<dd><a href="http://habrahabr.ru/companies/">Компании</a></dd>
+		<dd><a href="http://habrahabr.ru/users/">Пользователи</a></dd>
+		<dd><a href="http://toster.ru/?_aa=press_anykey">Q&amp;A</a></dd>
+		<dd><a href="http://habrahabr.ru/sandbox/">Песочница</a></dd>
+		
+	</dl>	
+	<dl>
+		<dt>Инфо</dt>
+		<dd><a href="http://habrahabr.ru/info/about/">О сайте</a></dd>
+		<dd><a href="http://habrahabr.ru/info/help/rules/">Правила</a></dd>
+		<dd><a href="http://habrahabr.ru/info/help/">Помощь</a></dd>
+		<dd><a href="http://habrahabr.ru/info/agreement/">Соглашение</a></dd>
+	</dl>
+	<dl>
+		<dt>Услуги</dt>
+		<dd><a href="http://habrahabr.ru/info/advertising/">Реклама</a></dd>
+		<dd><a href="http://habrahabr.ru/info/advertising/corporate/">Корпоративные тарифы</a></dd>
+		<dd><a href="http://habrahabr.ru/info/advertising/workshops/">Семинары</a></dd>
+		<dd><a href="http://habrahabr.ru/special/">Спецпроекты</a></dd>
+	</dl>
+	<dl>
+		<dt>Разное</dt>
+		<dd><a href="http://habrahabr.ru/apps/">Приложения</a></dd>
+		<dd><a href="http://habrahabr.ru/special/testdrive/">Тест-драйвы</a></dd>
+		<dd><a href="http://habrahabr.ru/info/hello_startup/">Помощь стартапам</a></dd>
+		<dd><a href="http://habrahabr.ru/special/minsvyaz/">Льготы стартапам</a></dd>
+	</dl>
+	<div class="copyright">
+
+		<div class="about">
+			<a href="http://tmtm.ru/">TM</a>
+			© 2006–2014
+			<br><br>
+			<a href="http://habrahabr.ru/feedback/">Служба поддержки</a><br><br>
+			<a href="http://m.habrahabr.ru/">Мобильная версия</a><br><br>
+			
+
+			<div class="social_accounts">
+				<a href="https://twitter.com/habrahabr" class="tw"></a>
+				<a href="https://www.facebook.com/habrahabr.ru" class="fb"></a>
+				<a href="http://vk.com/habr" class="vk"></a>
+				<!-- <a href="" class="gp"></a> //-->
+			</div>
+
+		</div>
+	</div>
+
+</div>
+  					
+        </div>
+      </div>
+    </div>
+	
+		
+    <script type="text/javascript">
+    	$(document).ready(function(){
+        
+        // настройки всплывающих уведомлений
+        $.jGrowl.defaults.closerTemplate = '<div>Закрыть все уведомления</div>';         
+        
+        // настройки тултипов
+        $(".help-tip").tipTip({maxWidth: "auto", edgeOffset: 10});  
+        
+      });  
+      // global vars
+      
+
+      var g_base_url = 'habrahabr.ru';
+      var g_show_xpanel = false;
+      var g_base_fullurl = 'http://habrahabr.ru/';
+      var g_is_guest = false;
+    </script>
+
+    <script type="text/javascript" src="./Разбор ACM ICPC 2013_files/shortcuts.js"></script>
+    <script type="text/javascript" src="./Разбор ACM ICPC 2013_files/to_top.js"></script>
+	<link href="http://habrahabr.ru/styles/1401451875/_parts/to_top.css" rel="stylesheet" media="all">
+
+    
+		
+		
+			<script type="text/javascript" src="./Разбор ACM ICPC 2013_files/saved_resource"></script>
+
+		
+		
+	
+
+<div id="AutocompleteContainter_f6db8" style="position: absolute; z-index: 9999; top: -19px; left: 956.5px;"><div class="autocomplete-w1"><div class="autocomplete" id="Autocomplete_f6db8" style="display: none; width: 300px; max-height: 400px;"></div></div></div><div id="AutocompleteContainter_58f0f" style="position: absolute; z-index: 9999; top: 2px; left: 0px;"><div class="autocomplete-w1"><div class="autocomplete" id="Autocomplete_58f0f" style="display: none; width: 300px; max-height: 400px;"></div></div></div><div id="tiptip_holder" style="max-width:auto;"><div id="tiptip_arrow"><div id="tiptip_arrow_inner"></div></div><div id="tiptip_content"></div></div><div class="to_top" style="display: block;"><div class="to_top_panel"><div class="to_top_button" title="Наверх"><span class="arrow">↑</span> <span class="label">наверх</span></div>  </div></div></body></html>

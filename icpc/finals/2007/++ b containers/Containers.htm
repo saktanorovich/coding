@@ -1,0 +1,77 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3752 - Containers</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Containers_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3752 - Containers</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2006"><b>World Finals - Tokyo - 2006/2007</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3752.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3752"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3752"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+A seaport container terminal stores large containers that are
+eventually loaded on seagoing ships for transport abroad. Containers
+coming to the terminal by road and rail are stacked at the terminal as
+they arrive. </p><p>
+Seagoing ships carry large numbers of containers. The time to load a
+ship depends in part on the locations of its containers. The loading
+time increases when the containers are not on the top of the stacks,
+but can be fetched only after removing other containers that are on top
+of them. </p><p>
+The container terminal needs a plan for stacking containers in order to
+decrease loading time. The plan must allow each ship to be loaded by
+accessing only topmost containers on the stacks, and minimizing the
+total number of stacks needed. </p><p>
+For this problem, we know the order in which ships must be loaded and
+the order in which containers arrive. Each ship is represented by a
+capital letter between A and Z (inclusive), and the ships will be
+loaded in alphabetical order. Each container is labeled with a capital
+letter representing the ship onto which it needs to be loaded. There is
+no limit on the number of containers that can be placed in a single
+stack.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>The input file contains multiple test cases. Each test case consists
+of a single line containing from 1 to 1000 capital letters representing
+the order of arrival of a set of containers. For example, the line ABAC
+means consecutive containers arrive to be loaded onto ships A, B, A,
+and C, respectively. When all containers have arrived, the ships are
+loaded in strictly increasing order: first ship A, then ship B, and so
+on. </p><p>
+A line containing the word <tt>end</tt> follows the last test case.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each input case, print the case number (beginning with 1) and the
+minimum number of stacks needed to store the containers before loading
+starts. Your output format should be similar to the one shown here.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>A 
+CBACBACBACBACBA 
+CCCCBBBBAAAA 
+ACMICPC 
+end
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>Case 1: 1
+Case 2: 3
+Case 3: 1
+Case 4: 4
+</pre> 
+
+<p>
+</p><hr><address>Tokyo 2006-2007</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

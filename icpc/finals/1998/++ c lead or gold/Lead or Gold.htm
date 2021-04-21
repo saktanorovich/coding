@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0038)file://C:\Users\Serge\Desktop\5202.htm -->
+<!-- saved from url=(0056)http://livearchive.onlinejudge.org/external/52/5202.html --><!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others --><HTML><HEAD><TITLE>Lead or Gold</TITLE>
+<META name=description content="Lead or Gold">
+<META name=keywords content=htmlatex>
+<META name=resource-type content=document>
+<META name=distribution content=global>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 9.00.8112.16443">
+<META content=text/css http-equiv=Content-Style-Type><LINK rel=STYLESHEET 
+href="htmlatex.css"></HEAD>
+<BODY lang=EN bgColor=#ffffff>
+<H1><BR clear=all>
+<CENTER>
+<TABLE bgColor=#0060f0>
+  <TBODY>
+  <TR>
+    <TD><B><FONT color=#c0ffff size=5>&nbsp;<A 
+      name=SECTION0001000000000000000000> Lead or 
+  Gold</A>&nbsp;</FONT></B></TD></TR></TBODY></TABLE></CENTER></H1>
+<P>How to make gold from lead has baffled alchemists for centuries. At the last 
+Alchemists Club Meeting (ACM), a sensational breakthrough was announced. By 
+mixing the three chemicals Algolene, Basicine and Cobolase in the correct ratio, 
+one can create a mixture that transforms lead into gold. Since Algolene, 
+Basicine and Cobolase (or A, B, C for short) are generally not sold 
+individually, but rather mixed into solutions, this may not be easy as it seems. 
+
+<P>Consider the following example. Two mixtures of Algolene, Basicine and 
+Cobolase are available, in weights 1:2:3 and 3:7:1, respectively. By mixing 
+these solutions in a ratio of 1:2 we obtain a solution of A, B, C with weights 
+7:16:5. But there is no way to combine these mixtures into a new one with 
+weights 3:4:5. If we additionally had a solution of weights 2:1:2, then a 3:4:5 
+mixture would be possible by combining eight parts of 1:2:3, one part of 3:7:1 
+and five parts of 2:1:2. As you see in both examples, weights for each component 
+must be integers. 
+<P>Determining which mixing weights we can obtain from a given set of solutions 
+is no trivial task. But, as the ACM has shown, it is possibly a very profitable 
+one. You must write a program to find mixing ratios. 
+<P>
+<H2><FONT color=#0070e8><A 
+name=SECTION0001001000000000000000>Input</A>&nbsp;</FONT> </H2>The input file 
+contains several test cases. The first line of each test case contains an 
+integer <SPAN class=MATH><I>n</I></SPAN> (<!-- MATH
+ $0 \le n < 100$
+ --> <SPAN 
+class=MATH>0<IMG border=0 alt="$ \le$" align=middle 
+src="Lead%20or%20Gold_files/802img1.png" width=18 height=30><I>n</I> &lt; 
+100</SPAN>) that represents the number of mixtures in the test case. The next 
+<SPAN class=MATH><I>n</I></SPAN> lines each contain three non-negative integers <!-- MATH
+ $a_i, b_i, c_i$
+ --><SPAN class=MATH><I>a</I><SUB>i</SUB>, 
+<I>b</I><SUB>i</SUB>, <I>c</I><SUB>i</SUB></SPAN>, specifying the weights <!-- MATH
+ $a_i : b_i : c_i$
+ --><SPAN class=MATH><I>a</I><SUB>i</SUB> : 
+<I>b</I><SUB>i</SUB> : <I>c</I><SUB>i</SUB></SPAN> of A, B, C in the <SPAN 
+class=MATH><I>i</I></SPAN>-th mixture. At least one of these integers is not 0 
+for each mixture, and none of them will be greater than 15000. 
+<P>Finally, there is one line containing three non-negative integers <SPAN 
+class=MATH><I>a</I>, <I>b</I>, <I>c</I></SPAN>, which specify the weights <SPAN 
+class=MATH><I>a</I> : <I>b</I> : <I>c</I></SPAN> in the desired solution. At 
+least one of these integers is not 0. 
+<P>The input file is terminated with the integer `<TT>0</TT>' on a line by 
+itself following the last test case. 
+<P>
+<H2><FONT color=#0070e8><A 
+name=SECTION0001002000000000000000>Output</A>&nbsp;</FONT> </H2>For each test 
+case, output the word `<TT>Mixture</TT>', followed by the ordinal number of the 
+test case. On the next line, if it is possible to obtain the desired solution by 
+mixing the input solutions, output the word `<TT>Possible</TT>'. Otherwise, 
+output the word `<TT>Impossible</TT>'. Print a blank line between consecutive 
+test cases. 
+<P>
+<H2><FONT color=#0070e8><A name=SECTION0001003000000000000000>Sample 
+Input</A>&nbsp;</FONT> </H2>
+<P><PRE>2
+1 2 3
+3 7 1
+3 4 5
+3
+1 2 3
+3 7 1
+2 1 2
+3 4 5
+0
+</PRE>
+<P>
+<H2><FONT color=#0070e8><A name=SECTION0001004000000000000000>Sample 
+Output</A>&nbsp;</FONT> </H2><PRE>Mixture 1
+Impossible
+
+Mixture 2
+Possible
+</PRE>
+<P>
+<P><BR>
+<HR>
+
+<ADDRESS>Miguel Revilla 2004-09-17 </ADDRESS></BODY></HTML>

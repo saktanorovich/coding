@@ -1,0 +1,1635 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0068)http://apps.topcoder.com/wiki/display/tc/SRM+562 -->
+<HTML><HEAD><TITLE>SRM 562 - TopCoder Wiki</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META content=no-cache http-equiv=Pragma>
+<META content=-1 http-equiv=Expires>
+<SCRIPT language=javascript>
+        var contextPath = '/wiki';
+        var i18n = [];
+    </SCRIPT>
+<LINK rel=stylesheet type=text/css href="SRM%20562_files/main-action.css">
+<SCRIPT type=text/javascript src="SRM%20562_files/effects.js"></SCRIPT>
+
+<META name=GENERATOR content="MSHTML 9.00.8112.16455"></HEAD>
+<BODY onload=placeFocus()>
+<DIV id=PageContent>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD class=logocell>
+      <DIV class=spacenametitle-printable><A 
+      href="http://apps.topcoder.com/wiki/display/tc"><IMG border=0 
+      align=absMiddle src="SRM%20562_files/logo.png"></A> TopCoder 
+      Competitions</DIV></TD></TR></TBODY></TABLE>
+<TABLE class=pagecontent border=0 cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD class=pagebody vAlign=top>
+      <DIV class=pageheader><SPAN class=pagetitle>SRM 562</SPAN> </DIV><!--
+    Root decorator: all decisions about how a page is to be decorated via the
+                    inline decoration begins here.
+--><!--
+    Switch based upon the context. However, for now, just delegate to a decorator
+    identified directly by the context.
+-->
+      <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD class=pagebody vAlign=top>
+            <TABLE style="CLEAR: both" border=0 cellSpacing=0 cellPadding=0 
+            width="100%">
+              <TBODY>
+              <TR>
+                <TD class=pagecontent vAlign=top width="100%">
+                  <TABLE style="MARGIN-BOTTOM: 5px" cellSpacing=0 
+                    width="100%"><TBODY>
+                    <TR>
+                      <TD vAlign=top align=left><SPAN class=smalltext>Added by 
+                        [[rng_58]] , last edited by vexorian on Dec 06, 2012 
+                        &nbsp;(<A 
+                        href="http://apps.topcoder.com/wiki/pages/diffpages.action?pageId=93652627&amp;originalId=93652642">view 
+                        change</A>) <SPAN id=show 
+                        class="inline-control-link fontSizeTiny"><A 
+                        onclick="showComment(); return false;" 
+                        href="http://apps.topcoder.com/wiki/display/tc/SRM+562?decorator=printable#">show 
+                        comment</A></SPAN> <SPAN style="DISPLAY: none" id=hide 
+                        class="inline-control-link fontSizeTiny"><A 
+                        onclick="hideComment(); return false;" 
+                        href="http://apps.topcoder.com/wiki/display/tc/SRM+562?decorator=printable#">hide 
+                        comment</A></SPAN> 
+                        <DIV 
+                        style="PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; DISPLAY: none; PADDING-TOP: 5px" 
+                        id=versionComment class=noteMacro><B>Comment:</B> 
+                        various fixes.<BR><SPAN class=smalltext><A 
+                        href="http://apps.topcoder.com/wiki/pages/viewpreviousversions.action?pageId=93652627">View 
+                        page history</A></SPAN> </DIV>
+                        <SCRIPT>
+      var show = document.getElementById('show');
+      var hide = document.getElementById('hide');
+      var versionComment = document.getElementById('versionComment');
+
+      function showComment(){
+        show.style.display = 'none';
+        hide.style.display = 'inline';
+        versionComment.style.display = 'block';
+      }
+
+      function hideComment(){
+        show.style.display = 'inline';
+        hide.style.display = 'none';
+        versionComment.style.display = 'none';
+      }
+
+    </SCRIPT>
+
+                        <STYLE type=text/css>DIV.auto_complete {
+	WIDTH: 350px; BACKGROUND: #fff
+}
+DIV.auto_complete UL {
+	BORDER-BOTTOM: #888 1px solid; BORDER-LEFT: #888 1px solid; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BORDER-TOP: #888 1px solid; BORDER-RIGHT: #888 1px solid; PADDING-TOP: 0px
+}
+DIV.auto_complete UL LI {
+	PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px
+}
+DIV.auto_complete UL LI.selected {
+	BACKGROUND-COLOR: #ffb
+}
+DIV.auto_complete UL STRONG.highlight {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #800; PADDING-TOP: 0px
+}
+</STYLE>
+<!-- Delay the loading of the external javascript file needed for labels (as it takes too long to load and visibly holds loading of the page body) --><!-- To do this without javascript errors over undefined functions, we need to declare stubs here (that are overrided later by the proper implementations) -->
+                        <SCRIPT language=JavaScript type=text/javascript>
+    function doAddLabel(hideTextfieldAfterAddParam)
+    {
+        // stub
+    }
+
+    function onAddLabel()
+    {
+        // stub
+    }
+
+    function showLabelsInput()
+    {
+        // stub
+    }
+</SCRIPT>
+<!-- This is a hack to work around an apparent SiteMesh bug - http://jira.opensymphony.com/browse/SIM-198 --><SPAN 
+                        class=error><SPAN id=errorSpan 
+                        class=errorMessage></SPAN></SPAN>
+                        <FORM 
+                        style="PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px" 
+                        onsubmit="doAddLabel(false); return false;" 
+                        name=addLabelForm action="">
+                        <DIV style="FLOAT: left">Labels:&nbsp;</DIV>
+                        <DIV style="WIDTH: 90%; FLOAT: left" id=labelsInfo><SPAN 
+                        id=labelsList>(None) </SPAN><SPAN style="DISPLAY: none" 
+                        id=editLabelsLink 
+                        class="inline-control-link fontSizeTiny"><A 
+                        onclick="onAddLabel(); showLabelsInput(); return false;" 
+                        href="http://apps.topcoder.com/wiki/display/tc/">EDIT</A> 
+                        </SPAN></DIV><BR clear=all><!-- Do not remove this line-break. You will make Safari cry. -->
+                        <DIV style="DISPLAY: none; CLEAR: both" 
+                        id=labelInputSpan>
+                        <DIV 
+                        style="BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 8px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 8px; align: center">
+                        <DIV style="DISPLAY: none" 
+                        id=labelOperationErrorContainer><SPAN class=error><SPAN 
+                        id=labelOperationErrorMessage 
+                        class=errorMessage></SPAN></SPAN></DIV>
+                        <TABLE width="100%">
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <DIV style="PADDING-BOTTOM: 3px; FONT-SIZE: 13px" 
+                              class=formtitle>Add Labels</DIV></TD>
+                            <TD align=right>
+                              <DIV style="DISPLAY: none; HEIGHT: 16px" 
+                              id=waitImageAndStatus><IMG border=0 
+                              alt="Wait Image" align=absMiddle 
+                              src="SRM%20562_files/wait.gif">&nbsp;<SPAN 
+                              style="VERTICAL-ALIGN: middle" 
+                              id=labelOperationStatus 
+                              class=smalltext></SPAN></DIV></TD></TR>
+                          <TR>
+                            <TD width="50%">Enter labels to add to this 
+                              page:<BR><INPUT id=labelName class=monospaceInput 
+                              name=labelsString size=40 autocomplete="off"> <INPUT onclick="doAddLabel(false); return false;" value=Add type=submit><INPUT onclick="doAddLabel(true); return false;" value=Done type=button> 
+
+                              <DIV id=labelsAutocompleteList 
+                              class=auto_complete></DIV>
+                              <DIV class=smalltext><EM>Tip:</EM> Looking for a 
+                              label? Just start typing. </DIV></TD>
+                            <TD vAlign=top width="50%">
+                              <DIV 
+                        id=suggestedLabelsSpan></DIV></TD></TR></TBODY></TABLE></DIV></DIV></FORM></SPAN></TD>
+                      <TD vAlign=top align=right></TD></TR></TBODY></TABLE>
+                  <DIV class=wiki-content><!-- wiki content --><LINK 
+                  rel=stylesheet type=text/css 
+                  href="SRM%20562_files/style.css"><LINK rel=stylesheet 
+                  type=text/css href="SRM%20562_files/coders.css"><LINK 
+                  rel=stylesheet type=text/css 
+                  href="SRM%20562_files/stats.css"><LINK rel=stylesheet 
+                  type=text/css href="SRM%20562_files/tcStyles20080219.css">
+                  <DIV 
+                  style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; PADDING-BOTTOM: 5px; MARGIN: 5px auto; PADDING-LEFT: 5px; WIDTH: auto; PADDING-RIGHT: 5px; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid; PADDING-TOP: 5px" 
+                  id=richtextwarning><B>Please read this before altering an 
+                  editorial in the wiki</B> Please read the guidelines at: <A 
+                  href="http://apps.topcoder.com/wiki/display/tc/Guidelines+for+editorial+writers">http://apps.topcoder.com/wiki/display/tc/Guidelines+for+editorial+writers</A>. 
+                  It is very important to always use Wiki Markup to edit 
+                  editorials. If your default is currently set as Rich Text, 
+                  read the guidelines before making any change. The Rich Text 
+                  editor causes many issues with editorial formatting. </DIV>
+                  <SCRIPT type=text/javascript>
+    document.getElementById("richtextwarning").style.display = "none"
+</SCRIPT>
+
+                  <DIV class=linkBox><A 
+                  href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis">Archive</A><BR><A 
+                  href="http://community.topcoder.com/stat?c=round_overview&amp;er=5&amp;rd=15184">Match 
+                  Overview</A><BR><A 
+                  href="http://apps.topcoder.com/forums/?module=ThreadList&amp;forumID=560477">Discuss 
+                  this match</A> </DIV><SPAN class=bodySubtitle>Single Round 
+                  Match 562</SPAN><BR>Friday, November 30th, 2012 <BR><BR>
+                  <H2>Match summary</H2>
+                  <P>The problem set of SRM 562 was provided by <A 
+                  class=coderTextRed 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22751095">ir5</A> 
+                  and <A class=coderTextYellow 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22874433">kyuridenamida</A>. 
+                  <A class=coderTextYellow 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22874433">kyuridenamida</A>'s 
+                  first TopCoder problem set includes the division 2 easy, 
+                  division 2 medium and division 1 easy. <A class=coderTextRed 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22751095">ir5</A> 
+                  provided us the harder problems of this match. </P>
+                  <P>The overall division 1 problem set was a tough combination. 
+                  Ad hoc, geometry or having to really analyze a problem. The 
+                  speed records go to <A class=coderTextRed 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22221928">UdH-WiNGeR</A> 
+                  (div1 easy) and <A class=coderTextRed 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=19849563">ACRush</A> 
+                  (div1 medium). This time nobody could solve the hard problem 
+                  correctly. In addition, the medium-difficulty problem was 
+                  solved by only 16 coders. <A class=coderTextRed 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=19849563">ACRush</A>'s 
+                  top speed and 3 successful challenges gave him the first 
+                  place. <A class=coderTextRed 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22877779">Komaki</A> 
+                  and <A class=coderTextRed 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=10574855">Petr</A> 
+                  acquired the second and third place, respectively.</P>
+                  <P>Division 2 was a bit kinder. 18 coders solved the hard 
+                  problem and 11 in total solved all three problems. The first 
+                  place was not an easy accomplishment. Newcomer <A 
+                  class=coderTextBlack 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=23110714">mochavic</A> 
+                  starts a promising career winning the division 2 first place 
+                  thanks to the fastest submission in the hard problem.</P>
+                  <P>In an unfortunate turn of events, there were issues during 
+                  the challenge phase which made the match be unrated. Which 
+                  means that the statistics and results of the match will not 
+                  alter the algorithm rating.</P>
+                  <H1>The Problems </H1>
+                  <P></P><FONT size=+2><B><A 
+                  href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=12319&amp;rd=15184" 
+                  name=12319>CucumberMarket</A></B> </FONT><A 
+                  href="http://community.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=12319"><IMG 
+                  border=0 hspace=10 alt="rate it" 
+                  src="SRM%20562_files/rate_it.gif"></A> <A class=statText 
+                  href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=560477"><IMG 
+                  border=0 alt="discuss it" 
+                  src="SRM%20562_files/btn_discuss_it.gif"></A> <BR>Used as: 
+                  Division Two - Level One: 
+                  <BLOCKQUOTE>
+                    <TABLE cellSpacing=2>
+                      <TBODY>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>Value</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>250 </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>Submission Rate</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>695 / 772 
+                          (90.03%) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>Success 
+                          Rate</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>598 / 695 
+                          (86.04%) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>High 
+                          Score</B> </TD>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>xinge008</B> for 249.60 points (1 
+                          mins 8 secs) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>Average 
+                          Score</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>209.48 
+                          (for 598 correct submissions) 
+                  </TD></TR></TBODY></TABLE></BLOCKQUOTE>
+                  <P>This problem may need a bit more work than it is usual for 
+                  the division 2 easy slot. There are solution alternatives that 
+                  rely on brute force (There are at most 9 cucumbers, thus we 
+                  can even try every combination of <B>K</B> cucumbers and 
+                  return "NO" if we find any that cannot be purchased. We will 
+                  try another one that requires a bit more analysis but is both 
+                  easier to implement and faster. than the brute force approach. 
+                  </P>
+                  <H2>Worst case scenario</H2>
+                  <P>The problem asks is if there is at least one combination of 
+                  <B>K</B> cucumbers that costs more in total than our 
+                  <B>budget</B>. We do not need to try all combinations of 
+                  <B>K</B> cucumbers. How about we just find the worst case 
+                  scenario? The combination of cucumbers that needs the largest 
+                  amount of total budget. The argument is simple: If the budget 
+                  is enough to even buy the most expensive combination of 
+                  cucumbers, it will be enough to buy any other combination - 
+                  with a price that is equal or smaller.</P>
+                  <P>In order to find the maximum combination, we can use a 
+                  greedy algorithm: Let us say we have <B>K</B> cucumbers to 
+                  take. We first take the largest cucumber price still 
+                  available. We decide the remaining (<B>K</B>-1) cucumbers 
+                  using the same strategy. This strategy, to pick the <B>K</B> 
+                  largest cucumber prices, will yield the maximum total price. 
+                  The strategy is correct because each choice is 
+independent.</P>
+                  <H2>Solution</H2>
+                  <P>If the maximum cost is larger than <B>budget</B> then there 
+                  exists at least one combination that cannot be purchased. Else 
+                  it is possible to buy any combination.</P>
+                  <DIV 
+                  style="BORDER-RIGHT-WIDTH: 1px; BORDER-TOP-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px" 
+                  class="code panel">
+                  <DIV class="codeContent panelContent"><PRE class=code-java>string check(vector &lt;<SPAN class=code-object>int</SPAN>&gt; price, <SPAN class=code-object>int</SPAN> budget, <SPAN class=code-object>int</SPAN> k)
+{
+    <SPAN class=code-comment>// The trick is to find the K prices that yield
+</SPAN>    <SPAN class=code-comment>// the maximum total budget.
+</SPAN>    <SPAN class=code-comment>// In other words, add the K largest prices.
+</SPAN>    sort(price.rbegin(), price.rend());
+    <SPAN class=code-object>int</SPAN> mx = 0;
+    <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> i=0; i&lt;k; i++) {
+        mx += price[i];
+    }
+    <SPAN class=code-comment>// If the maximum budget is larger than what we
+</SPAN>    <SPAN class=code-comment>// have, then there is at least one (the maximum)
+</SPAN>    <SPAN class=code-comment>// combination of prices that is not possible.
+</SPAN>    <SPAN class=code-keyword>if</SPAN> (mx &gt; budget) {
+        <SPAN class=code-keyword>return</SPAN> <SPAN class=code-quote>"NO"</SPAN>;
+    } <SPAN class=code-keyword>else</SPAN> {
+        <SPAN class=code-keyword>return</SPAN> <SPAN class=code-quote>"YES"</SPAN>;
+    }
+}</PRE></DIV></DIV>
+                  <P><U>Alternative solutions and additional comments.</U></P>
+                  <P><PLACE your here comments></PLACE></P><FONT size=+2><B><A 
+                  href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=12318&amp;rd=15184" 
+                  name=12318>PastingPaintingDivTwo</A></B> </FONT><A 
+                  href="http://community.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=12318"><IMG 
+                  border=0 hspace=10 alt="rate it" 
+                  src="SRM%20562_files/rate_it.gif"></A> <A class=statText 
+                  href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=560477"><IMG 
+                  border=0 alt="discuss it" 
+                  src="SRM%20562_files/btn_discuss_it.gif"></A> <BR>Used as: 
+                  Division Two - Level Two: 
+                  <BLOCKQUOTE>
+                    <TABLE cellSpacing=2>
+                      <TBODY>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>Value</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>500 </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>Submission Rate</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>236 / 772 
+                          (30.57%) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>Success 
+                          Rate</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>135 / 236 
+                          (57.20%) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>High 
+                          Score</B> </TD>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>EvgeniSergeev</B> for 458.34 points 
+                          (8 mins 43 secs) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>Average 
+                          Score</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>260.96 
+                          (for 135 correct submissions) 
+                  </TD></TR></TBODY></TABLE></BLOCKQUOTE>
+                  <H2>Memory</H2>
+                  <P>The simplest idea would be to simulate all of the pastes. 
+                  This is not viable for two reasons. The first reason is that 
+                  the memory needed for the canvas of 1000000000 steps may be 
+                  too large. The second reason is that 1000000000 steps are too 
+                  much for the 2 seconds execution time limit. </P>
+                  <P>The memory part can be solved by simply noticing that you 
+                  do not need to remember the entire canvas. There are two 
+                  things that are important for us to remember: The W x H 
+                  rectangle that was just pasted (for the first step, this 
+                  rectangle is empty) and the current number of black squares 
+                  (For the first step, this is 0). As a demonstration: </P><IMG 
+                  src="SRM%20562_files/d25001.png"> 
+                  <P>Given that clipboard image. In each step, the green 
+                  rectangle represents the area that was just pasted and the 
+                  blue rectangle the area on which the clipboard image will be 
+                  pasted over. The total rectangle containing the green and the 
+                  blue rectangles in its bound is really the only part of the 
+                  canvas that we need to remember. Else we only need to remember 
+                  the current count of black squares. Note that while pasting 
+                  the image, we update the number of black squares, if a black 
+                  square is pasted over a previously blank square, the count is 
+                  incremented.</P>
+                  <H2>It becomes the same</H2>
+                  <P>As mentioned, the second issue is that the number of steps 
+                  is very large. We cannot really simulate 1000000000 steps. It 
+                  would be much better if we only simulated 50 or so steps.</P>
+                  <P>Take a look to the above image. In the last two cases, the 
+                  area between the green rectangle is exactly the same. For each 
+                  simulation step, the green rectangle is the input. When the 
+                  input is the same, the result of the simulation steps will be 
+                  the same... Let us continue the simulation:</P><IMG 
+                  src="SRM%20562_files/d25002.png"> 
+                  <P>Once the inputs of two consecutive steps become the same, 
+                  you can expect its output to also be the same. Which will make 
+                  the next input be, once again, the same as before. In each of 
+                  these repetitive steps, the final shape remains the same and 4 
+                  black squares are added to the total.</P>
+                  <P>This information is already enough to allow us to code a 
+                  solution to this problem. Always remember the previous 
+                  contents of the green (input) rectangle. If the new contents 
+                  happen to be the same as before, then you can expect the same 
+                  kind of step to be repeated in all of the remaining steps. 
+                  This means that the number of black squares that were added 
+                  will remain the same for each of the following steps. Ergo you 
+                  can find the final number of black squares by calculating: 
+                  current count + (remaining steps) * (constant increment).</P>
+                  <P>This algorithm will reduce the number of steps that are 
+                  actually simulated. But in order to confirm that the reduction 
+                  is good enough, let us answer the following question: What is 
+                  the maximum number of steps that we will need to do before all 
+                  steps become the same? In the example, it is clear that the 
+                  first two steps were not equal. There are examples that need 
+                  even far more turns before the process becomes repetitive. A 
+                  quick inspection will allow you to find a case that needs 
+                  min(w,h) iterations: Simply paint black the top left and 
+                  bottom right corners of the clipboard. This is the maximum 
+                  possible. The complexity will then be: O( max(h,w) * w*h). In 
+                  order to prove this bound, try contradiction: Assume that at 
+                  some point after more than min(w,h) steps were done there is a 
+                  change between two consecutive green rectangles. The only 
+                  valid change is from transparent to black (because once 
+                  painted, it cannot become transparent again). This implies 
+                  that there is a black square in a position of the clipboard. 
+                  Since this position exists in the clipboard and we assume the 
+                  clipboard was pasted at least min(w,h) times, then a diagonal 
+                  of black points must already exist in the canvas (from 
+                  previous pastes of this specific black point). In the step 
+                  before, this square was white, this implies that all clipboard 
+                  positions that affected this square in previous pastes were 
+                  transparent. This situation added to the fact that there were 
+                  more than min(w,h) steps before, leads to the conclusion that 
+                  the important diagonal in the previous two rectangles was the 
+                  same - including the point we assumed changed in this step for 
+                  the first time. It is a contradiction. </P>
+                  <H2>Solution</H2>
+                  <DIV 
+                  style="BORDER-RIGHT-WIDTH: 1px; BORDER-TOP-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px" 
+                  class="code panel">
+                  <DIV class="codeContent panelContent"><PRE class=code-java><SPAN class=code-object>long</SPAN> <SPAN class=code-object>long</SPAN> countColors(vector &lt;string&gt; clipboard, <SPAN class=code-object>int</SPAN> T)
+{
+    <SPAN class=code-object>int</SPAN> w = clipboard.size(), h = clipboard[0].size();
+    <SPAN class=code-object>long</SPAN> <SPAN class=code-object>long</SPAN> res = 0; <SPAN class=code-comment>//the current number of black squares
+</SPAN>    <SPAN class=code-object>long</SPAN> <SPAN class=code-object>long</SPAN> o = 0; <SPAN class=code-comment>//The previous increment of black squares.
+</SPAN>
+    vector&lt;string&gt; canvas(w, string(h, '.') );        
+    vector&lt;string&gt; previous;
+    <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> iter=0; iter&lt;T; iter++) {
+        <SPAN class=code-keyword>if</SPAN> ( canvas == previous ) {
+            <SPAN class=code-comment>// the input rectangle is the same as the one <SPAN class=code-keyword>for</SPAN>
+</SPAN>            <SPAN class=code-comment>// the previous step. All the next steps will add o
+</SPAN>            <SPAN class=code-comment>// black squares.
+</SPAN>            <SPAN class=code-object>long</SPAN> <SPAN class=code-object>long</SPAN> rem = T - iter; <SPAN class=code-comment>//number of steps left
+</SPAN>            res +=  rem * o;
+            <SPAN class=code-keyword>break</SPAN>;
+        } <SPAN class=code-keyword>else</SPAN> {
+            previous = canvas; <SPAN class=code-comment>//remember the previous input rectangle
+</SPAN>            
+            <SPAN class=code-comment>// Simulate the pasting process:
+</SPAN>            <SPAN class=code-comment>// First make a <SPAN class=code-keyword>new</SPAN> (w+1) x (h+1) canvas
+</SPAN>            <SPAN class=code-comment>// containing the input rectangle at the top:
+</SPAN>            vector&lt;string&gt; nw(w + 1);
+            <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> j=0; j&lt;w; j++) {
+                nw[j] = previous[j];
+                nw[j] += '.';
+            }
+            nw[w] = string(h+1, '.');
+            <SPAN class=code-comment>// paste clipboard at (1,1) in the <SPAN class=code-keyword>new</SPAN> canvas:
+</SPAN>            canvas = vector&lt;string&gt;(w, string(h, '.'));
+            <SPAN class=code-comment>// canvas contains the part of the canvas on which we
+</SPAN>            <SPAN class=code-comment>// paste the clipboard (will be used as input in the next iteration)
+</SPAN>            o = 0;
+            <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> i=0; i&lt;w; i++) {
+                <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> j=0; j&lt;h; j++) {
+                    <SPAN class=code-object>char</SPAN> prev = nw[i+1][j+1];
+                    <SPAN class=code-object>char</SPAN> next = clipboard[i][j];
+                    <SPAN class=code-keyword>if</SPAN> (next == '.') {
+                        <SPAN class=code-comment>//This clipboard square does not change
+</SPAN>                        <SPAN class=code-comment>// the color, use the previous one.
+</SPAN>                        next = prev;
+                    }
+                    <SPAN class=code-keyword>if</SPAN> ( prev == '.' &amp;&amp; next == 'B') {
+                        <SPAN class=code-comment>// A black square was added
+</SPAN>                        o++;
+                    }
+                    canvas[i][j] = next;
+                }
+            }
+            res += o;
+        }
+    }
+    <SPAN class=code-keyword>return</SPAN> res;
+
+}</PRE></DIV></DIV>
+                  <P><U>Alternative solutions and additional comments.</U></P>
+                  <P><PLACE your here comments></PLACE></P><FONT size=+2><B><A 
+                  href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=12315&amp;rd=15184" 
+                  name=12315>RandomOption</A></B> </FONT><A 
+                  href="http://community.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=12315"><IMG 
+                  border=0 hspace=10 alt="rate it" 
+                  src="SRM%20562_files/rate_it.gif"></A> <A class=statText 
+                  href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=560477"><IMG 
+                  border=0 alt="discuss it" 
+                  src="SRM%20562_files/btn_discuss_it.gif"></A> <BR>Used as: 
+                  Division Two - Level Three: 
+                  <BLOCKQUOTE>
+                    <TABLE cellSpacing=2>
+                      <TBODY>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>Value</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>900 </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>Submission Rate</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>29 / 772 
+                          (3.76%) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>Success 
+                          Rate</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>18 / 29 
+                          (62.07%) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>High 
+                          Score</B> </TD>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>mochavic</B> for 742.38 points (13 
+                          mins 42 secs) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>Average 
+                          Score</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>522.94 
+                          (for 18 correct submissions) 
+                  </TD></TR></TBODY></TABLE></BLOCKQUOTE>
+                  <P>A random permutation of lanes will be chosen uniformly at 
+                  random. What is the probability that for each i, badLane1[i] 
+                  will not be adjacent to badLane2[i] in the resulting 
+                  permutation?. </P>
+                  <H2>A recursive idea</H2>
+                  <P>Let us try a recurrence relation. We randomly pick the 
+                  lanes in the permutation in ascending order of positions. 
+                  After we pick a lane is picked, it is necessary to remember 
+                  it. Let us create a function f( remaining, last ) that 
+                  calculates the probability that the randomly permutation of 
+                  the remaining lanes will not contain a banned consecutive 
+                  pair. Where <B>remaining</B> is a set of lanes that were not 
+                  selected yet and <B>last</B> is the lane that was picked for 
+                  the previous position. At first we call f( all_lanes, 
+                  <B>n</B>) the set of remaining lanes is equal to the entire 
+                  set of lanes and no lane was placed yet, so the previous lane 
+                  is inexistent and we can mark it by an invalid value (we 
+                  assume valid values are from 0 to n-1).</P>
+                  <P>The base case: The <B>remaining</B> set is empty. This 
+                  means that all lanes were picked. The only permuation is an 
+                  empty permutation, and it will not contain any banned adjacent 
+                  pairs. The probability is 1.0.</P>
+                  <P>In the other case, there are <B>t</B> elements in total in 
+                  the set. Each element can be picked for the first position of 
+                  the permutation with 1/<B>t</B> probability. We can try to see 
+                  what is the result if each of the elements is picked.</P>
+                  <P>Let us say element x is picked. There are two 
+                  possibilities:</P>
+                  <UL>
+                    <LI>(last, x) is a banned pair of consecutive lanes. In 
+                    which case, the probability that the permutation will not 
+                    contain invalid consecutive pairs is 0.0 (It definitely 
+                    contains one). 
+                    <LI>(last, x) is not banned. The set of <B>remaining</B> 
+                    elements will no longer contain x. And the new <B>last</B> 
+                    lane picked is x. The probability that the permutation of 
+                    the remaining lanes will be valid is: f( <B>remaining</B> - 
+                    {x}, <B>x</B>). The probability that x is picked AND the 
+                    lane is valid is: f( <B>remaining</B> - {x}, <B>x</B>) * (1 
+                    / <B>t</B>). </LI></UL>
+                  <P>The sum of all those probabilities for each value of 
+                  <B>x</B> will be the total probability for f(<B>remaining</B>, 
+                  <B>last</B>).</P>
+                  <H2>Dynamic programming</H2>
+                  <P>Let us see. Our recurrence splits our problem in various 
+                  sub-problems, many of which eventually overlap. The 
+                  <B>remainin</B> set always loses at least one element, so the 
+                  recurrence is acyclic. We can use <A 
+                  href="http://en.wikipedia.org/wiki/Dynamic_programming">dynamic 
+                  programming</A> to solve this problem. We will implement it 
+                  using <A 
+                  href="http://en.wikipedia.org/wiki/Memoization">memoization.</A></P>
+                  <P>The recurrence will run once for every pair (remaining, 
+                  last). Remaining is always a subset of the initial list of 
+                  <B>keyCount</B> lanes. There are O(2 <SUP>keyCount</SUP>) 
+                  total subsets of lanes. There are O(keyCount) lanes that can 
+                  be used for last. The inside of the recurrence needs at most 
+                  O(keyCount) values of x. The total complexity of this approach 
+                  is: O(2<SUP>keyCount</SUP> * keyCount<SUP>2</SUP> ). Note that 
+                  <B>keyCount</B> is at most 14 in this problem.</P>
+                  <H2>Bit operations</H2>
+                  <P>It is very useful to use bit masks to represent the subsets 
+                  and bit operations to manipulate them. <A class=coderTextRed 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=251074">bmerry</A> 
+                  <A 
+                  href="http://community.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=bitManipulation">bit 
+                  manipulation</A> tutorial is a very good starting point if you 
+                  are new to the concept.</P>
+                  <H2>Solution</H2>
+                  <DIV 
+                  style="BORDER-RIGHT-WIDTH: 1px; BORDER-TOP-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px" 
+                  class="code panel">
+                  <DIV class="codeContent panelContent"><PRE class=code-java>struct RandomOption
+{
+    <SPAN class=code-object>int</SPAN> n;
+    
+    bool banned[15][15]; 
+    <SPAN class=code-comment>//banned[x][y] is it invalid to have lane x consecutive to y?
+</SPAN>
+    <SPAN class=code-comment>// Results of the memoization are saved in mem[][].
+</SPAN>    <SPAN class=code-object>double</SPAN> mem[1&lt;&lt;14][15];
+    <SPAN class=code-comment>// When we solve a <SPAN class=code-keyword>case</SPAN> <SPAN class=code-keyword>for</SPAN> the first time, we mark solved[maks][last] = <SPAN class=code-keyword>true</SPAN>
+</SPAN>    bool   solved[1&lt;&lt;14][15];
+    
+    <SPAN class=code-comment>// The memoization.
+</SPAN>    <SPAN class=code-object>double</SPAN> rec(<SPAN class=code-object>int</SPAN> mask, <SPAN class=code-object>int</SPAN> last)
+    {
+        <SPAN class=code-object>double</SPAN> &amp; res = mem[mask][last];
+        <SPAN class=code-keyword>if</SPAN> (! solved[mask][last] ) {
+            solved[mask][last] = <SPAN class=code-keyword>true</SPAN>;
+            res = 0;
+            <SPAN class=code-object>int</SPAN> t = 0;
+            <SPAN class=code-comment>// For each x still in the remaining set:
+</SPAN>            <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> x=0; x&lt;n; x++) {
+                <SPAN class=code-keyword>if</SPAN> ( mask &amp; (1&lt;&lt;x)) {
+                   <SPAN class=code-comment>// Is it banned? If not, then calculate the probability of
+</SPAN>                   <SPAN class=code-comment>// the remaining permutation.
+</SPAN>                    <SPAN class=code-keyword>if</SPAN> (! banned[last][x] ) {
+                        <SPAN class=code-comment>// subtract {x} from the set:
+</SPAN>                        <SPAN class=code-object>int</SPAN> nmask = mask - (1&lt;&lt;x);
+                        
+                        res += rec(nmask, x) ;
+                    }
+                    t++; <SPAN class=code-comment>//count the number of elements in the set
+</SPAN>                }
+            }
+            <SPAN class=code-comment>// If the set was actually empty, <SPAN class=code-keyword>this</SPAN> is the base <SPAN class=code-keyword>case</SPAN>:
+</SPAN>            <SPAN class=code-keyword>if</SPAN> (t==0) { 
+                res = 1.0;
+            } <SPAN class=code-keyword>else</SPAN> { 
+                res = (res / t); <SPAN class=code-comment>//remember that all results were multiplied by (1/t)
+</SPAN>            }
+        }
+        <SPAN class=code-keyword>return</SPAN> res;
+    }
+    <SPAN class=code-object>double</SPAN> getProbability(<SPAN class=code-object>int</SPAN> keyCount, vector &lt;<SPAN class=code-object>int</SPAN>&gt; badLane1, vector &lt;<SPAN class=code-object>int</SPAN>&gt; badLane2)
+    {
+        n = keyCount;
+        memset(banned,0, sizeof(banned));
+        <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> i=0; i&lt;badLane1.size(); i++) {
+            banned[ badLane1[i] ][ badLane2[i] ] = <SPAN class=code-keyword>true</SPAN>;
+            banned[ badLane2[i] ][ badLane1[i] ] = <SPAN class=code-keyword>true</SPAN>;
+        }
+        
+        memset(solved, 0, sizeof(solved));
+        <SPAN class=code-keyword>return</SPAN> rec( (1&lt;&lt;n) - 1 , n );
+    }
+};</PRE></DIV></DIV>
+                  <P><U>Alternative solutions and additional comments.</U></P>
+                  <P><PLACE your here comments></PLACE></P><FONT size=+2><B><A 
+                  href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=12317&amp;rd=15184" 
+                  name=12317>PastingPaintingDivOne</A></B> </FONT><A 
+                  href="http://community.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=12317"><IMG 
+                  border=0 hspace=10 alt="rate it" 
+                  src="SRM%20562_files/rate_it.gif"></A> <A class=statText 
+                  href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=560477"><IMG 
+                  border=0 alt="discuss it" 
+                  src="SRM%20562_files/btn_discuss_it.gif"></A> <BR>Used as: 
+                  Division One - Level One: 
+                  <BLOCKQUOTE>
+                    <TABLE cellSpacing=2>
+                      <TBODY>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>Value</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>250 </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>Submission Rate</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>448 / 571 
+                          (78.46%) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>Success 
+                          Rate</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>409 / 448 
+                          (91.29%) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>High 
+                          Score</B> </TD>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>UdH-WiNGeR</B> for 241.15 points (5 
+                          mins 28 secs) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>Average 
+                          Score</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>151.25 
+                          (for 409 correct submissions) 
+                  </TD></TR></TBODY></TABLE></BLOCKQUOTE>
+                  <H2>From monochrome to color</H2>
+                  <P>The division 2 version of this problem uses only one color. 
+                  This version has 3 colors. In practice, it is not a very big 
+                  change to the problem. The solution idea remains the same, so 
+                  please read that explanation before reading this one. There 
+                  are a bit more implementation details to consider though. </P>
+                  <H2>The input for each step</H2>
+                  <P>This time, the input will be the previously pasted 
+                  rectangle (same as division 2 version), but we need to 
+                  remember the specific counts of red, blue and green squares 
+                  currently in the canvas.</P>
+                  <P>Once again, the process will reach a point in which the 
+                  input rectangle will be the same as in the previous step.</P>
+                  <P>This time, each step can change (increases or decrease) the 
+                  number of red, blue and green squares. For examle, if we paste 
+                  a green square over a red square, the number of red squares 
+                  decreases and the number of green squares increases. It is 
+                  also possible a step does not change the number of squares of 
+                  a certain color. This time, instead of just remembering the 
+                  increment per step, we need to remember the <I>change</I> 
+                  (positive, zero or negative) per step <I>for each 
+                  color</I>.</P>
+                  <P>For every red square that becomes of a different color, the 
+                  red change is decreased. For every square that becomes red, 
+                  the red change is increased. Repeat for all modified 
+                  squares.</P>
+                  <P>When the steps become repetitive, the change in red, blue 
+                  and green squares per step will become constant. 
+                  Interestingly, each of the changes will be non-negative at 
+                  this point.</P>
+                  <P>Besides of these details, the overall solution remains 
+                  basically the same as the division 2 version. And once again 
+                  the maximum number of steps before they become repetitive is 
+                  also min(w,h). </P>
+                  <DIV 
+                  style="BORDER-RIGHT-WIDTH: 1px; BORDER-TOP-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px" 
+                  class="code panel">
+                  <DIV class="codeContent panelContent"><PRE class=code-java>vector&lt;<SPAN class=code-object>long</SPAN> <SPAN class=code-object>long</SPAN>&gt; countColors(vector &lt;string&gt; clipboard, <SPAN class=code-object>int</SPAN> T)
+{
+    <SPAN class=code-object>int</SPAN> w = clipboard.size(), h = clipboard[0].size();
+    vector&lt;<SPAN class=code-object>long</SPAN> <SPAN class=code-object>long</SPAN>&gt; res(3, 0); <SPAN class=code-comment>//the number of squares of each color.
+</SPAN>    <SPAN class=code-object>long</SPAN> <SPAN class=code-object>long</SPAN> oR = 0, oG = 0 , oB = 0; <SPAN class=code-comment>//the change in the number of squares of each color.
+</SPAN>
+    vector&lt;string&gt; canvas(w, string(h, '.') );        
+    vector&lt;string&gt; previous;
+    <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> iter=0; iter&lt;T; iter++) {
+        <SPAN class=code-keyword>if</SPAN> ( canvas == previous ) {
+            <SPAN class=code-comment>// the input rectangle is the same as the one <SPAN class=code-keyword>for</SPAN>
+</SPAN>            <SPAN class=code-comment>// the previous step. All the next steps will add
+</SPAN>            <SPAN class=code-comment>// oR, oG and oB red, green and blue squares, respectively.
+</SPAN>
+            <SPAN class=code-object>long</SPAN> <SPAN class=code-object>long</SPAN> rem = T - iter;
+            res[0] += rem * oR;
+            res[1] += rem * oG;
+            res[2] += rem * oB;
+            <SPAN class=code-keyword>break</SPAN>;
+        } <SPAN class=code-keyword>else</SPAN> {
+            previous = canvas;
+
+            <SPAN class=code-comment>// Simulate the pasting process:
+</SPAN>            <SPAN class=code-comment>// First make a <SPAN class=code-keyword>new</SPAN> (w+1) x (h+1) canvas
+</SPAN>            <SPAN class=code-comment>// containing the input rectangle at the top:
+</SPAN>            vector&lt;string&gt; nw(w + 1);
+            <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> j=0; j&lt;w; j++) {
+                nw[j] = previous[j];
+                nw[j] += '.';
+            }
+            nw[w] = string(h+1, '.');
+
+            <SPAN class=code-comment>// paste clipboard at (1,1) in the <SPAN class=code-keyword>new</SPAN> canvas:
+</SPAN>            canvas = vector&lt;string&gt;(w, string(h, '.'));
+            <SPAN class=code-comment>// canvas contains the part of the canvas on which we
+</SPAN>            <SPAN class=code-comment>// paste the clipboard (will be used as input in the next iteration)
+</SPAN>            oR = oG = oB = 0;
+            <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> i=0; i&lt;w; i++) {
+                <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> j=0; j&lt;h; j++) {
+                    <SPAN class=code-object>char</SPAN> prev = nw[i+1][j+1];
+                    <SPAN class=code-object>char</SPAN> next = clipboard[i][j];
+                    <SPAN class=code-keyword>if</SPAN> (next == '.') {
+                        <SPAN class=code-comment>//This clipboard square does not change
+</SPAN>                        <SPAN class=code-comment>// the color, use the previous one.
+</SPAN>                        next = prev;
+                    }
+                    <SPAN class=code-comment>// e.g: The change in red squares is equal to the number
+</SPAN>                    <SPAN class=code-comment>// of red squares in the <SPAN class=code-keyword>new</SPAN> canvas minus the number
+</SPAN>                    <SPAN class=code-comment>// of red squares in the same area of the previous canvas
+</SPAN>                    oR += (next=='R') - (prev=='R');
+                    oG += (next=='G') - (prev=='G');
+                    oB += (next=='B') - (prev=='B');
+                    canvas[i][j] = next;
+                }
+            }
+            res[0] += oR;
+            res[1] += oG;
+            res[2] += oB;
+        }
+    }
+    <SPAN class=code-keyword>return</SPAN> res;
+}</PRE></DIV></DIV>
+                  <P><U>Alternative solutions and additional comments.</U></P>
+                  <P><PLACE your here comments></PLACE></P><FONT size=+2><B><A 
+                  href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=11565&amp;rd=15184" 
+                  name=11565>CheckerFreeness</A></B> </FONT><A 
+                  href="http://community.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=11565"><IMG 
+                  border=0 hspace=10 alt="rate it" 
+                  src="SRM%20562_files/rate_it.gif"></A> <A class=statText 
+                  href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=560477"><IMG 
+                  border=0 alt="discuss it" 
+                  src="SRM%20562_files/btn_discuss_it.gif"></A> <BR>Used as: 
+                  Division One - Level Two: 
+                  <BLOCKQUOTE>
+                    <TABLE cellSpacing=2>
+                      <TBODY>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>Value</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>500 </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>Submission Rate</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>139 / 571 
+                          (24.34%) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>Success 
+                          Rate</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>16 / 139 
+                          (11.51%) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>High 
+                          Score</B> </TD>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>ACRush</B> for 429.57 points (11 
+                          mins 54 secs) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>Average 
+                          Score</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>267.32 
+                          (for 16 correct submissions) 
+                  </TD></TR></TBODY></TABLE></BLOCKQUOTE>
+                  <P>Let us name W the number of white points and B the number 
+                  of black points. When inspecting the constraints, the first 
+                  conclusion might be to find a way to find a solution that 
+                  needs a complexity better than the simple O(W*W*B*B) approach. 
+                  (e.g: O(W*W*B) or perhaps O(W*W*log(B)). While it is true that 
+                  with a well-thought and proven solution such sort of fast 
+                  solution can be found. It is not really impossible to adapt 
+                  the simpler approach into a solution that, while still 
+                  O(W*W*B*B), can be implemented in a way that will not be far 
+                  slower than O(W*W*B) in practice (For our given constraints). 
+                  </P>
+                  <H2>"Simple" solution</H2>
+                  <P>The simple solution strategy is to simply pick two white 
+                  points and two black points and verify if they make a valid 
+                  quad. We just need some understanding of what convexity 
+                  implies and requires.</P><IMG 
+                  src="SRM%20562_files/d15001.png"> 
+                  <P>The left-most examples are convex and the points of the 
+                  same color are opposed. The third example is a convex quad, 
+                  but not when making the points of the same color opposing 
+                  corners. The fourth example is never convex.</P>
+                  <P>The condition that is necessary and sufficient for the quad 
+                  to be convex and valid is that, the black points must lie at 
+                  different sides of the straight line formed by the white 
+                  points and the white points must lie at different sides of the 
+                  straight line formed by the black points.</P>
+                  <P>Some computational geometry is helpful when verifying if 
+                  two points lie at the same or opposite sides of a line formed 
+                  by other two points. We can for example, use a function that 
+                  tells us if the three points we gave to it are in clockwise or 
+                  anti-clockwise order. This function is really based on the 
+                  method to calculate the area (or the normal) of a triangle 
+                  using its segments and <A 
+                  href="http://en.wikipedia.org/wiki/Cross_product">cross 
+                  product</A>. For example, when using the white points and each 
+                  black point, one of the triangles must be in clock-wise order 
+                  while the other anti-clock-wise.</P>
+                  <H2>Given three points...</H2>
+                  <P>The next step would be to try it by only picking 3 points. 
+                  2 of the points would have the same color. Let us say we 
+                  picked two white points and one black point. What are the 
+                  requirements for the second black point?</P>
+                  <UL>
+                    <LI>The second black point must lie at the opposite side of 
+                    of the line between the two white points. If the first black 
+                    point is in counter-clockwise direction with the other white 
+                    points, the second point must be in clockwise direction and 
+                    vice versa. 
+                    <LI>The white points must lie in opposing sides of the line 
+                    formed by the black points. Let us call b1 and b2 the black 
+                    points and w1 and w2 the white points. If the direction b1 
+                    -&gt; b2 -&gt; w1 is clockwise, the direction b1 -&gt; b2 
+                    -&gt; w2 must be anti-clockwise. The direction of b1 -&gt; 
+                    b2 -&gt; w2 is the same as w2 -&gt; b1 -&gt; b2 and the 
+                    direction of b1 -&gt; b2 -&gt; w1 is the same as (w1 -&gt; 
+                    b1 -&gt; b2). 
+                    <LI>In other words, the second black point must be such that 
+                    the directions (w1 , b1, b2) and (w2, b1, b2) must be 
+                    different. If one is counter-clockwise, the other must be 
+                    clockwise and vice versa. </LI></UL>
+                  <P>Another way to reach a similar conclusion is by making the 
+                  following image:</P><IMG src="SRM%20562_files/d15002.png"> 
+                  <P>All the black points inside the darker area will form a 
+                  valid quad. The points at the opposite side of the white line. 
+                  And at the same side of the line formed by a white point and 
+                  the black point as the other white point.</P>
+                  <P>We did find a necessary and sufficient condition for the 
+                  last black point. The problem is how to rapidly query whether 
+                  or not one of such points exist.</P>
+                  <H2>Consider each side as a set</H2>
+                  <P>Just a single change of framework can help us. For each 
+                  pair of points (the two white points or a white point and the 
+                  black point). They split the total set of black points in two 
+                  parts. Two subsets, two partitions. The clockwise black points 
+                  go to one set, the anti-clockwise to the other. (Note that 
+                  there will not be colinear points, thanks to the constraints). 
+                  After this move, we can consider the previous conditions as an 
+                  intersection of two sets:</P>
+                  <UL>
+                    <LI>The first set is the set of black points that lie at a 
+                    different side to the two white points than the first black 
+                    point. 
+                    <LI>The second set is the set that contains all black points 
+                    b2 for which directions (w1,b1,b2) and (w2,b1,b2) are 
+                    opposite. Let us say we have the following two sets: <PRE>X = { b2: (w1,b1,b2) is clockwise }
+and
+Y = { b2: (w2,b1,b2) is clockwise }
+</PRE>Then we need the <A 
+                    href="http://en.wikipedia.org/wiki/Set_%28mathematics%29#Basic_operations">symmetric 
+                    difference</A> between the two sets. The set of points that 
+                    belong to X and do not belong to Y or belong to Y and do not 
+                    belong to X. </LI></UL>
+                  <P>Any black point belonging to the intersection of those two 
+                  sets is a black point that will form a valid quad with the 
+                  other three points. If any point belongs to this intersection, 
+                  then a valid quad is possible.</P>
+                  <H2>Bit operations</H2>
+                  <P>The final idea is to notice that we can usually represent 
+                  sets as <A 
+                  href="http://community.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=bitManipulation">bit 
+                  masks</A>. Then the empty set is equal to 0. Intersection 
+                  becomes the binary AND operation. And symmetric difference can 
+                  be performed using a XOR operation.</P>
+                  <P>The one problem is that there are at most 222 black points, 
+                  and thus not even a 64 bits integer can represent these 
+                  sets.</P>
+                  <P>But it is not the end of the world. We can in fact 
+                  represent the sets as an array of at most four 64 bits 
+                  integers. Then the binary operations are performed to each of 
+                  the integers. Finally, if one of the four integers is not 
+                  zero, it means that at least one valid black point exists.</P>
+                  <P>It requires us to precalculate the needed sets for each 
+                  pair of points (white-white and white-black).</P>
+                  <P>This approach is still O(W*W*B*B), because the number of 
+                  sets of 64 bits we use depends on B. But in practice, we 
+                  perform 8 bit operations per triple (b1,w1,w2). It will be a 
+                  tight implementation though, but we can avoid repeating some 
+                  operations. e.g: When you have three points a,b,c the 
+                  direction of (b,c,a) is the opposite of the direction of 
+                  (c,b,a). ). C++ coders can use the <A 
+                  href="http://www.sgi.com/tech/stl/bitset.html">std::bitset</A> 
+                  data structure template to quickly implement the bit sets. But 
+                  it is not necessary. The following Java solution needs 1.4 
+                  seconds to execute its worst case. </P>
+                  <DIV 
+                  style="BORDER-RIGHT-WIDTH: 1px; BORDER-TOP-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px" 
+                  class="code panel">
+                  <DIV class="codeContent panelContent"><PRE class=code-java><SPAN class=code-keyword>public</SPAN> class CheckerFreeness {
+
+    <SPAN class=code-keyword>public</SPAN> <SPAN class=code-object>int</SPAN>[] parse(<SPAN class=code-object>String</SPAN>[] vs){
+        <SPAN class=code-object>String</SPAN> s = "";
+        <SPAN class=code-keyword>for</SPAN>(<SPAN class=code-object>String</SPAN> t: vs) s += t;
+        <SPAN class=code-object>String</SPAN> a[] = s.split(<SPAN class=code-quote>" "</SPAN>);
+        <SPAN class=code-object>int</SPAN> N = a.length;
+        <SPAN class=code-object>int</SPAN> ans[] = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>int</SPAN>[N];
+        <SPAN class=code-keyword>for</SPAN>(<SPAN class=code-object>int</SPAN> i=0;i&lt;N;i++) ans[i] = <SPAN class=code-object>Integer</SPAN>.parseInt(a[i]);
+        <SPAN class=code-keyword>return</SPAN> ans;
+    }
+    
+    <SPAN class=code-comment>// returns 1 <SPAN class=code-keyword>if</SPAN> the direction between the three points is clockwise.
+</SPAN>    <SPAN class=code-comment>//         0 <SPAN class=code-keyword>if</SPAN> the points are colinear
+</SPAN>    <SPAN class=code-comment>//        -1 <SPAN class=code-keyword>if</SPAN> the direction is anti-clockwise.
+</SPAN>    <SPAN class=code-keyword>public</SPAN> <SPAN class=code-keyword>static</SPAN> <SPAN class=code-object>int</SPAN> clockwise(<SPAN class=code-object>int</SPAN> x1, <SPAN class=code-object>int</SPAN> y1, <SPAN class=code-object>int</SPAN> x2, <SPAN class=code-object>int</SPAN> y2, <SPAN class=code-object>int</SPAN> x3, <SPAN class=code-object>int</SPAN> y3){
+        x1 -= x3; y1 -= y3; x2 -= x3; y2 -= y3;
+        <SPAN class=code-object>long</SPAN> s = (<SPAN class=code-object>long</SPAN>)x1 * y2 - (<SPAN class=code-object>long</SPAN>)x2 * y1;
+        <SPAN class=code-keyword>if</SPAN>(s &gt; 0) <SPAN class=code-keyword>return</SPAN> 1;
+        <SPAN class=code-keyword>if</SPAN>(s &lt; 0) <SPAN class=code-keyword>return</SPAN> -1;
+        <SPAN class=code-keyword>return</SPAN> 0;
+    }
+
+    <SPAN class=code-keyword>public</SPAN> <SPAN class=code-object>boolean</SPAN> bitMethod(<SPAN class=code-object>int</SPAN>[] wx, <SPAN class=code-object>int</SPAN>[] wy, <SPAN class=code-object>int</SPAN>[] bx, <SPAN class=code-object>int</SPAN>[] by) {
+        <SPAN class=code-object>int</SPAN> W = wx.length, B = bx.length;
+        <SPAN class=code-object>int</SPAN> T = W + B;
+        <SPAN class=code-object>long</SPAN>[][][] mask = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>long</SPAN>[T][T][4];
+        <SPAN class=code-object>int</SPAN>[] x = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>int</SPAN>[T];
+        <SPAN class=code-object>int</SPAN>[] y = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>int</SPAN>[T];
+        <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> i=0; i &lt; W; i++) {
+            x[i] = wx[i]; y[i] = wy[i];
+        }
+        <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> i=0; i &lt; B; i++) {
+            x[i + W] = bx[i]; y[i + W] = by[i];
+        }
+        
+        <SPAN class=code-comment>// We need to precalculate sets. 
+</SPAN>        <SPAN class=code-comment>// We <SPAN class=code-keyword>do</SPAN> not need to calculate sets <SPAN class=code-keyword>for</SPAN> pairs of black points.
+</SPAN>        <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> i=0; i &lt; W; i++) {
+            <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> j=i + 1; j &lt; T; j++) {
+                <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> k=0; k &lt; B; k++) <SPAN class=code-keyword>if</SPAN> (i != k + W &amp;&amp; j != k + W) {
+                    <SPAN class=code-comment>// <SPAN class=code-keyword>if</SPAN> the current direction is clockwise, the opposite is
+</SPAN>                    <SPAN class=code-comment>// anti-clockwise. And vice versa.
+</SPAN>                    <SPAN class=code-comment>// This allows us to iterate only pairs (i &lt; j).
+</SPAN>                    <SPAN class=code-keyword>if</SPAN> (clockwise(x[i],y[i], x[j],y[j], bx[k],by[k])==1) {
+                        mask[i][j][ k/64 ] |= ( 1L &lt;&lt; (k%64) );
+                    } <SPAN class=code-keyword>else</SPAN> {
+                        mask[j][i][ k/64 ] |= ( 1L &lt;&lt; (k%64) );
+                    }
+                }
+            }
+        }
+        <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> i=0; i&lt;W; i++) {
+            <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> j=i+1; j&lt;W; j++) {
+                <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> k=0; k&lt;B; k++) {
+                    <SPAN class=code-object>boolean</SPAN> b = (clockwise(wx[i],wy[i], wx[j],wy[j], bx[k],by[k]) == 1);
+                    <SPAN class=code-keyword>for</SPAN> (<SPAN class=code-object>int</SPAN> p=0; p&lt;4; p++) {
+                        <SPAN class=code-comment>// the following is the set of points that are clockwise to
+</SPAN>                        <SPAN class=code-comment>// one of the black-white segments and anti-clockwise to the other
+</SPAN>                        <SPAN class=code-object>long</SPAN> m = mask[i][k + W][p] ^ mask[j][k + W][p];
+                        <SPAN class=code-comment>// <SPAN class=code-keyword>if</SPAN> the black point is clockwise to the white points, 
+</SPAN>                        <SPAN class=code-comment>// the second black point must be anti-clockwise, and vice versa.
+</SPAN>                        <SPAN class=code-keyword>if</SPAN> (b) {
+                            m &amp;= ~mask[i][j][p];
+                        } <SPAN class=code-keyword>else</SPAN> {
+                            m &amp;= mask[i][j][p];
+                        }
+                        <SPAN class=code-keyword>if</SPAN> (m != 0) {
+                            <SPAN class=code-keyword>return</SPAN> <SPAN class=code-keyword>true</SPAN>;
+                        }
+                    }
+                }
+            }
+        }
+        <SPAN class=code-keyword>return</SPAN> <SPAN class=code-keyword>false</SPAN>;
+    }
+
+    <SPAN class=code-keyword>public</SPAN> <SPAN class=code-object>String</SPAN> isFree(<SPAN class=code-object>String</SPAN>[] whiteX, <SPAN class=code-object>String</SPAN>[] whiteY, <SPAN class=code-object>String</SPAN>[] blackX, <SPAN class=code-object>String</SPAN>[] blackY){
+        <SPAN class=code-object>int</SPAN> wx[] = parse(whiteX), wy[] = parse(whiteY);
+        <SPAN class=code-object>int</SPAN> bx[] = parse(blackX), by[] = parse(blackY);
+        
+        <SPAN class=code-keyword>if</SPAN> ( bitMethod(wx,wy, bx,by) ) {
+            <SPAN class=code-keyword>return</SPAN> <SPAN class=code-quote>"NO"</SPAN>;
+        }
+        
+        <SPAN class=code-keyword>return</SPAN> <SPAN class=code-quote>"YES"</SPAN>;
+    }
+    
+&lt;%:testing-code%&gt;
+}</PRE></DIV></DIV>
+                  <H2>Faster method</H2>
+                  <P>There is a faster method, the proof of which will be an 
+                  exercise. If a valid quad exists then there must exist at 
+                  least one quad that follows one of this two properties:</P>
+                  <UL>
+                    <LI>The white points form a segment that belongs to the <A 
+                    href="http://apps.topcoder.com/wiki/display/tc/en.wikipedia.org/wiki/Convex_Hull">Convex 
+                    hull</A> of the set of white points. 
+                    <LI>The black points form a segment that belongs to the 
+                    Convex hull of the set of black points. </LI></UL>
+                  <P>This allows us to pick only pairs of white (or black) 
+                  points that are segments in the convex hull. There are O(W) 
+                  such pairs. After picking the pair, pick a couple of black 
+                  points in O(B*B) time. For O(W*B*B) time in total. The logic 
+                  has to be repeated again, but picking the black segments of 
+                  the convex hull.</P>
+                  <P>It is not even necessary to implement a convex hull 
+                  algorithm. It is possible to verify if two points are a convex 
+                  hull edge in O(n) by checking that all the other points of the 
+                  same color are in the same side of the line formed by the pair 
+                  of points.</P>
+                  <P><U>Alternative solutions and additional comments.</U></P>
+                  <P><PLACE your here comments></PLACE></P><FONT size=+2><B><A 
+                  href="http://apps.topcoder.com/stat?c=problem_statement&amp;pm=12304&amp;rd=15184" 
+                  name=12304>InducedSubgraphs</A></B> </FONT><A 
+                  href="http://community.topcoder.com/tc?module=ProblemRatingQuestions&amp;pid=12304"><IMG 
+                  border=0 hspace=10 alt="rate it" 
+                  src="SRM%20562_files/rate_it.gif"></A> <A class=statText 
+                  href="http://forums.topcoder.com/?module=ThreadList&amp;forumID=560477"><IMG 
+                  border=0 alt="discuss it" 
+                  src="SRM%20562_files/btn_discuss_it.gif"></A> <BR>Used as: 
+                  Division One - Level Three: 
+                  <BLOCKQUOTE>
+                    <TABLE cellSpacing=2>
+                      <TBODY>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>Value</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>1000 
+</TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>Submission Rate</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>2 / 571 
+                          (0.35%) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>Success 
+                          Rate</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>0 / 2 
+                          (0.00%) </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>High 
+                          Score</B> </TD>
+                        <TD style="BACKGROUND: #eee" 
+                          class=bodyText><B>null</B> for null points (NONE) 
+                      </TD></TR>
+                      <TR>
+                        <TD style="BACKGROUND: #eee" class=bodyText><B>Average 
+                          Score</B> </TD>
+                        <TD style="BACKGROUND: #eee" class=bodyText>No correct 
+                          submissions </TD></TR></TBODY></TABLE></BLOCKQUOTE>
+                  <P>Let us quickly quickly explain the problem statement: We 
+                  are given a tree. Count the number of ways to assign labels 
+                  1,2,...n to each node in the tree such that the sets of 
+                  vertices {1,2,..k,}, {2,3,...,k+1}, ... {n-k+1,...,n} are each 
+                  connected components. This editorial will call these sets 
+                  'target' sets. </P>
+                  <H2>Small k versus large k</H2>
+                  <P>A good starting point is to notice that the problem can 
+                  change dramatically depending on how large the value of k is. 
+                  The main difference between small and large values of <B>k</B> 
+                  is that when <B>k</B> is large enough, there will exist a 
+                  group of labels that are common to <I>every</I> target set. 
+                  For example, with n=10 an <B>k</B> = 7:</P><PRE>1 2 3 <B>4 5 6 7</B>
+  2 3 <B>4 5 6 7</B> 8
+    3 <B>4 5 6 7</B> 8 9
+      <B>4 5 6 7</B> 8 9 10
+</PRE>
+                  <P>The labels {4,5,6,7} exist in each of the target sets. 
+                  Which does not happen with small values of <B>k</B>, for 
+                  example n=6 and k=3:</P><PRE>1 2 3
+  2 3 4
+    3 4 5
+      4 5 6
+</PRE>
+                  <P>There is no vertex that is present in all of the sets. The 
+                  requirement for us to consider a value of k large is that the 
+                  set of the <B>k</B> smallest values intersects with the set of 
+                  the <B>k</B> largest values. In other words: 2*<B>k</B> &gt; 
+                  <B>n</B>. This small difference makes a case much harder than 
+                  the other. Let us begin with the small case, which is the 
+                  simplest.</P>
+                  <H2>2*k &lt;= n</H2>
+                  <P>In order to understand this case, let us think about what 
+                  is needed to transition from the first target set to the next 
+                  one making sure they stay connected. Imagine that we already 
+                  found out the connected component of the first target set, the 
+                  nodes with the <B>k</B> smallest labels. Since we are dealing 
+                  with a tree and its subtrees, these labels will form a tree. 
+                  Like in the following two examples for <B>k</B>=3: </P><IMG 
+                  src="SRM%20562_files/d110001.png"> 
+                  <P>The tree can so far have any shape, but with <B>k</B> 
+                  connected elements. It is interesting what happens when we 
+                  transition to the next target set. From {1,2,...k} to 
+                  {2,...,k+1}. What it means is that the new tree will have {1} 
+                  removed and {k+1} added, <I>but it still must be 
+                  connected</I>. This has a consequence, in two of the examples 
+                  above, there are only two super tree of 4 elements that allows 
+                  the condition. The third example is simply not correct, if we 
+                  add a {4} and remove {1} the tree will not remain connected. 
+                  </P><IMG src="SRM%20562_files/d110002.png"> 
+                  <P>Try making more transitions. Also consider that at the 
+                  opposite part of the tree, the labels with larger values, the 
+                  structure works the same when moving on from the largest 
+                  <B>k</B> labels and removing {n} and adding {n-k}... At the 
+                  end you will find that the tree must follow a specific 
+                  structure. For example, when <B>k</B>=4 and <B>n</B>=10: 
+                  </P><IMG src="SRM%20562_files/d110003.png"> 
+                  <UL>
+                    <LI>In the red square, we have a formed by the <B>k</B> 
+                    smallest labels. They must follow a proper hierarchy 
+                    structure. In every branch, the smallest label must be a 
+                    label and the parent of each label must always be greater, 
+                    up until <B>k</B> (4 in this case) which must be the root of 
+                    the subtree. The reason for the hierarchy is that when 
+                    transitioning from each target set that contains two of the 
+                    smallest labels, the smallest label has to be removed, thus 
+                    this label cannot act as a bridge between any other two 
+                    larger labels. 
+                    <LI>Inside the green square, a chain of all the nodes from 
+                    <B>k</B> to <B>n</B>-<B>k</B>+1. This must be a chain, 
+                    because of how transitions work. When transitioning from 
+                    {3,4,5,6} to {4,5,6,7}, 3 must be connected to 4. When 
+                    transitioning from {4,5,6,7} to {5,6,7,8} then 4 must be 
+                    connected to 5 and so and so... 
+                    <LI>Inside the blue square, also a subtree. This time it is 
+                    the <B>k</B> largest labels. This subtree must also have a 
+                    proper hierarchy, this time each parent must be smaller than 
+                    each of its children. </LI></UL>
+                  <P>The solution for this small case is already accessible. 
+                  Given the tree, we can pick the starting and ending node of 
+                  the chain. We can tell the chain must contain <B>n</B> - 
+                  2*(<B>k</B>-1) elements. Thus the <I>distance</I> between the 
+                  two picked points must be <B>n</B> - 2*(<B>k</B>-1) - 1. These 
+                  end points would get labels <B>k</B> and <B>n</B>-</B>+1, 
+                  respectively. Then we also need to verify that the subtrees 
+                  rooted at each of the end points contain exactly <B>k</B> 
+                  elements. If all checks up, the result is equal to the number 
+                  of ways to assign labels to the first sub-tree multiplied by 
+                  the number of ways to assign labels to the second sub-tree. 
+                  This number of ways can be calculated using a dynamic 
+                  programming approach.</P>
+                  <H3>How to assign labels to a sub-tree following a 
+                  hierarchy</H3>
+                  <P>Let us quickly sum up the dynamic programming approach. We 
+                  are given a subtree rooted at a given vertex. We also need to 
+                  know its parent so that we understand what direction not to go 
+                  when calculating the children (For different end points, the 
+                  parents of the subtree roots change).</P>
+                  <P>The base case is when the subtree contains only the root. 
+                  Then we can only assign one label to the root (Either the 
+                  lowest or the highest, depending on which of the subtrees we 
+                  want to count, but for the sub-problem it does not matter). 
+                  </P>
+                  <P>The remaining case is when the root has children. We can 
+                  assume that we already know the ways to assign labels to each 
+                  children following the hierarchy. For example, when there are 
+                  two children subtrees one with n1 nodes in total and the other 
+                  with n2 nodes in total, we can assume that currently the 
+                  labels that were assigned to each subtree are in the form 
+                  {1,2,...,n1} and {1,2,....,n2}. We want to assign labels 
+                  {1,2,...,n1+n2} to the two subtrees at the same time. This is 
+                  equal to, out of a total n1+n2 labels, picking n1 labels to go 
+                  to the first subtree. After picking which labels go to each 
+                  subtree, we replace the original labels {1,2,...n1} and 
+                  {1,2,...,n2} <I>using the same order</I> to make sure the 
+                  hierarchies are not lost, so there is only one possible order 
+                  for the labels. Then we put a label to the root, it must be 
+                  larger than all the other labels, so there is only one way to 
+                  assign a label to the root. This means that in total there 
+                  will be: That is <A 
+                  href="http://en.wikipedia.org/wiki/Binomial">C</A>(n1+n2,n1) * 
+                  ways(first subtree) * ways(second subtree) ways to assign 
+                  labels to the larger subtree still following the hierarchy. 
+                  This approach can be adapted to when there are more than 2 
+                  children: First combine the first two subtrees into one 
+                  hierarchy, then combine this new hierarchy with the third 
+                  subtree and so and so.</P>
+                  <H2>2*k &gt; n</H2>
+                  <P>The harder case is harder because of the labels that are 
+                  common to each of the target sets. Each of the target sets 
+                  must be a connected component. It is possible to show that 
+                  this common intersection must also be a connected component. 
+                  This intersection will have the labels that are not the 
+                  largest and not the smallest. We will calls this group of 
+                  labels 'middle'.</P>
+                  <P>Once again we have to see what happens when we transition 
+                  from a target subset to the next one. This time considering 
+                  that the middle labels are always connected and remain so. Let 
+                  us go back to the case with <B>n</B>=10, <B>k</B>=7. </P>
+                  <UL>
+                    <LI>The first target set is {1,2,3,4,5,6,7}. {4,5,6,7} must 
+                    form a connected component. Thus we only need to add {1}, 
+                    {2}, {3} to whatever structure the connected component has. 
+                    We can add {1,2,3} as a single subtree. Or in separate 
+                    partitions. We can connect these subtrees to any of 
+                    {4,5,6,7} and the structure {1,2,3,4,5,6,7} will be 
+                    connected. 
+                    <LI>But then we transition from {1,2,3,4,5,6,7} to 
+                    {2,3,4,5,6,7,8} note that we deleted the smallest label, and 
+                    added a new one. We once again have a process in which the 
+                    smallest label is removed when performing transitions. In 
+                    short, and reusing the knowledge from the previous analysis, 
+                    all the subtrees of {1,2,3} that we added to {4,5,6,7} must 
+                    follow a hierarchy. 
+                    <LI>The same will happen for {8,9,10}, all of their subtrees 
+                    must follow the hierarchy. 
+                    <LI>{1,2,3,4,5,6,7} must be connected without the help of 
+                    any of the vertices in {8,9,10}, this means that the 
+                    subtrees of {1,2,3} will not have vertices from {8,9,10}. 
+                    Similarly, the subtrees of {8,9,10} cannot have vertices 
+                    from {1,2,3}. 
+                    <LI>Note that {4,5,6,7} can have any shape as long as it is 
+                    a connected tree. It is not necessarily a chain. And the 
+                    various subtrees do not necessarily have to connect to 4 or 
+                    7. </LI></UL>
+                  <P>The following is a possible labelling for a large graph 
+                  (<B>n</B>=28, <B>k</B>=19):</P><IMG 
+                  src="SRM%20562_files/d110004.png"> 
+                  <P>The white nodes would get middle labels. Let us call the 
+                  remaining labels small or big depending on whether they are 
+                  smaller than the middle labels or larger. The red nodes get 
+                  small labels and the blue nodes get big labels. Thus any label 
+                  assignment in which the white nodes get middle labels, the red 
+                  ones get small labels (but in a correct hierarchy) and the 
+                  blue ones get large labels (also in a correct hierarchy) will 
+                  work. What is important is that the middle labels can make any 
+                  shape as long as they are connected and once you assign a big 
+                  label to a node, all of its children must have big labels 
+                  too.</P>
+                  <P>One thing is to know how the graph should look after 
+                  assigning the labels, another is to actually count the ways to 
+                  do it.</P>
+                  <H3>How to count them</H3>
+                  <P>It is a complicated process with many decisions. Which 
+                  group of nodes will receive middle labels? Then which of the 
+                  children will be small and which big? Then we also need to 
+                  assign the labels to the big and small subtrees such that they 
+                  keep a certain hierarchy.</P>
+                  <P>The first simplification comes from just taking each middle 
+                  node individually. For each vertex, count the number of valid 
+                  labellings in which that vertex receives a middle label. If we 
+                  sum these results together the total will contain each of the 
+                  valid results repeated by the number of middle labels. We can 
+                  just divide the sum by this number and we get the overall 
+                  result.</P>
+                  <P>When calculating the number of ways to assign the labels 
+                  starting at a middle vertex, we can ignore the actual labels 
+                  we place on middle vertices and then multiply by the factorial 
+                  of the (number of middle labels).</P>
+                  <P>What we have left is the following recursive logic: Let 
+                  f(p,x, a,b) be the number of ways to assign <B>a</B> small 
+                  labels and <B>b</B> big labels to the sub-tree with root x 
+                  (and the parent of the root is p):</P>
+                  <UL>
+                    <LI>In a base case, we have a = (total number of nodes in 
+                    the sub-tree) and b = 0. This means that the node and all 
+                    its children must be given a small label. We also know the 
+                    number of ways to label this following a hierarchy, it is 
+                    just the same sub-problem we solved for the easier case. 
+                    <LI>Likewise, when a = 0 and b = (total number of nodes) 
+                    then we have to make the complete sub-tree have a big label. 
+
+                    <LI>Else there are plenty of options. We can know for sure 
+                    that the root has to belong to the middle. Some of the 
+                    children may also belong to the middle. The rest should be 
+                    big or small. In order to explain the logic, let us say the 
+                    root has two children y and z, and we already know the 
+                    results f(x,y, ?,?) and f(x,z, ?,?) for all pairs of 
+                    combinations of big and small. Then the decision involves 
+                    deciding how many of the big (b) and small (a) labels to 
+                    assign to each subtree and combine their hierarchies 
+                    afterwards (Using the same logic as above, e.g: C(total 
+                    number of big labels, big labels used in the first child).). 
+                    We can extent this logic to work with more than two 
+                    children. </LI></UL>
+                  <H2>Solution</H2>
+                  <P>It has been a long journey, but we have finally reached the 
+                  solution:</P>
+                  <DIV 
+                  style="BORDER-RIGHT-WIDTH: 1px; BORDER-TOP-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px" 
+                  class="code panel">
+                  <DIV class="codeContent panelContent"><PRE class=code-java><SPAN class=code-keyword>public</SPAN> class InducedSubgraphs{
+    
+    <SPAN class=code-object>long</SPAN>    MOD = 1000000009l;
+    <SPAN class=code-object>int</SPAN>     INF = (1&lt;&lt;29);
+    <SPAN class=code-object>int</SPAN>     V;       <SPAN class=code-comment>//number of vertices
+</SPAN>    <SPAN class=code-object>long</SPAN>    C[][];   <SPAN class=code-comment>// C[n][k] = Binomial
+</SPAN>    <SPAN class=code-object>long</SPAN>    fact[];  <SPAN class=code-comment>// fact[n] = n! (factorial)
+</SPAN>
+    <SPAN class=code-object>boolean</SPAN> adj[][];  <SPAN class=code-comment>//adjacency matrix
+</SPAN>    
+    
+    <SPAN class=code-object>int</SPAN>     cnt[][];    <SPAN class=code-comment>//cnt[p][x] total size of the subgraph with x as root
+</SPAN>                        <SPAN class=code-comment>// and p is the parent of node x.
+</SPAN>    <SPAN class=code-object>long</SPAN>    perm[][];   <SPAN class=code-comment>//perm[p][x] is the number of ways to assign labels
+</SPAN>                        <SPAN class=code-comment>//to the children of x when p is its parent.
+</SPAN>                        
+                         
+    <SPAN class=code-object>long</SPAN>    dp[][][][]; <SPAN class=code-comment>//dp[p][x][s][t]:
+</SPAN>                        <SPAN class=code-comment>// The number of ways to assign s small labels
+</SPAN>                        <SPAN class=code-comment>// and t big labels to the subtree rooted at x, when
+</SPAN>                        <SPAN class=code-comment>// p is the parent of x.
+</SPAN>
+    
+    <SPAN class=code-comment>// The number of ways to assign labels to the subgraph that has x as root
+</SPAN>    <SPAN class=code-comment>// (when p is the parent).
+</SPAN>    <SPAN class=code-comment>//
+</SPAN>    <SPAN class=code-keyword>public</SPAN> void dfs_easy(<SPAN class=code-object>int</SPAN> p, <SPAN class=code-object>int</SPAN> x){
+        <SPAN class=code-object>int</SPAN> i;
+        
+        <SPAN class=code-keyword>if</SPAN> (cnt[p][x] != 0) {
+            <SPAN class=code-keyword>return</SPAN>;
+        }
+        
+        perm[p][x] = 1;
+
+        <SPAN class=code-object>int</SPAN> sum = 0; <SPAN class=code-comment>//number of children in the subtree
+</SPAN>        <SPAN class=code-keyword>for</SPAN>(i=0; i&lt;V; i++) <SPAN class=code-keyword>if</SPAN>(adj[x][i] &amp;&amp; p != i) {
+            dfs_easy(x, i);
+            <SPAN class=code-object>long</SPAN> s = C[ sum + cnt[x][i] ][sum];
+            <SPAN class=code-object>long</SPAN> t = perm[x][i];
+            perm[p][x] = perm[p][x] * s % MOD * t % MOD;
+            sum += cnt[x][i];
+        }
+        cnt[p][x] = sum + 1;
+    }
+    
+    <SPAN class=code-keyword>public</SPAN> <SPAN class=code-object>int</SPAN> solve_easy(<SPAN class=code-object>int</SPAN> K) {
+        <SPAN class=code-comment>// For 2K &lt;= V:
+</SPAN>        <SPAN class=code-object>int</SPAN> i,j,k;
+        <SPAN class=code-object>int</SPAN> dist[][] = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>int</SPAN>[V][V];
+        <SPAN class=code-comment>// Floyd-Warshall algorithm to quickly find the distances between
+</SPAN>        <SPAN class=code-comment>// each pair of nodes.
+</SPAN>        <SPAN class=code-keyword>for</SPAN>(i=0; i&lt;V; i++) <SPAN class=code-keyword>for</SPAN>(j=0; j&lt;V; j++) {
+            <SPAN class=code-keyword>if</SPAN> (i!=j) {
+                dist[i][j] = (adj[i][j] ? 1 : INF);
+            }
+        }
+        <SPAN class=code-keyword>for</SPAN>(k=0; k&lt;V; k++) {
+            <SPAN class=code-keyword>for</SPAN>(i=0; i&lt;V; i++) <SPAN class=code-keyword>for</SPAN>(j=0; j&lt;V; j++) {
+                dist[i][j] = <SPAN class=code-object>Math</SPAN>.min(dist[i][j], dist[i][k] + dist[k][j]);
+            }
+        }
+        
+        <SPAN class=code-object>int</SPAN> d = V - 2*K + 1;
+        <SPAN class=code-comment>// In <SPAN class=code-keyword>this</SPAN> <SPAN class=code-keyword>case</SPAN>, there has to be a chain of nodes of size d+1 in the middle section
+</SPAN>        <SPAN class=code-comment>// each end of <SPAN class=code-keyword>this</SPAN> end is connected with the small and big sections.
+</SPAN>        <SPAN class=code-object>int</SPAN> u, v, u2, v2;
+        <SPAN class=code-object>long</SPAN> ans = 0;
+        
+        <SPAN class=code-keyword>for</SPAN>(u=0;u&lt;V;u++) <SPAN class=code-keyword>for</SPAN>(v=0;v&lt;V;v++) <SPAN class=code-keyword>if</SPAN> (u!=v) {
+            <SPAN class=code-keyword>if</SPAN>(dist[u][v] == d) {
+                u2 = v2 = 0;
+                <SPAN class=code-comment>// Seek u2 and v2, the appropriate parents <SPAN class=code-keyword>for</SPAN> the
+</SPAN>                <SPAN class=code-comment>// subtrees at u and v, respectively
+</SPAN>                <SPAN class=code-keyword>while</SPAN> ( ! adj[u][u2] || dist[u2][v] &gt;= dist[u][v] ) {
+                    u2++;
+                }
+                <SPAN class=code-keyword>while</SPAN> ( ! adj[v][v2] || dist[u][v2] &gt;= dist[u][v] ) {
+                    v2++;
+                }
+                <SPAN class=code-comment>// Do the subtrees at u and v have the exact required sizes?
+</SPAN>                <SPAN class=code-keyword>if</SPAN> (cnt[u2][u] == K &amp;&amp; cnt[v2][v] == K) {
+                    ans = (ans + perm[u2][u] * perm[v2][v]) % MOD;
+                }
+            }
+        }
+        
+        <SPAN class=code-keyword>return</SPAN> (<SPAN class=code-object>int</SPAN>)ans;
+    }
+    
+    <SPAN class=code-keyword>public</SPAN> <SPAN class=code-object>long</SPAN>[][] merge( <SPAN class=code-object>long</SPAN>[][] a, <SPAN class=code-object>long</SPAN>[][] b ){
+        <SPAN class=code-object>int</SPAN> i,j,k,l;
+        <SPAN class=code-object>int</SPAN> A = a.length - 1, B = b.length - 1;
+        
+        <SPAN class=code-comment>// a[x][y] : The current number of ways to have 
+</SPAN>        <SPAN class=code-comment>//           x <SPAN class=code-quote>"small"</SPAN> children and y <SPAN class=code-quote>"big"</SPAN> children in total.
+</SPAN>        <SPAN class=code-comment>// b[x][y] : The number of ways to have 
+</SPAN>        <SPAN class=code-comment>//           x <SPAN class=code-quote>"small"</SPAN> children and y <SPAN class=code-quote>"big"</SPAN> children in total.
+</SPAN>        <SPAN class=code-comment>//           in the node that we need to combine with the result in a[][]
+</SPAN>
+        <SPAN class=code-comment>// c[x][y] : The result after combining.
+</SPAN>        <SPAN class=code-object>long</SPAN> c[][] = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>long</SPAN>[A+B+1][A+B+1];
+        
+        <SPAN class=code-keyword>for</SPAN>(i=0;i&lt;=A;i++) <SPAN class=code-keyword>for</SPAN>(j=0;j&lt;=A;j++) <SPAN class=code-keyword>for</SPAN>(k=0;k&lt;=B;k++) <SPAN class=code-keyword>for</SPAN>(l=0;l&lt;=B;l++) {
+            <SPAN class=code-object>long</SPAN> p = a[i][j] * b[k][l];
+            <SPAN class=code-object>long</SPAN> q = C[i+k][k];
+            <SPAN class=code-object>long</SPAN> r = C[j+l][l];
+            <SPAN class=code-object>long</SPAN> tmp = p % MOD * q % MOD * r % MOD;
+            c[i+k][j+l] = (c[i+k][j+l] + tmp) % MOD;
+        }
+        
+        <SPAN class=code-keyword>return</SPAN> c;
+    }
+    
+    <SPAN class=code-keyword>public</SPAN> void dfs(<SPAN class=code-object>int</SPAN> p, <SPAN class=code-object>int</SPAN> x){
+        <SPAN class=code-object>int</SPAN> i;
+        
+        <SPAN class=code-keyword>if</SPAN> (dp[p][x].length == 0) {
+            
+            <SPAN class=code-object>long</SPAN> a[][] = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>long</SPAN>[2][2];
+            a[0][0] = 1;
+            
+            <SPAN class=code-keyword>for</SPAN>(i=0;i&lt;V;i++) <SPAN class=code-keyword>if</SPAN>(adj[x][i] &amp;&amp; p != i) {
+                dfs(x, i);
+                a = merge(a, dp[x][i]);
+            }
+            
+            <SPAN class=code-comment>// If we decide the current node to be small, the whole
+</SPAN>            <SPAN class=code-comment>// subtree must be small:
+</SPAN>            a[cnt[p][x]][0] = perm[p][x]; <SPAN class=code-comment>//There are perm[p][x] ways to label
+</SPAN>            <SPAN class=code-comment>// If we decide the current node to be big, the whole
+</SPAN>            <SPAN class=code-comment>// subtree must be big:
+</SPAN>            a[0][cnt[p][x]] = perm[p][x];
+            
+            dp[p][x] = a;
+        }
+    }
+    
+    <SPAN class=code-keyword>public</SPAN> <SPAN class=code-object>int</SPAN> solve(<SPAN class=code-object>int</SPAN> K){
+        <SPAN class=code-object>int</SPAN> i,j;
+        
+        dp = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>long</SPAN>[V+1][V+1][0][0];
+        <SPAN class=code-keyword>for</SPAN>(i=0;i&lt;V;i++) dfs(V, i);
+        
+        <SPAN class=code-object>long</SPAN> ans = 0;
+        <SPAN class=code-object>int</SPAN> center = 2*K - V;
+        <SPAN class=code-keyword>for</SPAN> (i=0; i&lt;V; i++) {
+            <SPAN class=code-comment>// number of ways in which node i is a center node:
+</SPAN>            ans = (ans + dp[V][i][V-K][V-K]) % MOD;
+        }
+        <SPAN class=code-comment>// - Each result is repeated {center} times.
+</SPAN>        <SPAN class=code-comment>// - we also need to choose labels <SPAN class=code-keyword>for</SPAN> the center nodes.
+</SPAN>        <SPAN class=code-comment>// -&gt; Multiply by center! / center = (center-1)!
+</SPAN>        
+        ans = ans * fact[center - 1] % MOD;
+        <SPAN class=code-keyword>return</SPAN> (<SPAN class=code-object>int</SPAN>)ans;
+    }
+    
+    <SPAN class=code-keyword>public</SPAN> <SPAN class=code-object>int</SPAN> getCount(<SPAN class=code-object>int</SPAN>[] edge1, <SPAN class=code-object>int</SPAN>[] edge2, <SPAN class=code-object>int</SPAN> K){
+        <SPAN class=code-object>int</SPAN> i,j;
+        
+        V = edge1.length + 1;
+        
+        <SPAN class=code-comment>// Calculate the factorial
+</SPAN>        fact = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>long</SPAN>[V + 1];
+        fact[0] = 1;
+        <SPAN class=code-keyword>for</SPAN>( i=1; i&lt;=V; i++) {
+            fact[i] = i * fact[i-1] % MOD;
+        }
+        <SPAN class=code-keyword>if</SPAN> (K == 1) { <SPAN class=code-comment>// a simple corner <SPAN class=code-keyword>case</SPAN>, any permutation of labels will work
+</SPAN>            <SPAN class=code-keyword>return</SPAN> (<SPAN class=code-object>int</SPAN>)fact[V];
+        }
+        adj = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>boolean</SPAN>[V][V];
+        <SPAN class=code-keyword>for</SPAN> (i=0; i&lt;V-1; i++) {
+            adj[edge1[i]][edge2[i]] = adj[edge2[i]][edge1[i]] = <SPAN class=code-keyword>true</SPAN>;
+        }
+        
+        <SPAN class=code-comment>// Pascal's triangle
+</SPAN>        C = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>long</SPAN>[V+1][V+1];
+        <SPAN class=code-keyword>for</SPAN>(i=0;i&lt;=V;i++) {
+            C[i][0] = 1;
+            <SPAN class=code-keyword>for</SPAN>(j=1; j&lt;=i; j++) {
+                C[i][j] = ( C[i-1][j] + C[i-1][j-1] ) % MOD;
+            }
+        }
+        <SPAN class=code-comment>// In both cases, we need to calculate the cnt[][] and perm[][] tables:
+</SPAN>        cnt = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>int</SPAN>[V+1][V+1];
+        perm = <SPAN class=code-keyword>new</SPAN> <SPAN class=code-object>long</SPAN>[V+1][V+1];
+        <SPAN class=code-keyword>for</SPAN>(i=0;i&lt;V;i++) {
+            dfs_easy(V, i);
+        }
+        <SPAN class=code-keyword>if</SPAN> (V &gt;= 2*K) {
+            <SPAN class=code-keyword>return</SPAN> solve_easy(K);
+        } <SPAN class=code-keyword>else</SPAN> {
+            <SPAN class=code-keyword>return</SPAN> solve(K);
+        }
+    }
+
+}</PRE></DIV></DIV>
+                  <P><U>Alternative solutions and additional comments.</U></P>
+                  <P><PLACE your here comments></PLACE></P>
+                  <P><IMG 
+                  style="BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 55px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; heigth: 61px" 
+                  alt=Author src="SRM%20562_files/vexorian.png"></IMG> 
+                  <BR><BR>By <A class=coderTextYellow 
+                  href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22652965">vexorian</A><BR><BR><I>TopCoder 
+                  Member</I> </P></DIV><!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+    rdf:about="http://apps.topcoder.com/wiki/display/tc/SRM+562"
+    dc:identifier="http://apps.topcoder.com/wiki/display/tc/SRM+562"
+    dc:title="SRM 562"
+    trackback:ping="http://apps.topcoder.com/wiki/rpc/trackback/93652627"/>
+</rdf:RDF>
+--><!--
+    Root decorator: all decisions about how a page is to be decorated via the
+                    inline decoration begins here.
+--><!--
+    Switch based upon the context. However, for now, just delegate to a decorator
+    identified directly by the context.
+-->
+                  <DIV style="MARGIN-RIGHT: 10px" class=wiki-content>
+                  <P>
+                  <DIV class=greybox><IMG border=0 align=absMiddle 
+                  src="SRM%20562_files/comment_16.gif" width=16 height=16> <A 
+                  href="http://apps.topcoder.com/wiki/display/tc/SRM+562?showComments=true#comments">1 
+                  Comment </A>| <A 
+                  href="http://apps.topcoder.com/wiki/display/tc/SRM+562?showComments=true&amp;showCommentArea=true#addcomment"><IMG 
+                  border=0 align=absMiddle 
+                  src="SRM%20562_files/add_comment_16.gif" width=16 
+                  height=16></A> <A 
+                  href="http://apps.topcoder.com/wiki/display/tc/SRM+562?showComments=true&amp;showCommentArea=true#addcomment">Add 
+                  Comment</A> 
+      </DIV></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+<DIV class=bottomshadow></DIV>
+<DIV id=poweredby class=smalltext>Powered by <A class=smalltext 
+href="http://www.atlassian.com/software/confluence">Atlassian Confluence</A> 
+2.7, the <A class=smalltext 
+href="http://www.atlassian.com/software/confluence">Enterprise Wiki</A>. <A 
+class=smalltext 
+href="http://jira.atlassian.com/secure/BrowseProject.jspa?id=10470">Bug/feature 
+request</A> - <A class=smalltext 
+href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch">Atlassian 
+news</A> - <A href="http://apps.topcoder.com/wiki/administrators.action">Contact 
+administrators</A> <BR></DIV><!-- delay the loading of large javascript files to the end so that they don't interfere with the loading of page content --><SPAN 
+style="DISPLAY: none">
+<SCRIPT language=JavaScript type=text/javascript>var domainName = 'http://apps.topcoder.com/wiki'; var entityId = '93652627'; var spaceKey = 'tc'</SCRIPT>
+
+<SCRIPT language=JavaScript type=text/javascript 
+src="SRM%20562_files/labels-javascript.js"></SCRIPT>
+
+<SCRIPT>new Ajax.Autocompleter('labelName', 'labelsAutocompleteList', '93652627', { tokens: new Array(',', ' '), dwrFunction: GenerateAutocompleteLabelsListForEntity.autocompleteLabels});</SCRIPT>
+</SPAN>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD class=footer width="100%"><A class=footerLinks 
+      href="http://www.topcoder.com/">Home</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A 
+      class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index">About 
+      TopCoder</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+      Room</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus">Contact 
+      Us</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy">Privacy</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+      <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms">Terms</A> 
+      <BR><A class=footerLinks href="http://www.topcoder.com/tc">Developer 
+      Center</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/corp/?module=Static&amp;d1=corp&amp;d2=index">Corporate 
+      Services</A> </TD></TR>
+  <TR>
+    <TD class=copyright width="100%">Copyright TopCoder, Inc. 2001-
+      <SCRIPT 
+      type=text/javascript>d=new Date();document.write(d.getFullYear());</SCRIPT>
+    </TD></TR></TBODY></TABLE></BODY></HTML>

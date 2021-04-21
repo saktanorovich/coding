@@ -1,0 +1,123 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3002 - Air Traffic Control</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Air%20Traffic%20Control_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3002 - Air Traffic Control</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2003"><b>World Finals - Prague - 2003/2004</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3002.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3002"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3002"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+In order to avoid midair collisions, most commercial flights are monitored by ground-based air traffic control
+centers that track their position using radar. For this problem, you will be given information on a set of airplanes
+and a set of control centers, and you must compute how monitoring of the airplanes is distributed among the
+control centers. The position of each airplane is represented by a unique <span class="MATH">(<i>x</i>, <i>y</i>)</span> coordinate pair. For the purpose
+of this problem, the height (altitude) of the airplanes can be ignored.
+
+</p><p>
+The number of airplanes that can be monitored by a given control center varies from time to time due to changes
+in staff and equipment. At any given time, each control center monitors as many planes as it can, choosing the
+airplanes to be monitored according to the following priorities:
+</p><dl compact="compact">
+<dt>(1)</dt>
+<dd>it will prefer to monitor planes that are closer
+to the control center rather than ones that are farther away;
+</dd>
+<dt>(2)</dt>
+<dd>if two airplanes are equally distant from the
+center and the center can monitor only one of them, it will choose the one that is farther to the north (positive
+<span class="MATH"><i>y</i></span>-axis);
+</dd>
+<dt>(3)</dt>
+<dd>if two airplanes are equally distant and have the same  y-coordinate, the center will give preference to
+the airplane that is farther to the east (positive <span class="MATH"><i>x</i></span>-axis).
+</dd>
+</dl>
+
+<p>
+At any given moment, each control center has a circular ``span of control" whose radius is the distance to the
+farthest airplane being monitored by the control center. All airplanes inside the span of control are monitored by
+the control center. Airplanes on the boundary of the span of control may or may not be monitored by the control
+center, depending on its capacity and on the priorities listed above.
+
+</p><p>
+You will not be given the positions of the control centers. Instead, for each control center, you will be given the
+number of airplanes that it is currently monitoring, and two points that are on the boundary of its current span of
+control. With this information, you can compute the position of the control center and decide which airplanes it
+is monitoring. If the data is consistent with more than one possible span of control, you should choose the span
+that includes the airplane that is farthest to the north, breaking ties by choosing the airplane that is farthest to the
+north then to the east.
+
+</p><p>
+The figure below, which shows four airplanes and two control centers, illustrates the problem. Each control
+center is represented by a circular span of control and by two points on the boundary of this span, labeled A and
+B. P1, P2, P3, and P4 label the four airplanes. In this example, airplanes P1 and P4 are each being monitored by
+a single control center, airplane P3 is being monitored by two control centers, and airplane P2 is not being
+monitored by either control center.
+
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3002.eps}$
+ -->
+<img src="Air%20Traffic%20Control_files/p3002.gif" alt="\epsfbox{p3002.eps}" align="bottom" border="0" height="265" width="363">
+</div>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+The input consists of several trial data sets. The first line of input in each trial data set contains two integers <span class="MATH"><i>NP</i></span>
+(<!-- MATH
+ $0 < NP < 100$
+ -->
+<span class="MATH">0 &lt; <i>NP</i> &lt; 100</span>) and <span class="MATH"><i>NC</i></span> (<!-- MATH
+ $0 < NC < 10$
+ -->
+<span class="MATH">0 &lt; <i>NC</i> &lt; 10</span>), which represent the number of airplanes and the number of control
+centers, respectively. Each of the next <span class="MATH"><i>NP</i></span> lines contains two floating-point numbers that represent the <span class="MATH">(<i>x</i>, <i>y</i>)</span>
+coordinates of one airplane. Each of the next <span class="MATH"><i>NC</i></span> lines describes one control center. Each contains an integer
+between 0 and <span class="MATH"><i>NP</i></span> (inclusive) indicating the number of airplanes monitored by the control center, followed by
+two pairs of floating point numbers that represent the <span class="MATH">(<i>x</i>, <i>y</i>)</span> coordinates of two points on the boundary of its span
+of control (neither of which is the position of an airplane). If two distances differ by less than 0.00001, you
+should treat them as the same distance.
+
+<p>
+The last data set is followed by a line containing two zeros.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+For each trial, compute the number of airplanes that are monitored by zero control centers, the number of
+airplanes that are monitored by one control center, and so on up to the number of airplanes that are monitored by
+<span class="MATH"><i>NC</i></span> control centers. Print the trial number followed by a sequence of <span class="MATH"><i>NC</i> + 1</span> integers, where the <span class="MATH"><i>i</i></span>-th integer in the
+sequence represents the number of airplanes that are monitored by <span class="MATH"><i>i</i> - 1</span> control centers. If data for one of the
+control centers is inconsistent, print `<tt>Impossible</tt>' instead of the sequence of integers for that trial. Use the
+format shown in the example output, and print a blank line after each trial.
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>4  2
+3.0  0.0
+0.0  0.0
+1.6  2.8
+2.0  1.0
+2  1.0  2.0  2.0  0.0
+2  2.0  2.0  4.0  2.0
+2  1
+0.0  0.5
+0.0  -0.5
+0   -1.0  0.0  1.0  0.0
+0  0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>Trial 1:  1  2  1
+
+Trial 2:  Impossible
+</pre>
+
+<p>
+</p><hr><address>Prague 2003-2004</address><p></p></body></html>

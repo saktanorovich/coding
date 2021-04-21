@@ -1,0 +1,138 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3277 - Workshops</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Workshops_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3277 - Workshops</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2004"><b>World Finals - Shanghai - 2004/2005</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3277.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3277"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3277"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+The first Californian Conference on Holism took place back in 1979 in San Francisco. The term ``Californian" was a 
+slight exaggeration, as all 23 participants actually lived in San Francisco. Several years later, in 1987, the conference
+was truly Californian, with 337 participants from all over the state. Since then, the number of participants has been
+growing like the size of memory chips. In 1993 the conference was renamed the American Conference on Holism
+(2549 participants), and a second renaming (World Conference on Holism) followed in 1997, when the number of 
+participants from all over the world had grown to 9973. The conference obtained its present name (Galactic 
+Conference on Holism) in 2003 after some discussion as to whether or not the word Galactic was intended to 
+exclude extragalactic life forms. Still the next year, all registered participants were terrestrial-though a few 
+participants positively reported to have sensed extraterrestrial presence. 
+
+</p><p>
+
+</p><p>
+<br>
+The number of workshops grew with the number of participants. For the upcoming conference, the organization has
+to face some down to earth but very nasty scheduling problems. For the 2005 conference the board has decided to 
+have no more than 1000 workshops concurrently. Nevertheless they had to rent every hall or classroom they could 
+lay their hands on. Some of these rooms are available for a restricted time only. 
+
+</p><p>
+
+</p><p>
+<br>
+In the morning of the first day the opening meeting takes place in a football stadium, and in the afternoon the
+participants attend workshops. Before lunch each participant has to indicate which workshop he or she wants to join 
+that afternoon. The organizing staff then has a list of all workshops, including the duration and the number of 
+participants for each workshop. They also have a list of all available rooms, with the capacity of each room, and the 
+time this specific room must be cleared. With this information the staff must schedule each workshop in a room of 
+sufficient capacity and sufficient availability in time. As this problem is not necessarily solvable, some overflow 
+capacity is supplied by tents in the football stadium. These tents have plenty of capacity, but they are unpleasantly 
+warm and noisy. So the organizing staff wants the schedule to minimize the number of tent workshops-that is, 
+workshops that are not assigned to a room. If there are multiple solutions that minimize the number of tent 
+workshops, the staff wants to minimize the number of participants attending tent workshops.  
+
+</p><p>
+
+</p><p>
+<br>
+We ask you to supply such a schedule (preferably before lunch is over).
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input file contains several trials. Each trial consists of two parts: the list of workshops, and the list of rented 
+rooms. 
+
+</p><p>
+
+</p><p>
+<br>
+The list of workshops starts with a line containing the number of workshops <span class="MATH"><i>w</i></span> <!-- MATH
+ $(0 < w \le 1000)$
+ -->
+<span class="MATH">(0 &lt; <i>w</i><img src="Workshops_files/3277img1.png" alt="$ \le$" align="middle" border="0" height="30" width="18">1000)</span>. Each of the next <span class="MATH"><i>w</i></span>
+lines contains two numbers, describing a workshop. The first number is the number <span class="MATH"><i>p</i></span> of participants <!-- MATH
+ $(0 < p \le 100)$
+ -->
+<span class="MATH">(0 &lt; <i>p</i><img src="Workshops_files/3277img1.png" alt="$ \le$" align="middle" border="0" height="30" width="18">100)</span>, 
+and the second number is the duration <span class="MATH"><i>d</i></span> of the workshop in minutes <!-- MATH
+ $(0 < d \le 300)$
+ -->
+<span class="MATH">(0 &lt; <i>d</i><img src="Workshops_files/3277img1.png" alt="$ \le$" align="middle" border="0" height="30" width="18">300)</span>. For your convenience, other 
+details of the workshops are omitted. All workshops start at 14:00.
+
+</p><p>
+
+</p><p>
+<br>
+The list of rented rooms starts with a line containing the number of rented rooms <span class="MATH"><i>r</i></span> <!-- MATH
+ $(0 < r \le 1000)$
+ -->
+<span class="MATH">(0 &lt; <i>r</i><img src="Workshops_files/3277img1.png" alt="$ \le$" align="middle" border="0" height="30" width="18">1000)</span>. Each of the
+following <span class="MATH"><i>r</i></span> lines contains the description of a rented room. A line describing a rented room contains the number <span class="MATH"><i>s</i></span> of
+seats in the room <!-- MATH
+ $(0 < s \le 100)$
+ -->
+<span class="MATH">(0 &lt; <i>s</i><img src="Workshops_files/3277img1.png" alt="$ \le$" align="middle" border="0" height="30" width="18">100)</span>, followed by the time when the room must be cleared, in the format <span class="MATH"><i>hh</i> : <i>mm</i></span> where <span class="MATH"><i>hh</i></span>
+represents the hour and <span class="MATH"><i>mm</i></span> represents the minute, using a 24-hour clock. All the rooms are available starting at
+14:00. All times when rooms must be cleared are between 14:01 and 23:59, inclusive. 
+
+</p><p>
+
+</p><p>
+<br>
+The input is terminated by a line consisting of the integer zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each trial in the input file the output must contain a line
+consisting of the trial number, the number of tent workshops, and the
+number of participants attending tent workshops. Follow the format
+shown in the sample output. Print a blank line after each trial.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>1                  
+20 60              
+1                  
+30 16:00 
+2 
+20 60 
+50 30 
+1 
+30 14:50 
+0
+</pre>  
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Trial 1: 0 0
+
+Trial 2: 2 70
+
+</pre>  
+
+<p>
+</p><hr><address>Shanghai 2004-2005</address><p></p></body></html>

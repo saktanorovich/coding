@@ -1,0 +1,2361 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0073)http://www.topcoder.com/stat?c=problem_solution&cr=144400&rd=6535&pm=3530 -->
+<HTML><HEAD><TITLE>TopCoder Statistics - Problem Solution</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<SCRIPT language=JavaScript src="Parking_sol2_files/tcscript.js" 
+type=text/javascript></SCRIPT>
+<LINK href="Parking_sol2_files/style.css" type=text/css rel=stylesheet><LINK 
+href="Parking_sol2_files/coders.css" type=text/css rel=stylesheet><LINK 
+href="Parking_sol2_files/tcStyles.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2800.1081" name=GENERATOR></HEAD>
+<BODY>
+<SCRIPT language=javascript type=text/javascript>
+<!--
+var objPopUp = null;
+function popUpUnder(event,objectID){
+   objPopTrig = document.getElementById(event);
+   alert(objPopTrig);
+   objPopUp = document.getElementById(objectID);
+   xPos = objPopTrig.offsetLeft;
+   if(xPos + objPopUp.offsetWidth > document.body.clientWidth) xPos = xPos - objPopUp.offsetWidth;
+   objPopUp.style.left = xPos + 'px';
+   objPopUp.style.display = 'block';
+}
+function popDescription(objectID){
+   objPopUp = document.getElementById(objectID);
+   objPopUp.style.visibility = 'visible';
+//   objPopUp.style.display = 'block';
+}
+function hideDescription(){
+   objPopUp.style.visibility = 'hidden';
+//   objPopUp.style.display = 'none';
+   objPopUp = null;
+}
+
+// -->
+</SCRIPT>
+
+<STYLE type=text/css>DIV.topBar {
+	FONT-SIZE: 11px; COLOR: #ffffff
+}
+DIV.topBar DIV {
+	FONT-SIZE: 11px; COLOR: #ffffff
+}
+DIV.memberCountBox {
+	FONT-SIZE: 11px; COLOR: #ffffff
+}
+DIV.memberCountBox {
+	Z-INDEX: 1; LEFT: 3px; POSITION: absolute; TOP: 5px
+}
+DIV.topBar {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 3px; BACKGROUND: url(/i/interface/top_bg.gif) #ffffff repeat-x center top; PADDING-BOTTOM: 80px; VERTICAL-ALIGN: top; PADDING-TOP: 5px; WHITE-SPACE: nowrap
+}
+DIV.launchPopUp {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: black 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 11px; Z-INDEX: 3; VISIBILITY: hidden; PADDING-BOTTOM: 3px; BORDER-LEFT: black 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid; POSITION: absolute; BACKGROUND-COLOR: #ffffcc
+}
+#outerLogo {
+	Z-INDEX: 2; WIDTH: 360px; POSITION: relative
+}
+#innerLogo {
+	LEFT: 0px; POSITION: absolute
+}
+</STYLE>
+
+<DIV class=launchPopUp id=launch0 style="LEFT: 73px; TOP: 65px">Competitions 
+Home</DIV>
+<DIV class=launchPopUp id=launch1 style="LEFT: 108px; TOP: 65px">Launch 
+Algorithm Competitions Arena</DIV>
+<DIV class=launchPopUp id=launch2 style="LEFT: 155px; TOP: 65px">Launch High 
+School Competitions Arena</DIV>
+<DIV class=launchPopUp id=launch3 style="LEFT: 181px; TOP: 65px">Component 
+Design Active Contests</DIV>
+<DIV class=launchPopUp id=launch4 style="LEFT: 207px; TOP: 65px">Component 
+Development Active Contests</DIV>
+<DIV class=launchPopUp id=launch5 style="LEFT: 252px; TOP: 65px">Marathon Match 
+Active Contests</DIV><MAP name=competeBar><AREA 
+  onmouseover="popDescription('launch0')" onmouseout=hideDescription() 
+  shape=RECT alt="" coords=0,0,66,30 href="http://www.topcoder.com/tc"><AREA 
+  onmouseover="popDescription('launch1')" onmouseout=hideDescription() 
+  shape=RECT alt="" coords=68,0,106,30 href="javascript:arena();"><AREA 
+  onmouseover="popDescription('launch2')" onmouseout=hideDescription() 
+  shape=RECT alt="" coords=107,0,153,30 href="javascript:arena();"><AREA 
+  onmouseover="popDescription('launch3')" onmouseout=hideDescription() 
+  shape=RECT alt="" coords=154,0,179,30 
+  href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112"><AREA 
+  onmouseover="popDescription('launch4')" onmouseout=hideDescription() 
+  shape=RECT alt="" coords=180,0,205,30 
+  href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113"><AREA 
+  onmouseover="popDescription('launch5')" onmouseout=hideDescription() 
+  shape=RECT alt="" coords=206,0,250,30 
+  href="http://www.topcoder.com/longcontest/?module=ViewActiveContests"></MAP>
+<DIV id=register_now_container 
+style="LEFT: 0px; WIDTH: 100%; POSITION: absolute; TOP: 31px">
+<DIV style="LEFT: 0px; POSITION: absolute; TOP: 0px"><IMG alt="" 
+src="Parking_sol2_files/competeBar.gif" useMap=#competeBar> </DIV>
+<DIV style="FLOAT: right; WIDTH: 790px" align=right><A 
+href="http://www.topcoder.com/reg/?nrg=false"><IMG style="DISPLAY: block" 
+alt="Update My Profile" 
+src="Parking_sol2_files/update_my_profile.gif"></A></DIV></DIV>
+<DIV style="MARGIN: 0px 290px 0px 280px" align=center>
+<DIV id=outerLogo>
+<DIV id=innerLogo><A href="http://www.topcoder.com/"><IMG alt=TopCoder 
+src="Parking_sol2_files/topcoder.gif"></A> </DIV></DIV></DIV>
+<DIV class=memberCountBox>Member Count: 92,336 - September 15, 2006 &nbsp;<A 
+class=gMetal href="javascript:tcTime()">[Get Time]</A> </DIV>
+<DIV class=topBar>
+<DIV style="FLOAT: right; MARGIN-LEFT: 650px">Hello,&nbsp;<A 
+class=coderTextWhite 
+href="http://www.topcoder.com/tc?module=MemberProfile&amp;cr=22057667">j_black</A> 
+&nbsp;&nbsp;|&nbsp;&nbsp;<A class=gMetal 
+href="http://www.topcoder.com/tc?module=Logout">Logout</A> </DIV></DIV>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width=180>
+      <SCRIPT language=JavaScript src="Parking_sol2_files/arena.js" 
+      type=text/javascript></SCRIPT>
+
+      <SCRIPT language=javascript type=text/javascript>
+<!--
+function toggleMenu(menuTitle,menuID){
+   var menu = document.getElementById(menuID);
+   if(menu.style.display == 'block') menu.className = 'CLOSED';
+   else if(menu.className == 'OPEN' && menu.style.display != 'none') menu.className = 'CLOSED';
+   else {
+      menu.className = 'OPEN';
+   }
+   if(menuTitle.blur)menuTitle.blur();
+   if(menuTitle.className == 'exp') menuTitle.className = 'exp_ed';
+   else menuTitle.className = 'exp';
+   return;
+}
+function flipMenu(myMenuName){
+   var menuName = document.getElementById(myMenuName);
+   menuName.className = 'exp_ed';
+}
+
+// -->
+</SCRIPT>
+<!--node is m_algo_stats -->
+      <DIV 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px"><IMG 
+      alt="" src="Parking_sol2_files/leftnav_top.gif"></DIV>
+      <DIV id=navbar>
+      <UL>
+        <LI class=exp_ed><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_competitions')" 
+        href="javascript:void(0)">Competitions</A> 
+        <UL class=OPEN id=m_competitions>
+          <LI><A href="http://www.topcoder.com/tc">Home</A> </LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_competitor_stats')" 
+          href="javascript:void(0)">The Tops</A> 
+          <UL id=m_competitor_stats>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_top_rated_competitors')" 
+            href="javascript:void(0)">Top Ranked</A> 
+            <UL id=m_top_rated_competitors>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=AlgoRank">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_designers">Design</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/stat?c=top_developers">Development</A> 
+              </LI>
+              <LI><A href="http://www.topcoder.com/tc?module=HSRank">High 
+              School</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_recordbook')" 
+            href="javascript:void(0)">Record Book</A> 
+            <UL id=m_recordbook>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=statistics&amp;d2=recordbook_home">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=compstats&amp;d2=comp_recordbook_home">Component</A> 
+              </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_com')" 
+            href="javascript:void(0)">Coder of the Month</A> 
+            <UL id=m_com>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=5">Algorithm</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=6">Design</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=COMHistory&amp;achtid=7">Development</A> 
+              </LI></UL></LI></UL></LI>
+          <LI class=exp_ed><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_algo_competitions')" 
+          href="javascript:void(0)">Algorithm</A> 
+          <UL class=OPEN id=m_algo_competitions>
+            <LI><A href="javascript:arena();">Launch Arena</A> </LI>
+            <LI class=exp_ed><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_algo_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL class=OPEN id=m_algo_stats>
+              <LI><A href="http://www.topcoder.com/tc?module=MatchList">Match 
+              Archive</A> </LI>
+              <LI><A href="http://www.topcoder.com/stat?c=round_overview">Match 
+              Overviews</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=SrmDivisionWins">Match 
+              Winners</A> </LI>
+              <LI><A href="http://www.topcoder.com/stat?c=last_match">Match 
+              Results</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=match_editorials&amp;d2=archive">Match 
+              Editorials</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=ProblemArchive">Problem 
+              Archive</A> </LI></UL></LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_algo_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_algo_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=index">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=faqIndex">FAQs</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=sampleProblems">Sample 
+              Problems</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=ratings">Rating 
+              System</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=algo_get_paid">How 
+              to Get Paid</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=charity">Charity 
+              Donations</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_des_competitions')" 
+          href="javascript:void(0)">Software Design</A> 
+          <UL id=m_des_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=112">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ContestStatus&amp;ph=112">Contest 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;ph=112">Review 
+            Opportunities</A> </LI>
+            <LI><A 
+            href="http://software.topcoder.com/forum/c_active_collab.jsp?ft=2">TCS 
+            Developer Forums</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit 
+            Deliverables &amp; Reviews</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=CompList&amp;ph=112">Statistics</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ReviewBoard&amp;ph=112">Meet 
+            the Review Board</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_des_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_des_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desGettingStarted">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desDocumentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desRatings">Ratings</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=desReliability">Reliability 
+              Ratings</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=des_get_paid">How 
+              to Get Paid</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_dev_competitions')" 
+          href="javascript:void(0)">Software Development</A> 
+          <UL id=m_dev_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewActiveContests&amp;ph=113">Active 
+            Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ContestStatus&amp;ph=113">Contest 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ViewReviewProjects&amp;ph=113">Review 
+            Opportunities</A> </LI>
+            <LI><A 
+            href="http://software.topcoder.com/forum/c_active_collab.jsp?ft=2">TCS 
+            Developer Forums</A> </LI>
+            <LI><A href="http://software.topcoder.com/review">Submit 
+            Deliverables &amp; Reviews</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=CompList&amp;ph=113">Statistics</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=ReviewBoard&amp;ph=113">Meet 
+            the Review Board</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_dev_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_dev_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devGettingStarted">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devDocumentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devRatings">Ratings</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=support&amp;d3=devReliability">Reliability 
+              Ratings</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=dev_get_paid">How 
+              to Get Paid</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_competitions')" 
+          href="javascript:void(0)">Software Assembly</A> 
+          <UL id=m_assembly_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=activeContests">Active 
+            Contests</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_assembly_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_assembly_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=tutorial">Tutorial</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=assembly&amp;d3=documentation">Documentation</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=getPaid&amp;node=assem_get_paid">How 
+              to Get Paid</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_testing_competitions')" 
+          href="javascript:void(0)">Software Testing</A> 
+          <UL id=m_testing_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=activeContests">Active 
+            Contests</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_testing_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_testing_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=instructions">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=tutorial">Tutorial</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=dev&amp;d2=testing&amp;d3=documentation">Documentation</A> 
+              </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_hs_competitions')" 
+          href="javascript:void(0)">High School</A> 
+          <UL id=m_hs_competitions>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=home">Overview</A> 
+            </LI>
+            <LI><A href="javascript:arena();">Launch Arena</A> </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_hs_stats')" 
+            href="javascript:void(0)">Statistics</A> 
+            <UL id=m_hs_stats>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundOverview">Match 
+              Overview</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundStatsTeam">Match 
+              Results (Team)</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=HSRoundStatsInd">Match 
+              Results (Indiv.)</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=match_editorials&amp;d3=archive">Match 
+              Editorials</A> </LI></UL></LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=sponsorship">Sponsorship</A> 
+            </LI>
+            <LI class=exp><A 
+            onclick="Javascript:toggleMenu(this.parentNode,'m_hs_support')" 
+            href="javascript:void(0)">Support / FAQs</A> 
+            <UL id=m_hs_support>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=index">How 
+              to Compete</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=faqIndex">FAQs</A> 
+              </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=sampleProblems">Sample 
+              Problems</A> </LI>
+              <LI><A 
+              href="http://www.topcoder.com/tc?module=Static&amp;d1=hs&amp;d2=support&amp;d3=ratings">Rating 
+              System</A> </LI></UL></LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_long_contests')" 
+          href="javascript:void(0)">Marathon Matches</A> 
+          <UL id=m_long_contests>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewActiveContests">Compete</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewPractice&amp;rt=14">Practice</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=intel_overview">Intel 
+            Multi-Threading Competition Series</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewActiveContests&amp;rt=15">Intel 
+            Active Contests</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewPractice&amp;rt=16">Intel 
+            Practice</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=ViewQueue">Queue 
+            Status</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=match_editorials&amp;d2=archive">Match 
+            Editorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/longcontest/?module=Static&amp;d1=instructions">Support 
+            / FAQs</A> </LI></UL></LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_tournaments')" 
+          href="javascript:void(0)">Tournaments</A> 
+          <UL id=m_tournaments>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tournaments&amp;d2=home">TopCoder</A> 
+            </LI>
+            <LI><A href="http://www.topcoder.com/pl/">Powered by TopCoder</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=CRPFStatic&amp;d1=crpf&amp;d2=crpf_overview">Charity</A> 
+            </LI></UL></LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=digital_run&amp;d2=description">The 
+          Digital Run</A> </LI>
+          <LI class=exp><A 
+          onclick="Javascript:toggleMenu(this.parentNode,'m_edu_content')" 
+          href="javascript:void(0)">Educational Content</A> 
+          <UL id=m_edu_content>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=education&amp;d2=overview">Overview</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=alg_index">Algorithm 
+            Tutorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=tutorials&amp;d2=comp_index">Component 
+            Tutorials</A> </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=features&amp;d2=archive">Features</A> 
+            </LI>
+            <LI><A 
+            href="http://www.topcoder.com/tc?module=Static&amp;d1=help&amp;d2=writeForTC">Write 
+            for TopCoder</A> </LI></UL></LI></UL></LI>
+        <LI><A href="http://forums.topcoder.com/">Forums</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?module=Static&amp;d1=calendar&amp;d2=thisMonth">Event 
+        Calendar</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+        Room</A> </LI>
+        <LI><A 
+        href="http://www.topcoder.com/tc?&amp;module=SurveyList">Surveys</A> 
+        </LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_my_tc')" 
+        href="javascript:void(0)">My TopCoder</A> 
+        <UL id=m_my_tc>
+          <LI><A href="http://www.topcoder.com/reg/?nrg=false">Update My 
+          Profile</A> </LI>
+          <LI><A href="http://www.topcoder.com/tc?module=ViewReferrals">Member 
+          Referrals</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/PactsMemberServlet?t=affidavit&amp;c=affidavit_history">Affidavits 
+          / Payments</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=card&amp;d2=description">Cards 
+          / Badges</A> </LI></UL></LI>
+        <LI class=exp><A 
+        onclick="Javascript:toggleMenu(this.parentNode,'m_about_tc')" 
+        href="javascript:void(0)">About TopCoder</A> 
+        <UL id=m_about_tc>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index">Overview</A> 
+          </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus">Contact 
+          Us</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=whyjoin">Why 
+          Join TopCoder?</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=jobs">Working 
+          at TopCoder</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=management">Management 
+          Team</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms">Terms, 
+          Revisions</A> </LI>
+          <LI><A 
+          href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy">Privacy 
+          Policy</A> </LI></UL></LI></UL>
+      <DIV id=navbarSearch><B>Member Search:</B> 
+      <FORM class=noSpace name=simpleSearchForm 
+      action=http://www.topcoder.com/tc method=get><INPUT class=noSpace 
+      type=hidden value=SimpleSearch name=module> <INPUT class=noSpace 
+      onblur="javascript:&#10;         if (document.simpleSearchForm.ha.value == '')&#10;            document.simpleSearchForm.ha.value = 'Handle:';" 
+      onfocus="javascript:&#10;         if (document.simpleSearchForm.ha.value=='Handle:')&#10;            document.simpleSearchForm.ha.value = '';" 
+      maxLength=15 size=12 value=Handle: name=ha> <A class=gMetal 
+      href="javascript:void%20document.simpleSearchForm.submit();">Go</A><BR><A 
+      class=gMetal 
+      href="http://www.topcoder.com/tc?module=ViewAdvanced">Advanced Search</A> 
+      </FORM></DIV></DIV>
+      <DIV 
+      style="CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 23px; PADDING-TOP: 0px"><IMG 
+      alt="" src="Parking_sol2_files/leftnav_bottom.gif"></DIV></TD>
+    <TD vAlign=top width=10><IMG height=1 src="Parking_sol2_files/clear.gif" 
+      width=10 border=0></TD>
+    <TD class=bodyText vAlign=top width="100%"><IMG height=1 
+      src="Parking_sol2_files/clear.gif" width=240 vspace=5 border=0><BR><!-- BEGIN BODY -->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=bottom align=left width=11 height=26><IMG height=26 
+            src="Parking_sol2_files/steelblue_top_left1.gif" width=11 
+          border=0></TD>
+          <TD vAlign=bottom align=left width=180><IMG height=26 
+            src="Parking_sol2_files/header_statistics.gif" width=180 
+border=0></TD>
+          <TD class=bodyTextBold vAlign=center width="100%">&nbsp;<SPAN 
+            class=bodySubhead>&nbsp;&nbsp;Problem Statistics&nbsp;&nbsp;</SPAN> 
+          </TD>
+          <TD vAlign=top align=right width=10><IMG height=26 alt="" 
+            src="Parking_sol2_files/clear.gif" width=10 
+      border=0></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=10 width="100%" bgColor=#001b35 
+        border=0><TBODY>
+        <TR>
+          <TD vAlign=top width="100%"><IMG height=1 alt="" 
+            src="Parking_sol2_files/clear.gif" width=240 border=0><BR>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD class=statText colSpan=4><IMG height=10 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statText colSpan=4><IMG height=8 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 
+              border=0></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#001b35 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD colSpan=7><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=5 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statTextBig 
+                background=Parking_sol2_files/steel_gray_bg.gif colSpan=7 
+                height=18>&nbsp;Problem Statistics for Single Round Match 
+                  236&nbsp;&gt;&nbsp;Round 1&nbsp;&gt;&nbsp;Room 
+                  1&nbsp;&gt;&nbsp;tomek </TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10 
+                background=Parking_sol2_files/steel_bluebv_bg.gif><IMG 
+                  height=1 alt="" src="Parking_sol2_files/clear.gif" width=10 
+                  border=0></TD>
+                <TD class=statText vAlign=center width="20%" 
+                background=Parking_sol2_files/steel_bluebv_bg.gif 
+                  height=18>Class Name</TD>
+                <TD class=statText vAlign=center align=middle 
+                background=Parking_sol2_files/steel_bluebv_bg.gif>Method 
+                Name</TD>
+                <TD class=statText vAlign=center align=middle 
+                background=Parking_sol2_files/steel_bluebv_bg.gif>Difficulty</TD>
+                <TD class=statText vAlign=center align=middle 
+                background=Parking_sol2_files/steel_bluebv_bg.gif>Status</TD>
+                <TD class=statText vAlign=center align=middle 
+                background=Parking_sol2_files/steel_bluebv_bg.gif>Points</TD>
+                <TD vAlign=top width=10 
+                background=Parking_sol2_files/steel_bluebv_bg.gif><IMG 
+                  height=1 alt="" src="Parking_sol2_files/clear.gif" width=10 
+                  border=0></TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" height=18><A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=problem_solution&amp;rd=6535&amp;rm=&amp;cr=144400&amp;pm=1585">BusinessTasks</A> 
+                </TD>
+                <TD class=statText vAlign=center align=middle>getTask</TD>
+                <TD class=statText vAlign=center align=middle>Level One</TD>
+                <TD class=statText vAlign=center align=middle>Passed System 
+                  Test</TD>
+                <TD class=statText vAlign=center align=right>248,45</TD>
+                <TD vAlign=top width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" height=18><A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=problem_solution&amp;rd=6535&amp;rm=&amp;cr=144400&amp;pm=4459">HammingNumbers</A> 
+                </TD>
+                <TD class=statText vAlign=center align=middle>getNumber</TD>
+                <TD class=statText vAlign=center align=middle>Level Two</TD>
+                <TD class=statText vAlign=center align=middle>Passed System 
+                  Test</TD>
+                <TD class=statText vAlign=center align=right>472,49</TD>
+                <TD vAlign=top width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText vAlign=center width="20%" height=18><SPAN 
+                  class=coderBrackets>[&nbsp;</SPAN><SPAN 
+                  class=statText>Parking</SPAN><SPAN 
+                  class=coderBrackets>&nbsp;]</SPAN> </TD>
+                <TD class=statText vAlign=center align=middle>minTime</TD>
+                <TD class=statText vAlign=center align=middle>Level Three</TD>
+                <TD class=statText vAlign=center align=middle>Passed System 
+                  Test</TD>
+                <TD class=statText vAlign=center align=right>632,89</TD>
+                <TD vAlign=top width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=3 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statText 
+                background=Parking_sol2_files/steel_blue_bg.gif colSpan=7><IMG 
+                  height=5 alt="" src="Parking_sol2_files/clear.gif" width=1 
+                  border=0></TD></TR>
+              <TR>
+                <TD class=statText colSpan=7><IMG height=16 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statText vAlign=center align=middle colSpan=7><A 
+                  class=statText 
+                  href="http://www.topcoder.com/stat?c=problem_statement&amp;pm=3530&amp;rd=6535&amp;rm=&amp;cr=144400">View&nbsp;Parking&nbsp; 
+                  Problem Statement</A> </TD></TR>
+              <TR>
+                <TD class=problemText vAlign=center align=left 
+                  colSpan=7>#include&nbsp;&lt;algorithm&gt;<BR>#include&nbsp;&lt;cstdio&gt;<BR>#include&nbsp;&lt;cstdlib&gt;<BR>#include&nbsp;&lt;cctype&gt;<BR>#include&nbsp;&lt;cmath&gt;<BR>#include&nbsp;&lt;iostream&gt;<BR>#include&nbsp;&lt;sstream&gt;<BR>#include&nbsp;&lt;string&gt;<BR>#include&nbsp;&lt;utility&gt;<BR>#include&nbsp;&lt;vector&gt;<BR>#include&nbsp;&lt;queue&gt;<BR>using&nbsp;namespace&nbsp;std;<BR>#define&nbsp;REP(i,n)&nbsp;for(int&nbsp;_n=n,&nbsp;i=0;i&lt;_n;++i)<BR>#define&nbsp;FOR(i,a,b)&nbsp;for(int&nbsp;i=(a),_b=(b);i&lt;=_b;++i)<BR>const&nbsp;int&nbsp;INF&nbsp;=&nbsp;1000000000;<BR>template&lt;class&nbsp;T&gt;&nbsp;inline&nbsp;int&nbsp;size(const&nbsp;T&amp;c)&nbsp;{&nbsp;return&nbsp;c.size();&nbsp;}<BR>&nbsp;<BR>int&nbsp;sx,sy;<BR>char&nbsp;board[64][64];<BR>&nbsp;<BR>int&nbsp;parknr[64][64];<BR>&nbsp;<BR>int&nbsp;ncars;<BR>int&nbsp;npark;<BR>int&nbsp;dist[128][128];&nbsp;//&nbsp;INF<BR>int&nbsp;edge[128][128];<BR>&nbsp;<BR>int&nbsp;ddd[64][64];<BR>&nbsp;<BR>void&nbsp;bfs(int&nbsp;startx,int&nbsp;starty,int&nbsp;d[])&nbsp;{<BR>&nbsp;&nbsp;FOR(x,0,sx+1)&nbsp;FOR(y,0,sy+1)&nbsp;ddd[x][y]=INF;<BR>&nbsp;&nbsp;ddd[startx][starty]&nbsp;=&nbsp;0;<BR>&nbsp;&nbsp;queue&lt;int&gt;&nbsp;q;&nbsp;q.push(startx*100&nbsp;+&nbsp;starty);<BR>&nbsp;&nbsp;while(!q.empty())&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;qf&nbsp;=&nbsp;q.front();&nbsp;q.pop();<BR>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;x&nbsp;=&nbsp;qf&nbsp;/&nbsp;100;&nbsp;int&nbsp;y&nbsp;=&nbsp;qf%100;<BR>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;d&nbsp;=&nbsp;ddd[x][y];<BR>#define&nbsp;AAA(x2,y2)&nbsp;{&nbsp;\<BR>&nbsp;&nbsp;if(board[x2][y2]!='X'&nbsp;&amp;&amp;&nbsp;ddd[x2][y2]==INF)&nbsp;{\<BR>&nbsp;&nbsp;&nbsp;&nbsp;ddd[x2][y2]&nbsp;=&nbsp;d+1;&nbsp;q.push((x2)*100&nbsp;+&nbsp;(y2));&nbsp;\<BR>&nbsp;&nbsp;}&nbsp;\<BR>}<BR>&nbsp;&nbsp;&nbsp;&nbsp;AAA(x-1,y);&nbsp;AAA(x,y-1);&nbsp;AAA(x+1,y);&nbsp;AAA(x,y+1);<BR>#undef&nbsp;AAA<BR>&nbsp;&nbsp;}<BR>&nbsp;&nbsp;FOR(x,1,sx)&nbsp;FOR(y,1,sy)&nbsp;if(board[x][y]=='P')&nbsp;d[parknr[x][y]]&nbsp;=&nbsp;ddd[x][y];<BR>}<BR>&nbsp;<BR>int&nbsp;match1[128],match2[128];<BR>int&nbsp;vis1[128],&nbsp;vis2[128];<BR>int&nbsp;nmatch&nbsp;=&nbsp;0;<BR>&nbsp;<BR>bool&nbsp;dfs(int&nbsp;c)&nbsp;{<BR>&nbsp;&nbsp;vis1[c]&nbsp;=&nbsp;1;<BR>&nbsp;&nbsp;REP(p,npark)&nbsp;if(edge[c][p]&nbsp;&amp;&amp;&nbsp;!vis2[p])&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;vis2[p]&nbsp;=&nbsp;true;<BR>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;c2&nbsp;=&nbsp;match2[p];<BR>&nbsp;&nbsp;&nbsp;&nbsp;if(c2==-1)&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match2[p]&nbsp;=&nbsp;c;&nbsp;match1[c]=p;&nbsp;return&nbsp;true;<BR>&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!vis1[c2]&nbsp;&amp;&amp;&nbsp;dfs(c2))&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match2[p]&nbsp;=&nbsp;c;&nbsp;match1[c]=p;&nbsp;return&nbsp;true;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;&nbsp;}<BR>&nbsp;&nbsp;return&nbsp;false;<BR>}<BR>&nbsp;<BR>bool&nbsp;pushflow()&nbsp;{<BR>&nbsp;&nbsp;REP(c,ncars)&nbsp;vis1[c]=0;<BR>&nbsp;&nbsp;REP(p,npark)&nbsp;vis2[p]=0;<BR>&nbsp;&nbsp;REP(c,ncars)&nbsp;if(match1[c]==-1&nbsp;&amp;&amp;&nbsp;!vis1[c]&nbsp;&amp;&amp;&nbsp;dfs(c))&nbsp;return&nbsp;true;<BR>&nbsp;&nbsp;return&nbsp;false;<BR>}<BR>&nbsp;<BR>int&nbsp;calc()&nbsp;{<BR>&nbsp;&nbsp;vector&lt;int&gt;&nbsp;edges;<BR>&nbsp;&nbsp;REP(c,ncars)&nbsp;REP(p,npark)&nbsp;if(dist[c][p]&lt;INF)<BR>&nbsp;&nbsp;&nbsp;&nbsp;edges.push_back((dist[c][p]&lt;&lt;16)&nbsp;+&nbsp;(c&lt;&lt;8)&nbsp;+&nbsp;p);<BR>&nbsp;&nbsp;sort(edges.begin(),edges.end());<BR>&nbsp;<BR>&nbsp;&nbsp;REP(c,ncars)&nbsp;REP(p,npark)&nbsp;edge[c][p]=0;<BR>&nbsp;&nbsp;REP(c,ncars)&nbsp;match1[c]=-1;<BR>&nbsp;&nbsp;REP(p,npark)&nbsp;match2[p]=-1;<BR>&nbsp;&nbsp;nmatch&nbsp;=&nbsp;0;<BR>&nbsp;&nbsp;<BR>&nbsp;&nbsp;int&nbsp;poz&nbsp;=&nbsp;0;<BR>&nbsp;&nbsp;while(poz&nbsp;&lt;&nbsp;size(edges))&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;d&nbsp;=&nbsp;edges[poz]&gt;&gt;16;<BR>&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;q&nbsp;=&nbsp;poz;<BR>&nbsp;&nbsp;&nbsp;&nbsp;while(q&lt;size(edges)&nbsp;&amp;&amp;&nbsp;(edges[q]&gt;&gt;16)==d)&nbsp;++q;<BR>&nbsp;&nbsp;&nbsp;&nbsp;for(int&nbsp;i=poz;i&lt;q;++i)&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;a&nbsp;=&nbsp;edges[i]&amp;0xFFFF;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;edge[a&gt;&gt;8][a&amp;255]&nbsp;=&nbsp;1;<BR>&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;&nbsp;&nbsp;&nbsp;while(pushflow())&nbsp;++nmatch;<BR>&nbsp;&nbsp;&nbsp;&nbsp;if(nmatch==ncars)&nbsp;return&nbsp;d;<BR>&nbsp;&nbsp;&nbsp;&nbsp;poz&nbsp;=&nbsp;q;<BR>&nbsp;&nbsp;}<BR>&nbsp;&nbsp;return&nbsp;-1;<BR>}<BR>&nbsp;<BR>struct&nbsp;Parking&nbsp;{<BR>&nbsp;<BR>&nbsp;&nbsp;//&nbsp;MAIN<BR>&nbsp;&nbsp;int&nbsp;minTime(vector&nbsp;&lt;string&gt;&nbsp;parkmap)&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;sy&nbsp;=&nbsp;size(parkmap);&nbsp;sx&nbsp;=&nbsp;size(parkmap[0]);<BR>&nbsp;&nbsp;&nbsp;&nbsp;FOR(x,0,sx+1)&nbsp;FOR(y,0,sy+1)&nbsp;board[x][y]='X';<BR>&nbsp;&nbsp;&nbsp;&nbsp;FOR(x,1,sx)&nbsp;FOR(y,1,sy)&nbsp;board[x][y]&nbsp;=&nbsp;parkmap[y-1][x-1];<BR>&nbsp;&nbsp;&nbsp;&nbsp;npark&nbsp;=&nbsp;0;<BR>&nbsp;&nbsp;&nbsp;&nbsp;FOR(x,1,sx)&nbsp;FOR(y,1,sy)&nbsp;if(board[x][y]=='P')&nbsp;parknr[x][y]=npark++;<BR>&nbsp;&nbsp;&nbsp;&nbsp;ncars&nbsp;=&nbsp;0;<BR>&nbsp;&nbsp;&nbsp;&nbsp;FOR(x,1,sx)&nbsp;FOR(y,1,sy)&nbsp;if(board[x][y]=='C')&nbsp;{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bfs(x,y,dist[ncars]);<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++ncars;<BR>&nbsp;&nbsp;&nbsp;&nbsp;}<BR>&nbsp;&nbsp;&nbsp;&nbsp;if(ncars==0)&nbsp;return&nbsp;0;<BR>&nbsp;&nbsp;&nbsp;&nbsp;if(ncars&gt;npark)&nbsp;return&nbsp;-1;<BR>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;calc();<BR>&nbsp;&nbsp;}<BR>&nbsp;<BR>};<BR>&nbsp;<BR>//&nbsp;Powered&nbsp;by&nbsp;FileEdit<BR>&nbsp;<BR>//&nbsp;Powered&nbsp;by&nbsp;TomekAI<BR>//&nbsp;Powered&nbsp;by&nbsp;TZTester&nbsp;1.01&nbsp;[25-Feb-2003]<BR>&nbsp;<BR>//&nbsp;Powered&nbsp;by&nbsp;CodeProcessor<BR></TD></TR>
+              <TR>
+                <TD colSpan=7><IMG height=5 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 
+              border=0></TD></TR></TBODY></TABLE><!-- Defenses --><!-- End Defense --><!-- System Testing -->
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#001b35 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD colSpan=9><IMG height=5 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD class=statTextBig 
+                background=Parking_sol2_files/steel_gray_bg.gif colSpan=9 
+                height=18>&nbsp;System Test Results</TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD vAlign=center width=10 
+                background=Parking_sol2_files/steel_bluebv_bg.gif><IMG 
+                  height=1 alt="" src="Parking_sol2_files/clear.gif" width=10 
+                  border=0></TD>
+                <TD class=statText vAlign=center width="20%" 
+                background=Parking_sol2_files/steel_bluebv_bg.gif 
+                  height=18>Test Arguments</TD>
+                <TD vAlign=center width=5 
+                background=Parking_sol2_files/steel_bluebv_bg.gif><IMG 
+                  height=1 alt="" src="Parking_sol2_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText vAlign=center align=right 
+                background=Parking_sol2_files/steel_bluebv_bg.gif>Expected 
+                  Results</TD>
+                <TD vAlign=center width=5 
+                background=Parking_sol2_files/steel_bluebv_bg.gif><IMG 
+                  height=1 alt="" src="Parking_sol2_files/clear.gif" width=5 
+                  border=0></TD>
+                <TD class=statText vAlign=center align=right 
+                background=Parking_sol2_files/steel_bluebv_bg.gif>Success</TD>
+                <TD vAlign=center width=5 
+                background=Parking_sol2_files/steel_bluebv_bg.gif><IMG 
+                  height=1 alt="" src="Parking_sol2_files/clear.gif" width=5 
+                  border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"C.....P", "C.....P", 
+                "C.....P"}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>6</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"C.X.....", 
+                  "..X..X..", "..X..X..", ".....X.P"}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>16</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"XXXXXXXXXXX", "X......XPPX", 
+                  "XC...P.XPPX", "X......X..X", "X....C....X", "XXXXXXXXXXX"}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>5</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{".C.", "...", 
+                  "C.C", "X.X", "PPP"}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>4</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"CCCCC", ".....", "PXPXP"}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"..X..", 
+                  "C.X.P", "..X.."}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>-1</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText 
+                  align=left>{"P.................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.", 
+                  "..................................................", 
+                  ".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+                  "..................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.", 
+                  "..................................................", 
+                  ".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+                  "..................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.", 
+                  "..................................................", 
+                  ".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+                  "..................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.", 
+                  "..................................................", 
+                  ".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+                  "..................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.", 
+                  "..................................................", 
+                  ".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+                  "..................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.", 
+                  "..................................................", 
+                  ".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+                  "..................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.", 
+                  "..................................................", 
+                  ".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+                  "..................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.", 
+                  "..................................................", 
+                  ".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+                  "..................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.", 
+                  "..................................................", 
+                  ".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+                  "..................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.", 
+                  "..................................................", 
+                  ".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+                  "..................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.", 
+                  "..................................................", 
+                  ".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+                  "..................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.", 
+                  "..................................................", 
+                  ".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+                  "..................................................", 
+                  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXC"}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>1274</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC"}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>80</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"PPPPPPPPPPCCCCCCCCCC", 
+                  "PPPPPPPPPPCCCCCCCCCC", "PPPPPPPPPPCCCCCCCCCC", 
+                  "PPPPPPPPPPCCCCCCCCCC", "PPPPPPPPPPCCCCCCCCCC", 
+                  "PPPPPPPPPPCCCCCCCCCC", "PPPPPPPPPPCCCCCCCCCC", 
+                  "PPPPPPPPPPCCCCCCCCCC", "PPPPPPPPPPCCCCCCCCCC", 
+                  "PPPPPPPPPPCCCCCCCCCC"}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>10</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"CPCPCPCPCPCPCPCPCPCP", 
+                  "PCPCPCPCPCPCPCPCPCPC", "CPCPCPCPCPCPCPCPCPCP", 
+                  "PCPCPCPCPCPCPCPCPCPC", "CPCPCPCPCPCPCPCPCPCP", 
+                  "PCPCPCPCPCPCPCPCPCPC", "CPCPCPCPCPCPCPCPCPCP", 
+                  "PCPCPCPCPCPCPCPCPCPC", "CPCPCPCPCPCPCPCPCPCP", 
+                  "PCPCPCPCPCPCPCPCPCPC"}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText 
+                  align=left>{".PPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "PPPPPPPPPP........................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC", 
+                  "........................................CCCCCCCCCC"}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"CX...X...X...X...X...X...X...X...X...X...X...XPPP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CXCX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XPXP", 
+                  "CCCX...X...X...X...X...X...X...X...X...X...X...XP"}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>1174</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"CCCCCXCCCPPPX", 
+                  "PPPPPXPPPCCCX", "XXXXXXXXXXXXX", "CCCCCPPPPPCCP"}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"PPPPP.....CCCCC"}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>10</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"C", "P"}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"PC"}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>1</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"CX", "XP"}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"P....CP....C"}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>5</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText 
+                  align=left>{"PXC..............................................P"}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>47</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"..C....X......X.....X..XXX.....C...XX.............", 
+                  "XXC.XX..XX.X.....XX.......P.C........XX..XX.X..P..", 
+                  ".X.X.P...X.P.X.X.X......X........XX......C........", 
+                  "..XX.X.....P.X..X..................C..X...........", 
+                  ".X..P......P......PC...P..X.X......XP...X......P..", 
+                  "P.C.P.......X..XP..XX..X.............X...X.X..X..X", 
+                  "....PP...X...X..C..C....X..PX....X........P.......", 
+                  "........X...X...........X..X..X........X.X.....C.X", 
+                  "...X...........X....X..X...X......P...XX..........", 
+                  "..X......X..........C.P.....X.XX...X.....XP..P....", 
+                  "X..XXC....C....X...XX.P....X.C.......C.CX...X..X.C", 
+                  "..............X..XC.X..X..XX..P.....P..C.....X....", 
+                  "..X.......X.X.....XP.C...............P.........XX.", 
+                  "X....P.X.P...X....X........P.C.X..C.C...X..P..PPX.", 
+                  "...X..X.X............X..X..............XPP....X...", 
+                  "......X....X......C.X.CX..X...CX...XX....C.X....X.", 
+                  "..........X....X.........PX......X..C....X...X..P.", 
+                  "..XX...X.CCP.X...........XC.P.XXP..XP.P....XXX...C", 
+                  "...CXP...X.....XX..CX.X....C...........X..C.....P.", 
+                  ".P.X....P....X......X..XP..........X........P.X...", 
+                  "X.X.X..XX..X..........X..C...C..C.....P.X.........", 
+                  "..P..X...X....P...X.X......P.....P...C...XX....X..", 
+                  ".X.XP...X.....X...XXX..X.X...X.XX.......X...X...X.", 
+                  ".......X.....XXX.CX......P...X.X...X.....PX..C....", 
+                  "...X.................XC....PX..CX.........X...C..X", 
+                  "X......XXX..C......X....X....X.CXC.X.CX.......P...", 
+                  ".X..........X..XCX..X..XXX....P...XX.XCXC.........", 
+                  "X...........P..P..X.X.......XXXX.........P...X....", 
+                  ".......XX...P.X.C.....X...X........X.....XX.......", 
+                  "..X.C..P...C..........XX..X.P............X..X.....", 
+                  ".....X.....C........X..X..........X....X.X.XX....X", 
+                  ".XX...XXCX.....X................X...XP.......XX.P.", 
+                  "...X..................X...X.......XP.....CX.C.C...", 
+                  ".......C.X......P.X....X..X.XX....XC...XX.........", 
+                  "..X.....C...P.X.X..X.....C.....C...X..C....XP.X.X.", 
+                  "....C.....X..........X....X.X..X......XCX........X", 
+                  "..P..C.X..X.X....X.X....X....X.P..........XX.XX...", 
+                  ".X....X.......X..P.....XCX....C.X....X.X...X...X.X", 
+                  ".X....XX...X.XX..X........P...XC.P..X.X.....X...X.", 
+                  "..X.XX.....X................X.....X..........P....", 
+                  "......XX.......X...X..P....P...PX..C.X....X.......", 
+                  ".....X............C.XXXPCP..X...X......X.X......P.", 
+                  "..............X.P..X....P.C.P.....P.........P.....", 
+                  "..XX....XPX...X.........PX..CCX.....XX..X.XXX.....", 
+                  ".....PXC.X.................C....X.X........X.C....", 
+                  "..........X..............P....X..X..X......XXC....", 
+                  "........X...X.X.X....X.X...X.P.X........C.....P.C.", 
+                  ".........XX....P......CCX..C.X....XXX...PX.....C..", 
+                  "XX.X..C.X...PXX...X...X.XC..X....X.C.C.XC.......X.", 
+                  "C.C.X...PC....X..X..P......................X..X..."}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>12</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText 
+                  align=left>{"XX.XX.X.X.XX.XX.XXXXC...X.XX.XXXX...XX.XX.XXP...XX", 
+                  ".XXXX..X....XP.X.CX.PXX.C....XXXX.XXX.X.XX.XX.XXXC", 
+                  "PXX..XC.X.XC.X.XX..XX.XX..XX..XCX.......XC...X.X..", 
+                  "XPXXX.......X..P.X.XX.P.X.X.X.CX.X....XX.....X.X..", 
+                  "X..X..X..XX..X.XC.CX.X.XXXX..X.CX.XXX.XX.X.PXX.PP.", 
+                  ".P.C.X..X.P..XX....PX....PXC..XXX......X..X.XX.X..", 
+                  "....XXXXXCC..XX..X..X.P.X..XX....X...X.X...XXXX.X.", 
+                  "XXXX.PP.XPX.XCX..XX.X.P.X.XXX.....XXX.X..P.XXXX.XX", 
+                  "X..X.X.XXXX...PXX.PX.PX..XXX.C.XXX.X..XXXXXX.C..XX", 
+                  ".CX.X.P.XXXX....X..XP.XX.CXC.X...X.X..X..XX.X....X", 
+                  "C.PX.X...XX.XCX..X..X.X.XXXX...X..X.XXX.X.XX..XX.X", 
+                  ".X..X....X...X.XX....XX.P.X.XPX..X.X......XX.....X", 
+                  "...XXX...X.PXXXXX..XX.PPP.X.XX.X.X...XXX.XXX.X..X.", 
+                  "C.X..XX....XP.P.XC..X.X....P..X..X...XXXXXX.X.XXXX", 
+                  "...PX..XXXXX..X..X.X..X.XP.XXX..CXP.XX.X....X.X...", 
+                  "CX.XX.XP.CX..XXXP.X.XX.XXXPX.X.X..XCX..XX...XX..XX", 
+                  "XXXX.X...X...X.....XX.X.XX...X.X.C.X..XX..X.XPCXX.", 
+                  "P..XXXX..XX.C..X.X...XX.X.X.P.P.XC.XXX.XC..PX..X.X", 
+                  "XXX..X.XXX....XX...CXX....X...X.XXX...XPX...X.C.X.", 
+                  ".X.XX.X..X.....X..X..XX.X.....X.XX.X.X..X.XXX..X..", 
+                  "XXX.....X...X..XXPXX..XX.....PXXXXX.........XX.CX.", 
+                  ".......X......X.CX...XX.XX..XXXX..X..CXXXX.P..X..C", 
+                  "XX..XX.XX..X..XX.XX..X..XX...PP..X.X.X..XXP..XXCX.", 
+                  ".XX.XXX..X.XXX..XXX..X.X..X.XX.X..X...XXX.PXXX.X.X", 
+                  ".XXXC..X......XX.X...XXXX.P.XX...XX..XXX.XX..X.X.X", 
+                  "..X...C..XXX.....XX....XX....XXXXX.X..PXC.X.X.XX..", 
+                  "....X..XX.PCX...PXXC.X..X..X.X.X..X.X.XX..X.X.XX..", 
+                  ".CXX...XX...X..XP.X..XX..XX...XXC...XX.X.X.X...X..", 
+                  "C..XX....X..X..PX.XXX.X..C.XXC.X.XX.XXX..X..XPX.XX", 
+                  "XXX...X...X.XXC.X.....X....XX.X..X..XPX.XXX.....X.", 
+                  "XX..XXX.X..X.CX..X..XXPXXX......XX.XPP...XX..C...X", 
+                  "..XX.X..X.XXXX.X.....XX.XXX....XXXXXXCX.X.X....X..", 
+                  "XXX.X.XXXXP.C..PXX..XXXXXPXXXXCXXXCX.X..XXX..P..P.", 
+                  "X.XXXC..P.XX..XX..XXXX..XXX..C..X..P.XX..XX....PXX", 
+                  "XP.X.X..XXCX..X.X.X.......XXXX.X...X.X.XXXXX...X.X", 
+                  "...XX...PX....XX..X.X..XX....CXXX..XXX.X....XXX.X.", 
+                  ".X....X...X.X.XC.X..XC....XPXX.P.X.XX.XX......XXX.", 
+                  "XPX..X..XX..C..XXXX...CXP.X..XX.XXX..C..X.X.X.....", 
+                  "X..XXXXX..X.X..XXCX.XX.XXX.XX..XP.X....XCXX.X.P.X.", 
+                  "..X...XXXC.X.....PX.X.XXP..XX.X.XP..X.XXX..XXXXX..", 
+                  "X.C.X.CX....C.X..PX...X..XX.PXP..XXC..X......P.XXP", 
+                  ".X.XX.XX.X.XPXX......XX.X.C....CXX..X..X...X..XXX.", 
+                  "XXXXX.XX.X.X...PXXX.....X...XX.X...C...P..XXX.X..X", 
+                  ".XXX.X.......X..XXX..X.XXXXX.X..XXX.X.CCXXX......X", 
+                  ".P....X.X..X.XXX.X.X...X.CXX.....X...XPX....X.X..X", 
+                  ".XXC.X.XXXP.XC.P.X.X....X...CXX.X..XX.........X...", 
+                  "XXXX.X..X.XXCCX....X.X..XXXX..XX..XXC...XXC..XX...", 
+                  ".XXX.X.X..XX....XXX.X.X....X...X.XXX..X.XXXXXX..X.", 
+                  "XXX.PXX..C...X...XX.X...XX.XX..X.X.PX.........C...", 
+                  "..X...X..X...X..X....XCX.XP..X.X......X.XC.....X.X"}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"P.....P...X.XX.X.X..X...XXXX.....X..P......X.P....", 
+                  "...XX..P..X...X.X..X..X..X..XX.X.XX....XXX....X...", 
+                  "X.X..XX..XX..XP.......X....X.X.....PX...........XX", 
+                  "..XXX..X...X.......X....X..X.X..X.XX.X.XX..P.XX...", 
+                  ".XX.X.PXP......XX.XXXX......XX.....XXXXXX..X..X...", 
+                  ".XX.......X...X..XXXX.X.XX..........X...XX......X.", 
+                  ".PX......XXX.XX.XPX..X....XX.X.X...XXP..XX...XX...", 
+                  "..X..........X..X...X.X.X.X....X.XP....X..PX......", 
+                  ".X...X.X.........X..........X.XXXXXX.X....X...XXXX", 
+                  ".X.P..........XX......X.P..P.X.....X..XPX.P..P..XX", 
+                  "....X......X.XX.XXX.X..PX.XX......X......C.X....XX", 
+                  ".......X...XX.XPX.X.XX.XC.XX..X...X..X....PXXX....", 
+                  ".XX..X..X.....X....X...........X.X..XX...X...X....", 
+                  "X......C...X.X..X....XX.X..........P......X...XP..", 
+                  ".X.XXXP.XX.X.X..XX.PPX....X.....X..XX......XXCXXX.", 
+                  "X.XX..........XXXX.......X....X.....P.X.X...X.XP.P", 
+                  ".XX.X.....X.PXX.XC.X.XXP.....PX.P.........X..X...X", 
+                  "X........PXX......X......XXPX..P...X..X....X..XP..", 
+                  "...X.PX....XX...XX....X.X.P......XX.X.X...X...X...", 
+                  "....X.XX......PX.X.PX..X..XXX.C..X.XPX.X.X....P.XX", 
+                  ".XXP.XXX.XX.XX...XX.XX.X..XX...X.X.....PX...X..X..", 
+                  ".X.....X.XXP...X.....X...XXXXX.X.X........X..X.X.X", 
+                  "X..X...X..XX..P.X.XXX..XXXPX.X...XX...X.X.......X.", 
+                  ".XXXXXXXX..X....X.X.X.X..........XP.....X.......X.", 
+                  ".....X.XXXXX..........XP...X....PXX.X...........XX", 
+                  ".XXX....X......X.....X.XX..X......XXX......XXX..XX", 
+                  "......X....XX...X.XXX...X..X.P...X.XX...XX.X.X..XX", 
+                  "X..P..XX.XP.....X.XXXX.X......X...P..X.PXX.XX.....", 
+                  ".XX...X..X...X......P...X...PXPX.XX....X......X...", 
+                  "X......X.XX..XXX.X.......XX..X....X.X.X.X.P..XXX.X", 
+                  "....X.X.X.XX...X.X.XXPX.XX.P.X..X.X.XX.XXX...X....", 
+                  ".XX.X..X....X....X..XX.XX..P.XX.....XX..XP.X.XXXXX", 
+                  ".....XXXX..P.XP...X...X...X.XPX.XX........X....XXX", 
+                  "..X.....XX...X.........X.X.X.....X.X.XX.XXX.......", 
+                  "X...X......P..P.P..X....P...XX..X.......X.....X.X.", 
+                  "XX.X....X.X.X.PXX.X..X..XX........X.......XXXX...X", 
+                  ".X.X..X..X.X.....X.........X..P.X.....X..XX.X.....", 
+                  ".XX.........X.XX....XX.....XX..XX.XXXXXXXX....XP.X", 
+                  "X.P...X..XX.XP...X..P.X.X....XP....PXX...X.X...X..", 
+                  "......XX.XXX...X.....XX.X....XX..P...C.XX.X...X.X.", 
+                  "..X.....X......X.XC..XXXX......X....X.X......X.XCX", 
+                  "..XXX..X....X....X..XXXX.X.P...XP.X.X.X.X....X....", 
+                  "X.....X.X....X..........X..X.XPXXXX.X..X..XX.X.X.X", 
+                  ".....X..XX..X..XX....X...XX.X.....X.X..XXX.......X", 
+                  "XXX...XXXX.....X.......XX.X.X.X.X......X.XXXXP....", 
+                  "..XX..XX.XX..........C...XXPP..XX...X..........XXX", 
+                  "XP........X..X..X......X.P....XXX.X..P............", 
+                  "XXX..X.XXX.X...X.X..X...X...X.P...PX..XXXX..X.....", 
+                  "XX.X.....X..X.XX..X.X..XPXXX...X.P.X.X.X..X.....XX", 
+                  ".P.........PX........P..X..X.X.X..XX..XX...X..X..."}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>7</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"."}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"P"}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>0</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"C"}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"X"}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>0</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText 
+                  align=left>{"..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  ".................................................."}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"..................................................", 
+                  "..................................................", 
+                  "..........P.......................................", 
+                  ".......P..........................................", 
+                  ".............P....................................", 
+                  "....................P.............................", 
+                  "..................................................", 
+                  ".................................P................", 
+                  "..................P.......P.......................", 
+                  "......P...........................................", 
+                  ".............................P....................", 
+                  "..............P...................................", 
+                  "..................................................", 
+                  ".........................P........................", 
+                  "..................................................", 
+                  "..................................................", 
+                  ".....................P............................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "...................P..............................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................P...............................", 
+                  "...............................P..................", 
+                  "..................................................", 
+                  "...........P......................................", 
+                  "...................P..............................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "................P......P..........................", 
+                  "..................P...............................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................P...............", 
+                  "......................P...........................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..............P...................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  ".................................................."}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>0</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText 
+                  align=left>{"..................................................", 
+                  "..................................................", 
+                  "..........C.......................................", 
+                  ".......C..........................................", 
+                  ".............C....................................", 
+                  "....................C.............................", 
+                  "..................................................", 
+                  ".................................C................", 
+                  "..................C.......C.......................", 
+                  "......C...........................................", 
+                  ".............................C....................", 
+                  "..............C...................................", 
+                  "..................................................", 
+                  ".........................C........................", 
+                  "..................................................", 
+                  "..................................................", 
+                  ".....................C............................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "...................C..............................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................C...............................", 
+                  "...............................C..................", 
+                  "..................................................", 
+                  "...........C......................................", 
+                  "...................C..............................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "................C......C..........................", 
+                  "..................C...............................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..................................C...............", 
+                  "......................C...........................", 
+                  "..................................................", 
+                  "..................................................", 
+                  "..............C...................................", 
+                  "..................................................", 
+                  "..................................................", 
+                  ".................................................."}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>-1</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{".C.", "...", 
+                  "C.C", "X.X", "PPP"}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>4</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"."}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"..."}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>0</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText 
+                  align=left>{"C....X....P..X.....X..........X......XP..C......XP", 
+                  "X..X...................X...X......X....PXX........", 
+                  "C..C.......XX...X......X.P....X...PP.X.....X.....X", 
+                  "......X...XC..X...CPX.X.P.X..X..XCX..........X...P", 
+                  "...X.X....PX..........X.......C.......X...X..X....", 
+                  ".X...X.........X.C.....PC........XP.....X..X.C....", 
+                  ".CX........P.X..X.X...........C........XC..X......", 
+                  ".......X........X..X.P..X.P......X...C...C........", 
+                  "X.X.......XXX.....PX........X..........X.P......X.", 
+                  ".......PC....X.XP........X..X...X..........X....X.", 
+                  ".......X.C.......P...X....X.X...................X.", 
+                  "....X.....X...X......X...X.X...X..XXC.P..C.....X..", 
+                  ".....C.CP.....C..............X....X.P.X......X..X.", 
+                  ".....PP.X.....P...C.....XX.X.........X...XX.......", 
+                  "XP.P.....XX.............X......X..........X.X...C.", 
+                  ".......X.......X...X.........X.X.X..XXP.X.........", 
+                  "..X..................P....C...C....C.X...........P", 
+                  ".......P....XX.X............X...X........X....X.XC", 
+                  "..XP....X.X...X.X.P.X....XXX....C.P...P...P..C....", 
+                  "..X.P.P....XCX..........CX...X.X...X......P.......", 
+                  "C............X.X....X.......XC....................", 
+                  "...X.X..P...XXX.CXXXX..............X..CP.....C...P", 
+                  "XP..XP...X..........X.P..........C..X.X.......C...", 
+                  ".........X...XC.P...X.X....X.X.X...XCPX..CX...X...", 
+                  ".X......P...........CXC.....X........C...X......X.", 
+                  ".....P..X..XPX.......XX....X...X.P..X.XX...X......", 
+                  ".....XXX....X...X....X.C...X.P....X.........X.....", 
+                  "X.....C.X.....P..P...X.CXX......X.X.C.............", 
+                  "X.......CX...........X............X........P..P...", 
+                  ".X.........P..XX.....X.C....C...........XC....P...", 
+                  "...............X....XX....X.....XXXXXXXX.X....P...", 
+                  "X.C.....C...X.X....X.X.....C...XX.P.........P...P.", 
+                  "...XXX.......X.......XXXXXXXXXXXP..PX........P....", 
+                  "....X..........C.X..X.............................", 
+                  "C...C.X........X........X.........X.............XP", 
+                  "PP.P..X..XX..X............X......X....X.XX..C.....", 
+                  ".....P.......P................X..X....X.CX........", 
+                  ".....P...CXX.......X.X.......P....X.X.C........X..", 
+                  "......C......X.........X..P..P..P.........P.......", 
+                  "..P.....C..............P................X...X...P.", 
+                  "XX.....P.....X..........X....C......X.X...CXXX....", 
+                  "....C......CP....C......CX..........C...X.........", 
+                  ".....X...X..X...................C..X...P..X...XX..", 
+                  "...X....XX..............X.........X..X.....P.P..C.", 
+                  ".....X..XP......P......................C..........", 
+                  "..X.....XCP.X...........XX.....X...P.....CC......P", 
+                  "..X..C...........X...CPX....X...P.......X.........", 
+                  "..X.........C...P.........C...........XX....C.....", 
+                  "P.XP.............X..X.X.X......P.C.....X.......X.P", 
+                  "..X...X........................X.....P.....X..X..."}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>15</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"....................................C...", 
+                  "...........C............P.......P.......", 
+                  "....C..........P....C......C........P...", 
+                  ".........X.....................XX.......", 
+                  "...C........P....X.....P........X.......", 
+                  ".........X.......X......C...............", 
+                  "........X...C....X..C.........X.....C...", 
+                  "..P.........................X....X....P.", 
+                  "..................X.......X......X......", 
+                  "C.....X..P...P..X......C.....P..........", 
+                  "..P...X.......X..........X.........X....", 
+                  "............X............X.....X.X....P.", 
+                  "......X...........C......X..C...........", 
+                  "........X..X.....P................P.....", 
+                  "......P...XX............X.....P.X.......", 
+                  "...C..................X.......P.X....C..", 
+                  ".....P..C...XX......X....C......X.......", 
+                  "............X..X..X.............X.......", 
+                  "......X...X..............C....X.........", 
+                  "....X...X.........X.........X.......P...", 
+                  "...X............X....X..................", 
+                  "..X......XX.X.X........X..X......C......", 
+                  "......C.........P........X.............C", 
+                  "...................P........P..........."}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>10</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"....P.."}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{".C.", "...", 
+                  "C.C", "X.X", "PPP"}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>4</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"."}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"..."}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>0</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText 
+                  align=left>{"C....X....P..X.....X..........X......XP..C......XP", 
+                  "X..X...................X...X......X....PXX........", 
+                  "C..C.......XX...X......X.P....X...PP.X.....X.....X", 
+                  "......X...XC..X...CPX.X.P.X..X..XCX..........X...P", 
+                  "...X.X....PX..........X.......C.......X...X..X....", 
+                  ".X...X.........X.C.....PC........XP.....X..X.C....", 
+                  ".CX........P.X..X.X...........C........XC..X......", 
+                  ".......X........X..X.P..X.P......X...C...C........", 
+                  "X.X.......XXX.....PX........X..........X.P......X.", 
+                  ".......PC....X.XP........X..X...X..........X....X.", 
+                  ".......X.C.......P...X....X.X...................X.", 
+                  "....X.....X...X......X...X.X...X..XXC.P..C.....X..", 
+                  ".....C.CP.....C..............X....X.P.X......X..X.", 
+                  ".....PP.X.....P...C.....XX.X.........X...XX.......", 
+                  "XP.P.....XX.............X......X..........X.X...C.", 
+                  ".......X.......X...X.........X.X.X..XXP.X.........", 
+                  "..X..................P....C...C....C.X...........P", 
+                  ".......P....XX.X............X...X........X....X.XC", 
+                  "..XP....X.X...X.X.P.X....XXX....C.P...P...P..C....", 
+                  "..X.P.P....XCX..........CX...X.X...X......P.......", 
+                  "C............X.X....X.......XC....................", 
+                  "...X.X..P...XXX.CXXXX..............X..CP.....C...P", 
+                  "XP..XP...X..........X.P..........C..X.X.......C...", 
+                  ".........X...XC.P...X.X....X.X.X...XCPX..CX...X...", 
+                  ".X......P...........CXC.....X........C...X......X.", 
+                  ".....P..X..XPX.......XX....X...X.P..X.XX...X......", 
+                  ".....XXX....X...X....X.C...X.P....X.........X.....", 
+                  "X.....C.X.....P..P...X.CXX......X.X.C.............", 
+                  "X.......CX...........X............X........P..P...", 
+                  ".X.........P..XX.....X.C....C...........XC....P...", 
+                  "...............X....XX....X.....XXXXXXXX.X....P...", 
+                  "X.C.....C...X.X....X.X.....C...XX.P.........P...P.", 
+                  "...XXX.......X.......XXXXXXXXXXXP..PX........P....", 
+                  "....X..........C.X..X.............................", 
+                  "C...C.X........X........X.........X.............XP", 
+                  "PP.P..X..XX..X............X......X....X.XX..C.....", 
+                  ".....P.......P................X..X....X.CX........", 
+                  ".....P...CXX.......X.X.......P....X.X.C........X..", 
+                  "......C......X.........X..P..P..P.........P.......", 
+                  "..P.....C..............P................X...X...P.", 
+                  "XX.....P.....X..........X....C......X.X...CXXX....", 
+                  "....C......CP....C......CX..........C...X.........", 
+                  ".....X...X..X...................C..X...P..X...XX..", 
+                  "...X....XX..............X.........X..X.....P.P..C.", 
+                  ".....X..XP......P......................C..........", 
+                  "..X.....XCP.X...........XX.....X...P.....CC......P", 
+                  "..X..C...........X...CPX....X...P.......X.........", 
+                  "..X.........C...P.........C...........XX....C.....", 
+                  "P.XP.............X..X.X.X......P.C.....X.......X.P", 
+                  "..X...X........................X.....P.....X..X..."}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>15</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=10 
+border=0></TD>
+                <TD class=statText align=left 
+                background=Parking_sol2_files/steel_blue_bg.gif>{"....................................C...", 
+                  "...........C............P.......P.......", 
+                  "....C..........P....C......C........P...", 
+                  ".........X.....................XX.......", 
+                  "...C........P....X.....P........X.......", 
+                  ".........X.......X......C...............", 
+                  "........X...C....X..C.........X.....C...", 
+                  "..P.........................X....X....P.", 
+                  "..................X.......X......X......", 
+                  "C.....X..P...P..X......C.....P..........", 
+                  "..P...X.......X..........X.........X....", 
+                  "............X............X.....X.X....P.", 
+                  "......X...........C......X..C...........", 
+                  "........X..X.....P................P.....", 
+                  "......P...XX............X.....P.X.......", 
+                  "...C..................X.......P.X....C..", 
+                  ".....P..C...XX......X....C......X.......", 
+                  "............X..X..X.............X.......", 
+                  "......X...X..............C....X.........", 
+                  "....X...X.........X.........X.......P...", 
+                  "...X............X....X..................", 
+                  "..X......XX.X.X........X..X......C......", 
+                  "......C.........P........X.............C", 
+                  "...................P........P..........."}</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>10</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right 
+                background=Parking_sol2_files/steel_blue_bg.gif>Passed</TD>
+                <TD width=5 
+                  background=Parking_sol2_files/steel_blue_bg.gif><IMG height=1 
+                  alt="" src="Parking_sol2_files/clear.gif" width=5 
+              border=0></TD></TR>
+              <TR>
+                <TD background=Parking_sol2_files/steel_blue_bg.gif 
+                  colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR vAlign=top>
+                <TD width=10><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=10 border=0></TD>
+                <TD class=statText align=left>{"....P.."}</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>0</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD>
+                <TD class=statText align=right>Passed</TD>
+                <TD width=5><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=5 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 border=0></TD></TR>
+              <TR>
+                <TD colSpan=9><IMG height=1 alt="" 
+                  src="Parking_sol2_files/clear.gif" width=1 
+              border=0></TD></TR></TBODY></TABLE><!-- End System Testing --></TD></TR>
+        <TR>
+          <TD width="100%"><IMG height=10 alt="" 
+            src="Parking_sol2_files/clear.gif" width=1 
+      border=0></TD></TR></TBODY></TABLE>
+      <P><BR></P><!-- END BODY --></TD>
+    <TD width=10><IMG height=1 src="Parking_sol2_files/clear.gif" width=10 
+      border=0></TD>
+    <TD vAlign=top width=180><IMG height=1 src="Parking_sol2_files/clear.gif" 
+      width=180 border=0> <!-- Member Profiles, Search Pages, and Private Label Events Pages begins -->
+      <DIV class=rightColContent><BR><BR></DIV></TD><!-- Gutter -->
+    <TD width=10><IMG height=1 src="Parking_sol2_files/clear.gif" width=10 
+      border=0></TD><!-- Gutter Ends --></TR></TBODY></TABLE><!-- Footer Include Begins -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><!-- TopCoder Links Begins -->
+  <TBODY>
+  <TR>
+    <TD class=footer width="100%"><A class=footerLinks 
+      href="http://www.topcoder.com/">Home</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A 
+      class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=index">About 
+      TopCoder</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=index">Press 
+      Room</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=contactus">Contact 
+      Us</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=privacy">Privacy</A>&nbsp;&nbsp;|&nbsp;&nbsp; 
+      <A class=footerLinks 
+      href="http://www.topcoder.com/tc?module=Static&amp;d1=about&amp;d2=terms">Terms</A></TD></TR><!-- TopCoder Links Ends --><!-- Member Sites Begins -->
+  <TR>
+    <TD class=footer width="100%"><A class=footerLinks 
+      href="http://www.topcoder.com/tc">Developer 
+      Center</A>&nbsp;&nbsp;|&nbsp;&nbsp; <A class=footerLinks 
+      href="http://www.topcoder.com/corp/?module=Static&amp;d1=corp&amp;d2=index">Corporate 
+      Services</A> <!-- Member Sites Ends -->
+  <TR>
+    <TD class=footerStripe height=4><IMG height=4 
+      src="C:\Documents and Settings\Samurai\Desktop\graph_theory_level3\Parking_sol2_files\clear(1).gif" 
+      width=10 border=0></TD></TR>
+  <TR>
+    <TD class=copyright width="100%">Copyright © 2001-2006, TopCoder, Inc. All 
+      rights 
+reserved.</TD></TR></TBODY></TABLE><!-- Footer Include Ends --></BODY></HTML>

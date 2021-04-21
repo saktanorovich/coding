@@ -1,0 +1,297 @@
+.memberProfileBody {
+	BORDER-RIGHT: #000000 0px solid; PADDING-RIGHT: 5px; BORDER-TOP: #000000 0px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 10px 10px 0px; BORDER-LEFT: #000000 0px solid; WIDTH: 100%; PADDING-TOP: 5px; BORDER-BOTTOM: #000000 0px solid
+}
+.bottomSpacer {
+	MARGIN-BOTTOM: 10px
+}
+.statTableSpacer {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; FONT-SIZE: 11px; PADDING-BOTTOM: 15px; COLOR: #333333; LINE-HEIGHT: 1.4; PADDING-TOP: 0px
+}
+.statTable {
+	MARGIN-BOTTOM: 10px
+}
+.divider {
+	BORDER-RIGHT: #999999 1px solid; VERTICAL-ALIGN: top; WIDTH: 25%
+}
+.statTableHolder {
+	BORDER-RIGHT: #999999 1px solid; VERTICAL-ALIGN: top; BORDER-LEFT: #999999 1px solid; BORDER-BOTTOM: #cccccc 7px solid; BACKGROUND-COLOR: #eeeeee
+}
+.pagingBox {
+	CLEAR: both; PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 10px; WIDTH: 100%; PADDING-TOP: 10px; TEXT-ALIGN: center
+}
+.photoCell {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; VERTICAL-ALIGN: top; PADDING-TOP: 5px
+}
+.bigHandle {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; WHITE-SPACE: nowrap
+}
+.handleCell {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 18px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: top; PADDING-TOP: 2px; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #eeeeee
+}
+.quoteCell {
+	VERTICAL-ALIGN: middle; WIDTH: 100%; BACKGROUND-COLOR: #eeeeee
+}
+.quoteBox {
+	BORDER-RIGHT: #999999 3px solid; PADDING-RIGHT: 8px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 15px; PADDING-BOTTOM: 15px; MARGIN: 10px 20px; BORDER-LEFT: #999999 3px solid; COLOR: #666666; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid; FONT-STYLE: italic
+}
+.quoteTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal
+}
+.ratingBox {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 24px; PADDING-BOTTOM: 5px; VERTICAL-ALIGN: middle; COLOR: #000000; LINE-HEIGHT: 24px; PADDING-TOP: 5px; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #eeeeee; TEXT-ALIGN: center
+}
+.graphHolder {
+	BACKGROUND-COLOR: #eeeeee; TEXT-ALIGN: center
+}
+.tableTitle {
+	PADDING-RIGHT: 5px; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(/i/stats/headerBG.gif); PADDING-BOTTOM: 3px; COLOR: #333333; PADDING-TOP: 3px; BORDER-BOTTOM: #999999 1px solid; WHITE-SPACE: nowrap; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #999999; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.tableHeader {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: top; COLOR: #000000; LINE-HEIGHT: 14px; PADDING-TOP: 2px; BACKGROUND-COLOR: #dddddd
+}
+.cat {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; LINE-HEIGHT: 14px; PADDING-TOP: 0px; BACKGROUND-COLOR: #eeeeee
+}
+.catNW {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; LINE-HEIGHT: 14px; PADDING-TOP: 0px; BACKGROUND-COLOR: #eeeeee
+}
+.stat {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; LINE-HEIGHT: 14px; PADDING-TOP: 0px; BACKGROUND-COLOR: #eeeeee
+}
+.statNW {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; LINE-HEIGHT: 14px; PADDING-TOP: 0px; BACKGROUND-COLOR: #eeeeee
+}
+.statR {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; LINE-HEIGHT: 14px; PADDING-TOP: 0px; BACKGROUND-COLOR: #eeeeee
+}
+.statRNW {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; LINE-HEIGHT: 14px; PADDING-TOP: 0px; BACKGROUND-COLOR: #eeeeee
+}
+.cat {
+	FONT-WEIGHT: bold; COLOR: #000000
+}
+.catNW {
+	FONT-WEIGHT: bold; COLOR: #000000
+}
+.stat {
+	FONT-WEIGHT: normal; COLOR: #333333
+}
+.statNW {
+	FONT-WEIGHT: normal; COLOR: #333333
+}
+.statR {
+	FONT-WEIGHT: normal; COLOR: #333333
+}
+.statRNW {
+	FONT-WEIGHT: normal; COLOR: #333333
+}
+.statR {
+	TEXT-ALIGN: right
+}
+.statRNW {
+	TEXT-ALIGN: right
+}
+.catNW {
+	WHITE-SPACE: nowrap
+}
+.statNW {
+	WHITE-SPACE: nowrap
+}
+.statRNW {
+	WHITE-SPACE: nowrap
+}
+.statR {
+	TEXT-ALIGN: right
+}
+.catLt {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 11px; PADDING-BOTTOM: 1px; VERTICAL-ALIGN: top; COLOR: #000000; PADDING-TOP: 1px
+}
+.catDk {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 11px; PADDING-BOTTOM: 1px; VERTICAL-ALIGN: top; COLOR: #000000; PADDING-TOP: 1px
+}
+.catLt {
+	BACKGROUND-COLOR: #ffffff
+}
+.catDk {
+	BACKGROUND-COLOR: #eeeeee
+}
+.statLt {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: top; PADDING-TOP: 2px
+}
+.statDk {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: top; PADDING-TOP: 2px
+}
+.statLt {
+	BACKGROUND-COLOR: #ffffff
+}
+.statDk {
+	BACKGROUND-COLOR: #eeeeee
+}
+.statHighlight {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: top; PADDING-TOP: 2px; BACKGROUND-COLOR: #ddddff
+}
+.statLink {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.statLink:link {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.statLink:visited {
+	COLOR: #000066; TEXT-DECORATION: none
+}
+A.statLink:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.statLink:active {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+.tabIconOn {
+	PADDING-RIGHT: 5px; BACKGROUND-POSITION: center top; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(/i/stats/border.gif); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x
+}
+.tabIconOff {
+	PADDING-RIGHT: 5px; BACKGROUND-POSITION: center top; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(/i/stats/border.gif); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x
+}
+.tabIconNA {
+	PADDING-RIGHT: 5px; BACKGROUND-POSITION: center top; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(/i/stats/border.gif); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x
+}
+.tabTextOn {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: center top; PADDING-LEFT: 10px; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(/i/stats/border.gif); LINE-HEIGHT: 14px; BACKGROUND-REPEAT: repeat-x; WHITE-SPACE: nowrap
+}
+.tabTextOff {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: center top; PADDING-LEFT: 10px; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(/i/stats/border.gif); LINE-HEIGHT: 14px; BACKGROUND-REPEAT: repeat-x; WHITE-SPACE: nowrap
+}
+.tabTextNA {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: center top; PADDING-LEFT: 10px; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(/i/stats/border.gif); LINE-HEIGHT: 14px; BACKGROUND-REPEAT: repeat-x; WHITE-SPACE: nowrap
+}
+.tabLeftOff {
+	BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BACKGROUND-COLOR: #cccccc
+}
+.tabLeftOn {
+	BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BACKGROUND-COLOR: #eeeeee
+}
+.tabLeftNA {
+	BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BACKGROUND-COLOR: #dddddd
+}
+.tabMidOnOff {
+	PADDING-RIGHT: 20px; BACKGROUND-POSITION: center top; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat
+}
+.tabMidOffOn {
+	PADDING-RIGHT: 20px; BACKGROUND-POSITION: center top; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat
+}
+.tabMidOffOff {
+	PADDING-RIGHT: 20px; BACKGROUND-POSITION: center top; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat
+}
+.tabMidOnOff {
+	BACKGROUND-IMAGE: url(/i/stats/tabMidOnOff.gif)
+}
+.tabMidOffOn {
+	BACKGROUND-IMAGE: url(/i/stats/tabMidOffOn.gif)
+}
+.tabMidOffOff {
+	BACKGROUND-IMAGE: url(/i/stats/tabMidOffOff.gif)
+}
+.tabRightOn {
+	PADDING-RIGHT: 30px; BACKGROUND-POSITION: right top; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat
+}
+.tabRightOff {
+	PADDING-RIGHT: 30px; BACKGROUND-POSITION: right top; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat
+}
+.tabRightOff {
+	BACKGROUND-IMAGE: url(/i/stats/tabRightOff.gif)
+}
+.tabRightOn {
+	BACKGROUND-IMAGE: url(/i/stats/tabRightOn.gif)
+}
+.tabIconOn {
+	BACKGROUND-COLOR: #eeeeee
+}
+.tabTextOn {
+	BACKGROUND-COLOR: #eeeeee
+}
+.tabIconOff {
+	BACKGROUND-COLOR: #cccccc
+}
+.tabTextOff {
+	BACKGROUND-COLOR: #cccccc
+}
+.tabIconNA {
+	BACKGROUND-IMAGE: url(/i/stats/borderNA.gif); COLOR: #999999; BACKGROUND-COLOR: #dddddd
+}
+.tabTextNA {
+	BACKGROUND-IMAGE: url(/i/stats/borderNA.gif); COLOR: #999999; BACKGROUND-COLOR: #dddddd
+}
+.bc {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-STYLE: normal
+}
+A.bcLink:link {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.bcLink:visited {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.bcLink:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.bcLink:active {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+TABLE.tabTable {
+	BORDER-LEFT: #999999 1px solid; BORDER-COLLAPSE: collapse
+}
+A.tabLinkOn {
+	DISPLAY: block; WIDTH: 100%; COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.tabLinkOn:link {
+	DISPLAY: block; WIDTH: 100%; COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.tabLinkOff {
+	DISPLAY: block; WIDTH: 100%; COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.tabLinkOff:link {
+	DISPLAY: block; WIDTH: 100%; COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.tabLinkOn {
+	BACKGROUND: #eeeeee
+}
+A.tabLinkOn:link {
+	BACKGROUND: #eeeeee
+}
+A.tabLinkOff {
+	BACKGROUND: url(/i/interface/tab_off.gif) #cccccc repeat-x center bottom
+}
+A.tabLinkOff:link {
+	BACKGROUND: url(/i/interface/tab_off.gif) #cccccc repeat-x center bottom
+}
+A.tabLinkOn:visited {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.tabLinkOff:visited {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A.tabLinkOn:hover {
+	BACKGROUND: #ffffff; COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.tabLinkOff:hover {
+	BACKGROUND: #ffffff; COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.tabLinkOn:active {
+	BACKGROUND: #ffffff; COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.tabLinkOff:hover {
+	BACKGROUND: #ffffff; COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.tabLinkOn DIV {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 11px; PADDING-BOTTOM: 8px; LINE-HEIGHT: 100%; PADDING-TOP: 8px; WHITE-SPACE: nowrap
+}
+A.tabLinkOff DIV {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 11px; PADDING-BOTTOM: 8px; LINE-HEIGHT: 100%; PADDING-TOP: 8px; WHITE-SPACE: nowrap
+}
+DIV.tabLinkNA {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 11px; PADDING-BOTTOM: 8px; LINE-HEIGHT: 100%; PADDING-TOP: 8px; WHITE-SPACE: nowrap
+}
+A.tabLinkOn DIV {
+	FONT-WEIGHT: bold
+}
+DIV.tabLinkNA {
+	FONT-SIZE: 11px; BACKGROUND: url(/i/interface/tab_na.gif) #999999 repeat-x center bottom; COLOR: #666666
+}
