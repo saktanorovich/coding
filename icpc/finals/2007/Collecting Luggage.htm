@@ -1,0 +1,134 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>2397 - Collecting Luggage</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Collecting%20Luggage_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>2397 - Collecting Luggage</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2006"><b>World Finals - Tokyo - 2006/2007</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p2397.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=2397"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=2397"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+Collecting your luggage after a flight can be far from trivial.
+Suitcases and bags appear on a conveyor belt, and hundreds of
+passengers fight for a good vantage point from which to find and
+retrieve their belongings. Recently, the Narita Airport Authority has
+decided to make this process more efficient. Before redesigning their
+baggage claim areas, they need a simulation program to determine how
+average passengers behave when collecting their luggage. This
+simulation assumes that passengers will always take a path of straight
+line segments to reach their luggage in the least amount of time. </p><p>
+For this problem, a conveyor belt is modeled as a simple polygon. A
+luggage piece appears on some point of the conveyor belt, and then
+moves along the conveyor belt at a constant speed. A passenger is
+initially positioned at some point outside the conveyor belt polygon.
+As soon as the piece of luggage appears, the passenger moves at a
+constant speed (which is greater than the speed of the luggage piece)
+in order to pick up the luggage. The passenger's path, which may not
+cross over the conveyer belt but may touch it, puts the passenger in
+the same position as the moving piece of luggage in the least amount of
+time. </p><p>
+In the following figure, the conveyor belt is depicted as a polygon
+ABCDEF. The luggage starts at the top-left corner (Point A) and moves
+in counterclockwise direction around the polygon as shown with the
+small arrows. The passenger begins at point P and moves on the path
+that puts him and the luggage into the same place (point M in the
+figure) in the shortest amount of time. The passenger's path is shown
+by a red arrow. This figure corresponds to the first sample input.
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p2397.eps}$
+ -->
+<img src="Collecting%20Luggage_files/p2397.jpg" alt="\epsfbox{p2397.eps}" align="bottom" border="0">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>The input consists of one or more test cases describing luggage
+pickup scenarios. A scenario description begins with a line containing
+a single integer <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(3 \le N \le 100)$
+ -->
+<span class="MATH">(3<img src="Collecting%20Luggage_files/2397img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>N</i><img src="Collecting%20Luggage_files/2397img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">100)</span>
+<tex2html_verbatim_mark>, the number of vertices of the conveyor belt polygon. This is followed by <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> lines, each containing a pair of integers <span class="MATH"><i>x</i><sub>i</sub></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>y</i><sub>i</sub></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(|x_{i}|, |y_{i}| \le 10000)$
+ -->
+<span class="MATH">(| <i>x</i><sub>i</sub>|,| <i>y</i><sub>i</sub>|<img src="Collecting%20Luggage_files/2397img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">10000)</span>
+<tex2html_verbatim_mark> giving the coordinates of the vertices of the
+polygon in counterclockwise order. The polygon is simple, that is, it
+will not intersect itself and it will not touch itself. The polygon
+description is followed by a line containing two integers <span class="MATH"><i>p</i><sub>x</sub></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>p</i><sub>y</sub></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(|p_{x}|, |p_{y}| \le 10000)$
+ -->
+<span class="MATH">(| <i>p</i><sub>x</sub>|,| <i>p</i><sub>y</sub>|<img src="Collecting%20Luggage_files/2397img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">10000)</span>
+<tex2html_verbatim_mark>, the coordinates of the starting position of the passenger. The last line of the description contains two positive integers <span class="MATH"><i>V</i><sub>L</sub></span>
+<tex2html_verbatim_mark> and <span class="MATH"><i>V</i><sub>P</sub></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(0 < V_{L} < V_{P} \le 10000)$
+ -->
+<span class="MATH">(0 &lt; <i>V</i><sub>L</sub> &lt; <i>V</i><sub>P</sub><img src="Collecting%20Luggage_files/2397img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">10000)</span>
+<tex2html_verbatim_mark>, which are the speed of the luggage and the
+passenger respectively. All the coordinates are given in meters, and
+the speeds are given in meters per minute.
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>You
+can assume that the passenger is positioned outside the conveyor belt
+polygon. The luggage will move in counterclockwise direction around the
+conveyor belt, starting at the first vertex of the polygon. </p><p>
+The input is terminated by a line containing a single integer zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, print a line containing the test case number
+(beginning with 1) followed by the minimum time that it takes the
+passenger to reach the luggage. Use the formatting shown in the sample
+output (with minutes and seconds separated by a colon), rounded to the
+nearest second. The value for seconds should be printed in a field of
+width two (padded with leading zeroes if required).
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>6 
+0 40 
+0 0 
+20 0 
+20 20 
+40 20 
+40 40 
+120 40 
+70 100 
+4
+0 0 
+10 0 
+10 10 
+0 10 
+100 100 
+10 11 
+0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: Time = 1:02 
+Case 2: Time = 12:36
+</pre> 
+
+<p>
+</p><hr><address>Tokyo 2006-2007</address><p><b>Tests-Setter:</b> Shahriar Manzoor<br></p></body></html>

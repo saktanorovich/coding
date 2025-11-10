@@ -1,0 +1,115 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>2996 - Insecure in Prague</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Insecure%20in%20Prague_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>2996 - Insecure in Prague</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2003"><b>World Finals - Prague - 2003/2004</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p2996.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=2996"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=2996"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+Prague is a dangerous city for developers of cryptographic schemes. In 2001, a pair of researchers in Prague
+announced a security flaw in the famous PGP encryption protocol. In Prague in 2003 , a flaw was discovered in
+the SSL/TLS (Secure Sockets Layer and Transport Layer Security) protocols. However, Prague's reputation for
+being tough on cryptographic protocols hasn't stopped the part-time amateur cryptographer and full-time
+nutcase, Immanuel Kant-DeWitt (known to his friends as "I. Kant-DeWitt"), from bringing his latest encryption
+scheme to Prague. Here's how it works:
+
+</p><p>
+A plain text message <span class="MATH"><i>p</i></span> of length <span class="MATH"><i>n</i></span> is to be transmitted. The sender chooses an integer <span class="MATH"><i>m</i><img src="Insecure%20in%20Prague_files/2996img1.gif" alt="$ \ge$" align="middle" border="0" height="30" width="18">2<i>n</i></span>, and integers
+<span class="MATH"><i>s</i></span>, <span class="MATH"><i>t</i></span>, <span class="MATH"><i>i</i></span>,
+and <span class="MATH"><i>j</i></span>, where <!-- MATH
+ $0 \le s, t, i, j < m$
+ -->
+<span class="MATH">0<img src="Insecure%20in%20Prague_files/2996img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>s</i>, <i>t</i>, <i>i</i>, <i>j</i> &lt; <i>m</i></span> and <span class="MATH"><i>i</i> &lt; <i>j</i></span>. The scheme works as follows: <span class="MATH"><i>m</i></span> is the length of the transmitted
+ciphertext string, <span class="MATH"><i>c</i></span>. Initially, <span class="MATH"><i>c</i></span> contains <span class="MATH"><i>m</i></span> empty slots. The first letter of <span class="MATH"><i>p</i></span> is placed in position <span class="MATH"><i>s</i></span>
+of <span class="MATH"><i>c</i></span>. The <span class="MATH"><i>k</i></span>-th
+letter, <span class="MATH"><i>k</i><img src="Insecure%20in%20Prague_files/2996img1.gif" alt="$ \ge$" align="middle" border="0" height="30" width="18">2</span>, is placed by skipping over <span class="MATH"><i>i</i></span> empty slots in <span class="MATH"><i>c</i></span> after the (<span class="MATH"><i>k</i> - 1</span>)-st letter, wrapping around to the
+beginning of <span class="MATH"><i>c</i></span> if necessary. Slots already containing letters are not counted as empty. For instance, if the
+message is PRAGUE, if <span class="MATH"><i>s</i> = 1</span>, <span class="MATH"><i>i</i> = 6</span>, and <span class="MATH"><i>m</i> = 15</span>, then the letters are placed in <span class="MATH"><i>c</i></span> as follows:
+
+</p><p>
+</p><div align="center">
+<table cols="15">
+<col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center">
+<tbody><tr><td align="center" nowrap="nowrap" valign="baseline">
+A </td><td align="center" nowrap="nowrap" valign="baseline"> P </td><td></td><td align="center" nowrap="nowrap" valign="baseline"> U </td><td></td><td></td><td></td><td></td><td align="center" nowrap="nowrap" valign="baseline"> R </td><td align="center" nowrap="nowrap" valign="baseline"> G </td><td></td><td></td><td align="center" nowrap="nowrap" valign="baseline"> E </td><td></td><td align="center" nowrap="nowrap" valign="baseline"> 
+-- </td></tr>
+</tbody></table>
+
+</div>
+
+<p>
+Starting with the first empty slot in or after position <span class="MATH"><i>t</i></span> in string <span class="MATH"><i>c</i></span>, the plain text message is entered again, but this
+time skipping <span class="MATH"><i>j</i></span> empty slots between letters. For instance, if <span class="MATH"><i>t</i> = 0</span> and  <span class="MATH"><i>j</i> = 8</span>, the second copy of <span class="MATH"><i>p</i></span> is entered as
+follows (beginning in position 2, the first empty slot starting from <span class="MATH"><i>t</i> = 0</span>):
+
+</p><p>
+</p><div align="center">
+<table cols="15">
+<col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center">
+<tbody><tr><td align="center" nowrap="nowrap" valign="baseline">
+A </td><td align="center" nowrap="nowrap" valign="baseline"> P </td><td align="center" nowrap="nowrap" valign="baseline"> <b>P</b> </td><td align="center" nowrap="nowrap" valign="baseline"> U </td><td align="center" nowrap="nowrap" valign="baseline"> <b>R</b> </td><td></td><td align="center" nowrap="nowrap" valign="baseline"> <b>A</b> </td><td align="center" nowrap="nowrap" valign="baseline"> <b>U</b> </td><td align="center" nowrap="nowrap" valign="baseline"> R </td><td align="center" nowrap="nowrap" valign="baseline"> G </td><td align="center" nowrap="nowrap" valign="baseline"> <b>E</b> </td><td align="center" nowrap="nowrap" valign="baseline"> <b>G</b> </td><td align="center" nowrap="nowrap" valign="baseline"> E </td><td></td><td align="center" nowrap="nowrap" valign="baseline"> 
+-- </td></tr>
+</tbody></table>
+
+</div>
+
+<p>
+Finally, any remaining unfilled slots in <span class="MATH"><i>c</i></span> are filled in with randomly chosen letters:
+
+</p><p>
+</p><div align="center">
+<table cols="15">
+<col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center"><col align="center">
+<tbody><tr><td align="center" nowrap="nowrap" valign="baseline">
+A </td><td align="center" nowrap="nowrap" valign="baseline"> P </td><td align="center" nowrap="nowrap" valign="baseline"> P </td><td align="center" nowrap="nowrap" valign="baseline"> U </td><td align="center" nowrap="nowrap" valign="baseline"> R </td><td align="center" nowrap="nowrap" valign="baseline"> <b>A</b> </td><td align="center" nowrap="nowrap" valign="baseline"> A </td><td align="center" nowrap="nowrap" valign="baseline"> U </td><td align="center" nowrap="nowrap" valign="baseline"> R </td><td align="center" nowrap="nowrap" valign="baseline"> G </td><td align="center" nowrap="nowrap" valign="baseline"> E </td><td align="center" nowrap="nowrap" valign="baseline"> G </td><td align="center" nowrap="nowrap" valign="baseline"> E </td><td align="center" nowrap="nowrap" valign="baseline"> <b>W</b> </td><td align="center" nowrap="nowrap" valign="baseline"> <b>E</b> 
+-- </td></tr>
+</tbody></table>
+
+</div>
+
+<p>
+Kant-DeWitt believes that the duplication of the message, combined with the use of random letters, will confuse
+decryption schemes based upon letter frequencies and that, without knowledge of <span class="MATH"><i>s</i></span> and <span class="MATH"><i>i</i></span>, no one can figure out
+what the original message is. Your job is to try to prove him wrong. Given a number of ciphertext strings (and
+no additional information), you will determine the longest possible message that could have been encoded using
+the Kant-DeWitt method.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+A number of ciphertext strings, one per line. Each string will consist only of upper case alphabetic letters, with
+no leading or trailing blanks; each will have length between 2 and 40.
+
+<p>
+Input for the last test case is followed by a line consisting of the letter <tt>X</tt>.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+For each input ciphertext string, print the longest string that could be encrypted in the ciphertext. If more than
+one string has the longest length, then print `<tt>Codeword not unique</tt>'. Follow the format of the sample
+output given below.
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>APPURAAURGEGEWE
+ABABABAB
+THEACMPROGRAMMINGCONTEST
+X
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>Code 1: PRAGUE
+Code 2: Codeword not unique
+Code 3: Codeword not unique
+</pre>
+
+<p>
+
+</p><p>
+</p><hr><address>Prague 2003-2004</address><p><b>Tests-Setter:</b> Rujia Liu<br><b>Special Thanks:</b> Chen Danqi<br></p></body></html>

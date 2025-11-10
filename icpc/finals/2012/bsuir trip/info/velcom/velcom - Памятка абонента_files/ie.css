@@ -1,0 +1,183 @@
+.right_column {
+	padding-top: 0px;
+}
+input.button {
+	margin-bottom: 3px;
+}
+.show_result {
+	width: 205px; height: 350px;
+}
+iframe {
+	height: 689px;
+}
+.content_header {
+	padding-top: 35px; padding-bottom: 0px;
+}
+.content p {
+	padding-top: 8px;
+}
+.content p.text_11 {
+	padding-top: 2px;
+}
+.content h1 {
+	margin-top: 0px;
+}
+.logo_arm {
+	vertical-align: middle;
+}
+.line {
+	line-height: 7px;
+}
+.footer_div {
+	padding-top: 10px;
+}
+.archive_link {
+	margin: 5px 0px 7px;
+}
+.archive_link:link {
+	margin: 5px 0px 7px;
+}
+.archive_link:visited {
+	margin: 5px 0px 7px;
+}
+.archive_link:hover {
+	margin: 5px 0px 7px;
+}
+.pt20.archive_link {
+	margin-top: 20px;
+}
+.last.archive_link {
+	padding-bottom: 0px; margin-bottom: 0px;
+}
+.media_wrapper .bottom.rounded_frame {
+	margin-bottom: 5px;
+}
+.t_menu a {
+	letter-spacing: -0.04em;
+}
+.right_menu a em {
+	margin-bottom: -1px; vertical-align: middle;
+}
+.right_menu a img {
+	filter: alpha(opacity=50);
+}
+.right_menu a:link img {
+	filter: alpha(opacity=50);
+}
+.right_menu a:visited img {
+	filter: alpha(opacity=50);
+}
+.right_menu a:hover img {
+	filter: alpha(opacity=50);
+}
+.right_menu a:hover img {
+	filter: alpha(opacity=100);
+}
+.right_menu_banner a img {
+	filter: alpha(opacity=100);
+}
+.right_menu_banner a:link img {
+	filter: alpha(opacity=100);
+}
+.right_menu_banner a:visited img {
+	filter: alpha(opacity=100);
+}
+.right_menu_banner a:hover img {
+	filter: alpha(opacity=100);
+}
+.right_column_c {
+	padding-top: 3px; padding-left: 2px;
+}
+.right_column {
+	padding-top: 5px;
+}
+.news h1 {
+	margin-left: -2px;
+}
+.news_block h5 {
+	padding: 0px 0px 5px;
+}
+.b_footer.service_block {
+	padding-top: 8px;
+}
+.prev_mo:link {
+	filter: alpha(opacity=30);
+}
+.prev_mo:visited {
+	filter: alpha(opacity=30);
+}
+.prev_mo:hover {
+	filter: alpha(opacity=30);
+}
+.next_mo:link {
+	filter: alpha(opacity=30);
+}
+.next_mo:visited {
+	filter: alpha(opacity=30);
+}
+.next_mo:hover {
+	filter: alpha(opacity=30);
+}
+.next_mo:link {
+	filter: alpha(opacity=30);
+}
+.next_mo:visited {
+	filter: alpha(opacity=30);
+}
+.next_mo:hover {
+	filter: alpha(opacity=30);
+}
+.prev_mo:hover {
+	filter: alpha(opacity=100);
+}
+.next_mo:hover {
+	filter: alpha(opacity=100);
+}
+i.calarr {
+	filter: alpha(opacity=30);
+}
+.graybox .gobtn:link {
+	filter: alpha(opacity=40);
+}
+.graybox .gobtn:visited {
+	filter: alpha(opacity=40);
+}
+.graybox .gobtn:hover {
+	filter: alpha(opacity=40);
+}
+.graybox .gobtn:hover {
+	filter: alpha(opacity=100);
+}
+.graybox div.refresh {
+	margin-top: 0px; display: inline-table;
+}
+.phone_search .wrapper {
+	margin-top: 0px;
+}
+input.top_arr {
+	height: 7px;
+}
+input.bottom_arr {
+	height: 7px;
+}
+.graybox div {
+	padding-left: 0px;
+}
+div.p20 {
+	margin: 0px; padding: 20px;
+}
+body.print_ver div.breadcrumb span {
+	background-position: center 65%;
+}
+.check_phone_model {
+	width: 236px;
+}
+.popup_cover div {
+	filter: alpha(opacity=70);
+}
+table.phone_item input.list_phone_compare {
+	margin-top: 0px; margin-bottom: -3px;
+}
+.form_table .w25 input {
+	margin-top: 8px;
+}

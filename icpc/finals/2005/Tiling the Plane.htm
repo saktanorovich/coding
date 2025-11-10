@@ -1,0 +1,104 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3275 - Tiling the Plane</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Tiling%20the%20Plane_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3275 - Tiling the Plane</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2004"><b>World Finals - Shanghai - 2004/2005</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3275.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3275"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3275"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+A polygon is said to ``tile the plane" if a collection of identical copies of the polygon can be assembled to fill an 
+unbounded two-dimensional plane without any gaps or overlap. For example, Figure 1 shows an L-shaped polygon, 
+and Figure 2 shows how a portion of the plane can be tiled with copies of the polygon. You must write a program to 
+determine whether a given polygon can tile the plane. 
+
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3275.eps}$
+ -->
+<img src="Tiling%20the%20Plane_files/p3275.jpg" alt="\epsfbox{p3275.eps}" align="bottom" border="0">
+</div>
+
+<p>
+Each test case consists of a closed polygon in which every vertex is at a right angle and the length of every side is an 
+integer multiple of a unit length. You may make as many copies of the polygon as you like, and you may move them 
+over the plane, but you may not rotate or reflect any polygon. 
+
+</p><p>
+
+</p><p>
+<br>
+You might find the following information useful: It is known that there are only two fundamentally different tilings
+of the plane, the regular tiling by squares (chessboard tiling) and the tiling by regular hexagons (honeycomb tiling). 
+A polygon can therefore tile the plane if and only if it satisfies one of the following two conditions: 
+
+</p><p>
+</p><dl compact="compact">
+<dt>1.</dt>
+<dd>There are points A, B, C, D in order on the polygon boundary (the points are not necessarily vertices of the
+           polygon) such that the polygon boundaries from A to B and from D to C are congruent and the boundaries 
+           from B to C and from A to D are congruent. This leads to a tiling equivalent to the square tiling. 
+</dd>
+<dt>2.</dt>
+<dd>There are points A, B, C, D, E, F in order on the polygon boundary, such that the boundary pairs AB and 
+           ED, BC and FE, CD and AF are congruent. This leads to a tiling equivalent to the hexagon tiling. 
+</dd>
+</dl>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+The input contains the descriptions of several polygons, each description consisting of one input line. Each 
+description begins with an integer <span class="MATH"><i>n</i></span> <!-- MATH
+ $(4 \le n \le 50)$
+ -->
+<span class="MATH">(4<img src="Tiling%20the%20Plane_files/3275img2.png" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>n</i><img src="Tiling%20the%20Plane_files/3275img2.png" alt="$ \le$" align="middle" border="0" height="30" width="18">50)</span> that represents the number of sides of the polygon.
+This number is followed by descriptions of <span class="MATH"><i>n</i></span> line segments which (taken in order) form a counterclockwise traversal
+of the
+perimeter of the polygon. Each line segment description consists of a letter followed by an integer. The letter is `<tt>N</tt>',
+`<tt>E</tt>', `<tt>S</tt>', or `<tt>W</tt>', representing the direction of the line segment as North, East, South, or West,
+respectively. The
+integer represents the length of the line segment as a multiple of the unit length. The described polygon will not 
+touch or intersect itself. 
+
+</p><p>
+
+</p><p>
+<br>
+The input is terminated by a line consisting of the integer zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+For each polygon in the input, print one output line. Print the number of the polygon in the input, followed by the 
+word `<tt>Possible</tt>' if it is possible to tile the plane with the test polygon, or `<tt>Impossible</tt>' otherwise.
+Follow the format of the sample output.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>6 N 3 W 1 S 4 E 4 N 1 W 3
+8 E 5 N 1 W 3 N 3 E 2 N 1 W 4 S 5
+0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Polygon 1: Possible
+Polygon 2: Impossible
+</pre>
+
+<p>
+</p><hr><address>Shanghai 2004-2005</address><p></p></body></html>

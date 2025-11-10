@@ -1,0 +1,77 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>2994 - Heliport</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Heliport_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>2994 - Heliport</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2003"><b>World Finals - Prague - 2003/2004</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p2994.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=2994"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=2994"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+In these fast-paced times, companies are investing in heliports to reduce travel time for their busy executives.
+The heliports are typically circular landing pads, constructed on the roofs of the companies' headquarters.
+
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p2994.eps}$
+ -->
+<img src="Heliport_files/p2994.gif" alt="\epsfbox{p2994.eps}" align="bottom" border="0" height="343" width="390">
+</div>
+
+<p>
+You must write a program that finds the largest radius for a circular
+heliport that can be constructed on the flat roof of a building that is in the
+form of a simple polygon. Since this is merely the design phase of the
+construction effort, your program must find only the radius of the heliport.
+The maximum radius for a heliport in the diagram shown is 10.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+The input file contains several test cases. Each test case consists of two lines. The first line consists of an even
+integer <span class="MATH"><i>n</i></span> (<!-- MATH
+ $4 \le n \le 20$
+ -->
+<span class="MATH">4<img src="Heliport_files/2994img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>n</i><img src="Heliport_files/2994img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">20</span>), which is the number of the sides of the building. The second line consists of <span class="MATH"><i>n</i></span>
+pairs of the form <span class="MATH">(<i>m</i>, <i>d</i> )</span>, where <span class="MATH"><i>m</i></span> is an integer (<!-- MATH
+ $1 \le m \le 50$
+ -->
+<span class="MATH">1<img src="Heliport_files/2994img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>m</i><img src="Heliport_files/2994img2.gif" alt="$ \le$" align="middle" border="0" height="30" width="18">50</span>) and  <span class="MATH"><i>d</i></span> is a letter
+(<tt>U</tt>, <tt>R</tt>, <tt>D</tt>, <tt>L</tt>). Assuming the roof is
+drawn on the Cartesian plane, <span class="MATH"><i>m</i></span> is the length of a roof boundary segment and <span class="MATH"><i>d</i></span> is the direction of that segment as
+you travel counterclockwise around the roof. <tt>U</tt>, <tt>R</tt>, <tt>D</tt>, and <tt>L</tt> mean ``Up," ``Right," ``Down,"
+and ``Left" respectively. The
+boundary segments of the roof, which are parallel to the  <span class="MATH"><i>x</i></span> and <span class="MATH"><i>y</i></span> axes, are given in counterclockwise order. The
+starting position is the origin (0, 0).
+
+<p>
+Input for the last test case is followed by a line consisting of the number 0.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+For each test case, the output consists of a separate line containing the case number (starting with 1) and a real
+number (rounded to two digits after the decimal point) representing the radius of the heliport. Print a blank line
+between cases as shown in the sample output.
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>4
+2 R 2 U 2 L 2 D
+10
+10 R 10 U 10 L 10 U 10 R 5 U 30 L 20 D 20 R 5 D
+0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>Case Number 1 radius is: 1.00
+
+Case Number 2 radius is: 10.00
+</pre>
+
+<p>
+</p><hr><address>Prague 2003-2004</address><p><b>Tests-Setter:</b> Rujia Liu<br><b>Special Thanks:</b> Pengqi Cheng<br></p></body></html>

@@ -1,0 +1,95 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3569 - Degrees of Separation</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Degrees%20of%20Separation_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3569 - Degrees of Separation</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2005"><b>World Finals - San Antonio - Texas - 2005/2006</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3569.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3569"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3569"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+In our increasingly interconnected world, it has been speculated that
+everyone on Earth is related to everyone else by no more than six
+degrees of separation. In this problem, you must write a program to
+find the maximum degree of separation for a network of people. </p><p>
+For any two people, the degree of separation is the minimum number of
+relationships that must be traversed to connect the two people. For a
+network, the maximum degree of separation is the largest degree of
+separation between any two people in the network. If there is a pair of
+people in the network who are not connected by a chain of
+relationships, the network is disconnected. </p><p>
+As shown below, a network can be described as a set of symmetric
+relationships each of which connects two people. A line represents a
+relationship between two people. Network A illustrates a network with 2
+as the maximum degree of separation. Network B is disconnected.
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3569.eps}$
+ -->
+<img src="Degrees%20of%20Separation_files/p3569.gif" alt="\epsfbox{p3569.eps}" align="bottom" border="0" height="237" width="827">
+Network A: Max. degree of separation = 2   Network B: Disconnected
+
+</div>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input consists of data sets that describe networks of people. For each data set, the first line has two integers: <span class="MATH"><i>P</i></span> <!-- MATH
+ $(2 \le P \le 50)$
+ -->
+<span class="MATH">(2<img src="Degrees%20of%20Separation_files/3569img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>P</i><img src="Degrees%20of%20Separation_files/3569img2.png" alt="$ \le$" align="middle" border="0" height="31" width="18">50)</span>, the number of people in the network, and <span class="MATH"><i>R</i></span> <span class="MATH">(<i>R</i><img src="Degrees%20of%20Separation_files/3569img3.png" alt="$ \ge$" align="middle" border="0" height="31" width="18">1)</span>, the number of network relationships. Following that first line are <span class="MATH"><i>R</i></span>
+relationships. Each relationship consists of two strings that are names
+of people in the network who are related. Names are unique and contain
+no blank spaces. Because a person may be related to more than one other
+person, a name may appear multiple times in a data set. </p><p>
+The final test case is followed by a line containing two zeroes.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each network, display the network number followed by the maximum
+degree of separation. If the network is disconnected, display `<tt>DISCONNECTED</tt>'. Display a blank line after the output for each network. Use the format illustrated in the sample output.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>4  4 
+Ashok  Kiyoshi   Ursala  Chun   Ursala  Kiyoshi 
+Kiyoshi  Chun 
+4  2 
+Ashok  Chun   Ursala  Kiyoshi 
+6 5 
+Bubba  Cooter   Ashok  Kiyoshi   Ursala  Chun 
+Ursala  Kiyoshi   Kiyoshi  Chun 
+0  0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Network 1: 2 
+
+Network 2: DISCONNECTED 
+
+Network 3: DISCONNECTED
+</pre> 
+
+<p>
+</p><p>
+<b>Claimer:</b>
+The data used in this problem is unofficial data
+prepared by Derek Kisman. So any mistake here does not
+imply mistake in the offcial judge data. Only Derek
+Kisman is responsible for the mistakes. Report
+mistakes to dkisman@acm.org
+
+</p><hr><address>San Antonio - Texas 2005-2006</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

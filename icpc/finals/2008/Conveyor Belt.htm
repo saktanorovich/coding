@@ -1,0 +1,163 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>4120 - Conveyor Belt</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Conveyor%20Belt_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>4120 - Conveyor Belt</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2007"><b>World Finals - Banff Springs, Alberta - 2007/2008</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p4120.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4120"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4120"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+Many mechanical systems work with rotating shafts connected with
+conveyor belts. The shafts have a variety of sizes and rotate in either
+a clockwise or a counterclockwise manner. The exact way in which a belt
+will connect two shafts depends on their rotations, as shown in Figures
+1 and 2.
+</p><p>
+</p><div align="center">
+
+<!-- MATH
+ $\epsfbox{p4120a.eps}$
+ -->
+<img src="Conveyor%20Belt_files/p4120a.png" alt="\epsfbox{p4120a.eps}" align="bottom" border="0" height="205" width="1108">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+<div align="center">
+
+<!-- MATH
+ $\epsfbox{p4120b.eps}$
+ -->
+<img src="Conveyor%20Belt_files/p4120b.png" alt="\epsfbox{p4120b.eps}" align="bottom" border="0" height="316" width="1107">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+One task in setting up such mechanical systems is to link together two given shafts, subject to these constraints: 
+
+</p><p>
+
+</p><ul>
+<li>If the two shafts being connected are too far apart, the belt may
+start to vibrate chaotically when perturbed slightly. To prevent this,
+you can connect shafts only when the distance between the points where
+the belt leaves one shaft and touches the other is less than some
+distance d (the exact value of d varies depending on the type of belt).
+</li>
+<li>No belt can cross over itself, as shown in Figure 3. 
+</li>
+<li>No belt can pass through another shaft (or touch one rotating the wrong way), as shown in Figure 4. 
+</li>
+<li>The belt is not a loop; it goes in only one direction, from the
+starting shaft to the ending shaft. The starting shaft ``pushes'' the
+belt and the ending shaft ``pulls'' it. </li>
+</ul>
+
+<p>
+As an example, consider the problem of connecting shaft A to shaft D in
+Figure 5. Suppose that the distance needed to connect A to C (shown in
+blue dashed line) or to connect B to D is greater than the limit
+allowed. Then the shortest distance to connect A to D is shown in solid
+line, going from shaft A to B to C and then D. Notice that the
+connection cannot go from B to E and then D as the belt would cross
+itself.
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p4120c.eps}$
+ -->
+<img src="Conveyor%20Belt_files/p4120c.png" alt="\epsfbox{p4120c.eps}" align="bottom" border="0" height="318" width="505">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+You must write a program that calculates the minimum length of the belt to connect the two given shafts.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+The input consists of multiple test cases. Each test case starts with a line containing an integer <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(1 \le N \le 20)$
+ -->
+<span class="MATH">(1<img src="Conveyor%20Belt_files/4120img4.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>N</i><img src="Conveyor%20Belt_files/4120img4.png" alt="$ \le$" align="middle" border="0" height="31" width="18">20)</span>
+<tex2html_verbatim_mark> indicating the number of shafts, numbered from 0 to <span class="MATH"><i>N</i> - 1</span>
+<tex2html_verbatim_mark>. Starting on the next line are <span class="MATH"><i>N</i></span>
+<tex2html_verbatim_mark> four-tuples of the form <!-- MATH
+ $x \ y \ r \ s$
+ -->
+<span class="MATH"><i>x</i>&nbsp;<i>y</i>&nbsp;<i>r</i>&nbsp;<i>s</i></span>
+<tex2html_verbatim_mark>, where <span class="MATH"><i>x</i></span>
+<tex2html_verbatim_mark> and <span class="MATH"><i>y</i></span>
+<tex2html_verbatim_mark> are the integer coordinates of a shaft center, <span class="MATH"><i>r</i></span>
+<tex2html_verbatim_mark> is the integer radius of the shaft, and <span class="MATH"><i>s</i></span>
+<tex2html_verbatim_mark> is either ``<tt>C</tt>" for clockwise or ``<tt>CC</tt>" for counterclockwise <!-- MATH
+ $(0 \le x, y \le 10000$
+ -->
+<span class="MATH">(0<img src="Conveyor%20Belt_files/4120img4.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>x</i>, <i>y</i><img src="Conveyor%20Belt_files/4120img4.png" alt="$ \le$" align="middle" border="0" height="31" width="18">10000</span>
+<tex2html_verbatim_mark> and <!-- MATH
+ $0 < r \le 1000)$
+ -->
+<span class="MATH">0 &lt; <i>r</i><img src="Conveyor%20Belt_files/4120img4.png" alt="$ \le$" align="middle" border="0" height="31" width="18">1000)</span>
+<tex2html_verbatim_mark>. Positive <span class="MATH"><i>x</i></span>
+<tex2html_verbatim_mark> is right and positive <span class="MATH"><i>y</i></span>
+<tex2html_verbatim_mark> is up. The first four-tuple specifies shaft 0,
+the second one shaft 1 and so on. These four-tuples may extend over
+multiple lines, though no four-tuple will be split across two lines. No
+two shafts touch or overlap. The last line of each test case contains
+two integers <span class="MATH"><i>i</i></span>
+<tex2html_verbatim_mark> and <span class="MATH"><i>j</i></span>
+<tex2html_verbatim_mark> indicating the starting and ending shafts, followed by a floating point value <span class="MATH"><i>d</i></span>
+<tex2html_verbatim_mark> specifying the maximum distance constraint. 
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+The last test case is followed by a line containing a single zero. 
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+For each test case, print the case number (starting with 1) followed by the length of the path of minimum distance. Print `<tt>Cannot reach destination shaft</tt>' if the destination shaft cannot be reached. Use the format shown in the sample output.
+
+</p><p>
+When measuring the distance, start where the belt first leaves the
+starting shaft and end where the belt first touches the ending shaft.
+Your distance calculation must include both the length of belt between
+shafts as well as the distance the belt travels around intermediate
+shafts. Your answer should be rounded to the nearest hundredth, though
+you need not print trailing zeroes after the decimal point. </p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>5 
+24 50 14 C 93 78 20 C 118 8 15 CC 
+167 32 13 C 159 88 15 CC
+0 3 82.5 
+5 
+
+24 50 14 C 93 78 20 C 118 8 15 CC 
+167 32 13 C 159 88 15 C
+0 3 82.5 
+5
+24 50 14 C 93 78 20 C 118 8 15 CC 
+167 32 13 C 159 88 15 C
+0 3 8.5 
+0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: length = 271 
+Case 2: length = 228.23 
+Case 3: Cannot reach destination shaft
+</pre>
+
+<p>
+</p><hr><address>Banff Springs, Alberta 2007-2008</address><p><b>Tests-Setter:</b> Derek Kisman, Per Austrin<br></p></body></html>

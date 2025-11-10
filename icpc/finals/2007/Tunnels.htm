@@ -1,0 +1,102 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3811 - Tunnels</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Tunnels_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3811 - Tunnels</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2006"><b>World Finals - Tokyo - 2006/2007</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3811.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3811"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3811"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+Curses! A handsome spy has somehow escaped from your elaborate
+deathtrap, overpowered your guards, and stolen your secret world
+domination plans. Now he is running loose in your volcano base, risking
+your entire evil operation. He must be stopped before he escapes! </p><p>
+Fortunately, you are watching the spy's progress from your secret
+control room, and you have planned for just such an eventuality. Your
+base consists of a complicated network of rooms connected by
+non-intersecting tunnels. Every room has a closed-circuit camera in it
+(allowing you to track the spy wherever he goes), and every tunnel has
+a small explosive charge in it, powerful enough to permanently collapse
+it. The spy is too quick to be caught in a collapse, so you'll have to
+strategically collapse tunnels to prevent him from traveling from his
+initial room to the outside of your base. </p><p>
+Damage to your base will be expensive to repair, so you'd like to ruin
+as few tunnels as possible. Find a strategy that minimizes the number
+of tunnels you'll need to collapse, no matter how clever the spy is. To
+be safe, you'll have to assume that the spy knows all about your tunnel
+system. Your main advantage is the fact that you can collapse tunnels
+whenever you like, based on your observations as the spy moves through
+the tunnels.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input consists of several test cases. Each test case begins with a line containing integers <span class="MATH"><i>R</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(1 \le R \le 50)$
+ -->
+<span class="MATH">(1<img src="Tunnels_files/3811img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>R</i><img src="Tunnels_files/3811img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18">50)</span>
+<tex2html_verbatim_mark> and <span class="MATH"><i>T</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(1 \le T \le 1000)$
+ -->
+<span class="MATH">(1<img src="Tunnels_files/3811img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>T</i><img src="Tunnels_files/3811img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18">1000)</span>
+<tex2html_verbatim_mark>, which are the number of rooms and tunnels in your base respectively. Rooms are numbered from 1 to <span class="MATH"><i>R</i></span>
+<tex2html_verbatim_mark>. <span class="MATH"><i>T</i></span>
+<tex2html_verbatim_mark> lines follow, each with two integers <span class="MATH"><i>x</i></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>y</i></span>
+<tex2html_verbatim_mark> <!-- MATH
+ $(0 \le x,y \le R)$
+ -->
+<span class="MATH">(0<img src="Tunnels_files/3811img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>x</i>, <i>y</i><img src="Tunnels_files/3811img1.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>R</i>)</span>
+<tex2html_verbatim_mark>, which are the room numbers on either end of a
+tunnel; a 0 indicates that the tunnel connects to the outside. More
+than one tunnel may connect a pair of rooms. </tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+The spy always starts out in room 1. Input is terminated by a line containing two zeros.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, print a line containing the test case number
+(beginning with 1) followed by the minimum number of tunnels that must
+be collapsed, in the worst case. Use the sample output format and print
+a blank line after each test case.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>4 6 
+1 2 
+1 3 
+2 4 
+3 4 
+4 0 
+4 0 
+4 6 
+1 2 
+1 3 
+1 4 
+2 0 
+3 0 
+4 0 
+0 0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: 2 
+
+Case 2: 2
+</pre>
+
+<p>
+</p><hr><address>Tokyo 2006-2007</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

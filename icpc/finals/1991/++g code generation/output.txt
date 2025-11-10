@@ -1,0 +1,184 @@
+L a
+A b
+
+L A
+ST $0
+L B
+N
+ST $1
+L $0
+D $1
+
+L A
+A B
+ST $0
+L C
+A D
+ST $1
+L E
+A F
+A $1
+ST $1
+L G
+A H
+A $1
+A $0
+
+L A
+A B
+ST $0
+L C
+A D
+N
+A $0
+
+L A
+
+L A
+ST $0
+L B
+ST $1
+L C
+N
+A $1
+ST $1
+L D
+M E
+S F
+ST $2
+L $1
+D $2
+ST $1
+L $0
+D $1
+
+L A
+ST $0
+L B
+A C
+ST $1
+L D
+S E
+M F
+M $1
+ST $1
+L $0
+D $1
+
+L A
+A A
+
+L A
+ST $0
+L A
+A A
+A $0
+
+L A
+ST $0
+L A
+ST $1
+L A
+A A
+A $1
+A $0
+
+L A
+ST $0
+L B
+ST $1
+L A
+ST $2
+L B
+A A
+A $2
+A $1
+A $0
+
+L B
+ST $0
+L A
+S C
+ST $1
+L W
+M A
+N
+A $1
+N
+A $0
+
+L D
+N
+N
+
+L A
+A B
+
+L C
+S D
+
+L E
+M F
+
+L D
+D C
+
+L A
+A B
+ST $0
+L C
+A D
+ST $1
+L E
+A F
+A $1
+ST $1
+L G
+A H
+A $1
+A $0
+
+L A
+A B
+ST $0
+L C
+A D
+N
+A $0
+
+L A
+N
+ST $0
+L B
+N
+A $0
+ST $0
+L C
+N
+ST $1
+L D
+N
+A $1
+A $0
+
+L D
+M E
+S F
+
+L A
+ST $0
+L B
+N
+ST $1
+L $0
+D $1
+
+L A
+N
+ST $0
+L B
+N
+ST $1
+L $0
+D $1
+

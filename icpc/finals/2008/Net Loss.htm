@@ -1,0 +1,197 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>4124 - Net Loss</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Net%20Loss_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>4124 - Net Loss</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2007"><b>World Finals - Banff Springs, Alberta - 2007/2008</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p4124.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4124"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4124"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+Rose N. Blatt is designing an embedded neural network to place inside a
+cell phone. When trained by the phone's owner, the neural network will
+enable the user to dictate text messages in a hands-free way. The key
+idea in Rose's design is the use of complicated polynomial response
+functions in each of the nodes of the network (rather than the more
+traditional thresholding functions used in many other neural nets).
+Figure 1 shows a portion of such a neural network (the polynomials are
+not accurately graphed). </p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p4124a.eps}$
+ -->
+<img src="Net%20Loss_files/p4124a.png" alt="\epsfbox{p4124a.eps}" align="bottom" border="0" height="390" width="692">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+When Rose was ready to select her polynomials, she discovered a
+problem. Due to the limited amount of memory available, she did not
+have enough space to store all of the coefficients of the polynomials
+in her network. She has decided to use an approximation to each
+polynomial in the form of a continuous polygonal curve with two
+segments,<!-- MATH
+ $y = a_{1}x + a_{0}$
+ -->
+ <span class="MATH"><i>y</i> = <i>a</i><sub>1</sub><i>x</i> + <i>a</i><sub>0</sub></span>
+<tex2html_verbatim_mark> and <!-- MATH
+ $y = b_{1}x + b_{0}$
+ -->
+<span class="MATH"><i>y</i> = <i>b</i><sub>1</sub><i>x</i> + <i>b</i><sub>0</sub></span>
+<tex2html_verbatim_mark>. The segments meet at a point whose <span class="MATH"><i>x</i></span>
+<tex2html_verbatim_mark>-coordinate, <span class="MATH"><i>c</i></span>
+<tex2html_verbatim_mark>, is between -1 and +1. Rose wants the approximation to be the best in the sense that the distance between <span class="MATH"><i>p</i></span>
+<tex2html_verbatim_mark> and the approximation function <span class="MATH"><i>g</i></span>
+<tex2html_verbatim_mark> is minimal. We define the distance between <span class="MATH"><i>p</i></span>
+<tex2html_verbatim_mark> and <span class="MATH"><i>g</i></span>
+<tex2html_verbatim_mark> as the integral of the square of their difference:
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+</p><p><!-- MATH
+ \begin{displaymath}
+d(p,g)= \int^{1}_{-1} (p(x)-g(x))^{2}dx
+\end{displaymath}
+ -->
+</p>
+<div class="mathdisplay" align="center">
+<i>d</i> (<i>p</i>, <i>g</i>) = <img src="Net%20Loss_files/4124img2.png" alt="$\displaystyle \int^{{1}}_{{-1}}$" align="middle" border="0" height="59" width="31">(<i>p</i>(<i>x</i>) - <i>g</i>(<i>x</i>))<sup>2</sup><i>dx</i>
+</div><p>
+<tex2html_verbatim_mark></tex2html_verbatim_mark></p>
+
+<p>
+For instance, if the polynomial is <!-- MATH
+ $x^{2} - 0.2$
+ -->
+<span class="MATH"><i>x</i><sup>2</sup> - 0.2</span>
+<tex2html_verbatim_mark>, then the best polygonal approximation, with lines meeting at <span class="MATH"><i>c</i> = 0</span>
+<tex2html_verbatim_mark>, is shown in Figure 2 (the dotted line shows the graph of the polygonal approximation).
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+</p><p><!-- MATH
+ \begin{displaymath}
+g(x) \left\{ \begin{array}{cc}
+-x-0.367, & -1 \le x \le 0 \\
+x-0.367, & 0 \le x \le 1 \end{array} \right.
+\end{displaymath}
+ -->
+</p>
+<div class="mathdisplay" align="center">
+<i>g</i>(<i>x</i>)<img src="Net%20Loss_files/4124img3.png" alt="$\displaystyle \left\{\vphantom{ \begin{array}{cc}
+-x-0.367, &amp; -1 \le x \le 0 \\
+x-0.367, &amp; 0 \le x \le 1 \end{array} }\right.$" align="middle" border="0" height="65" width="19"><img src="Net%20Loss_files/4124img4.png" alt="$\displaystyle \begin{array}{cc}
+-x-0.367, &amp; -1 \le x \le 0 \\
+x-0.367, &amp; 0 \le x \le 1 \end{array}$" align="middle" border="0" height="62" width="213">
+</div><p>
+<tex2html_verbatim_mark></tex2html_verbatim_mark></p>
+
+<p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p4124b.eps}$
+ -->
+<img src="Net%20Loss_files/p4124b.png" alt="\epsfbox{p4124b.eps}" align="bottom" border="0" height="287" width="431">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+In the few bytes that are available for each node, Rose can store the values of <span class="MATH"><i>a</i><sub>1</sub></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>a</i><sub>0</sub></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>b</i><sub>1</sub></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>b</i><sub>0</sub></span>
+<tex2html_verbatim_mark>, and <span class="MATH"><i>c</i></span>
+<tex2html_verbatim_mark> as signed numbers. Fortunately Rose has a program that supplies her with a good guess for the value of <span class="MATH"><i>c</i></span>
+<tex2html_verbatim_mark>. Given this value, you are asked to help Rose find the optimal values for <span class="MATH"><i>a</i><sub>1</sub></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>a</i><sub>0</sub></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>b</i><sub>1</sub></span>
+<tex2html_verbatim_mark>, and <span class="MATH"><i>b</i><sub>0</sub></span>
+<tex2html_verbatim_mark> in the approximations to her polynomials.
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+The input file contains multiple test cases. Each test case consists of three lines. The first line contains a positive integer <span class="MATH"><i>n</i></span>
+<tex2html_verbatim_mark>, <!-- MATH
+ $1 \le n \le 10$
+ -->
+<span class="MATH">1<img src="Net%20Loss_files/4124img6.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>n</i><img src="Net%20Loss_files/4124img6.png" alt="$ \le$" align="middle" border="0" height="31" width="18">10</span>
+<tex2html_verbatim_mark>, representing the degree of the polynomial <span class="MATH"><i>p</i>(<i>x</i>)</span>
+<tex2html_verbatim_mark>. This is followed by a line containing <span class="MATH"><i>n</i> + 1</span>
+<tex2html_verbatim_mark> numbers between -1 and 1 inclusive, which are the coefficients of <span class="MATH"><i>p</i>(<i>x</i>)</span>
+<tex2html_verbatim_mark> from highest order term down to the constant
+term, expressed with at most three places after the decimal point. The
+last line for each test case contains the value for <span class="MATH"><i>c</i></span>
+<tex2html_verbatim_mark>, <!-- MATH
+ $-1 < c < 1$
+ -->
+<span class="MATH">-1 &lt; <i>c</i> &lt; 1</span>
+<tex2html_verbatim_mark>, expressed with at most three places after the decimal point. 
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+A line containing the integer zero follows the last test case. 
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+For each test case, print the case number (beginning with 1) and the
+four optimal values, displaying each with exactly three places after
+the decimal point. The first and second values are the parameters <span class="MATH"><i>a</i><sub>1</sub></span>
+<tex2html_verbatim_mark> and <span class="MATH"><i>a</i><sub>0</sub></span>
+<tex2html_verbatim_mark> of the line segment <!-- MATH
+ $y = a_{1}x + a_{0}$
+ -->
+<span class="MATH"><i>y</i> = <i>a</i><sub>1</sub><i>x</i> + <i>a</i><sub>0</sub></span>
+<tex2html_verbatim_mark> defining <span class="MATH"><i>g</i></span>
+<tex2html_verbatim_mark> in the range <!-- MATH
+ $-1 \le x \le c$
+ -->
+<span class="MATH">-1<img src="Net%20Loss_files/4124img6.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>x</i><img src="Net%20Loss_files/4124img6.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>c</i></span>
+<tex2html_verbatim_mark>. The third and fourth values are the parameters <span class="MATH"><i>b</i><sub>1</sub></span>
+<tex2html_verbatim_mark> and <span class="MATH"><i>b</i><sub>0</sub></span>
+<tex2html_verbatim_mark> of the line segment <!-- MATH
+ $y = b_{1}x + b_{0}$
+ -->
+<span class="MATH"><i>y</i> = <i>b</i><sub>1</sub><i>x</i> + <i>b</i><sub>0</sub></span>
+<tex2html_verbatim_mark> defining <span class="MATH"><i>g</i></span>
+<tex2html_verbatim_mark> in the range <!-- MATH
+ $c \le x \le 1$
+ -->
+<span class="MATH"><i>c</i><img src="Net%20Loss_files/4124img6.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>x</i><img src="Net%20Loss_files/4124img6.png" alt="$ \le$" align="middle" border="0" height="31" width="18">1</span>
+<tex2html_verbatim_mark>. The distance <span class="MATH"><i>d</i> (<i>p</i>, <i>g</i>)</span>
+<tex2html_verbatim_mark> between <span class="MATH"><i>p</i></span>
+<tex2html_verbatim_mark> and <span class="MATH"><i>g</i></span>
+<tex2html_verbatim_mark> (as defined earlier) should be the minimum over all such choices for <span class="MATH"><i>a</i><sub>1</sub></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>a</i><sub>0</sub></span>
+<tex2html_verbatim_mark>, <span class="MATH"><i>b</i><sub>1</sub></span>
+<tex2html_verbatim_mark>, and <span class="MATH"><i>b</i><sub>0</sub></span>
+<tex2html_verbatim_mark>.
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>2 
+1.0 0.0 -0.2 
+0.0 
+3 
+1 0 -1 0 
+0.707 
+0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: -1.000 -0.367 1.000 -0.367 
+Case 2: -0.499 -0.036 1.198 -1.236
+</pre>
+
+<p>
+</p><hr><address>Banff Springs, Alberta 2007-2008</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

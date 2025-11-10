@@ -1,0 +1,86 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3564 - Bipartite Numbers</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Bipartite%20Numbers_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3564 - Bipartite Numbers</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2005"><b>World Finals - San Antonio - Texas - 2005/2006</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3564.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3564"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3564"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+The executive officers of the company where you work want to send each
+other encrypted messages. Rather than use off-the-shelf encryption
+software such as PGP, they have tasked the IT staff with handling the
+encryption problem. The IT staff decided on a solution that requires
+``public" and ``private" integer keys. The idea is that everyone can
+see your public key, but only you know your private key. </p><p>
+Your best friend in the company is a wonderful person but a
+not-so-wonderful programmer. He has created a publicprivate key scheme
+as follows. A public key can be any positive integer. The corresponding
+private key is the smallest bipartite number that is greater than and a
+multiple of the public key. </p><p>
+A bipartite number is any positive integer that contains exactly 2 distinct decimal digits <span class="MATH"><i>s</i></span> and <span class="MATH"><i>t</i></span> such that <span class="MATH"><i>s</i></span> is not 0 and all occurrences of <span class="MATH"><i>s</i></span> precede all occurrences of <span class="MATH"><i>t</i></span>. For example 44444411 is bipartite (<span class="MATH"><i>s</i></span> is 4 and <span class="MATH"><i>t</i></span> is 1), So are 41, 10000000, and 5555556. However, neither 4444114 nor 44444 are bipartite. 
+
+</p><p>
+Notice that the large bipartite number 88888888888800000 can be nicely
+described as 12 8's followed by 5 0's. You can express any bipartite
+number using four numbers: <span class="MATH"><i>m</i></span> <span class="MATH"><i>s</i></span> <span class="MATH"><i>n</i></span> <span class="MATH"><i>t</i></span>. The numbers <span class="MATH"><i>s</i></span> and <span class="MATH"><i>t</i></span> are the leading and trailing digits as described above, <span class="MATH"><i>m</i></span> is the number of times the digit <span class="MATH"><i>s</i></span> appears in the bipartite number, and <span class="MATH"><i>n</i></span> is the number of times the digit <span class="MATH"><i>t</i></span> appears. 
+
+</p><p>
+The trouble with your friend's scheme is that it is not too difficult
+to compute a private key if you know the public key. You need to
+convince your friend that his public-private key scheme is inadequate
+before he loses his job over his bad decision! You must write a program
+that takes public keys as input and displays the corresponding private
+keys.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>The input consists of several test cases. Each test case is on a
+separate line, and it consists of a single public key in the range<!-- MATH
+ $1 \ldots 99999$
+ -->
+ <span class="MATH">1...99999</span>. 
+
+</p><p>
+The last case is followed by a line containing the integer zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, display a line consisting of the public key, a colon, then 4 integers <span class="MATH"><i>m</i></span> <span class="MATH"><i>s</i></span> <span class="MATH"><i>n</i></span> <span class="MATH"><i>t</i></span> where <span class="MATH"><i>m</i></span>, <span class="MATH"><i>n</i></span>, <span class="MATH"><i>s</i></span>, and <span class="MATH"><i>t</i></span> are as described above.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>125 
+17502 
+2005 
+0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>125: 1 5 2 0 
+17502: 4 7 4 8 
+2005: 3 2 3 5
+</pre> 
+
+<p>
+</p><p>
+<b>Claimer:</b>
+The data used in this problem is unofficial data
+prepared by Derek Kisman. So any mistake here does not
+imply mistake in the offcial judge data. Only Derek
+Kisman is responsible for the mistakes. Report
+mistakes to dkisman@acm.org
+
+</p><hr><address>San Antonio - Texas 2005-2006</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

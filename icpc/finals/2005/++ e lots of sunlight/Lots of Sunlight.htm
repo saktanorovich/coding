@@ -1,0 +1,119 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3273 - Lots of Sunlight</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Lots%20of%20Sunlight_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3273 - Lots of Sunlight</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2004"><b>World Finals - Shanghai - 2004/2005</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3273.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3273"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3273"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+The Apartment Construction Management (ACM) has several new high-rise apartment buildings in suburban 
+Shanghai. With the booming economy, ACM expects a considerable profit on apartment leases. Because their 
+apartments receive more direct sunlight, the company claims that these are nicer than others in the area. No other 
+buildings obstruct the sunlight path to apartments in ACM's tall buildings. 
+
+</p><p>
+
+</p><p>
+<br>
+ACM wants to verify this claim by telling potential residents exactly how much sunlight a given apartment receives.
+To offer customers a representative sample of sunlight hours, the company wants to advertise the sunlight hours for 
+April 6, 2005. On that day in Shanghai, the sun rises at 5:37 am, and sets at 6:17 pm. 
+
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3273.eps}$
+ -->
+<img src="Lots%20of%20Sunlight_files/p3273.jpg" alt="\epsfbox{p3273.eps}" align="bottom" border="0">
+</div>
+
+<p>
+As shown above, apartments are in a series of buildings aligned east to west. The last two digits of the apartment
+number identify the building, starting with 01 for the east-most building. The other digits encode the apartment floor,
+with 1 as the ground floor.
+
+</p><p>
+
+</p><p>
+<br>
+The sun rises in the east and travels at a constant radial speed across the sky, until setting in the west. The only
+shadows are created by buildings (i.e. each building can cast a shadow on one or more other buildings). An
+apartment is considered to receive sunlight when either its eastern or western exterior wall is fully covered in
+sunlight or when the sun is directly overhead.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input file contains a series of descriptions of apartment complexes. Each description starts with a line containing
+a single integer <span class="MATH"><i>n</i></span> <!-- MATH
+ $(1 \le n < 100)$
+ -->
+<span class="MATH">(1<img src="Lots%20of%20Sunlight_files/3273img2.png" alt="$ \le$" align="middle" border="0" height="30" width="18"><i>n</i> &lt; 100)</span> that is the number of apartment buildings in the complex. The next line has two
+integers <span class="MATH"><i>w</i></span>, the width (in east-west direction), and <span class="MATH"><i>h</i></span>, each apartment's height in meters. Next is a list of integers
+<span class="MATH"><i>m</i>(1)</span>, <span class="MATH"><i>d</i> (1)</span>, <span class="MATH"><i>m</i>(2)</span>, <span class="MATH"><i>d</i> (2)</span>, <span class="MATH">...</span>, <span class="MATH"><i>d</i> (<i>n</i> - 1)</span>, <span class="MATH"><i>m</i>(<i>n</i>)</span>, where <span class="MATH"><i>m</i>(<i>i</i>)</span> is the number of apartments in apartment building
+<span class="MATH"><i>i</i></span>, and <span class="MATH"><i>d</i> (<i>i</i>)</span> is the distance, in meters, between the apartment building <span class="MATH"><i>i</i></span> and apartment building <span class="MATH"><i>i</i> + 1</span>.
+
+</p><p>
+
+</p><p>
+<br>
+The apartment complex description is followed by an integer list of apartments to query for sunlight hours and is
+terminated by a zero. The input file is terminated by a line consisting of the integer zero.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each apartment complex description, output its number in the sequence of descriptions. Then for each query,
+output the corresponding sunlight hours, using the 24-hour time format. Truncate all times down to the nearest
+second. If the query refers to an apartment that does not exist, indicate that the apartment does not exist. Follow the
+format shown in the sample output.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>3
+6 4
+5 6 3 3 4
+302 401 601 303 0
+4
+5 3
+4 5 7 8 5 4 3
+101 302 503 0
+0
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Apartment Complex: 1
+
+Apartment 302: 10:04:50 - 13:23:47
+
+Apartment 401: 05:37:00 - 17:13:57
+
+Apartment 601: Does not exist
+
+Apartment 303: 09:21:19 - 18:17:00
+
+Apartment Complex: 2
+
+Apartment 101: 05:37:00 - 12:53:32
+
+Apartment 302: 09:08:55 - 14:52:47
+
+Apartment 503: 09:01:12 - 18:17:00
+</pre>
+
+<p>
+</p><hr><address>Shanghai 2004-2005</address><p></p></body></html>

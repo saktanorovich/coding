@@ -1,0 +1,66 @@
+.breadcrumb span {
+	padding-top: 15px;
+}
+.copyright {
+	padding-top: 29px;
+}
+.footer_div {
+	padding-top: 31px;
+}
+.news_block {
+	padding-top: 21px;
+}
+.news h1 {
+	padding: 26px 0px 4px;
+}
+.line_i {
+	padding: 4px 0px 15px 19px;
+}
+.logo_footer {
+	
+}
+.news h1 {
+	margin-left: -1px;
+}
+.news_block h5 {
+	padding: 0px 0px 2px;
+}
+.bottom_menu {
+	padding-top: 16px;
+}
+.b_footer.service_block {
+	padding-top: 0px;
+}
+.archive_link {
+	margin: 3px 0px 7px;
+}
+.archive_link:link {
+	margin: 3px 0px 7px;
+}
+.archive_link:visited {
+	margin: 3px 0px 7px;
+}
+.archive_link:hover {
+	margin: 3px 0px 7px;
+}
+.content h1 {
+	margin-top: 1px;
+}
+.last.archive_link {
+	padding-bottom: 0px; margin-bottom: 0px;
+}
+.pt20.archive_link {
+	margin-top: 20px;
+}
+.right_menu p {
+	padding-bottom: 12px;
+}
+.checkbox input {
+	padding-top: 1px; vertical-align: middle;
+}
+div.textarea_w.warning_border {
+	height: 120px;
+}
+div.textarea_w.no_warrning {
+	height: 120px;
+}

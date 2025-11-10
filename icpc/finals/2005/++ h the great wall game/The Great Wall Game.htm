@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0061)http://acm.uva.es/archive/nuevoportal/data/problem.php?p=3276 -->
+<HTML><HEAD><TITLE>3276 - The Great Wall Game</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>
+<TABLE cellSpacing=0 cellPadding=3 align=center border=1>
+  <TBODY>
+  <TR vAlign=center>
+    <TD vAlign=center align=middle rowSpan=2><FONT color=#0000a0 
+      size=5><B><IMG src="The Great Wall Game_files/icono.gif"></B></FONT></TD>
+    <TD align=middle width=500 colSpan=5><FONT color=#0000a0 size=5><B>3276 - 
+      The Great Wall Game</B></FONT><BR><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2004"><B>World 
+      Finals - Shanghai - 2004/2005</B></A></FONT></TD></TR>
+  <TR vAlign=center>
+    <TD align=middle width=100><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3276.pdf"><B>PDF</B></A></TD>
+    <TD align=middle width=100><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3276.ps.gz"><B>PostScript</B></A></TD>
+    <TD align=middle width=100><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3276"><B>Submit</B></A></TD>
+    <TD width=100>&nbsp;</TD>
+    <TD align=middle width=100><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3276"><B>Ranking</B></A></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+<P>Hua and Shen have invented a simple solitaire board game that they call ``The 
+Great Wall Game." The game is played with <SPAN class=MATH><I>n</I></SPAN> 
+stones on an <!-- MATH
+ $n \times n$
+ --><SPAN 
+class=MATH><I>n</I>&#215;<I>n</I></SPAN> grid. The stones are placed at random in the 
+squares of the grid, at most one stone per square. In a single move, any single 
+stone can move into an unoccupied location one unit horizontally or vertically 
+in the grid. The goal of the puzzle is to create a ``wall," i.e., to line up all 
+<SPAN class=MATH><I>n</I></SPAN> stones in a straight line either horizontally, 
+vertically, or diagonally using the fewest number of moves. An example for the 
+case <SPAN class=MATH><I>n</I> = 5</SPAN> is shown in Figure 1(a). In Figure 
+1(b) it is shown that with six moves we can line all the stones up diagonally. 
+No smaller number of moves suffices to create a line of five stones. (However, 
+there are other solutions using six moves, e.g., we can line up all five stones 
+in the third column using six moves.) 
+<P>
+<DIV align=center><!-- MATH
+ $\epsfbox{p3276.eps}$
+ --><IMG 
+alt=\epsfbox{p3276.eps} src="The Great Wall Game_files/p3276.jpg" align=bottom 
+border=0> </DIV>
+<P>
+<DIV align=center>Figure 1. Starting board (a) and a 6-move solution (b) for 
+<SPAN class=MATH><I>n</I> = 5</SPAN> </DIV>
+<P>There is just one problem - Hua and Shen have no idea what the minimum number 
+of moves is for any given starting board. They would like you to write a program 
+that can take any starting configuration and determine the fewest number of 
+moves needed to create a wall. 
+<P>
+<H2><FONT color=#ff0000 size=4><A 
+name=SECTION0001001000000000000000>Input</A>&nbsp;</FONT> </H2>
+<P>The input consists of multiple cases. Each case begins with a line containing 
+an integer <SPAN class=MATH><I>n</I></SPAN>, 
+<!-- MATH
+ $1 \le n \le 15$
+ --><SPAN class=MATH>1<IMG height=30 alt="$ \le$" 
+src="The Great Wall Game_files/3276img2.png" width=18 align=middle 
+border=0><I>n</I><IMG height=30 alt="$ \le$" 
+src="The Great Wall Game_files/3276img2.png" width=18 align=middle 
+border=0>15</SPAN>. The next line contains the row and column numbers of the 
+first stone, followed by the row and column numbers of the second stone, and so 
+on. Rows and columns are numbered as in the above diagram. The input data for 
+the last case will be followed by a line containing a single zero. 
+<P>
+<H2><FONT color=#ff0000 size=4><A 
+name=SECTION0001002000000000000000>Output</A>&nbsp;</FONT> </H2>
+<P>For each input case, display the case number 
+<!-- MATH
+ $(1, 2, \dots)$
+ --><SPAN class=MATH>(1, 2,...)</SPAN> followed by 
+the minimum number of moves needed to line up the <SPAN 
+class=MATH><I>n</I></SPAN> stones into a straight-line wall. Follow the format 
+shown in the sample output. Print a blank line after each case. 
+<P>
+<H2><FONT color=#ff0000 size=4><A name=SECTION0001003000000000000000>Sample 
+Input</A>&nbsp;</FONT> </H2>
+<P><PRE>5                                                                
+1 2 2 4 3 4 5 1 5 3                                             
+2                                                                
+1 1 1 2                                                         
+3                                                                
+3 1 1 2 2 2                                                       
+0
+</PRE>
+<P>
+<H2><FONT color=#ff0000 size=4><A name=SECTION0001004000000000000000>Sample 
+Output</A>&nbsp;</FONT> </H2>
+<P><PRE>Board 1: 6 moves required.
+  
+Board 2: 0 moves required.
+  
+Board 3: 1 moves required.
+</PRE>
+<P>
+<HR>
+
+<ADDRESS>Shanghai 2004-2005</ADDRESS>
+<P></P></BODY></HTML>

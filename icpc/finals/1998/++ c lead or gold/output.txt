@@ -1,0 +1,317 @@
+Mixture 1
+Possible
+
+Mixture 2
+Possible
+
+Mixture 3
+Possible
+
+Mixture 4
+Possible
+
+Mixture 5
+Possible
+
+Mixture 6
+Impossible
+
+Mixture 7
+Possible
+
+Mixture 8
+Possible
+
+Mixture 9
+Possible
+
+Mixture 10
+Possible
+
+Mixture 11
+Possible
+
+Mixture 12
+Possible
+
+Mixture 13
+Possible
+
+Mixture 14
+Possible
+
+Mixture 15
+Possible
+
+Mixture 16
+Possible
+
+Mixture 17
+Possible
+
+Mixture 18
+Possible
+
+Mixture 19
+Possible
+
+Mixture 20
+Possible
+
+Mixture 21
+Possible
+
+Mixture 22
+Possible
+
+Mixture 23
+Possible
+
+Mixture 24
+Possible
+
+Mixture 25
+Possible
+
+Mixture 26
+Impossible
+
+Mixture 27
+Possible
+
+Mixture 28
+Possible
+
+Mixture 29
+Possible
+
+Mixture 30
+Possible
+
+Mixture 31
+Possible
+
+Mixture 32
+Possible
+
+Mixture 33
+Possible
+
+Mixture 34
+Possible
+
+Mixture 35
+Possible
+
+Mixture 36
+Possible
+
+Mixture 37
+Possible
+
+Mixture 38
+Possible
+
+Mixture 39
+Possible
+
+Mixture 40
+Possible
+
+Mixture 41
+Possible
+
+Mixture 42
+Possible
+
+Mixture 43
+Possible
+
+Mixture 44
+Impossible
+
+Mixture 45
+Possible
+
+Mixture 46
+Possible
+
+Mixture 47
+Possible
+
+Mixture 48
+Impossible
+
+Mixture 49
+Impossible
+
+Mixture 50
+Possible
+
+Mixture 51
+Possible
+
+Mixture 52
+Possible
+
+Mixture 53
+Possible
+
+Mixture 54
+Possible
+
+Mixture 55
+Possible
+
+Mixture 56
+Possible
+
+Mixture 57
+Possible
+
+Mixture 58
+Possible
+
+Mixture 59
+Possible
+
+Mixture 60
+Possible
+
+Mixture 61
+Possible
+
+Mixture 62
+Possible
+
+Mixture 63
+Possible
+
+Mixture 64
+Possible
+
+Mixture 65
+Possible
+
+Mixture 66
+Possible
+
+Mixture 67
+Possible
+
+Mixture 68
+Possible
+
+Mixture 69
+Possible
+
+Mixture 70
+Possible
+
+Mixture 71
+Possible
+
+Mixture 72
+Possible
+
+Mixture 73
+Possible
+
+Mixture 74
+Possible
+
+Mixture 75
+Possible
+
+Mixture 76
+Possible
+
+Mixture 77
+Possible
+
+Mixture 78
+Possible
+
+Mixture 79
+Possible
+
+Mixture 80
+Impossible
+
+Mixture 81
+Possible
+
+Mixture 82
+Possible
+
+Mixture 83
+Possible
+
+Mixture 84
+Possible
+
+Mixture 85
+Possible
+
+Mixture 86
+Possible
+
+Mixture 87
+Possible
+
+Mixture 88
+Possible
+
+Mixture 89
+Possible
+
+Mixture 90
+Possible
+
+Mixture 91
+Possible
+
+Mixture 92
+Impossible
+
+Mixture 93
+Possible
+
+Mixture 94
+Possible
+
+Mixture 95
+Possible
+
+Mixture 96
+Possible
+
+Mixture 97
+Possible
+
+Mixture 98
+Possible
+
+Mixture 99
+Impossible
+
+Mixture 100
+Impossible
+
+Mixture 101
+Possible
+
+Mixture 102
+Possible
+
+Mixture 103
+Possible
+
+Mixture 104
+Impossible
+
+Mixture 105
+Impossible
+
+Mixture 106
+Possible

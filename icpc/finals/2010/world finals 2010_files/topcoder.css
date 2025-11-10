@@ -1,0 +1,465 @@
+* {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+HTML {
+	WIDTH: 100%
+}
+BODY {
+	WIDTH: 100%
+}
+#main {
+	MARGIN: 0px
+}
+BODY {
+	BACKGROUND: #000; COLOR: #fff
+}
+BODY {
+	FONT: 12px arial
+}
+P {
+	FONT: 12px arial
+}
+TD {
+	FONT: 12px arial
+}
+TR {
+	FONT: 12px arial
+}
+TH {
+	FONT: 12px arial
+}
+OL {
+	FONT: 12px arial
+}
+UL {
+	FONT: 12px arial
+}
+FORM {
+	DISPLAY: inline
+}
+DFN {
+	DISPLAY: block; FONT: 9px sans-serif
+}
+A:link {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.titlebar A:link {
+	COLOR: #fff
+}
+.titlebar A:visited {
+	COLOR: #fff
+}
+.titlebar A:active {
+	COLOR: #fff
+}
+.titlebar A:hover {
+	COLOR: #ff0
+}
+INPUT {
+	BORDER-BOTTOM: #666 1px solid; BORDER-LEFT: #666 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: 12px arial; BACKGROUND: #222; COLOR: #fff; BORDER-TOP: #666 1px solid; BORDER-RIGHT: #666 1px solid; PADDING-TOP: 0px
+}
+SELECT {
+	BORDER-BOTTOM: #666 1px solid; BORDER-LEFT: #666 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: 12px arial; BACKGROUND: #222; COLOR: #fff; BORDER-TOP: #666 1px solid; BORDER-RIGHT: #666 1px solid; PADDING-TOP: 0px
+}
+SELECT {
+	BACKGROUND: #000
+}
+.button {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #000; PADDING-TOP: 0px
+}
+TH {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; FONT: 12px arial; BACKGROUND: #333; COLOR: #cf9; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+TD.tinfo {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #fff 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BACKGROUND: #ccc; COLOR: #000000; BORDER-TOP: #fff 1px solid; BORDER-RIGHT: #000 1px solid; PADDING-TOP: 2px
+}
+.tinfo TD {
+	BORDER-BOTTOM: #000 1px solid; BORDER-LEFT: #fff 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BACKGROUND: #ccc; COLOR: #000000; BORDER-TOP: #fff 1px solid; BORDER-RIGHT: #000 1px solid; PADDING-TOP: 2px
+}
+.container {
+	TEXT-ALIGN: left; MARGIN: 0px; WIDTH: 900px
+}
+.tmain {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; MARGIN: 0px; BACKGROUND: #333; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.titlebar {
+	BORDER-BOTTOM: medium none; FILTER: none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT: bold small-caps 13px tahoma; BACKGROUND: #333; HEIGHT: 21px; COLOR: #cf9; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+#showtimes {
+	HEIGHT: 15px; VERTICAL-ALIGN: bottom
+}
+.ac {
+	TEXT-ALIGN: center; COLOR: darkgreen; FONT-WEIGHT: bold
+}
+.re {
+	TEXT-ALIGN: center; COLOR: darkred; FONT-WEIGHT: bold
+}
+.emp {
+	TEXT-ALIGN: center; COLOR: black; FONT-WEIGHT: bold
+}
+.status1 {
+	TEXT-TRANSFORM: uppercase; COLOR: darkblue; FONT-WEIGHT: bold
+}
+.status2 {
+	TEXT-TRANSFORM: uppercase; COLOR: darkgreen; FONT-WEIGHT: bold
+}
+.status3 {
+	TEXT-TRANSFORM: uppercase; COLOR: #a0a000; FONT-WEIGHT: bold
+}
+.status4 {
+	TEXT-TRANSFORM: uppercase; COLOR: darkred; FONT-WEIGHT: bold
+}
+.load {
+	COLOR: #808080
+}
+.msg1 {
+	BORDER-BOTTOM: 1px outset; BORDER-LEFT: 1px outset; BORDER-COLLAPSE: collapse; COLOR: #001f30; BORDER-TOP: 1px outset; BORDER-RIGHT: 1px outset
+}
+.msg2 {
+	BORDER-BOTTOM: 1px outset; BORDER-LEFT: 1px outset; BORDER-COLLAPSE: collapse; COLOR: #001f30; BORDER-TOP: 1px outset; BORDER-RIGHT: 1px outset
+}
+.msg1a {
+	BORDER-BOTTOM: 1px outset; BORDER-LEFT: 1px outset; BORDER-COLLAPSE: collapse; COLOR: #001f30; BORDER-TOP: 1px outset; BORDER-RIGHT: 1px outset
+}
+.msg2a {
+	BORDER-BOTTOM: 1px outset; BORDER-LEFT: 1px outset; BORDER-COLLAPSE: collapse; COLOR: #001f30; BORDER-TOP: 1px outset; BORDER-RIGHT: 1px outset
+}
+.alt1 {
+	BACKGROUND: #eeeeee; COLOR: #001f30
+}
+.alt2 {
+	BACKGROUND: #f6f6f6; COLOR: #001f30
+}
+.alt1a {
+	BACKGROUND: #c8e8f8; COLOR: #001f30
+}
+.alt2a {
+	BACKGROUND: #d0f0ff; COLOR: #001f30
+}
+.altmy {
+	BACKGROUND: #ffc0ff; COLOR: #001f30
+}
+TD.alt1 {
+	BACKGROUND: #eeeeee; COLOR: #001f30
+}
+.navlinks {
+	MARGIN: 0px auto
+}
+.navlinks TD {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.navlinks A {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; DISPLAY: block; FONT: bold small-caps 11px verdana; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.navlinks A:hover {
+	BACKGROUND: #000; COLOR: #fff
+}
+.copy {
+	TEXT-ALIGN: right; PADDING-RIGHT: 10px; FONT: 10px verdana; COLOR: #cf9
+}
+A.zibada {
+	FONT: bold 11px arial; COLOR: #ee0000
+}
+#debug {
+	BORDER-BOTTOM: #000 1px dotted; MARGIN: 0px; WIDTH: 100%; BACKGROUND: #fff
+}
+#standings {
+	BORDER-BOTTOM: #333 1px solid; WIDTH: 100%
+}
+#standings DFN {
+	DISPLAY: none
+}
+.show_times#standings DFN {
+	DISPLAY: block
+}
+#standings TD {
+	HEIGHT: 20px
+}
+.show_times#standings TD {
+	HEIGHT: 27px
+}
+#archive .alt1 {
+	HEIGHT: 20px
+}
+#archive .alt2 {
+	HEIGHT: 20px
+}
+#archive .alt1a {
+	HEIGHT: 20px
+}
+#archive .alt2a {
+	HEIGHT: 20px
+}
+.tinfo LABEL {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 10px; PADDING-TOP: 0px
+}
+#standings .tc_name {
+	DISPLAY: inline
+}
+#standings .name {
+	DISPLAY: inline
+}
+.alt1 {
+	BACKGROUND: #000; COLOR: #fff
+}
+.alt2 {
+	BACKGROUND: #000; COLOR: #fff
+}
+.alt1a {
+	BACKGROUND: #000; COLOR: #fff
+}
+.alt2a {
+	BACKGROUND: #000; COLOR: #fff
+}
+.altmy {
+	BACKGROUND: #003; COLOR: #fff
+}
+#standings TD {
+	FONT-SIZE: 12px
+}
+#standings TH {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; FONT: 12px arial; BACKGROUND: #333; COLOR: #cf9; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.tinfo TD {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; FONT: 12px arial; BACKGROUND: #222; COLOR: #cf9; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.status1 {
+	COLOR: #66f
+}
+.status2 {
+	COLOR: #0f0
+}
+.status3 {
+	COLOR: #ff0
+}
+.status4 {
+	COLOR: #f00
+}
+.ac {
+	COLOR: #0f0
+}
+.last5.ac {
+	BACKGROUND: #030
+}
+.last10.ac {
+	BACKGROUND: #020
+}
+.last15.ac {
+	BACKGROUND: #010
+}
+.re {
+	FONT: italic 12px arial; COLOR: #f00
+}
+.emp {
+	COLOR: #aaa
+}
+DFN {
+	FONT: bold 10px arial; LETTER-SPACING: -0.7px
+}
+.coderTextRed {
+	FONT-WEIGHT: bold
+}
+.coderTextYellow {
+	FONT-WEIGHT: bold
+}
+.coderTextBlue {
+	FONT-WEIGHT: bold
+}
+.coderTextGreen {
+	FONT-WEIGHT: bold
+}
+.coderTextGray {
+	FONT-WEIGHT: bold
+}
+.coderTextOrange {
+	FONT-WEIGHT: bold
+}
+.coderTextWhite {
+	FONT-WEIGHT: bold
+}
+.coderTextBlack {
+	FONT-WEIGHT: bold
+}
+.coderTextOrange {
+	COLOR: #ff9900
+}
+.coderTextOrange:link {
+	COLOR: #ff9900
+}
+.coderTextOrange:visited {
+	COLOR: #ff9900
+}
+.coderTextOrange:hover {
+	COLOR: #ff9900
+}
+.coderTextOrange:active {
+	COLOR: #ff9900
+}
+.coderTextRed {
+	COLOR: #ee0000
+}
+.coderTextRed:link {
+	COLOR: #ee0000
+}
+.coderTextRed:visited {
+	COLOR: #ee0000
+}
+.coderTextRed:hover {
+	COLOR: #ee0000
+}
+.coderTextRed:active {
+	COLOR: #ee0000
+}
+.coderTextYellow {
+	COLOR: #ddcc00
+}
+.coderTextYellow:link {
+	COLOR: #ddcc00
+}
+.coderTextYellow:visited {
+	COLOR: #ddcc00
+}
+.coderTextYellow:hover {
+	COLOR: #ddcc00
+}
+.coderTextYellow:active {
+	COLOR: #ddcc00
+}
+.coderTextBlue {
+	COLOR: #6666ff
+}
+.coderTextBlue:link {
+	COLOR: #6666ff
+}
+.coderTextBlue:visited {
+	COLOR: #6666ff
+}
+.coderTextBlue:hover {
+	COLOR: #6666ff
+}
+.coderTextBlue:active {
+	COLOR: #6666ff
+}
+.coderTextGreen {
+	COLOR: #00a900
+}
+.coderTextGreen:link {
+	COLOR: #00a900
+}
+.coderTextGreen:visited {
+	COLOR: #00a900
+}
+.coderTextGreen:hover {
+	COLOR: #00a900
+}
+.coderTextGreen:active {
+	COLOR: #00a900
+}
+.coderTextGray {
+	COLOR: #999999
+}
+.coderTextGray:link {
+	COLOR: #999999
+}
+.coderTextGray:visited {
+	COLOR: #999999
+}
+.coderTextGray:hover {
+	COLOR: #999999
+}
+.coderTextGray:active {
+	COLOR: #999999
+}
+.coderTextWhite {
+	COLOR: #ffffff
+}
+.coderTextWhite:link {
+	COLOR: #ffffff
+}
+.coderTextWhite:visited {
+	COLOR: #ffffff
+}
+.coderTextWhite:hover {
+	COLOR: #ffffff
+}
+.coderTextWhite:active {
+	COLOR: #ffffff
+}
+.coderTextBlack {
+	COLOR: #ffffff
+}
+.coderTextBlack:link {
+	COLOR: #ffffff
+}
+.coderTextBlack:visited {
+	COLOR: #ffffff
+}
+.coderTextBlack:hover {
+	COLOR: #ffffff
+}
+.coderTextBlack:active {
+	COLOR: #ffffff
+}
+OPTION {
+	PADDING-RIGHT: 10px
+}
+.frozen#standings .alt1 {
+	BACKGROUND: #000018; COLOR: #ccf
+}
+.frozen#standings .alt2 {
+	BACKGROUND: #000018; COLOR: #ccf
+}
+.frozen#standings .alt1a {
+	BACKGROUND: #000018; COLOR: #ccf
+}
+.frozen#standings .alt2a {
+	BACKGROUND: #000018; COLOR: #ccf
+}
+.unk {
+	TEXT-ALIGN: center; COLOR: #aaa000; FONT-WEIGHT: bold
+}
+.error {
+	BORDER-BOTTOM: medium none; TEXT-ALIGN: center; FILTER: none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT: bold small-caps 13px tahoma; BACKGROUND: #333; HEIGHT: 21px; COLOR: #f00; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+#announce {
+	DISPLAY: none
+}
+#history TD {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; HEIGHT: 20px; PADDING-TOP: 0px
+}
+#chat TD {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; HEIGHT: 20px; PADDING-TOP: 0px
+}
+#history TH {
+	TEXT-ALIGN: left
+}
+#chat TH {
+	TEXT-ALIGN: left
+}
+#chat_messages {
+	MAX-HEIGHT: 200px; OVERFLOW: auto
+}
+#chat_username {
+	BACKGROUND: #000
+}
+#chat_message {
+	BACKGROUND: #000
+}
+#chat FORM {
+	WIDTH: 100%; DISPLAY: block; BACKGROUND: #222
+}
+#chat FORM SPAN {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 30px; FLOAT: right; COLOR: #cf9; FONT-SIZE: 11px; PADDING-TOP: 1px
+}
+#chat_message {
+	WIDTH: 400px
+}

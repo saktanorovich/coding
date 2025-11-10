@@ -1,0 +1,174 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>4119 - Always an integer</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Always%20an%20integer_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>4119 - Always an integer</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2007"><b>World Finals - Banff Springs, Alberta - 2007/2008</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p4119.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4119"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4119"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+Combinatorics is a branch of mathematics chiefly concerned with
+counting discrete objects. For instance, how many ways can you pick two
+people out of a crowd of <span class="MATH"><i>n</i></span>
+<tex2html_verbatim_mark> people? Into how many regions can you divide a circular disk by connecting <span class="MATH"><i>n</i></span>
+<tex2html_verbatim_mark> points on its boundary with one another? How many cubes are in a pyramid with square layers ranging from <!-- MATH
+ $1 \times 1$
+ -->
+<span class="MATH">1×1</span>
+<tex2html_verbatim_mark> to <!-- MATH
+ $n \times n$
+ -->
+<span class="MATH"><i>n</i>×<i>n</i></span>
+<tex2html_verbatim_mark> cubes?
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p4119.eps}$
+ -->
+<img src="Always%20an%20integer_files/p4119.png" alt="\epsfbox{p4119.eps}" align="bottom" border="0" height="545" width="628">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+Many questions like these have answers that can be reduced to simple polynomials in <span class="MATH"><i>n</i></span>
+<tex2html_verbatim_mark>. The answer to the first question above is <span class="MATH"><i>n</i>(<i>n</i> - 1)/2</span>
+<tex2html_verbatim_mark>, or <!-- MATH
+ $(n^{\wedge}2-n)/2$
+ -->
+<span class="MATH">(<i>n</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup>2 - <i>n</i>)/2</span>
+<tex2html_verbatim_mark>. The answer to the second is <!-- MATH
+ $(n^{\wedge}4-6n^{\wedge}3+23n^{\wedge}2-18n+24)/24$
+ -->
+<span class="MATH">(<i>n</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup>4 - 6<i>n</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup>3 + 23<i>n</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup>2 - 18<i>n</i> + 24)/24</span>
+<tex2html_verbatim_mark>. The answer to the third is <!-- MATH
+ $n(n+1)(2n+1)/6$
+ -->
+<span class="MATH"><i>n</i>(<i>n</i> + 1)(2<i>n</i> + 1)/6</span>
+<tex2html_verbatim_mark>, or <!-- MATH
+ $(2n^{\wedge}3+3n^{\wedge}2+n)/6$
+ -->
+<span class="MATH">(2<i>n</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup>3 + 3<i>n</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup>2 + <i>n</i>)/6</span>
+<tex2html_verbatim_mark>. We write these polynomials in a standard
+form, as a polynomial with integer coefficients divided by a positive
+integer denominator. </tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+These polynomials are answers to questions that can have integer
+answers only. But since they have fractional coefficients, they look as
+if they could produce non-integer results! Of course, evaluating these
+particular polynomials on a positive integer always results in an
+integer. For other polynomials of similar form, this is not necessarily
+true. It can be hard to tell the two cases apart. So that, naturally,
+is your task. </p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2> 
+
+<p>
+The input consists of multiple test cases, each on a separate line. Each test case is an expression in the form <span class="MATH">(<i>P</i>)/<i>D</i></span>
+<tex2html_verbatim_mark>, where <span class="MATH"><i>P</i></span>
+<tex2html_verbatim_mark> is a polynomial with integer coefficients and <span class="MATH"><i>D</i></span>
+<tex2html_verbatim_mark> is a positive integer denominator. <span class="MATH"><i>P</i></span>
+<tex2html_verbatim_mark> is a sum of terms of the form <!-- MATH
+ $Cn^{\wedge}E$
+ -->
+<span class="MATH"><i>Cn</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup><i>E</i></span>
+<tex2html_verbatim_mark>, where the coefficient <span class="MATH"><i>C</i></span>
+<tex2html_verbatim_mark> and the exponent <span class="MATH"><i>E</i></span>
+<tex2html_verbatim_mark> satisfy the following conditions: 
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+
+</p><ol>
+<li><span class="MATH"><i>E</i></span>
+<tex2html_verbatim_mark> is an integer satisfying <!-- MATH
+ $0 \le E \le 100$
+ -->
+<span class="MATH">0<img src="Always%20an%20integer_files/4119img3.png" alt="$ \le$" align="middle" border="0" height="31" width="18"><i>E</i><img src="Always%20an%20integer_files/4119img3.png" alt="$ \le$" align="middle" border="0" height="31" width="18">100</span>
+<tex2html_verbatim_mark>. If <span class="MATH"><i>E</i></span>
+<tex2html_verbatim_mark> is 0, then <!-- MATH
+ $Cn^{\wedge}E$
+ -->
+<span class="MATH"><i>Cn</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup><i>E</i></span>
+<tex2html_verbatim_mark> is expressed as <span class="MATH"><i>C</i></span>
+<tex2html_verbatim_mark>. If <span class="MATH"><i>E</i></span>
+<tex2html_verbatim_mark> is 1, then <!-- MATH
+ $Cn^{\wedge}E$
+ -->
+<span class="MATH"><i>Cn</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup><i>E</i></span>
+<tex2html_verbatim_mark> is expressed as <span class="MATH"><i>Cn</i></span>
+<tex2html_verbatim_mark>, unless <span class="MATH"><i>C</i></span>
+<tex2html_verbatim_mark> is 1 or -1. In those instances, <!-- MATH
+ $Cn^{\wedge}E$
+ -->
+<span class="MATH"><i>Cn</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup><i>E</i></span>
+<tex2html_verbatim_mark> is expressed as <span class="MATH"><i>n</i></span>
+<tex2html_verbatim_mark> or <span class="MATH">- <i>n</i></span>
+<tex2html_verbatim_mark>. 
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></li>
+<li><span class="MATH"><i>C</i></span>
+<tex2html_verbatim_mark> is an integer. If <span class="MATH"><i>C</i></span>
+<tex2html_verbatim_mark> is 1 or -1 and <span class="MATH"><i>E</i></span>
+<tex2html_verbatim_mark> is not 0 or 1, then the <!-- MATH
+ $Cn^{\wedge}E$
+ -->
+<span class="MATH"><i>Cn</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup><i>E</i></span>
+<tex2html_verbatim_mark> will appear as <!-- MATH
+ $n^{\wedge}E$
+ -->
+<span class="MATH"><i>n</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup><i>E</i></span>
+<tex2html_verbatim_mark> or <!-- MATH
+ $-n^{\wedge}E$
+ -->
+<span class="MATH">- <i>n</i><sup><img src="Always%20an%20integer_files/4119img2.png" alt="$\scriptstyle \wedge$" align="bottom" border="0" height="14" width="14"></sup><i>E</i></span>
+<tex2html_verbatim_mark>. 
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></li>
+<li>Only non-negative <span class="MATH"><i>C</i></span>
+<tex2html_verbatim_mark> values that are not part of the first term in the polynomial are preceded by +. 
+</tex2html_verbatim_mark></li>
+<li>Exponents in consecutive terms are strictly decreasing. 
+</li>
+<li><span class="MATH"><i>C</i></span>
+<tex2html_verbatim_mark> and <span class="MATH"><i>D</i></span>
+<tex2html_verbatim_mark> fit in a 32-bit signed integer.
+</tex2html_verbatim_mark></tex2html_verbatim_mark></li>
+</ol>
+
+<p>
+See the sample input for details. 
+
+</p><p>
+Input is terminated by a line containing a single period. 
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+For each test case, print the case number (starting with 1). Then print `<tt>Always an integer</tt>' if the test case polynomial evaluates to an integer for every positive integer <span class="MATH"><i>n</i></span>
+<tex2html_verbatim_mark>. Print `<tt>Not always an integer</tt>'
+otherwise. Print the output for separate test cases on separate lines.
+Your output should follow the same format as the sample output.
+</tex2html_verbatim_mark></p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>(n^2-n)/2 
+(2n^3+3n^2+n)/6 
+(-n^14-11n+1)/3 
+.
+</pre>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2> 
+
+<p>
+</p><pre>Case 1: Always an integer 
+Case 2: Always an integer 
+Case 3: Not always an integer
+</pre>
+
+<p>
+</p><hr><address>Banff Springs, Alberta 2007-2008</address><p><b>Tests-Setter:</b> Derek Kisman, Shahriar Manzoor<br></p></body></html>

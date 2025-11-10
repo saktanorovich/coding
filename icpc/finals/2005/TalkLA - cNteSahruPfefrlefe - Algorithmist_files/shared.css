@@ -1,0 +1,624 @@
+.mw-plusminus-pos {
+	COLOR: #006400
+}
+.mw-plusminus-neg {
+	COLOR: #8b0000
+}
+.mw-plusminus-null {
+	COLOR: #aaa
+}
+SPAN.comment {
+	FONT-STYLE: italic
+}
+SPAN.changedby {
+	FONT-SIZE: 95%
+}
+.texvc {
+	unicode-bidi: embed; DIRECTION: ltr
+}
+IMG.tex {
+	VERTICAL-ALIGN: middle
+}
+SPAN.texhtml {
+	FONT-FAMILY: serif
+}
+.ontop#wikiPreview {
+	MARGIN-BOTTOM: 1em
+}
+#editform {
+	CLEAR: both
+}
+#toolbar {
+	CLEAR: both
+}
+#wpTextbox1 {
+	CLEAR: both
+}
+DIV#mw-js-message {
+	BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; PADDING-BOTTOM: 0.5em; BACKGROUND-COLOR: #fcfcfc; MARGIN: 1em 5%; PADDING-LEFT: 2.5%; PADDING-RIGHT: 2.5%; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; PADDING-TOP: 0.5em
+}
+.editsection {
+	FLOAT: right; MARGIN-LEFT: 5px
+}
+H2#filehistory {
+	CLEAR: both
+}
+TABLE.filehistory TH {
+	VERTICAL-ALIGN: top
+}
+TABLE.filehistory TD {
+	VERTICAL-ALIGN: top
+}
+TABLE.filehistory TH {
+	TEXT-ALIGN: left
+}
+TABLE.filehistory TD.mw-imagepage-filesize {
+	WHITE-SPACE: nowrap
+}
+TABLE.filehistory TH.mw-imagepage-filesize {
+	WHITE-SPACE: nowrap
+}
+TABLE.filehistory TD.filehistory-selected {
+	FONT-WEIGHT: bold
+}
+LI SPAN.deleted {
+	FONT-STYLE: italic; COLOR: #888; TEXT-DECORATION: line-through
+}
+SPAN.history-deleted {
+	FONT-STYLE: italic; COLOR: #888; TEXT-DECORATION: line-through
+}
+.not-patrolled {
+	BACKGROUND-COLOR: #ffa
+}
+.unpatrolled {
+	COLOR: red; FONT-WEIGHT: bold
+}
+DIV.patrollink {
+	TEXT-ALIGN: right; FONT-SIZE: 75%
+}
+BODY.ltr TD.mw-label {
+	TEXT-ALIGN: right
+}
+BODY.ltr TD.mw-input {
+	TEXT-ALIGN: left
+}
+BODY.ltr TD.mw-submit {
+	TEXT-ALIGN: left
+}
+BODY.rtl TD.mw-label {
+	TEXT-ALIGN: left
+}
+BODY.rtl TD.mw-input {
+	TEXT-ALIGN: right
+}
+BODY.rtl TD.mw-submit {
+	TEXT-ALIGN: right
+}
+TD.mw-label {
+	VERTICAL-ALIGN: top
+}
+.prefsection TD.mw-label {
+	WIDTH: 20%
+}
+.prefsection TABLE {
+	WIDTH: 100%
+}
+TD.mw-submit {
+	WHITE-SPACE: nowrap
+}
+TABLE.mw-htmlform-nolabel TD.mw-label {
+	WIDTH: 0px !important
+}
+BODY.rtl .thumbcaption {
+	TEXT-ALIGN: right
+}
+BODY.rtl .magnify {
+	FLOAT: left
+}
+BODY.ltr .thumbcaption {
+	TEXT-ALIGN: left
+}
+BODY.ltr .magnify {
+	FLOAT: right
+}
+.mw-hidden-cats-hidden {
+	DISPLAY: none
+}
+.catlinks-allhidden {
+	DISPLAY: none
+}
+P.mw-ipb-conveniencelinks {
+	FLOAT: right; FONT-SIZE: 90%
+}
+P.mw-protect-editreasons {
+	FLOAT: right; FONT-SIZE: 90%
+}
+P.mw-filedelete-editreasons {
+	FLOAT: right; FONT-SIZE: 90%
+}
+P.mw-delete-editreasons {
+	FLOAT: right; FONT-SIZE: 90%
+}
+P.mw-revdel-editreasons {
+	FLOAT: right; FONT-SIZE: 90%
+}
+.searchresults {
+	
+}
+.searchresults P {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 1.2em; MARGIN-LEFT: 0.4em
+}
+DIV.searchresult {
+	WIDTH: 38em; FONT-SIZE: 95%
+}
+.mw-search-results {
+	MARGIN-LEFT: 0.4em
+}
+.mw-search-results LI {
+	PADDING-BOTTOM: 1em; LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+.mw-search-results LI A {
+	FONT-SIZE: 108%
+}
+.mw-search-result-data {
+	COLOR: green; FONT-SIZE: 97%
+}
+.mw-search-formheader {
+	BORDER-BOTTOM: silver 1px solid; BORDER-LEFT: silver 1px solid; BACKGROUND-COLOR: #f3f3f3; MARGIN-TOP: 1em; BORDER-TOP: silver 1px solid; BORDER-RIGHT: silver 1px solid
+}
+.mw-search-formheader DIV.search-types {
+	PADDING-LEFT: 0.25em; FLOAT: left
+}
+.rtl .mw-search-formheader DIV.search-types {
+	FLOAT: right
+}
+.mw-search-formheader DIV.search-types UL {
+	PADDING-BOTTOM: 0px !important; LIST-STYLE-TYPE: none !important; MARGIN: 0px; PADDING-LEFT: 0px !important; PADDING-RIGHT: 0px !important; LIST-STYLE-IMAGE: none !important; PADDING-TOP: 0px !important
+}
+.mw-search-formheader DIV.search-types UL LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 0px
+}
+.mw-search-formheader DIV.search-types UL LI A {
+	PADDING-BOTTOM: 0.5em; PADDING-LEFT: 0.5em; PADDING-RIGHT: 0.5em; DISPLAY: block; PADDING-TOP: 0.5em
+}
+.mw-search-formheader DIV.search-types UL LI.current A {
+	COLOR: #333333; CURSOR: default
+}
+.mw-search-formheader DIV.search-types UL LI.current A:hover {
+	TEXT-DECORATION: none
+}
+.mw-search-formheader DIV.results-info {
+	PADDING-BOTTOM: 0.5em; PADDING-LEFT: 0.5em; PADDING-RIGHT: 0.75em; FLOAT: right; PADDING-TOP: 0.5em
+}
+.mw-search-formheader DIV.results-info UL {
+	PADDING-BOTTOM: 0px !important; LIST-STYLE-TYPE: none !important; MARGIN: 0px; PADDING-LEFT: 0px !important; PADDING-RIGHT: 0px !important; LIST-STYLE-IMAGE: none !important; PADDING-TOP: 0px !important
+}
+.mw-search-formheader DIV.results-info UL LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: right; PADDING-TOP: 0px
+}
+FIELDSET#mw-searchoptions {
+	BORDER-BOTTOM: silver 1px solid; BORDER-LEFT: silver 1px solid; PADDING-BOTTOM: 0.5em !important; BACKGROUND-COLOR: #f9f9f9; MARGIN: 0px; PADDING-LEFT: 0.75em !important; PADDING-RIGHT: 0.75em !important; BORDER-TOP: silver 0px solid; BORDER-RIGHT: silver 1px solid; PADDING-TOP: 0.5em !important
+}
+FIELDSET#mw-searchoptions LEGEND {
+	DISPLAY: none
+}
+FIELDSET#mw-searchoptions H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 0px
+}
+.rtl FIELDSET#mw-searchoptions H4 {
+	FLOAT: right
+}
+FIELDSET#mw-searchoptions DIV#mw-search-togglebox {
+	FLOAT: right
+}
+.rtl FIELDSET#mw-searchoptions DIV#mw-search-togglebox {
+	FLOAT: left
+}
+FIELDSET#mw-searchoptions DIV#mw-search-togglebox LABEL {
+	MARGIN-RIGHT: 0.25em
+}
+FIELDSET#mw-searchoptions DIV#mw-search-togglebox INPUT {
+	MARGIN-LEFT: 0.25em
+}
+FIELDSET#mw-searchoptions TABLE {
+	FLOAT: left; MARGIN-RIGHT: 3em
+}
+FIELDSET#mw-searchoptions TABLE TD {
+	PADDING-RIGHT: 1em
+}
+.rtl FIELDSET#mw-searchoptions TABLE TD {
+	PADDING-LEFT: 1em; PADDING-RIGHT: 0px
+}
+BODY.rtl FIELDSET#mw-searchoptions TABLE {
+	FLOAT: right; MARGIN-LEFT: 3em; MARGIN-RIGHT: 0px
+}
+FIELDSET#mw-searchoptions DIV.divider {
+	BORDER-BOTTOM: #dddddd 1px solid; MARGIN-BOTTOM: 0.5em; CLEAR: both; PADDING-TOP: 0.5em
+}
+TD#mw-search-menu {
+	PADDING-LEFT: 6em; FONT-SIZE: 85%
+}
+DIV#mw-search-interwiki {
+	BORDER-BOTTOM: #aaaaaa 1px solid; BORDER-LEFT: #aaaaaa 1px solid; MARGIN-TOP: 2ex; WIDTH: 18em; FLOAT: right; BORDER-TOP: #aaaaaa 1px solid; BORDER-RIGHT: #aaaaaa 1px solid
+}
+.rtl DIV#mw-search-interwiki {
+	FLOAT: left
+}
+DIV#mw-search-interwiki LI {
+	FONT-SIZE: 95%
+}
+.mw-search-interwiki-more {
+	FLOAT: right; FONT-SIZE: 90%
+}
+.rtl .mw-search-interwiki-more {
+	FLOAT: left
+}
+DIV#mw-search-interwiki-caption {
+	TEXT-ALIGN: center; FONT-SIZE: 95%; FONT-WEIGHT: bold
+}
+.mw-search-interwiki-project {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0.2em; BACKGROUND-COLOR: #ececec; PADDING-LEFT: 0.2em; PADDING-RIGHT: 0.15em; FONT-SIZE: 97%; BORDER-TOP: #bbbbbb 1px solid; PADDING-TOP: 0.15em
+}
+.rtl .mw-search-interwiki-project {
+	TEXT-ALIGN: right
+}
+SPAN.searchalttitle {
+	FONT-SIZE: 95%
+}
+DIV.searchdidyoumean {
+	MARGIN-TOP: 0.8em; COLOR: #c00; FONT-SIZE: 127%
+}
+DIV.searchdidyoumean EM {
+	FONT-WEIGHT: bold
+}
+.searchmatch {
+	FONT-WEIGHT: bold
+}
+TABLE#mw-search-top-table {
+	BACKGROUND-COLOR: transparent
+}
+TD#mw-search-togglebox {
+	TEXT-ALIGN: right
+}
+TABLE#mw-search-powertable {
+	WIDTH: 100%
+}
+FORM#powersearch {
+	CLEAR: both
+}
+.mw-userrights-disabled {
+	COLOR: #888
+}
+TABLE.mw-userrights-groups * TD {
+	PADDING-RIGHT: 1.5em
+}
+TABLE.mw-userrights-groups * TH {
+	PADDING-RIGHT: 1.5em
+}
+.os-suggest {
+	Z-INDEX: 99; BORDER-BOTTOM: #aaaaaa 1px solid; POSITION: absolute; BORDER-LEFT: #aaaaaa 1px solid; OVERFLOW-X: hidden; BACKGROUND-COLOR: window; WIDTH: 0px; FONT-SIZE: 95%; OVERFLOW: auto; BORDER-TOP: #aaaaaa 1px solid; TOP: 0px; BORDER-RIGHT: #aaaaaa 1px solid; LEFT: 0px
+}
+TABLE.os-suggest-results {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; BORDER-COLLAPSE: collapse; FONT-SIZE: 95%; BORDER-TOP: 0px; CURSOR: pointer; BORDER-RIGHT: 0px
+}
+.os-suggest-result {
+	PADDING-BOTTOM: 2px; BACKGROUND-COLOR: window; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; WHITE-SPACE: nowrap; COLOR: windowtext; PADDING-TOP: 2px
+}
+.os-suggest-result-hl {
+	PADDING-BOTTOM: 2px; BACKGROUND-COLOR: window; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; WHITE-SPACE: nowrap; COLOR: windowtext; PADDING-TOP: 2px
+}
+.os-suggest-result-hl {
+	BACKGROUND-COLOR: #4c59a6; COLOR: white
+}
+.os-suggest-result-hl-webkit {
+	BACKGROUND-COLOR: #4c59a6; COLOR: white
+}
+.os-suggest-result-hl {
+	BACKGROUND-COLOR: highlight; COLOR: highlighttext
+}
+.os-suggest-toggle {
+	POSITION: relative; FONT-SIZE: 65%; LEFT: 1ex
+}
+.os-suggest-toggle-def {
+	POSITION: absolute; VISIBILITY: hidden; FONT-SIZE: 65%; TOP: 0px; LEFT: 0px
+}
+.autocomment {
+	COLOR: gray
+}
+#pagehistory .history-user {
+	MARGIN-LEFT: 0.4em; MARGIN-RIGHT: 0.2em
+}
+#pagehistory SPAN.minor {
+	FONT-WEIGHT: bold
+}
+#pagehistory LI {
+	BORDER-BOTTOM: white 1px solid; BORDER-LEFT: white 1px solid; BORDER-TOP: white 1px solid; BORDER-RIGHT: white 1px solid
+}
+#pagehistory LI.selected {
+	BORDER-BOTTOM: #aaa 1px dashed; BORDER-LEFT: #aaa 1px dashed; BACKGROUND-COLOR: #f9f9f9; BORDER-TOP: #aaa 1px dashed; BORDER-RIGHT: #aaa 1px dashed
+}
+.newpage {
+	FONT-WEIGHT: bold
+}
+.minor {
+	FONT-WEIGHT: bold
+}
+.bot {
+	FONT-WEIGHT: bold
+}
+.mw-uctop {
+	FONT-WEIGHT: bold
+}
+TABLE.mw-listgrouprights-table TR {
+	VERTICAL-ALIGN: top
+}
+.listgrouprights-revoked {
+	TEXT-DECORATION: line-through
+}
+TD.mw-statistics-numbers {
+	TEXT-ALIGN: right
+}
+H4.mw-specialpagesgroup {
+	PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #dcdcdc; MARGIN: 0.3em 0em 0em; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; PADDING-TOP: 2px
+}
+.mw-specialpagerestricted {
+	FONT-WEIGHT: bold
+}
+#shared-image-dup {
+	FONT-STYLE: italic
+}
+#shared-image-conflict {
+	FONT-STYLE: italic
+}
+TABLE.mw-emailuser-table {
+	WIDTH: 98%
+}
+TD#mw-emailuser-sender {
+	FONT-WEIGHT: bold
+}
+TD#mw-emailuser-recipient {
+	FONT-WEIGHT: bold
+}
+TABLE.allpageslist {
+	BACKGROUND-COLOR: transparent
+}
+TABLE.mw-allpages-table-form {
+	BACKGROUND-COLOR: transparent; WIDTH: 100%
+}
+TABLE.mw-allpages-table-chunk {
+	BACKGROUND-COLOR: transparent; WIDTH: 100%
+}
+TD.mw-allpages-alphaindexline {
+	TEXT-ALIGN: right
+}
+TD.mw-allpages-nav {
+	TEXT-ALIGN: right; MARGIN-BOTTOM: 1em; FONT-SIZE: smaller
+}
+P.mw-allpages-nav {
+	TEXT-ALIGN: right; MARGIN-BOTTOM: 1em; FONT-SIZE: smaller
+}
+TABLE.mw-allpages-table-form TR {
+	VERTICAL-ALIGN: top
+}
+TABLE#mw-prefixindex-list-table {
+	BACKGROUND-COLOR: transparent; WIDTH: 98%
+}
+TABLE#mw-prefixindex-nav-table {
+	BACKGROUND-COLOR: transparent; WIDTH: 98%
+}
+TD#mw-prefixindex-nav-form {
+	TEXT-ALIGN: right; MARGIN-BOTTOM: 1em; FONT-SIZE: smaller; VERTICAL-ALIGN: top
+}
+DIV.mw-warning-with-logexcerpt {
+	BORDER-BOTTOM: #2f6fab 2px solid; BORDER-LEFT: #2f6fab 2px solid; PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; MARGIN-BOTTOM: 3px; CLEAR: both; BORDER-TOP: #2f6fab 2px solid; BORDER-RIGHT: #2f6fab 2px solid; PADDING-TOP: 3px
+}
+DIV.mw-warning-with-logexcerpt UL LI {
+	FONT-SIZE: 90%
+}
+SPAN.mw-revdelundel-link {
+	FONT-SIZE: 90%
+}
+STRONG.mw-revdelundel-link {
+	FONT-SIZE: 90%
+}
+SPAN.mw-revdelundel-hidden {
+	VISIBILITY: hidden
+}
+INPUT.mw-revdelundel-hidden {
+	VISIBILITY: hidden
+}
+TD.mw-revdel-checkbox {
+	TEXT-ALIGN: center; PADDING-RIGHT: 10px
+}
+TH.mw-revdel-checkbox {
+	TEXT-ALIGN: center; PADDING-RIGHT: 10px
+}
+A.feedlink {
+	PADDING-LEFT: 16px; BACKGROUND: url(images/feed-icon.png) no-repeat left center
+}
+.plainlinks A {
+	PADDING-BOTTOM: 0px !important; PADDING-LEFT: 0px !important; PADDING-RIGHT: 0px !important; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-TOP: 0px !important
+}
+TABLE.wikitable {
+	BORDER-BOTTOM: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; MARGIN: 1em 1em 1em 0px; BORDER-COLLAPSE: collapse; BACKGROUND: #f9f9f9; BORDER-TOP: #aaa 1px solid; BORDER-RIGHT: #aaa 1px solid
+}
+.wikitable TH {
+	BORDER-BOTTOM: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; PADDING-BOTTOM: 0.2em; PADDING-LEFT: 0.2em; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaa 1px solid; BORDER-RIGHT: #aaa 1px solid; PADDING-TOP: 0.2em
+}
+.wikitable TD {
+	BORDER-BOTTOM: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; PADDING-BOTTOM: 0.2em; PADDING-LEFT: 0.2em; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaa 1px solid; BORDER-RIGHT: #aaa 1px solid; PADDING-TOP: 0.2em
+}
+.wikitable TH {
+	TEXT-ALIGN: center; BACKGROUND: #f2f2f2
+}
+.wikitable CAPTION {
+	FONT-WEIGHT: bold
+}
+TABLE.collapsed TR.collapsable {
+	DISPLAY: none
+}
+.success {
+	COLOR: green; FONT-SIZE: larger
+}
+.error {
+	COLOR: red; FONT-SIZE: larger
+}
+.errorbox {
+	BORDER-BOTTOM: 2px solid; BORDER-LEFT: 2px solid; PADDING-BOTTOM: 0.5em; PADDING-LEFT: 1em; PADDING-RIGHT: 1em; MARGIN-BOTTOM: 2em; FLOAT: left; COLOR: #000; FONT-SIZE: larger; BORDER-TOP: 2px solid; BORDER-RIGHT: 2px solid; PADDING-TOP: 0.5em
+}
+.successbox {
+	BORDER-BOTTOM: 2px solid; BORDER-LEFT: 2px solid; PADDING-BOTTOM: 0.5em; PADDING-LEFT: 1em; PADDING-RIGHT: 1em; MARGIN-BOTTOM: 2em; FLOAT: left; COLOR: #000; FONT-SIZE: larger; BORDER-TOP: 2px solid; BORDER-RIGHT: 2px solid; PADDING-TOP: 0.5em
+}
+.errorbox {
+	BORDER-BOTTOM-COLOR: red; BACKGROUND-COLOR: #fff2f2; BORDER-TOP-COLOR: red; BORDER-RIGHT-COLOR: red; BORDER-LEFT-COLOR: red
+}
+.successbox {
+	BORDER-BOTTOM-COLOR: green; BACKGROUND-COLOR: #dfd; BORDER-TOP-COLOR: green; BORDER-RIGHT-COLOR: green; BORDER-LEFT-COLOR: green
+}
+.errorbox H2 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; MARGIN: 0px 0.5em 0px 0px; DISPLAY: inline; FONT-SIZE: 1em; BORDER-TOP: medium none; FONT-WEIGHT: bold; BORDER-RIGHT: medium none
+}
+.successbox H2 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; MARGIN: 0px 0.5em 0px 0px; DISPLAY: inline; FONT-SIZE: 1em; BORDER-TOP: medium none; FONT-WEIGHT: bold; BORDER-RIGHT: medium none
+}
+.visualClear {
+	CLEAR: both
+}
+#mw_trackbacks {
+	BORDER-BOTTOM: #bbbbff 1px solid; BORDER-LEFT: #bbbbff 1px solid; PADDING-BOTTOM: 0.2em; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 0.2em; PADDING-RIGHT: 0.2em; BORDER-TOP: #bbbbff 1px solid; BORDER-RIGHT: #bbbbff 1px solid; PADDING-TOP: 0.2em
+}
+.TablePager {
+	MIN-WIDTH: 80%
+}
+.TablePager_nav A {
+	TEXT-DECORATION: none
+}
+.TablePager {
+	BORDER-COLLAPSE: collapse
+}
+.TablePager {
+	BORDER-BOTTOM: #aaaaaa 1px solid; BORDER-LEFT: #aaaaaa 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0.15em; PADDING-RIGHT: 0.15em; BORDER-TOP: #aaaaaa 1px solid; BORDER-RIGHT: #aaaaaa 1px solid; PADDING-TOP: 0px
+}
+.TablePager TD {
+	BORDER-BOTTOM: #aaaaaa 1px solid; BORDER-LEFT: #aaaaaa 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0.15em; PADDING-RIGHT: 0.15em; BORDER-TOP: #aaaaaa 1px solid; BORDER-RIGHT: #aaaaaa 1px solid; PADDING-TOP: 0px
+}
+.TablePager TH {
+	BORDER-BOTTOM: #aaaaaa 1px solid; BORDER-LEFT: #aaaaaa 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0.15em; PADDING-RIGHT: 0.15em; BORDER-TOP: #aaaaaa 1px solid; BORDER-RIGHT: #aaaaaa 1px solid; PADDING-TOP: 0px
+}
+.TablePager TH {
+	BACKGROUND-COLOR: #eeeeff
+}
+.TablePager TD {
+	BACKGROUND-COLOR: #ffffff
+}
+.TablePager TR:hover TD {
+	BACKGROUND-COLOR: #eeeeff
+}
+.imagelist TD {
+	WHITE-SPACE: nowrap
+}
+.imagelist TH {
+	WHITE-SPACE: nowrap
+}
+.imagelist .TablePager_col_links {
+	BACKGROUND-COLOR: #eeeeff
+}
+.imagelist .TablePager_col_img_description {
+	WHITE-SPACE: normal
+}
+.imagelist TH.TablePager_sort {
+	BACKGROUND-COLOR: #ccccff
+}
+#mw-allmessagestable .allmessages-customised TD.am_default {
+	BACKGROUND-COLOR: #fcffc4
+}
+#mw-allmessagestable TR.allmessages-customised:hover TD.am_default {
+	BACKGROUND-COLOR: #faff90
+}
+#mw-allmessagestable TD.am_actual {
+	BACKGROUND-COLOR: #e2ffe2
+}
+#mw-allmessagestable TR.allmessages-customised:hover + TR.allmessages-customised TD.am_actual {
+	BACKGROUND-COLOR: #b1ffb1
+}
+UL#filetoc {
+	BORDER-BOTTOM: #aaaaaa 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #aaaaaa 1px solid; PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #f9f9f9; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; MARGIN-BOTTOM: 0.5em; MARGIN-LEFT: 0px; FONT-SIZE: 95%; BORDER-TOP: #aaaaaa 1px solid; MARGIN-RIGHT: 0px; BORDER-RIGHT: #aaaaaa 1px solid; PADDING-TOP: 5px
+}
+#filetoc LI {
+	LIST-STYLE-TYPE: none; PADDING-RIGHT: 2em; DISPLAY: inline
+}
+TABLE.mw_metadata {
+	WIDTH: 300px; MARGIN-BOTTOM: 0.5em; MARGIN-LEFT: 0.5em; FONT-SIZE: 0.8em
+}
+TABLE.mw_metadata CAPTION {
+	FONT-WEIGHT: bold
+}
+TABLE.mw_metadata TH {
+	FONT-WEIGHT: normal
+}
+TABLE.mw_metadata TD {
+	PADDING-BOTTOM: 0.1em; PADDING-LEFT: 0.1em; PADDING-RIGHT: 0.1em; PADDING-TOP: 0.1em
+}
+TABLE.mw_metadata {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-COLLAPSE: collapse; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+TABLE.mw_metadata TD {
+	BORDER-BOTTOM: #aaaaaa 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #aaaaaa 1px solid; PADDING-LEFT: 0.1em; PADDING-RIGHT: 0.1em; BORDER-TOP: #aaaaaa 1px solid; BORDER-RIGHT: #aaaaaa 1px solid
+}
+TABLE.mw_metadata TH {
+	BORDER-BOTTOM: #aaaaaa 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #aaaaaa 1px solid; PADDING-LEFT: 0.1em; PADDING-RIGHT: 0.1em; BORDER-TOP: #aaaaaa 1px solid; BORDER-RIGHT: #aaaaaa 1px solid
+}
+TABLE.mw_metadata TH {
+	BACKGROUND-COLOR: #f9f9f9
+}
+TABLE.mw_metadata TD {
+	BACKGROUND-COLOR: #fcfcfc
+}
+TABLE.gallery {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 2px; BACKGROUND-COLOR: white; MARGIN: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 2px
+}
+TABLE.gallery TR {
+	VERTICAL-ALIGN: top
+}
+TABLE.gallery TD {
+	BORDER-BOTTOM: white 2px solid; BORDER-LEFT: white 2px solid; BACKGROUND-COLOR: #f9f9f9; VERTICAL-ALIGN: top; BORDER-TOP: white 2px solid; BORDER-RIGHT: white 2px solid
+}
+TABLE.gallery CAPTION {
+	FONT-WEIGHT: bold
+}
+DIV.gallerybox {
+	MARGIN: 2px
+}
+DIV.gallerybox DIV.thumb {
+	BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #ccc 1px solid; MARGIN: 2px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+DIV.gallerytext {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; FONT-SIZE: 94%; OVERFLOW: hidden; PADDING-TOP: 2px
+}
+TABLE.mw-enhanced-rc {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-SPACING: 0; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+TD.mw-enhanced-rc {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: monospace; WHITE-SPACE: nowrap; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+#mw-addcategory-prompt {
+	DISPLAY: inline; MARGIN-LEFT: 1em
+}
+#mw-addcategory-prompt INPUT {
+	MARGIN-LEFT: 0.5em; MARGIN-RIGHT: 0.5em
+}
+.mw-remove-category {
+	BACKGROUND-IMAGE: url(images/remove.png); PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center center; PADDING-TOP: 8px
+}
+.mw-ajax-addcategory {
+	BACKGROUND-IMAGE: url(images/add.png); PADDING-LEFT: 20px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left center
+}
+.mw-ajax-loader {
+	BACKGROUND-IMAGE: url(images/ajax-loader.gif); POSITION: relative; PADDING-BOTTOM: 16px; PADDING-LEFT: 16px; PADDING-RIGHT: 16px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center center; TOP: -16px; PADDING-TOP: 16px
+}
+.mw-small-spinner {
+	BACKGROUND-IMAGE: url(images/spinner.gif); PADDING-BOTTOM: 10px !important; PADDING-LEFT: 10px !important; PADDING-RIGHT: 10px !important; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center center; MARGIN-RIGHT: 0.6em; PADDING-TOP: 10px !important
+}
+A.sortheader {
+	MARGIN: 0px 0.3em
+}

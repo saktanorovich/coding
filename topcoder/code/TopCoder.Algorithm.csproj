@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+      <TargetFramework>netcoreapp2.2</TargetFramework>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="srm\**" />
+      <Compile Remove="tccc\**" />
+      <Compile Remove="tco\**" />
+      <Compile Remove="tools\**" />
+      <EmbeddedResource Remove="srm\**" />
+      <EmbeddedResource Remove="tccc\**" />
+      <EmbeddedResource Remove="tco\**" />
+      <EmbeddedResource Remove="tools\**" />
+      <None Remove="srm\**" />
+      <None Remove="tccc\**" />
+      <None Remove="tco\**" />
+      <None Remove="tools\**" />
+      <None Remove=".editorconfig" />
+      <None Remove="topcoder.code-workspace" />
+    </ItemGroup>
+</Project>

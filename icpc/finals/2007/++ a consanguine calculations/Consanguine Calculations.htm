@@ -1,0 +1,115 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3736 - Consanguine Calculations</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Consanguine%20Calculations_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3736 - Consanguine Calculations</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2006"><b>World Finals - Tokyo - 2006/2007</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3736.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3736"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3736"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p>
+<p>
+Every person's blood has 2 markers called ABO <span class="textit">alleles</span>. Each of the markers is represented by one of three letters: <tt>A</tt>, <tt>B</tt>, or <tt>O</tt>. This gives six possible combinations of these alleles that a person can have, each of them resulting in a particular ABO <span class="textit">blood type</span> for that person.
+
+</p><p>
+
+</p><p>
+<br>
+</p><div align="center">
+<table cols="2">
+<col align="center"><col align="center">
+<tbody><tr><td align="center" nowrap="nowrap" valign="baseline">
+<span class="textit"><span class="textbf">Combination</span></span> </td><td align="center" nowrap="nowrap" valign="baseline"> <span class="textit"><span class="textbf">ABO Blood Type</span></span> </td></tr>
+<tr><td align="center" nowrap="nowrap" valign="baseline"> 
+AA  </td><td align="center" nowrap="nowrap" valign="baseline">    A  </td></tr>
+<tr><td align="center" nowrap="nowrap" valign="baseline"> 
+AB  </td><td align="center" nowrap="nowrap" valign="baseline">    AB </td></tr>
+<tr><td align="center" nowrap="nowrap" valign="baseline"> 
+AO  </td><td align="center" nowrap="nowrap" valign="baseline">    A  </td></tr>
+<tr><td align="center" nowrap="nowrap" valign="baseline"> 
+BB  </td><td align="center" nowrap="nowrap" valign="baseline">    B  </td></tr>
+<tr><td align="center" nowrap="nowrap" valign="baseline"> 
+BO  </td><td align="center" nowrap="nowrap" valign="baseline">    B  </td></tr>
+<tr><td align="center" nowrap="nowrap" valign="baseline"> 
+OO  </td><td align="center" nowrap="nowrap" valign="baseline">    O </td></tr>
+</tbody></table>
+
+</div>
+
+<p>
+
+</p><p>
+<br>
+Likewise, every person has two alleles for the blood <span class="textit">Rh factor</span>, represented by the characters <tt>+</tt> and <tt>-</tt>. Someone who is ``Rh positive" or ``Rh+" has at least one <tt>+</tt> allele, but could have two. Someone who is ``Rh negative" always has two <tt>-</tt> alleles. 
+
+</p><p>
+The blood type of a person is a combination of ABO blood type and Rh
+factor. The blood type is written by suffixing the ABO blood type with
+the <tt>+</tt> or <tt>-</tt> representing the Rh factor. Examples include <tt>A+</tt>, <tt>AB-</tt>, and <tt>O-</tt>. 
+
+</p><p>
+Blood types are inherited: each biological parent donates one ABO
+allele (randomly chosen from their two) and one Rh factor allele to
+their child. Therefore 2 ABO alleles and 2 Rh factor alleles of the
+parents determine the child's blood type. For example, if both parents
+of a child have blood type <tt>A-</tt>, then the child could have either type <tt>A-</tt> or type <tt>O-</tt> blood. A child of parents with blood types <tt>A+</tt> and <tt>B+</tt> could have any blood type. 
+
+</p><p>
+In this problem, you will be given the blood type of either both
+parents or one parent and a child; you will then determine the
+(possibly empty) set of blood types that might characterize the child
+or the other parent. </p><p>
+Note: an uppercase letter ``Oh" is used in this problem to denote blood types, <span class="textit">not</span> a digit (zero).
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+The input consists of multiple test cases. Each test case is on a
+single line in the format: the blood type of one parent, the blood type
+of the other parent, and finally the blood type of the child, except
+that the blood type of one parent or the child will be replaced by a
+question mark. To improve readability, whitespace may be included
+anywhere on the line except inside a single blood type specification. </p><p>
+The last test case is followed by a line containing the letters <tt>E</tt>, <tt>N</tt>, and <tt>D</tt> separated by whitespace.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case in the input, print the case number (beginning with
+1) and the blood type of the parents and the child. If no blood type
+for a parent is possible, print ``<tt>IMPOSSIBLE</tt>".
+If multiple blood types for parents or child are possible, print all
+possible values in a comma-separated list enclosed in curly braces. The
+order of the blood types inside the curly braces does not matter.
+</p><p>
+The sample output illustrates multiple output formats. Your output format should be similar.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>O+  O-  ? 
+O+  ?  O-
+AB-  AB+  ? 
+AB+  ?  O+ 
+E N D
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: O+ O- {O+, O-}
+Case 2: O+ {A-, A+, B-, B+, O-, O+} O-
+Case 3: AB- AB+ {A+, A-, B+, B-, AB+, AB-}
+Case 4: AB+ IMPOSSIBLE O+
+</pre> 
+
+<p>
+</p><hr><address>Tokyo 2006-2007</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>

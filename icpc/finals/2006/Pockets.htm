@@ -1,0 +1,117 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>3568 - Pockets</title></head><body><table align="center" border="1" cellpadding="3" cellspacing="0"><tbody><tr valign="center"><td rowspan="2" align="center" valign="center"><font color="#0000a0" size="5"><b><img src="Pockets_files/icono.gif"></b></font></td><td colspan="5" align="center" width="500"><font color="#0000a0" size="5"><b>3568 - Pockets</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=wfi&amp;year=2005"><b>World Finals - San Antonio - Texas - 2005/2006</b></a></td></tr><tr valign="center"><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p3568.pdf"><b>PDF</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=3568"><b>Submit</b></a></td><td width="100">&nbsp;</td><td align="center" width="100"><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=3568"><b>Ranking</b></a></td></tr></tbody></table><p>&nbsp;</p><p>
+Origami, or the art of paper folding, often makes use of ``pockets" of
+paper, particularly in complicated models made from multiple pieces of
+paper where a tab on one piece of paper needs to fit into a pocket in
+another piece of paper. In this problem you must count pockets in a
+flat folded square of paper. A pocket is defined as any opening (lying
+between two surfaces of paper) that is accessible from the boundary of
+the folded piece of paper. Note that one accessible opening can account
+for several pockets since each open side contributes one pocket. Figure
+1 shows an example. Observe that the ``middle" opening (between the
+second and third layers of paper) contributes 3 to the total pocket
+count.
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3568a.eps}$
+ -->
+<img src="Pockets_files/p3568a.gif" alt="\epsfbox{p3568a.eps}" align="bottom" border="0" height="265" width="902">
+</div>
+<p>
+</p><div align="center">Figure 1: Pockets
+
+</div>
+
+<p>Assume the paper is initially lying on a flat surface and is never
+completely lifted from the surface. All folds will be horizontal or
+vertical. Fold lines will fall only along equally-spaced crease lines, <span class="MATH"><i>N</i></span>
+in each direction. On the original unfolded square, creases and edges
+are numbered from top to bottom and from left to right as shown in
+Figure 2. Each fold reduces the boundary of the folded piece of paper
+to a smaller rectangle; the final fold results in a square one unit in
+each direction. Folds are described using a crease line and a
+direction. For instance, `<tt>2 U</tt>' means to fold the bottom edge up using horizontal crease 2; `<tt>1 L</tt>'
+means to fold the right edge to the left using crease 1. (See Figure
+2.) After several folds, creases may be aligned (for instance, creases
+1 and 3 in Figure 2). Either number may be used to specify a fold along
+that line (so, in Figure 2, `<tt>1 D</tt>' and `<tt>3 D</tt>' are
+equivalent instructions after the first fold). Pockets are to be
+counted for the boundary of the final one-unit square. Once a crease is
+made it cannot be undone. All creases go through every layer of paper
+from top to bottom; disregard paper thickness.
+</p><p>
+</p><div align="center">
+<!-- MATH
+ $\epsfbox{p3568b.eps}$
+ -->
+<img src="Pockets_files/p3568b.gif" alt="\epsfbox{p3568b.eps}" align="bottom" border="0" height="320" width="969">
+</div>
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+Input is a sequence of test cases. Each test case begins with a line containing two integers, <span class="MATH"><i>N</i></span> and <span class="MATH"><i>K</i></span>. <span class="MATH"><i>N</i></span> is the number of horizontal crease lines (the same as the number of vertical crease lines) of the square. Creases are numbered <!-- MATH
+ $1, 2, \ldots, N$
+ -->
+<span class="MATH">1, 2,..., <i>N</i></span> from top to bottom and from left to right. <span class="MATH"><i>K</i></span> is the number of folds to be made. <span class="MATH"><i>N</i></span> and <span class="MATH"><i>K</i></span> are each less than or equal to 64. 
+
+</p><p>
+Following <span class="MATH"><i>N</i></span> and <span class="MATH"><i>K</i></span> are <span class="MATH"><i>K</i></span> fold descriptions. Each fold description consists of an integer crease number <span class="MATH"><i>C</i></span> and a direction, either <tt>U</tt>, <tt>D</tt>, <tt>L</tt>, or <tt>R</tt> (for up, down, left or right) separated by whitespace. Whitespace also precedes and follows each fold description. 
+
+</p><p>
+The final result for each test case will be a square one unit in size. 
+
+</p><p>
+The final test case is followed by a line containing two zeroes.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>For each input case, display the case number followed by the number
+of pockets in the final one-unit square. Use the format shown in the
+sample output.
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>1 2 
+1 R 1 U 
+3 5 
+2 U 1 L 
+  3   D 
+3 R 2 L 
+0 0
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>Case 1: 7 pockets 
+Case 2: 17 pockets
+</pre> 
+
+<p>
+</p><p>
+<b>Claimer:</b>
+The data used in this problem is unofficial data
+prepared by Derek Kisman. So any mistake here does not
+imply mistake in the offcial judge data. Only Derek
+Kisman is responsible for the mistakes. Report
+mistakes to dkisman@acm.org
+
+</p><hr><address>San Antonio - Texas 2005-2006</address><p><b>Tests-Setter:</b> Derek Kisman<br></p></body></html>
